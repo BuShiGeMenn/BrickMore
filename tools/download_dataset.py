@@ -110,8 +110,11 @@ def join_extracted(directory,shard_data):
             ids.add(row['modelId'])
             relative=row.get('modelJsonPath') or row['modelPath']+'/model.json'
             model_path='AI_'+shard+'/'+relative.replace('\\','/')
-            rows.append({**row,'shardId':shard,'modelJsonPath':model_path,
-                         'modelPath':str(Path(model_path).parent).replace('\\','/')})
+            updated={**row,'shardId':shard,'modelJsonPath':model_path,
+                     'modelPath':str(Path(model_path).parent).replace('\\','/')}
+            for key in ('modelNpzPath','modelObjPath','modelMtlPath','modelVoxPath','previewPath','promptsPath'):
+                if row.get(key):updated[key]='AI_'+shard+'/'+row[key].replace('\\','/')
+            rows.append(updated)
     catalog=json.loads((ROOT/'dataset_catalog.json').read_text(encoding='utf8'))
     if len(rows)!=catalog['modelCount']:raise ValueError('Combined model count differs from catalog')
     result={'modelCount':len(rows),'promptRecordCount':sum(d['promptRecordCount'] for d in shard_data.values()),

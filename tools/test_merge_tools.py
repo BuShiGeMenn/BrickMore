@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 import zipfile
 
 import download_dataset as d
@@ -11,6 +12,24 @@ from merge_shards import combined_index, safe_relative, verify_prompt_stream
 
 
 class MergeToolTests(unittest.TestCase):
+    def test_joined_manifest_prefixes_npz_and_preview_paths(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)
+            (root/'dataset_catalog.json').write_text(json.dumps({'modelCount':2}),encoding='utf8')
+            shards={'A':{'promptRecordCount':5,'models':[{'modelId':'A',
+                'modelJsonPath':'models/a/model.json','modelNpzPath':'models/a/model.npz',
+                'previewPath':'models/a/preview.png'}]},
+                'B':{'promptRecordCount':5,'models':[{'modelId':'B','modelPath':'models/b'}]}}
+            with patch.object(d,'ROOT',root):
+                d.join_extracted(root,shards)
+                d.join_extracted(root,shards)
+            result=json.loads((root/'manifest.json').read_text())
+            self.assertEqual(result['modelCount'],2)
+            self.assertEqual(result['promptRecordCount'],10)
+            self.assertEqual(result['models'][0]['modelNpzPath'],'AI_A/models/a/model.npz')
+            self.assertEqual(result['models'][0]['previewPath'],'AI_A/models/a/preview.png')
+            self.assertEqual(result['models'][1]['modelPath'],'AI_B/models/b')
+
     def prompt_fixture(self):
         model = {'modelId': 'model_A', 'modelSeed': 7, 'exactOccupancyHash': 'a',
                  'canonicalGeometryHash': 'b', 'modelJsonPath': 'models/test/model.json'}
