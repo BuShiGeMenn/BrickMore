@@ -1,5 +1,11 @@
 # BrickMore
 
+## 拼接与校验算法
+
+新增算法源码位于 **[algorithms/voxel_assembly_b](algorithms/voxel_assembly_b/README.md)**，方法标注见 [ALGORITHM.md](algorithms/voxel_assembly_b/ALGORITHM.md)。包括同色标准砖贪心/beam拼接、MRV逐层位集精确覆盖，以及从真实JSON/TXT/LDR独立回读的几何校验；纯CPU，无模型权重或API密钥。
+
+该算法对独立 **AI_B** 分片实际处理40,000个模型：3,288个几何装配通过，31,627个当前规则的必要条件失败，5,085个有界搜索未通过。此结果不代表本仓库下述AI_A数据已经进行LEGO处理，也不代表物理稳定性通过。原体素/颜色未修改，完整算法与失败证据边界见对应说明。
+
 AI_A 彩色体素数据集：**40,000 个独立模型，200,000 条中英双语训练记录**。每个模型配有描述同一几何的 L1—L5 五条记录。
 
 ![21 类模型效果](preview/preview_21_categories.png)
