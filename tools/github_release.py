@@ -43,6 +43,8 @@ def request(token, url, method='GET', value=None, stream=None, size=None):
         headers['Content-Type'] = 'application/json'
     req = urllib.request.Request(url, data=data, headers=headers, method=method)
     with urllib.request.urlopen(req, timeout=300) as response:
+        if response.status == 204:
+            return None
         return json.load(response)
 
 
@@ -81,7 +83,22 @@ def fetch_a(token, directory):
     print('A_METADATA_VERIFIED', result.name, flush=True)
 
 
-def upload(token, manifest_path, source, workers, commit, keep_draft=False):
+def find_release(token, tag, release_id=None):
+    # GitHub's by-tag endpoint does not reliably expose drafts. Enumerate them
+    # with the writer credential, or use the exact known ID; never duplicate one.
+    if release_id is not None:
+        release = request(token, API+'/releases/'+str(release_id))
+        if release['tag_name'] != tag:
+            raise ValueError('Release ID does not belong to the requested tag')
+        return release
+    releases = request(token, API+'/releases?per_page=100')
+    candidates = [row for row in releases if row['tag_name']==tag]
+    if len(candidates)>1:
+        raise ValueError('Multiple release drafts match; supply the exact --release-id')
+    return candidates[0] if candidates else None
+
+
+def upload(token, manifest_path, source, workers, commit, keep_draft=False, release_id=None):
     manifest = json.loads(manifest_path.read_text(encoding='utf8'))
     tag = manifest['releaseTag']
     checked = []
@@ -93,11 +110,8 @@ def upload(token, manifest_path, source, workers, commit, keep_draft=False):
             raise ValueError('Local asset checksum mismatch: ' + row['name'])
         checked.append((row, path))
     print('LOCAL_ASSETS_VERIFIED', len(checked), flush=True)
-    try:
-        release = request(token, API + '/releases/tags/' + urllib.parse.quote(tag, safe=''))
-    except urllib.error.HTTPError as exc:
-        if exc.code != 404:
-            raise
+    release = find_release(token, tag, release_id)
+    if release is None:
         release = request(token, API + '/releases', 'POST', {
             'tag_name': tag, 'target_commitish': commit, 'name': 'AI_B 40,000 voxel models / 200,000 bilingual records',
             'body': '完整AI_B体素模型与五级中英双语提示词。40个模型分包及B_metadata.zip解压到同一AI_B目录。'
@@ -148,6 +162,11 @@ def upload(token, manifest_path, source, workers, commit, keep_draft=False):
         release = request(token, API + '/releases/' + str(release['id']), 'PATCH',
                           {'draft': False, 'make_latest': 'false', 'target_commitish': commit})
     if not keep_draft:
+        # Publishing changes draft-only download URLs to the public tag URL.
+        final = {row['name']: row for row in assets(token, release['id'])}
+        if set(final) != expected or not all(matches(final[r['name']], r) and
+            final[r['name']]['browser_download_url'] == r['url'] for r, _ in checked):
+            raise ValueError('Published asset SHA/inventory/download URLs disagree with manifest')
         # Record only public asset metadata, never credentials or local paths.
         a_manifest = json.loads((ROOT/'download_manifest.json').read_text(encoding='utf8'))
         a_release = request(token, API+'/releases/tags/'+a_manifest['releaseTag'])
@@ -179,6 +198,7 @@ def main():
     parser.add_argument('--workers', type=int, default=3)
     parser.add_argument('--commit', default='main')
     parser.add_argument('--keep-draft', action='store_true')
+    parser.add_argument('--release-id',type=int,help='Exact existing draft ID; avoids by-tag draft lookup')
     args = parser.parse_args()
     token = credential()
     if args.action == 'inspect':
@@ -188,7 +208,7 @@ def main():
     else:
         if args.source is None or not 1 <= args.workers <= 4:
             parser.error('--source and 1..4 workers required')
-        upload(token, args.manifest, args.source, args.workers, args.commit, args.keep_draft)
+        upload(token, args.manifest, args.source, args.workers, args.commit, args.keep_draft, args.release_id)
 
 
 if __name__ == '__main__':

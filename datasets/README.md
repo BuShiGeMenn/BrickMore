@@ -34,6 +34,8 @@ python tools/download_dataset.py --shard B --output dataset_B --extract
 
 本次全量交叉检查：80,000个模型ID唯一，原始占用hash和规范几何hash各80,000个唯一，A/B重复数量均为0。
 
+[AI_B公开发布校验](AI_B/release_verification.json) 记录41个完整归档的远端大小和SHA-256全部匹配，并核对原AI_A的43个发布资源未变。合并工具18项测试、原拼接算法15项测试均通过；另外用真实1000模型/5000记录分包做了 [新解压流程回读](AI_B/package_smoke_test.json)。
+
 两个归档的400,000条实际提示词已完整读取，记录ID无碰撞，每模型五级齐全、种子/目标几何hash/源路径一致。利用AI_A元数据中55,255条历史索引补充原始占用hash检查，无重叠；旧完整坐标仍缺失，不把该结果扩展成历史旋转/镜像或近形无重复证明。
 
 提示词记录中的模型路径相对于各自的AI_A/AI_B分片根目录；跨批使用时可按 `modelId` 查询统一模型索引，以其 `modelJsonPath` 定位模型。

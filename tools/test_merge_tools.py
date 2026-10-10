@@ -7,11 +7,30 @@ from unittest.mock import patch
 import zipfile
 
 import download_dataset as d
-from github_release import matches
+from github_release import matches, find_release, API
 from merge_shards import combined_index, safe_relative, verify_prompt_stream
 
 
 class MergeToolTests(unittest.TestCase):
+    def test_existing_draft_is_reused_without_by_tag_query(self):
+        release={'tag_name':'test-tag','id':123,'draft':True}
+        with patch('github_release.request',return_value=[release]) as request:
+            self.assertEqual(find_release('dummy','test-tag'),release)
+            request.assert_called_once_with('dummy',API+'/releases?per_page=100')
+
+    def test_duplicate_drafts_require_explicit_id(self):
+        releases=[{'tag_name':'test-tag','id':123},{'tag_name':'test-tag','id':456}]
+        with patch('github_release.request',return_value=releases),self.assertRaises(ValueError):
+            find_release('dummy','test-tag')
+
+    def test_explicit_release_id_is_validated(self):
+        release={'tag_name':'test-tag','id':123,'draft':True}
+        with patch('github_release.request',return_value=release) as request:
+            self.assertEqual(find_release('dummy','test-tag',123),release)
+            request.assert_called_once_with('dummy',API+'/releases/123')
+        with patch('github_release.request',return_value=release),self.assertRaises(ValueError):
+            find_release('dummy','different-tag',123)
+
     def test_joined_manifest_prefixes_npz_and_preview_paths(self):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder)
