@@ -1,0 +1,776 @@
+[
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_vessel_m0001",
+    "category": "vessel",
+    "categoryId": 21,
+    "variantId": "vx80k5p_20261010_B_vessel_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_vessel_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_vessel_m0001",
+    "modelSeed": 800078096,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_vessel_m0001_l1",
+    "promptLevel": 1,
+    "promptType": "minimal",
+    "structuralVariant": 0,
+    "captionZh": "一个带封底棱线船壳、尖艏及开放舱区的水上船。",
+    "captionEn": "A water vessel with a sealed faceted hull, pointed bow and open compartment.",
+    "voxelPromptZh": "一个带封底棱线船壳、尖艏及开放舱区的水上船。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A water vessel with a sealed faceted hull, pointed bow and open compartment. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "hull",
+      "deck"
+    ],
+    "invariantFeatures": "a sealed hull, pointed bow, stern and a deck joined to the side walls",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "deckPositionRatio"
+    ],
+    "designSpec": {
+      "category": "vessel",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 25.299999999999997,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 5,
+      "ordinal": 78096,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.3359999999999994,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/vessel/vx80k5p_20261010_B_vessel_m0001/model.json",
+    "modelNpzPath": "models/vessel/vx80k5p_20261010_B_vessel_m0001/model.npz",
+    "targetOccupancyHash": "aea861c736a793d4b5bd2a9be93d0af12e50450573f57c358f8582326690a214",
+    "targetCanonicalGeometryHash": "0211231bca9e293ab64e52dc7ca913bcdc7831cdc57d1333998c04576de1502a",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a water vessel with a sealed faceted hull, pointed bow and open compartment"
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a water vessel with a sealed faceted hull, pointed bow and open compartment"
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_vessel_m0001",
+    "category": "vessel",
+    "categoryId": 21,
+    "variantId": "vx80k5p_20261010_B_vessel_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_vessel_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_vessel_m0001",
+    "modelSeed": 800078096,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_vessel_m0001_l2",
+    "promptLevel": 2,
+    "promptType": "basic_structure",
+    "structuralVariant": 0,
+    "captionZh": "一个带封底棱线船壳、尖艏及开放舱区的水上船。它由封底船壳、尖船头、后船尾和连接侧壁的甲板组成。",
+    "captionEn": "A water vessel with a sealed faceted hull, pointed bow and open compartment. It includes a sealed hull, pointed bow, stern and a deck joined to the side walls.",
+    "voxelPromptZh": "一个带封底棱线船壳、尖艏及开放舱区的水上船。它由封底船壳、尖船头、后船尾和连接侧壁的甲板组成。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A water vessel with a sealed faceted hull, pointed bow and open compartment. It includes a sealed hull, pointed bow, stern and a deck joined to the side walls. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "hull",
+      "deck"
+    ],
+    "invariantFeatures": "a sealed hull, pointed bow, stern and a deck joined to the side walls",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "deckPositionRatio"
+    ],
+    "designSpec": {
+      "category": "vessel",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 25.299999999999997,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 5,
+      "ordinal": 78096,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.3359999999999994,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/vessel/vx80k5p_20261010_B_vessel_m0001/model.json",
+    "modelNpzPath": "models/vessel/vx80k5p_20261010_B_vessel_m0001/model.npz",
+    "targetOccupancyHash": "aea861c736a793d4b5bd2a9be93d0af12e50450573f57c358f8582326690a214",
+    "targetCanonicalGeometryHash": "0211231bca9e293ab64e52dc7ca913bcdc7831cdc57d1333998c04576de1502a",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a water vessel with a sealed faceted hull, pointed bow and open compartment"
+      },
+      {
+        "parts": [
+          "hull",
+          "deck"
+        ]
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a water vessel with a sealed faceted hull, pointed bow and open compartment"
+      },
+      {
+        "parts": [
+          "hull",
+          "deck"
+        ]
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_vessel_m0001",
+    "category": "vessel",
+    "categoryId": 21,
+    "variantId": "vx80k5p_20261010_B_vessel_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_vessel_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_vessel_m0001",
+    "modelSeed": 800078096,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_vessel_m0001_l3",
+    "promptLevel": 3,
+    "promptType": "geometry",
+    "structuralVariant": 0,
+    "captionZh": "一个带封底棱线船壳、尖艏及开放舱区的水上船。它由封底船壳、尖船头、后船尾和连接侧壁的甲板组成。龙骨底厚约为船宽的0.18倍，甲板面连接两侧船壁。",
+    "captionEn": "A water vessel with a sealed faceted hull, pointed bow and open compartment. It includes a sealed hull, pointed bow, stern and a deck joined to the side walls. The keel-floor is 0.18 hull-widths thick; the deck joins both sides.",
+    "voxelPromptZh": "一个带封底棱线船壳、尖艏及开放舱区的水上船。它由封底船壳、尖船头、后船尾和连接侧壁的甲板组成。龙骨底厚约为船宽的0.18倍，甲板面连接两侧船壁。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A water vessel with a sealed faceted hull, pointed bow and open compartment. It includes a sealed hull, pointed bow, stern and a deck joined to the side walls. The keel-floor is 0.18 hull-widths thick; the deck joins both sides. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "hull",
+      "deck"
+    ],
+    "invariantFeatures": "a sealed hull, pointed bow, stern and a deck joined to the side walls",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "deckPositionRatio"
+    ],
+    "designSpec": {
+      "category": "vessel",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 25.299999999999997,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 5,
+      "ordinal": 78096,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.3359999999999994,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/vessel/vx80k5p_20261010_B_vessel_m0001/model.json",
+    "modelNpzPath": "models/vessel/vx80k5p_20261010_B_vessel_m0001/model.npz",
+    "targetOccupancyHash": "aea861c736a793d4b5bd2a9be93d0af12e50450573f57c358f8582326690a214",
+    "targetCanonicalGeometryHash": "0211231bca9e293ab64e52dc7ca913bcdc7831cdc57d1333998c04576de1502a",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a water vessel with a sealed faceted hull, pointed bow and open compartment"
+      },
+      {
+        "parts": [
+          "hull",
+          "deck"
+        ]
+      },
+      {
+        "structuralDetail": "The keel-floor is 0.18 hull-widths thick; the deck joins both sides.",
+        "section": {
+          "part": "hull",
+          "columnXZ": [
+            5,
+            17
+          ],
+          "measuredThickness": 2,
+          "referencePart": "hull",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 11,
+          "relativeThickness": 0.18
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a water vessel with a sealed faceted hull, pointed bow and open compartment"
+      },
+      {
+        "parts": [
+          "hull",
+          "deck"
+        ]
+      },
+      {
+        "structuralDetail": "The keel-floor is 0.18 hull-widths thick; the deck joins both sides.",
+        "section": {
+          "part": "hull",
+          "columnXZ": [
+            5,
+            17
+          ],
+          "measuredThickness": 2,
+          "referencePart": "hull",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 11,
+          "relativeThickness": 0.18
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_vessel_m0001",
+    "category": "vessel",
+    "categoryId": 21,
+    "variantId": "vx80k5p_20261010_B_vessel_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_vessel_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_vessel_m0001",
+    "modelSeed": 800078096,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_vessel_m0001_l4",
+    "promptLevel": 4,
+    "promptType": "proportion",
+    "structuralVariant": 0,
+    "captionZh": "一个带封底棱线船壳、尖艏及开放舱区的水上船。它由封底船壳、尖船头、后船尾和连接侧壁的甲板组成。龙骨底厚约为船宽的0.18倍，甲板面连接两侧船壁。宽深比约0.48，高/最大水平跨度约0.39；甲板横跨船壳中段并接两侧壁，甲板中心距船艉/船长0.39。",
+    "captionEn": "A water vessel with a sealed faceted hull, pointed bow and open compartment. It includes a sealed hull, pointed bow, stern and a deck joined to the side walls. The keel-floor is 0.18 hull-widths thick; the deck joins both sides. Width/depth is 0.48; height/horizontal-span is 0.39. The deck crosses the middle hull region. Deck-center distance from stern is 0.39 hull-depths.",
+    "voxelPromptZh": "一个带封底棱线船壳、尖艏及开放舱区的水上船。它由封底船壳、尖船头、后船尾和连接侧壁的甲板组成。龙骨底厚约为船宽的0.18倍，甲板面连接两侧船壁。宽深比约0.48，高/最大水平跨度约0.39；甲板横跨船壳中段并接两侧壁，甲板中心距船艉/船长0.39。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A water vessel with a sealed faceted hull, pointed bow and open compartment. It includes a sealed hull, pointed bow, stern and a deck joined to the side walls. The keel-floor is 0.18 hull-widths thick; the deck joins both sides. Width/depth is 0.48; height/horizontal-span is 0.39. The deck crosses the middle hull region. Deck-center distance from stern is 0.39 hull-depths. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "hull",
+      "deck"
+    ],
+    "invariantFeatures": "a sealed hull, pointed bow, stern and a deck joined to the side walls",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "deckPositionRatio"
+    ],
+    "designSpec": {
+      "category": "vessel",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 25.299999999999997,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 5,
+      "ordinal": 78096,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.3359999999999994,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/vessel/vx80k5p_20261010_B_vessel_m0001/model.json",
+    "modelNpzPath": "models/vessel/vx80k5p_20261010_B_vessel_m0001/model.npz",
+    "targetOccupancyHash": "aea861c736a793d4b5bd2a9be93d0af12e50450573f57c358f8582326690a214",
+    "targetCanonicalGeometryHash": "0211231bca9e293ab64e52dc7ca913bcdc7831cdc57d1333998c04576de1502a",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a water vessel with a sealed faceted hull, pointed bow and open compartment"
+      },
+      {
+        "parts": [
+          "hull",
+          "deck"
+        ]
+      },
+      {
+        "structuralDetail": "The keel-floor is 0.18 hull-widths thick; the deck joins both sides.",
+        "section": {
+          "part": "hull",
+          "columnXZ": [
+            5,
+            17
+          ],
+          "measuredThickness": 2,
+          "referencePart": "hull",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 11,
+          "relativeThickness": 0.18
+        }
+      },
+      {
+        "widthDepthRatio": 0.48,
+        "heightSpanRatio": 0.39,
+        "partPosition": "The deck crosses the middle hull region.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "deck",
+          "axis": 2,
+          "referencePart": "hull",
+          "referenceAxis": 2,
+          "ratio": 0.39
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a water vessel with a sealed faceted hull, pointed bow and open compartment"
+      },
+      {
+        "parts": [
+          "hull",
+          "deck"
+        ]
+      },
+      {
+        "structuralDetail": "The keel-floor is 0.18 hull-widths thick; the deck joins both sides.",
+        "section": {
+          "part": "hull",
+          "columnXZ": [
+            5,
+            17
+          ],
+          "measuredThickness": 2,
+          "referencePart": "hull",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 11,
+          "relativeThickness": 0.18
+        }
+      },
+      {
+        "widthDepthRatio": 0.48,
+        "heightSpanRatio": 0.39,
+        "partPosition": "The deck crosses the middle hull region.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "deck",
+          "axis": 2,
+          "referencePart": "hull",
+          "referenceAxis": 2,
+          "ratio": 0.39
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_vessel_m0001",
+    "category": "vessel",
+    "categoryId": 21,
+    "variantId": "vx80k5p_20261010_B_vessel_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_vessel_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_vessel_m0001",
+    "modelSeed": 800078096,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_vessel_m0001_l5",
+    "promptLevel": 5,
+    "promptType": "comprehensive",
+    "structuralVariant": 0,
+    "captionZh": "一个带封底棱线船壳、尖艏及开放舱区的水上船。它由封底船壳、尖船头、后船尾和连接侧壁的甲板组成。龙骨底厚约为船宽的0.18倍，甲板面连接两侧船壁。宽深比约0.48，高/最大水平跨度约0.39；甲板横跨船壳中段并接两侧壁，甲板中心距船艉/船长0.39。实测采用2种不透明颜色，船壳以蓝灰色为主，甲板呈浅棕色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。",
+    "captionEn": "A water vessel with a sealed faceted hull, pointed bow and open compartment. It includes a sealed hull, pointed bow, stern and a deck joined to the side walls. The keel-floor is 0.18 hull-widths thick; the deck joins both sides. Width/depth is 0.48; height/horizontal-span is 0.39. The deck crosses the middle hull region. Deck-center distance from stern is 0.39 hull-depths. Across 2 opaque colors, the hull is mainly blue-gray and the deck is tan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces.",
+    "voxelPromptZh": "一个带封底棱线船壳、尖艏及开放舱区的水上船。它由封底船壳、尖船头、后船尾和连接侧壁的甲板组成。龙骨底厚约为船宽的0.18倍，甲板面连接两侧船壁。宽深比约0.48，高/最大水平跨度约0.39；甲板横跨船壳中段并接两侧壁，甲板中心距船艉/船长0.39。实测采用2种不透明颜色，船壳以蓝灰色为主，甲板呈浅棕色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A water vessel with a sealed faceted hull, pointed bow and open compartment. It includes a sealed hull, pointed bow, stern and a deck joined to the side walls. The keel-floor is 0.18 hull-widths thick; the deck joins both sides. Width/depth is 0.48; height/horizontal-span is 0.39. The deck crosses the middle hull region. Deck-center distance from stern is 0.39 hull-depths. Across 2 opaque colors, the hull is mainly blue-gray and the deck is tan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "hull",
+      "deck"
+    ],
+    "invariantFeatures": "a sealed hull, pointed bow, stern and a deck joined to the side walls",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "deckPositionRatio"
+    ],
+    "designSpec": {
+      "category": "vessel",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 25.299999999999997,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 5,
+      "ordinal": 78096,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.3359999999999994,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/vessel/vx80k5p_20261010_B_vessel_m0001/model.json",
+    "modelNpzPath": "models/vessel/vx80k5p_20261010_B_vessel_m0001/model.npz",
+    "targetOccupancyHash": "aea861c736a793d4b5bd2a9be93d0af12e50450573f57c358f8582326690a214",
+    "targetCanonicalGeometryHash": "0211231bca9e293ab64e52dc7ca913bcdc7831cdc57d1333998c04576de1502a",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a water vessel with a sealed faceted hull, pointed bow and open compartment"
+      },
+      {
+        "parts": [
+          "hull",
+          "deck"
+        ]
+      },
+      {
+        "structuralDetail": "The keel-floor is 0.18 hull-widths thick; the deck joins both sides.",
+        "section": {
+          "part": "hull",
+          "columnXZ": [
+            5,
+            17
+          ],
+          "measuredThickness": 2,
+          "referencePart": "hull",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 11,
+          "relativeThickness": 0.18
+        }
+      },
+      {
+        "widthDepthRatio": 0.48,
+        "heightSpanRatio": 0.39,
+        "partPosition": "The deck crosses the middle hull region.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "deck",
+          "axis": 2,
+          "referencePart": "hull",
+          "referenceAxis": 2,
+          "ratio": 0.39
+        }
+      },
+      {
+        "paletteSize": 2,
+        "colorRegions": [
+          {
+            "part": "hull",
+            "color": [
+              61,
+              103,
+              137
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "deck",
+            "color": [
+              216,
+              182,
+              121
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a water vessel with a sealed faceted hull, pointed bow and open compartment"
+      },
+      {
+        "parts": [
+          "hull",
+          "deck"
+        ]
+      },
+      {
+        "structuralDetail": "The keel-floor is 0.18 hull-widths thick; the deck joins both sides.",
+        "section": {
+          "part": "hull",
+          "columnXZ": [
+            5,
+            17
+          ],
+          "measuredThickness": 2,
+          "referencePart": "hull",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 11,
+          "relativeThickness": 0.18
+        }
+      },
+      {
+        "widthDepthRatio": 0.48,
+        "heightSpanRatio": 0.39,
+        "partPosition": "The deck crosses the middle hull region.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "deck",
+          "axis": 2,
+          "referencePart": "hull",
+          "referenceAxis": 2,
+          "ratio": 0.39
+        }
+      },
+      {
+        "paletteSize": 2,
+        "colorRegions": [
+          {
+            "part": "hull",
+            "color": [
+              61,
+              103,
+              137
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "deck",
+            "color": [
+              216,
+              182,
+              121
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  }
+]

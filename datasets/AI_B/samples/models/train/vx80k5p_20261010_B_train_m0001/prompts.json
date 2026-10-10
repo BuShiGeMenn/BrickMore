@@ -1,0 +1,883 @@
+[
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_train_m0001",
+    "category": "train",
+    "categoryId": 20,
+    "variantId": "vx80k5p_20261010_B_train_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_train_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_train_m0001",
+    "modelSeed": 800076191,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_train_m0001_l1",
+    "promptLevel": 1,
+    "promptType": "minimal",
+    "structuralVariant": 0,
+    "captionZh": "一个带箱形驾驶舱、前车头及四轮组的棱线火车。",
+    "captionEn": "An angular train with a box driving cabin, front nose and four wheels.",
+    "voxelPromptZh": "一个带箱形驾驶舱、前车头及四轮组的棱线火车。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular train with a box driving cabin, front nose and four wheels. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "chassis",
+      "cab_left",
+      "cab_right",
+      "cab_rear",
+      "cab_front",
+      "roof",
+      "front_nose",
+      "wheel_1",
+      "wheel_2",
+      "wheel_3",
+      "wheel_4"
+    ],
+    "invariantFeatures": "a chassis, box cabin, forward nose and four wheels",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount",
+      "doorFrameGlazing"
+    ],
+    "designSpec": {
+      "category": "train",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 22.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 76191,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001,
+      "doorFrameGlazing": true
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/train/vx80k5p_20261010_B_train_m0001/model.json",
+    "modelNpzPath": "models/train/vx80k5p_20261010_B_train_m0001/model.npz",
+    "targetOccupancyHash": "6efb972eb5f90ef6bbe783d24711a719dfd1d5e44b849333ed77c8f8e711e845",
+    "targetCanonicalGeometryHash": "072549ee30a97852a587c8f36c3534d8b441499f7b1f7a384730030dbdd2ef1c",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular train with a box driving cabin, front nose and four wheels"
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular train with a box driving cabin, front nose and four wheels"
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_train_m0001",
+    "category": "train",
+    "categoryId": 20,
+    "variantId": "vx80k5p_20261010_B_train_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_train_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_train_m0001",
+    "modelSeed": 800076191,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_train_m0001_l2",
+    "promptLevel": 2,
+    "promptType": "basic_structure",
+    "structuralVariant": 0,
+    "captionZh": "一个带箱形驾驶舱、前车头及四轮组的棱线火车。它由底盘、箱形舱体、前端车头和四轮组成。",
+    "captionEn": "An angular train with a box driving cabin, front nose and four wheels. It includes a chassis, box cabin, forward nose and four wheels.",
+    "voxelPromptZh": "一个带箱形驾驶舱、前车头及四轮组的棱线火车。它由底盘、箱形舱体、前端车头和四轮组成。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular train with a box driving cabin, front nose and four wheels. It includes a chassis, box cabin, forward nose and four wheels. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "chassis",
+      "cab_left",
+      "cab_right",
+      "cab_rear",
+      "cab_front",
+      "roof",
+      "front_nose",
+      "wheel_1",
+      "wheel_2",
+      "wheel_3",
+      "wheel_4"
+    ],
+    "invariantFeatures": "a chassis, box cabin, forward nose and four wheels",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount",
+      "doorFrameGlazing"
+    ],
+    "designSpec": {
+      "category": "train",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 22.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 76191,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001,
+      "doorFrameGlazing": true
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/train/vx80k5p_20261010_B_train_m0001/model.json",
+    "modelNpzPath": "models/train/vx80k5p_20261010_B_train_m0001/model.npz",
+    "targetOccupancyHash": "6efb972eb5f90ef6bbe783d24711a719dfd1d5e44b849333ed77c8f8e711e845",
+    "targetCanonicalGeometryHash": "072549ee30a97852a587c8f36c3534d8b441499f7b1f7a384730030dbdd2ef1c",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular train with a box driving cabin, front nose and four wheels"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "front_nose",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular train with a box driving cabin, front nose and four wheels"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "front_nose",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_train_m0001",
+    "category": "train",
+    "categoryId": 20,
+    "variantId": "vx80k5p_20261010_B_train_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_train_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_train_m0001",
+    "modelSeed": 800076191,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_train_m0001_l3",
+    "promptLevel": 3,
+    "promptType": "geometry",
+    "structuralVariant": 0,
+    "captionZh": "一个带箱形驾驶舱、前车头及四轮组的棱线火车。它由底盘、箱形舱体、前端车头和四轮组成。轮宽约为底盘宽的0.30倍，左右前后轮根连接底盘。",
+    "captionEn": "An angular train with a box driving cabin, front nose and four wheels. It includes a chassis, box cabin, forward nose and four wheels. Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides.",
+    "voxelPromptZh": "一个带箱形驾驶舱、前车头及四轮组的棱线火车。它由底盘、箱形舱体、前端车头和四轮组成。轮宽约为底盘宽的0.30倍，左右前后轮根连接底盘。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular train with a box driving cabin, front nose and four wheels. It includes a chassis, box cabin, forward nose and four wheels. Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "chassis",
+      "cab_left",
+      "cab_right",
+      "cab_rear",
+      "cab_front",
+      "roof",
+      "front_nose",
+      "wheel_1",
+      "wheel_2",
+      "wheel_3",
+      "wheel_4"
+    ],
+    "invariantFeatures": "a chassis, box cabin, forward nose and four wheels",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount",
+      "doorFrameGlazing"
+    ],
+    "designSpec": {
+      "category": "train",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 22.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 76191,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001,
+      "doorFrameGlazing": true
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/train/vx80k5p_20261010_B_train_m0001/model.json",
+    "modelNpzPath": "models/train/vx80k5p_20261010_B_train_m0001/model.npz",
+    "targetOccupancyHash": "6efb972eb5f90ef6bbe783d24711a719dfd1d5e44b849333ed77c8f8e711e845",
+    "targetCanonicalGeometryHash": "072549ee30a97852a587c8f36c3534d8b441499f7b1f7a384730030dbdd2ef1c",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular train with a box driving cabin, front nose and four wheels"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "front_nose",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.3
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular train with a box driving cabin, front nose and four wheels"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "front_nose",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.3
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_train_m0001",
+    "category": "train",
+    "categoryId": 20,
+    "variantId": "vx80k5p_20261010_B_train_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_train_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_train_m0001",
+    "modelSeed": 800076191,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_train_m0001_l4",
+    "promptLevel": 4,
+    "promptType": "proportion",
+    "structuralVariant": 0,
+    "captionZh": "一个带箱形驾驶舱、前车头及四轮组的棱线火车。它由底盘、箱形舱体、前端车头和四轮组成。轮宽约为底盘宽的0.30倍，左右前后轮根连接底盘。宽深比约0.68，高/最大水平跨度约0.53；驾驶端位于车体前侧，轴距与车长比0.62。",
+    "captionEn": "An angular train with a box driving cabin, front nose and four wheels. It includes a chassis, box cabin, forward nose and four wheels. Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides. Width/depth is 0.68; height/horizontal-span is 0.53. The driving end faces forward. Axle-gap/depth is 0.62.",
+    "voxelPromptZh": "一个带箱形驾驶舱、前车头及四轮组的棱线火车。它由底盘、箱形舱体、前端车头和四轮组成。轮宽约为底盘宽的0.30倍，左右前后轮根连接底盘。宽深比约0.68，高/最大水平跨度约0.53；驾驶端位于车体前侧，轴距与车长比0.62。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular train with a box driving cabin, front nose and four wheels. It includes a chassis, box cabin, forward nose and four wheels. Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides. Width/depth is 0.68; height/horizontal-span is 0.53. The driving end faces forward. Axle-gap/depth is 0.62. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "chassis",
+      "cab_left",
+      "cab_right",
+      "cab_rear",
+      "cab_front",
+      "roof",
+      "front_nose",
+      "wheel_1",
+      "wheel_2",
+      "wheel_3",
+      "wheel_4"
+    ],
+    "invariantFeatures": "a chassis, box cabin, forward nose and four wheels",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount",
+      "doorFrameGlazing"
+    ],
+    "designSpec": {
+      "category": "train",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 22.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 76191,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001,
+      "doorFrameGlazing": true
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/train/vx80k5p_20261010_B_train_m0001/model.json",
+    "modelNpzPath": "models/train/vx80k5p_20261010_B_train_m0001/model.npz",
+    "targetOccupancyHash": "6efb972eb5f90ef6bbe783d24711a719dfd1d5e44b849333ed77c8f8e711e845",
+    "targetCanonicalGeometryHash": "072549ee30a97852a587c8f36c3534d8b441499f7b1f7a384730030dbdd2ef1c",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular train with a box driving cabin, front nose and four wheels"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "front_nose",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.3
+        }
+      },
+      {
+        "widthDepthRatio": 0.68,
+        "heightSpanRatio": 0.53,
+        "partPosition": "The driving end faces forward.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "wheel_1",
+          "partB": "wheel_2",
+          "axis": 2,
+          "referencePart": "chassis",
+          "referenceAxis": 2,
+          "ratio": 0.62
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular train with a box driving cabin, front nose and four wheels"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "front_nose",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.3
+        }
+      },
+      {
+        "widthDepthRatio": 0.68,
+        "heightSpanRatio": 0.53,
+        "partPosition": "The driving end faces forward.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "wheel_1",
+          "partB": "wheel_2",
+          "axis": 2,
+          "referencePart": "chassis",
+          "referenceAxis": 2,
+          "ratio": 0.62
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_train_m0001",
+    "category": "train",
+    "categoryId": 20,
+    "variantId": "vx80k5p_20261010_B_train_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_train_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_train_m0001",
+    "modelSeed": 800076191,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_train_m0001_l5",
+    "promptLevel": 5,
+    "promptType": "comprehensive",
+    "structuralVariant": 0,
+    "captionZh": "一个带箱形驾驶舱、前车头及四轮组的棱线火车。它由底盘、箱形舱体、前端车头和四轮组成。轮宽约为底盘宽的0.30倍，左右前后轮根连接底盘。宽深比约0.68，高/最大水平跨度约0.53；驾驶端位于车体前侧，轴距与车长比0.62。实测采用4种不透明颜色，车顶以蓝灰色为主，前窗呈青色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。",
+    "captionEn": "An angular train with a box driving cabin, front nose and four wheels. It includes a chassis, box cabin, forward nose and four wheels. Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides. Width/depth is 0.68; height/horizontal-span is 0.53. The driving end faces forward. Axle-gap/depth is 0.62. Across 4 opaque colors, the roof is mainly blue-gray and the windshield is cyan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces.",
+    "voxelPromptZh": "一个带箱形驾驶舱、前车头及四轮组的棱线火车。它由底盘、箱形舱体、前端车头和四轮组成。轮宽约为底盘宽的0.30倍，左右前后轮根连接底盘。宽深比约0.68，高/最大水平跨度约0.53；驾驶端位于车体前侧，轴距与车长比0.62。实测采用4种不透明颜色，车顶以蓝灰色为主，前窗呈青色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular train with a box driving cabin, front nose and four wheels. It includes a chassis, box cabin, forward nose and four wheels. Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides. Width/depth is 0.68; height/horizontal-span is 0.53. The driving end faces forward. Axle-gap/depth is 0.62. Across 4 opaque colors, the roof is mainly blue-gray and the windshield is cyan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "chassis",
+      "cab_left",
+      "cab_right",
+      "cab_rear",
+      "cab_front",
+      "roof",
+      "front_nose",
+      "wheel_1",
+      "wheel_2",
+      "wheel_3",
+      "wheel_4"
+    ],
+    "invariantFeatures": "a chassis, box cabin, forward nose and four wheels",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount",
+      "doorFrameGlazing"
+    ],
+    "designSpec": {
+      "category": "train",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 22.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 76191,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001,
+      "doorFrameGlazing": true
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/train/vx80k5p_20261010_B_train_m0001/model.json",
+    "modelNpzPath": "models/train/vx80k5p_20261010_B_train_m0001/model.npz",
+    "targetOccupancyHash": "6efb972eb5f90ef6bbe783d24711a719dfd1d5e44b849333ed77c8f8e711e845",
+    "targetCanonicalGeometryHash": "072549ee30a97852a587c8f36c3534d8b441499f7b1f7a384730030dbdd2ef1c",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular train with a box driving cabin, front nose and four wheels"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "front_nose",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.3
+        }
+      },
+      {
+        "widthDepthRatio": 0.68,
+        "heightSpanRatio": 0.53,
+        "partPosition": "The driving end faces forward.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "wheel_1",
+          "partB": "wheel_2",
+          "axis": 2,
+          "referencePart": "chassis",
+          "referenceAxis": 2,
+          "ratio": 0.62
+        }
+      },
+      {
+        "paletteSize": 4,
+        "colorRegions": [
+          {
+            "part": "roof",
+            "color": [
+              61,
+              103,
+              137
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "cab_front",
+            "color": [
+              98,
+              176,
+              200
+            ],
+            "selection": "present"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular train with a box driving cabin, front nose and four wheels"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "front_nose",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.30 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.3
+        }
+      },
+      {
+        "widthDepthRatio": 0.68,
+        "heightSpanRatio": 0.53,
+        "partPosition": "The driving end faces forward.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "wheel_1",
+          "partB": "wheel_2",
+          "axis": 2,
+          "referencePart": "chassis",
+          "referenceAxis": 2,
+          "ratio": 0.62
+        }
+      },
+      {
+        "paletteSize": 4,
+        "colorRegions": [
+          {
+            "part": "roof",
+            "color": [
+              61,
+              103,
+              137
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "cab_front",
+            "color": [
+              98,
+              176,
+              200
+            ],
+            "selection": "present"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  }
+]

@@ -1,0 +1,990 @@
+{
+  "actualVoxelCount": 1022,
+  "sixNeighborComponentCount": 1,
+  "checks": {
+    "voxelRange": true,
+    "singleSixConnectedComponent": true,
+    "nonnegative48Grid": true,
+    "groundContactY0": true,
+    "uniqueCoordinates": true,
+    "fourWheels": true
+  },
+  "parts": {
+    "chassis": {
+      "voxelCount": 304,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        10,
+        2,
+        17
+      ]
+    },
+    "cab_left": {
+      "voxelCount": 89,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        2,
+        5,
+        9
+      ]
+    },
+    "cab_right": {
+      "voxelCount": 89,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        2,
+        5,
+        9
+      ]
+    },
+    "cab_rear": {
+      "voxelCount": 96,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        10,
+        5,
+        2
+      ]
+    },
+    "cab_front": {
+      "voxelCount": 50,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        10,
+        5,
+        1
+      ]
+    },
+    "roof": {
+      "voxelCount": 120,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        10,
+        1,
+        12
+      ]
+    },
+    "hood": {
+      "voxelCount": 74,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        10,
+        2,
+        4
+      ]
+    },
+    "wheel_1": {
+      "voxelCount": 40,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        2,
+        5,
+        5
+      ]
+    },
+    "wheel_2": {
+      "voxelCount": 40,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        2,
+        5,
+        5
+      ]
+    },
+    "wheel_3": {
+      "voxelCount": 60,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        3,
+        5,
+        5
+      ]
+    },
+    "wheel_4": {
+      "voxelCount": 60,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        3,
+        5,
+        5
+      ]
+    }
+  },
+  "openings": {},
+  "visibleSurfaceFeatures": [
+    {
+      "featureId": "window_left_1",
+      "ownerPart": "cab_left",
+      "expectedViews": [
+        "left"
+      ],
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "coordinates": [
+        [
+          1,
+          5,
+          3
+        ],
+        [
+          1,
+          5,
+          4
+        ],
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          3
+        ],
+        [
+          1,
+          6,
+          4
+        ],
+        [
+          1,
+          6,
+          5
+        ],
+        [
+          1,
+          6,
+          6
+        ],
+        [
+          1,
+          7,
+          3
+        ],
+        [
+          1,
+          7,
+          4
+        ],
+        [
+          1,
+          7,
+          5
+        ],
+        [
+          1,
+          7,
+          6
+        ],
+        [
+          2,
+          5,
+          3
+        ],
+        [
+          2,
+          5,
+          4
+        ],
+        [
+          2,
+          5,
+          5
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          2,
+          6,
+          3
+        ],
+        [
+          2,
+          6,
+          4
+        ],
+        [
+          2,
+          6,
+          5
+        ],
+        [
+          2,
+          6,
+          6
+        ],
+        [
+          2,
+          7,
+          3
+        ],
+        [
+          2,
+          7,
+          4
+        ],
+        [
+          2,
+          7,
+          5
+        ],
+        [
+          2,
+          7,
+          6
+        ]
+      ],
+      "sampledVoxels": 24,
+      "exposedVoxels": 24,
+      "connectedToOwner": true,
+      "rayClear": true,
+      "unoccludedPixels": {
+        "front": 0,
+        "side": 0,
+        "left": 1938,
+        "top": 0,
+        "oblique": 0
+      },
+      "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+      "witness": [
+        {
+          "coordinate": [
+            1,
+            5,
+            3
+          ],
+          "localPosition": "on original functional owner surface",
+          "airNeighborCount": 1,
+          "exposedFaceDirections": [
+            "-X"
+          ],
+          "rayClearDirections": [
+            "-X"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "featureId": "window_right_1",
+      "ownerPart": "cab_right",
+      "expectedViews": [
+        "side",
+        "oblique"
+      ],
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "coordinates": [
+        [
+          9,
+          5,
+          3
+        ],
+        [
+          9,
+          5,
+          4
+        ],
+        [
+          9,
+          5,
+          5
+        ],
+        [
+          9,
+          5,
+          6
+        ],
+        [
+          9,
+          6,
+          3
+        ],
+        [
+          9,
+          6,
+          4
+        ],
+        [
+          9,
+          6,
+          5
+        ],
+        [
+          9,
+          6,
+          6
+        ],
+        [
+          9,
+          7,
+          3
+        ],
+        [
+          9,
+          7,
+          4
+        ],
+        [
+          9,
+          7,
+          5
+        ],
+        [
+          9,
+          7,
+          6
+        ],
+        [
+          10,
+          5,
+          3
+        ],
+        [
+          10,
+          5,
+          4
+        ],
+        [
+          10,
+          5,
+          5
+        ],
+        [
+          10,
+          5,
+          6
+        ],
+        [
+          10,
+          6,
+          3
+        ],
+        [
+          10,
+          6,
+          4
+        ],
+        [
+          10,
+          6,
+          5
+        ],
+        [
+          10,
+          6,
+          6
+        ],
+        [
+          10,
+          7,
+          3
+        ],
+        [
+          10,
+          7,
+          4
+        ],
+        [
+          10,
+          7,
+          5
+        ],
+        [
+          10,
+          7,
+          6
+        ]
+      ],
+      "sampledVoxels": 24,
+      "exposedVoxels": 24,
+      "connectedToOwner": true,
+      "rayClear": true,
+      "unoccludedPixels": {
+        "front": 0,
+        "side": 1938,
+        "left": 0,
+        "top": 0,
+        "oblique": 711
+      },
+      "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+      "witness": [
+        {
+          "coordinate": [
+            9,
+            5,
+            3
+          ],
+          "localPosition": "on original functional owner surface",
+          "airNeighborCount": 1,
+          "exposedFaceDirections": [
+            "-X"
+          ],
+          "rayClearDirections": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "featureId": "window_left_2",
+      "ownerPart": "cab_left",
+      "expectedViews": [
+        "left"
+      ],
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "coordinates": [
+        [
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          1,
+          5,
+          10
+        ],
+        [
+          1,
+          6,
+          8
+        ],
+        [
+          1,
+          6,
+          9
+        ],
+        [
+          1,
+          6,
+          10
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          1,
+          7,
+          9
+        ],
+        [
+          1,
+          7,
+          10
+        ],
+        [
+          2,
+          5,
+          8
+        ],
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          2,
+          5,
+          10
+        ],
+        [
+          2,
+          6,
+          8
+        ],
+        [
+          2,
+          6,
+          9
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          2,
+          7,
+          9
+        ],
+        [
+          2,
+          7,
+          10
+        ]
+      ],
+      "sampledVoxels": 18,
+      "exposedVoxels": 18,
+      "connectedToOwner": true,
+      "rayClear": true,
+      "unoccludedPixels": {
+        "front": 0,
+        "side": 0,
+        "left": 1444,
+        "top": 0,
+        "oblique": 0
+      },
+      "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+      "witness": [
+        {
+          "coordinate": [
+            1,
+            5,
+            8
+          ],
+          "localPosition": "on original functional owner surface",
+          "airNeighborCount": 1,
+          "exposedFaceDirections": [
+            "-X"
+          ],
+          "rayClearDirections": [
+            "-X"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "featureId": "window_right_2",
+      "ownerPart": "cab_right",
+      "expectedViews": [
+        "side",
+        "oblique"
+      ],
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "coordinates": [
+        [
+          9,
+          5,
+          8
+        ],
+        [
+          9,
+          5,
+          9
+        ],
+        [
+          9,
+          5,
+          10
+        ],
+        [
+          9,
+          6,
+          8
+        ],
+        [
+          9,
+          6,
+          9
+        ],
+        [
+          9,
+          6,
+          10
+        ],
+        [
+          9,
+          7,
+          8
+        ],
+        [
+          9,
+          7,
+          9
+        ],
+        [
+          9,
+          7,
+          10
+        ],
+        [
+          10,
+          5,
+          8
+        ],
+        [
+          10,
+          5,
+          9
+        ],
+        [
+          10,
+          5,
+          10
+        ],
+        [
+          10,
+          6,
+          8
+        ],
+        [
+          10,
+          6,
+          9
+        ],
+        [
+          10,
+          6,
+          10
+        ],
+        [
+          10,
+          7,
+          8
+        ],
+        [
+          10,
+          7,
+          9
+        ],
+        [
+          10,
+          7,
+          10
+        ]
+      ],
+      "sampledVoxels": 18,
+      "exposedVoxels": 18,
+      "connectedToOwner": true,
+      "rayClear": true,
+      "unoccludedPixels": {
+        "front": 0,
+        "side": 1444,
+        "left": 0,
+        "top": 0,
+        "oblique": 521
+      },
+      "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+      "witness": [
+        {
+          "coordinate": [
+            9,
+            5,
+            8
+          ],
+          "localPosition": "on original functional owner surface",
+          "airNeighborCount": 1,
+          "exposedFaceDirections": [
+            "-X"
+          ],
+          "rayClearDirections": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "featureId": "windshield",
+      "ownerPart": "cab_front",
+      "expectedViews": [
+        "front",
+        "oblique"
+      ],
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "coordinates": [
+        [
+          3,
+          5,
+          12
+        ],
+        [
+          3,
+          6,
+          12
+        ],
+        [
+          3,
+          7,
+          12
+        ],
+        [
+          4,
+          5,
+          12
+        ],
+        [
+          4,
+          6,
+          12
+        ],
+        [
+          4,
+          7,
+          12
+        ],
+        [
+          5,
+          5,
+          12
+        ],
+        [
+          5,
+          6,
+          12
+        ],
+        [
+          5,
+          7,
+          12
+        ],
+        [
+          6,
+          5,
+          12
+        ],
+        [
+          6,
+          6,
+          12
+        ],
+        [
+          6,
+          7,
+          12
+        ],
+        [
+          7,
+          5,
+          12
+        ],
+        [
+          7,
+          6,
+          12
+        ],
+        [
+          7,
+          7,
+          12
+        ],
+        [
+          8,
+          5,
+          12
+        ],
+        [
+          8,
+          6,
+          12
+        ],
+        [
+          8,
+          7,
+          12
+        ]
+      ],
+      "sampledVoxels": 18,
+      "exposedVoxels": 18,
+      "connectedToOwner": true,
+      "rayClear": true,
+      "unoccludedPixels": {
+        "front": 3300,
+        "side": 0,
+        "left": 0,
+        "top": 0,
+        "oblique": 700
+      },
+      "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+      "witness": [
+        {
+          "coordinate": [
+            3,
+            5,
+            12
+          ],
+          "localPosition": "on original functional owner surface",
+          "airNeighborCount": 1,
+          "exposedFaceDirections": [
+            "-Z"
+          ],
+          "rayClearDirections": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "featureId": "door",
+      "ownerPart": "cab_right",
+      "expectedViews": [
+        "side",
+        "oblique"
+      ],
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "coordinates": [
+        [
+          9,
+          4,
+          10
+        ],
+        [
+          9,
+          4,
+          11
+        ],
+        [
+          9,
+          8,
+          10
+        ],
+        [
+          9,
+          8,
+          11
+        ],
+        [
+          10,
+          4,
+          10
+        ],
+        [
+          10,
+          4,
+          11
+        ],
+        [
+          10,
+          8,
+          10
+        ],
+        [
+          10,
+          8,
+          11
+        ]
+      ],
+      "sampledVoxels": 8,
+      "exposedVoxels": 8,
+      "connectedToOwner": true,
+      "rayClear": true,
+      "unoccludedPixels": {
+        "front": 0,
+        "side": 650,
+        "left": 0,
+        "top": 0,
+        "oblique": 239
+      },
+      "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+      "witness": [
+        {
+          "coordinate": [
+            9,
+            4,
+            10
+          ],
+          "localPosition": "on original functional owner surface",
+          "airNeighborCount": 1,
+          "exposedFaceDirections": [
+            "-X"
+          ],
+          "rayClearDirections": []
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "nonApplicableFeatures": {
+    "animalEyes": "not_applicable: no animal categories"
+  },
+  "failureReasons": [],
+  "passed": true,
+  "semanticVerificationScope": "measured occupancy, component, part adjacency, opening witnesses, support and surface rays",
+  "advancedSemanticChecks": {
+    "minimumConnectionCrossSection": "bbox_thickness_measured_for_narrow_parts",
+    "sideLeakFloodMask": "independent_verifier",
+    "nearDuplicateMeaningfulnessReview": "pending"
+  },
+  "formatRoundtrip": {
+    "npzCoordinatesColorsOccupancy": true,
+    "voxCoordinatesColors": true,
+    "voxAxisTransform": "JSON(x,y,z) -> VOX(x,z,y)",
+    "objExposedFaceCount": 1186,
+    "previewViews": [
+      "front +Z",
+      "side +X",
+      "top +Y",
+      "left -X",
+      "back -Z",
+      "oblique +X +Y +Z"
+    ]
+  },
+  "exactOccupancyHash": "b3d5da551a6f9b36c730177115e13996304478f8f0be90da6c5038297b515dd7",
+  "canonicalGeometryHash": "04a52960276fdd33659a5e1b67fe6b0c94405d218b85dd94f898625112fe0543",
+  "initialVoxelCount": 1788,
+  "resamplingHistory": [
+    {
+      "scale": 0.815666619986309,
+      "actualVoxelCount": 1022,
+      "failureReasons": []
+    }
+  ],
+  "duplicateCoordinateCleanupCount": 0,
+  "historicalExactDedupStatus": "unavailable_index",
+  "crossShardDedupStatus": "awaiting_merge",
+  "historicalCanonicalDedupStatus": "unavailable_coordinates",
+  "legoAssemblyStatus": "not_attempted",
+  "physicalValidationStatus": "not_attempted",
+  "generationInstructionReplay": {
+    "executedFullLevel": 5,
+    "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+    "coordinateRgbPartEquality": true,
+    "actualVoxelCount": 1022,
+    "exactOccupancyHash": "b3d5da551a6f9b36c730177115e13996304478f8f0be90da6c5038297b515dd7",
+    "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+    "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+    "inputVoxelSha256": "c85f8414dafb2fa808b3b04f38d77df36ec02a9f063ae59a0eafb4087304aa0b",
+    "visibilitySchemaVersion": 3
+  },
+  "partSeparation": {}
+}

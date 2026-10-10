@@ -1,0 +1,118 @@
+{
+  "actualVoxelCount": 978,
+  "sixNeighborComponentCount": 1,
+  "checks": {
+    "voxelRange": true,
+    "singleSixConnectedComponent": true,
+    "nonnegative48Grid": true,
+    "groundContactY0": true,
+    "uniqueCoordinates": true,
+    "mouthReachesBodyCavity": true
+  },
+  "parts": {
+    "bottom": {
+      "voxelCount": 286,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        13,
+        2,
+        11
+      ]
+    },
+    "body": {
+      "voxelCount": 520,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        13,
+        6,
+        11
+      ]
+    },
+    "rim": {
+      "voxelCount": 172,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        11,
+        2,
+        11
+      ]
+    }
+  },
+  "openings": {
+    "cavity": {
+      "coordinate": [
+        6,
+        2,
+        5
+      ],
+      "empty": true,
+      "exteriorReachable": true,
+      "solidFloorBelow": true
+    },
+    "neck_cavity": {
+      "coordinate": [
+        6,
+        8,
+        5
+      ],
+      "empty": true,
+      "exteriorReachable": true
+    }
+  },
+  "visibleSurfaceFeatures": [],
+  "nonApplicableFeatures": {
+    "animalEyes": "not_applicable: no animal categories"
+  },
+  "failureReasons": [],
+  "passed": true,
+  "semanticVerificationScope": "measured occupancy, component, part adjacency, opening witnesses, support and surface rays",
+  "advancedSemanticChecks": {
+    "minimumConnectionCrossSection": "bbox_thickness_measured_for_narrow_parts",
+    "sideLeakFloodMask": "independent_verifier",
+    "nearDuplicateMeaningfulnessReview": "pending"
+  },
+  "formatRoundtrip": {
+    "npzCoordinatesColorsOccupancy": true,
+    "voxCoordinatesColors": true,
+    "voxAxisTransform": "JSON(x,y,z) -> VOX(x,z,y)",
+    "objExposedFaceCount": 1066,
+    "previewViews": [
+      "front +Z",
+      "side +X",
+      "top +Y",
+      "left -X",
+      "back -Z",
+      "oblique +X +Y +Z"
+    ]
+  },
+  "exactOccupancyHash": "efa2eb637d1cc4f4b6354c7539db86cb794ba417b88c540a07d5026ecded1a25",
+  "canonicalGeometryHash": "1fcde2ad93600058bb063a937f90eb16e7a5755541fef0d804e82f4a14b72864",
+  "initialVoxelCount": 1096,
+  "resamplingHistory": [
+    {
+      "scale": 0.9602073143736235,
+      "actualVoxelCount": 978,
+      "failureReasons": []
+    }
+  ],
+  "duplicateCoordinateCleanupCount": 0,
+  "historicalExactDedupStatus": "unavailable_index",
+  "crossShardDedupStatus": "awaiting_merge",
+  "historicalCanonicalDedupStatus": "unavailable_coordinates",
+  "legoAssemblyStatus": "not_attempted",
+  "physicalValidationStatus": "not_attempted",
+  "generationInstructionReplay": {
+    "executedFullLevel": 5,
+    "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+    "coordinateRgbPartEquality": true,
+    "actualVoxelCount": 978,
+    "exactOccupancyHash": "efa2eb637d1cc4f4b6354c7539db86cb794ba417b88c540a07d5026ecded1a25",
+    "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+    "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+    "inputVoxelSha256": "dac4048dcc41d617917da6885d0b4d9fe72093652a8f735a60d5b95da531d109",
+    "visibilitySchemaVersion": 3
+  }
+}

@@ -1,0 +1,735 @@
+[
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_bookshelf_m0001",
+    "category": "bookshelf",
+    "categoryId": 5,
+    "variantId": "vx80k5p_20261010_B_bookshelf_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_bookshelf_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_bookshelf_m0001",
+    "modelSeed": 800047616,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_bookshelf_m0001_l1",
+    "promptLevel": 1,
+    "promptType": "minimal",
+    "structuralVariant": 0,
+    "captionZh": "一个带直角侧框及开放层板隔间的几何书架。",
+    "captionEn": "A geometric bookshelf with rectangular side frames and open shelf compartments.",
+    "voxelPromptZh": "一个带直角侧框及开放层板隔间的几何书架。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A geometric bookshelf with rectangular side frames and open shelf compartments. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "left_side",
+      "right_side",
+      "bottom",
+      "top",
+      "shelf_1"
+    ],
+    "invariantFeatures": "left and right side panels, top and bottom panels and intermediate shelves",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount"
+    ],
+    "designSpec": {
+      "category": "bookshelf",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 8.0,
+      "height": 22.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 47616,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/bookshelf/vx80k5p_20261010_B_bookshelf_m0001/model.json",
+    "modelNpzPath": "models/bookshelf/vx80k5p_20261010_B_bookshelf_m0001/model.npz",
+    "targetOccupancyHash": "41aa8b1d41f434701547a505d8dcda03fb7f129900611fd19bd8ad8cafa1fb18",
+    "targetCanonicalGeometryHash": "1463dab9e56c5d3b34ffc2585aaacb78b556800c1fd031ce3c2ad8092c842fd9",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a geometric bookshelf with rectangular side frames and open shelf compartments"
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a geometric bookshelf with rectangular side frames and open shelf compartments"
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_bookshelf_m0001",
+    "category": "bookshelf",
+    "categoryId": 5,
+    "variantId": "vx80k5p_20261010_B_bookshelf_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_bookshelf_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_bookshelf_m0001",
+    "modelSeed": 800047616,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_bookshelf_m0001_l2",
+    "promptLevel": 2,
+    "promptType": "basic_structure",
+    "structuralVariant": 0,
+    "captionZh": "一个带直角侧框及开放层板隔间的几何书架。它由左右侧板、顶板、底板和中间层板组成。",
+    "captionEn": "A geometric bookshelf with rectangular side frames and open shelf compartments. It includes left and right side panels, top and bottom panels and intermediate shelves.",
+    "voxelPromptZh": "一个带直角侧框及开放层板隔间的几何书架。它由左右侧板、顶板、底板和中间层板组成。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A geometric bookshelf with rectangular side frames and open shelf compartments. It includes left and right side panels, top and bottom panels and intermediate shelves. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "left_side",
+      "right_side",
+      "bottom",
+      "top",
+      "shelf_1"
+    ],
+    "invariantFeatures": "left and right side panels, top and bottom panels and intermediate shelves",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount"
+    ],
+    "designSpec": {
+      "category": "bookshelf",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 8.0,
+      "height": 22.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 47616,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/bookshelf/vx80k5p_20261010_B_bookshelf_m0001/model.json",
+    "modelNpzPath": "models/bookshelf/vx80k5p_20261010_B_bookshelf_m0001/model.npz",
+    "targetOccupancyHash": "41aa8b1d41f434701547a505d8dcda03fb7f129900611fd19bd8ad8cafa1fb18",
+    "targetCanonicalGeometryHash": "1463dab9e56c5d3b34ffc2585aaacb78b556800c1fd031ce3c2ad8092c842fd9",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a geometric bookshelf with rectangular side frames and open shelf compartments"
+      },
+      {
+        "parts": [
+          "left_side",
+          "right_side",
+          "bottom",
+          "top",
+          "shelf_1"
+        ]
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a geometric bookshelf with rectangular side frames and open shelf compartments"
+      },
+      {
+        "parts": [
+          "left_side",
+          "right_side",
+          "bottom",
+          "top",
+          "shelf_1"
+        ]
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_bookshelf_m0001",
+    "category": "bookshelf",
+    "categoryId": 5,
+    "variantId": "vx80k5p_20261010_B_bookshelf_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_bookshelf_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_bookshelf_m0001",
+    "modelSeed": 800047616,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_bookshelf_m0001_l3",
+    "promptLevel": 3,
+    "promptType": "geometry",
+    "structuralVariant": 0,
+    "captionZh": "一个带直角侧框及开放层板隔间的几何书架。它由左右侧板、顶板、底板和中间层板组成。层板厚度约为框宽的0.15倍，形成2层开放隔间。",
+    "captionEn": "A geometric bookshelf with rectangular side frames and open shelf compartments. It includes left and right side panels, top and bottom panels and intermediate shelves. Shelves are 0.15 frame-widths thick, forming 2 open rows.",
+    "voxelPromptZh": "一个带直角侧框及开放层板隔间的几何书架。它由左右侧板、顶板、底板和中间层板组成。层板厚度约为框宽的0.15倍，形成2层开放隔间。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A geometric bookshelf with rectangular side frames and open shelf compartments. It includes left and right side panels, top and bottom panels and intermediate shelves. Shelves are 0.15 frame-widths thick, forming 2 open rows. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "left_side",
+      "right_side",
+      "bottom",
+      "top",
+      "shelf_1"
+    ],
+    "invariantFeatures": "left and right side panels, top and bottom panels and intermediate shelves",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount"
+    ],
+    "designSpec": {
+      "category": "bookshelf",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 8.0,
+      "height": 22.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 47616,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/bookshelf/vx80k5p_20261010_B_bookshelf_m0001/model.json",
+    "modelNpzPath": "models/bookshelf/vx80k5p_20261010_B_bookshelf_m0001/model.npz",
+    "targetOccupancyHash": "41aa8b1d41f434701547a505d8dcda03fb7f129900611fd19bd8ad8cafa1fb18",
+    "targetCanonicalGeometryHash": "1463dab9e56c5d3b34ffc2585aaacb78b556800c1fd031ce3c2ad8092c842fd9",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a geometric bookshelf with rectangular side frames and open shelf compartments"
+      },
+      {
+        "parts": [
+          "left_side",
+          "right_side",
+          "bottom",
+          "top",
+          "shelf_1"
+        ]
+      },
+      {
+        "structuralDetail": "Shelves are 0.15 frame-widths thick, forming 2 open rows.",
+        "section": {
+          "part": "shelf_1",
+          "thicknessAxis": 1,
+          "referencePart": "bottom",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a geometric bookshelf with rectangular side frames and open shelf compartments"
+      },
+      {
+        "parts": [
+          "left_side",
+          "right_side",
+          "bottom",
+          "top",
+          "shelf_1"
+        ]
+      },
+      {
+        "structuralDetail": "Shelves are 0.15 frame-widths thick, forming 2 open rows.",
+        "section": {
+          "part": "shelf_1",
+          "thicknessAxis": 1,
+          "referencePart": "bottom",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_bookshelf_m0001",
+    "category": "bookshelf",
+    "categoryId": 5,
+    "variantId": "vx80k5p_20261010_B_bookshelf_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_bookshelf_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_bookshelf_m0001",
+    "modelSeed": 800047616,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_bookshelf_m0001_l4",
+    "promptLevel": 4,
+    "promptType": "proportion",
+    "structuralVariant": 0,
+    "captionZh": "一个带直角侧框及开放层板隔间的几何书架。它由左右侧板、顶板、底板和中间层板组成。层板厚度约为框宽的0.15倍，形成2层开放隔间。宽深比约1.62，高/最大水平跨度约1.62；隔层空隙位于左右侧板之间，底层空隙与侧板高比0.47。",
+    "captionEn": "A geometric bookshelf with rectangular side frames and open shelf compartments. It includes left and right side panels, top and bottom panels and intermediate shelves. Shelves are 0.15 frame-widths thick, forming 2 open rows. Width/depth is 1.62; height/horizontal-span is 1.62. Shelf gaps remain between the side panels. Lower-gap/side-height is 0.47.",
+    "voxelPromptZh": "一个带直角侧框及开放层板隔间的几何书架。它由左右侧板、顶板、底板和中间层板组成。层板厚度约为框宽的0.15倍，形成2层开放隔间。宽深比约1.62，高/最大水平跨度约1.62；隔层空隙位于左右侧板之间，底层空隙与侧板高比0.47。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A geometric bookshelf with rectangular side frames and open shelf compartments. It includes left and right side panels, top and bottom panels and intermediate shelves. Shelves are 0.15 frame-widths thick, forming 2 open rows. Width/depth is 1.62; height/horizontal-span is 1.62. Shelf gaps remain between the side panels. Lower-gap/side-height is 0.47. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "left_side",
+      "right_side",
+      "bottom",
+      "top",
+      "shelf_1"
+    ],
+    "invariantFeatures": "left and right side panels, top and bottom panels and intermediate shelves",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount"
+    ],
+    "designSpec": {
+      "category": "bookshelf",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 8.0,
+      "height": 22.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 47616,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/bookshelf/vx80k5p_20261010_B_bookshelf_m0001/model.json",
+    "modelNpzPath": "models/bookshelf/vx80k5p_20261010_B_bookshelf_m0001/model.npz",
+    "targetOccupancyHash": "41aa8b1d41f434701547a505d8dcda03fb7f129900611fd19bd8ad8cafa1fb18",
+    "targetCanonicalGeometryHash": "1463dab9e56c5d3b34ffc2585aaacb78b556800c1fd031ce3c2ad8092c842fd9",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a geometric bookshelf with rectangular side frames and open shelf compartments"
+      },
+      {
+        "parts": [
+          "left_side",
+          "right_side",
+          "bottom",
+          "top",
+          "shelf_1"
+        ]
+      },
+      {
+        "structuralDetail": "Shelves are 0.15 frame-widths thick, forming 2 open rows.",
+        "section": {
+          "part": "shelf_1",
+          "thicknessAxis": 1,
+          "referencePart": "bottom",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 1.62,
+        "heightSpanRatio": 1.62,
+        "partPosition": "Shelf gaps remain between the side panels.",
+        "spacing": {
+          "kind": "clear_gap",
+          "partA": "bottom",
+          "partB": "shelf_1",
+          "axis": 1,
+          "referencePart": "left_side",
+          "referenceAxis": 1,
+          "ratio": 0.47
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a geometric bookshelf with rectangular side frames and open shelf compartments"
+      },
+      {
+        "parts": [
+          "left_side",
+          "right_side",
+          "bottom",
+          "top",
+          "shelf_1"
+        ]
+      },
+      {
+        "structuralDetail": "Shelves are 0.15 frame-widths thick, forming 2 open rows.",
+        "section": {
+          "part": "shelf_1",
+          "thicknessAxis": 1,
+          "referencePart": "bottom",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 1.62,
+        "heightSpanRatio": 1.62,
+        "partPosition": "Shelf gaps remain between the side panels.",
+        "spacing": {
+          "kind": "clear_gap",
+          "partA": "bottom",
+          "partB": "shelf_1",
+          "axis": 1,
+          "referencePart": "left_side",
+          "referenceAxis": 1,
+          "ratio": 0.47
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_bookshelf_m0001",
+    "category": "bookshelf",
+    "categoryId": 5,
+    "variantId": "vx80k5p_20261010_B_bookshelf_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_bookshelf_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_bookshelf_m0001",
+    "modelSeed": 800047616,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_bookshelf_m0001_l5",
+    "promptLevel": 5,
+    "promptType": "comprehensive",
+    "structuralVariant": 0,
+    "captionZh": "一个带直角侧框及开放层板隔间的几何书架。它由左右侧板、顶板、底板和中间层板组成。层板厚度约为框宽的0.15倍，形成2层开放隔间。宽深比约1.62，高/最大水平跨度约1.62；隔层空隙位于左右侧板之间，底层空隙与侧板高比0.47。实测采用2种不透明颜色，侧板以棕色为主，层板呈浅棕色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。",
+    "captionEn": "A geometric bookshelf with rectangular side frames and open shelf compartments. It includes left and right side panels, top and bottom panels and intermediate shelves. Shelves are 0.15 frame-widths thick, forming 2 open rows. Width/depth is 1.62; height/horizontal-span is 1.62. Shelf gaps remain between the side panels. Lower-gap/side-height is 0.47. Across 2 opaque colors, the sides is mainly brown and the shelves is tan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces.",
+    "voxelPromptZh": "一个带直角侧框及开放层板隔间的几何书架。它由左右侧板、顶板、底板和中间层板组成。层板厚度约为框宽的0.15倍，形成2层开放隔间。宽深比约1.62，高/最大水平跨度约1.62；隔层空隙位于左右侧板之间，底层空隙与侧板高比0.47。实测采用2种不透明颜色，侧板以棕色为主，层板呈浅棕色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A geometric bookshelf with rectangular side frames and open shelf compartments. It includes left and right side panels, top and bottom panels and intermediate shelves. Shelves are 0.15 frame-widths thick, forming 2 open rows. Width/depth is 1.62; height/horizontal-span is 1.62. Shelf gaps remain between the side panels. Lower-gap/side-height is 0.47. Across 2 opaque colors, the sides is mainly brown and the shelves is tan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "left_side",
+      "right_side",
+      "bottom",
+      "top",
+      "shelf_1"
+    ],
+    "invariantFeatures": "left and right side panels, top and bottom panels and intermediate shelves",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount"
+    ],
+    "designSpec": {
+      "category": "bookshelf",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 8.0,
+      "height": 22.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 47616,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/bookshelf/vx80k5p_20261010_B_bookshelf_m0001/model.json",
+    "modelNpzPath": "models/bookshelf/vx80k5p_20261010_B_bookshelf_m0001/model.npz",
+    "targetOccupancyHash": "41aa8b1d41f434701547a505d8dcda03fb7f129900611fd19bd8ad8cafa1fb18",
+    "targetCanonicalGeometryHash": "1463dab9e56c5d3b34ffc2585aaacb78b556800c1fd031ce3c2ad8092c842fd9",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a geometric bookshelf with rectangular side frames and open shelf compartments"
+      },
+      {
+        "parts": [
+          "left_side",
+          "right_side",
+          "bottom",
+          "top",
+          "shelf_1"
+        ]
+      },
+      {
+        "structuralDetail": "Shelves are 0.15 frame-widths thick, forming 2 open rows.",
+        "section": {
+          "part": "shelf_1",
+          "thicknessAxis": 1,
+          "referencePart": "bottom",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 1.62,
+        "heightSpanRatio": 1.62,
+        "partPosition": "Shelf gaps remain between the side panels.",
+        "spacing": {
+          "kind": "clear_gap",
+          "partA": "bottom",
+          "partB": "shelf_1",
+          "axis": 1,
+          "referencePart": "left_side",
+          "referenceAxis": 1,
+          "ratio": 0.47
+        }
+      },
+      {
+        "paletteSize": 2,
+        "colorRegions": [
+          {
+            "part": "left_side",
+            "color": [
+              177,
+              113,
+              62
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "shelf_1",
+            "color": [
+              216,
+              182,
+              121
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a geometric bookshelf with rectangular side frames and open shelf compartments"
+      },
+      {
+        "parts": [
+          "left_side",
+          "right_side",
+          "bottom",
+          "top",
+          "shelf_1"
+        ]
+      },
+      {
+        "structuralDetail": "Shelves are 0.15 frame-widths thick, forming 2 open rows.",
+        "section": {
+          "part": "shelf_1",
+          "thicknessAxis": 1,
+          "referencePart": "bottom",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 1.62,
+        "heightSpanRatio": 1.62,
+        "partPosition": "Shelf gaps remain between the side panels.",
+        "spacing": {
+          "kind": "clear_gap",
+          "partA": "bottom",
+          "partB": "shelf_1",
+          "axis": 1,
+          "referencePart": "left_side",
+          "referenceAxis": 1,
+          "ratio": 0.47
+        }
+      },
+      {
+        "paletteSize": 2,
+        "colorRegions": [
+          {
+            "part": "left_side",
+            "color": [
+              177,
+              113,
+              62
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "shelf_1",
+            "color": [
+              216,
+              182,
+              121
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  }
+]

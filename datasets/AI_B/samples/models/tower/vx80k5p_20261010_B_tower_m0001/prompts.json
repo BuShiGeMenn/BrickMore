@@ -1,0 +1,775 @@
+[
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_tower_m0001",
+    "category": "tower",
+    "categoryId": 19,
+    "variantId": "vx80k5p_20261010_B_tower_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_tower_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_tower_m0001",
+    "modelSeed": 800074286,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_tower_m0001_l1",
+    "promptLevel": 1,
+    "promptType": "minimal",
+    "structuralVariant": 0,
+    "captionZh": "一个带连续阶梯塔身、角形塔冠及窗口的方塔。",
+    "captionEn": "A square tower with a stepped shaft, angular crown and real windows.",
+    "voxelPromptZh": "一个带连续阶梯塔身、角形塔冠及窗口的方塔。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A square tower with a stepped shaft, angular crown and real windows. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "base",
+      "shaft",
+      "crown"
+    ],
+    "invariantFeatures": "a base, stepped shaft and upper crown",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer",
+      "towerMiddleWidthFraction",
+      "towerTopWidthFraction"
+    ],
+    "designSpec": {
+      "category": "tower",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 8.0,
+      "height": 22.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 74286,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/tower/vx80k5p_20261010_B_tower_m0001/model.json",
+    "modelNpzPath": "models/tower/vx80k5p_20261010_B_tower_m0001/model.npz",
+    "targetOccupancyHash": "93734e97229af352a300d469fd9182166462938b205d087e35298cccdc21d9d2",
+    "targetCanonicalGeometryHash": "0c3c5f14241e9a47780f70b95be8b7e82b54712d3ae293c86ff50845a4d02ed5",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a square tower with a stepped shaft, angular crown and real windows"
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a square tower with a stepped shaft, angular crown and real windows"
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_tower_m0001",
+    "category": "tower",
+    "categoryId": 19,
+    "variantId": "vx80k5p_20261010_B_tower_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_tower_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_tower_m0001",
+    "modelSeed": 800074286,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_tower_m0001_l2",
+    "promptLevel": 2,
+    "promptType": "basic_structure",
+    "structuralVariant": 0,
+    "captionZh": "一个带连续阶梯塔身、角形塔冠及窗口的方塔。它由塔底、阶梯主体和顶部塔冠组成。",
+    "captionEn": "A square tower with a stepped shaft, angular crown and real windows. It includes a base, stepped shaft and upper crown.",
+    "voxelPromptZh": "一个带连续阶梯塔身、角形塔冠及窗口的方塔。它由塔底、阶梯主体和顶部塔冠组成。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A square tower with a stepped shaft, angular crown and real windows. It includes a base, stepped shaft and upper crown. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "base",
+      "shaft",
+      "crown"
+    ],
+    "invariantFeatures": "a base, stepped shaft and upper crown",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer",
+      "towerMiddleWidthFraction",
+      "towerTopWidthFraction"
+    ],
+    "designSpec": {
+      "category": "tower",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 8.0,
+      "height": 22.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 74286,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/tower/vx80k5p_20261010_B_tower_m0001/model.json",
+    "modelNpzPath": "models/tower/vx80k5p_20261010_B_tower_m0001/model.npz",
+    "targetOccupancyHash": "93734e97229af352a300d469fd9182166462938b205d087e35298cccdc21d9d2",
+    "targetCanonicalGeometryHash": "0c3c5f14241e9a47780f70b95be8b7e82b54712d3ae293c86ff50845a4d02ed5",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a square tower with a stepped shaft, angular crown and real windows"
+      },
+      {
+        "parts": [
+          "base",
+          "shaft",
+          "crown"
+        ]
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a square tower with a stepped shaft, angular crown and real windows"
+      },
+      {
+        "parts": [
+          "base",
+          "shaft",
+          "crown"
+        ]
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_tower_m0001",
+    "category": "tower",
+    "categoryId": 19,
+    "variantId": "vx80k5p_20261010_B_tower_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_tower_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_tower_m0001",
+    "modelSeed": 800074286,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_tower_m0001_l3",
+    "promptLevel": 3,
+    "promptType": "geometry",
+    "structuralVariant": 0,
+    "captionZh": "一个带连续阶梯塔身、角形塔冠及窗口的方塔。它由塔底、阶梯主体和顶部塔冠组成。底厚约为底宽的0.15倍，连续塔壁被窗口实际穿透。",
+    "captionEn": "A square tower with a stepped shaft, angular crown and real windows. It includes a base, stepped shaft and upper crown. The floor is 0.15 base-widths thick; shaft windows penetrate the walls.",
+    "voxelPromptZh": "一个带连续阶梯塔身、角形塔冠及窗口的方塔。它由塔底、阶梯主体和顶部塔冠组成。底厚约为底宽的0.15倍，连续塔壁被窗口实际穿透。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A square tower with a stepped shaft, angular crown and real windows. It includes a base, stepped shaft and upper crown. The floor is 0.15 base-widths thick; shaft windows penetrate the walls. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "base",
+      "shaft",
+      "crown"
+    ],
+    "invariantFeatures": "a base, stepped shaft and upper crown",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer",
+      "towerMiddleWidthFraction",
+      "towerTopWidthFraction"
+    ],
+    "designSpec": {
+      "category": "tower",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 8.0,
+      "height": 22.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 74286,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/tower/vx80k5p_20261010_B_tower_m0001/model.json",
+    "modelNpzPath": "models/tower/vx80k5p_20261010_B_tower_m0001/model.npz",
+    "targetOccupancyHash": "93734e97229af352a300d469fd9182166462938b205d087e35298cccdc21d9d2",
+    "targetCanonicalGeometryHash": "0c3c5f14241e9a47780f70b95be8b7e82b54712d3ae293c86ff50845a4d02ed5",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a square tower with a stepped shaft, angular crown and real windows"
+      },
+      {
+        "parts": [
+          "base",
+          "shaft",
+          "crown"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.15 base-widths thick; shaft windows penetrate the walls.",
+        "section": {
+          "part": "base",
+          "thicknessAxis": 1,
+          "referencePart": "base",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a square tower with a stepped shaft, angular crown and real windows"
+      },
+      {
+        "parts": [
+          "base",
+          "shaft",
+          "crown"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.15 base-widths thick; shaft windows penetrate the walls.",
+        "section": {
+          "part": "base",
+          "thicknessAxis": 1,
+          "referencePart": "base",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_tower_m0001",
+    "category": "tower",
+    "categoryId": 19,
+    "variantId": "vx80k5p_20261010_B_tower_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_tower_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_tower_m0001",
+    "modelSeed": 800074286,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_tower_m0001_l4",
+    "promptLevel": 4,
+    "promptType": "proportion",
+    "structuralVariant": 0,
+    "captionZh": "一个带连续阶梯塔身、角形塔冠及窗口的方塔。它由塔底、阶梯主体和顶部塔冠组成。底厚约为底宽的0.15倍，连续塔壁被窗口实际穿透。宽深比约1.86，高/最大水平跨度约1.54；上层轮廓相对塔底逐级收窄，冠中心距身底/身高1.10。",
+    "captionEn": "A square tower with a stepped shaft, angular crown and real windows. It includes a base, stepped shaft and upper crown. The floor is 0.15 base-widths thick; shaft windows penetrate the walls. Width/depth is 1.86; height/horizontal-span is 1.54. Upper stages narrow above the base. Crown-height above shaft-bottom is 1.10 shaft-heights.",
+    "voxelPromptZh": "一个带连续阶梯塔身、角形塔冠及窗口的方塔。它由塔底、阶梯主体和顶部塔冠组成。底厚约为底宽的0.15倍，连续塔壁被窗口实际穿透。宽深比约1.86，高/最大水平跨度约1.54；上层轮廓相对塔底逐级收窄，冠中心距身底/身高1.10。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A square tower with a stepped shaft, angular crown and real windows. It includes a base, stepped shaft and upper crown. The floor is 0.15 base-widths thick; shaft windows penetrate the walls. Width/depth is 1.86; height/horizontal-span is 1.54. Upper stages narrow above the base. Crown-height above shaft-bottom is 1.10 shaft-heights. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "base",
+      "shaft",
+      "crown"
+    ],
+    "invariantFeatures": "a base, stepped shaft and upper crown",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer",
+      "towerMiddleWidthFraction",
+      "towerTopWidthFraction"
+    ],
+    "designSpec": {
+      "category": "tower",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 8.0,
+      "height": 22.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 74286,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/tower/vx80k5p_20261010_B_tower_m0001/model.json",
+    "modelNpzPath": "models/tower/vx80k5p_20261010_B_tower_m0001/model.npz",
+    "targetOccupancyHash": "93734e97229af352a300d469fd9182166462938b205d087e35298cccdc21d9d2",
+    "targetCanonicalGeometryHash": "0c3c5f14241e9a47780f70b95be8b7e82b54712d3ae293c86ff50845a4d02ed5",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a square tower with a stepped shaft, angular crown and real windows"
+      },
+      {
+        "parts": [
+          "base",
+          "shaft",
+          "crown"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.15 base-widths thick; shaft windows penetrate the walls.",
+        "section": {
+          "part": "base",
+          "thicknessAxis": 1,
+          "referencePart": "base",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 1.86,
+        "heightSpanRatio": 1.54,
+        "partPosition": "Upper stages narrow above the base.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "crown",
+          "axis": 1,
+          "referencePart": "shaft",
+          "referenceAxis": 1,
+          "ratio": 1.1
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a square tower with a stepped shaft, angular crown and real windows"
+      },
+      {
+        "parts": [
+          "base",
+          "shaft",
+          "crown"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.15 base-widths thick; shaft windows penetrate the walls.",
+        "section": {
+          "part": "base",
+          "thicknessAxis": 1,
+          "referencePart": "base",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 1.86,
+        "heightSpanRatio": 1.54,
+        "partPosition": "Upper stages narrow above the base.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "crown",
+          "axis": 1,
+          "referencePart": "shaft",
+          "referenceAxis": 1,
+          "ratio": 1.1
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_tower_m0001",
+    "category": "tower",
+    "categoryId": 19,
+    "variantId": "vx80k5p_20261010_B_tower_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_tower_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_tower_m0001",
+    "modelSeed": 800074286,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_tower_m0001_l5",
+    "promptLevel": 5,
+    "promptType": "comprehensive",
+    "structuralVariant": 0,
+    "captionZh": "一个带连续阶梯塔身、角形塔冠及窗口的方塔。它由塔底、阶梯主体和顶部塔冠组成。底厚约为底宽的0.15倍，连续塔壁被窗口实际穿透。宽深比约1.86，高/最大水平跨度约1.54；上层轮廓相对塔底逐级收窄，冠中心距身底/身高1.10。实测采用2种不透明颜色，塔身以棕色为主，塔冠呈浅棕色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。",
+    "captionEn": "A square tower with a stepped shaft, angular crown and real windows. It includes a base, stepped shaft and upper crown. The floor is 0.15 base-widths thick; shaft windows penetrate the walls. Width/depth is 1.86; height/horizontal-span is 1.54. Upper stages narrow above the base. Crown-height above shaft-bottom is 1.10 shaft-heights. Across 2 opaque colors, the shaft is mainly brown and the crown is tan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces.",
+    "voxelPromptZh": "一个带连续阶梯塔身、角形塔冠及窗口的方塔。它由塔底、阶梯主体和顶部塔冠组成。底厚约为底宽的0.15倍，连续塔壁被窗口实际穿透。宽深比约1.86，高/最大水平跨度约1.54；上层轮廓相对塔底逐级收窄，冠中心距身底/身高1.10。实测采用2种不透明颜色，塔身以棕色为主，塔冠呈浅棕色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A square tower with a stepped shaft, angular crown and real windows. It includes a base, stepped shaft and upper crown. The floor is 0.15 base-widths thick; shaft windows penetrate the walls. Width/depth is 1.86; height/horizontal-span is 1.54. Upper stages narrow above the base. Crown-height above shaft-bottom is 1.10 shaft-heights. Across 2 opaque colors, the shaft is mainly brown and the crown is tan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "base",
+      "shaft",
+      "crown"
+    ],
+    "invariantFeatures": "a base, stepped shaft and upper crown",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer",
+      "towerMiddleWidthFraction",
+      "towerTopWidthFraction"
+    ],
+    "designSpec": {
+      "category": "tower",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 8.0,
+      "height": 22.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 74286,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/tower/vx80k5p_20261010_B_tower_m0001/model.json",
+    "modelNpzPath": "models/tower/vx80k5p_20261010_B_tower_m0001/model.npz",
+    "targetOccupancyHash": "93734e97229af352a300d469fd9182166462938b205d087e35298cccdc21d9d2",
+    "targetCanonicalGeometryHash": "0c3c5f14241e9a47780f70b95be8b7e82b54712d3ae293c86ff50845a4d02ed5",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a square tower with a stepped shaft, angular crown and real windows"
+      },
+      {
+        "parts": [
+          "base",
+          "shaft",
+          "crown"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.15 base-widths thick; shaft windows penetrate the walls.",
+        "section": {
+          "part": "base",
+          "thicknessAxis": 1,
+          "referencePart": "base",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 1.86,
+        "heightSpanRatio": 1.54,
+        "partPosition": "Upper stages narrow above the base.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "crown",
+          "axis": 1,
+          "referencePart": "shaft",
+          "referenceAxis": 1,
+          "ratio": 1.1
+        }
+      },
+      {
+        "paletteSize": 2,
+        "colorRegions": [
+          {
+            "part": "shaft",
+            "color": [
+              177,
+              113,
+              62
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "crown",
+            "color": [
+              216,
+              182,
+              121
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a square tower with a stepped shaft, angular crown and real windows"
+      },
+      {
+        "parts": [
+          "base",
+          "shaft",
+          "crown"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.15 base-widths thick; shaft windows penetrate the walls.",
+        "section": {
+          "part": "base",
+          "thicknessAxis": 1,
+          "referencePart": "base",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 1.86,
+        "heightSpanRatio": 1.54,
+        "partPosition": "Upper stages narrow above the base.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "crown",
+          "axis": 1,
+          "referencePart": "shaft",
+          "referenceAxis": 1,
+          "ratio": 1.1
+        }
+      },
+      {
+        "paletteSize": 2,
+        "colorRegions": [
+          {
+            "part": "shaft",
+            "color": [
+              177,
+              113,
+              62
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "crown",
+            "color": [
+              216,
+              182,
+              121
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  }
+]

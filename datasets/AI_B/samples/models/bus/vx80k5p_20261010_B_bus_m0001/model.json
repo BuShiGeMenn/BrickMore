@@ -1,0 +1,12999 @@
+{
+  "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+  "shardId": "B",
+  "modelId": "vx80k5p_20261010_B_bus_m0001",
+  "object": "bus",
+  "category": "bus",
+  "categoryId": 8,
+  "variantId": "vx80k5p_20261010_B_bus_v001",
+  "geometryFamilyId": "vx80k5p_20261010_B_bus_v001",
+  "semanticGroupKey": "vx80k5p_20261010_B_bus_m0001",
+  "tier": "detailed",
+  "globalOrdinal": 53331,
+  "modelSeed": 800053331,
+  "coordinateSystem": {
+    "x": "right",
+    "y": "up",
+    "z": "front",
+    "localForward": "+Z"
+  },
+  "gridSize": [
+    48,
+    48,
+    48
+  ],
+  "requestedVoxelRange": [
+    750,
+    1250
+  ],
+  "preferredVoxelTarget": 1000,
+  "initialVoxelCount": 1800,
+  "actualVoxelCount": 1060,
+  "generationPromptZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。它由底盘、载客舱、侧窗、车门和四个轮子组成。轮宽约为底盘宽的0.20倍，左右前后轮根连接底盘。宽深比约0.76，高/最大水平跨度约0.59；驾驶端位于车体前侧，轴距与车长比0.69。实测采用4种不透明颜色，车顶以蓝灰色为主，前窗呈青色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。 原始参数规格：{\"baseWidthFraction\": 0.55, \"category\": \"bus\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"depth\": 22.0, \"detailPosition\": 0.25, \"doorFrameGlazing\": true, \"featureCount\": 2, \"height\": 10.0, \"instance\": 0, \"lipOverhang\": 0.6, \"neckFraction\": 0.42, \"ordinal\": 53331, \"redesign\": 0, \"rimHeight\": 2.0, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.58, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 12.0}",
+  "generationPromptEn": "A box shaped bus with four wheels, side windows, door and driving cabin. It includes a chassis, passenger cabin, side windows, door and four wheels. Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides. Width/depth is 0.76; height/horizontal-span is 0.59. The driving end faces forward. Axle-gap/depth is 0.69. Across 4 opaque colors, the roof is mainly blue-gray and the windshield is cyan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments. Original parameter specification: {\"baseWidthFraction\": 0.55, \"category\": \"bus\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"depth\": 22.0, \"detailPosition\": 0.25, \"doorFrameGlazing\": true, \"featureCount\": 2, \"height\": 10.0, \"instance\": 0, \"lipOverhang\": 0.6, \"neckFraction\": 0.42, \"ordinal\": 53331, \"redesign\": 0, \"rimHeight\": 2.0, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.58, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 12.0}",
+  "semanticFeatures": {
+    "wheelCount": 4,
+    "forward": "+Z",
+    "driverEnd": "front"
+  },
+  "geometryPlan": {
+    "category": "bus",
+    "variant": 1,
+    "instance": 0,
+    "style": 0,
+    "structureIndex": 0,
+    "width": 12.0,
+    "depth": 22.0,
+    "height": 10.0,
+    "wallThickness": 2.0,
+    "shapeChamfer": 0.0,
+    "featureCount": 2,
+    "supportInset": 1.0,
+    "detailPosition": 0.25,
+    "neckFraction": 0.42,
+    "shoulderFraction": 0.58,
+    "rimHeight": 2.0,
+    "lipOverhang": 0.6,
+    "baseWidthFraction": 0.55,
+    "redesign": 0,
+    "ordinal": 53331,
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "supportInset",
+      "shapeChamfer",
+      "featureCount"
+    ],
+    "construction": "original continuous boxes and chamfered cross sections",
+    "doorFrameGlazing": true
+  },
+  "resamplingHistory": [
+    {
+      "scale": 0.8138499845290552,
+      "actualVoxelCount": 1060,
+      "failureReasons": []
+    }
+  ],
+  "finalSamplingScale": 0.8138499845290552,
+  "exactOccupancyHash": "c1598be9d438b2b8ebc144d145eb00caaba226b0e9ae1a3a278db492faa89c44",
+  "canonicalGeometryHash": "0cbe61981398d8effed022b7b952e8ce6fa38f1f9d5e753abddb9d6043368df2",
+  "canonicalHashAlgorithm": "axis-permutation-6_x_sign-8_min_sha256_utf8_xyz_semicolon_v1",
+  "promptRecordIds": [
+    "vx80k5p_20261010_B_bus_m0001_l1",
+    "vx80k5p_20261010_B_bus_m0001_l2",
+    "vx80k5p_20261010_B_bus_m0001_l3",
+    "vx80k5p_20261010_B_bus_m0001_l4",
+    "vx80k5p_20261010_B_bus_m0001_l5"
+  ],
+  "voxels": [
+    {
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_1"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_2"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_left"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 14,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 15,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 13,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 13,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 8,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 9,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 10,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 11,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "chassis"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 3,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 4,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 5,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 6,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 7,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 9,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 10,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 11,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 12,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 13,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_rear"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 13,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "cab_right"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "cab_front"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 5,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 6,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 7,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 8,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 9,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 10,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 11,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 12,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 13,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 14,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 15,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "roof"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 12,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_3"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 13,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 14,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 15,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "wheel_4"
+    }
+  ],
+  "validation": {
+    "actualVoxelCount": 1060,
+    "sixNeighborComponentCount": 1,
+    "checks": {
+      "voxelRange": true,
+      "singleSixConnectedComponent": true,
+      "nonnegative48Grid": true,
+      "groundContactY0": true,
+      "uniqueCoordinates": true,
+      "elongatedFunctionalBody": true,
+      "fourWheels": true
+    },
+    "parts": {
+      "chassis": {
+        "voxelCount": 302,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          10,
+          2,
+          17
+        ]
+      },
+      "cab_left": {
+        "voxelCount": 108,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          2,
+          5,
+          11
+        ]
+      },
+      "cab_right": {
+        "voxelCount": 108,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          2,
+          5,
+          11
+        ]
+      },
+      "cab_rear": {
+        "voxelCount": 96,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          10,
+          5,
+          2
+        ]
+      },
+      "cab_front": {
+        "voxelCount": 96,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          10,
+          5,
+          2
+        ]
+      },
+      "roof": {
+        "voxelCount": 150,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          10,
+          1,
+          15
+        ]
+      },
+      "wheel_1": {
+        "voxelCount": 42,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          2,
+          5,
+          5
+        ]
+      },
+      "wheel_2": {
+        "voxelCount": 38,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          2,
+          5,
+          5
+        ]
+      },
+      "wheel_3": {
+        "voxelCount": 63,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          3,
+          5,
+          5
+        ]
+      },
+      "wheel_4": {
+        "voxelCount": 57,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          3,
+          5,
+          5
+        ]
+      }
+    },
+    "openings": {},
+    "visibleSurfaceFeatures": [
+      {
+        "featureId": "window_left_1",
+        "ownerPart": "cab_left",
+        "expectedViews": [
+          "left"
+        ],
+        "color": [
+          98,
+          176,
+          200
+        ],
+        "coordinates": [
+          [
+            1,
+            5,
+            3
+          ],
+          [
+            1,
+            5,
+            4
+          ],
+          [
+            1,
+            5,
+            5
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            1,
+            6,
+            3
+          ],
+          [
+            1,
+            6,
+            4
+          ],
+          [
+            1,
+            6,
+            5
+          ],
+          [
+            1,
+            6,
+            6
+          ],
+          [
+            1,
+            6,
+            7
+          ],
+          [
+            1,
+            7,
+            3
+          ],
+          [
+            1,
+            7,
+            4
+          ],
+          [
+            1,
+            7,
+            5
+          ],
+          [
+            1,
+            7,
+            6
+          ],
+          [
+            1,
+            7,
+            7
+          ],
+          [
+            2,
+            5,
+            3
+          ],
+          [
+            2,
+            5,
+            4
+          ],
+          [
+            2,
+            5,
+            5
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            2,
+            5,
+            7
+          ],
+          [
+            2,
+            6,
+            3
+          ],
+          [
+            2,
+            6,
+            4
+          ],
+          [
+            2,
+            6,
+            5
+          ],
+          [
+            2,
+            6,
+            6
+          ],
+          [
+            2,
+            6,
+            7
+          ],
+          [
+            2,
+            7,
+            3
+          ],
+          [
+            2,
+            7,
+            4
+          ],
+          [
+            2,
+            7,
+            5
+          ],
+          [
+            2,
+            7,
+            6
+          ],
+          [
+            2,
+            7,
+            7
+          ]
+        ],
+        "sampledVoxels": 30,
+        "exposedVoxels": 30,
+        "connectedToOwner": true,
+        "rayClear": true,
+        "unoccludedPixels": {
+          "front": 0,
+          "side": 0,
+          "left": 2432,
+          "top": 0,
+          "oblique": 0
+        },
+        "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+        "witness": [
+          {
+            "coordinate": [
+              1,
+              5,
+              3
+            ],
+            "localPosition": "on original functional owner surface",
+            "airNeighborCount": 1,
+            "exposedFaceDirections": [
+              "-X"
+            ],
+            "rayClearDirections": [
+              "-X"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      {
+        "featureId": "window_right_1",
+        "ownerPart": "cab_right",
+        "expectedViews": [
+          "side",
+          "oblique"
+        ],
+        "color": [
+          98,
+          176,
+          200
+        ],
+        "coordinates": [
+          [
+            9,
+            5,
+            3
+          ],
+          [
+            9,
+            5,
+            4
+          ],
+          [
+            9,
+            5,
+            5
+          ],
+          [
+            9,
+            5,
+            6
+          ],
+          [
+            9,
+            5,
+            7
+          ],
+          [
+            9,
+            6,
+            3
+          ],
+          [
+            9,
+            6,
+            4
+          ],
+          [
+            9,
+            6,
+            5
+          ],
+          [
+            9,
+            6,
+            6
+          ],
+          [
+            9,
+            6,
+            7
+          ],
+          [
+            9,
+            7,
+            3
+          ],
+          [
+            9,
+            7,
+            4
+          ],
+          [
+            9,
+            7,
+            5
+          ],
+          [
+            9,
+            7,
+            6
+          ],
+          [
+            9,
+            7,
+            7
+          ],
+          [
+            10,
+            5,
+            3
+          ],
+          [
+            10,
+            5,
+            4
+          ],
+          [
+            10,
+            5,
+            5
+          ],
+          [
+            10,
+            5,
+            6
+          ],
+          [
+            10,
+            5,
+            7
+          ],
+          [
+            10,
+            6,
+            3
+          ],
+          [
+            10,
+            6,
+            4
+          ],
+          [
+            10,
+            6,
+            5
+          ],
+          [
+            10,
+            6,
+            6
+          ],
+          [
+            10,
+            6,
+            7
+          ],
+          [
+            10,
+            7,
+            3
+          ],
+          [
+            10,
+            7,
+            4
+          ],
+          [
+            10,
+            7,
+            5
+          ],
+          [
+            10,
+            7,
+            6
+          ],
+          [
+            10,
+            7,
+            7
+          ]
+        ],
+        "sampledVoxels": 30,
+        "exposedVoxels": 30,
+        "connectedToOwner": true,
+        "rayClear": true,
+        "unoccludedPixels": {
+          "front": 0,
+          "side": 2432,
+          "left": 0,
+          "top": 0,
+          "oblique": 886
+        },
+        "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+        "witness": [
+          {
+            "coordinate": [
+              9,
+              5,
+              3
+            ],
+            "localPosition": "on original functional owner surface",
+            "airNeighborCount": 1,
+            "exposedFaceDirections": [
+              "-X"
+            ],
+            "rayClearDirections": []
+          }
+        ],
+        "passed": true
+      },
+      {
+        "featureId": "window_left_2",
+        "ownerPart": "cab_left",
+        "expectedViews": [
+          "left"
+        ],
+        "color": [
+          98,
+          176,
+          200
+        ],
+        "coordinates": [
+          [
+            1,
+            5,
+            9
+          ],
+          [
+            1,
+            5,
+            10
+          ],
+          [
+            1,
+            5,
+            11
+          ],
+          [
+            1,
+            5,
+            12
+          ],
+          [
+            1,
+            5,
+            13
+          ],
+          [
+            1,
+            6,
+            9
+          ],
+          [
+            1,
+            6,
+            10
+          ],
+          [
+            1,
+            6,
+            11
+          ],
+          [
+            1,
+            6,
+            12
+          ],
+          [
+            1,
+            6,
+            13
+          ],
+          [
+            1,
+            7,
+            9
+          ],
+          [
+            1,
+            7,
+            10
+          ],
+          [
+            1,
+            7,
+            11
+          ],
+          [
+            1,
+            7,
+            12
+          ],
+          [
+            1,
+            7,
+            13
+          ],
+          [
+            2,
+            5,
+            9
+          ],
+          [
+            2,
+            5,
+            10
+          ],
+          [
+            2,
+            5,
+            11
+          ],
+          [
+            2,
+            5,
+            12
+          ],
+          [
+            2,
+            5,
+            13
+          ],
+          [
+            2,
+            6,
+            9
+          ],
+          [
+            2,
+            6,
+            10
+          ],
+          [
+            2,
+            6,
+            11
+          ],
+          [
+            2,
+            6,
+            12
+          ],
+          [
+            2,
+            6,
+            13
+          ],
+          [
+            2,
+            7,
+            9
+          ],
+          [
+            2,
+            7,
+            10
+          ],
+          [
+            2,
+            7,
+            11
+          ],
+          [
+            2,
+            7,
+            12
+          ],
+          [
+            2,
+            7,
+            13
+          ]
+        ],
+        "sampledVoxels": 30,
+        "exposedVoxels": 30,
+        "connectedToOwner": true,
+        "rayClear": true,
+        "unoccludedPixels": {
+          "front": 0,
+          "side": 0,
+          "left": 2432,
+          "top": 0,
+          "oblique": 0
+        },
+        "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+        "witness": [
+          {
+            "coordinate": [
+              1,
+              5,
+              9
+            ],
+            "localPosition": "on original functional owner surface",
+            "airNeighborCount": 1,
+            "exposedFaceDirections": [
+              "-X"
+            ],
+            "rayClearDirections": [
+              "-X"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      {
+        "featureId": "window_right_2",
+        "ownerPart": "cab_right",
+        "expectedViews": [
+          "side",
+          "oblique"
+        ],
+        "color": [
+          98,
+          176,
+          200
+        ],
+        "coordinates": [
+          [
+            9,
+            5,
+            9
+          ],
+          [
+            9,
+            5,
+            10
+          ],
+          [
+            9,
+            5,
+            11
+          ],
+          [
+            9,
+            5,
+            12
+          ],
+          [
+            9,
+            5,
+            13
+          ],
+          [
+            9,
+            6,
+            9
+          ],
+          [
+            9,
+            6,
+            10
+          ],
+          [
+            9,
+            6,
+            11
+          ],
+          [
+            9,
+            6,
+            12
+          ],
+          [
+            9,
+            6,
+            13
+          ],
+          [
+            9,
+            7,
+            9
+          ],
+          [
+            9,
+            7,
+            10
+          ],
+          [
+            9,
+            7,
+            11
+          ],
+          [
+            9,
+            7,
+            12
+          ],
+          [
+            9,
+            7,
+            13
+          ],
+          [
+            10,
+            5,
+            9
+          ],
+          [
+            10,
+            5,
+            10
+          ],
+          [
+            10,
+            5,
+            11
+          ],
+          [
+            10,
+            5,
+            12
+          ],
+          [
+            10,
+            5,
+            13
+          ],
+          [
+            10,
+            6,
+            9
+          ],
+          [
+            10,
+            6,
+            10
+          ],
+          [
+            10,
+            6,
+            11
+          ],
+          [
+            10,
+            6,
+            12
+          ],
+          [
+            10,
+            6,
+            13
+          ],
+          [
+            10,
+            7,
+            9
+          ],
+          [
+            10,
+            7,
+            10
+          ],
+          [
+            10,
+            7,
+            11
+          ],
+          [
+            10,
+            7,
+            12
+          ],
+          [
+            10,
+            7,
+            13
+          ]
+        ],
+        "sampledVoxels": 30,
+        "exposedVoxels": 30,
+        "connectedToOwner": true,
+        "rayClear": true,
+        "unoccludedPixels": {
+          "front": 0,
+          "side": 2432,
+          "left": 0,
+          "top": 0,
+          "oblique": 873
+        },
+        "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+        "witness": [
+          {
+            "coordinate": [
+              9,
+              5,
+              9
+            ],
+            "localPosition": "on original functional owner surface",
+            "airNeighborCount": 1,
+            "exposedFaceDirections": [
+              "-X"
+            ],
+            "rayClearDirections": []
+          }
+        ],
+        "passed": true
+      },
+      {
+        "featureId": "windshield",
+        "ownerPart": "cab_front",
+        "expectedViews": [
+          "front",
+          "oblique"
+        ],
+        "color": [
+          98,
+          176,
+          200
+        ],
+        "coordinates": [
+          [
+            3,
+            5,
+            14
+          ],
+          [
+            3,
+            5,
+            15
+          ],
+          [
+            3,
+            6,
+            14
+          ],
+          [
+            3,
+            6,
+            15
+          ],
+          [
+            3,
+            7,
+            14
+          ],
+          [
+            3,
+            7,
+            15
+          ],
+          [
+            4,
+            5,
+            14
+          ],
+          [
+            4,
+            5,
+            15
+          ],
+          [
+            4,
+            6,
+            14
+          ],
+          [
+            4,
+            6,
+            15
+          ],
+          [
+            4,
+            7,
+            14
+          ],
+          [
+            4,
+            7,
+            15
+          ],
+          [
+            5,
+            5,
+            14
+          ],
+          [
+            5,
+            5,
+            15
+          ],
+          [
+            5,
+            6,
+            14
+          ],
+          [
+            5,
+            6,
+            15
+          ],
+          [
+            5,
+            7,
+            14
+          ],
+          [
+            5,
+            7,
+            15
+          ],
+          [
+            6,
+            5,
+            14
+          ],
+          [
+            6,
+            5,
+            15
+          ],
+          [
+            6,
+            6,
+            14
+          ],
+          [
+            6,
+            6,
+            15
+          ],
+          [
+            6,
+            7,
+            14
+          ],
+          [
+            6,
+            7,
+            15
+          ],
+          [
+            7,
+            5,
+            14
+          ],
+          [
+            7,
+            5,
+            15
+          ],
+          [
+            7,
+            6,
+            14
+          ],
+          [
+            7,
+            6,
+            15
+          ],
+          [
+            7,
+            7,
+            14
+          ],
+          [
+            7,
+            7,
+            15
+          ],
+          [
+            8,
+            5,
+            14
+          ],
+          [
+            8,
+            5,
+            15
+          ],
+          [
+            8,
+            6,
+            14
+          ],
+          [
+            8,
+            6,
+            15
+          ],
+          [
+            8,
+            7,
+            14
+          ],
+          [
+            8,
+            7,
+            15
+          ]
+        ],
+        "sampledVoxels": 36,
+        "exposedVoxels": 36,
+        "connectedToOwner": true,
+        "rayClear": true,
+        "unoccludedPixels": {
+          "front": 5000,
+          "side": 0,
+          "left": 0,
+          "top": 0,
+          "oblique": 1054
+        },
+        "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+        "witness": [
+          {
+            "coordinate": [
+              3,
+              5,
+              14
+            ],
+            "localPosition": "on original functional owner surface",
+            "airNeighborCount": 1,
+            "exposedFaceDirections": [
+              "-Z"
+            ],
+            "rayClearDirections": []
+          }
+        ],
+        "passed": true
+      },
+      {
+        "featureId": "door",
+        "ownerPart": "cab_right",
+        "expectedViews": [
+          "side",
+          "oblique"
+        ],
+        "color": [
+          175,
+          61,
+          45
+        ],
+        "coordinates": [
+          [
+            9,
+            4,
+            13
+          ],
+          [
+            9,
+            8,
+            13
+          ],
+          [
+            10,
+            8,
+            13
+          ]
+        ],
+        "sampledVoxels": 3,
+        "exposedVoxels": 3,
+        "connectedToOwner": true,
+        "rayClear": true,
+        "unoccludedPixels": {
+          "front": 0,
+          "side": 169,
+          "left": 0,
+          "top": 0,
+          "oblique": 64
+        },
+        "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+        "witness": [
+          {
+            "coordinate": [
+              9,
+              4,
+              13
+            ],
+            "localPosition": "on original functional owner surface",
+            "airNeighborCount": 1,
+            "exposedFaceDirections": [
+              "-X"
+            ],
+            "rayClearDirections": []
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "nonApplicableFeatures": {
+      "animalEyes": "not_applicable: no animal categories"
+    },
+    "failureReasons": [],
+    "passed": true,
+    "semanticVerificationScope": "measured occupancy, component, part adjacency, opening witnesses, support and surface rays",
+    "advancedSemanticChecks": {
+      "minimumConnectionCrossSection": "bbox_thickness_measured_for_narrow_parts",
+      "sideLeakFloodMask": "independent_verifier",
+      "nearDuplicateMeaningfulnessReview": "pending"
+    },
+    "formatRoundtrip": {
+      "npzCoordinatesColorsOccupancy": true,
+      "voxCoordinatesColors": true,
+      "voxAxisTransform": "JSON(x,y,z) -> VOX(x,z,y)",
+      "objExposedFaceCount": 1246,
+      "previewViews": [
+        "front +Z",
+        "side +X",
+        "top +Y",
+        "left -X",
+        "back -Z",
+        "oblique +X +Y +Z"
+      ]
+    },
+    "exactOccupancyHash": "c1598be9d438b2b8ebc144d145eb00caaba226b0e9ae1a3a278db492faa89c44",
+    "canonicalGeometryHash": "0cbe61981398d8effed022b7b952e8ce6fa38f1f9d5e753abddb9d6043368df2",
+    "initialVoxelCount": 1800,
+    "resamplingHistory": [
+      {
+        "scale": 0.8138499845290552,
+        "actualVoxelCount": 1060,
+        "failureReasons": []
+      }
+    ],
+    "duplicateCoordinateCleanupCount": 0,
+    "historicalExactDedupStatus": "unavailable_index",
+    "crossShardDedupStatus": "awaiting_merge",
+    "historicalCanonicalDedupStatus": "unavailable_coordinates",
+    "legoAssemblyStatus": "not_attempted",
+    "physicalValidationStatus": "not_attempted",
+    "generationInstructionReplay": {
+      "executedFullLevel": 5,
+      "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+      "coordinateRgbPartEquality": true,
+      "actualVoxelCount": 1060,
+      "exactOccupancyHash": "c1598be9d438b2b8ebc144d145eb00caaba226b0e9ae1a3a278db492faa89c44",
+      "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+      "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+      "inputVoxelSha256": "6a865d5a110613fc486155dd2ea14275996da66bbcfc14479dc3d228c1881848",
+      "visibilitySchemaVersion": 3
+    },
+    "partSeparation": {}
+  },
+  "originalGenerationInstruction": {
+    "zh": "构造带四轮、侧窗、车门和箱形驾驶区的公交车。采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。 原始参数规格：{\"baseWidthFraction\": 0.55, \"category\": \"bus\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"depth\": 22.0, \"detailPosition\": 0.25, \"featureCount\": 2, \"height\": 10.0, \"instance\": 0, \"lipOverhang\": 0.6, \"neckFraction\": 0.42, \"ordinal\": 53331, \"redesign\": 0, \"rimHeight\": 2.0, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.58, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 12.0}",
+    "en": "Construct a box shaped bus with four wheels, side windows, door and driving cabin. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments. Original parameter specification: {\"baseWidthFraction\": 0.55, \"category\": \"bus\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"depth\": 22.0, \"detailPosition\": 0.25, \"featureCount\": 2, \"height\": 10.0, \"instance\": 0, \"lipOverhang\": 0.6, \"neckFraction\": 0.42, \"ordinal\": 53331, \"redesign\": 0, \"rimHeight\": 2.0, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.58, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 12.0}"
+  },
+  "generationInstructionReplay": {
+    "executedFullLevel": 5,
+    "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+    "coordinateRgbPartEquality": true,
+    "actualVoxelCount": 1060,
+    "exactOccupancyHash": "c1598be9d438b2b8ebc144d145eb00caaba226b0e9ae1a3a278db492faa89c44",
+    "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+    "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+    "inputVoxelSha256": "6a865d5a110613fc486155dd2ea14275996da66bbcfc14479dc3d228c1881848",
+    "visibilitySchemaVersion": 3
+  },
+  "semanticColorRepair": {
+    "reason": "preserve actual window glazing within the door frame",
+    "changedRgbVoxelCount": 8,
+    "occupancyChanged": false,
+    "partLabelsChanged": false,
+    "previousVoxelSha256": "e99d4dd3ac0b8b1ea67d1409d70c875e083454d5d4521a983b89066e54dda287"
+  }
+}

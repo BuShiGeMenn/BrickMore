@@ -1,0 +1,198 @@
+{
+  "actualVoxelCount": 1002,
+  "sixNeighborComponentCount": 1,
+  "checks": {
+    "voxelRange": true,
+    "singleSixConnectedComponent": true,
+    "nonnegative48Grid": true,
+    "groundContactY0": true,
+    "uniqueCoordinates": true,
+    "fourSeparateGroundedLegs": true
+  },
+  "parts": {
+    "leg_1": {
+      "voxelCount": 30,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        3,
+        5,
+        2
+      ]
+    },
+    "leg_2": {
+      "voxelCount": 30,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        3,
+        5,
+        2
+      ]
+    },
+    "leg_3": {
+      "voxelCount": 45,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        3,
+        5,
+        3
+      ]
+    },
+    "leg_4": {
+      "voxelCount": 45,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        3,
+        5,
+        3
+      ]
+    },
+    "frame": {
+      "voxelCount": 306,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        17,
+        2,
+        9
+      ]
+    },
+    "back": {
+      "voxelCount": 114,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        21,
+        6,
+        1
+      ]
+    },
+    "arm_left": {
+      "voxelCount": 60,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        2,
+        3,
+        10
+      ]
+    },
+    "arm_right": {
+      "voxelCount": 60,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        2,
+        3,
+        10
+      ]
+    },
+    "seat_cushion_1": {
+      "voxelCount": 126,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        7,
+        2,
+        9
+      ]
+    },
+    "back_cushion_1": {
+      "voxelCount": 42,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        7,
+        2,
+        3
+      ]
+    },
+    "seat_cushion_2": {
+      "voxelCount": 108,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        6,
+        2,
+        9
+      ]
+    },
+    "back_cushion_2": {
+      "voxelCount": 36,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        6,
+        2,
+        3
+      ]
+    }
+  },
+  "openings": {},
+  "partSeparation": {
+    "seat_cushion_": {
+      "expectedDistinctParts": 2,
+      "actualSeparatedComponents": 2
+    },
+    "back_cushion_": {
+      "expectedDistinctParts": 2,
+      "actualSeparatedComponents": 2
+    }
+  },
+  "visibleSurfaceFeatures": [],
+  "nonApplicableFeatures": {
+    "animalEyes": "not_applicable: no animal categories"
+  },
+  "failureReasons": [],
+  "passed": true,
+  "semanticVerificationScope": "measured occupancy, component, part adjacency, opening witnesses, support and surface rays",
+  "advancedSemanticChecks": {
+    "minimumConnectionCrossSection": "bbox_thickness_measured_for_narrow_parts",
+    "sideLeakFloodMask": "independent_verifier",
+    "nearDuplicateMeaningfulnessReview": "pending"
+  },
+  "formatRoundtrip": {
+    "npzCoordinatesColorsOccupancy": true,
+    "voxCoordinatesColors": true,
+    "voxAxisTransform": "JSON(x,y,z) -> VOX(x,z,y)",
+    "objExposedFaceCount": 1054,
+    "previewViews": [
+      "front +Z",
+      "side +X",
+      "top +Y",
+      "left -X",
+      "back -Z",
+      "oblique +X +Y +Z"
+    ]
+  },
+  "exactOccupancyHash": "2af96387b00864d13f12610aa3e31965e5130eca0ab20a2c8cbfe2243fdb004f",
+  "canonicalGeometryHash": "0716dae84a5a62886237238cf1045d3000bbd2682466720b16b13d79c8dc4f39",
+  "initialVoxelCount": 1592,
+  "resamplingHistory": [
+    {
+      "scale": 0.847853544558598,
+      "actualVoxelCount": 1002,
+      "failureReasons": []
+    }
+  ],
+  "duplicateCoordinateCleanupCount": 0,
+  "historicalExactDedupStatus": "unavailable_index",
+  "crossShardDedupStatus": "awaiting_merge",
+  "historicalCanonicalDedupStatus": "unavailable_coordinates",
+  "legoAssemblyStatus": "not_attempted",
+  "physicalValidationStatus": "not_attempted",
+  "generationInstructionReplay": {
+    "executedFullLevel": 5,
+    "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+    "coordinateRgbPartEquality": true,
+    "actualVoxelCount": 1002,
+    "exactOccupancyHash": "2af96387b00864d13f12610aa3e31965e5130eca0ab20a2c8cbfe2243fdb004f",
+    "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+    "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+    "inputVoxelSha256": "c9ba0776040817ab00bd05fe2e305561debda4fff54cefde4fedf648defd2cfc",
+    "visibilitySchemaVersion": 3
+  }
+}

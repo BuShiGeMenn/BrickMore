@@ -1,0 +1,108 @@
+{
+  "actualVoxelCount": 1025,
+  "sixNeighborComponentCount": 1,
+  "checks": {
+    "voxelRange": true,
+    "singleSixConnectedComponent": true,
+    "nonnegative48Grid": true,
+    "groundContactY0": true,
+    "uniqueCoordinates": true
+  },
+  "parts": {
+    "bottom": {
+      "voxelCount": 179,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        11,
+        2,
+        9
+      ]
+    },
+    "body": {
+      "voxelCount": 492,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        15,
+        5,
+        13
+      ]
+    },
+    "rim": {
+      "voxelCount": 354,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        18,
+        2,
+        16
+      ]
+    }
+  },
+  "openings": {
+    "cavity": {
+      "coordinate": [
+        8,
+        3,
+        8
+      ],
+      "empty": true,
+      "exteriorReachable": true,
+      "solidFloorBelow": true
+    }
+  },
+  "visibleSurfaceFeatures": [],
+  "nonApplicableFeatures": {
+    "animalEyes": "not_applicable: no animal categories"
+  },
+  "failureReasons": [],
+  "passed": true,
+  "semanticVerificationScope": "measured occupancy, component, part adjacency, opening witnesses, support and surface rays",
+  "advancedSemanticChecks": {
+    "minimumConnectionCrossSection": "bbox_thickness_measured_for_narrow_parts",
+    "sideLeakFloodMask": "independent_verifier",
+    "nearDuplicateMeaningfulnessReview": "pending"
+  },
+  "formatRoundtrip": {
+    "npzCoordinatesColorsOccupancy": true,
+    "voxCoordinatesColors": true,
+    "voxAxisTransform": "JSON(x,y,z) -> VOX(x,z,y)",
+    "objExposedFaceCount": 1274,
+    "previewViews": [
+      "front +Z",
+      "side +X",
+      "top +Y",
+      "left -X",
+      "back -Z",
+      "oblique +X +Y +Z"
+    ]
+  },
+  "exactOccupancyHash": "4590a363b99db0e71512fdcc54da25f1ef0664f20f9fccf8f09c304f51a5b54a",
+  "canonicalGeometryHash": "00bdf8c044779373f8033a8a593dbfc1c5d04f2ad14fac595270cb49915a1c68",
+  "initialVoxelCount": 528,
+  "resamplingHistory": [
+    {
+      "scale": 1.224871567820883,
+      "actualVoxelCount": 1025,
+      "failureReasons": []
+    }
+  ],
+  "duplicateCoordinateCleanupCount": 0,
+  "historicalExactDedupStatus": "unavailable_index",
+  "crossShardDedupStatus": "awaiting_merge",
+  "historicalCanonicalDedupStatus": "unavailable_coordinates",
+  "legoAssemblyStatus": "not_attempted",
+  "physicalValidationStatus": "not_attempted",
+  "generationInstructionReplay": {
+    "executedFullLevel": 5,
+    "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+    "coordinateRgbPartEquality": true,
+    "actualVoxelCount": 1025,
+    "exactOccupancyHash": "4590a363b99db0e71512fdcc54da25f1ef0664f20f9fccf8f09c304f51a5b54a",
+    "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+    "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+    "inputVoxelSha256": "296298feab8857bb44c180082239959d3e1e62224e0058ab9e89f7aff7b2cd35",
+    "visibilitySchemaVersion": 3
+  }
+}

@@ -1,0 +1,533 @@
+{
+  "actualVoxelCount": 1130,
+  "sixNeighborComponentCount": 1,
+  "checks": {
+    "voxelRange": true,
+    "singleSixConnectedComponent": true,
+    "nonnegative48Grid": true,
+    "groundContactY0": true,
+    "uniqueCoordinates": true,
+    "fourSeparateGroundedLegs": true
+  },
+  "parts": {
+    "leg_1": {
+      "voxelCount": 36,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        3,
+        4,
+        3
+      ]
+    },
+    "leg_2": {
+      "voxelCount": 24,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        2,
+        4,
+        3
+      ]
+    },
+    "leg_3": {
+      "voxelCount": 36,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        3,
+        4,
+        3
+      ]
+    },
+    "leg_4": {
+      "voxelCount": 24,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        2,
+        4,
+        3
+      ]
+    },
+    "frame": {
+      "voxelCount": 224,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        14,
+        2,
+        8
+      ]
+    },
+    "cabinet": {
+      "voxelCount": 634,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        14,
+        7,
+        8
+      ]
+    },
+    "keyboard_support": {
+      "voxelCount": 112,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        14,
+        2,
+        4
+      ]
+    },
+    "music_rest": {
+      "voxelCount": 40,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        10,
+        2,
+        2
+      ]
+    }
+  },
+  "openings": {},
+  "partSeparation": {},
+  "visibleSurfaceFeatures": [
+    {
+      "featureId": "white_keys",
+      "ownerPart": "keyboard_support",
+      "expectedViews": [
+        "top",
+        "front",
+        "oblique"
+      ],
+      "color": [
+        232,
+        233,
+        224
+      ],
+      "coordinates": [
+        [
+          0,
+          7,
+          10
+        ],
+        [
+          0,
+          7,
+          11
+        ],
+        [
+          1,
+          7,
+          10
+        ],
+        [
+          1,
+          7,
+          11
+        ],
+        [
+          2,
+          7,
+          10
+        ],
+        [
+          2,
+          7,
+          11
+        ],
+        [
+          3,
+          7,
+          10
+        ],
+        [
+          3,
+          7,
+          11
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          4,
+          7,
+          9
+        ],
+        [
+          4,
+          7,
+          10
+        ],
+        [
+          4,
+          7,
+          11
+        ],
+        [
+          5,
+          7,
+          10
+        ],
+        [
+          5,
+          7,
+          11
+        ],
+        [
+          6,
+          7,
+          10
+        ],
+        [
+          6,
+          7,
+          11
+        ],
+        [
+          7,
+          7,
+          10
+        ],
+        [
+          7,
+          7,
+          11
+        ],
+        [
+          8,
+          7,
+          10
+        ],
+        [
+          8,
+          7,
+          11
+        ],
+        [
+          9,
+          7,
+          8
+        ],
+        [
+          9,
+          7,
+          9
+        ],
+        [
+          9,
+          7,
+          10
+        ],
+        [
+          9,
+          7,
+          11
+        ],
+        [
+          10,
+          7,
+          10
+        ],
+        [
+          10,
+          7,
+          11
+        ],
+        [
+          11,
+          7,
+          10
+        ],
+        [
+          11,
+          7,
+          11
+        ],
+        [
+          12,
+          7,
+          10
+        ],
+        [
+          12,
+          7,
+          11
+        ],
+        [
+          13,
+          7,
+          10
+        ],
+        [
+          13,
+          7,
+          11
+        ]
+      ],
+      "sampledVoxels": 32,
+      "exposedVoxels": 28,
+      "connectedToOwner": true,
+      "rayClear": true,
+      "unoccludedPixels": {
+        "front": 3255,
+        "side": 560,
+        "left": 560,
+        "top": 6944,
+        "oblique": 2772
+      },
+      "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+      "witness": [
+        {
+          "coordinate": [
+            0,
+            7,
+            10
+          ],
+          "localPosition": "on original functional owner surface",
+          "airNeighborCount": 2,
+          "exposedFaceDirections": [
+            "-X",
+            "+Y"
+          ],
+          "rayClearDirections": [
+            "-X",
+            "+Y"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "featureId": "black_keys",
+      "ownerPart": "keyboard_support",
+      "expectedViews": [
+        "top",
+        "oblique"
+      ],
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "coordinates": [
+        [
+          0,
+          7,
+          8
+        ],
+        [
+          0,
+          7,
+          9
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          1,
+          7,
+          9
+        ],
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          2,
+          7,
+          9
+        ],
+        [
+          3,
+          7,
+          8
+        ],
+        [
+          3,
+          7,
+          9
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          5,
+          7,
+          9
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          6,
+          7,
+          9
+        ],
+        [
+          7,
+          7,
+          8
+        ],
+        [
+          7,
+          7,
+          9
+        ],
+        [
+          8,
+          7,
+          8
+        ],
+        [
+          8,
+          7,
+          9
+        ],
+        [
+          10,
+          7,
+          8
+        ],
+        [
+          10,
+          7,
+          9
+        ],
+        [
+          11,
+          7,
+          8
+        ],
+        [
+          11,
+          7,
+          9
+        ],
+        [
+          12,
+          7,
+          8
+        ],
+        [
+          12,
+          7,
+          9
+        ],
+        [
+          13,
+          7,
+          8
+        ],
+        [
+          13,
+          7,
+          9
+        ]
+      ],
+      "sampledVoxels": 24,
+      "exposedVoxels": 8,
+      "connectedToOwner": true,
+      "rayClear": true,
+      "unoccludedPixels": {
+        "front": 0,
+        "side": 512,
+        "left": 512,
+        "top": 1953,
+        "oblique": 484
+      },
+      "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+      "witness": [
+        {
+          "coordinate": [
+            0,
+            7,
+            8
+          ],
+          "localPosition": "on original functional owner surface",
+          "airNeighborCount": 2,
+          "exposedFaceDirections": [
+            "-X",
+            "+Y"
+          ],
+          "rayClearDirections": [
+            "-X",
+            "+Y"
+          ]
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "nonApplicableFeatures": {
+    "animalEyes": "not_applicable: no animal categories"
+  },
+  "failureReasons": [],
+  "passed": true,
+  "semanticVerificationScope": "measured occupancy, component, part adjacency, opening witnesses, support and surface rays",
+  "advancedSemanticChecks": {
+    "minimumConnectionCrossSection": "bbox_thickness_measured_for_narrow_parts",
+    "sideLeakFloodMask": "independent_verifier",
+    "nearDuplicateMeaningfulnessReview": "pending"
+  },
+  "formatRoundtrip": {
+    "npzCoordinatesColorsOccupancy": true,
+    "voxCoordinatesColors": true,
+    "voxAxisTransform": "JSON(x,y,z) -> VOX(x,z,y)",
+    "objExposedFaceCount": 1122,
+    "previewViews": [
+      "front +Z",
+      "side +X",
+      "top +Y",
+      "left -X",
+      "back -Z",
+      "oblique +X +Y +Z"
+    ]
+  },
+  "exactOccupancyHash": "42288e32d0a281f226d09975627ccc4f5b4cd065de9032ff588b5e19bde26585",
+  "canonicalGeometryHash": "05f46162ea3f9b1307e4bea85774be707df9ef4fc75232611999e5255e482daa",
+  "initialVoxelCount": 1789,
+  "resamplingHistory": [
+    {
+      "scale": 0.8155146135310586,
+      "actualVoxelCount": 811,
+      "failureReasons": [
+        "hidden_feature:white_keys",
+        "hidden_feature:black_keys"
+      ]
+    },
+    {
+      "scale": 0.8402271775774544,
+      "actualVoxelCount": 1130,
+      "failureReasons": []
+    }
+  ],
+  "duplicateCoordinateCleanupCount": 0,
+  "historicalExactDedupStatus": "unavailable_index",
+  "crossShardDedupStatus": "awaiting_merge",
+  "historicalCanonicalDedupStatus": "unavailable_coordinates",
+  "legoAssemblyStatus": "not_attempted",
+  "physicalValidationStatus": "not_attempted",
+  "generationInstructionReplay": {
+    "executedFullLevel": 5,
+    "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+    "coordinateRgbPartEquality": true,
+    "actualVoxelCount": 1130,
+    "exactOccupancyHash": "42288e32d0a281f226d09975627ccc4f5b4cd065de9032ff588b5e19bde26585",
+    "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+    "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+    "inputVoxelSha256": "e8df920eceb07fc6cd19b135263e976fe724c6f1440d8df8cd5c79907956329c",
+    "visibilitySchemaVersion": 3
+  }
+}

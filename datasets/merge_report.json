@@ -1,0 +1,91 @@
+{
+  "modelCount": 80000,
+  "uniqueModelIdCount": 80000,
+  "promptRecordCount": 400000,
+  "uniqueRecordIdCount": 400000,
+  "sourcePromptReadback": {
+    "A": {
+      "recordCount": 200000,
+      "modelCount": 40000,
+      "levelCounts": {
+        "1": 40000,
+        "2": 40000,
+        "3": 40000,
+        "4": 40000,
+        "5": 40000
+      },
+      "sourceJsonlSha256": "e1563dacf2b164b7e2094ce9e6e1b7ef341ac118234a75b6e09eefd6ce224474",
+      "allSourceGeometryAssociationsPassed": true
+    },
+    "B": {
+      "recordCount": 200000,
+      "modelCount": 40000,
+      "levelCounts": {
+        "1": 40000,
+        "2": 40000,
+        "3": 40000,
+        "4": 40000,
+        "5": 40000
+      },
+      "sourceJsonlSha256": "1249f45d0a82b5c96df271a55823f042b3c6a8a0d6cf3a896d4b46815af84615",
+      "allSourceGeometryAssociationsPassed": true
+    }
+  },
+  "shardModelCounts": {
+    "A": 40000,
+    "B": 40000
+  },
+  "modelIdCollisionCount": 0,
+  "sourceFileOverwrites": 0,
+  "categoryModelCounts": {
+    "basket": 3805,
+    "bed": 3810,
+    "bench": 3810,
+    "birdhouse": 3810,
+    "bookshelf": 3810,
+    "bottle": 3810,
+    "bowl": 3810,
+    "bus": 3810,
+    "camera": 3810,
+    "car": 3810,
+    "chair": 3810,
+    "guitar": 3810,
+    "jar": 3810,
+    "mug": 3810,
+    "piano": 3810,
+    "pot": 3810,
+    "sofa": 3810,
+    "table": 3810,
+    "tower": 3810,
+    "train": 3810,
+    "vessel": 3805
+  },
+  "aPublishedMetadataSha256": "6d69da1ff63d1688bd6c774801f14bb16af0f35b036046d105f24437b610e402",
+  "bDedupIndexSha256": "ae389504b438e4ade45285b011a96616f0b3e3c3623a7792aff482be48c585b7",
+  "hashAlgorithm": "sha256 sorted x,y,z semicolon; canonical minimum over 48 axis/sign transforms normalized to minima",
+  "crossShardHashChecks": {
+    "exactOccupancyHash": {
+      "crossShardDuplicateHashCount": 0,
+      "mergedUniqueHashCount": 80000,
+      "examples": []
+    },
+    "canonicalGeometryHash": {
+      "crossShardDuplicateHashCount": 0,
+      "mergedUniqueHashCount": 80000,
+      "examples": []
+    }
+  },
+  "crossShardExactAndCanonicalDedupPassed": true,
+  "scope": "Full A/B model indexes; immutable source models preserved; near-shape/historical checks not implied",
+  "crossShardNearDuplicateStatus": "not_run",
+  "historicalCanonicalDedupStatus": "unavailable_coordinates",
+  "fullPhysics": false,
+  "historicalExactDedup": {
+    "indexRecordCount": 55255,
+    "indexSha256": "5a7b6a615a8c34656c106153fa30093535ea04c6c7e6954ad65a181c90493619",
+    "overlappingHashCount": 0,
+    "passed": true,
+    "scope": "Exact occupancy only; historical coordinates unavailable for canonical/near-shape comparisons"
+  },
+  "mergedIndexSha256": "a7034ec303e5677a4846a4794c74276c05b5e62e8d95fd0e03bbfe9a6aec465d"
+}

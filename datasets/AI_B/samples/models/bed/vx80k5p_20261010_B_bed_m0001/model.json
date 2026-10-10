@@ -1,0 +1,10866 @@
+{
+  "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+  "shardId": "B",
+  "modelId": "vx80k5p_20261010_B_bed_m0001",
+  "object": "bed",
+  "category": "bed",
+  "categoryId": 2,
+  "variantId": "vx80k5p_20261010_B_bed_v001",
+  "geometryFamilyId": "vx80k5p_20261010_B_bed_v001",
+  "semanticGroupKey": "vx80k5p_20261010_B_bed_m0001",
+  "tier": "detailed",
+  "globalOrdinal": 41901,
+  "modelSeed": 800041901,
+  "coordinateSystem": {
+    "x": "right",
+    "y": "up",
+    "z": "front",
+    "localForward": "+Z"
+  },
+  "gridSize": [
+    48,
+    48,
+    48
+  ],
+  "requestedVoxelRange": [
+    750,
+    1250
+  ],
+  "preferredVoxelTarget": 1000,
+  "initialVoxelCount": 1434,
+  "actualVoxelCount": 962,
+  "generationPromptZh": "一个带床框、分区床垫及直线端板的四脚床。它由床框、床头板、床尾板、床垫和四脚组成。腿宽约为框宽的0.20倍，四脚向上面连接承重框。宽深比约0.53，高/最大水平跨度约0.79；支脚分置承重框四角，横向腿隙与框宽比0.40。实测采用4种不透明颜色，床框以棕色为主，床垫呈乳黄色。床垫分段2块。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。 原始参数规格：{\"backSlatCount\": 2, \"baseWidthFraction\": 0.47000000000000003, \"category\": \"bed\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\", \"neck aperture ratio\", \"functional rim projection\", \"base taper\", \"support cross section\", \"functional part position\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"deckPositionRatio\": 0.27, \"depth\": 22.0, \"detailPosition\": 0.25, \"featureCount\": 2, \"handleThickness\": 3.2, \"height\": 10.0, \"instance\": 0, \"lensHeightRatio\": 0.42, \"lipOverhang\": 0.4, \"neckFraction\": 0.35, \"ordinal\": 41901, \"redesign\": 0, \"replanPhase\": 1, \"rimHeight\": 2.0, \"seamWidth\": 2.2, \"seatBoardCount\": 2, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.5399999999999999, \"sofaCushionCount\": 2, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"supportThickness\": 3.2, \"towerMiddleWidthFraction\": 0.8150000000000001, \"towerTopWidthFraction\": 0.6050000000000001, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 12.0}",
+  "generationPromptEn": "A four leg bed with a frame, segmented mattress and straight end boards. It includes a frame, headboard, footboard, mattress and four legs. Legs are 0.20 frame-widths thick and connect upward to the frame. Width/depth is 0.53; height/horizontal-span is 0.79. The supports occupy four separated corner positions. Leg-gap/width is 0.40. Across 4 opaque colors, the frame is mainly brown and the mattress is cream. There are 2 mattress sections. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments. Original parameter specification: {\"backSlatCount\": 2, \"baseWidthFraction\": 0.47000000000000003, \"category\": \"bed\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\", \"neck aperture ratio\", \"functional rim projection\", \"base taper\", \"support cross section\", \"functional part position\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"deckPositionRatio\": 0.27, \"depth\": 22.0, \"detailPosition\": 0.25, \"featureCount\": 2, \"handleThickness\": 3.2, \"height\": 10.0, \"instance\": 0, \"lensHeightRatio\": 0.42, \"lipOverhang\": 0.4, \"neckFraction\": 0.35, \"ordinal\": 41901, \"redesign\": 0, \"replanPhase\": 1, \"rimHeight\": 2.0, \"seamWidth\": 2.2, \"seatBoardCount\": 2, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.5399999999999999, \"sofaCushionCount\": 2, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"supportThickness\": 3.2, \"towerMiddleWidthFraction\": 0.8150000000000001, \"towerTopWidthFraction\": 0.6050000000000001, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 12.0}",
+  "semanticFeatures": {
+    "supportCount": 4,
+    "supportType": "four separated legs"
+  },
+  "geometryPlan": {
+    "category": "bed",
+    "variant": 1,
+    "instance": 0,
+    "style": 0,
+    "structureIndex": 0,
+    "width": 12.0,
+    "depth": 22.0,
+    "height": 10.0,
+    "wallThickness": 2.0,
+    "shapeChamfer": 0.0,
+    "featureCount": 2,
+    "supportInset": 1.0,
+    "detailPosition": 0.25,
+    "neckFraction": 0.35,
+    "shoulderFraction": 0.5399999999999999,
+    "rimHeight": 2.0,
+    "lipOverhang": 0.4,
+    "baseWidthFraction": 0.47000000000000003,
+    "redesign": 0,
+    "ordinal": 41901,
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "supportInset",
+      "shapeChamfer",
+      "featureCount",
+      "neck aperture ratio",
+      "functional rim projection",
+      "base taper",
+      "support cross section",
+      "functional part position"
+    ],
+    "construction": "original continuous boxes and chamfered cross sections",
+    "replanPhase": 1,
+    "supportThickness": 3.2,
+    "handleThickness": 3.2,
+    "lensHeightRatio": 0.42,
+    "deckPositionRatio": 0.27,
+    "towerMiddleWidthFraction": 0.8150000000000001,
+    "towerTopWidthFraction": 0.6050000000000001,
+    "seamWidth": 2.2,
+    "seatBoardCount": 2,
+    "backSlatCount": 2,
+    "sofaCushionCount": 2
+  },
+  "resamplingHistory": [
+    {
+      "scale": 0.8779143424900191,
+      "actualVoxelCount": 962,
+      "failureReasons": []
+    }
+  ],
+  "finalSamplingScale": 0.8779143424900191,
+  "exactOccupancyHash": "a4d3ced234fdab67ea9236c3eb6df5fa06e7a75fff11312cbf34b72abcfa2c78",
+  "canonicalGeometryHash": "00f563f9cada5b5b60637b3a028d151b56cbb770baaa98ffb9d6d1796b4d62d8",
+  "canonicalHashAlgorithm": "axis-permutation-6_x_sign-8_min_sha256_utf8_xyz_semicolon_v1",
+  "promptRecordIds": [
+    "vx80k5p_20261010_B_bed_m0001_l1",
+    "vx80k5p_20261010_B_bed_m0001_l2",
+    "vx80k5p_20261010_B_bed_m0001_l3",
+    "vx80k5p_20261010_B_bed_m0001_l4",
+    "vx80k5p_20261010_B_bed_m0001_l5"
+  ],
+  "voxels": [
+    {
+      "x": 0,
+      "y": 5,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_1"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_3"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 14,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 2,
+      "y": 14,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 14,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 3,
+      "y": 14,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 14,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 5,
+      "y": 14,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 11,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 11,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 13,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 13,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 14,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 6,
+      "y": 14,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 11,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 11,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 12,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 12,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 13,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 13,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 14,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 7,
+      "y": 14,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_2"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 16,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 17,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "leg_4"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 2,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 3,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 4,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 5,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 6,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 7,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_1"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 10,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 11,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 12,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 13,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 14,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 15,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 16,
+      "color": [
+        218,
+        202,
+        166
+      ],
+      "part": "mattress_2"
+    },
+    {
+      "x": 8,
+      "y": 10,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 10,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 11,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 11,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 12,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 12,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 13,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 13,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 14,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 8,
+      "y": 14,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 2,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 3,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 4,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 5,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 6,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 7,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 8,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 9,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 10,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 11,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 12,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 13,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 14,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 15,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 16,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 17,
+      "color": [
+        177,
+        113,
+        62
+      ],
+      "part": "frame"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 18,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "footboard"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 11,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 11,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 12,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 12,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 13,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 13,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "z": 0,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "z": 1,
+      "color": [
+        216,
+        182,
+        121
+      ],
+      "part": "headboard"
+    }
+  ],
+  "validation": {
+    "actualVoxelCount": 962,
+    "sixNeighborComponentCount": 1,
+    "checks": {
+      "voxelRange": true,
+      "singleSixConnectedComponent": true,
+      "nonnegative48Grid": true,
+      "groundContactY0": true,
+      "uniqueCoordinates": true,
+      "fourSeparateGroundedLegs": true
+    },
+    "parts": {
+      "leg_1": {
+        "voxelCount": 30,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          2,
+          5,
+          3
+        ]
+      },
+      "leg_2": {
+        "voxelCount": 30,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          2,
+          5,
+          3
+        ]
+      },
+      "leg_3": {
+        "voxelCount": 20,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          2,
+          5,
+          2
+        ]
+      },
+      "leg_4": {
+        "voxelCount": 20,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          2,
+          5,
+          2
+        ]
+      },
+      "frame": {
+        "voxelCount": 320,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          10,
+          2,
+          16
+        ]
+      },
+      "mattress_1": {
+        "voxelCount": 144,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          8,
+          3,
+          6
+        ]
+      },
+      "mattress_2": {
+        "voxelCount": 168,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          8,
+          3,
+          7
+        ]
+      },
+      "headboard": {
+        "voxelCount": 200,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          10,
+          10,
+          2
+        ]
+      },
+      "footboard": {
+        "voxelCount": 30,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          10,
+          3,
+          1
+        ]
+      }
+    },
+    "openings": {},
+    "partSeparation": {
+      "mattress_": {
+        "expectedDistinctParts": 2,
+        "actualSeparatedComponents": 2
+      }
+    },
+    "visibleSurfaceFeatures": [],
+    "nonApplicableFeatures": {
+      "animalEyes": "not_applicable: no animal categories"
+    },
+    "failureReasons": [],
+    "passed": true,
+    "semanticVerificationScope": "measured occupancy, component, part adjacency, opening witnesses, support and surface rays",
+    "advancedSemanticChecks": {
+      "minimumConnectionCrossSection": "bbox_thickness_measured_for_narrow_parts",
+      "sideLeakFloodMask": "independent_verifier",
+      "nearDuplicateMeaningfulnessReview": "pending"
+    },
+    "formatRoundtrip": {
+      "npzCoordinatesColorsOccupancy": true,
+      "voxCoordinatesColors": true,
+      "voxAxisTransform": "JSON(x,y,z) -> VOX(x,z,y)",
+      "objExposedFaceCount": 1016,
+      "previewViews": [
+        "front +Z",
+        "side +X",
+        "top +Y",
+        "left -X",
+        "back -Z",
+        "oblique +X +Y +Z"
+      ]
+    },
+    "exactOccupancyHash": "a4d3ced234fdab67ea9236c3eb6df5fa06e7a75fff11312cbf34b72abcfa2c78",
+    "canonicalGeometryHash": "00f563f9cada5b5b60637b3a028d151b56cbb770baaa98ffb9d6d1796b4d62d8",
+    "initialVoxelCount": 1434,
+    "resamplingHistory": [
+      {
+        "scale": 0.8779143424900191,
+        "actualVoxelCount": 962,
+        "failureReasons": []
+      }
+    ],
+    "duplicateCoordinateCleanupCount": 0,
+    "historicalExactDedupStatus": "unavailable_index",
+    "crossShardDedupStatus": "awaiting_merge",
+    "historicalCanonicalDedupStatus": "unavailable_coordinates",
+    "legoAssemblyStatus": "not_attempted",
+    "physicalValidationStatus": "not_attempted",
+    "generationInstructionReplay": {
+      "executedFullLevel": 5,
+      "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+      "coordinateRgbPartEquality": true,
+      "actualVoxelCount": 962,
+      "exactOccupancyHash": "a4d3ced234fdab67ea9236c3eb6df5fa06e7a75fff11312cbf34b72abcfa2c78",
+      "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+      "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+      "inputVoxelSha256": "a155e1d7080309d8bad22e4f8620bd00f456100af7ce0a8af6e30e5fd8c1364a",
+      "visibilitySchemaVersion": 3
+    }
+  },
+  "originalGenerationInstruction": {
+    "zh": "构造带床框、分区床垫及直线端板的四脚床，包括床框、床头板、床尾板、床垫和四脚。原始宽、深、高为12.00、22.00、10.00，壁厚2.00；按参数组织直线、折角及功能部件，附件在合理位置面连接，保留类别必需的空腔、开口、支撑分离和真实缝隙。主体与附件采用连续语义色区，从真实网格输出正视、侧视、俯视和斜视。采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。 原始参数规格：{\"backSlatCount\": 2, \"baseWidthFraction\": 0.47000000000000003, \"category\": \"bed\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\", \"neck aperture ratio\", \"functional rim projection\", \"base taper\", \"support cross section\", \"functional part position\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"deckPositionRatio\": 0.27, \"depth\": 22.0, \"detailPosition\": 0.25, \"featureCount\": 2, \"handleThickness\": 3.2, \"height\": 10.0, \"instance\": 0, \"lensHeightRatio\": 0.42, \"lipOverhang\": 0.4, \"neckFraction\": 0.35, \"ordinal\": 41901, \"redesign\": 0, \"replanPhase\": 1, \"rimHeight\": 2.0, \"seamWidth\": 2.2, \"seatBoardCount\": 2, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.5399999999999999, \"sofaCushionCount\": 2, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"supportThickness\": 3.2, \"towerMiddleWidthFraction\": 0.8150000000000001, \"towerTopWidthFraction\": 0.6050000000000001, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 12.0}",
+    "en": "Construct a four leg bed with a frame, segmented mattress and straight end boards, including a frame, headboard, footboard, mattress and four legs. Original width, depth and height are 12.00, 22.00 and 10.00, with 2.00 wall thickness. Arrange straight and angular functional parts according to the specification, with face-connected attachments in their functional locations. Preserve required cavities, openings, separated supports and genuine seams. Use continuous semantic color regions and render front, side, top and oblique views from the actual geometry. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments. Original parameter specification: {\"backSlatCount\": 2, \"baseWidthFraction\": 0.47000000000000003, \"category\": \"bed\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\", \"neck aperture ratio\", \"functional rim projection\", \"base taper\", \"support cross section\", \"functional part position\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"deckPositionRatio\": 0.27, \"depth\": 22.0, \"detailPosition\": 0.25, \"featureCount\": 2, \"handleThickness\": 3.2, \"height\": 10.0, \"instance\": 0, \"lensHeightRatio\": 0.42, \"lipOverhang\": 0.4, \"neckFraction\": 0.35, \"ordinal\": 41901, \"redesign\": 0, \"replanPhase\": 1, \"rimHeight\": 2.0, \"seamWidth\": 2.2, \"seatBoardCount\": 2, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.5399999999999999, \"sofaCushionCount\": 2, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"supportThickness\": 3.2, \"towerMiddleWidthFraction\": 0.8150000000000001, \"towerTopWidthFraction\": 0.6050000000000001, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 12.0}"
+  },
+  "generationInstructionReplay": {
+    "executedFullLevel": 5,
+    "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+    "coordinateRgbPartEquality": true,
+    "actualVoxelCount": 962,
+    "exactOccupancyHash": "a4d3ced234fdab67ea9236c3eb6df5fa06e7a75fff11312cbf34b72abcfa2c78",
+    "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+    "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+    "inputVoxelSha256": "a155e1d7080309d8bad22e4f8620bd00f456100af7ce0a8af6e30e5fd8c1364a",
+    "visibilitySchemaVersion": 3
+  }
+}

@@ -1,0 +1,810 @@
+[
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_bus_m0001",
+    "category": "bus",
+    "categoryId": 8,
+    "variantId": "vx80k5p_20261010_B_bus_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_bus_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_bus_m0001",
+    "modelSeed": 800053331,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_bus_m0001_l1",
+    "promptLevel": 1,
+    "promptType": "minimal",
+    "structuralVariant": 0,
+    "captionZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。",
+    "captionEn": "A box shaped bus with four wheels, side windows, door and driving cabin.",
+    "voxelPromptZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A box shaped bus with four wheels, side windows, door and driving cabin. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "chassis",
+      "cab_left",
+      "cab_right",
+      "cab_rear",
+      "cab_front",
+      "roof",
+      "wheel_1",
+      "wheel_2",
+      "wheel_3",
+      "wheel_4"
+    ],
+    "invariantFeatures": "a chassis, passenger cabin, side windows, door and four wheels",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount",
+      "doorFrameGlazing"
+    ],
+    "designSpec": {
+      "category": "bus",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 22.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 53331,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "doorFrameGlazing": true
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/bus/vx80k5p_20261010_B_bus_m0001/model.json",
+    "modelNpzPath": "models/bus/vx80k5p_20261010_B_bus_m0001/model.npz",
+    "targetOccupancyHash": "c1598be9d438b2b8ebc144d145eb00caaba226b0e9ae1a3a278db492faa89c44",
+    "targetCanonicalGeometryHash": "0cbe61981398d8effed022b7b952e8ce6fa38f1f9d5e753abddb9d6043368df2",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a box shaped bus with four wheels, side windows, door and driving cabin"
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a box shaped bus with four wheels, side windows, door and driving cabin"
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_bus_m0001",
+    "category": "bus",
+    "categoryId": 8,
+    "variantId": "vx80k5p_20261010_B_bus_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_bus_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_bus_m0001",
+    "modelSeed": 800053331,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_bus_m0001_l2",
+    "promptLevel": 2,
+    "promptType": "basic_structure",
+    "structuralVariant": 0,
+    "captionZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。它由底盘、载客舱、侧窗、车门和四个轮子组成。",
+    "captionEn": "A box shaped bus with four wheels, side windows, door and driving cabin. It includes a chassis, passenger cabin, side windows, door and four wheels.",
+    "voxelPromptZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。它由底盘、载客舱、侧窗、车门和四个轮子组成。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A box shaped bus with four wheels, side windows, door and driving cabin. It includes a chassis, passenger cabin, side windows, door and four wheels. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "chassis",
+      "cab_left",
+      "cab_right",
+      "cab_rear",
+      "cab_front",
+      "roof",
+      "wheel_1",
+      "wheel_2",
+      "wheel_3",
+      "wheel_4"
+    ],
+    "invariantFeatures": "a chassis, passenger cabin, side windows, door and four wheels",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount",
+      "doorFrameGlazing"
+    ],
+    "designSpec": {
+      "category": "bus",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 22.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 53331,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "doorFrameGlazing": true
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/bus/vx80k5p_20261010_B_bus_m0001/model.json",
+    "modelNpzPath": "models/bus/vx80k5p_20261010_B_bus_m0001/model.npz",
+    "targetOccupancyHash": "c1598be9d438b2b8ebc144d145eb00caaba226b0e9ae1a3a278db492faa89c44",
+    "targetCanonicalGeometryHash": "0cbe61981398d8effed022b7b952e8ce6fa38f1f9d5e753abddb9d6043368df2",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a box shaped bus with four wheels, side windows, door and driving cabin"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a box shaped bus with four wheels, side windows, door and driving cabin"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_bus_m0001",
+    "category": "bus",
+    "categoryId": 8,
+    "variantId": "vx80k5p_20261010_B_bus_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_bus_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_bus_m0001",
+    "modelSeed": 800053331,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_bus_m0001_l3",
+    "promptLevel": 3,
+    "promptType": "geometry",
+    "structuralVariant": 0,
+    "captionZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。它由底盘、载客舱、侧窗、车门和四个轮子组成。轮宽约为底盘宽的0.20倍，左右前后轮根连接底盘。",
+    "captionEn": "A box shaped bus with four wheels, side windows, door and driving cabin. It includes a chassis, passenger cabin, side windows, door and four wheels. Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides.",
+    "voxelPromptZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。它由底盘、载客舱、侧窗、车门和四个轮子组成。轮宽约为底盘宽的0.20倍，左右前后轮根连接底盘。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A box shaped bus with four wheels, side windows, door and driving cabin. It includes a chassis, passenger cabin, side windows, door and four wheels. Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "chassis",
+      "cab_left",
+      "cab_right",
+      "cab_rear",
+      "cab_front",
+      "roof",
+      "wheel_1",
+      "wheel_2",
+      "wheel_3",
+      "wheel_4"
+    ],
+    "invariantFeatures": "a chassis, passenger cabin, side windows, door and four wheels",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount",
+      "doorFrameGlazing"
+    ],
+    "designSpec": {
+      "category": "bus",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 22.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 53331,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "doorFrameGlazing": true
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/bus/vx80k5p_20261010_B_bus_m0001/model.json",
+    "modelNpzPath": "models/bus/vx80k5p_20261010_B_bus_m0001/model.npz",
+    "targetOccupancyHash": "c1598be9d438b2b8ebc144d145eb00caaba226b0e9ae1a3a278db492faa89c44",
+    "targetCanonicalGeometryHash": "0cbe61981398d8effed022b7b952e8ce6fa38f1f9d5e753abddb9d6043368df2",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a box shaped bus with four wheels, side windows, door and driving cabin"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.2
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a box shaped bus with four wheels, side windows, door and driving cabin"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.2
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_bus_m0001",
+    "category": "bus",
+    "categoryId": 8,
+    "variantId": "vx80k5p_20261010_B_bus_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_bus_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_bus_m0001",
+    "modelSeed": 800053331,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_bus_m0001_l4",
+    "promptLevel": 4,
+    "promptType": "proportion",
+    "structuralVariant": 0,
+    "captionZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。它由底盘、载客舱、侧窗、车门和四个轮子组成。轮宽约为底盘宽的0.20倍，左右前后轮根连接底盘。宽深比约0.76，高/最大水平跨度约0.59；驾驶端位于车体前侧，轴距与车长比0.69。",
+    "captionEn": "A box shaped bus with four wheels, side windows, door and driving cabin. It includes a chassis, passenger cabin, side windows, door and four wheels. Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides. Width/depth is 0.76; height/horizontal-span is 0.59. The driving end faces forward. Axle-gap/depth is 0.69.",
+    "voxelPromptZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。它由底盘、载客舱、侧窗、车门和四个轮子组成。轮宽约为底盘宽的0.20倍，左右前后轮根连接底盘。宽深比约0.76，高/最大水平跨度约0.59；驾驶端位于车体前侧，轴距与车长比0.69。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A box shaped bus with four wheels, side windows, door and driving cabin. It includes a chassis, passenger cabin, side windows, door and four wheels. Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides. Width/depth is 0.76; height/horizontal-span is 0.59. The driving end faces forward. Axle-gap/depth is 0.69. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "chassis",
+      "cab_left",
+      "cab_right",
+      "cab_rear",
+      "cab_front",
+      "roof",
+      "wheel_1",
+      "wheel_2",
+      "wheel_3",
+      "wheel_4"
+    ],
+    "invariantFeatures": "a chassis, passenger cabin, side windows, door and four wheels",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount",
+      "doorFrameGlazing"
+    ],
+    "designSpec": {
+      "category": "bus",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 22.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 53331,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "doorFrameGlazing": true
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/bus/vx80k5p_20261010_B_bus_m0001/model.json",
+    "modelNpzPath": "models/bus/vx80k5p_20261010_B_bus_m0001/model.npz",
+    "targetOccupancyHash": "c1598be9d438b2b8ebc144d145eb00caaba226b0e9ae1a3a278db492faa89c44",
+    "targetCanonicalGeometryHash": "0cbe61981398d8effed022b7b952e8ce6fa38f1f9d5e753abddb9d6043368df2",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a box shaped bus with four wheels, side windows, door and driving cabin"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.2
+        }
+      },
+      {
+        "widthDepthRatio": 0.76,
+        "heightSpanRatio": 0.59,
+        "partPosition": "The driving end faces forward.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "wheel_1",
+          "partB": "wheel_2",
+          "axis": 2,
+          "referencePart": "chassis",
+          "referenceAxis": 2,
+          "ratio": 0.69
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a box shaped bus with four wheels, side windows, door and driving cabin"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.2
+        }
+      },
+      {
+        "widthDepthRatio": 0.76,
+        "heightSpanRatio": 0.59,
+        "partPosition": "The driving end faces forward.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "wheel_1",
+          "partB": "wheel_2",
+          "axis": 2,
+          "referencePart": "chassis",
+          "referenceAxis": 2,
+          "ratio": 0.69
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_bus_m0001",
+    "category": "bus",
+    "categoryId": 8,
+    "variantId": "vx80k5p_20261010_B_bus_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_bus_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_bus_m0001",
+    "modelSeed": 800053331,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_bus_m0001_l5",
+    "promptLevel": 5,
+    "promptType": "comprehensive",
+    "structuralVariant": 0,
+    "captionZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。它由底盘、载客舱、侧窗、车门和四个轮子组成。轮宽约为底盘宽的0.20倍，左右前后轮根连接底盘。宽深比约0.76，高/最大水平跨度约0.59；驾驶端位于车体前侧，轴距与车长比0.69。实测采用4种不透明颜色，车顶以蓝灰色为主，前窗呈青色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。",
+    "captionEn": "A box shaped bus with four wheels, side windows, door and driving cabin. It includes a chassis, passenger cabin, side windows, door and four wheels. Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides. Width/depth is 0.76; height/horizontal-span is 0.59. The driving end faces forward. Axle-gap/depth is 0.69. Across 4 opaque colors, the roof is mainly blue-gray and the windshield is cyan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces.",
+    "voxelPromptZh": "一个带四轮、侧窗、车门和箱形驾驶区的公交车。它由底盘、载客舱、侧窗、车门和四个轮子组成。轮宽约为底盘宽的0.20倍，左右前后轮根连接底盘。宽深比约0.76，高/最大水平跨度约0.59；驾驶端位于车体前侧，轴距与车长比0.69。实测采用4种不透明颜色，车顶以蓝灰色为主，前窗呈青色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A box shaped bus with four wheels, side windows, door and driving cabin. It includes a chassis, passenger cabin, side windows, door and four wheels. Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides. Width/depth is 0.76; height/horizontal-span is 0.59. The driving end faces forward. Axle-gap/depth is 0.69. Across 4 opaque colors, the roof is mainly blue-gray and the windshield is cyan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "chassis",
+      "cab_left",
+      "cab_right",
+      "cab_rear",
+      "cab_front",
+      "roof",
+      "wheel_1",
+      "wheel_2",
+      "wheel_3",
+      "wheel_4"
+    ],
+    "invariantFeatures": "a chassis, passenger cabin, side windows, door and four wheels",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "featureCount",
+      "doorFrameGlazing"
+    ],
+    "designSpec": {
+      "category": "bus",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 12.0,
+      "depth": 22.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 53331,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "doorFrameGlazing": true
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/bus/vx80k5p_20261010_B_bus_m0001/model.json",
+    "modelNpzPath": "models/bus/vx80k5p_20261010_B_bus_m0001/model.npz",
+    "targetOccupancyHash": "c1598be9d438b2b8ebc144d145eb00caaba226b0e9ae1a3a278db492faa89c44",
+    "targetCanonicalGeometryHash": "0cbe61981398d8effed022b7b952e8ce6fa38f1f9d5e753abddb9d6043368df2",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a box shaped bus with four wheels, side windows, door and driving cabin"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.2
+        }
+      },
+      {
+        "widthDepthRatio": 0.76,
+        "heightSpanRatio": 0.59,
+        "partPosition": "The driving end faces forward.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "wheel_1",
+          "partB": "wheel_2",
+          "axis": 2,
+          "referencePart": "chassis",
+          "referenceAxis": 2,
+          "ratio": 0.69
+        }
+      },
+      {
+        "paletteSize": 4,
+        "colorRegions": [
+          {
+            "part": "roof",
+            "color": [
+              61,
+              103,
+              137
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "cab_front",
+            "color": [
+              98,
+              176,
+              200
+            ],
+            "selection": "present"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a box shaped bus with four wheels, side windows, door and driving cabin"
+      },
+      {
+        "parts": [
+          "chassis",
+          "cab_left",
+          "cab_right",
+          "cab_rear",
+          "cab_front",
+          "roof",
+          "wheel_1",
+          "wheel_2",
+          "wheel_3",
+          "wheel_4"
+        ]
+      },
+      {
+        "structuralDetail": "Wheel width is 0.20 chassis-widths; front/rear pairs connect on both sides.",
+        "section": {
+          "part": "wheel_1",
+          "thicknessAxis": 0,
+          "referencePart": "chassis",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 10,
+          "relativeThickness": 0.2
+        }
+      },
+      {
+        "widthDepthRatio": 0.76,
+        "heightSpanRatio": 0.59,
+        "partPosition": "The driving end faces forward.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "wheel_1",
+          "partB": "wheel_2",
+          "axis": 2,
+          "referencePart": "chassis",
+          "referenceAxis": 2,
+          "ratio": 0.69
+        }
+      },
+      {
+        "paletteSize": 4,
+        "colorRegions": [
+          {
+            "part": "roof",
+            "color": [
+              61,
+              103,
+              137
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "cab_front",
+            "color": [
+              98,
+              176,
+              200
+            ],
+            "selection": "present"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  }
+]

@@ -1,0 +1,745 @@
+[
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_mug_m0001",
+    "category": "mug",
+    "categoryId": 14,
+    "variantId": "vx80k5p_20261010_B_mug_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_mug_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_mug_m0001",
+    "modelSeed": 800064761,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_mug_m0001_l1",
+    "promptLevel": 1,
+    "promptType": "minimal",
+    "structuralVariant": 0,
+    "captionZh": "一个带空腔、封底及贯通角形把手的方形马克杯。",
+    "captionEn": "An angular mug with a hollow body, closed floor and pierced handle.",
+    "voxelPromptZh": "一个带空腔、封底及贯通角形把手的方形马克杯。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular mug with a hollow body, closed floor and pierced handle. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "bottom",
+      "body",
+      "rim",
+      "handle_lower",
+      "handle_upper",
+      "handle_outer"
+    ],
+    "invariantFeatures": "a floor, walls, rim and a side handle attached at upper and lower roots",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer",
+      "lipOverhang"
+    ],
+    "designSpec": {
+      "category": "mug",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 12.0,
+      "height": 14.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 64761,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/mug/vx80k5p_20261010_B_mug_m0001/model.json",
+    "modelNpzPath": "models/mug/vx80k5p_20261010_B_mug_m0001/model.npz",
+    "targetOccupancyHash": "c81131983bf2de64fd717b94e27f6dba5d561325bbd823e28ec34cd13a7ed414",
+    "targetCanonicalGeometryHash": "00512bceb30dd7168ce1fd5168b125beea3542ad7aaa29037e99692a1f5d8eef",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular mug with a hollow body, closed floor and pierced handle"
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular mug with a hollow body, closed floor and pierced handle"
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_mug_m0001",
+    "category": "mug",
+    "categoryId": 14,
+    "variantId": "vx80k5p_20261010_B_mug_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_mug_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_mug_m0001",
+    "modelSeed": 800064761,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_mug_m0001_l2",
+    "promptLevel": 2,
+    "promptType": "basic_structure",
+    "structuralVariant": 0,
+    "captionZh": "一个带空腔、封底及贯通角形把手的方形马克杯。它由杯底、杯壁、口沿和侧面上下接壁的把手组成。",
+    "captionEn": "An angular mug with a hollow body, closed floor and pierced handle. It includes a floor, walls, rim and a side handle attached at upper and lower roots.",
+    "voxelPromptZh": "一个带空腔、封底及贯通角形把手的方形马克杯。它由杯底、杯壁、口沿和侧面上下接壁的把手组成。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular mug with a hollow body, closed floor and pierced handle. It includes a floor, walls, rim and a side handle attached at upper and lower roots. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "bottom",
+      "body",
+      "rim",
+      "handle_lower",
+      "handle_upper",
+      "handle_outer"
+    ],
+    "invariantFeatures": "a floor, walls, rim and a side handle attached at upper and lower roots",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer",
+      "lipOverhang"
+    ],
+    "designSpec": {
+      "category": "mug",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 12.0,
+      "height": 14.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 64761,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/mug/vx80k5p_20261010_B_mug_m0001/model.json",
+    "modelNpzPath": "models/mug/vx80k5p_20261010_B_mug_m0001/model.npz",
+    "targetOccupancyHash": "c81131983bf2de64fd717b94e27f6dba5d561325bbd823e28ec34cd13a7ed414",
+    "targetCanonicalGeometryHash": "00512bceb30dd7168ce1fd5168b125beea3542ad7aaa29037e99692a1f5d8eef",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular mug with a hollow body, closed floor and pierced handle"
+      },
+      {
+        "parts": [
+          "bottom",
+          "body",
+          "rim",
+          "handle_lower",
+          "handle_upper",
+          "handle_outer"
+        ]
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular mug with a hollow body, closed floor and pierced handle"
+      },
+      {
+        "parts": [
+          "bottom",
+          "body",
+          "rim",
+          "handle_lower",
+          "handle_upper",
+          "handle_outer"
+        ]
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_mug_m0001",
+    "category": "mug",
+    "categoryId": 14,
+    "variantId": "vx80k5p_20261010_B_mug_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_mug_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_mug_m0001",
+    "modelSeed": 800064761,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_mug_m0001_l3",
+    "promptLevel": 3,
+    "promptType": "geometry",
+    "structuralVariant": 0,
+    "captionZh": "一个带空腔、封底及贯通角形把手的方形马克杯。它由杯底、杯壁、口沿和侧面上下接壁的把手组成。底部厚度约为主体宽度的0.17倍，连续壁围成开口空腔。",
+    "captionEn": "An angular mug with a hollow body, closed floor and pierced handle. It includes a floor, walls, rim and a side handle attached at upper and lower roots. The floor is 0.17 body-widths thick; connected walls surround an open cavity.",
+    "voxelPromptZh": "一个带空腔、封底及贯通角形把手的方形马克杯。它由杯底、杯壁、口沿和侧面上下接壁的把手组成。底部厚度约为主体宽度的0.17倍，连续壁围成开口空腔。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular mug with a hollow body, closed floor and pierced handle. It includes a floor, walls, rim and a side handle attached at upper and lower roots. The floor is 0.17 body-widths thick; connected walls surround an open cavity. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "bottom",
+      "body",
+      "rim",
+      "handle_lower",
+      "handle_upper",
+      "handle_outer"
+    ],
+    "invariantFeatures": "a floor, walls, rim and a side handle attached at upper and lower roots",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer",
+      "lipOverhang"
+    ],
+    "designSpec": {
+      "category": "mug",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 12.0,
+      "height": 14.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 64761,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/mug/vx80k5p_20261010_B_mug_m0001/model.json",
+    "modelNpzPath": "models/mug/vx80k5p_20261010_B_mug_m0001/model.npz",
+    "targetOccupancyHash": "c81131983bf2de64fd717b94e27f6dba5d561325bbd823e28ec34cd13a7ed414",
+    "targetCanonicalGeometryHash": "00512bceb30dd7168ce1fd5168b125beea3542ad7aaa29037e99692a1f5d8eef",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular mug with a hollow body, closed floor and pierced handle"
+      },
+      {
+        "parts": [
+          "bottom",
+          "body",
+          "rim",
+          "handle_lower",
+          "handle_upper",
+          "handle_outer"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.17 body-widths thick; connected walls surround an open cavity.",
+        "section": {
+          "part": "bottom",
+          "thicknessAxis": 1,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 12,
+          "relativeThickness": 0.17
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular mug with a hollow body, closed floor and pierced handle"
+      },
+      {
+        "parts": [
+          "bottom",
+          "body",
+          "rim",
+          "handle_lower",
+          "handle_upper",
+          "handle_outer"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.17 body-widths thick; connected walls surround an open cavity.",
+        "section": {
+          "part": "bottom",
+          "thicknessAxis": 1,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 12,
+          "relativeThickness": 0.17
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_mug_m0001",
+    "category": "mug",
+    "categoryId": 14,
+    "variantId": "vx80k5p_20261010_B_mug_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_mug_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_mug_m0001",
+    "modelSeed": 800064761,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_mug_m0001_l4",
+    "promptLevel": 4,
+    "promptType": "proportion",
+    "structuralVariant": 0,
+    "captionZh": "一个带空腔、封底及贯通角形把手的方形马克杯。它由杯底、杯壁、口沿和侧面上下接壁的把手组成。底部厚度约为主体宽度的0.17倍，连续壁围成开口空腔。宽深比约1.82，高/最大水平跨度约0.55；口沿位于围合侧壁上方，口沿与主体宽度比1.00。",
+    "captionEn": "An angular mug with a hollow body, closed floor and pierced handle. It includes a floor, walls, rim and a side handle attached at upper and lower roots. The floor is 0.17 body-widths thick; connected walls surround an open cavity. Width/depth is 1.82; height/horizontal-span is 0.55. The rim sits above the surrounding walls. Rim/body width is 1.00.",
+    "voxelPromptZh": "一个带空腔、封底及贯通角形把手的方形马克杯。它由杯底、杯壁、口沿和侧面上下接壁的把手组成。底部厚度约为主体宽度的0.17倍，连续壁围成开口空腔。宽深比约1.82，高/最大水平跨度约0.55；口沿位于围合侧壁上方，口沿与主体宽度比1.00。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular mug with a hollow body, closed floor and pierced handle. It includes a floor, walls, rim and a side handle attached at upper and lower roots. The floor is 0.17 body-widths thick; connected walls surround an open cavity. Width/depth is 1.82; height/horizontal-span is 0.55. The rim sits above the surrounding walls. Rim/body width is 1.00. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "bottom",
+      "body",
+      "rim",
+      "handle_lower",
+      "handle_upper",
+      "handle_outer"
+    ],
+    "invariantFeatures": "a floor, walls, rim and a side handle attached at upper and lower roots",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer",
+      "lipOverhang"
+    ],
+    "designSpec": {
+      "category": "mug",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 12.0,
+      "height": 14.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 64761,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/mug/vx80k5p_20261010_B_mug_m0001/model.json",
+    "modelNpzPath": "models/mug/vx80k5p_20261010_B_mug_m0001/model.npz",
+    "targetOccupancyHash": "c81131983bf2de64fd717b94e27f6dba5d561325bbd823e28ec34cd13a7ed414",
+    "targetCanonicalGeometryHash": "00512bceb30dd7168ce1fd5168b125beea3542ad7aaa29037e99692a1f5d8eef",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular mug with a hollow body, closed floor and pierced handle"
+      },
+      {
+        "parts": [
+          "bottom",
+          "body",
+          "rim",
+          "handle_lower",
+          "handle_upper",
+          "handle_outer"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.17 body-widths thick; connected walls surround an open cavity.",
+        "section": {
+          "part": "bottom",
+          "thicknessAxis": 1,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 12,
+          "relativeThickness": 0.17
+        }
+      },
+      {
+        "widthDepthRatio": 1.82,
+        "heightSpanRatio": 0.55,
+        "partPosition": "The rim sits above the surrounding walls.",
+        "spacing": {
+          "kind": "span_ratio",
+          "partA": "rim",
+          "partB": "body",
+          "axis": 0,
+          "ratio": 1.0
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular mug with a hollow body, closed floor and pierced handle"
+      },
+      {
+        "parts": [
+          "bottom",
+          "body",
+          "rim",
+          "handle_lower",
+          "handle_upper",
+          "handle_outer"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.17 body-widths thick; connected walls surround an open cavity.",
+        "section": {
+          "part": "bottom",
+          "thicknessAxis": 1,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 12,
+          "relativeThickness": 0.17
+        }
+      },
+      {
+        "widthDepthRatio": 1.82,
+        "heightSpanRatio": 0.55,
+        "partPosition": "The rim sits above the surrounding walls.",
+        "spacing": {
+          "kind": "span_ratio",
+          "partA": "rim",
+          "partB": "body",
+          "axis": 0,
+          "ratio": 1.0
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_mug_m0001",
+    "category": "mug",
+    "categoryId": 14,
+    "variantId": "vx80k5p_20261010_B_mug_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_mug_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_mug_m0001",
+    "modelSeed": 800064761,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_mug_m0001_l5",
+    "promptLevel": 5,
+    "promptType": "comprehensive",
+    "structuralVariant": 0,
+    "captionZh": "一个带空腔、封底及贯通角形把手的方形马克杯。它由杯底、杯壁、口沿和侧面上下接壁的把手组成。底部厚度约为主体宽度的0.17倍，连续壁围成开口空腔。宽深比约1.82，高/最大水平跨度约0.55；口沿位于围合侧壁上方，口沿与主体宽度比1.00。实测采用2种不透明颜色，杯壁以棕色为主，把手呈浅棕色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。",
+    "captionEn": "An angular mug with a hollow body, closed floor and pierced handle. It includes a floor, walls, rim and a side handle attached at upper and lower roots. The floor is 0.17 body-widths thick; connected walls surround an open cavity. Width/depth is 1.82; height/horizontal-span is 0.55. The rim sits above the surrounding walls. Rim/body width is 1.00. Across 2 opaque colors, the walls is mainly brown and the handle is tan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces.",
+    "voxelPromptZh": "一个带空腔、封底及贯通角形把手的方形马克杯。它由杯底、杯壁、口沿和侧面上下接壁的把手组成。底部厚度约为主体宽度的0.17倍，连续壁围成开口空腔。宽深比约1.82，高/最大水平跨度约0.55；口沿位于围合侧壁上方，口沿与主体宽度比1.00。实测采用2种不透明颜色，杯壁以棕色为主，把手呈浅棕色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular mug with a hollow body, closed floor and pierced handle. It includes a floor, walls, rim and a side handle attached at upper and lower roots. The floor is 0.17 body-widths thick; connected walls surround an open cavity. Width/depth is 1.82; height/horizontal-span is 0.55. The rim sits above the surrounding walls. Rim/body width is 1.00. Across 2 opaque colors, the walls is mainly brown and the handle is tan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "bottom",
+      "body",
+      "rim",
+      "handle_lower",
+      "handle_upper",
+      "handle_outer"
+    ],
+    "invariantFeatures": "a floor, walls, rim and a side handle attached at upper and lower roots",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer",
+      "lipOverhang"
+    ],
+    "designSpec": {
+      "category": "mug",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 12.0,
+      "height": 14.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 64761,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/mug/vx80k5p_20261010_B_mug_m0001/model.json",
+    "modelNpzPath": "models/mug/vx80k5p_20261010_B_mug_m0001/model.npz",
+    "targetOccupancyHash": "c81131983bf2de64fd717b94e27f6dba5d561325bbd823e28ec34cd13a7ed414",
+    "targetCanonicalGeometryHash": "00512bceb30dd7168ce1fd5168b125beea3542ad7aaa29037e99692a1f5d8eef",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular mug with a hollow body, closed floor and pierced handle"
+      },
+      {
+        "parts": [
+          "bottom",
+          "body",
+          "rim",
+          "handle_lower",
+          "handle_upper",
+          "handle_outer"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.17 body-widths thick; connected walls surround an open cavity.",
+        "section": {
+          "part": "bottom",
+          "thicknessAxis": 1,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 12,
+          "relativeThickness": 0.17
+        }
+      },
+      {
+        "widthDepthRatio": 1.82,
+        "heightSpanRatio": 0.55,
+        "partPosition": "The rim sits above the surrounding walls.",
+        "spacing": {
+          "kind": "span_ratio",
+          "partA": "rim",
+          "partB": "body",
+          "axis": 0,
+          "ratio": 1.0
+        }
+      },
+      {
+        "paletteSize": 2,
+        "colorRegions": [
+          {
+            "part": "body",
+            "color": [
+              177,
+              113,
+              62
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "handle_outer",
+            "color": [
+              216,
+              182,
+              121
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular mug with a hollow body, closed floor and pierced handle"
+      },
+      {
+        "parts": [
+          "bottom",
+          "body",
+          "rim",
+          "handle_lower",
+          "handle_upper",
+          "handle_outer"
+        ]
+      },
+      {
+        "structuralDetail": "The floor is 0.17 body-widths thick; connected walls surround an open cavity.",
+        "section": {
+          "part": "bottom",
+          "thicknessAxis": 1,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 12,
+          "relativeThickness": 0.17
+        }
+      },
+      {
+        "widthDepthRatio": 1.82,
+        "heightSpanRatio": 0.55,
+        "partPosition": "The rim sits above the surrounding walls.",
+        "spacing": {
+          "kind": "span_ratio",
+          "partA": "rim",
+          "partB": "body",
+          "axis": 0,
+          "ratio": 1.0
+        }
+      },
+      {
+        "paletteSize": 2,
+        "colorRegions": [
+          {
+            "part": "body",
+            "color": [
+              177,
+              113,
+              62
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "handle_outer",
+            "color": [
+              216,
+              182,
+              121
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  }
+]

@@ -1,0 +1,717 @@
+[
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_camera_m0001",
+    "category": "camera",
+    "categoryId": 9,
+    "variantId": "vx80k5p_20261010_B_camera_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_camera_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_camera_m0001",
+    "modelSeed": 800055236,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_camera_m0001_l1",
+    "promptLevel": 1,
+    "promptType": "minimal",
+    "structuralVariant": 0,
+    "captionZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。",
+    "captionEn": "A box camera with a forward lens, grip and top viewfinder.",
+    "voxelPromptZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A box camera with a forward lens, grip and top viewfinder. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "body",
+      "grip",
+      "lens",
+      "viewfinder"
+    ],
+    "invariantFeatures": "a body, forward lens, side grip and top viewfinder",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "structureIndex",
+      "style",
+      "shapeChamfer"
+    ],
+    "designSpec": {
+      "category": "camera",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 16.0,
+      "depth": 6.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 55236,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/camera/vx80k5p_20261010_B_camera_m0001/model.json",
+    "modelNpzPath": "models/camera/vx80k5p_20261010_B_camera_m0001/model.npz",
+    "targetOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+    "targetCanonicalGeometryHash": "05352da89ff1eead8b19144ddbaae9497ca08523b4641b39efbdb59fa4e5f91b",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a box camera with a forward lens, grip and top viewfinder"
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a box camera with a forward lens, grip and top viewfinder"
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_camera_m0001",
+    "category": "camera",
+    "categoryId": 9,
+    "variantId": "vx80k5p_20261010_B_camera_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_camera_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_camera_m0001",
+    "modelSeed": 800055236,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_camera_m0001_l2",
+    "promptLevel": 2,
+    "promptType": "basic_structure",
+    "structuralVariant": 0,
+    "captionZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。它由机身、前镜头、侧握柄和顶部取景框组成。",
+    "captionEn": "A box camera with a forward lens, grip and top viewfinder. It includes a body, forward lens, side grip and top viewfinder.",
+    "voxelPromptZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。它由机身、前镜头、侧握柄和顶部取景框组成。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A box camera with a forward lens, grip and top viewfinder. It includes a body, forward lens, side grip and top viewfinder. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "body",
+      "grip",
+      "lens",
+      "viewfinder"
+    ],
+    "invariantFeatures": "a body, forward lens, side grip and top viewfinder",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "structureIndex",
+      "style",
+      "shapeChamfer"
+    ],
+    "designSpec": {
+      "category": "camera",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 16.0,
+      "depth": 6.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 55236,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/camera/vx80k5p_20261010_B_camera_m0001/model.json",
+    "modelNpzPath": "models/camera/vx80k5p_20261010_B_camera_m0001/model.npz",
+    "targetOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+    "targetCanonicalGeometryHash": "05352da89ff1eead8b19144ddbaae9497ca08523b4641b39efbdb59fa4e5f91b",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a box camera with a forward lens, grip and top viewfinder"
+      },
+      {
+        "parts": [
+          "body",
+          "grip",
+          "lens",
+          "viewfinder"
+        ]
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a box camera with a forward lens, grip and top viewfinder"
+      },
+      {
+        "parts": [
+          "body",
+          "grip",
+          "lens",
+          "viewfinder"
+        ]
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_camera_m0001",
+    "category": "camera",
+    "categoryId": 9,
+    "variantId": "vx80k5p_20261010_B_camera_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_camera_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_camera_m0001",
+    "modelSeed": 800055236,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_camera_m0001_l3",
+    "promptLevel": 3,
+    "promptType": "geometry",
+    "structuralVariant": 0,
+    "captionZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。它由机身、前镜头、侧握柄和顶部取景框组成。镜头深度约为机身深度的0.80倍，并沿前向连接机身。",
+    "captionEn": "A box camera with a forward lens, grip and top viewfinder. It includes a body, forward lens, side grip and top viewfinder. Lens depth is 0.80 body-depths, extending forward from the connected body.",
+    "voxelPromptZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。它由机身、前镜头、侧握柄和顶部取景框组成。镜头深度约为机身深度的0.80倍，并沿前向连接机身。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A box camera with a forward lens, grip and top viewfinder. It includes a body, forward lens, side grip and top viewfinder. Lens depth is 0.80 body-depths, extending forward from the connected body. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "body",
+      "grip",
+      "lens",
+      "viewfinder"
+    ],
+    "invariantFeatures": "a body, forward lens, side grip and top viewfinder",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "structureIndex",
+      "style",
+      "shapeChamfer"
+    ],
+    "designSpec": {
+      "category": "camera",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 16.0,
+      "depth": 6.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 55236,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/camera/vx80k5p_20261010_B_camera_m0001/model.json",
+    "modelNpzPath": "models/camera/vx80k5p_20261010_B_camera_m0001/model.npz",
+    "targetOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+    "targetCanonicalGeometryHash": "05352da89ff1eead8b19144ddbaae9497ca08523b4641b39efbdb59fa4e5f91b",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a box camera with a forward lens, grip and top viewfinder"
+      },
+      {
+        "parts": [
+          "body",
+          "grip",
+          "lens",
+          "viewfinder"
+        ]
+      },
+      {
+        "structuralDetail": "Lens depth is 0.80 body-depths, extending forward from the connected body.",
+        "section": {
+          "part": "lens",
+          "thicknessAxis": 2,
+          "referencePart": "body",
+          "referenceAxis": 2,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 5,
+          "relativeThickness": 0.8
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a box camera with a forward lens, grip and top viewfinder"
+      },
+      {
+        "parts": [
+          "body",
+          "grip",
+          "lens",
+          "viewfinder"
+        ]
+      },
+      {
+        "structuralDetail": "Lens depth is 0.80 body-depths, extending forward from the connected body.",
+        "section": {
+          "part": "lens",
+          "thicknessAxis": 2,
+          "referencePart": "body",
+          "referenceAxis": 2,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 5,
+          "relativeThickness": 0.8
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_camera_m0001",
+    "category": "camera",
+    "categoryId": 9,
+    "variantId": "vx80k5p_20261010_B_camera_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_camera_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_camera_m0001",
+    "modelSeed": 800055236,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_camera_m0001_l4",
+    "promptLevel": 4,
+    "promptType": "proportion",
+    "structuralVariant": 0,
+    "captionZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。它由机身、前镜头、侧握柄和顶部取景框组成。镜头深度约为机身深度的0.80倍，并沿前向连接机身。宽深比约1.89，高/最大水平跨度约0.71；顶部快门位于侧握柄上，镜头握柄间距与身宽比0.64。",
+    "captionEn": "A box camera with a forward lens, grip and top viewfinder. It includes a body, forward lens, side grip and top viewfinder. Lens depth is 0.80 body-depths, extending forward from the connected body. Width/depth is 1.89; height/horizontal-span is 0.71. The shutter sits on top of the grip. Lens/grip-spacing/width is 0.64.",
+    "voxelPromptZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。它由机身、前镜头、侧握柄和顶部取景框组成。镜头深度约为机身深度的0.80倍，并沿前向连接机身。宽深比约1.89，高/最大水平跨度约0.71；顶部快门位于侧握柄上，镜头握柄间距与身宽比0.64。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A box camera with a forward lens, grip and top viewfinder. It includes a body, forward lens, side grip and top viewfinder. Lens depth is 0.80 body-depths, extending forward from the connected body. Width/depth is 1.89; height/horizontal-span is 0.71. The shutter sits on top of the grip. Lens/grip-spacing/width is 0.64. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "body",
+      "grip",
+      "lens",
+      "viewfinder"
+    ],
+    "invariantFeatures": "a body, forward lens, side grip and top viewfinder",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "structureIndex",
+      "style",
+      "shapeChamfer"
+    ],
+    "designSpec": {
+      "category": "camera",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 16.0,
+      "depth": 6.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 55236,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/camera/vx80k5p_20261010_B_camera_m0001/model.json",
+    "modelNpzPath": "models/camera/vx80k5p_20261010_B_camera_m0001/model.npz",
+    "targetOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+    "targetCanonicalGeometryHash": "05352da89ff1eead8b19144ddbaae9497ca08523b4641b39efbdb59fa4e5f91b",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a box camera with a forward lens, grip and top viewfinder"
+      },
+      {
+        "parts": [
+          "body",
+          "grip",
+          "lens",
+          "viewfinder"
+        ]
+      },
+      {
+        "structuralDetail": "Lens depth is 0.80 body-depths, extending forward from the connected body.",
+        "section": {
+          "part": "lens",
+          "thicknessAxis": 2,
+          "referencePart": "body",
+          "referenceAxis": 2,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 5,
+          "relativeThickness": 0.8
+        }
+      },
+      {
+        "widthDepthRatio": 1.89,
+        "heightSpanRatio": 0.71,
+        "partPosition": "The shutter sits on top of the grip.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "lens",
+          "partB": "grip",
+          "axis": 0,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "ratio": 0.64
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a box camera with a forward lens, grip and top viewfinder"
+      },
+      {
+        "parts": [
+          "body",
+          "grip",
+          "lens",
+          "viewfinder"
+        ]
+      },
+      {
+        "structuralDetail": "Lens depth is 0.80 body-depths, extending forward from the connected body.",
+        "section": {
+          "part": "lens",
+          "thicknessAxis": 2,
+          "referencePart": "body",
+          "referenceAxis": 2,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 5,
+          "relativeThickness": 0.8
+        }
+      },
+      {
+        "widthDepthRatio": 1.89,
+        "heightSpanRatio": 0.71,
+        "partPosition": "The shutter sits on top of the grip.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "lens",
+          "partB": "grip",
+          "axis": 0,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "ratio": 0.64
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_camera_m0001",
+    "category": "camera",
+    "categoryId": 9,
+    "variantId": "vx80k5p_20261010_B_camera_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_camera_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_camera_m0001",
+    "modelSeed": 800055236,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_camera_m0001_l5",
+    "promptLevel": 5,
+    "promptType": "comprehensive",
+    "structuralVariant": 0,
+    "captionZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。它由机身、前镜头、侧握柄和顶部取景框组成。镜头深度约为机身深度的0.80倍，并沿前向连接机身。宽深比约1.89，高/最大水平跨度约0.71；顶部快门位于侧握柄上，镜头握柄间距与身宽比0.64。实测采用4种不透明颜色，机身以蓝灰色为主，镜头端面呈青色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。",
+    "captionEn": "A box camera with a forward lens, grip and top viewfinder. It includes a body, forward lens, side grip and top viewfinder. Lens depth is 0.80 body-depths, extending forward from the connected body. Width/depth is 1.89; height/horizontal-span is 0.71. The shutter sits on top of the grip. Lens/grip-spacing/width is 0.64. Across 4 opaque colors, the body is mainly blue-gray and the lens-face is cyan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces.",
+    "voxelPromptZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。它由机身、前镜头、侧握柄和顶部取景框组成。镜头深度约为机身深度的0.80倍，并沿前向连接机身。宽深比约1.89，高/最大水平跨度约0.71；顶部快门位于侧握柄上，镜头握柄间距与身宽比0.64。实测采用4种不透明颜色，机身以蓝灰色为主，镜头端面呈青色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A box camera with a forward lens, grip and top viewfinder. It includes a body, forward lens, side grip and top viewfinder. Lens depth is 0.80 body-depths, extending forward from the connected body. Width/depth is 1.89; height/horizontal-span is 0.71. The shutter sits on top of the grip. Lens/grip-spacing/width is 0.64. Across 4 opaque colors, the body is mainly blue-gray and the lens-face is cyan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "body",
+      "grip",
+      "lens",
+      "viewfinder"
+    ],
+    "invariantFeatures": "a body, forward lens, side grip and top viewfinder",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "structureIndex",
+      "style",
+      "shapeChamfer"
+    ],
+    "designSpec": {
+      "category": "camera",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 16.0,
+      "depth": 6.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 55236,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/camera/vx80k5p_20261010_B_camera_m0001/model.json",
+    "modelNpzPath": "models/camera/vx80k5p_20261010_B_camera_m0001/model.npz",
+    "targetOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+    "targetCanonicalGeometryHash": "05352da89ff1eead8b19144ddbaae9497ca08523b4641b39efbdb59fa4e5f91b",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a box camera with a forward lens, grip and top viewfinder"
+      },
+      {
+        "parts": [
+          "body",
+          "grip",
+          "lens",
+          "viewfinder"
+        ]
+      },
+      {
+        "structuralDetail": "Lens depth is 0.80 body-depths, extending forward from the connected body.",
+        "section": {
+          "part": "lens",
+          "thicknessAxis": 2,
+          "referencePart": "body",
+          "referenceAxis": 2,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 5,
+          "relativeThickness": 0.8
+        }
+      },
+      {
+        "widthDepthRatio": 1.89,
+        "heightSpanRatio": 0.71,
+        "partPosition": "The shutter sits on top of the grip.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "lens",
+          "partB": "grip",
+          "axis": 0,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "ratio": 0.64
+        }
+      },
+      {
+        "paletteSize": 4,
+        "colorRegions": [
+          {
+            "part": "body",
+            "color": [
+              61,
+              103,
+              137
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "lens",
+            "color": [
+              98,
+              176,
+              200
+            ],
+            "selection": "present"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a box camera with a forward lens, grip and top viewfinder"
+      },
+      {
+        "parts": [
+          "body",
+          "grip",
+          "lens",
+          "viewfinder"
+        ]
+      },
+      {
+        "structuralDetail": "Lens depth is 0.80 body-depths, extending forward from the connected body.",
+        "section": {
+          "part": "lens",
+          "thicknessAxis": 2,
+          "referencePart": "body",
+          "referenceAxis": 2,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 5,
+          "relativeThickness": 0.8
+        }
+      },
+      {
+        "widthDepthRatio": 1.89,
+        "heightSpanRatio": 0.71,
+        "partPosition": "The shutter sits on top of the grip.",
+        "spacing": {
+          "kind": "center_distance",
+          "partA": "lens",
+          "partB": "grip",
+          "axis": 0,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "ratio": 0.64
+        }
+      },
+      {
+        "paletteSize": 4,
+        "colorRegions": [
+          {
+            "part": "body",
+            "color": [
+              61,
+              103,
+              137
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "lens",
+            "color": [
+              98,
+              176,
+              200
+            ],
+            "selection": "present"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  }
+]

@@ -1,0 +1,718 @@
+[
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_birdhouse_m0001",
+    "category": "birdhouse",
+    "categoryId": 4,
+    "variantId": "vx80k5p_20261010_B_birdhouse_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_birdhouse_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_birdhouse_m0001",
+    "modelSeed": 800045711,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_birdhouse_m0001_l1",
+    "promptLevel": 1,
+    "promptType": "minimal",
+    "structuralVariant": 0,
+    "captionZh": "一个带封底居室、坡屋顶和正面入口的鸟屋。",
+    "captionEn": "A birdhouse with an enclosed chamber, pitched roof and front entrance.",
+    "voxelPromptZh": "一个带封底居室、坡屋顶和正面入口的鸟屋。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A birdhouse with an enclosed chamber, pitched roof and front entrance. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "bottom",
+      "walls",
+      "roof",
+      "perch"
+    ],
+    "invariantFeatures": "a floor, chamber walls, pitched roof and a perch beneath the entrance",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer"
+    ],
+    "designSpec": {
+      "category": "birdhouse",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 12.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 45711,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/birdhouse/vx80k5p_20261010_B_birdhouse_m0001/model.json",
+    "modelNpzPath": "models/birdhouse/vx80k5p_20261010_B_birdhouse_m0001/model.npz",
+    "targetOccupancyHash": "3af2e3af01d2a485f5b5452339ba8ad752d2a84ec1ca97f0cb29e9de3678086d",
+    "targetCanonicalGeometryHash": "017e93e9c311bab64d94d91517a1e104d00862bc634ab0cce7ed7ca95d985eec",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a birdhouse with an enclosed chamber, pitched roof and front entrance"
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a birdhouse with an enclosed chamber, pitched roof and front entrance"
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_birdhouse_m0001",
+    "category": "birdhouse",
+    "categoryId": 4,
+    "variantId": "vx80k5p_20261010_B_birdhouse_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_birdhouse_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_birdhouse_m0001",
+    "modelSeed": 800045711,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_birdhouse_m0001_l2",
+    "promptLevel": 2,
+    "promptType": "basic_structure",
+    "structuralVariant": 0,
+    "captionZh": "一个带封底居室、坡屋顶和正面入口的鸟屋。它由底部、居室墙、坡屋顶及入口下的停栖杆组成。",
+    "captionEn": "A birdhouse with an enclosed chamber, pitched roof and front entrance. It includes a floor, chamber walls, pitched roof and a perch beneath the entrance.",
+    "voxelPromptZh": "一个带封底居室、坡屋顶和正面入口的鸟屋。它由底部、居室墙、坡屋顶及入口下的停栖杆组成。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A birdhouse with an enclosed chamber, pitched roof and front entrance. It includes a floor, chamber walls, pitched roof and a perch beneath the entrance. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "bottom",
+      "walls",
+      "roof",
+      "perch"
+    ],
+    "invariantFeatures": "a floor, chamber walls, pitched roof and a perch beneath the entrance",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer"
+    ],
+    "designSpec": {
+      "category": "birdhouse",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 12.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 45711,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/birdhouse/vx80k5p_20261010_B_birdhouse_m0001/model.json",
+    "modelNpzPath": "models/birdhouse/vx80k5p_20261010_B_birdhouse_m0001/model.npz",
+    "targetOccupancyHash": "3af2e3af01d2a485f5b5452339ba8ad752d2a84ec1ca97f0cb29e9de3678086d",
+    "targetCanonicalGeometryHash": "017e93e9c311bab64d94d91517a1e104d00862bc634ab0cce7ed7ca95d985eec",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a birdhouse with an enclosed chamber, pitched roof and front entrance"
+      },
+      {
+        "parts": [
+          "bottom",
+          "walls",
+          "roof",
+          "perch"
+        ]
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a birdhouse with an enclosed chamber, pitched roof and front entrance"
+      },
+      {
+        "parts": [
+          "bottom",
+          "walls",
+          "roof",
+          "perch"
+        ]
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_birdhouse_m0001",
+    "category": "birdhouse",
+    "categoryId": 4,
+    "variantId": "vx80k5p_20261010_B_birdhouse_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_birdhouse_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_birdhouse_m0001",
+    "modelSeed": 800045711,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_birdhouse_m0001_l3",
+    "promptLevel": 3,
+    "promptType": "geometry",
+    "structuralVariant": 0,
+    "captionZh": "一个带封底居室、坡屋顶和正面入口的鸟屋。它由底部、居室墙、坡屋顶及入口下的停栖杆组成。杆厚约为屋宽的0.15倍，正面入口通向封底居室。",
+    "captionEn": "A birdhouse with an enclosed chamber, pitched roof and front entrance. It includes a floor, chamber walls, pitched roof and a perch beneath the entrance. The perch is 0.15 body-widths thick; the entrance reaches the chamber.",
+    "voxelPromptZh": "一个带封底居室、坡屋顶和正面入口的鸟屋。它由底部、居室墙、坡屋顶及入口下的停栖杆组成。杆厚约为屋宽的0.15倍，正面入口通向封底居室。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A birdhouse with an enclosed chamber, pitched roof and front entrance. It includes a floor, chamber walls, pitched roof and a perch beneath the entrance. The perch is 0.15 body-widths thick; the entrance reaches the chamber. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "bottom",
+      "walls",
+      "roof",
+      "perch"
+    ],
+    "invariantFeatures": "a floor, chamber walls, pitched roof and a perch beneath the entrance",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer"
+    ],
+    "designSpec": {
+      "category": "birdhouse",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 12.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 45711,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/birdhouse/vx80k5p_20261010_B_birdhouse_m0001/model.json",
+    "modelNpzPath": "models/birdhouse/vx80k5p_20261010_B_birdhouse_m0001/model.npz",
+    "targetOccupancyHash": "3af2e3af01d2a485f5b5452339ba8ad752d2a84ec1ca97f0cb29e9de3678086d",
+    "targetCanonicalGeometryHash": "017e93e9c311bab64d94d91517a1e104d00862bc634ab0cce7ed7ca95d985eec",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a birdhouse with an enclosed chamber, pitched roof and front entrance"
+      },
+      {
+        "parts": [
+          "bottom",
+          "walls",
+          "roof",
+          "perch"
+        ]
+      },
+      {
+        "structuralDetail": "The perch is 0.15 body-widths thick; the entrance reaches the chamber.",
+        "section": {
+          "part": "perch",
+          "thicknessAxis": 0,
+          "referencePart": "walls",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a birdhouse with an enclosed chamber, pitched roof and front entrance"
+      },
+      {
+        "parts": [
+          "bottom",
+          "walls",
+          "roof",
+          "perch"
+        ]
+      },
+      {
+        "structuralDetail": "The perch is 0.15 body-widths thick; the entrance reaches the chamber.",
+        "section": {
+          "part": "perch",
+          "thicknessAxis": 0,
+          "referencePart": "walls",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_birdhouse_m0001",
+    "category": "birdhouse",
+    "categoryId": 4,
+    "variantId": "vx80k5p_20261010_B_birdhouse_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_birdhouse_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_birdhouse_m0001",
+    "modelSeed": 800045711,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_birdhouse_m0001_l4",
+    "promptLevel": 4,
+    "promptType": "proportion",
+    "structuralVariant": 0,
+    "captionZh": "一个带封底居室、坡屋顶和正面入口的鸟屋。它由底部、居室墙、坡屋顶及入口下的停栖杆组成。杆厚约为屋宽的0.15倍，正面入口通向封底居室。宽深比约0.87，高/最大水平跨度约0.87；入口位于前壁且停栖杆在其下方，杆中心距墙底/墙高0.07。",
+    "captionEn": "A birdhouse with an enclosed chamber, pitched roof and front entrance. It includes a floor, chamber walls, pitched roof and a perch beneath the entrance. The perch is 0.15 body-widths thick; the entrance reaches the chamber. Width/depth is 0.87; height/horizontal-span is 0.87. The perch sits below the front entrance. Perch-height above wall-bottom is 0.07 wall-heights.",
+    "voxelPromptZh": "一个带封底居室、坡屋顶和正面入口的鸟屋。它由底部、居室墙、坡屋顶及入口下的停栖杆组成。杆厚约为屋宽的0.15倍，正面入口通向封底居室。宽深比约0.87，高/最大水平跨度约0.87；入口位于前壁且停栖杆在其下方，杆中心距墙底/墙高0.07。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A birdhouse with an enclosed chamber, pitched roof and front entrance. It includes a floor, chamber walls, pitched roof and a perch beneath the entrance. The perch is 0.15 body-widths thick; the entrance reaches the chamber. Width/depth is 0.87; height/horizontal-span is 0.87. The perch sits below the front entrance. Perch-height above wall-bottom is 0.07 wall-heights. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "bottom",
+      "walls",
+      "roof",
+      "perch"
+    ],
+    "invariantFeatures": "a floor, chamber walls, pitched roof and a perch beneath the entrance",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer"
+    ],
+    "designSpec": {
+      "category": "birdhouse",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 12.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 45711,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/birdhouse/vx80k5p_20261010_B_birdhouse_m0001/model.json",
+    "modelNpzPath": "models/birdhouse/vx80k5p_20261010_B_birdhouse_m0001/model.npz",
+    "targetOccupancyHash": "3af2e3af01d2a485f5b5452339ba8ad752d2a84ec1ca97f0cb29e9de3678086d",
+    "targetCanonicalGeometryHash": "017e93e9c311bab64d94d91517a1e104d00862bc634ab0cce7ed7ca95d985eec",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a birdhouse with an enclosed chamber, pitched roof and front entrance"
+      },
+      {
+        "parts": [
+          "bottom",
+          "walls",
+          "roof",
+          "perch"
+        ]
+      },
+      {
+        "structuralDetail": "The perch is 0.15 body-widths thick; the entrance reaches the chamber.",
+        "section": {
+          "part": "perch",
+          "thicknessAxis": 0,
+          "referencePart": "walls",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 0.87,
+        "heightSpanRatio": 0.87,
+        "partPosition": "The perch sits below the front entrance.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "perch",
+          "axis": 1,
+          "referencePart": "walls",
+          "referenceAxis": 1,
+          "ratio": 0.07
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a birdhouse with an enclosed chamber, pitched roof and front entrance"
+      },
+      {
+        "parts": [
+          "bottom",
+          "walls",
+          "roof",
+          "perch"
+        ]
+      },
+      {
+        "structuralDetail": "The perch is 0.15 body-widths thick; the entrance reaches the chamber.",
+        "section": {
+          "part": "perch",
+          "thicknessAxis": 0,
+          "referencePart": "walls",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 0.87,
+        "heightSpanRatio": 0.87,
+        "partPosition": "The perch sits below the front entrance.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "perch",
+          "axis": 1,
+          "referencePart": "walls",
+          "referenceAxis": 1,
+          "ratio": 0.07
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_birdhouse_m0001",
+    "category": "birdhouse",
+    "categoryId": 4,
+    "variantId": "vx80k5p_20261010_B_birdhouse_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_birdhouse_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_birdhouse_m0001",
+    "modelSeed": 800045711,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_birdhouse_m0001_l5",
+    "promptLevel": 5,
+    "promptType": "comprehensive",
+    "structuralVariant": 0,
+    "captionZh": "一个带封底居室、坡屋顶和正面入口的鸟屋。它由底部、居室墙、坡屋顶及入口下的停栖杆组成。杆厚约为屋宽的0.15倍，正面入口通向封底居室。宽深比约0.87，高/最大水平跨度约0.87；入口位于前壁且停栖杆在其下方，杆中心距墙底/墙高0.07。实测采用3种不透明颜色，屋壁以棕色为主，屋顶呈砖红色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。",
+    "captionEn": "A birdhouse with an enclosed chamber, pitched roof and front entrance. It includes a floor, chamber walls, pitched roof and a perch beneath the entrance. The perch is 0.15 body-widths thick; the entrance reaches the chamber. Width/depth is 0.87; height/horizontal-span is 0.87. The perch sits below the front entrance. Perch-height above wall-bottom is 0.07 wall-heights. Across 3 opaque colors, the walls is mainly brown and the roof is brick-red. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces.",
+    "voxelPromptZh": "一个带封底居室、坡屋顶和正面入口的鸟屋。它由底部、居室墙、坡屋顶及入口下的停栖杆组成。杆厚约为屋宽的0.15倍，正面入口通向封底居室。宽深比约0.87，高/最大水平跨度约0.87；入口位于前壁且停栖杆在其下方，杆中心距墙底/墙高0.07。实测采用3种不透明颜色，屋壁以棕色为主，屋顶呈砖红色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A birdhouse with an enclosed chamber, pitched roof and front entrance. It includes a floor, chamber walls, pitched roof and a perch beneath the entrance. The perch is 0.15 body-widths thick; the entrance reaches the chamber. Width/depth is 0.87; height/horizontal-span is 0.87. The perch sits below the front entrance. Perch-height above wall-bottom is 0.07 wall-heights. Across 3 opaque colors, the walls is mainly brown and the roof is brick-red. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "bottom",
+      "walls",
+      "roof",
+      "perch"
+    ],
+    "invariantFeatures": "a floor, chamber walls, pitched roof and a perch beneath the entrance",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "shapeChamfer"
+    ],
+    "designSpec": {
+      "category": "birdhouse",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 14.0,
+      "depth": 12.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 45711,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/birdhouse/vx80k5p_20261010_B_birdhouse_m0001/model.json",
+    "modelNpzPath": "models/birdhouse/vx80k5p_20261010_B_birdhouse_m0001/model.npz",
+    "targetOccupancyHash": "3af2e3af01d2a485f5b5452339ba8ad752d2a84ec1ca97f0cb29e9de3678086d",
+    "targetCanonicalGeometryHash": "017e93e9c311bab64d94d91517a1e104d00862bc634ab0cce7ed7ca95d985eec",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a birdhouse with an enclosed chamber, pitched roof and front entrance"
+      },
+      {
+        "parts": [
+          "bottom",
+          "walls",
+          "roof",
+          "perch"
+        ]
+      },
+      {
+        "structuralDetail": "The perch is 0.15 body-widths thick; the entrance reaches the chamber.",
+        "section": {
+          "part": "perch",
+          "thicknessAxis": 0,
+          "referencePart": "walls",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 0.87,
+        "heightSpanRatio": 0.87,
+        "partPosition": "The perch sits below the front entrance.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "perch",
+          "axis": 1,
+          "referencePart": "walls",
+          "referenceAxis": 1,
+          "ratio": 0.07
+        }
+      },
+      {
+        "paletteSize": 3,
+        "colorRegions": [
+          {
+            "part": "walls",
+            "color": [
+              177,
+              113,
+              62
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "roof",
+            "color": [
+              175,
+              61,
+              45
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a birdhouse with an enclosed chamber, pitched roof and front entrance"
+      },
+      {
+        "parts": [
+          "bottom",
+          "walls",
+          "roof",
+          "perch"
+        ]
+      },
+      {
+        "structuralDetail": "The perch is 0.15 body-widths thick; the entrance reaches the chamber.",
+        "section": {
+          "part": "perch",
+          "thicknessAxis": 0,
+          "referencePart": "walls",
+          "referenceAxis": 0,
+          "thicknessVoxels": 2,
+          "referenceVoxels": 13,
+          "relativeThickness": 0.15
+        }
+      },
+      {
+        "widthDepthRatio": 0.87,
+        "heightSpanRatio": 0.87,
+        "partPosition": "The perch sits below the front entrance.",
+        "spacing": {
+          "kind": "relative_center",
+          "partA": "perch",
+          "axis": 1,
+          "referencePart": "walls",
+          "referenceAxis": 1,
+          "ratio": 0.07
+        }
+      },
+      {
+        "paletteSize": 3,
+        "colorRegions": [
+          {
+            "part": "walls",
+            "color": [
+              177,
+              113,
+              62
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "roof",
+            "color": [
+              175,
+              61,
+              45
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  }
+]

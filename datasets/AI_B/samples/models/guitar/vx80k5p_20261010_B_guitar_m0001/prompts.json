@@ -1,0 +1,699 @@
+[
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_guitar_m0001",
+    "category": "guitar",
+    "categoryId": 12,
+    "variantId": "vx80k5p_20261010_B_guitar_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_guitar_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_guitar_m0001",
+    "modelSeed": 800060951,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_guitar_m0001_l1",
+    "promptLevel": 1,
+    "promptType": "minimal",
+    "structuralVariant": 0,
+    "captionZh": "一个带收腰琴身、连续琴颈和棱线琴头的吉他。",
+    "captionEn": "An angular guitar with a waisted body, connected neck and edged headstock.",
+    "voxelPromptZh": "一个带收腰琴身、连续琴颈和棱线琴头的吉他。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular guitar with a waisted body, connected neck and edged headstock. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "body",
+      "neck",
+      "headstock"
+    ],
+    "invariantFeatures": "a waisted body, upper neck and terminal headstock",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "structureIndex",
+      "style"
+    ],
+    "designSpec": {
+      "category": "guitar",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 16.0,
+      "depth": 6.0,
+      "height": 18.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 60951,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/guitar/vx80k5p_20261010_B_guitar_m0001/model.json",
+    "modelNpzPath": "models/guitar/vx80k5p_20261010_B_guitar_m0001/model.npz",
+    "targetOccupancyHash": "2af33b7ff4ec5884478f06eeb688a31e893d7484a4eb898be0d96700268ff7c2",
+    "targetCanonicalGeometryHash": "03d1628151405d8554c31aeeba5c3aa0cae37bdb744bd9d68a5e8b3d6fc7eb4c",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular guitar with a waisted body, connected neck and edged headstock"
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular guitar with a waisted body, connected neck and edged headstock"
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_guitar_m0001",
+    "category": "guitar",
+    "categoryId": 12,
+    "variantId": "vx80k5p_20261010_B_guitar_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_guitar_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_guitar_m0001",
+    "modelSeed": 800060951,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_guitar_m0001_l2",
+    "promptLevel": 2,
+    "promptType": "basic_structure",
+    "structuralVariant": 0,
+    "captionZh": "一个带收腰琴身、连续琴颈和棱线琴头的吉他。它由收腰琴身、上方琴颈和顶端琴头组成。",
+    "captionEn": "An angular guitar with a waisted body, connected neck and edged headstock. It includes a waisted body, upper neck and terminal headstock.",
+    "voxelPromptZh": "一个带收腰琴身、连续琴颈和棱线琴头的吉他。它由收腰琴身、上方琴颈和顶端琴头组成。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular guitar with a waisted body, connected neck and edged headstock. It includes a waisted body, upper neck and terminal headstock. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "body",
+      "neck",
+      "headstock"
+    ],
+    "invariantFeatures": "a waisted body, upper neck and terminal headstock",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "structureIndex",
+      "style"
+    ],
+    "designSpec": {
+      "category": "guitar",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 16.0,
+      "depth": 6.0,
+      "height": 18.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 60951,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/guitar/vx80k5p_20261010_B_guitar_m0001/model.json",
+    "modelNpzPath": "models/guitar/vx80k5p_20261010_B_guitar_m0001/model.npz",
+    "targetOccupancyHash": "2af33b7ff4ec5884478f06eeb688a31e893d7484a4eb898be0d96700268ff7c2",
+    "targetCanonicalGeometryHash": "03d1628151405d8554c31aeeba5c3aa0cae37bdb744bd9d68a5e8b3d6fc7eb4c",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular guitar with a waisted body, connected neck and edged headstock"
+      },
+      {
+        "parts": [
+          "body",
+          "neck",
+          "headstock"
+        ]
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular guitar with a waisted body, connected neck and edged headstock"
+      },
+      {
+        "parts": [
+          "body",
+          "neck",
+          "headstock"
+        ]
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_guitar_m0001",
+    "category": "guitar",
+    "categoryId": 12,
+    "variantId": "vx80k5p_20261010_B_guitar_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_guitar_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_guitar_m0001",
+    "modelSeed": 800060951,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_guitar_m0001_l3",
+    "promptLevel": 3,
+    "promptType": "geometry",
+    "structuralVariant": 0,
+    "captionZh": "一个带收腰琴身、连续琴颈和棱线琴头的吉他。它由收腰琴身、上方琴颈和顶端琴头组成。颈宽约为身宽的0.25倍，正面音孔通向琴身内部。",
+    "captionEn": "An angular guitar with a waisted body, connected neck and edged headstock. It includes a waisted body, upper neck and terminal headstock. The neck is 0.25 body-widths wide; a front soundhole opens inward.",
+    "voxelPromptZh": "一个带收腰琴身、连续琴颈和棱线琴头的吉他。它由收腰琴身、上方琴颈和顶端琴头组成。颈宽约为身宽的0.25倍，正面音孔通向琴身内部。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular guitar with a waisted body, connected neck and edged headstock. It includes a waisted body, upper neck and terminal headstock. The neck is 0.25 body-widths wide; a front soundhole opens inward. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "body",
+      "neck",
+      "headstock"
+    ],
+    "invariantFeatures": "a waisted body, upper neck and terminal headstock",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "structureIndex",
+      "style"
+    ],
+    "designSpec": {
+      "category": "guitar",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 16.0,
+      "depth": 6.0,
+      "height": 18.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 60951,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/guitar/vx80k5p_20261010_B_guitar_m0001/model.json",
+    "modelNpzPath": "models/guitar/vx80k5p_20261010_B_guitar_m0001/model.npz",
+    "targetOccupancyHash": "2af33b7ff4ec5884478f06eeb688a31e893d7484a4eb898be0d96700268ff7c2",
+    "targetCanonicalGeometryHash": "03d1628151405d8554c31aeeba5c3aa0cae37bdb744bd9d68a5e8b3d6fc7eb4c",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular guitar with a waisted body, connected neck and edged headstock"
+      },
+      {
+        "parts": [
+          "body",
+          "neck",
+          "headstock"
+        ]
+      },
+      {
+        "structuralDetail": "The neck is 0.25 body-widths wide; a front soundhole opens inward.",
+        "section": {
+          "part": "neck",
+          "thicknessAxis": 0,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 16,
+          "relativeThickness": 0.25
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular guitar with a waisted body, connected neck and edged headstock"
+      },
+      {
+        "parts": [
+          "body",
+          "neck",
+          "headstock"
+        ]
+      },
+      {
+        "structuralDetail": "The neck is 0.25 body-widths wide; a front soundhole opens inward.",
+        "section": {
+          "part": "neck",
+          "thicknessAxis": 0,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 16,
+          "relativeThickness": 0.25
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_guitar_m0001",
+    "category": "guitar",
+    "categoryId": 12,
+    "variantId": "vx80k5p_20261010_B_guitar_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_guitar_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_guitar_m0001",
+    "modelSeed": 800060951,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_guitar_m0001_l4",
+    "promptLevel": 4,
+    "promptType": "proportion",
+    "structuralVariant": 0,
+    "captionZh": "一个带收腰琴身、连续琴颈和棱线琴头的吉他。它由收腰琴身、上方琴颈和顶端琴头组成。颈宽约为身宽的0.25倍，正面音孔通向琴身内部。宽深比约3.20，高/最大水平跨度约1.44；琴颈从收腰琴身中部向上延伸，颈身重叠与身高比0.25。",
+    "captionEn": "An angular guitar with a waisted body, connected neck and edged headstock. It includes a waisted body, upper neck and terminal headstock. The neck is 0.25 body-widths wide; a front soundhole opens inward. Width/depth is 3.20; height/horizontal-span is 1.44. The neck rises centrally above the body. Neck/body-overlap/height is 0.25.",
+    "voxelPromptZh": "一个带收腰琴身、连续琴颈和棱线琴头的吉他。它由收腰琴身、上方琴颈和顶端琴头组成。颈宽约为身宽的0.25倍，正面音孔通向琴身内部。宽深比约3.20，高/最大水平跨度约1.44；琴颈从收腰琴身中部向上延伸，颈身重叠与身高比0.25。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular guitar with a waisted body, connected neck and edged headstock. It includes a waisted body, upper neck and terminal headstock. The neck is 0.25 body-widths wide; a front soundhole opens inward. Width/depth is 3.20; height/horizontal-span is 1.44. The neck rises centrally above the body. Neck/body-overlap/height is 0.25. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "body",
+      "neck",
+      "headstock"
+    ],
+    "invariantFeatures": "a waisted body, upper neck and terminal headstock",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "structureIndex",
+      "style"
+    ],
+    "designSpec": {
+      "category": "guitar",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 16.0,
+      "depth": 6.0,
+      "height": 18.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 60951,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/guitar/vx80k5p_20261010_B_guitar_m0001/model.json",
+    "modelNpzPath": "models/guitar/vx80k5p_20261010_B_guitar_m0001/model.npz",
+    "targetOccupancyHash": "2af33b7ff4ec5884478f06eeb688a31e893d7484a4eb898be0d96700268ff7c2",
+    "targetCanonicalGeometryHash": "03d1628151405d8554c31aeeba5c3aa0cae37bdb744bd9d68a5e8b3d6fc7eb4c",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular guitar with a waisted body, connected neck and edged headstock"
+      },
+      {
+        "parts": [
+          "body",
+          "neck",
+          "headstock"
+        ]
+      },
+      {
+        "structuralDetail": "The neck is 0.25 body-widths wide; a front soundhole opens inward.",
+        "section": {
+          "part": "neck",
+          "thicknessAxis": 0,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 16,
+          "relativeThickness": 0.25
+        }
+      },
+      {
+        "widthDepthRatio": 3.2,
+        "heightSpanRatio": 1.44,
+        "partPosition": "The neck rises centrally above the body.",
+        "spacing": {
+          "kind": "overlap",
+          "partA": "body",
+          "partB": "neck",
+          "axis": 1,
+          "referencePart": "body",
+          "referenceAxis": 1,
+          "ratio": 0.25
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular guitar with a waisted body, connected neck and edged headstock"
+      },
+      {
+        "parts": [
+          "body",
+          "neck",
+          "headstock"
+        ]
+      },
+      {
+        "structuralDetail": "The neck is 0.25 body-widths wide; a front soundhole opens inward.",
+        "section": {
+          "part": "neck",
+          "thicknessAxis": 0,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 16,
+          "relativeThickness": 0.25
+        }
+      },
+      {
+        "widthDepthRatio": 3.2,
+        "heightSpanRatio": 1.44,
+        "partPosition": "The neck rises centrally above the body.",
+        "spacing": {
+          "kind": "overlap",
+          "partA": "body",
+          "partB": "neck",
+          "axis": 1,
+          "referencePart": "body",
+          "referenceAxis": 1,
+          "ratio": 0.25
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_guitar_m0001",
+    "category": "guitar",
+    "categoryId": 12,
+    "variantId": "vx80k5p_20261010_B_guitar_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_guitar_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_guitar_m0001",
+    "modelSeed": 800060951,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_guitar_m0001_l5",
+    "promptLevel": 5,
+    "promptType": "comprehensive",
+    "structuralVariant": 0,
+    "captionZh": "一个带收腰琴身、连续琴颈和棱线琴头的吉他。它由收腰琴身、上方琴颈和顶端琴头组成。颈宽约为身宽的0.25倍，正面音孔通向琴身内部。宽深比约3.20，高/最大水平跨度约1.44；琴颈从收腰琴身中部向上延伸，颈身重叠与身高比0.25。实测采用3种不透明颜色，琴身以棕色为主，琴颈呈浅棕色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。",
+    "captionEn": "An angular guitar with a waisted body, connected neck and edged headstock. It includes a waisted body, upper neck and terminal headstock. The neck is 0.25 body-widths wide; a front soundhole opens inward. Width/depth is 3.20; height/horizontal-span is 1.44. The neck rises centrally above the body. Neck/body-overlap/height is 0.25. Across 3 opaque colors, the body is mainly brown and the neck is tan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces.",
+    "voxelPromptZh": "一个带收腰琴身、连续琴颈和棱线琴头的吉他。它由收腰琴身、上方琴颈和顶端琴头组成。颈宽约为身宽的0.25倍，正面音孔通向琴身内部。宽深比约3.20，高/最大水平跨度约1.44；琴颈从收腰琴身中部向上延伸，颈身重叠与身高比0.25。实测采用3种不透明颜色，琴身以棕色为主，琴颈呈浅棕色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "An angular guitar with a waisted body, connected neck and edged headstock. It includes a waisted body, upper neck and terminal headstock. The neck is 0.25 body-widths wide; a front soundhole opens inward. Width/depth is 3.20; height/horizontal-span is 1.44. The neck rises centrally above the body. Neck/body-overlap/height is 0.25. Across 3 opaque colors, the body is mainly brown and the neck is tan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "body",
+      "neck",
+      "headstock"
+    ],
+    "invariantFeatures": "a waisted body, upper neck and terminal headstock",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "structureIndex",
+      "style"
+    ],
+    "designSpec": {
+      "category": "guitar",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 16.0,
+      "depth": 6.0,
+      "height": 18.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.42,
+      "shoulderFraction": 0.58,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.6,
+      "baseWidthFraction": 0.55,
+      "redesign": 0,
+      "ordinal": 60951,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections"
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/guitar/vx80k5p_20261010_B_guitar_m0001/model.json",
+    "modelNpzPath": "models/guitar/vx80k5p_20261010_B_guitar_m0001/model.npz",
+    "targetOccupancyHash": "2af33b7ff4ec5884478f06eeb688a31e893d7484a4eb898be0d96700268ff7c2",
+    "targetCanonicalGeometryHash": "03d1628151405d8554c31aeeba5c3aa0cae37bdb744bd9d68a5e8b3d6fc7eb4c",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "an angular guitar with a waisted body, connected neck and edged headstock"
+      },
+      {
+        "parts": [
+          "body",
+          "neck",
+          "headstock"
+        ]
+      },
+      {
+        "structuralDetail": "The neck is 0.25 body-widths wide; a front soundhole opens inward.",
+        "section": {
+          "part": "neck",
+          "thicknessAxis": 0,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 16,
+          "relativeThickness": 0.25
+        }
+      },
+      {
+        "widthDepthRatio": 3.2,
+        "heightSpanRatio": 1.44,
+        "partPosition": "The neck rises centrally above the body.",
+        "spacing": {
+          "kind": "overlap",
+          "partA": "body",
+          "partB": "neck",
+          "axis": 1,
+          "referencePart": "body",
+          "referenceAxis": 1,
+          "ratio": 0.25
+        }
+      },
+      {
+        "paletteSize": 3,
+        "colorRegions": [
+          {
+            "part": "body",
+            "color": [
+              177,
+              113,
+              62
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "neck",
+            "color": [
+              216,
+              182,
+              121
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "an angular guitar with a waisted body, connected neck and edged headstock"
+      },
+      {
+        "parts": [
+          "body",
+          "neck",
+          "headstock"
+        ]
+      },
+      {
+        "structuralDetail": "The neck is 0.25 body-widths wide; a front soundhole opens inward.",
+        "section": {
+          "part": "neck",
+          "thicknessAxis": 0,
+          "referencePart": "body",
+          "referenceAxis": 0,
+          "thicknessVoxels": 4,
+          "referenceVoxels": 16,
+          "relativeThickness": 0.25
+        }
+      },
+      {
+        "widthDepthRatio": 3.2,
+        "heightSpanRatio": 1.44,
+        "partPosition": "The neck rises centrally above the body.",
+        "spacing": {
+          "kind": "overlap",
+          "partA": "body",
+          "partB": "neck",
+          "axis": 1,
+          "referencePart": "body",
+          "referenceAxis": 1,
+          "ratio": 0.25
+        }
+      },
+      {
+        "paletteSize": 3,
+        "colorRegions": [
+          {
+            "part": "body",
+            "color": [
+              177,
+              113,
+              62
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "neck",
+            "color": [
+              216,
+              182,
+              121
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {}
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  }
+]

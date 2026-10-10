@@ -1,0 +1,10906 @@
+{
+  "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+  "shardId": "B",
+  "modelId": "vx80k5p_20261010_B_camera_m0001",
+  "object": "camera",
+  "category": "camera",
+  "categoryId": 9,
+  "variantId": "vx80k5p_20261010_B_camera_v001",
+  "geometryFamilyId": "vx80k5p_20261010_B_camera_v001",
+  "semanticGroupKey": "vx80k5p_20261010_B_camera_m0001",
+  "tier": "detailed",
+  "globalOrdinal": 55236,
+  "modelSeed": 800055236,
+  "coordinateSystem": {
+    "x": "right",
+    "y": "up",
+    "z": "front",
+    "localForward": "+Z"
+  },
+  "gridSize": [
+    48,
+    48,
+    48
+  ],
+  "requestedVoxelRange": [
+    750,
+    1250
+  ],
+  "preferredVoxelTarget": 1000,
+  "initialVoxelCount": 1368,
+  "actualVoxelCount": 942,
+  "generationPromptZh": "一个带前向镜头、握柄和顶部取景框的箱形相机。它由机身、前镜头、侧握柄和顶部取景框组成。镜头深度约为机身深度的0.80倍，并沿前向连接机身。宽深比约1.89，高/最大水平跨度约0.71；顶部快门位于侧握柄上，镜头握柄间距与身宽比0.64。实测采用4种不透明颜色，机身以蓝灰色为主，镜头端面呈青色。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。 原始参数规格：{\"baseWidthFraction\": 0.55, \"category\": \"camera\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"depth\": 6.0, \"detailPosition\": 0.25, \"featureCount\": 2, \"height\": 10.0, \"instance\": 0, \"lipOverhang\": 0.6, \"neckFraction\": 0.42, \"ordinal\": 55236, \"redesign\": 0, \"rimHeight\": 2.0, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.58, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 16.0}",
+  "generationPromptEn": "A box camera with a forward lens, grip and top viewfinder. It includes a body, forward lens, side grip and top viewfinder. Lens depth is 0.80 body-depths, extending forward from the connected body. Width/depth is 1.89; height/horizontal-span is 0.71. The shutter sits on top of the grip. Lens/grip-spacing/width is 0.64. Across 4 opaque colors, the body is mainly blue-gray and the lens-face is cyan. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments. Original parameter specification: {\"baseWidthFraction\": 0.55, \"category\": \"camera\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"depth\": 6.0, \"detailPosition\": 0.25, \"featureCount\": 2, \"height\": 10.0, \"instance\": 0, \"lipOverhang\": 0.6, \"neckFraction\": 0.42, \"ordinal\": 55236, \"redesign\": 0, \"rimHeight\": 2.0, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.58, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 16.0}",
+  "semanticFeatures": {
+    "forward": "+Z",
+    "lensCount": 1
+  },
+  "geometryPlan": {
+    "category": "camera",
+    "variant": 1,
+    "instance": 0,
+    "style": 0,
+    "structureIndex": 0,
+    "width": 16.0,
+    "depth": 6.0,
+    "height": 10.0,
+    "wallThickness": 2.0,
+    "shapeChamfer": 0.0,
+    "featureCount": 2,
+    "supportInset": 1.0,
+    "detailPosition": 0.25,
+    "neckFraction": 0.42,
+    "shoulderFraction": 0.58,
+    "rimHeight": 2.0,
+    "lipOverhang": 0.6,
+    "baseWidthFraction": 0.55,
+    "redesign": 0,
+    "ordinal": 55236,
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "supportInset",
+      "shapeChamfer",
+      "featureCount"
+    ],
+    "construction": "original continuous boxes and chamfered cross sections"
+  },
+  "resamplingHistory": [
+    {
+      "scale": 0.8918116926464231,
+      "actualVoxelCount": 942,
+      "failureReasons": []
+    }
+  ],
+  "finalSamplingScale": 0.8918116926464231,
+  "exactOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+  "canonicalGeometryHash": "05352da89ff1eead8b19144ddbaae9497ca08523b4641b39efbdb59fa4e5f91b",
+  "canonicalHashAlgorithm": "axis-permutation-6_x_sign-8_min_sha256_utf8_xyz_semicolon_v1",
+  "promptRecordIds": [
+    "vx80k5p_20261010_B_camera_m0001_l1",
+    "vx80k5p_20261010_B_camera_m0001_l2",
+    "vx80k5p_20261010_B_camera_m0001_l3",
+    "vx80k5p_20261010_B_camera_m0001_l4",
+    "vx80k5p_20261010_B_camera_m0001_l5"
+  ],
+  "voxels": [
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "viewfinder"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 6,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 7,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 8,
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "part": "lens"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 7,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 7,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 7,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 7,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 7,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 11,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 12,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 12,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 12,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 12,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 12,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 13,
+      "y": 0,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 0,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 0,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 4,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 4,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 4,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 13,
+      "y": 8,
+      "z": 0,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 13,
+      "y": 8,
+      "z": 1,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 13,
+      "y": 8,
+      "z": 2,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 13,
+      "y": 8,
+      "z": 3,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 13,
+      "y": 8,
+      "z": 4,
+      "color": [
+        61,
+        103,
+        137
+      ],
+      "part": "body"
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 4,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 4,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 4,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "z": 0,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "z": 1,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "z": 2,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "z": 3,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "z": 4,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "z": 5,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 6,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 6,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 6,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 6,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 6,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 6,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "z": 0,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "z": 1,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "z": 2,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "z": 3,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "z": 4,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "z": 5,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 3,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 3,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 3,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 3,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 3,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 3,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 5,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 5,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 5,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 5,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 5,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 5,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 6,
+      "z": 0,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 6,
+      "z": 1,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 6,
+      "z": 2,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 6,
+      "z": 3,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 6,
+      "z": 4,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 6,
+      "z": 5,
+      "color": [
+        42,
+        48,
+        56
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "z": 0,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "z": 1,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "z": 2,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "z": 3,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "z": 4,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "z": 5,
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "part": "grip"
+    }
+  ],
+  "validation": {
+    "actualVoxelCount": 942,
+    "sixNeighborComponentCount": 1,
+    "checks": {
+      "voxelRange": true,
+      "singleSixConnectedComponent": true,
+      "nonnegative48Grid": true,
+      "groundContactY0": true,
+      "uniqueCoordinates": true
+    },
+    "parts": {
+      "body": {
+        "voxelCount": 538,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          14,
+          9,
+          5
+        ]
+      },
+      "grip": {
+        "voxelCount": 240,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          5,
+          8,
+          6
+        ]
+      },
+      "lens": {
+        "voxelCount": 116,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          5,
+          6,
+          4
+        ]
+      },
+      "viewfinder": {
+        "voxelCount": 48,
+        "faceConnectedToObject": true,
+        "survivesRasterization": true,
+        "boundingDimensions": [
+          3,
+          4,
+          4
+        ]
+      }
+    },
+    "openings": {},
+    "visibleSurfaceFeatures": [
+      {
+        "featureId": "lens_face",
+        "ownerPart": "lens",
+        "expectedViews": [
+          "front",
+          "oblique"
+        ],
+        "color": [
+          98,
+          176,
+          200
+        ],
+        "coordinates": [
+          [
+            3,
+            2,
+            8
+          ],
+          [
+            3,
+            3,
+            8
+          ],
+          [
+            3,
+            4,
+            8
+          ],
+          [
+            3,
+            5,
+            8
+          ],
+          [
+            3,
+            6,
+            8
+          ],
+          [
+            4,
+            1,
+            8
+          ],
+          [
+            4,
+            2,
+            8
+          ],
+          [
+            4,
+            3,
+            8
+          ],
+          [
+            4,
+            4,
+            8
+          ],
+          [
+            4,
+            5,
+            8
+          ],
+          [
+            4,
+            6,
+            8
+          ],
+          [
+            5,
+            1,
+            8
+          ],
+          [
+            5,
+            2,
+            8
+          ],
+          [
+            5,
+            3,
+            8
+          ],
+          [
+            5,
+            4,
+            8
+          ],
+          [
+            5,
+            5,
+            8
+          ],
+          [
+            5,
+            6,
+            8
+          ],
+          [
+            6,
+            1,
+            8
+          ],
+          [
+            6,
+            2,
+            8
+          ],
+          [
+            6,
+            3,
+            8
+          ],
+          [
+            6,
+            4,
+            8
+          ],
+          [
+            6,
+            5,
+            8
+          ],
+          [
+            6,
+            6,
+            8
+          ],
+          [
+            7,
+            1,
+            8
+          ],
+          [
+            7,
+            2,
+            8
+          ],
+          [
+            7,
+            3,
+            8
+          ],
+          [
+            7,
+            4,
+            8
+          ],
+          [
+            7,
+            5,
+            8
+          ],
+          [
+            7,
+            6,
+            8
+          ]
+        ],
+        "sampledVoxels": 29,
+        "exposedVoxels": 29,
+        "connectedToOwner": true,
+        "rayClear": true,
+        "unoccludedPixels": {
+          "front": 4759,
+          "side": 1890,
+          "left": 1890,
+          "top": 910,
+          "oblique": 2795
+        },
+        "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+        "witness": [
+          {
+            "coordinate": [
+              3,
+              2,
+              8
+            ],
+            "localPosition": "on original functional owner surface",
+            "airNeighborCount": 3,
+            "exposedFaceDirections": [
+              "-X",
+              "-Y",
+              "+Z"
+            ],
+            "rayClearDirections": [
+              "-X",
+              "-Y",
+              "+Z"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      {
+        "featureId": "shutter",
+        "ownerPart": "grip",
+        "expectedViews": [
+          "top",
+          "oblique"
+        ],
+        "color": [
+          175,
+          61,
+          45
+        ],
+        "coordinates": [
+          [
+            14,
+            7,
+            0
+          ],
+          [
+            14,
+            7,
+            1
+          ],
+          [
+            14,
+            7,
+            2
+          ],
+          [
+            14,
+            7,
+            3
+          ],
+          [
+            14,
+            7,
+            4
+          ],
+          [
+            14,
+            7,
+            5
+          ],
+          [
+            15,
+            7,
+            0
+          ],
+          [
+            15,
+            7,
+            1
+          ],
+          [
+            15,
+            7,
+            2
+          ],
+          [
+            15,
+            7,
+            3
+          ],
+          [
+            15,
+            7,
+            4
+          ],
+          [
+            15,
+            7,
+            5
+          ],
+          [
+            16,
+            7,
+            0
+          ],
+          [
+            16,
+            7,
+            1
+          ],
+          [
+            16,
+            7,
+            2
+          ],
+          [
+            16,
+            7,
+            3
+          ],
+          [
+            16,
+            7,
+            4
+          ],
+          [
+            16,
+            7,
+            5
+          ]
+        ],
+        "sampledVoxels": 18,
+        "exposedVoxels": 18,
+        "connectedToOwner": true,
+        "rayClear": true,
+        "unoccludedPixels": {
+          "front": 507,
+          "side": 1908,
+          "left": 0,
+          "top": 3003,
+          "oblique": 1866
+        },
+        "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+        "witness": [
+          {
+            "coordinate": [
+              14,
+              7,
+              0
+            ],
+            "localPosition": "on original functional owner surface",
+            "airNeighborCount": 2,
+            "exposedFaceDirections": [
+              "+Y",
+              "-Z"
+            ],
+            "rayClearDirections": [
+              "+Y",
+              "-Z"
+            ]
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "nonApplicableFeatures": {
+      "animalEyes": "not_applicable: no animal categories"
+    },
+    "failureReasons": [],
+    "passed": true,
+    "semanticVerificationScope": "measured occupancy, component, part adjacency, opening witnesses, support and surface rays",
+    "advancedSemanticChecks": {
+      "minimumConnectionCrossSection": "bbox_thickness_measured_for_narrow_parts",
+      "sideLeakFloodMask": "independent_verifier",
+      "nearDuplicateMeaningfulnessReview": "pending"
+    },
+    "formatRoundtrip": {
+      "npzCoordinatesColorsOccupancy": true,
+      "voxCoordinatesColors": true,
+      "voxAxisTransform": "JSON(x,y,z) -> VOX(x,z,y)",
+      "objExposedFaceCount": 716,
+      "previewViews": [
+        "front +Z",
+        "side +X",
+        "top +Y",
+        "left -X",
+        "back -Z",
+        "oblique +X +Y +Z"
+      ]
+    },
+    "exactOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+    "canonicalGeometryHash": "05352da89ff1eead8b19144ddbaae9497ca08523b4641b39efbdb59fa4e5f91b",
+    "initialVoxelCount": 1368,
+    "resamplingHistory": [
+      {
+        "scale": 0.8918116926464231,
+        "actualVoxelCount": 942,
+        "failureReasons": []
+      }
+    ],
+    "duplicateCoordinateCleanupCount": 0,
+    "historicalExactDedupStatus": "unavailable_index",
+    "crossShardDedupStatus": "awaiting_merge",
+    "historicalCanonicalDedupStatus": "unavailable_coordinates",
+    "legoAssemblyStatus": "not_attempted",
+    "physicalValidationStatus": "not_attempted",
+    "generationInstructionReplay": {
+      "executedFullLevel": 5,
+      "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+      "coordinateRgbPartEquality": true,
+      "actualVoxelCount": 942,
+      "exactOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+      "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+      "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+      "inputVoxelSha256": "8bec5323a1a9ba0d30349ce4aa5069230621fd83018e80d33ec392aadf3e5785",
+      "visibilitySchemaVersion": 3
+    },
+    "partSeparation": {}
+  },
+  "originalGenerationInstruction": {
+    "zh": "构造带前向镜头、握柄和顶部取景框的箱形相机。采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。 原始参数规格：{\"baseWidthFraction\": 0.55, \"category\": \"camera\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"depth\": 6.0, \"detailPosition\": 0.25, \"featureCount\": 2, \"height\": 10.0, \"instance\": 0, \"lipOverhang\": 0.6, \"neckFraction\": 0.42, \"ordinal\": 55236, \"redesign\": 0, \"rimHeight\": 2.0, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.58, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 16.0}",
+    "en": "Construct a box camera with a forward lens, grip and top viewfinder. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments. Original parameter specification: {\"baseWidthFraction\": 0.55, \"category\": \"camera\", \"changedAttributes\": [\"width\", \"depth\", \"height\", \"supportInset\", \"shapeChamfer\", \"featureCount\"], \"construction\": \"original continuous boxes and chamfered cross sections\", \"depth\": 6.0, \"detailPosition\": 0.25, \"featureCount\": 2, \"height\": 10.0, \"instance\": 0, \"lipOverhang\": 0.6, \"neckFraction\": 0.42, \"ordinal\": 55236, \"redesign\": 0, \"rimHeight\": 2.0, \"shapeChamfer\": 0.0, \"shoulderFraction\": 0.58, \"structureIndex\": 0, \"style\": 0, \"supportInset\": 1.0, \"variant\": 1, \"wallThickness\": 2.0, \"width\": 16.0}"
+  },
+  "generationInstructionReplay": {
+    "executedFullLevel": 5,
+    "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+    "coordinateRgbPartEquality": true,
+    "actualVoxelCount": 942,
+    "exactOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+    "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+    "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+    "inputVoxelSha256": "8bec5323a1a9ba0d30349ce4aa5069230621fd83018e80d33ec392aadf3e5785",
+    "visibilitySchemaVersion": 3
+  }
+}

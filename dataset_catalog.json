@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "repository": "BuShiGeMenn/BrickMore",
+  "modelCount": 80000,
+  "promptRecordCount": 400000,
+  "modelIndexPath": "datasets/model_index.jsonl",
+  "mergeReportPath": "datasets/merge_report.json",
+  "totalDownloadBytes": 5717276501,
+  "shards": [
+    {
+      "shardId": "A",
+      "rootDirectory": "AI_A",
+      "manifestPath": "download_manifest.json",
+      "modelCount": 40000,
+      "promptRecordCount": 200000
+    },
+    {
+      "shardId": "B",
+      "rootDirectory": "AI_B",
+      "manifestPath": "datasets/AI_B/download_manifest.json",
+      "modelCount": 40000,
+      "promptRecordCount": 200000
+    }
+  ]
+}

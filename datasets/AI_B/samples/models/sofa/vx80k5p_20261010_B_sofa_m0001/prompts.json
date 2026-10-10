@@ -1,0 +1,925 @@
+[
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_sofa_m0001",
+    "category": "sofa",
+    "categoryId": 17,
+    "variantId": "vx80k5p_20261010_B_sofa_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_sofa_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_sofa_m0001",
+    "modelSeed": 800070476,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_sofa_m0001_l1",
+    "promptLevel": 1,
+    "promptType": "minimal",
+    "structuralVariant": 0,
+    "captionZh": "一个带分区座垫、背垫及左右扶手的方正沙发。",
+    "captionEn": "A rectangular sofa with segmented seat cushions, back cushions and two armrests.",
+    "voxelPromptZh": "一个带分区座垫、背垫及左右扶手的方正沙发。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A rectangular sofa with segmented seat cushions, back cushions and two armrests. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "leg_1",
+      "leg_2",
+      "leg_3",
+      "leg_4",
+      "frame",
+      "back",
+      "arm_left",
+      "arm_right",
+      "seat_cushion_1",
+      "back_cushion_1",
+      "seat_cushion_2",
+      "back_cushion_2"
+    ],
+    "invariantFeatures": "a seat frame, rear backrest, two side armrests and segmented cushions",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "supportInset",
+      "supportThickness",
+      "seamWidth",
+      "sofaCushionCount"
+    ],
+    "designSpec": {
+      "category": "sofa",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 24.0,
+      "depth": 12.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 70476,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001,
+      "seamWidth": 2.2,
+      "seatBoardCount": 2,
+      "backSlatCount": 2,
+      "sofaCushionCount": 2
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/sofa/vx80k5p_20261010_B_sofa_m0001/model.json",
+    "modelNpzPath": "models/sofa/vx80k5p_20261010_B_sofa_m0001/model.npz",
+    "targetOccupancyHash": "2af96387b00864d13f12610aa3e31965e5130eca0ab20a2c8cbfe2243fdb004f",
+    "targetCanonicalGeometryHash": "0716dae84a5a62886237238cf1045d3000bbd2682466720b16b13d79c8dc4f39",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a rectangular sofa with segmented seat cushions, back cushions and two armrests"
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a rectangular sofa with segmented seat cushions, back cushions and two armrests"
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_sofa_m0001",
+    "category": "sofa",
+    "categoryId": 17,
+    "variantId": "vx80k5p_20261010_B_sofa_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_sofa_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_sofa_m0001",
+    "modelSeed": 800070476,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_sofa_m0001_l2",
+    "promptLevel": 2,
+    "promptType": "basic_structure",
+    "structuralVariant": 0,
+    "captionZh": "一个带分区座垫、背垫及左右扶手的方正沙发。它由座框、后靠背、两侧扶手和分区软垫组成。",
+    "captionEn": "A rectangular sofa with segmented seat cushions, back cushions and two armrests. It includes a seat frame, rear backrest, two side armrests and segmented cushions.",
+    "voxelPromptZh": "一个带分区座垫、背垫及左右扶手的方正沙发。它由座框、后靠背、两侧扶手和分区软垫组成。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A rectangular sofa with segmented seat cushions, back cushions and two armrests. It includes a seat frame, rear backrest, two side armrests and segmented cushions. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "leg_1",
+      "leg_2",
+      "leg_3",
+      "leg_4",
+      "frame",
+      "back",
+      "arm_left",
+      "arm_right",
+      "seat_cushion_1",
+      "back_cushion_1",
+      "seat_cushion_2",
+      "back_cushion_2"
+    ],
+    "invariantFeatures": "a seat frame, rear backrest, two side armrests and segmented cushions",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "supportInset",
+      "supportThickness",
+      "seamWidth",
+      "sofaCushionCount"
+    ],
+    "designSpec": {
+      "category": "sofa",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 24.0,
+      "depth": 12.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 70476,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001,
+      "seamWidth": 2.2,
+      "seatBoardCount": 2,
+      "backSlatCount": 2,
+      "sofaCushionCount": 2
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/sofa/vx80k5p_20261010_B_sofa_m0001/model.json",
+    "modelNpzPath": "models/sofa/vx80k5p_20261010_B_sofa_m0001/model.npz",
+    "targetOccupancyHash": "2af96387b00864d13f12610aa3e31965e5130eca0ab20a2c8cbfe2243fdb004f",
+    "targetCanonicalGeometryHash": "0716dae84a5a62886237238cf1045d3000bbd2682466720b16b13d79c8dc4f39",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a rectangular sofa with segmented seat cushions, back cushions and two armrests"
+      },
+      {
+        "parts": [
+          "leg_1",
+          "leg_2",
+          "leg_3",
+          "leg_4",
+          "frame",
+          "back",
+          "arm_left",
+          "arm_right",
+          "seat_cushion_1",
+          "back_cushion_1",
+          "seat_cushion_2",
+          "back_cushion_2"
+        ]
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a rectangular sofa with segmented seat cushions, back cushions and two armrests"
+      },
+      {
+        "parts": [
+          "leg_1",
+          "leg_2",
+          "leg_3",
+          "leg_4",
+          "frame",
+          "back",
+          "arm_left",
+          "arm_right",
+          "seat_cushion_1",
+          "back_cushion_1",
+          "seat_cushion_2",
+          "back_cushion_2"
+        ]
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_sofa_m0001",
+    "category": "sofa",
+    "categoryId": 17,
+    "variantId": "vx80k5p_20261010_B_sofa_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_sofa_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_sofa_m0001",
+    "modelSeed": 800070476,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_sofa_m0001_l3",
+    "promptLevel": 3,
+    "promptType": "geometry",
+    "structuralVariant": 0,
+    "captionZh": "一个带分区座垫、背垫及左右扶手的方正沙发。它由座框、后靠背、两侧扶手和分区软垫组成。腿宽约为框宽的0.18倍，四脚向上面连接承重框。",
+    "captionEn": "A rectangular sofa with segmented seat cushions, back cushions and two armrests. It includes a seat frame, rear backrest, two side armrests and segmented cushions. Legs are 0.18 frame-widths thick and connect upward to the frame.",
+    "voxelPromptZh": "一个带分区座垫、背垫及左右扶手的方正沙发。它由座框、后靠背、两侧扶手和分区软垫组成。腿宽约为框宽的0.18倍，四脚向上面连接承重框。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A rectangular sofa with segmented seat cushions, back cushions and two armrests. It includes a seat frame, rear backrest, two side armrests and segmented cushions. Legs are 0.18 frame-widths thick and connect upward to the frame. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "leg_1",
+      "leg_2",
+      "leg_3",
+      "leg_4",
+      "frame",
+      "back",
+      "arm_left",
+      "arm_right",
+      "seat_cushion_1",
+      "back_cushion_1",
+      "seat_cushion_2",
+      "back_cushion_2"
+    ],
+    "invariantFeatures": "a seat frame, rear backrest, two side armrests and segmented cushions",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "supportInset",
+      "supportThickness",
+      "seamWidth",
+      "sofaCushionCount"
+    ],
+    "designSpec": {
+      "category": "sofa",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 24.0,
+      "depth": 12.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 70476,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001,
+      "seamWidth": 2.2,
+      "seatBoardCount": 2,
+      "backSlatCount": 2,
+      "sofaCushionCount": 2
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/sofa/vx80k5p_20261010_B_sofa_m0001/model.json",
+    "modelNpzPath": "models/sofa/vx80k5p_20261010_B_sofa_m0001/model.npz",
+    "targetOccupancyHash": "2af96387b00864d13f12610aa3e31965e5130eca0ab20a2c8cbfe2243fdb004f",
+    "targetCanonicalGeometryHash": "0716dae84a5a62886237238cf1045d3000bbd2682466720b16b13d79c8dc4f39",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a rectangular sofa with segmented seat cushions, back cushions and two armrests"
+      },
+      {
+        "parts": [
+          "leg_1",
+          "leg_2",
+          "leg_3",
+          "leg_4",
+          "frame",
+          "back",
+          "arm_left",
+          "arm_right",
+          "seat_cushion_1",
+          "back_cushion_1",
+          "seat_cushion_2",
+          "back_cushion_2"
+        ]
+      },
+      {
+        "structuralDetail": "Legs are 0.18 frame-widths thick and connect upward to the frame.",
+        "section": {
+          "part": "leg_1",
+          "thicknessAxis": 0,
+          "referencePart": "frame",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 17,
+          "relativeThickness": 0.18
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a rectangular sofa with segmented seat cushions, back cushions and two armrests"
+      },
+      {
+        "parts": [
+          "leg_1",
+          "leg_2",
+          "leg_3",
+          "leg_4",
+          "frame",
+          "back",
+          "arm_left",
+          "arm_right",
+          "seat_cushion_1",
+          "back_cushion_1",
+          "seat_cushion_2",
+          "back_cushion_2"
+        ]
+      },
+      {
+        "structuralDetail": "Legs are 0.18 frame-widths thick and connect upward to the frame.",
+        "section": {
+          "part": "leg_1",
+          "thicknessAxis": 0,
+          "referencePart": "frame",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 17,
+          "relativeThickness": 0.18
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_sofa_m0001",
+    "category": "sofa",
+    "categoryId": 17,
+    "variantId": "vx80k5p_20261010_B_sofa_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_sofa_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_sofa_m0001",
+    "modelSeed": 800070476,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_sofa_m0001_l4",
+    "promptLevel": 4,
+    "promptType": "proportion",
+    "structuralVariant": 0,
+    "captionZh": "一个带分区座垫、背垫及左右扶手的方正沙发。它由座框、后靠背、两侧扶手和分区软垫组成。腿宽约为框宽的0.18倍，四脚向上面连接承重框。宽深比约2.10，高/最大水平跨度约0.52；支脚分置承重框四角，横向腿隙与框宽比0.76。",
+    "captionEn": "A rectangular sofa with segmented seat cushions, back cushions and two armrests. It includes a seat frame, rear backrest, two side armrests and segmented cushions. Legs are 0.18 frame-widths thick and connect upward to the frame. Width/depth is 2.10; height/horizontal-span is 0.52. The supports occupy four separated corner positions. Leg-gap/width is 0.76.",
+    "voxelPromptZh": "一个带分区座垫、背垫及左右扶手的方正沙发。它由座框、后靠背、两侧扶手和分区软垫组成。腿宽约为框宽的0.18倍，四脚向上面连接承重框。宽深比约2.10，高/最大水平跨度约0.52；支脚分置承重框四角，横向腿隙与框宽比0.76。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A rectangular sofa with segmented seat cushions, back cushions and two armrests. It includes a seat frame, rear backrest, two side armrests and segmented cushions. Legs are 0.18 frame-widths thick and connect upward to the frame. Width/depth is 2.10; height/horizontal-span is 0.52. The supports occupy four separated corner positions. Leg-gap/width is 0.76. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "leg_1",
+      "leg_2",
+      "leg_3",
+      "leg_4",
+      "frame",
+      "back",
+      "arm_left",
+      "arm_right",
+      "seat_cushion_1",
+      "back_cushion_1",
+      "seat_cushion_2",
+      "back_cushion_2"
+    ],
+    "invariantFeatures": "a seat frame, rear backrest, two side armrests and segmented cushions",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "supportInset",
+      "supportThickness",
+      "seamWidth",
+      "sofaCushionCount"
+    ],
+    "designSpec": {
+      "category": "sofa",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 24.0,
+      "depth": 12.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 70476,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001,
+      "seamWidth": 2.2,
+      "seatBoardCount": 2,
+      "backSlatCount": 2,
+      "sofaCushionCount": 2
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/sofa/vx80k5p_20261010_B_sofa_m0001/model.json",
+    "modelNpzPath": "models/sofa/vx80k5p_20261010_B_sofa_m0001/model.npz",
+    "targetOccupancyHash": "2af96387b00864d13f12610aa3e31965e5130eca0ab20a2c8cbfe2243fdb004f",
+    "targetCanonicalGeometryHash": "0716dae84a5a62886237238cf1045d3000bbd2682466720b16b13d79c8dc4f39",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a rectangular sofa with segmented seat cushions, back cushions and two armrests"
+      },
+      {
+        "parts": [
+          "leg_1",
+          "leg_2",
+          "leg_3",
+          "leg_4",
+          "frame",
+          "back",
+          "arm_left",
+          "arm_right",
+          "seat_cushion_1",
+          "back_cushion_1",
+          "seat_cushion_2",
+          "back_cushion_2"
+        ]
+      },
+      {
+        "structuralDetail": "Legs are 0.18 frame-widths thick and connect upward to the frame.",
+        "section": {
+          "part": "leg_1",
+          "thicknessAxis": 0,
+          "referencePart": "frame",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 17,
+          "relativeThickness": 0.18
+        }
+      },
+      {
+        "widthDepthRatio": 2.1,
+        "heightSpanRatio": 0.52,
+        "partPosition": "The supports occupy four separated corner positions.",
+        "spacing": {
+          "kind": "clear_gap",
+          "partA": "leg_1",
+          "partB": "leg_2",
+          "axis": 0,
+          "referencePart": "frame",
+          "referenceAxis": 0,
+          "ratio": 0.76
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a rectangular sofa with segmented seat cushions, back cushions and two armrests"
+      },
+      {
+        "parts": [
+          "leg_1",
+          "leg_2",
+          "leg_3",
+          "leg_4",
+          "frame",
+          "back",
+          "arm_left",
+          "arm_right",
+          "seat_cushion_1",
+          "back_cushion_1",
+          "seat_cushion_2",
+          "back_cushion_2"
+        ]
+      },
+      {
+        "structuralDetail": "Legs are 0.18 frame-widths thick and connect upward to the frame.",
+        "section": {
+          "part": "leg_1",
+          "thicknessAxis": 0,
+          "referencePart": "frame",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 17,
+          "relativeThickness": 0.18
+        }
+      },
+      {
+        "widthDepthRatio": 2.1,
+        "heightSpanRatio": 0.52,
+        "partPosition": "The supports occupy four separated corner positions.",
+        "spacing": {
+          "kind": "clear_gap",
+          "partA": "leg_1",
+          "partB": "leg_2",
+          "axis": 0,
+          "referencePart": "frame",
+          "referenceAxis": 0,
+          "ratio": 0.76
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  },
+  {
+    "datasetVersion": "voxel_80000_models_400000_prompts_20261010_v2",
+    "shardId": "B",
+    "modelId": "vx80k5p_20261010_B_sofa_m0001",
+    "category": "sofa",
+    "categoryId": 17,
+    "variantId": "vx80k5p_20261010_B_sofa_v001",
+    "geometryFamilyId": "vx80k5p_20261010_B_sofa_v001",
+    "semanticGroupKey": "vx80k5p_20261010_B_sofa_m0001",
+    "modelSeed": 800070476,
+    "tier": "detailed",
+    "recordId": "vx80k5p_20261010_B_sofa_m0001_l5",
+    "promptLevel": 5,
+    "promptType": "comprehensive",
+    "structuralVariant": 0,
+    "captionZh": "一个带分区座垫、背垫及左右扶手的方正沙发。它由座框、后靠背、两侧扶手和分区软垫组成。腿宽约为框宽的0.18倍，四脚向上面连接承重框。宽深比约2.10，高/最大水平跨度约0.52；支脚分置承重框四角，横向腿隙与框宽比0.76。实测采用4种不透明颜色，扶手以蓝灰色为主，座垫呈乳黄色。座垫2块。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。",
+    "captionEn": "A rectangular sofa with segmented seat cushions, back cushions and two armrests. It includes a seat frame, rear backrest, two side armrests and segmented cushions. Legs are 0.18 frame-widths thick and connect upward to the frame. Width/depth is 2.10; height/horizontal-span is 0.52. The supports occupy four separated corner positions. Leg-gap/width is 0.76. Across 4 opaque colors, the arms is mainly blue-gray and the cushions is cream. There are 2 seat cushions. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces.",
+    "voxelPromptZh": "一个带分区座垫、背垫及左右扶手的方正沙发。它由座框、后靠背、两侧扶手和分区软垫组成。腿宽约为框宽的0.18倍，四脚向上面连接承重框。宽深比约2.10，高/最大水平跨度约0.52；支脚分置承重框四角，横向腿隙与框宽比0.76。实测采用4种不透明颜色，扶手以蓝灰色为主，座垫呈乳黄色。座垫2块。正视看前侧轮廓，侧视看纵深及附件连接，俯视看水平排列和间距；斜视同时显示前面、右侧与顶部，孔隙与接合均来自实体几何。 采用彩色体素。坐标为0至47的整数，X左右、Y向上、Z前后；实际接地最低Y为0。占用750至1250个唯一体素，RGB为0至255整数；保持单一六邻域连通、真实开口及面连接。不要添加展示底板、文字、背景、噪声或悬浮装饰。",
+    "voxelPromptEn": "A rectangular sofa with segmented seat cushions, back cushions and two armrests. It includes a seat frame, rear backrest, two side armrests and segmented cushions. Legs are 0.18 frame-widths thick and connect upward to the frame. Width/depth is 2.10; height/horizontal-span is 0.52. The supports occupy four separated corner positions. Leg-gap/width is 0.76. Across 4 opaque colors, the arms is mainly blue-gray and the cushions is cream. There are 2 seat cushions. Front and side views expose contours and attachment joins; top and oblique views reveal spacing and upper surfaces. Use colored voxels at unique integer coordinates from 0 through 47, with X left to right, Y upward and Z front to back. Real ground contact starts at Y zero. Use 750 through 1250 occupied voxels and integer RGB values from 0 through 255. Keep one six neighbor component, real openings and face connected parts. Add no display base, text, background, noise or floating ornaments.",
+    "requiredParts": [
+      "leg_1",
+      "leg_2",
+      "leg_3",
+      "leg_4",
+      "frame",
+      "back",
+      "arm_left",
+      "arm_right",
+      "seat_cushion_1",
+      "back_cushion_1",
+      "seat_cushion_2",
+      "back_cushion_2"
+    ],
+    "invariantFeatures": "a seat frame, rear backrest, two side armrests and segmented cushions",
+    "changedAttributes": [
+      "width",
+      "depth",
+      "height",
+      "wallThickness",
+      "structureIndex",
+      "style",
+      "supportInset",
+      "supportThickness",
+      "seamWidth",
+      "sofaCushionCount"
+    ],
+    "designSpec": {
+      "category": "sofa",
+      "variant": 1,
+      "instance": 0,
+      "style": 0,
+      "structureIndex": 0,
+      "width": 24.0,
+      "depth": 12.0,
+      "height": 10.0,
+      "wallThickness": 2.0,
+      "shapeChamfer": 0.0,
+      "featureCount": 2,
+      "supportInset": 1.0,
+      "detailPosition": 0.25,
+      "neckFraction": 0.35,
+      "shoulderFraction": 0.5399999999999999,
+      "rimHeight": 2.0,
+      "lipOverhang": 0.4,
+      "baseWidthFraction": 0.47000000000000003,
+      "redesign": 0,
+      "ordinal": 70476,
+      "changedAttributes": [
+        "width",
+        "depth",
+        "height",
+        "supportInset",
+        "shapeChamfer",
+        "featureCount",
+        "neck aperture ratio",
+        "functional rim projection",
+        "base taper",
+        "support cross section",
+        "functional part position"
+      ],
+      "construction": "original continuous boxes and chamfered cross sections",
+      "replanPhase": 1,
+      "supportThickness": 3.2,
+      "handleThickness": 3.2,
+      "lensHeightRatio": 0.42,
+      "deckPositionRatio": 0.27,
+      "towerMiddleWidthFraction": 0.8150000000000001,
+      "towerTopWidthFraction": 0.6050000000000001,
+      "seamWidth": 2.2,
+      "seatBoardCount": 2,
+      "backSlatCount": 2,
+      "sofaCushionCount": 2
+    },
+    "gridSize": [
+      48,
+      48,
+      48
+    ],
+    "requestedVoxelRange": [
+      750,
+      1250
+    ],
+    "modelJsonPath": "models/sofa/vx80k5p_20261010_B_sofa_m0001/model.json",
+    "modelNpzPath": "models/sofa/vx80k5p_20261010_B_sofa_m0001/model.npz",
+    "targetOccupancyHash": "2af96387b00864d13f12610aa3e31965e5130eca0ab20a2c8cbfe2243fdb004f",
+    "targetCanonicalGeometryHash": "0716dae84a5a62886237238cf1045d3000bbd2682466720b16b13d79c8dc4f39",
+    "sharesGeometryAcrossLevels": true,
+    "expectedIndependentGeometryAcrossLevels": false,
+    "captionFactsZh": [
+      {
+        "core": "a rectangular sofa with segmented seat cushions, back cushions and two armrests"
+      },
+      {
+        "parts": [
+          "leg_1",
+          "leg_2",
+          "leg_3",
+          "leg_4",
+          "frame",
+          "back",
+          "arm_left",
+          "arm_right",
+          "seat_cushion_1",
+          "back_cushion_1",
+          "seat_cushion_2",
+          "back_cushion_2"
+        ]
+      },
+      {
+        "structuralDetail": "Legs are 0.18 frame-widths thick and connect upward to the frame.",
+        "section": {
+          "part": "leg_1",
+          "thicknessAxis": 0,
+          "referencePart": "frame",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 17,
+          "relativeThickness": 0.18
+        }
+      },
+      {
+        "widthDepthRatio": 2.1,
+        "heightSpanRatio": 0.52,
+        "partPosition": "The supports occupy four separated corner positions.",
+        "spacing": {
+          "kind": "clear_gap",
+          "partA": "leg_1",
+          "partB": "leg_2",
+          "axis": 0,
+          "referencePart": "frame",
+          "referenceAxis": 0,
+          "ratio": 0.76
+        }
+      },
+      {
+        "paletteSize": 4,
+        "colorRegions": [
+          {
+            "part": "arm_left",
+            "color": [
+              61,
+              103,
+              137
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "seat_cushion_1",
+            "color": [
+              218,
+              202,
+              166
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {
+          "seat_cushion_": 2
+        }
+      }
+    ],
+    "captionFactsEn": [
+      {
+        "core": "a rectangular sofa with segmented seat cushions, back cushions and two armrests"
+      },
+      {
+        "parts": [
+          "leg_1",
+          "leg_2",
+          "leg_3",
+          "leg_4",
+          "frame",
+          "back",
+          "arm_left",
+          "arm_right",
+          "seat_cushion_1",
+          "back_cushion_1",
+          "seat_cushion_2",
+          "back_cushion_2"
+        ]
+      },
+      {
+        "structuralDetail": "Legs are 0.18 frame-widths thick and connect upward to the frame.",
+        "section": {
+          "part": "leg_1",
+          "thicknessAxis": 0,
+          "referencePart": "frame",
+          "referenceAxis": 0,
+          "thicknessVoxels": 3,
+          "referenceVoxels": 17,
+          "relativeThickness": 0.18
+        }
+      },
+      {
+        "widthDepthRatio": 2.1,
+        "heightSpanRatio": 0.52,
+        "partPosition": "The supports occupy four separated corner positions.",
+        "spacing": {
+          "kind": "clear_gap",
+          "partA": "leg_1",
+          "partB": "leg_2",
+          "axis": 0,
+          "referencePart": "frame",
+          "referenceAxis": 0,
+          "ratio": 0.76
+        }
+      },
+      {
+        "paletteSize": 4,
+        "colorRegions": [
+          {
+            "part": "arm_left",
+            "color": [
+              61,
+              103,
+              137
+            ],
+            "selection": "dominant"
+          },
+          {
+            "part": "seat_cushion_1",
+            "color": [
+              218,
+              202,
+              166
+            ],
+            "selection": "dominant"
+          }
+        ],
+        "partCounts": {
+          "seat_cushion_": 2
+        }
+      }
+    ],
+    "trainingInputFields": [
+      "captionZh",
+      "captionEn"
+    ]
+  }
+]

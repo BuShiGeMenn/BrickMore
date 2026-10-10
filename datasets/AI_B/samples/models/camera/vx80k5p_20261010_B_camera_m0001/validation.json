@@ -1,0 +1,440 @@
+{
+  "actualVoxelCount": 942,
+  "sixNeighborComponentCount": 1,
+  "checks": {
+    "voxelRange": true,
+    "singleSixConnectedComponent": true,
+    "nonnegative48Grid": true,
+    "groundContactY0": true,
+    "uniqueCoordinates": true
+  },
+  "parts": {
+    "body": {
+      "voxelCount": 538,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        14,
+        9,
+        5
+      ]
+    },
+    "grip": {
+      "voxelCount": 240,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        5,
+        8,
+        6
+      ]
+    },
+    "lens": {
+      "voxelCount": 116,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        5,
+        6,
+        4
+      ]
+    },
+    "viewfinder": {
+      "voxelCount": 48,
+      "faceConnectedToObject": true,
+      "survivesRasterization": true,
+      "boundingDimensions": [
+        3,
+        4,
+        4
+      ]
+    }
+  },
+  "openings": {},
+  "visibleSurfaceFeatures": [
+    {
+      "featureId": "lens_face",
+      "ownerPart": "lens",
+      "expectedViews": [
+        "front",
+        "oblique"
+      ],
+      "color": [
+        98,
+        176,
+        200
+      ],
+      "coordinates": [
+        [
+          3,
+          2,
+          8
+        ],
+        [
+          3,
+          3,
+          8
+        ],
+        [
+          3,
+          4,
+          8
+        ],
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          3,
+          6,
+          8
+        ],
+        [
+          4,
+          1,
+          8
+        ],
+        [
+          4,
+          2,
+          8
+        ],
+        [
+          4,
+          3,
+          8
+        ],
+        [
+          4,
+          4,
+          8
+        ],
+        [
+          4,
+          5,
+          8
+        ],
+        [
+          4,
+          6,
+          8
+        ],
+        [
+          5,
+          1,
+          8
+        ],
+        [
+          5,
+          2,
+          8
+        ],
+        [
+          5,
+          3,
+          8
+        ],
+        [
+          5,
+          4,
+          8
+        ],
+        [
+          5,
+          5,
+          8
+        ],
+        [
+          5,
+          6,
+          8
+        ],
+        [
+          6,
+          1,
+          8
+        ],
+        [
+          6,
+          2,
+          8
+        ],
+        [
+          6,
+          3,
+          8
+        ],
+        [
+          6,
+          4,
+          8
+        ],
+        [
+          6,
+          5,
+          8
+        ],
+        [
+          6,
+          6,
+          8
+        ],
+        [
+          7,
+          1,
+          8
+        ],
+        [
+          7,
+          2,
+          8
+        ],
+        [
+          7,
+          3,
+          8
+        ],
+        [
+          7,
+          4,
+          8
+        ],
+        [
+          7,
+          5,
+          8
+        ],
+        [
+          7,
+          6,
+          8
+        ]
+      ],
+      "sampledVoxels": 29,
+      "exposedVoxels": 29,
+      "connectedToOwner": true,
+      "rayClear": true,
+      "unoccludedPixels": {
+        "front": 4759,
+        "side": 1890,
+        "left": 1890,
+        "top": 910,
+        "oblique": 2795
+      },
+      "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+      "witness": [
+        {
+          "coordinate": [
+            3,
+            2,
+            8
+          ],
+          "localPosition": "on original functional owner surface",
+          "airNeighborCount": 3,
+          "exposedFaceDirections": [
+            "-X",
+            "-Y",
+            "+Z"
+          ],
+          "rayClearDirections": [
+            "-X",
+            "-Y",
+            "+Z"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "featureId": "shutter",
+      "ownerPart": "grip",
+      "expectedViews": [
+        "top",
+        "oblique"
+      ],
+      "color": [
+        175,
+        61,
+        45
+      ],
+      "coordinates": [
+        [
+          14,
+          7,
+          0
+        ],
+        [
+          14,
+          7,
+          1
+        ],
+        [
+          14,
+          7,
+          2
+        ],
+        [
+          14,
+          7,
+          3
+        ],
+        [
+          14,
+          7,
+          4
+        ],
+        [
+          14,
+          7,
+          5
+        ],
+        [
+          15,
+          7,
+          0
+        ],
+        [
+          15,
+          7,
+          1
+        ],
+        [
+          15,
+          7,
+          2
+        ],
+        [
+          15,
+          7,
+          3
+        ],
+        [
+          15,
+          7,
+          4
+        ],
+        [
+          15,
+          7,
+          5
+        ],
+        [
+          16,
+          7,
+          0
+        ],
+        [
+          16,
+          7,
+          1
+        ],
+        [
+          16,
+          7,
+          2
+        ],
+        [
+          16,
+          7,
+          3
+        ],
+        [
+          16,
+          7,
+          4
+        ],
+        [
+          16,
+          7,
+          5
+        ]
+      ],
+      "sampledVoxels": 18,
+      "exposedVoxels": 18,
+      "connectedToOwner": true,
+      "rayClear": true,
+      "unoccludedPixels": {
+        "front": 507,
+        "side": 1908,
+        "left": 0,
+        "top": 3003,
+        "oblique": 1866
+      },
+      "visibilityMethod": "256x256 geometric ID buffers using actual preview projections and draw order",
+      "witness": [
+        {
+          "coordinate": [
+            14,
+            7,
+            0
+          ],
+          "localPosition": "on original functional owner surface",
+          "airNeighborCount": 2,
+          "exposedFaceDirections": [
+            "+Y",
+            "-Z"
+          ],
+          "rayClearDirections": [
+            "+Y",
+            "-Z"
+          ]
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "nonApplicableFeatures": {
+    "animalEyes": "not_applicable: no animal categories"
+  },
+  "failureReasons": [],
+  "passed": true,
+  "semanticVerificationScope": "measured occupancy, component, part adjacency, opening witnesses, support and surface rays",
+  "advancedSemanticChecks": {
+    "minimumConnectionCrossSection": "bbox_thickness_measured_for_narrow_parts",
+    "sideLeakFloodMask": "independent_verifier",
+    "nearDuplicateMeaningfulnessReview": "pending"
+  },
+  "formatRoundtrip": {
+    "npzCoordinatesColorsOccupancy": true,
+    "voxCoordinatesColors": true,
+    "voxAxisTransform": "JSON(x,y,z) -> VOX(x,z,y)",
+    "objExposedFaceCount": 716,
+    "previewViews": [
+      "front +Z",
+      "side +X",
+      "top +Y",
+      "left -X",
+      "back -Z",
+      "oblique +X +Y +Z"
+    ]
+  },
+  "exactOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+  "canonicalGeometryHash": "05352da89ff1eead8b19144ddbaae9497ca08523b4641b39efbdb59fa4e5f91b",
+  "initialVoxelCount": 1368,
+  "resamplingHistory": [
+    {
+      "scale": 0.8918116926464231,
+      "actualVoxelCount": 942,
+      "failureReasons": []
+    }
+  ],
+  "duplicateCoordinateCleanupCount": 0,
+  "historicalExactDedupStatus": "unavailable_index",
+  "crossShardDedupStatus": "awaiting_merge",
+  "historicalCanonicalDedupStatus": "unavailable_coordinates",
+  "legoAssemblyStatus": "not_attempted",
+  "physicalValidationStatus": "not_attempted",
+  "generationInstructionReplay": {
+    "executedFullLevel": 5,
+    "method": "parse full L5 parameter specification; rebuild original primitives at recorded uniform sampling scale",
+    "coordinateRgbPartEquality": true,
+    "actualVoxelCount": 942,
+    "exactOccupancyHash": "8e52859654174fe7a76488948b5c1e76345d5c1fd1fd8ebcd7db0d60dbfe4b17",
+    "captionTemplateSha256": "b43fa6cdca2ebde5a3505ce34c8ba59b8feba536e89ca644438aebf959e36e30",
+    "sourceGeometrySha256": "c853f480fee7c07229d060cde3b2802099c1cc73c0f530dd47843ebedbc9769c",
+    "inputVoxelSha256": "8bec5323a1a9ba0d30349ce4aa5069230621fd83018e80d33ec392aadf3e5785",
+    "visibilitySchemaVersion": 3
+  },
+  "partSeparation": {}
+}
