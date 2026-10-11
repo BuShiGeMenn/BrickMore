@@ -2,6 +2,8 @@
 
 本目录保存公开发布清单及汇总证据。完整逐模型资产与统一索引放在单独的 [装配结果 Release](https://github.com/BuShiGeMenn/BrickMore/releases/tag/lego-assembly-ab-80000-20261011-v1)，原 AI_A/AI_B 体素 Release 不修改。
 
+发布后的 [服务器端核对报告](release_verification.json) 记录全部 81 个文件的公开下载地址、大小与 SHA-256；原 AI_A、AI_B 发布的文件清单和校验值均保持不变。
+
 ## 下载与验证
 
 在仓库根目录运行：
