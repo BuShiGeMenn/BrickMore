@@ -1,5 +1,6 @@
 """Download the complete public release, check SHA-256, optionally extract it."""
 import argparse,hashlib,json,os,shutil,sys,time,urllib.error,urllib.request,zipfile,zlib
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent.parent
@@ -26,6 +27,8 @@ def download(asset,directory):
                             chunk=response.read(1024*1024)
                             if not chunk:break
                             handle.write(chunk)
+            if partial.stat().st_size<asset['bytes']:
+                raise ConnectionError('Truncated download; resume from '+str(partial.stat().st_size)+' bytes: '+partial.name)
             if partial.stat().st_size!=asset['bytes'] or checksum(partial)!=asset['sha256']:
                 raise ValueError('Downloaded file checksum mismatch: '+partial.name)
             os.replace(partial,target);print('Downloaded and verified',target.name,flush=True);return target
@@ -92,14 +95,20 @@ def get_manifest(shard):
     path=ROOT/'download_manifest.json' if shard=='A' else ROOT/'datasets'/'AI_B'/'download_manifest.json'
     return json.loads(path.read_text(encoding='utf-8'))
 
-def run_shard(shard,directory,do_extract):
+def run_shard(shard,directory,do_extract,workers=1):
     manifest=get_manifest(shard)
     directory.mkdir(parents=True,exist_ok=True);downloads=directory/'packages';downloads.mkdir(exist_ok=True)
     print('Shard:',shard,'Files:',len(manifest['assets']),'Total GB:',round(manifest['totalDownloadBytes']/1e9,2),flush=True)
-    # Metadata last also supports manual extraction of the original B packages.
-    for asset in sorted(manifest['assets'],key=lambda row:row['kind']=='metadata'):
+    def fetch(asset):
         path=download(asset,downloads)
         if do_extract and path.suffix=='.zip':extract(path,directory,asset['kind'],shard)
+    # Model packages have disjoint paths. Finish all of them before extracting
+    # authoritative metadata, regardless of concurrent download completion order.
+    packages=[row for row in manifest['assets'] if row['kind']!='metadata']
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        list(pool.map(fetch,packages))
+    for asset in manifest['assets']:
+        if asset['kind']=='metadata':fetch(asset)
     return verify_extracted(directory,manifest) if do_extract else None
 
 def join_extracted(directory,shard_data):
@@ -130,11 +139,13 @@ def main():
     parser=argparse.ArgumentParser(description='Download BrickMore AI_A, AI_B, or all 80,000 models with SHA-256 verification.')
     parser.add_argument('--output',type=Path,default=Path('dataset'));parser.add_argument('--extract',action='store_true')
     parser.add_argument('--shard',choices=('A','B','all'),default='A',help='A keeps the original command behavior; all uses separate shard directories')
+    parser.add_argument('--workers',type=int,default=1,help='Concurrent package downloads; authoritative metadata is always extracted last')
     args=parser.parse_args()
+    if args.workers<1:parser.error('workers must be positive')
     if args.shard=='all':
-        data={shard:run_shard(shard,args.output/('AI_'+shard),args.extract) for shard in ('A','B')}
+        data={shard:run_shard(shard,args.output/('AI_'+shard),args.extract,args.workers) for shard in ('A','B')}
         if args.extract:join_extracted(args.output,data)
-    else:run_shard(args.shard,args.output,args.extract)
+    else:run_shard(args.shard,args.output,args.extract,args.workers)
     if not args.extract:print('All downloads verified',flush=True)
 
 if __name__=='__main__':main()

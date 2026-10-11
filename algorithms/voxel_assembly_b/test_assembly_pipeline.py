@@ -12,6 +12,22 @@ POLICY = dict(world_dim=48,brick_library='extended',min_support_fraction=.1,
 
 
 class AssemblyTests(unittest.TestCase):
+    def test_original_a_and_b_manifests_have_identical_job_layout(self):
+        row = dict(modelId='test',category='basket',modelSeed=1,
+                   exactOccupancyHash='a',canonicalGeometryHash='b')
+        a_job = a.manifest_jobs({'models':[{**row,'modelJsonPath':'models/basket/test/model.json'}]})
+        b_job = a.manifest_jobs({'models':[{**row,'modelPath':'models/basket/test'}]})
+        self.assertEqual(a_job,b_job)
+
+    def test_manifest_traversal_and_duplicate_ids_rejected(self):
+        row = dict(modelId='test',category='basket',modelSeed=1,
+                   exactOccupancyHash='a',canonicalGeometryHash='b',modelPath='models/basket/test')
+        for path in ('../other','C:/other','/other','models/../../other'):
+            with self.assertRaises(ValueError):
+                a.manifest_jobs({'models':[{**row,'modelPath':path}]})
+        with self.assertRaises(ValueError):
+            a.manifest_jobs({'models':[row,row]})
+
     def source(self,points,color=(0,0,0)):
         return {'modelId':'test','actualVoxelCount':len(points),
                 'voxels':[dict(x=x,y=y,z=z,color=list(color)) for x,y,z in points]}

@@ -1,0 +1,94 @@
+{
+  "algorithmVersion": "exact_grid_assembly_v3",
+  "requestedModelCount": 21,
+  "processedModelCount": 21,
+  "remainingModelCount": 0,
+  "statusCounts": {
+    "infeasible_under_selected_policy": 18,
+    "success": 2,
+    "search_failed": 1
+  },
+  "categoryStatusCounts": {
+    "basket": {
+      "infeasible_under_selected_policy": 1
+    },
+    "bed": {
+      "infeasible_under_selected_policy": 1
+    },
+    "bench": {
+      "infeasible_under_selected_policy": 1
+    },
+    "birdhouse": {
+      "infeasible_under_selected_policy": 1
+    },
+    "bookshelf": {
+      "infeasible_under_selected_policy": 1
+    },
+    "bottle": {
+      "success": 1
+    },
+    "bowl": {
+      "search_failed": 1
+    },
+    "bus": {
+      "infeasible_under_selected_policy": 1
+    },
+    "camera": {
+      "infeasible_under_selected_policy": 1
+    },
+    "car": {
+      "infeasible_under_selected_policy": 1
+    },
+    "chair": {
+      "infeasible_under_selected_policy": 1
+    },
+    "guitar": {
+      "infeasible_under_selected_policy": 1
+    },
+    "jar": {
+      "success": 1
+    },
+    "mug": {
+      "infeasible_under_selected_policy": 1
+    },
+    "piano": {
+      "infeasible_under_selected_policy": 1
+    },
+    "pot": {
+      "infeasible_under_selected_policy": 1
+    },
+    "sofa": {
+      "infeasible_under_selected_policy": 1
+    },
+    "table": {
+      "infeasible_under_selected_policy": 1
+    },
+    "tower": {
+      "infeasible_under_selected_policy": 1
+    },
+    "train": {
+      "infeasible_under_selected_policy": 1
+    },
+    "vessel": {
+      "infeasible_under_selected_policy": 1
+    }
+  },
+  "successfulBrickCount": 533,
+  "geometryAssemblyPassedModelCount": 2,
+  "allModelsAssemblyPassed": false,
+  "failureReasonCounts": {
+    "no_supported_same_color_brick_for_voxel": 14,
+    "search_failed": 1,
+    "disconnected_possible_stud_graph": 4
+  },
+  "staticVerifiedModelCount": 0,
+  "physicsStatus": "not_attempted",
+  "voxelSourceModified": false,
+  "notes": [
+    "Failures are not voxel-data validation failures; six-neighbor connectivity is weaker than stud connectivity.",
+    "Infeasibility is scoped to the chosen monochrome rectangular single-height library and lower-support policy.",
+    "Bounded search failure does not prove mathematical impossibility.",
+    "Discrete grid and RGB are preserved; LEGO height=24 versus stud pitch=20 changes physical aspect ratio.",
+    "No contact force, tipping, friction, stud insertion path, or actual construction verification."
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "baseAlgorithmVersion": "B_exact_grid_assembly_v2",
+  "baseRunnerSha256": "67120f21f4b0eeefa53cd120b6e7b6ef84bc421bf28757e08c93e6f1f1d12b28",
+  "baseSelectionSha256": "5e0fff1040b707bd64492a9c719c0e6a1a147aada148691cb7be9e2690d51874",
+  "toolkitSourceSha256": {
+    "optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+    "brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+    "voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+    "interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+    "voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f"
+  },
+  "refinementConfig": {
+    "algorithmVersion": "B_layer_mrv_exact_cover_v1",
+    "policy": {
+      "world_dim": 48,
+      "brick_library": "extended",
+      "min_support_fraction": 0.1,
+      "max_cantilever_distance": 2,
+      "max_components": 64,
+      "max_seconds": 3,
+      "max_nodes": 1500,
+      "beam_width": 8
+    },
+    "sourceFileSha256": "7fd0598d1fab9e25cc320f3f7fa43aa88733b56dc06075d958a74b29c939d25e",
+    "adapterSourceFileSha256": "67120f21f4b0eeefa53cd120b6e7b6ef84bc421bf28757e08c93e6f1f1d12b28",
+    "baseConfigSha256": "5d281a4da7c343fb5d1900f35acab074c68eed1fcf1ade835f7acdf6f51a34f3",
+    "maxSeconds": 3,
+    "maxNodes": 10000,
+    "toolkitSourceSha256": {
+      "optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+      "brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+      "voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+      "interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+      "voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f"
+    }
+  },
+  "baseSummary": {
+    "algorithmVersion": "B_exact_grid_assembly_v2",
+    "requestedModelCount": 40000,
+    "processedModelCount": 40000,
+    "remainingModelCount": 0,
+    "statusCounts": {
+      "infeasible_under_selected_policy": 31627,
+      "search_failed": 5292,
+      "success": 3081
+    },
+    "categoryStatusCounts": {
+      "basket": {
+        "infeasible_under_selected_policy": 1890,
+        "search_failed": 10
+      },
+      "bed": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "bench": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "birdhouse": {
+        "infeasible_under_selected_policy": 1638,
+        "search_failed": 48,
+        "success": 219
+      },
+      "bookshelf": {
+        "infeasible_under_selected_policy": 1442,
+        "success": 177,
+        "search_failed": 286
+      },
+      "bottle": {
+        "success": 180,
+        "infeasible_under_selected_policy": 658,
+        "search_failed": 1067
+      },
+      "bowl": {
+        "infeasible_under_selected_policy": 173,
+        "search_failed": 1676,
+        "success": 56
+      },
+      "bus": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "camera": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "car": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "chair": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "guitar": {
+        "infeasible_under_selected_policy": 743,
+        "success": 888,
+        "search_failed": 274
+      },
+      "jar": {
+        "success": 322,
+        "search_failed": 1556,
+        "infeasible_under_selected_policy": 27
+      },
+      "mug": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "piano": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "pot": {
+        "infeasible_under_selected_policy": 1896,
+        "success": 5,
+        "search_failed": 4
+      },
+      "sofa": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "table": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "tower": {
+        "success": 1199,
+        "search_failed": 364,
+        "infeasible_under_selected_policy": 342
+      },
+      "train": {
+        "infeasible_under_selected_policy": 1905
+      },
+      "vessel": {
+        "infeasible_under_selected_policy": 1863,
+        "search_failed": 7,
+        "success": 35
+      }
+    },
+    "successfulBrickCount": 511445,
+    "geometryAssemblyPassedModelCount": 3081,
+    "allModelsAssemblyPassed": false,
+    "failureReasonCounts": {
+      "no_supported_same_color_brick_for_voxel": 23381,
+      "search_failed": 5292,
+      "disconnected_possible_stud_graph": 8246
+    },
+    "staticVerifiedModelCount": 0,
+    "physicsStatus": "not_attempted",
+    "voxelSourceModified": false,
+    "notes": [
+      "Failures are not voxel-data validation failures; six-neighbor connectivity is weaker than stud connectivity.",
+      "Infeasibility is scoped to the chosen monochrome rectangular single-height library and lower-support policy.",
+      "Bounded search failure does not prove mathematical impossibility.",
+      "Discrete grid and RGB are preserved; LEGO height=24 versus stud pitch=20 changes physical aspect ratio.",
+      "No contact force, tipping, friction, stud insertion path, or actual construction verification."
+    ]
+  },
+  "baseReadback": {
+    "allDeliveredOutputsReadbackPassed": true,
+    "requestedModelCount": 40000,
+    "counts": {
+      "verified_failure_draft": 36919,
+      "verified_success": 3081
+    },
+    "staticVerified": null,
+    "fullPhysics": false
+  },
+  "refinementSummary": {
+    "attemptedModelCount": 5292,
+    "statusCounts": {
+      "search_failed": 5085,
+      "success": 207
+    },
+    "staticVerified": null,
+    "fullPhysics": false
+  },
+  "refinementReadback": {
+    "readbackVerifiedModelCount": 5292,
+    "counts": {
+      "verified_failure_draft": 5085,
+      "verified_success": 207
+    },
+    "allDeliveredOutputsReadbackPassed": true,
+    "staticVerified": null,
+    "fullPhysics": false
+  },
+  "policy": {
+    "world_dim": 48,
+    "brick_library": "extended",
+    "min_support_fraction": 0.1,
+    "max_cantilever_distance": 2,
+    "max_components": 64,
+    "max_seconds": 3,
+    "max_nodes": 1500,
+    "beam_width": 8
+  },
+  "sourceManifestSha256": "94107adca5b95fd72471b7bd917a926d5477537c0cf88982a78b22f330abcb0c",
+  "sourceAllPromptsSha256": "1249f45d0a82b5c96df271a55823f042b3c6a8a0d6cf3a896d4b46815af84615"
+}

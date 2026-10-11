@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "releaseTag": "lego-assembly-ab-80000-20261011-v1",
+  "processedModelCount": 80000,
+  "remainingModelCount": 0,
+  "promptRecordCount": 400000,
+  "statusCounts": {
+    "infeasible_under_selected_policy": 65640,
+    "success": 7902,
+    "search_failed": 6458
+  },
+  "shards": {
+    "A": {
+      "shardId": "A",
+      "processedModelCount": 40000,
+      "remainingModelCount": 0,
+      "promptRecordCount": 200000,
+      "statusCounts": {
+        "infeasible_under_selected_policy": 34013,
+        "success": 4614,
+        "search_failed": 1373
+      },
+      "successfulBrickCount": 1144650,
+      "geometryAssemblyPassRate": 0.11535,
+      "categoryStatusCounts": {
+        "basket": {
+          "infeasible_under_selected_policy": 1230,
+          "success": 661,
+          "search_failed": 14
+        },
+        "bed": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "bench": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "birdhouse": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "bookshelf": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "bottle": {
+          "success": 595,
+          "search_failed": 164,
+          "infeasible_under_selected_policy": 1146
+        },
+        "bowl": {
+          "search_failed": 998,
+          "success": 705,
+          "infeasible_under_selected_policy": 202
+        },
+        "bus": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "camera": {
+          "infeasible_under_selected_policy": 1829,
+          "success": 65,
+          "search_failed": 11
+        },
+        "car": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "chair": {
+          "infeasible_under_selected_policy": 1904,
+          "success": 1
+        },
+        "guitar": {
+          "infeasible_under_selected_policy": 1389,
+          "success": 487,
+          "search_failed": 29
+        },
+        "jar": {
+          "success": 1885,
+          "search_failed": 12,
+          "infeasible_under_selected_policy": 8
+        },
+        "mug": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "piano": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "pot": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "sofa": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "table": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "tower": {
+          "infeasible_under_selected_policy": 1545,
+          "search_failed": 145,
+          "success": 215
+        },
+        "train": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "vessel": {
+          "infeasible_under_selected_policy": 1900
+        }
+      },
+      "additionalPassedModelCount": 742,
+      "allPublicZipMemberCrcShaAndReadbackPassed": true,
+      "allModelsAssemblyPassed": false,
+      "originalModelAndPromptBytesPreserved": true,
+      "staticVerifiedModelCount": 0,
+      "physicsStatus": "not_attempted",
+      "fullPhysics": false
+    },
+    "B": {
+      "shardId": "B",
+      "processedModelCount": 40000,
+      "remainingModelCount": 0,
+      "promptRecordCount": 200000,
+      "statusCounts": {
+        "infeasible_under_selected_policy": 31627,
+        "search_failed": 5085,
+        "success": 3288
+      },
+      "successfulBrickCount": 552431,
+      "geometryAssemblyPassRate": 0.0822,
+      "categoryStatusCounts": {
+        "basket": {
+          "infeasible_under_selected_policy": 1890,
+          "search_failed": 10
+        },
+        "bed": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "bench": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "birdhouse": {
+          "infeasible_under_selected_policy": 1638,
+          "search_failed": 22,
+          "success": 245
+        },
+        "bookshelf": {
+          "infeasible_under_selected_policy": 1442,
+          "success": 196,
+          "search_failed": 267
+        },
+        "bottle": {
+          "success": 195,
+          "infeasible_under_selected_policy": 658,
+          "search_failed": 1052
+        },
+        "bowl": {
+          "infeasible_under_selected_policy": 173,
+          "search_failed": 1671,
+          "success": 61
+        },
+        "bus": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "camera": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "car": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "chair": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "guitar": {
+          "infeasible_under_selected_policy": 743,
+          "success": 919,
+          "search_failed": 243
+        },
+        "jar": {
+          "success": 398,
+          "search_failed": 1480,
+          "infeasible_under_selected_policy": 27
+        },
+        "mug": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "piano": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "pot": {
+          "infeasible_under_selected_policy": 1896,
+          "success": 5,
+          "search_failed": 4
+        },
+        "sofa": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "table": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "tower": {
+          "success": 1228,
+          "search_failed": 335,
+          "infeasible_under_selected_policy": 342
+        },
+        "train": {
+          "infeasible_under_selected_policy": 1905
+        },
+        "vessel": {
+          "infeasible_under_selected_policy": 1863,
+          "success": 41,
+          "search_failed": 1
+        }
+      },
+      "additionalPassedModelCount": 207,
+      "allPublicZipMemberCrcShaAndReadbackPassed": true,
+      "allModelsAssemblyPassed": false,
+      "originalModelAndPromptBytesPreserved": true,
+      "staticVerifiedModelCount": 0,
+      "physicsStatus": "not_attempted",
+      "fullPhysics": false
+    }
+  },
+  "allPublicZipMemberCrcShaAndReadbackPassed": true,
+  "allModelsAssemblyPassed": false,
+  "staticVerifiedModelCount": 0,
+  "physicsStatus": "not_attempted",
+  "fullPhysics": false,
+  "originalModelAndPromptBytesPreserved": true,
+  "duplicateModelIdCount": 0,
+  "duplicatePromptRecordIdCount": 0
+}

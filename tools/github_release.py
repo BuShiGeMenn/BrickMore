@@ -98,7 +98,7 @@ def find_release(token, tag, release_id=None):
     return candidates[0] if candidates else None
 
 
-def upload(token, manifest_path, source, workers, commit, keep_draft=False, release_id=None):
+def upload(token, manifest_path, source, workers, commit, keep_draft=False, release_id=None, proof_path=None):
     manifest = json.loads(manifest_path.read_text(encoding='utf8'))
     tag = manifest['releaseTag']
     checked = []
@@ -113,11 +113,12 @@ def upload(token, manifest_path, source, workers, commit, keep_draft=False, rele
     release = find_release(token, tag, release_id)
     if release is None:
         release = request(token, API + '/releases', 'POST', {
-            'tag_name': tag, 'target_commitish': commit, 'name': 'AI_B 40,000 voxel models / 200,000 bilingual records',
-            'body': '完整AI_B体素模型与五级中英双语提示词。40个模型分包及B_metadata.zip解压到同一AI_B目录。'
+            'tag_name': tag, 'target_commitish': commit, 'name': manifest.get('releaseName','AI_B 40,000 voxel models / 200,000 bilingual records'),
+            'body': manifest.get('releaseBody','完整AI_B体素模型与五级中英双语提示词。40个模型分包及B_metadata.zip解压到同一AI_B目录。'
                     '\n原AI_A发布保持不变。统一下载与A/B去重说明见仓库README和datasets/merge_report.json。'
-                    '\n几何模型不等于通过物理稳定性验证的LEGO装配；未更改原模型或颜色。',
+                    '\n几何模型不等于通过物理稳定性验证的LEGO装配；未更改原模型或颜色。'),
             'draft': True, 'prerelease': False, 'make_latest': 'false'})
+    print('RELEASE_TARGET',release['id'],tag,'draft',release['draft'],flush=True)
     existing = {row['name']: row for row in assets(token, release['id'])}
     expected = {row['name'] for row, _ in checked}
     if set(existing) - expected:
@@ -175,14 +176,28 @@ def upload(token, manifest_path, source, workers, commit, keep_draft=False, rele
             matches(a_rows[row['name']], row) for row in a_manifest['assets'])
         if not a_intact:
             raise ValueError('Original A release asset inventory or SHA differs from its manifest')
+        b_intact = None
+        b_manifest_path = ROOT/'datasets'/'AI_B'/'download_manifest.json'
+        if b_manifest_path.exists():
+            b_manifest = json.loads(b_manifest_path.read_text(encoding='utf8'))
+            if b_manifest['releaseTag'] != tag:
+                b_release = find_release(token,b_manifest['releaseTag'])
+                if b_release is None or b_release['draft']:
+                    raise ValueError('Original B release is not published')
+                b_rows = {row['name']:row for row in assets(token,b_release['id'])}
+                b_intact = set(b_rows)=={row['name'] for row in b_manifest['assets']} and all(
+                    matches(b_rows[row['name']],row) for row in b_manifest['assets'])
+                if not b_intact:raise ValueError('Original B release asset inventory or SHA changed')
         report = {'published': not release['draft'], 'releaseTag': tag, 'releaseUrl': release['html_url'],
             'modelCount': manifest['modelCount'], 'promptRecordCount': manifest['promptRecordCount'],
             'assetCount': len(final), 'allRemoteAssetSizesAndSha256Passed': True,
             'originalAReleaseUnchanged': a_intact,
+            'originalBReleaseUnchanged': b_intact,
             'assets': [{'name': row['name'], 'bytes': final[row['name']]['size'],
                         'sha256': final[row['name']]['digest'].removeprefix('sha256:'),
                         'url': final[row['name']]['browser_download_url']} for row, _ in checked]}
-        target = ROOT/'datasets'/'AI_B'/'release_verification.json'
+        target = proof_path or ROOT/'datasets'/'AI_B'/'release_verification.json'
+        target.parent.mkdir(parents=True,exist_ok=True)
         temporary = target.with_suffix('.json.tmp')
         temporary.write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf8')
         temporary.replace(target)
@@ -199,6 +214,7 @@ def main():
     parser.add_argument('--commit', default='main')
     parser.add_argument('--keep-draft', action='store_true')
     parser.add_argument('--release-id',type=int,help='Exact existing draft ID; avoids by-tag draft lookup')
+    parser.add_argument('--proof-path',type=Path,help='Publication proof output; defaults to the original AI_B proof')
     args = parser.parse_args()
     token = credential()
     if args.action == 'inspect':
@@ -208,7 +224,7 @@ def main():
     else:
         if args.source is None or not 1 <= args.workers <= 4:
             parser.error('--source and 1..4 workers required')
-        upload(token, args.manifest, args.source, args.workers, args.commit, args.keep_draft, args.release_id)
+        upload(token, args.manifest, args.source, args.workers, args.commit, args.keep_draft, args.release_id,args.proof_path)
 
 
 if __name__ == '__main__':

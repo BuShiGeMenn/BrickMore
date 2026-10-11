@@ -1,4 +1,4 @@
-"""Exact-grid LEGO assembly of the B shard, with independent exported-file audits.
+"""Exact-grid LEGO assembly of either shard, with independent exported-file audits.
 
 The sealed voxel dataset is read-only. Failure drafts never become successes.
 No force solver, generated geometry repair, recoloring, or virtual ground union.
@@ -30,7 +30,7 @@ from voxel_assembly import assemble, candidate_tiles, to_ldr
 from interlocking import layout_metrics
 from brick_catalog import EXTENDED_PARTS, dimensions_for_library
 
-VERSION = 'B_exact_grid_assembly_v2'
+VERSION = 'exact_grid_assembly_v3'
 _DATASET = None
 _RUN = None
 _POLICY = None
@@ -42,6 +42,25 @@ def sha(data):
 
 def file_sha(path):
     return sha(Path(path).read_bytes())
+
+
+def manifest_jobs(manifest):
+    """Read either original shard layout without rewriting sealed manifests."""
+    jobs = []
+    seen = set()
+    for row in manifest['models']:
+        relative = row.get('modelPath')
+        if not relative:
+            relative = str(Path(row['modelJsonPath']).parent).replace('\\', '/')
+        relative = relative.replace('\\', '/')
+        if ':' in relative or relative.startswith('/') or '..' in relative.split('/'):
+            raise ValueError('unsafe_model_path')
+        if row['modelId'] in seen:
+            raise ValueError('duplicate_manifest_model_id')
+        seen.add(row['modelId'])
+        jobs.append({**{k: row[k] for k in ('modelId','category','modelSeed',
+                     'exactOccupancyHash','canonicalGeometryHash')}, 'modelPath':relative})
+    return jobs
 
 
 def dump(path, value):
@@ -463,8 +482,7 @@ def main():
     if args.workers < 1 or args.seconds <= 0 or args.nodes < 1 or args.beam < 1:
         p.error('positive worker and search budgets required')
     manifest = json.loads((args.dataset/'manifest.json').read_text(encoding='utf8'))
-    jobs = [{k:m[k] for k in ('modelId','category','modelPath','modelSeed','exactOccupancyHash','canonicalGeometryHash')}
-            for m in manifest['models']]
+    jobs = manifest_jobs(manifest)
     if args.action in ('verify','summary') and (args.out/'selection.json').exists():
         jobs = json.loads((args.out/'selection.json').read_text(encoding='utf8'))
     elif args.action == 'pilot':

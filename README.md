@@ -2,7 +2,7 @@
 
 ## 80,000 模型合并数据集
 
-AI_A + AI_B 共 **80,000 个体素模型、400,000 条中英双语训练记录**。两批原始模型、颜色及ID均保留；每个模型的L1—L5五条记录引用同一份几何。完整模型通过本仓库的两个Release提供，Git源码区保存统一索引、算法、汇总报告和真实样例，不把数GB分包塞进Git历史。
+AI_A + AI_B 共 **80,000 个体素模型、400,000 条中英双语训练记录**。两批原始模型、颜色及ID均保留；每个模型的L1—L5五条记录引用同一份几何。完整原始模型通过两个原始Release提供，拼接与校验成果另行发布；Git源码区保存统一索引、算法、汇总报告和真实样例，不把完整分包塞进Git历史。
 
 | 分片 | 模型 | 双语记录 | 完整模型下载 |
 |---|---:|---:|---|
@@ -24,7 +24,21 @@ python tools/download_dataset.py --shard all --output dataset_80000 --extract
 
 新增算法源码位于 **[algorithms/voxel_assembly_b](algorithms/voxel_assembly_b/README.md)**，方法标注见 [ALGORITHM.md](algorithms/voxel_assembly_b/ALGORITHM.md)。包括同色标准砖贪心/beam拼接、MRV逐层位集精确覆盖，以及从真实JSON/TXT/LDR独立回读的几何校验；纯CPU，无模型权重或API密钥。
 
-该算法对 **AI_B** 分片实际处理40,000个模型：3,288个几何装配通过，31,627个当前规则的必要条件失败，5,085个有界搜索未通过。B的40,000个原始体素模型全部保留，不因排砖失败而删除。此结果不代表AI_A数据已经进行LEGO处理，也不代表物理稳定性通过；80,000模型不是80,000个成功LEGO装配。
+**两批共80,000个模型均已完成拼接处理、补充搜索和独立导出回读。** 最终每个原始modelId只保留一份被选结果，不重复计入试跑或补搜产物。
+
+| 分片 | 已处理 | 几何装配通过 | 所选规则必要条件失败 | 有界搜索未通过 |
+|---|---:|---:|---:|---:|
+| AI_A | 40,000 | 4,614 | 34,013 | 1,373 |
+| AI_B | 40,000 | 3,288 | 31,627 | 5,085 |
+| 合计 | 80,000 | 7,902 | 65,640 | 6,458 |
+
+完整实际装配文件见 **[80,000模型装配结果 Release](https://github.com/BuShiGeMenn/BrickMore/releases/tag/lego-assembly-ab-80000-20261011-v1)**，不是仅算法源码。每模型包含原始JSON和五级提示词、实际assembly.json、校验/报告，以及成功TXT/LDR或明确命名的失败draft文件。80个模型分包及元数据包均经过ZIP CRC、逐文件SHA和ZIP内JSON/TXT/LDR独立回读。详细证据见 [装配报告](datasets/assembly_80000/ASSEMBLY_REPORT.md)、[机器汇总](datasets/assembly_80000/assembly_summary.json) 和 [下载说明](datasets/assembly_80000/README.md)。
+
+```text
+python tools/download_assembly.py --shard all --output assembly_80000 --workers 4 --extract
+```
+
+原始模型和400,000条训练记录不修改，失败不删除或伪装成功。必要条件失败仅针对所选同色矩形单砖高砖库及支撑策略；搜索失败不证明无解。几何通过不等于物理稳定性通过，80,000模型不是80,000个成功LEGO装配。
 
 ## 原有 AI_A 分片规格
 
@@ -79,6 +93,6 @@ basket、bed、bench、birdhouse、bookshelf、bottle、bowl、bus、camera、ca
 
 40,000 个原始占用 hash 和 40,000 个轴变换规范 hash 均唯一；与提供的 55,255 条历史原始 hash 无重叠。结构族差异、类内近形和跨类别候选筛查均通过。自动筛查不能代替全面人工语义与审美评估。
 
-历史索引未附完整旧坐标，历史旋转/镜像及近重复状态仍为 `unavailable_coordinates`。原AI_A归档中 `awaiting_merge` 是当时的生成快照；当前A/B模型ID、原始占用hash和轴变换规范hash的全量交叉结果见 [merge_report.json](datasets/merge_report.json)。跨批近形筛查没有因合并上传而自动完成。AI_A未执行LEGO排砖；AI_B几何排砖结果见上文，两批均未做完整物理稳定性验证。
+历史索引未附完整旧坐标，历史旋转/镜像及近重复状态仍为 `unavailable_coordinates`。原AI_A归档中 `awaiting_merge` 是当时的生成快照；当前A/B模型ID、原始占用hash和轴变换规范hash的全量交叉结果见 [merge_report.json](datasets/merge_report.json)。跨批近形筛查没有因合并上传而自动完成。两批均已执行几何排砖与独立导出回读，结果见上文；两批均未做完整物理稳定性验证。
 
 原始任务规格见 [specification_zh.txt](docs/specification_zh.txt)，完整生产说明见 [dataset_readme_zh.md](docs/dataset_readme_zh.md)。

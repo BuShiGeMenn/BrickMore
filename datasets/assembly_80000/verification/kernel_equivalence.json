@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "legacyAlgorithmVersion": "B_exact_grid_assembly_v2",
+  "currentAlgorithmVersion": "exact_grid_assembly_v3",
+  "legacyRunnerSha256": "67120f21f4b0eeefa53cd120b6e7b6ef84bc421bf28757e08c93e6f1f1d12b28",
+  "currentRunnerSha256": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+  "equivalentMethodAstSha256": {
+    "dataset_model": "bec487cc74376e40413f2dec21a857da786e333169f9a9f936f62434cabcca87",
+    "feasibility": "93e62e3745dcf00b88086cf76c1f8ce57f7aa061105519cb1d5e1dc1de1de362",
+    "independent_audit": "8510bff10b0d24c21ee7a418f0bad71f90b4dae0dfd8c885c4ef6ab7c6b1e95a",
+    "parse_ldr": "96901da29c196f33034e94676164cd40ca94379c30ccb1e6b9bdd000020a7fb2",
+    "exported_audit": "727a7d04c457db0069ad5cd68b702b2156879d5d98b0aa7bd49916ad7a5ed3ee",
+    "greedy": "c62b2dcb9efad0221613509220f10fb92d2e59b07fbd58feaaf764462c697983",
+    "process": "28787a7e286a595071205d85b4055c9f33c31804e590a2da3564ee62b66f40ab",
+    "verify_job": "ebb16f1b71cfc0ad32078ca76029601321a634698b52de43bf95944a1cd0b03a"
+  },
+  "identicalFrozenPolicy": {
+    "world_dim": 48,
+    "brick_library": "extended",
+    "min_support_fraction": 0.1,
+    "max_cantilever_distance": 2,
+    "max_components": 64,
+    "max_seconds": 3,
+    "max_nodes": 1500,
+    "beam_width": 8
+  },
+  "identicalToolkitSourceSha256": {
+    "optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+    "brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+    "voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+    "interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+    "voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f"
+  },
+  "scope": "Geometry, RGB/axis adapter, feasibility and actual export readback unchanged; v3 adds original A/B manifest compatibility",
+  "fullPhysics": false
+}
