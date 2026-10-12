@@ -1,0 +1,2219 @@
+{
+  "algorithmVersion": "quality_bounded_global_cover_q2_v2",
+  "processedSampleCount": 295,
+  "baselinePassedCount": 64,
+  "optimizedPassedCount": 90,
+  "outcomeCounts": {
+    "bounded_search_or_repair_not_passed": 205,
+    "success_original_exact": 13,
+    "success_original_retained": 64,
+    "success_repaired_q2": 13
+  },
+  "additionalPassedCount": 26,
+  "holdoutSampleCount": 149,
+  "developmentSampleCount": 146,
+  "disjointDevHoldoutPassed": true,
+  "duplicateSampleModelIdCount": 0,
+  "maximumObservedChangeRatio": 0.01671891327063741,
+  "minimumSuccessfulRepairOccupancyIoU": 0.991047448522829,
+  "allNoOriginalVoxelRemovalOrRecolorPassed": true,
+  "allQualityBoundsAndActionsPassed": true,
+  "allOutputShaAndSourceOriginalCopiesPassed": true,
+  "allSourceManifestsAndRunnerSnapshotsPassed": true,
+  "allActualJsonTxtLdrFreshIndependentReadbackPassed": true,
+  "baselineSuccessRegressions": 0,
+  "searchRepairAndReaderAstUnchangedSinceMeasuredBatches": true,
+  "driverDifferenceNote": "Only summarize changed after benchmarks: an absent baseline is now null/unknown rather than zero. Search, repair, output writer and both readers are unchanged.",
+  "notAn80000ModelPassRateMeasurement": true,
+  "sampleDesign": "category x sealed final outcome; disjoint hash folds, seed 1729; stratified sample is not the overall population",
+  "verificationSourceSha256": {
+    "algorithms/voxel_assembly_b/assembly_pipeline.py": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+    "algorithms/voxel_assembly_b/toolkit_snapshot/brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+    "algorithms/voxel_assembly_b/toolkit_snapshot/interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+    "algorithms/voxel_assembly_b/toolkit_snapshot/optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+    "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f",
+    "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+    "algorithms/voxel_assembly_q2/quality_core.py": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+    "algorithms/voxel_assembly_q2/quality_pipeline.py": "6d1dbf1a8837d4dd793de917cee56fd7d2a3c61a644b7e736d793ee60742ffc7",
+    "algorithms/voxel_assembly_q2/test_quality.py": "e4bf3507db1435185bb8da97a9b1a85f3f25d949bb689ee49874972215aaa90b",
+    "algorithms/voxel_assembly_q2/verify_quality.py": "ae2e96a8f76370979b50e46547af6c21414a37837af8bff2abaf5ca244203152",
+    "tools/optimize_assembly.py": "d2a4398965db57e64d1c803f0f5f3daff6196eba99b991af48cd3bf055ae7dd7"
+  },
+  "runs": [
+    {
+      "name": "A_dev_final",
+      "modelCount": 69,
+      "baselinePassedCount": 14,
+      "optimizedPassedCount": 18,
+      "additionalPassedCount": 4,
+      "allOutputsReRead": true,
+      "coreSha256": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+      "frozenDriverSha256": "a2c33799e73ce73dd34bc9153e5eaedaa4fb3e15194a328df17e7456d228419c",
+      "metadataOnlyDriverDifference": [
+        "summarize"
+      ],
+      "snapshotSourceSha256": {
+        "algorithms/voxel_assembly_b/assembly_pipeline.py": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+        "algorithms/voxel_assembly_q2/quality_core.py": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+        "algorithms/voxel_assembly_q2/quality_pipeline.py": "a2c33799e73ce73dd34bc9153e5eaedaa4fb3e15194a328df17e7456d228419c",
+        "algorithms/voxel_assembly_q2/test_quality.py": "fd8a9442c37b8d221e178c44f5ad6a78f54f798aa0e7fd58d8fe3f403ab7240c",
+        "algorithms/voxel_assembly_q2/verify_quality.py": "ae2e96a8f76370979b50e46547af6c21414a37837af8bff2abaf5ca244203152",
+        "tools/optimize_assembly.py": "d2a4398965db57e64d1c803f0f5f3daff6196eba99b991af48cd3bf055ae7dd7"
+      }
+    },
+    {
+      "name": "B_dev_final",
+      "modelCount": 77,
+      "baselinePassedCount": 18,
+      "optimizedPassedCount": 25,
+      "additionalPassedCount": 7,
+      "allOutputsReRead": true,
+      "coreSha256": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+      "frozenDriverSha256": "a2c33799e73ce73dd34bc9153e5eaedaa4fb3e15194a328df17e7456d228419c",
+      "metadataOnlyDriverDifference": [
+        "summarize"
+      ],
+      "snapshotSourceSha256": {
+        "algorithms/voxel_assembly_b/assembly_pipeline.py": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+        "algorithms/voxel_assembly_q2/quality_core.py": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+        "algorithms/voxel_assembly_q2/quality_pipeline.py": "a2c33799e73ce73dd34bc9153e5eaedaa4fb3e15194a328df17e7456d228419c",
+        "algorithms/voxel_assembly_q2/test_quality.py": "fd8a9442c37b8d221e178c44f5ad6a78f54f798aa0e7fd58d8fe3f403ab7240c",
+        "algorithms/voxel_assembly_q2/verify_quality.py": "ae2e96a8f76370979b50e46547af6c21414a37837af8bff2abaf5ca244203152",
+        "tools/optimize_assembly.py": "d2a4398965db57e64d1c803f0f5f3daff6196eba99b991af48cd3bf055ae7dd7"
+      }
+    },
+    {
+      "name": "A_holdout_final",
+      "modelCount": 71,
+      "baselinePassedCount": 15,
+      "optimizedPassedCount": 18,
+      "additionalPassedCount": 3,
+      "allOutputsReRead": true,
+      "coreSha256": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+      "frozenDriverSha256": "a2c33799e73ce73dd34bc9153e5eaedaa4fb3e15194a328df17e7456d228419c",
+      "metadataOnlyDriverDifference": [
+        "summarize"
+      ],
+      "snapshotSourceSha256": {
+        "algorithms/voxel_assembly_b/assembly_pipeline.py": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+        "algorithms/voxel_assembly_q2/quality_core.py": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+        "algorithms/voxel_assembly_q2/quality_pipeline.py": "a2c33799e73ce73dd34bc9153e5eaedaa4fb3e15194a328df17e7456d228419c",
+        "algorithms/voxel_assembly_q2/test_quality.py": "fd8a9442c37b8d221e178c44f5ad6a78f54f798aa0e7fd58d8fe3f403ab7240c",
+        "algorithms/voxel_assembly_q2/verify_quality.py": "ae2e96a8f76370979b50e46547af6c21414a37837af8bff2abaf5ca244203152",
+        "tools/optimize_assembly.py": "d2a4398965db57e64d1c803f0f5f3daff6196eba99b991af48cd3bf055ae7dd7"
+      }
+    },
+    {
+      "name": "B_holdout_final",
+      "modelCount": 78,
+      "baselinePassedCount": 17,
+      "optimizedPassedCount": 29,
+      "additionalPassedCount": 12,
+      "allOutputsReRead": true,
+      "coreSha256": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+      "frozenDriverSha256": "a2c33799e73ce73dd34bc9153e5eaedaa4fb3e15194a328df17e7456d228419c",
+      "metadataOnlyDriverDifference": [
+        "summarize"
+      ],
+      "snapshotSourceSha256": {
+        "algorithms/voxel_assembly_b/assembly_pipeline.py": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f",
+        "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+        "algorithms/voxel_assembly_q2/quality_core.py": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+        "algorithms/voxel_assembly_q2/quality_pipeline.py": "a2c33799e73ce73dd34bc9153e5eaedaa4fb3e15194a328df17e7456d228419c",
+        "algorithms/voxel_assembly_q2/test_quality.py": "fd8a9442c37b8d221e178c44f5ad6a78f54f798aa0e7fd58d8fe3f403ab7240c",
+        "algorithms/voxel_assembly_q2/verify_quality.py": "ae2e96a8f76370979b50e46547af6c21414a37837af8bff2abaf5ca244203152",
+        "tools/optimize_assembly.py": "d2a4398965db57e64d1c803f0f5f3daff6196eba99b991af48cd3bf055ae7dd7"
+      }
+    }
+  ],
+  "elapsedVerificationSeconds": 4.921999999998661,
+  "fullPhysics": false,
+  "semanticVerified": false,
+  "originalDatasetModified": false,
+  "modelEvidence": [
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0098",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "42e2fd4f5dec1085be00c59a580edd457ff07f768f4af947afc520733c5bc2e1"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m1314",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "b8aa34f043e03ff135d8029f65813b3610a450f24f1a04e2a354e41d77fdf7e1"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0940",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "31c9029775710e923922c46042f1c6a686764595c90f0998010fc1382be90ce5"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0713",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "7b7934df7c11652bb26aac379b6ac5d9c78abeb4e31d021b954df45942048e60"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m1743",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "78f2dd2a7acfdb20c198b2cae92e26bdcd41b7598f16496364a72a29f15e6e59"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m1568",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c9e75724687961f5173f82b6b7dc642783899658b8e73557e55219b5473b2b46"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bed_m0182",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "72ed142383af6726a301b5e58d4107c07f2be641315dfad24b30d38d4ff56645"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bed_m0574",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f82502d807e9a58d225005e517aebf31da2c4cbd72e8783eec80da19ead74f24"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bench_m1590",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c09ebd05a35a70c6269318a933463a7f2a45eafdbef42b47f698eac4f597f18c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bench_m0011",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f63a8801572f2c70088d7425c489830e6cb1cc5cfcca7b0014c3288bec22bfd0"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_birdhouse_m1129",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "3bb41a361ce3e3cafc58802c2faa295550f3f90ae77e13b902ee950e691f22ba"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_birdhouse_m1017",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2e580a1bb556d8b70441122f94a8ed0b4a80335e91735447df02097ffa30ccc0"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bookshelf_m1469",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "85ace7c3fb9f71a70b2f5e67f210927fb8e000aa635650a2198b06c2b43998b3"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bookshelf_m0347",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "643585e1ba56fb07d555a9a1f904529277e4859a3d6235212e6a42beb15cb329"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m1082",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.016025641025641024,
+      "sourceFileSha256": "3e66ad01fefff45f91a798e8abd56b17eb6f135628ac9f6a956e0bf85cfc6e06"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m0041",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.016605166051660517,
+      "sourceFileSha256": "b8291f9c891f1e136026846a2cd8b251c6efc41ea06220cc2c634c1f2dc7d3fe"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m1012",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "947f05b91ba77769283185ed61ff569595f30930c9b3a91faf42516d60493816"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m1175",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "9fcf88f7cd95cba64d6407b019e6b4d6e59e898d2f77ed049019404d3875fc60"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m1413",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "07d171846817783bbcb8f5019cf470ec91fa18897f90dad0a926e0d6d1aefd7c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m0264",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "7c82b6c8ceaf6bbc357f945a92b5afc62b0507215c9504681a96617b7b10567c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1284",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "027fad75af6458f983abbc9e23b3c88b13071f09458431aaeefb268a42285599"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1836",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "97bbe9fd27590a0e036bee190fc1a6468eabefff871160c167b53398126acb39"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1511",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c0c34e55b4518443e41eebcba7da8656a3e920835bd372db10e359de4f4d44b1"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1353",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "ac9574c1ac1f37e70289ef19e6436a0b50f089eaed3402a6675cbcae1acc2ee5"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1317",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "89679f6d4161dce9923341e7ad50f96e0aba64966877b92ef43acf59be7edbbb"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m0640",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "fb78e217bc9a826f48fc924fab788b4690d59c01516ff22dfe01101f81541fe8"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bus_m0089",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d81d4c5096a19f2a0bfd844e971682fd982cbde7979b7835e5312182eb072846"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bus_m0910",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "71c4c588905efbf3de8d9dfaa72230c9fad5fdfe46d53d75d7868d3398ddb90b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m1189",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d3258ee737cd913d5157071213b0a6482e94f5e118223fa2a927b48a4fb2fe3b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m1499",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "261a536557a00f9b99764bde22583717e1dc46a8d23682f45e517205886135b5"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m0334",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "9533206b0a67d3e1ae989420105feadbff1e722afbd1ed1f2fcf56728d730cee"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m0472",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "25b4d3024815eb31f4ff902b6d86809f4d171a520c0d46733c59f1d4b1e1e65c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m0451",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "45051e8a84005b1b6b10f36deea175c7d3077c69a5c510a10ed47a1787efd333"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m0728",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "84e0839dd74ffac6eec65059d1907ce900f690ef0faf626fb3b78569bd03ec98"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_car_m1102",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "a9e95d43e22e2f0697145c5174f6defadf70dad264c63e2bd5d89b69d59bb712"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_car_m0539",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d310a9506851cae59e8978ef6dfce68c1dc421893aa3474ec8f1cf1b636cbced"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_chair_m0363",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d8b5c5068563553e3ea68bd96afe50a857dcd0f72f164f12d4946aaf00775994"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_chair_m0256",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d13a95956be0324172bf81ee460189bde0c6d3fd8bc1294585aad92ca745386a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m1591",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "6ca532f6bfd456be21ee76cfbc868e5656f4c550ba10b825fe23411976becc1b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m0981",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.001899335232668566,
+      "sourceFileSha256": "825dba84ef2babf9d693b55e785ecbe0effd70590ebd7e037c817bfbea3b361a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m1129",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "943ce18b156d8d166e37ffe02ca70ecb530685b1ad4b9767868eebbed592f757"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m1088",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0e5b7225097f81bef7c8c49255d65e2283e6fde7ebae94d0bd4e5d3a94771eca"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m0215",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "cb713945c68136d5cd9033300b5245de13c2aa6178a6647bda712e4c0b4899be"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m1090",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "ff7537fffdf864335ee3667c7610883245ab5b2710a16cdfd1c84025ad1b3b54"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0475",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0021231422505307855,
+      "sourceFileSha256": "22608835dab536b4a05e71b15761b267196b8e0d25fac6bd40afe21300b47fbe"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0789",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "dd56a57977e8928bb0457294fb475806d61003fd908a9e82021d5c506450072c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0184",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c5a3e7846a969b2ab932c4957b9fed5ec462893a0dfd0957f496d0220618d307"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0998",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "b7ed8e2996cdee3a235ca214e9c44bee05e64541da7993d3f2bb33ef5c2bf020"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0138",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "5ab4fbdad177a3d16344b8a89b891f55e946838453161e8dee4724e869b7592e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_mug_m0061",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "737a5c4d45573f6468f6f510bb3c0e36b8b7e4edb205372495f29d4425b28343"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_mug_m1464",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "587e6a9095157bb1144fb0877b949134dde7a2ef6f90fed5bc1f41db1a47b163"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_piano_m0597",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d147291360d7ea2f9345c72426ff97d4437dfe84e4f4b878d13c3adf144dee4a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_piano_m1311",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8e1b9badb2f9cda8e96e7be9428947c597834b0d4a49917f5ca597eb62747266"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_pot_m1286",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.004629629629629629,
+      "sourceFileSha256": "58c895da5092cbe80b16c4291d14c82c7ad8e591abbffb138fc4687a8f5914ca"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_pot_m0603",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "dcc40fae47126486923c705be9503e4e3c0ab07432860a183a7c522111732a18"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_sofa_m0614",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "11155aafe4b185b597828d1eb3dd7fda87587182025e79a17e38289640f41dab"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_sofa_m0564",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "3b98487ca5dc3960613f3476a552f4576b4013833a79169dfef8067ee83c0b3b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_table_m1131",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "6f8c95d533042aa38bed5447389d79414138eeb4f685bd23fbe1f9ebe6ac58b4"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_table_m1592",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "81173b916faa07759f28c066a9c65ef8ac33489b8b7168d4d4401bab565f4619"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m1486",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.003089598352214212,
+      "sourceFileSha256": "1ffb54e40df5449db12c422fce0d939806e7d1c0059067c5df6a0165139cb7a8"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m0101",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "855d2b7a263be4653b54d6774bbd56ba25b368534153d1057ecdc9b008c6b355"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m1692",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "de2c81e20218215e9058d90abe3d393b7ca3087a27074c2c70794ae2cc4a4c8e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m0877",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "fe4449069e80b7e05d41f9c2c0cecc8cce455df35694f79d3d516cbea8bd7356"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m1249",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "4a2e237007669a0a1230e69e4d5161ac89bade6b4222de05280fb44a5ba6f294"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m1233",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2d9d5942cd3944e0b1d56e51f395d0d3a7c18e660fd70e63c651ebe9c1e8f349"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_train_m0107",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "3d371f5c2d319e75584b5ee1541e3977a72c5821247c6a92ced017aa60c98031"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_train_m0216",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "05cffce5b7da579a1915296202b7473f653b3c6324ddea6b11b3785046b7ff42"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_vessel_m1467",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "288180e85a94bc83027254ee3f9719672ea794c88f40d36ef0f26ed61a86e027"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_vessel_m1686",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "eec05013e0ced1c2cc31bc4956604cc37b161510bc55ea446a2f7306f358327c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_basket_m0369",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "dd285a0408c8d217e8189657a8bb2b2fd737b5147c1050b948e35e8547c186bb"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_basket_m1203",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "261c714a243fbd813ecb926da9c8f517ea7b37535e4b808b1a6da4854dc96058"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_basket_m1426",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "b32dd1cde2ab06eba2ada671a9aabbfdb825716fe50f065d7c55ef21e2e0da53"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_basket_m1473",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "6c69b2e25a1e2748f473747905684ecf383663bba5e0fadb88e9ee5183aca201"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bed_m1835",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c77a9774716343fc6df79cef637cea658c95fe714f742088fbabedfe66158b8b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bed_m0709",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0166597f1853cdd1f67a9a3a192e67362e89f61d092004b0b0cf12912261682e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bench_m0993",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "312dbc0a6fdf5097eec18aaa5de9737dbf4be4400fdde7b9dd177fc7d59c764a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bench_m0837",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "1a18254c8902842a46a9f464e20fbe2df36326cc7eb44ff741822561de0a121e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m0300",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d3bfdfc077f533f94554b09c9371725ec45ab238d6d8bc3dac950721304b1f2d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m0261",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0fd076de2bed71b4091cc253f35f91183bd68211746cad1089b18653f3ad0503"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m1247",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2024a2401ebb72a261d93a301f41de1b63d8d1e782b49516d1c38ed28edcc70f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m0864",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "ea764971d9a13cf39763e960b4f7d359b68d78bf9ec99adf409028bb9f8f007a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m0999",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "830eef9b6a5f94957712d21f39d931171ea80dda005e1f6f0755ae44493555f6"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m1273",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "26083f072bc044cc0f2c9dee16cf8c611292522ea147e9593105f87bcb3f4923"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m0067",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d2bb0d0aa5f5eea7022c412a7cfd1a966856ea9b0865c2537ffa309833e85bc4"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m0828",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "23a7f9f2aed843a56f99e6b258f268a9d919725156029d899c070f53ef46b236"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m1570",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "6b032843c6bc2fd3b5e1ac26d3098b1c2c72df332aaa1898f7c4daff556b3267"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m1004",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c3d11e10687397385ee3b872b3a1260748f19c3cc12b962216c4a037eaeacd29"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m0979",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0920cda0c00f11375fe7a5422f5749b8817acd43956270fd016221b21bc0cc26"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m1695",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8e633c2b2aad170d227c71eadc02eaa83fb0a8efd0318f67d59cf5630c9c699a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m1190",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "361990cb35075373df068300cea0809e75474041f2686d77628f2c3559bbbd8a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m0044",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f2bbc94a8d284305e1b22aa65d64c4d779d33b615490f209f1cdf270a331e21c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m0202",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d4b9567724297f56900e4ced82122a616c55b42b39e95a736ff43b3e1257f7d6"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m0680",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "7dcfec6593b315241856a2ea42f2fc073f1e3a6c445f64c4a75be17632eec407"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m1234",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8178657572003c8a65726ce8cd41dcd8f0b0a95c42d2441c033dfd2bbc76bc7b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m0004",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "203bbd20290a01bb239d854c5f4e80f30d025d2ecb765030e42ed532b4387389"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m0377",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "6420cce2517e0796551f308a1bb7ab584fe1baac9ff8ede5b492d29bb7320f14"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m0279",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "5aed3678ab5d9f3c2220dfa550e3dc4ff031549515f21508928f6781e68a94b7"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m0539",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "06f9f85b8f07d9665c0bcca1ca28743def5f994d9eead0fac3b3ca4e0557c780"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m1457",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "29e459adbc2ba8d09e2bc9ec399d53b2eebc10763e39d4dd86faace0ea5f0f71"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m0005",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "506f7a9dcf3310510a50ef92ef4b364801f1a959cee5e45f6301f5bc009135a1"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m0040",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "969cc7c7db173f5f346f526e89d5c403adc9e414a1b86f49f52e4e7e00cd27f7"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bus_m1065",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f4c84b538152ffbc028fc437c127db45766b37782080b7e1cda50b11eee3c267"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bus_m0546",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "1cee96ba2cc677483b4b17a4e10b912d487e032063e58caf040b6216b9b90a0f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_camera_m0287",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.005628517823639775,
+      "sourceFileSha256": "35293bc6d5001b555066003c77066f6bd40af29a7126444579207adb92d4718c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_camera_m1893",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.008,
+      "sourceFileSha256": "acadcec8177f9fdd92bb653ffe38777624990bd0285137e444dda91ea78c6c23"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_car_m1070",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "19c0e38e0381a2cfe4ab3aad34695964da9bcad9c2fc900470880d125335fb60"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_car_m0924",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "5529ace663af21943a30018dd9c9a1138c2bac3775f07e8d502829dfa8746cb0"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_chair_m1088",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "4abdd402060700269d73bfd28ebc06ef2f127ef77667060c7cbad300cdedaa72"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_chair_m1024",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d998fa418542c192eb2a44f7c0c5c05f008496ca80661de01684b2ff6821dfef"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m1757",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "b3e3acf3e953ab35e6eeb0186a0726fa13377843886d83ee886562f6433d8b6e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m0335",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "9e1b5d559762c3f71a22013d922e3fabaaef3d917db30595bc71ac6415afe470"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m0800",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "e78c96ef36d1c63ccaf1b4708b2dffb2521ab73e1ae837fbcfc518196c7dfe2f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m1366",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "36696c7fc5a6bb6e6dc217a219dc623d9f81fedaa14ac38be6c19fdabade1f2f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m0160",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "39d0ac14eeb6aa3e744e531bb64b326b5c2e9c442ce894c4a8214a15841d1dd5"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m0437",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f64b4e35980ca4dfedc76c4bc695755b9237a61135ae472b86f18b85e65af19b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m0366",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0020942408376963353,
+      "sourceFileSha256": "b9c0a3daf61920292204ac862a433a0a5012de85a357e7196b4aa8813f1291c2"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m0338",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0037313432835820895,
+      "sourceFileSha256": "ee0e1baaa35d6f24d24cdf52e99e678c5c8050afebc43da2c63e768edde7037c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m0260",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c092bf875ecd2caf128dcf520ed2c448db72a6086beae895c8c4fa8f25db562d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m1463",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "78f0880ba2790618ad31854a7d5ed14d6cc819cc026d995d6f82a826365e4609"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m1269",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "511b548b9bec09a7c19570998f326cd1b6ea36dcdf75b53cbd38bade66d8452f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m0416",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2f58f4e2a649d607ce56d5b40ac800244e88f73bd74a21acbe917ba40e7ee602"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_mug_m0800",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "a5dd8319bc7be2d72940a1424506c57a72b4018ee8cf8b08121a85e8540b6ae0"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_mug_m0693",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "999538a16f95b753387deb7814abaa26af715fe6311622bc817eddbed28e1a10"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_piano_m0183",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "03689c60c1634cf15f13af56b9188b4b45302ce99bd09fee48773224522b9fe2"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_piano_m1856",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "b56392446ee76a5254eb15ccafa7fdf78f91a61b09fce8c6ae8bee078707d676"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_pot_m0761",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "5272dc232297cd8fd37e197ed0387865469c66fa87ec12a05dc11437e90e9b10"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_pot_m1300",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "01bf949e59775e30f9f868e1fd042fe834b367869631717379a4492f45c009b3"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_pot_m1185",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "b44f4c2a9e71de74dedab709ade65554f90d7c40a2a2bcb482e73846b37ddf6d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_pot_m1229",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8478ce0a38e34a22d618cba7cda8a92deac96ff81ff535a5a438674185a46dbb"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_pot_m0412",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "e38357a1d2d14c5f7e02feebba2831baceb2024a52fb7133799be06a0835bef4"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_sofa_m0206",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "65474bd35377a5342e94e99be792be8c94be6bae46d0738300effbc05902366c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_sofa_m1612",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "b9ada728adab055ac3176e78a8c130959cdb26990fa6b2f1039b2c2ff2470c6c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_table_m0529",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0fb634bace25f0456d45dd53a1ddee39e7f172eb71c3308bf019042ef8e3c3fb"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_table_m1872",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "87ade0e03b15a5546b47c7f552dd1482f72f92efe58fdf918e6c2d25a85f12ec"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m1521",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0020876826722338203,
+      "sourceFileSha256": "80fd05c5084adb5b5be2fed53f9b9d0a17cb1593250520daec3ff3443e7e6305"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m1435",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0017316017316017316,
+      "sourceFileSha256": "11218b80fa8a7c28ed44e82eee2460a047be776598186531093ac4b042d8b95d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m1151",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "9226cfdb12409d1e42c599dc74df5b50184722c5dda61182dcab5f180bc3623e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m0059",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "07149757f48f430dc8a91201e63846991f012618e26074ccd752219eeeba872d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m1903",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "bf308a8afa42148ea788e14c82dcd3542efb55b31244ca9265a0a09107d295be"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m0518",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "7c66c1e9af2595c6efcede57cf96a9610595467fc758c4e1b608bea7bbade5f5"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_train_m0172",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "22500f8c4bd49c2aedeb9fd88accc31eb678acf52ea562e34dbbdd0200f0c339"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_train_m1081",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2718f00ebd5ec65b46dd3a9c88374bbf19acfc7ca0298c9d478e9dd313dab7a3"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_vessel_m0862",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "7cb94a9591a9ba8d4298011ec9b34749b86592c7109567f05f5c16fd785f6adc"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_vessel_m0984",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f63344deb4e76c7848e52a4ede2c8c77c640b526d8bdd5439267e54d878d4e69"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_vessel_m1003",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f2e516a981fa28dcc8fb1603e9097795332cda3ee19d32a61b01a61032f48b35"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_vessel_m1754",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0299db0edb6a5c6d9e949db7ff1c0703ddcc6b205ad74feae2379d0b0c133b30"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0513",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "38398ee28851ba329ab0b61d431f136a514273352f987d2108049704848b877d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0676",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "7762742280fffb5d31a0f7c59732f6eaa1eb75fee0334ddd4687af606dab5eef"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0502",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "522e652d02f5fd81a0f03d44d320a8c19ea50e7551fec98ef6d554249d7fa59f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m1247",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "cfe2a7e85dddc583b7a8ea52a930bb5dce52ca01b808b8e6ddf9864b832cd76e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0731",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8f7ad007824bde900a4b52f41cf848d0d1058e63c515a58d40e4ef85ee7a3914"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m1609",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "779c1c42e1eb968847ba24fd471c4582633ae3a27eb1de24aeb810d6fa41040a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bed_m0551",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "ac781087fc96509aafd36bef3b323aebde9a0a3b0040b6bdcbad591be0890a7e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bed_m1381",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2712388c5a44df2e085c2c6a2aa7509df3ac36ee7568d926a1cab40c2784c83a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bench_m1492",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "039eb7ba1d0d7fc605f118559e1cd876db1eb68e3fd29e4c5e55919f01771291"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bench_m0179",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0ed1645ef3c99f53b059159311adf4f33397768b0277a63a8a1910219325499c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_birdhouse_m1283",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "672b985a377cea7927917193892dcd6dfad7da4b9bacb9d7a7257a36b7d194d7"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_birdhouse_m0522",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "aba70b57a0c9f1096d270fad5ef1e032a109142a4d957afeb6eafe2eec1b9cb3"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bookshelf_m1005",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "ba6d954d70c71517dea532a0d4c3c41ceb7b4c297195df0439539a19bbd9ae54"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bookshelf_m0587",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f45a01c590b299e54a731d71d6966f7a3836dc292202f7b873219bf933013bcf"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m0689",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.010956175298804782,
+      "sourceFileSha256": "975598d080645fa813a447fa3d075c5c325ba98a7f2fc4986393291a6824d3c5"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m0210",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.01415929203539823,
+      "sourceFileSha256": "bb64bb8f110dead0a529423ffdce8c3831c1d14a928e6ae8a8b11c3e046e5a0b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m0049",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "82806220c54ba56ef547ba9387c295f4300de4a67060882f5412caabfb752925"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m1464",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "4acca8ff5fc765218a3c441982a59f10b4293e0ca13a9af55e6e22925af208d5"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m1057",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "5c0bf2eb904c5f2dff8e8f84932b3412e9151e820b6eb7a8932b725cb1677a89"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m0235",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "a71666ae76936629b5e5e9ceff39d812858dab64e7af64c791177c48872d9741"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m0213",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.01671891327063741,
+      "sourceFileSha256": "42261db662872aa7e926fa0bceed860834c88b2f8d4cb5cd98197ac848cfea61"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1374",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.011439466158245948,
+      "sourceFileSha256": "1ce1bf3ca6f73a4b2037a9b325b6868247127cf3fb3a398c82f218cd62dd1e66"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m0473",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8bb5b6c5f0f0b9e7448accfca2f82e89944e5497885301f24878e40b15eaf4bd"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1019",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "e099a5fa68e50ea4c5e277f3baf7533b55c2e20b90ea315ae483a6342aa29fe8"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m0281",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2d3934ff31b526f62a04b6d7414150b98a8fa7ee0a2f6a3bf5a4bd0f9193e6ab"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1259",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2c7066f2869b6ba0ce46a0878d31f77d09ead1e15e179d466cffda41b4345228"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bus_m0349",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "cad37c023884f4a9b3f51242527488f522e6d323ab817f971019f53a54d07fa4"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bus_m1120",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "a011ca23aa993bbc50ede04ba98575829f41bbab9bc8e553eaec0baab57f50fd"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m1110",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "125240c8dbbf46d3408359433071358b52f74182b8ee8eab235008b280b637e5"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m1742",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "4d9c786c1ae10e92500a0f850d4410b110953207b668e82959dad4722e936a18"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m0462",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "a0534f6b5e2e61dd59f98da5a90161ce51f2f03119b89aa7d0df8138107909dc"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m0282",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "dabe842377d78d9b70f33376ab8040268ecfef01b9b6c7add26e618bbcb56cdb"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m0878",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "1ba57d95751032d25e71f0059a55aee5108a055e84ac0d8f1ea043d1fb11fe3b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m1328",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8af6488cad32f614f02da57191be30a56e43e7d1c43aa185152b50c76da6fe0f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_car_m1057",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "4a6974f61229426ac5877d8de6ccfc3b60e39dc187bd8f71347e72c745ee7c00"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_car_m0983",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "e5d588ba4f622a95d4efa6fe37df43650bf8093d276b85696dc3e35842ab2eaa"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_chair_m0067",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "47b8a0a8d59e706f220026b49ad53c3cade09449870584444a8f25b1d7e73d38"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_chair_m1783",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "354a8ce45f8610501bd5b25cb93e673923541c7ada22de06765d62da78c4fbb0"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_chair_m1762",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0b685ecdf47789c92babf9ccdf32aa9ce0d6c6962e6e76aebedddc4384ee2b36"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m0214",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.0038684719535783366,
+      "sourceFileSha256": "015621f90c68fa78d507694eafcdb80e96730b5b9486c0bf7c0feae8240cb108"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m0420",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.009033423667570008,
+      "sourceFileSha256": "34d0a6d693f617e6ba09879cd5f9371042cc4c3990987cf29c0ccfb484ebc7bd"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m0271",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c844e62203d1f7d8d3c71f794cdbaaeeaae4efb0c83edf67054cf8036d51a9fe"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m1218",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "b454f59d072fd067bbf21dc5b830c5bda918fdf66bb90c36372b6002bac20fce"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m0493",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d9c0393fe26feed3aa1645b50d40051b99231f47aeda13589e397f54e5907f0b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m1619",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c206c9da42148439ab8bddd76bcbd697553a11c3c309137083a82104cad86c70"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0695",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.015250544662309368,
+      "sourceFileSha256": "2d3eb4b03400db7a5217741ef67b9d447ed51ba34b83b58811fb09a9361366ab"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0261",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.002079002079002079,
+      "sourceFileSha256": "78e1a1d6c68f2608f392f53d863297aa356ec5de272cf714e8fd7745ef6989ac"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0124",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "39b30bf2a2a44fec8389109e72a2e081f418a93aba6c129e03ef5e1e8e0653da"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0740",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "beb8102d22b9b72956ab7911e28135385a689522e6dcf6fb6bb62de42b90192d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0672",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "5acf99cecdea44aceaca02a40e5ad59dc5d118a7b1ec9800d2aef3f88592036f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0248",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d5749c4116bcf913bf007ce4f86855bb052a1f8e81fa77ea56c3a520ff49feeb"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_mug_m0643",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "742d22967306a8e682dc151ed3fcaebb70db5fecbdf3bd26fc4cdd8e8f1eeba2"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_mug_m1357",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8c5bdc696a778ff791c8a830ab707fe7586683738ad3038582432be0dde675e8"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_piano_m0807",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "7850a73f6e8555357bf84ff0743d6aef5966483aeaa0044dce5a0d12ce62d8f1"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_piano_m0262",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2be28686e96452d2d19dc85feb3b9ee9436e5edca28da2f47e0a1e1729c5dc2c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_pot_m1349",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c0940cce5de500d94818802eb8165f31a7a9725580a14335d5f486415089ae9f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_pot_m0244",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c4e9347e9aba66e876913fed0c44c5d3172602646e059a598a98d67b53c16cf0"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_sofa_m1015",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "e59ae71875cb2ae11d4729477e794aca5fd4dbb6a77270677821cf31421ab7d4"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_sofa_m1739",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "9bb42ae9ac5f02cab55cdd32681db9fbe8f5ae388d1f63b2ac1f71eb4734c15f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_table_m1170",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f103b13ecb010a7add554e6ff3068769102225a8863c9e79c850137fdd7c5975"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_table_m0352",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "9cb1a14510c7299dad0d81827afdbdaab9ed6d449fe91695182957b9242827fb"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m1163",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.0028929604628736743,
+      "sourceFileSha256": "eb104ce4e863cd05fe51f805d5ca9a57000e52480d2550a642b1234300b2f301"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m0998",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "29c7f74d8bd444c6572932337febd036089184498e962676f809eb1e373ebe0b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m1315",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "e80a65778a589a001e5dca4c41ff24db00311d2fa008a6e6f62c1e3d0ca09889"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m1413",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "32b383cdaf17a9151b30eea86603a89e94f0a1e65fde6cc2e2477fe6e68f601c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m0114",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "43b60cff7bcb5555634467938733afc1c7a264213c753c8139310c62c1024c73"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m0280",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "bd16ce555d6d7b6243cfe411daeb2a670f7fe1d2b36b77e8d0dc1bcb39ca1b01"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_train_m1716",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "16d699f3fefc3dfc66416f2e1df10802875ef42ca5ab5fe249c2414fb48ce87f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_train_m1790",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8b62ab14abf53557cf478ba97c9866efdb1f4f5472c10d8fbff73712b0d1a1d4"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_vessel_m1342",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f0776af1ea71b7ce5e7a69ebd3c520509330cea659de4e5e1f3e0283cb3e7958"
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_vessel_m0468",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "912f7fac327f0a9ab638af54ec248d0bd6c382f49ff859b842f917427d0d5cd2"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_basket_m0357",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "50c0b08343c43c01ba8e5d6de70fc125457e647bf6b09a6bde23825c5a348db7"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_basket_m1549",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "4df8715aaf8a88fb801472e0a0514f2ef5aef7bc24a87643fe05749e8a32c778"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_basket_m1379",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "bac145eef86121b0afa7647559254e5b01d40c9793a032f8fffcb9f109f51fa4"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_basket_m1467",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "b5ff7ddd756fd9fd3fa32145f5586203aed92ec67b8ab35b91a9b0378b6fa681"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bed_m0404",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "760253aede94cd90dca9e43a45809c3900c4c8b7d04708a422a8af4cd7030f8d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bed_m1708",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "52ad2a32946f972648eae6033f2f6b9851577199a6eb644b2ab88deb890f88a5"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bench_m1433",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2c059500f6300fb3596190f6f5e02ede2dd2c6545d45117e2155fceb3ba41ecf"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bench_m0018",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "020522003c25691aa3083164ff4fc6ac5d1b52dfef18a486d0350c9f88ed319e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m0444",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d67f07917df7ca2d7ff0369b6990b2bd09d488bd2f673d0e547fdcf2749831ec"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m0497",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.0024429967426710096,
+      "sourceFileSha256": "77683ddf402415aad2f2c8bbc5fc356d4b0a961c7da3da29642d1417a0eb9a63"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m1400",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "e4ac9f057259a315786bc06841e79b866c829f9c8c105134cf11c3c86dfe8b9f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m1092",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "fc576822a92e0bc7faa14e76eced05d5d0f01d9452ffcdde4690762aedd1676c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m1886",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8f7ed1450b3eed91c033dc004b0e4540106869b2e6e90c161b4eaeb3b7b7d075"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_birdhouse_m0878",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f1879677e07f35f557566bd33dccd676b2715b6574a6860731def320b919c729"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m0383",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "09d2248afce859b3fc0c031faf047225914a413512469b01fcef2650842ba2bd"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m1159",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "e0d6fa2a706c6f009d4cec7536e4d2a65cd349bc84cbc38e6bb3a58e559c95c0"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m1566",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "4f3d7f66b0ccf57c13aee66e94485e56b2e5545256329b7d4b999ea41e8a2b3c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m0946",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "97caaffff16cff9e6277497582cfcb4b23df5e066f8257f4f7f78547a97f8b5e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m1679",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "eeb306296174f8a633e141b0bdea5796d77fcc934426862357799f4069e5ec6c"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bookshelf_m1785",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "4d387fdd21b0d88db99235801670add6a206bc1af85364efa7a967ad33cabcb9"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m0124",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "1027b9915d11a7a2fe729b2165467631f20a5f9cd77fc95c6a9ef0caf2c3d869"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m0443",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "7798dc0853fa1ba3bdfe58ba666a3b8fc97cf4601d256e544ca3739785511406"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m1480",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8aebcded0a0177cf31117c2981f579afddf9a4961377ed88aea97c36f4c0b8f2"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m1839",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d69e5fe9cd486450435339be16257db1502ce0b68f37301ae442148c431f5095"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m1585",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "aa7c6d16baba815eb93302442df6fd58a7cdfb6d3b35806c6f346f4a15e2080d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bottle_m1597",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "08f65fe98b0b86bc3c1fc5ed95be0ac9180bf4cadebf69f37c3ae8956dff3e05"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m0237",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "191e87727a8b54091aa005a00cdb8571b5a322800f3e7c4b02c0b684c60efe44"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m0133",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "887e121ce68a74f03df58eeef9398a866ab9c5dfdb86c36fec33c91b39749c0a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m1827",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "17689d24cbb1790742e85e66fd5f5b9d44075a7a9e72a2d2c1650d81024fdfe4"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m0957",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d044d503685fe565b941176094bd24c012897af7ff1e4aae4827ada36ac9e74f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m0110",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "6da076920e2b8b22fca978ea30b4898c8edf8d1e4c4a5e4e25fa1762234175d2"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bowl_m0787",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "cf744864811dc19aa8cea936ab1fd039a651af6a19d876d528ef16f761e7fc93"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bus_m0509",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "e2f1015d35a4b7116ef36c39075992ab53451ed904bf9e161860102bef56c9d2"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_bus_m1365",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "fd0dc2c2d47e726648ecf4f24fd215ba411003ad3d05814cb6695cae121e886f"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_camera_m0688",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.0017905102954341987,
+      "sourceFileSha256": "851c9c1bb14df0a7c1dde39876e67cedc29db1918e649e7c207b0504a4158370"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_camera_m1898",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.006377551020408163,
+      "sourceFileSha256": "d8779b107b553862be4f36eb93bb328bbba0c946e44f5819b9a7ed94e4c25735"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_car_m0066",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "4c4958f22a0d5837ba80fc313edbf1d5e37306df59a0fbd816dfc99ed7531f9b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_car_m1179",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "290980fb8336e573029fbf70f2ba0ebf623c7fd1dde18e4f10889d4277dc3975"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_chair_m0160",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "fb7bc68e287a7f9d95672a8369fbb0130d0280ad619002a61a7104265c7bca45"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_chair_m1016",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d217a8a39e5a6b5d1b2ce299b3a122e89a765372d5562269da0ddc4ccc0aa6b8"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m1808",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0c09507eebd58366d0e7a0473d7f40685355eeb0c48b310bac2ea8d2d9e38188"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m1003",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0e26503269eb7862c1144602250b65c03871942dc66f45f227190c039f5caa0e"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m1428",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "03e47870a4f3fae9f9b5f2f215d5f03c16454966b07f02d38d294f343f61ba29"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m0496",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "7312f02d2228b86410ff114ce191377c8bfae967af84152d53ea8c4e5d24c654"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m0619",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "16db1aa1fe9df30333784c24238188f98998d67264ec6ae3f9f3ea42f117f11a"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_guitar_m0615",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c758ed0c87081240af7417f9db400a30c1ece4d37dc26573c74f98166e962683"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m1199",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.002074688796680498,
+      "sourceFileSha256": "3a6738f926aa4d0b80f888229654d2e3e67b93a27b44b9a8e73063e34db69ce9"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m1176",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0010309278350515464,
+      "sourceFileSha256": "69a11c2ac5679ca138c8f6c68fee48798938d257aa429b1f3cebd40b7e8e3724"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m0073",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "394ee80bf4f1fd76d84699e19a948c9f5793ac7bf46ed2cb37045b30181ee06d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m0184",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c058fc6277ba1327134cf2188af1b18ac024e96806aeaa774bb640acf7c0a898"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m0026",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "1fb92daa6edf60e34d0008318d9a3c9fbbf6c7856a933780f4b9fc0174f4c40b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_jar_m0067",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "ffa9d167bf6bdaa2aa550ee349d97305df09b4cd76d34d99cbe89ae6e05806c3"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_mug_m0482",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8abb12a959fe1d591c178e2f832d7ac1be8f3e8d7db7b509df14179ab96663b3"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_mug_m1433",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "3a126b00e8f6208a8db53124091f18e695aa5ea406fe99da6e6c543d2509d44b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_piano_m0161",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "741a60fa52c72d56e61579bc9a558288683bef5b910ad66195de3f3c5e616bac"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_piano_m0913",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "c95bcd81237d5174f96ec428b337859b4622c5e7a8a8447b59cc177b53379f32"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_pot_m1599",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "809ca260c5f737793650d823f2315c7de051c1aade90d45add0cbd669bd5620b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_pot_m0336",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "a65070945ff8021c630898ea8c15635267e03fa9c9a7103f85e8ecf8895fb96b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_pot_m1170",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "b2f3fd22a03dbe6dfd2dcf93fcbaf5db3931e2ec64bfa71640c73a9f300e3319"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_pot_m0432",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "221e7d4858287f1adfcfcb14765b53b7097a023e4416925795b46a97f0f5c1be"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_pot_m1190",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2aa746415c956d4ff140d62b5545cd91b72cd53f73dfea632d74be12d7e9aa9b"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_sofa_m1212",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "0f752e1342baeb2ec4db58d680ae7e9146ee26ea93a78d3b4541a55c18b2c7a9"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_sofa_m1839",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "71d9d69cd0448dfee7f7c2cab14b44e6580a8a98a48b33da5041ae7169009210"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_table_m0513",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "f68e54a6e24fdc4d50c61aab4cbe76da17b2307c9a62b514267e796a31abaa26"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_table_m0773",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "d0bf690b880f9fd7f25a7abcf289877e50feb5002c0310678f98f1bf06abd528"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m1163",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.0018975332068311196,
+      "sourceFileSha256": "2e67a0bbe118b8e965139638cb65d97ea20109809aff2744829aaf6ac1fd8218"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m1514",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "changeRatio": 0.0010070493454179255,
+      "sourceFileSha256": "93d9774dd048cb10f73e05f0e3ec84d7d79e9362f95aad185246134dd30b6f46"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m0284",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "67413857cbe68c2b1bb1da194384a591bc564264397a1fd240d5518293c44b36"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m0262",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "be1c911eaac90f55b99697c59f6e6a1dfa4bd7b021dc919b5a1acf99da73a584"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m0900",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "a04de632f2b47b156b434cfe6ae1e60ec48c0d258ce1bdce400adeca1a309010"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_tower_m1368",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "1f54d3af3a2d4991cec78ca1b9e13814cd208c61428fd19185eaed41f362f67d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_train_m1135",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "2cd3790b1c72e18f9037ffa5ddad255938b41c891456c791f814127ec738fd83"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_train_m1440",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "73c819bf2bef881bce9be2c64e3067195454c1cede5160a780317ee1b258bd3d"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_vessel_m1640",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "3ddc53ad0fab37e8d506ff1e347c34bb67ddd0bb49a2dc4925a4a071343b3909"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_vessel_m0669",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "8821b67711c73207fa19a286015f18d586ab66a22d34adf1a4b564379486febf"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_vessel_m0763",
+      "status": "success",
+      "outcome": "success_original_exact",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "297515ecd1a18a6d4cbac1d378a891916131915545b9f43ff5d4da85b35c3f41"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_vessel_m1871",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "cc6fbae4019694b41f34bd4f7597d87cf7f0792f9042e874091a6c9795064636"
+    },
+    {
+      "modelId": "vx80k5p_20261010_B_vessel_m1195",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "changeRatio": 0.0,
+      "sourceFileSha256": "483ccfcd9b1a9994d2a26d32b19d9a1fe47cb07c84b4ccc5b84bc8cd011f1daa"
+    }
+  ]
+}

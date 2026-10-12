@@ -22,6 +22,16 @@ python tools/download_dataset.py --shard all --output dataset_80000 --extract
 
 ## 拼接与校验算法
 
+新增 [Q2质量有界优化通道](algorithms/voxel_assembly_q2/README.md)：跨层回溯、未来连接剪枝、增量独立校验及最多2%的局部新增修复。独立分层验证样本149个由32个通过增至47个；这是样本结果，不是80,000模型的新全量通过率。原模型/颜色/训练记录及下列旧发布保持不变，修复结果作为明确标注的新派生目标。
+
+新增本地实验 [Q3联合修复与自重静力筛查](algorithms/voxel_assembly_q3/README.md)：旧分层回归149个由Q2的47个增至90个，但完整清单均匀样本160个仅由22个增至55个（34.38%），**尚未达到整体50%目标**。最终自重平衡8个、全部完成层前缀筛查2个；未知咬合容量不算物理认证。70项测试和469个结果目录复验通过，详见 [Q3优化报告](algorithms/voxel_assembly_q3/reports/OPTIMIZATION_REPORT.md)。最多新增2%，零原体素删除/改色；未重跑全量或更新下列旧Release。
+
+新增本地实验 [Q4删除回退通道](algorithms/voxel_assembly_q4/README.md)：仅新增失败后，允许派生目标删除少量悬空细节，新增＋删除合计≤原体素数2%，原文件与保留体素颜色不变。相同160个均匀样本由55个增至57个（35.625%），物理完成层筛查仍为2个；尚未达到50%。83项测试、四轮共320份结果目录复验通过，详见 [Q4优化报告](algorithms/voxel_assembly_q4/reports/OPTIMIZATION_REPORT.md)。未重跑全量或更新旧发布。
+
+Q4 全量处理与独立新发布的流程见 [80,000模型 Q4 交付通道](datasets/q4_assembly_80000/README.md)。全量统计与发布状态以该目录生成的 `assembly_summary.json` 和 `release_verification.json` 为准；不会把实验样本通过率替代全量结果，也不会覆盖旧Release。
+
+新增算法 [真实连接件与多接地组件放宽档](algorithms/voxel_assembly_relaxed/README.md)，发布通道见 [80,000模型多接地组件交付](datasets/relaxed_assembly_80000/README.md)。允许独立组件和上方stud附件，但每个组件须通过实际stud路径到地面，仍拒绝悬空组件、碰撞、改色和超过2%体素改动。物理力与力矩见证模型及未知咬合力的保守判定不降低。目标几何通过率≥60%，以全量实测为准，不等于物理通过；新旧原模型和发布均不覆盖。
+
 新增算法源码位于 **[algorithms/voxel_assembly_b](algorithms/voxel_assembly_b/README.md)**，方法标注见 [ALGORITHM.md](algorithms/voxel_assembly_b/ALGORITHM.md)。包括同色标准砖贪心/beam拼接、MRV逐层位集精确覆盖，以及从真实JSON/TXT/LDR独立回读的几何校验；纯CPU，无模型权重或API密钥。
 
 **两批共80,000个模型均已完成拼接处理、补充搜索和独立导出回读。** 最终每个原始modelId只保留一份被选结果，不重复计入试跑或补搜产物。

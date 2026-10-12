@@ -1,0 +1,3257 @@
+{
+  "algorithmVersion": "quality_bounded_global_cover_q2_v2",
+  "requestedModelCount": 71,
+  "processedModelCount": 71,
+  "baselinePassedCount": 15,
+  "optimizedPassedCount": 18,
+  "additionalPassedCount": 3,
+  "baselineSuccessRegressions": 0,
+  "baselinePassRate": 0.2112676056338028,
+  "optimizedPassRate": 0.2535211267605634,
+  "outcomeCounts": {
+    "bounded_search_or_repair_not_passed": 53,
+    "success_original_retained": 15,
+    "success_repaired_q2": 3
+  },
+  "categoryOutcomeCounts": {
+    "basket": {
+      "bounded_search_or_repair_not_passed": 4,
+      "success_original_retained": 2
+    },
+    "bed": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "bench": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "birdhouse": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "bookshelf": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "bottle": {
+      "bounded_search_or_repair_not_passed": 4,
+      "success_original_retained": 2
+    },
+    "bowl": {
+      "bounded_search_or_repair_not_passed": 4,
+      "success_original_retained": 2
+    },
+    "bus": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "camera": {
+      "bounded_search_or_repair_not_passed": 4,
+      "success_original_retained": 2
+    },
+    "car": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "chair": {
+      "bounded_search_or_repair_not_passed": 2,
+      "success_original_retained": 1
+    },
+    "guitar": {
+      "success_repaired_q2": 2,
+      "bounded_search_or_repair_not_passed": 2,
+      "success_original_retained": 2
+    },
+    "jar": {
+      "bounded_search_or_repair_not_passed": 4,
+      "success_original_retained": 2
+    },
+    "mug": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "piano": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "pot": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "sofa": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "table": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "tower": {
+      "success_repaired_q2": 1,
+      "bounded_search_or_repair_not_passed": 3,
+      "success_original_retained": 2
+    },
+    "train": {
+      "bounded_search_or_repair_not_passed": 2
+    },
+    "vessel": {
+      "bounded_search_or_repair_not_passed": 2
+    }
+  },
+  "maximumObservedChangeRatio": 0.01671891327063741,
+  "successfulRepairAddedVoxelCount": 17,
+  "allQualityBoundsPassed": true,
+  "allOutputsIndependentlyReRead": true,
+  "allSourceCopiesAndFileSha256Checked": true,
+  "successfulRepairMeanChangeRatio": 0.005264952028007339,
+  "sampleDesign": "category x sealed final status; deterministic disjoint hash dev/holdout folds",
+  "split": "holdout",
+  "seed": 1729,
+  "perStratum": 2,
+  "configuration": {
+    "algorithmVersion": "quality_bounded_global_cover_q2_v2",
+    "options": {
+      "ratio": 0.02,
+      "seconds": 12,
+      "nodes": 60000
+    },
+    "manifestSha256": "3f5e537b2439cf68f447c251dff6f7930beaae76d24b213c51c509abccffcb3e",
+    "baselineIndexSha256": "aad0cd40f564cfeab95ce975593436f356099a8f5ffb0a34da4362af26e72fda",
+    "selectionSha256": "d85b8974b450c16307c394031672d910d3944af7b52d934bb26cb5bb7c626a3d",
+    "sourceCodeSha256": {
+      "algorithms/voxel_assembly_b/assembly_pipeline.py": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+      "algorithms/voxel_assembly_b/toolkit_snapshot/brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+      "algorithms/voxel_assembly_b/toolkit_snapshot/interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+      "algorithms/voxel_assembly_b/toolkit_snapshot/optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+      "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f",
+      "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+      "algorithms/voxel_assembly_q2/quality_core.py": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+      "algorithms/voxel_assembly_q2/quality_pipeline.py": "a2c33799e73ce73dd34bc9153e5eaedaa4fb3e15194a328df17e7456d228419c",
+      "algorithms/voxel_assembly_q2/test_quality.py": "fd8a9442c37b8d221e178c44f5ad6a78f54f798aa0e7fd58d8fe3f403ab7240c",
+      "algorithms/voxel_assembly_q2/verify_quality.py": "ae2e96a8f76370979b50e46547af6c21414a37837af8bff2abaf5ca244203152",
+      "tools/optimize_assembly.py": "d2a4398965db57e64d1c803f0f5f3daff6196eba99b991af48cd3bf055ae7dd7"
+    }
+  },
+  "elapsedSeconds": 31.56199999999808,
+  "staticVerified": null,
+  "fullPhysics": false,
+  "semanticVerified": false,
+  "originalDatasetModified": false,
+  "notAn80000ModelPassRateMeasurement": true,
+  "models": [
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0513",
+      "category": "basket",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 872,
+        "targetVoxelCount": 872,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 17,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "7bc8ba245753769567b339bfa11e667caaebac91aba94202eda76ea0756dee41",
+        "targetExactOccupancyHash": "7bc8ba245753769567b339bfa11e667caaebac91aba94202eda76ea0756dee41",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0459999999984575
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0676",
+      "category": "basket",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 978,
+        "targetVoxelCount": 978,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "bd85eeca9211eccf80d2298681292639c7fc758d5ae0b04370e698572b4ff1e1",
+        "targetExactOccupancyHash": "bd85eeca9211eccf80d2298681292639c7fc758d5ae0b04370e698572b4ff1e1",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0459999999984575
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0502",
+      "category": "basket",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 803,
+        "targetVoxelCount": 803,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 16,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "c9bb4b61cbe00fe382057bc04115e91bf78c7277cdaf87dcd21d9a203a1f3d1b",
+        "targetExactOccupancyHash": "c9bb4b61cbe00fe382057bc04115e91bf78c7277cdaf87dcd21d9a203a1f3d1b",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 6.703000000001339
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m1247",
+      "category": "basket",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1011,
+        "targetVoxelCount": 1011,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "76b58361da9c773bbf0b6f4a06f6816b28b17968a6f22042e4e660189545cf88",
+        "targetExactOccupancyHash": "76b58361da9c773bbf0b6f4a06f6816b28b17968a6f22042e4e660189545cf88",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 6.688000000001921
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m0731",
+      "category": "basket",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 920,
+        "targetVoxelCount": 920,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "fb4cc67cdb2849dff45bc2cb7a64a8581e4b07fda895cdac0b78cd9bea4df7f0",
+        "targetExactOccupancyHash": "fb4cc67cdb2849dff45bc2cb7a64a8581e4b07fda895cdac0b78cd9bea4df7f0",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_basket_m1609",
+      "category": "basket",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 919,
+        "targetVoxelCount": 919,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "cb877b15435799b4fec0621a96f4af86d76f3b8ad2f778df74a77e1f66ff0193",
+        "targetExactOccupancyHash": "cb877b15435799b4fec0621a96f4af86d76f3b8ad2f778df74a77e1f66ff0193",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bed_m0551",
+      "category": "bed",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 888,
+        "targetVoxelCount": 888,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 17,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "e077759ca1e00072df4b676b0e6589612f82784e5dfd9227b59d6d5886cd6e2d",
+        "targetExactOccupancyHash": "e077759ca1e00072df4b676b0e6589612f82784e5dfd9227b59d6d5886cd6e2d",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0470000000022992
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bed_m1381",
+      "category": "bed",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1030,
+        "targetVoxelCount": 1030,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "a728d75a2edddb39886a31aec82eeff9e4f2b33625dc375ffc476f6ba94d48d0",
+        "targetExactOccupancyHash": "a728d75a2edddb39886a31aec82eeff9e4f2b33625dc375ffc476f6ba94d48d0",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0470000000022992
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bench_m1492",
+      "category": "bench",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 949,
+        "targetVoxelCount": 949,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "defb85e78f10ba3a9ad2b88342d55bd76c6956fc51b3886e0d9dac7ba6922cc2",
+        "targetExactOccupancyHash": "defb85e78f10ba3a9ad2b88342d55bd76c6956fc51b3886e0d9dac7ba6922cc2",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0459999999984575
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bench_m0179",
+      "category": "bench",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1074,
+        "targetVoxelCount": 1074,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 21,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "d4a21780842940ba87222448596c0cc7a4a93eacd7ebcd52b8476afa590d6d45",
+        "targetExactOccupancyHash": "d4a21780842940ba87222448596c0cc7a4a93eacd7ebcd52b8476afa590d6d45",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0930000000007567
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_birdhouse_m1283",
+      "category": "birdhouse",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 954,
+        "targetVoxelCount": 954,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "db115b0a507aedf6e35512a91a3731a1c5c27c80467cee0d68fc776691d49048",
+        "targetExactOccupancyHash": "db115b0a507aedf6e35512a91a3731a1c5c27c80467cee0d68fc776691d49048",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.09400000000096043
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_birdhouse_m0522",
+      "category": "birdhouse",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 930,
+        "targetVoxelCount": 930,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "9d2e0b31a060d0e872469cfe412b611ace768a5da4d1bbc8a94c8d0b77365718",
+        "targetExactOccupancyHash": "9d2e0b31a060d0e872469cfe412b611ace768a5da4d1bbc8a94c8d0b77365718",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0470000000022992
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bookshelf_m1005",
+      "category": "bookshelf",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1022,
+        "targetVoxelCount": 1022,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "53110af7fc1e6da69c337c59e48ddbedba2dcd3b35130851b831590848851d8d",
+        "targetExactOccupancyHash": "53110af7fc1e6da69c337c59e48ddbedba2dcd3b35130851b831590848851d8d",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.4529999999977008
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bookshelf_m0587",
+      "category": "bookshelf",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 860,
+        "targetVoxelCount": 860,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 17,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "ca8abd62afa9de6dc4126e1b2e87d4f2629d4ee0555cdbc7a24604639eb802a4",
+        "targetExactOccupancyHash": "ca8abd62afa9de6dc4126e1b2e87d4f2629d4ee0555cdbc7a24604639eb802a4",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0779999999977008
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m0689",
+      "category": "bottle",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1004,
+        "targetVoxelCount": 1015,
+        "addedVoxelCount": 11,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 11,
+        "changeRatio": 0.010956175298804782,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 0.9891625615763546,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [
+          {
+            "xyz": [
+              18,
+              26,
+              14
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              19,
+              19,
+              14
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              19,
+              27,
+              14
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              20,
+              21,
+              16
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              20,
+              25,
+              16
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              25,
+              20,
+              16
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              25,
+              26,
+              16
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              26,
+              18,
+              14
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              26,
+              28,
+              14
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              27,
+              19,
+              14
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              27,
+              27,
+              14
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          }
+        ],
+        "sourceExactOccupancyHash": "a4fb20beb86aa346018c5129dbb1a3237ceae2027e32b994dfbe604c212b8c68",
+        "targetExactOccupancyHash": "cc2b33f7ba80e8922db43d5e4d3fdcf98d8833effb94c94c26c5a5ac95842c4a",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 9.25
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m0210",
+      "category": "bottle",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1130,
+        "targetVoxelCount": 1146,
+        "addedVoxelCount": 16,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 16,
+        "changeRatio": 0.01415929203539823,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 22,
+        "occupancyIoU": 0.9860383944153578,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [
+          {
+            "xyz": [
+              17,
+              23,
+              14
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              18,
+              23,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              19,
+              19,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              19,
+              23,
+              16
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              19,
+              27,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              20,
+              18,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              20,
+              28,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              24,
+              17,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              24,
+              29,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              25,
+              17,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              25,
+              29,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              26,
+              18,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              26,
+              28,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              27,
+              23,
+              16
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              28,
+              23,
+              15
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              29,
+              23,
+              14
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          }
+        ],
+        "sourceExactOccupancyHash": "8819e9c5835c4d0354dce43a80d179ac2fb1e44b8bea940e00c012f88d2e21ca",
+        "targetExactOccupancyHash": "42b790608c32c3a67c8b173de81da3eb2745a56fe05df32424f79362db32a76c",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 10.84400000000096
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m0049",
+      "category": "bottle",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 926,
+        "targetVoxelCount": 926,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "d98e53554d6d35d9669311483726180c6906db405cdcbe02f31ce108e378788c",
+        "targetExactOccupancyHash": "d98e53554d6d35d9669311483726180c6906db405cdcbe02f31ce108e378788c",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 4.922000000002299
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m1464",
+      "category": "bottle",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 752,
+        "targetVoxelCount": 752,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 15,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "bb41a1dd7a2b1169179a8b66cbac4f65c5a482c090fbd9dd8946789ab5f723dc",
+        "targetExactOccupancyHash": "bb41a1dd7a2b1169179a8b66cbac4f65c5a482c090fbd9dd8946789ab5f723dc",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 5.186999999998079
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m1057",
+      "category": "bottle",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 996,
+        "targetVoxelCount": 996,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "ea4df7e79dc5ae6aa68df075f18faabbc36b1b560de3c35d97dad852f6ba9b6d",
+        "targetExactOccupancyHash": "ea4df7e79dc5ae6aa68df075f18faabbc36b1b560de3c35d97dad852f6ba9b6d",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bottle_m0235",
+      "category": "bottle",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 998,
+        "targetVoxelCount": 998,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "980de29eeaf237b442df31c127d08123fcd9b3ab0c25ebf116445bbf41877ca9",
+        "targetExactOccupancyHash": "980de29eeaf237b442df31c127d08123fcd9b3ab0c25ebf116445bbf41877ca9",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m0213",
+      "category": "bowl",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 957,
+        "targetVoxelCount": 973,
+        "addedVoxelCount": 16,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 16,
+        "changeRatio": 0.01671891327063741,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 0.9835560123329907,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [
+          {
+            "xyz": [
+              13,
+              22,
+              4
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              13,
+              23,
+              4
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              13,
+              24,
+              4
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              21,
+              17,
+              3
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              21,
+              29,
+              3
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              22,
+              17,
+              3
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              22,
+              29,
+              3
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              23,
+              17,
+              3
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              23,
+              29,
+              3
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              24,
+              17,
+              3
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              24,
+              29,
+              3
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              25,
+              17,
+              3
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              25,
+              29,
+              3
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              33,
+              22,
+              4
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              33,
+              23,
+              4
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              33,
+              24,
+              4
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          }
+        ],
+        "sourceExactOccupancyHash": "0608dcd909587a73ff027ac8cb18a0fa7f5b9b5dc3e79e752477fc6fc931d802",
+        "targetExactOccupancyHash": "72dfce0654c574cff0e922df41fb60aecf4c953bf6936229f551739a7796aa2e",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 4.437999999998283
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1374",
+      "category": "bowl",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1049,
+        "targetVoxelCount": 1061,
+        "addedVoxelCount": 12,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 12,
+        "changeRatio": 0.011439466158245948,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 0.9886899151743638,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [
+          {
+            "xyz": [
+              11,
+              23,
+              4
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          },
+          {
+            "xyz": [
+              14,
+              22,
+              0
+            ],
+            "rgb": [
+              204,
+              166,
+              105
+            ]
+          },
+          {
+            "xyz": [
+              15,
+              21,
+              0
+            ],
+            "rgb": [
+              204,
+              166,
+              105
+            ]
+          },
+          {
+            "xyz": [
+              15,
+              25,
+              0
+            ],
+            "rgb": [
+              204,
+              166,
+              105
+            ]
+          },
+          {
+            "xyz": [
+              16,
+              20,
+              0
+            ],
+            "rgb": [
+              204,
+              166,
+              105
+            ]
+          },
+          {
+            "xyz": [
+              16,
+              26,
+              0
+            ],
+            "rgb": [
+              204,
+              166,
+              105
+            ]
+          },
+          {
+            "xyz": [
+              30,
+              20,
+              0
+            ],
+            "rgb": [
+              204,
+              166,
+              105
+            ]
+          },
+          {
+            "xyz": [
+              30,
+              26,
+              0
+            ],
+            "rgb": [
+              204,
+              166,
+              105
+            ]
+          },
+          {
+            "xyz": [
+              31,
+              21,
+              0
+            ],
+            "rgb": [
+              204,
+              166,
+              105
+            ]
+          },
+          {
+            "xyz": [
+              31,
+              25,
+              0
+            ],
+            "rgb": [
+              204,
+              166,
+              105
+            ]
+          },
+          {
+            "xyz": [
+              32,
+              22,
+              0
+            ],
+            "rgb": [
+              204,
+              166,
+              105
+            ]
+          },
+          {
+            "xyz": [
+              35,
+              23,
+              4
+            ],
+            "rgb": [
+              59,
+              107,
+              157
+            ]
+          }
+        ],
+        "sourceExactOccupancyHash": "38b35fd296355055b4edd629c00f519d3fc783af7e8140630009d43dfb4e71a1",
+        "targetExactOccupancyHash": "18afeebc8b4e7cdd876af37d197959d0192e7ebdcac8e181946b0e596bbf15fb",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 11.40599999999904
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m0473",
+      "category": "bowl",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 907,
+        "targetVoxelCount": 907,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "f1c80a1cff6063bf4d6cc691be0ff565c1dc55139dbe8c51be7f70892f6b3a56",
+        "targetExactOccupancyHash": "f1c80a1cff6063bf4d6cc691be0ff565c1dc55139dbe8c51be7f70892f6b3a56",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 6.687999999998283
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1019",
+      "category": "bowl",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 883,
+        "targetVoxelCount": 883,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 17,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "eecb092b7376b2e7628ac425d3c71c4dd9309f2020354b0586bde3e867f48f0c",
+        "targetExactOccupancyHash": "eecb092b7376b2e7628ac425d3c71c4dd9309f2020354b0586bde3e867f48f0c",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 6.687999999998283
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m0281",
+      "category": "bowl",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 882,
+        "targetVoxelCount": 882,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 17,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "03d6228d17ac43aed45d1052d14f11afa5a9fa6eef124a65f9bee0cf60acc948",
+        "targetExactOccupancyHash": "03d6228d17ac43aed45d1052d14f11afa5a9fa6eef124a65f9bee0cf60acc948",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bowl_m1259",
+      "category": "bowl",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 911,
+        "targetVoxelCount": 911,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "64d29484407956b27da7684cccec666ddf610186f4a7a284e58bfa920d4b6e97",
+        "targetExactOccupancyHash": "64d29484407956b27da7684cccec666ddf610186f4a7a284e58bfa920d4b6e97",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bus_m0349",
+      "category": "bus",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 940,
+        "targetVoxelCount": 940,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "0251293d3defd3a8b453514877a977cff1ce2276460651fd4e1460227504c567",
+        "targetExactOccupancyHash": "0251293d3defd3a8b453514877a977cff1ce2276460651fd4e1460227504c567",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.21900000000096043
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_bus_m1120",
+      "category": "bus",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1223,
+        "targetVoxelCount": 1223,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 24,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "00fb03670ee4d5f0cb84b3926cdb1c79e4809d95c7592d2c4775d149d8fd2ba2",
+        "targetExactOccupancyHash": "00fb03670ee4d5f0cb84b3926cdb1c79e4809d95c7592d2c4775d149d8fd2ba2",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.3129999999982829
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m1110",
+      "category": "camera",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1147,
+        "targetVoxelCount": 1147,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 22,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "717904786ecbe67a61f3ac2210c305fb42ff73390ed96172a8764140ed5403d6",
+        "targetExactOccupancyHash": "717904786ecbe67a61f3ac2210c305fb42ff73390ed96172a8764140ed5403d6",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.062000000001717126
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m1742",
+      "category": "camera",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 955,
+        "targetVoxelCount": 955,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "ab9f83eb21228873707dc027c1c91bbaf795f2ef4b4969f4952938f772f26337",
+        "targetExactOccupancyHash": "ab9f83eb21228873707dc027c1c91bbaf795f2ef4b4969f4952938f772f26337",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.031000000002677552
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m0462",
+      "category": "camera",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 950,
+        "targetVoxelCount": 950,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "2f6294d85aabb8ea303b246a5f757dd5d3e287ad6826b28fdf998f8ff08e6fbb",
+        "targetExactOccupancyHash": "2f6294d85aabb8ea303b246a5f757dd5d3e287ad6826b28fdf998f8ff08e6fbb",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 4.21900000000096
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m0282",
+      "category": "camera",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1114,
+        "targetVoxelCount": 1114,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 22,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "0544c4a1e3f81a79851a77c62d1428c9cff09ced85e20547986155b2cd8e30d5",
+        "targetExactOccupancyHash": "0544c4a1e3f81a79851a77c62d1428c9cff09ced85e20547986155b2cd8e30d5",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 4.23399999999674
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m0878",
+      "category": "camera",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1042,
+        "targetVoxelCount": 1042,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "e007936045002fab01e797ae5a519a18aa1bc2decac48b6cacc4921c2fe51d63",
+        "targetExactOccupancyHash": "e007936045002fab01e797ae5a519a18aa1bc2decac48b6cacc4921c2fe51d63",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_camera_m1328",
+      "category": "camera",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1007,
+        "targetVoxelCount": 1007,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "e27e22baaba3907a28c0d6850572e636d2b1160392f03877f2e2de5466fb157f",
+        "targetExactOccupancyHash": "e27e22baaba3907a28c0d6850572e636d2b1160392f03877f2e2de5466fb157f",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_car_m1057",
+      "category": "car",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 959,
+        "targetVoxelCount": 959,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "765a28c98e3304a08bd1c563a4f1b43019eb203aa59d7c953ad787cc9b230f98",
+        "targetExactOccupancyHash": "765a28c98e3304a08bd1c563a4f1b43019eb203aa59d7c953ad787cc9b230f98",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.15599999999903957
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_car_m0983",
+      "category": "car",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1101,
+        "targetVoxelCount": 1101,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 22,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "0e2377d9c7540b2786ba6dcb5e33bc4c48db2376016ddd1d9b26e7ef49b3d0ac",
+        "targetExactOccupancyHash": "0e2377d9c7540b2786ba6dcb5e33bc4c48db2376016ddd1d9b26e7ef49b3d0ac",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.15599999999903957
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_chair_m0067",
+      "category": "chair",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1032,
+        "targetVoxelCount": 1032,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "1e8b8d2cffc7fe3677944ea9ccbf5fb80aaeadb3e3dd87d8119cc6170ec3c7b2",
+        "targetExactOccupancyHash": "1e8b8d2cffc7fe3677944ea9ccbf5fb80aaeadb3e3dd87d8119cc6170ec3c7b2",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.06199999999807915
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_chair_m1783",
+      "category": "chair",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 983,
+        "targetVoxelCount": 983,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "3a9d0a9f809a7a41f2624763904d4694ecbdd4b23464569eed3c8b5139bd047d",
+        "targetExactOccupancyHash": "3a9d0a9f809a7a41f2624763904d4694ecbdd4b23464569eed3c8b5139bd047d",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0470000000022992
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_chair_m1762",
+      "category": "chair",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 880,
+        "targetVoxelCount": 880,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 17,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "a6de997b7d2797272781ded8d7663c300a5ec5d65399a32e15ed2fc54150722e",
+        "targetExactOccupancyHash": "a6de997b7d2797272781ded8d7663c300a5ec5d65399a32e15ed2fc54150722e",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m0214",
+      "category": "guitar",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1034,
+        "targetVoxelCount": 1038,
+        "addedVoxelCount": 4,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 4,
+        "changeRatio": 0.0038684719535783366,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 0.9961464354527938,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [
+          {
+            "xyz": [
+              21,
+              25,
+              9
+            ],
+            "rgb": [
+              125,
+              133,
+              143
+            ]
+          },
+          {
+            "xyz": [
+              21,
+              26,
+              9
+            ],
+            "rgb": [
+              125,
+              133,
+              143
+            ]
+          },
+          {
+            "xyz": [
+              21,
+              26,
+              12
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          },
+          {
+            "xyz": [
+              24,
+              26,
+              9
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          }
+        ],
+        "sourceExactOccupancyHash": "378c80e5afe09f42263e61b05713f390232fa869316543b9cc6d349c077695c7",
+        "targetExactOccupancyHash": "66aeaaf19e5171ca383fe7b2345947d85f273e16570264b279e54599ea149d92",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.1720000000022992
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m0420",
+      "category": "guitar",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1107,
+        "targetVoxelCount": 1117,
+        "addedVoxelCount": 10,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 10,
+        "changeRatio": 0.009033423667570008,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 22,
+        "occupancyIoU": 0.991047448522829,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [
+          {
+            "xyz": [
+              20,
+              23,
+              10
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          },
+          {
+            "xyz": [
+              20,
+              23,
+              11
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          },
+          {
+            "xyz": [
+              20,
+              26,
+              10
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          },
+          {
+            "xyz": [
+              20,
+              26,
+              11
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          },
+          {
+            "xyz": [
+              21,
+              22,
+              18
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              22,
+              22,
+              15
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          },
+          {
+            "xyz": [
+              23,
+              24,
+              15
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          },
+          {
+            "xyz": [
+              25,
+              23,
+              12
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          },
+          {
+            "xyz": [
+              26,
+              24,
+              10
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          },
+          {
+            "xyz": [
+              26,
+              24,
+              11
+            ],
+            "rgb": [
+              155,
+              105,
+              62
+            ]
+          }
+        ],
+        "sourceExactOccupancyHash": "d9752dc1e3d6251a475a4416e26339f5e81e2d9f99e60ad9ace99072768feb97",
+        "targetExactOccupancyHash": "e05a46e5093bd82867b7c25013a296dc5a094937ac2a5f0dafe25198c2a8f4c3",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.23500000000058208
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m0271",
+      "category": "guitar",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1146,
+        "targetVoxelCount": 1146,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 22,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "ab8ca727982bd0264cdf25fc2ac32af412d278d535aaf4a2016a665a6bd4dd92",
+        "targetExactOccupancyHash": "ab8ca727982bd0264cdf25fc2ac32af412d278d535aaf4a2016a665a6bd4dd92",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 3.6409999999996217
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m1218",
+      "category": "guitar",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 862,
+        "targetVoxelCount": 862,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 17,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "daaa9d1a751729a7cb3828ff1dff746eb6e4ed7ea62a7667540d6552848af1bd",
+        "targetExactOccupancyHash": "daaa9d1a751729a7cb3828ff1dff746eb6e4ed7ea62a7667540d6552848af1bd",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 4.03099999999904
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m0493",
+      "category": "guitar",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 909,
+        "targetVoxelCount": 909,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "dc9dbadc65d2e9d1f1f552c5502692ade5193992e3498e6cad8881dc43b745f8",
+        "targetExactOccupancyHash": "dc9dbadc65d2e9d1f1f552c5502692ade5193992e3498e6cad8881dc43b745f8",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_guitar_m1619",
+      "category": "guitar",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 913,
+        "targetVoxelCount": 913,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "1436d2b8b4d3f252c002abf65d959a8692e3d32d3999d330b67097466fb5db58",
+        "targetExactOccupancyHash": "1436d2b8b4d3f252c002abf65d959a8692e3d32d3999d330b67097466fb5db58",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0695",
+      "category": "jar",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 918,
+        "targetVoxelCount": 932,
+        "addedVoxelCount": 14,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 14,
+        "changeRatio": 0.015250544662309368,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 0.9849785407725322,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [
+          {
+            "xyz": [
+              15,
+              20,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              15,
+              21,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              15,
+              25,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              15,
+              26,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              16,
+              19,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              16,
+              27,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              17,
+              18,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              17,
+              28,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              28,
+              17,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              28,
+              29,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              29,
+              18,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              29,
+              28,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              30,
+              19,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              30,
+              27,
+              8
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          }
+        ],
+        "sourceExactOccupancyHash": "9480d05f1a20e5ba841f00f6ce8b94cb50b5c9e6fe173159c66ea879ac22b3c4",
+        "targetExactOccupancyHash": "79cdcb953f18ff13fdc412036bd7544d13f5bac1c90c22113a06a248cf558bbf",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 6.375
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0261",
+      "category": "jar",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 962,
+        "targetVoxelCount": 964,
+        "addedVoxelCount": 2,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 2,
+        "changeRatio": 0.002079002079002079,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 0.9979253112033195,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [
+          {
+            "xyz": [
+              14,
+              23,
+              7
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          },
+          {
+            "xyz": [
+              32,
+              23,
+              7
+            ],
+            "rgb": [
+              62,
+              48,
+              40
+            ]
+          }
+        ],
+        "sourceExactOccupancyHash": "16b792fad65a7e6b5a86805719bb9fe9a0eb785bae88a858780492bb6010d8bd",
+        "targetExactOccupancyHash": "ba677262e7c9427d4c1d9b582f3beb0a2d02aaaab8cd66728a00b5b99d71369b",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 4.547000000002299
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0124",
+      "category": "jar",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 772,
+        "targetVoxelCount": 772,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 15,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "db2ac777f6504c6d6f564d70f6b1caf37fef6a235f60d3e13fe25aa133f64dd3",
+        "targetExactOccupancyHash": "db2ac777f6504c6d6f564d70f6b1caf37fef6a235f60d3e13fe25aa133f64dd3",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 2.797000000002299
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0740",
+      "category": "jar",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 962,
+        "targetVoxelCount": 962,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "99f10cc95e41dc5b14d28a646a2b514ffd48c9ca64aa123409fe62881c18b77a",
+        "targetExactOccupancyHash": "99f10cc95e41dc5b14d28a646a2b514ffd48c9ca64aa123409fe62881c18b77a",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 4.139999999999418
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0672",
+      "category": "jar",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 973,
+        "targetVoxelCount": 973,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "bb386409143683babeb177816b4a38334dedc4e25bc1c707e96fc7c21c64809e",
+        "targetExactOccupancyHash": "bb386409143683babeb177816b4a38334dedc4e25bc1c707e96fc7c21c64809e",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_jar_m0248",
+      "category": "jar",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1005,
+        "targetVoxelCount": 1005,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "0ec5ee92eed7ea8e9aed22d8cbe7d9805a722150bfd2774c44c701891fb002d9",
+        "targetExactOccupancyHash": "0ec5ee92eed7ea8e9aed22d8cbe7d9805a722150bfd2774c44c701891fb002d9",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_mug_m0643",
+      "category": "mug",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1062,
+        "targetVoxelCount": 1062,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 21,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "a0f20aea99a5f6ed0e9c17d3dfa3162a9f851a28011669bc3f922b791b279337",
+        "targetExactOccupancyHash": "a0f20aea99a5f6ed0e9c17d3dfa3162a9f851a28011669bc3f922b791b279337",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0459999999984575
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_mug_m1357",
+      "category": "mug",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 923,
+        "targetVoxelCount": 923,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 18,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "9df683331af931c282e46a3eb1962dddaa76d81d7b68cda95bf7ae337c20d986",
+        "targetExactOccupancyHash": "9df683331af931c282e46a3eb1962dddaa76d81d7b68cda95bf7ae337c20d986",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.062000000001717126
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_piano_m0807",
+      "category": "piano",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1173,
+        "targetVoxelCount": 1173,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 23,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "effc93599fd36bcc25bc3dc377fc20105279e048d78986e3668713faba5bae91",
+        "targetExactOccupancyHash": "effc93599fd36bcc25bc3dc377fc20105279e048d78986e3668713faba5bae91",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.09400000000096043
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_piano_m0262",
+      "category": "piano",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1038,
+        "targetVoxelCount": 1038,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "cd6d5fcd75e4c9f530e6128c3c38dc225fd4d5246e8e5d0405fe09506ba7bd94",
+        "targetExactOccupancyHash": "cd6d5fcd75e4c9f530e6128c3c38dc225fd4d5246e8e5d0405fe09506ba7bd94",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.07800000000133878
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_pot_m1349",
+      "category": "pot",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 882,
+        "targetVoxelCount": 882,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 17,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "9bc88a1412fee9645aae9fdb175dd874bc52dc260e96d8e5b9a5bbd70f232721",
+        "targetExactOccupancyHash": "9bc88a1412fee9645aae9fdb175dd874bc52dc260e96d8e5b9a5bbd70f232721",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0470000000022992
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_pot_m0244",
+      "category": "pot",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1043,
+        "targetVoxelCount": 1043,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "053a0674f89704d629a6337e8dd8884974e1558a6140f4624d11e41a4a65a3d8",
+        "targetExactOccupancyHash": "053a0674f89704d629a6337e8dd8884974e1558a6140f4624d11e41a4a65a3d8",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0319999999992433
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_sofa_m1015",
+      "category": "sofa",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 976,
+        "targetVoxelCount": 976,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "44324bcaea00f7cc2e404ec724f388b392d9c474293cff8d670c8d7b19157b75",
+        "targetExactOccupancyHash": "44324bcaea00f7cc2e404ec724f388b392d9c474293cff8d670c8d7b19157b75",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.0470000000022992
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_sofa_m1739",
+      "category": "sofa",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1064,
+        "targetVoxelCount": 1064,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 21,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "2bccc1e6cb798b84a27aec44501ef6460ad7cc51f8f5ffe4edd322a54933f626",
+        "targetExactOccupancyHash": "2bccc1e6cb798b84a27aec44501ef6460ad7cc51f8f5ffe4edd322a54933f626",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.046999999998661224
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_table_m1170",
+      "category": "table",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1094,
+        "targetVoxelCount": 1094,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 21,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "5b6b1f6f17c084b82e3be3dd070dc7365921f713c64ce6817ff1ff674fc791a3",
+        "targetExactOccupancyHash": "5b6b1f6f17c084b82e3be3dd070dc7365921f713c64ce6817ff1ff674fc791a3",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.046999999998661224
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_table_m0352",
+      "category": "table",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 790,
+        "targetVoxelCount": 790,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 15,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "b0a2efae9524e4ef72d27dae3f8c39003be0341f9e1aae610261c6b535ccd517",
+        "targetExactOccupancyHash": "b0a2efae9524e4ef72d27dae3f8c39003be0341f9e1aae610261c6b535ccd517",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.031000000002677552
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m1163",
+      "category": "tower",
+      "status": "success",
+      "outcome": "success_repaired_q2",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1037,
+        "targetVoxelCount": 1040,
+        "addedVoxelCount": 3,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 3,
+        "changeRatio": 0.0028929604628736743,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 0.9971153846153846,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [
+          {
+            "xyz": [
+              21,
+              28,
+              4
+            ],
+            "rgb": [
+              125,
+              133,
+              143
+            ]
+          },
+          {
+            "xyz": [
+              22,
+              27,
+              4
+            ],
+            "rgb": [
+              125,
+              133,
+              143
+            ]
+          },
+          {
+            "xyz": [
+              22,
+              28,
+              4
+            ],
+            "rgb": [
+              125,
+              133,
+              143
+            ]
+          }
+        ],
+        "sourceExactOccupancyHash": "50c989cf3ff1904961ff48db002156ba0ac4b28e83c45448b87507aed3018c2d",
+        "targetExactOccupancyHash": "d0a3360cd3b52e052c68020db882e7d06cf69ec3a050f71d9b0020948aa041e0",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.2969999999986612
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m0998",
+      "category": "tower",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 974,
+        "targetVoxelCount": 974,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "c35045ae0a79fed82213331e4b223021f6edfb7b48df9ffa8398c1a5c9d91a51",
+        "targetExactOccupancyHash": "c35045ae0a79fed82213331e4b223021f6edfb7b48df9ffa8398c1a5c9d91a51",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.046999999998661224
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m1315",
+      "category": "tower",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1196,
+        "targetVoxelCount": 1196,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 23,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "529cd4b9483f78653cee9897219ec7131e4ffcbc227c23b675d6e1d4cf0619fd",
+        "targetExactOccupancyHash": "529cd4b9483f78653cee9897219ec7131e4ffcbc227c23b675d6e1d4cf0619fd",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 6.125
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m1413",
+      "category": "tower",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "search_failed",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 959,
+        "targetVoxelCount": 959,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "ecf447106a34e715231e0792c42259a50aef9a8993b3c8039eeff1d962c9104f",
+        "targetExactOccupancyHash": "ecf447106a34e715231e0792c42259a50aef9a8993b3c8039eeff1d962c9104f",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 5.860000000000582
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m0114",
+      "category": "tower",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1002,
+        "targetVoxelCount": 1002,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 20,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "a6d0c29b3f07effe9f6362d6870a89addfefc9a28e1aa474a6e812fe962a9fdf",
+        "targetExactOccupancyHash": "a6d0c29b3f07effe9f6362d6870a89addfefc9a28e1aa474a6e812fe962a9fdf",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_tower_m0280",
+      "category": "tower",
+      "status": "success",
+      "outcome": "success_original_retained",
+      "baselineStatus": "success",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 1206,
+        "targetVoxelCount": 1206,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 24,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "91b765cb5ad8d24f193ebd259f86e8424c26cc03f8ad5566959a89aabc1a9089",
+        "targetExactOccupancyHash": "91b765cb5ad8d24f193ebd259f86e8424c26cc03f8ad5566959a89aabc1a9089",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_train_m1716",
+      "category": "train",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 953,
+        "targetVoxelCount": 953,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "a2558e773c9b67946c394895046c2fec296a232aa6f5118760afa94deee43f1a",
+        "targetExactOccupancyHash": "a2558e773c9b67946c394895046c2fec296a232aa6f5118760afa94deee43f1a",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.2809999999990396
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_train_m1790",
+      "category": "train",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 953,
+        "targetVoxelCount": 953,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 19,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "e833cb4a5394641d85f2ea498e6429644c2433a386c9134ab98c9a40fde180a7",
+        "targetExactOccupancyHash": "e833cb4a5394641d85f2ea498e6429644c2433a386c9134ab98c9a40fde180a7",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.3430000000007567
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_vessel_m1342",
+      "category": "vessel",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 845,
+        "targetVoxelCount": 845,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 16,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "998abdb4e21a8e80ecefe4239b1f7423f31087f91bbacf71e11bcda93a737df1",
+        "targetExactOccupancyHash": "998abdb4e21a8e80ecefe4239b1f7423f31087f91bbacf71e11bcda93a737df1",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.39099999999962165
+    },
+    {
+      "modelId": "vx80k5p_20261010_A_vessel_m0468",
+      "category": "vessel",
+      "status": "draft",
+      "outcome": "bounded_search_or_repair_not_passed",
+      "baselineStatus": "infeasible_under_selected_policy",
+      "repairAudit": {
+        "passed": true,
+        "originalVoxelCount": 773,
+        "targetVoxelCount": 773,
+        "addedVoxelCount": 0,
+        "removedVoxelCount": 0,
+        "recoloredOriginalVoxelCount": 0,
+        "changedVoxelCount": 0,
+        "changeRatio": 0.0,
+        "maximumChangeRatio": 0.02,
+        "maximumChangedVoxelCount": 15,
+        "occupancyIoU": 1.0,
+        "allAdditionsWithinOneManhattanStepOfOriginal": true,
+        "addedColorsFromOriginalPalette": true,
+        "addedVoxelsInternalXYZRGB": [],
+        "sourceExactOccupancyHash": "faf1fae4b72f7944d191c444800aae2d725d942ba254aea9396489831c087ad6",
+        "targetExactOccupancyHash": "faf1fae4b72f7944d191c444800aae2d725d942ba254aea9396489831c087ad6",
+        "semanticVerified": false,
+        "staticVerified": null,
+        "fullPhysics": false
+      },
+      "elapsedSeconds": 0.5160000000032596
+    }
+  ]
+}

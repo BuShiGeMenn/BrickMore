@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "testCount": 56,
+  "failureCount": 0,
+  "errorCount": 0,
+  "sourceCodeSha256": {
+    "algorithms/voxel_assembly_b/assembly_pipeline.py": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+    "algorithms/voxel_assembly_b/toolkit_snapshot/brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+    "algorithms/voxel_assembly_b/toolkit_snapshot/interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+    "algorithms/voxel_assembly_b/toolkit_snapshot/optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+    "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f",
+    "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+    "algorithms/voxel_assembly_q2/quality_core.py": "c3d0e74a4cce0ddd97def53f5f3d47a1881ef060fe6c4b82903fb4eaeef40da7",
+    "algorithms/voxel_assembly_q2/quality_pipeline.py": "6d1dbf1a8837d4dd793de917cee56fd7d2a3c61a644b7e736d793ee60742ffc7",
+    "algorithms/voxel_assembly_q2/test_quality.py": "e4bf3507db1435185bb8da97a9b1a85f3f25d949bb689ee49874972215aaa90b",
+    "algorithms/voxel_assembly_q2/verify_quality.py": "ae2e96a8f76370979b50e46547af6c21414a37837af8bff2abaf5ca244203152",
+    "tools/optimize_assembly.py": "d2a4398965db57e64d1c803f0f5f3daff6196eba99b991af48cd3bf055ae7dd7"
+  },
+  "auditorBenchmark": {
+    "brickCount": 1000,
+    "repetitions": 10,
+    "identicalResults": true,
+    "fixtureIsSuccessfulAssembly": false,
+    "fixtureScope": "fragmented complete draft; no false physical/stud success",
+    "meanSeconds": {
+      "legacy_recount_roots": 0.04819465000000491,
+      "incremental_independent_dsu": 0.00400536999986798
+    },
+    "observedSpeedup": 12.032508857257493
+  },
+  "exhaustiveTinyOccupancyCases": 255,
+  "randomAuditParityCases": 150,
+  "originalPublishedAlgorithmsModified": false,
+  "fullPhysics": false,
+  "semanticVerified": false
+}
