@@ -2,7 +2,7 @@
 
 ## 最新：钢琴与桌子重拼结果（2026-10-13）
 
-全部 A/B 钢琴、桌子 **7,620 个**模型已重新处理，几何通过 **7,485 个（98.23%）**：钢琴 3,807/3,810（99.92%），桌子 3,678/3,810（96.54%）。新增救回 5,464 个，原成功结果全部保留。完整模型与已修正遮挡的三维预览见 **[最新 Release](https://github.com/BuShiGeMenn/BrickMore/releases/tag/lego-piano-table-retile-7620-20261013-v1)**，详见 [统计、下载与核验](datasets/piano_table_retile_7620/README.md) 和 [12个真实预览样例](preview/piano_table_retile/index.html)。
+全部 A/B 钢琴、桌子 **7,620 个**模型已重新处理，几何通过 **7,485 个（98.23%）**：钢琴 3,807/3,810（99.92%），桌子 3,678/3,810（96.54%）。新增救回 5,464 个，原成功结果全部保留。完整模型与已修正遮挡的三维预览见 **[最新 Release](https://github.com/BuShiGeMenn/BrickMore/releases/tag/lego-piano-table-retile-7620-20261013-v2)**，详见 [统计、下载与核验](datasets/piano_table_retile_7620/README.md) 和 [12个真实预览样例](preview/piano_table_retile/index.html)。
 
 本次预览采用逐像素深度测试，修正长砖的遮挡假象；独立检查全部 1,044,094 块砖未发现砖体重叠。原网格仍为48³、原颜色保留、体素改动≤2%。这是几何通过，物理承载尚无通过结果；其他类别仍沿用原发布。
 
@@ -114,3 +114,5 @@ basket、bed、bench、birdhouse、bookshelf、bottle、bowl、bus、camera、ca
 历史索引未附完整旧坐标，历史旋转/镜像及近重复状态仍为 `unavailable_coordinates`。原AI_A归档中 `awaiting_merge` 是当时的生成快照；当前A/B模型ID、原始占用hash和轴变换规范hash的全量交叉结果见 [merge_report.json](datasets/merge_report.json)。跨批近形筛查没有因合并上传而自动完成。两批均已执行几何排砖与独立导出回读，结果见上文；两批均未做完整物理稳定性验证。
 
 原始任务规格见 [specification_zh.txt](docs/specification_zh.txt)，完整生产说明见 [dataset_readme_zh.md](docs/dataset_readme_zh.md)。
+
+预览 v2：统一使用逐像素遮挡与固定砖缝深度偏移，取消随视角增大的偏移；顶部显示版本标记。16个模型、112视角共210,273个砖体像素与独立射线核对一致；凸点/砖缝样式另检查实际深度状态。模型和拼接结果沿用已核验版本。

@@ -1,6 +1,6 @@
 # 钢琴、桌子：7,620 模型最新重拼与修正预览
 
-[完整模型与预览下载](https://github.com/BuShiGeMenn/BrickMore/releases/tag/lego-piano-table-retile-7620-20261013-v1)。本次处理全部 A/B 钢琴、桌子；日期 2026-10-13。
+[完整模型与预览下载](https://github.com/BuShiGeMenn/BrickMore/releases/tag/lego-piano-table-retile-7620-20261013-v2)。本次处理全部 A/B 钢琴、桌子；日期 2026-10-13。
 
 | 类别 | 模型数 | 原几何通过 | 最新几何通过 | 最新通过率 | 仍失败 |
 |---|---:|---:|---:|---:|---:|
@@ -34,3 +34,5 @@ python -m http.server 8725 --directory piano_table_latest
 **几何通过不是物理通过。** 7,485 个几何成功中 5,233 个需要未标定咬合力，2,252 个咬合力求解未确定；最终自重与完成层自重通过均为 0。`fullPhysics=false`、`staticVerified=null`；没有降低原物理模型或阈值。
 
 本版本作为独立 Release 发布，原模型包和历史拼接包保留原版本。
+
+预览 v2：统一使用逐像素遮挡与固定砖缝深度偏移，取消随视角增大的偏移；顶部显示版本标记。16个模型、112视角共210,273个砖体像素与独立射线核对一致；凸点/砖缝样式另检查实际深度状态。模型和拼接结果沿用已核验版本。

@@ -39,7 +39,7 @@ function previewGpu(canvas){
  gl.deleteShader(vertex);gl.deleteShader(fragment);
  const uniforms=Object.fromEntries(['Angles','Viewport','Center','Depth','Scale','Height','Opacity'].map(n=>[n,gl.getUniformLocation(program,'u'+n)]));
  const state={gl,program,uniforms,position:gl.getAttribLocation(program,'aPosition'),color:gl.getAttribLocation(program,'aColor'),model:null,mode:null,studs:null,mesh:null};
- previewGpuStates.set(canvas,state);canvas.dataset.renderer='webgl-depth-v1';
+ previewGpuStates.set(canvas,state);canvas.dataset.renderer='webgl-depth-v2';
  canvas.addEventListener('webglcontextlost',e=>e.preventDefault());
  canvas.addEventListener('webglcontextrestored',()=>{previewGpuStates.delete(canvas);schedule()});
  return state;
@@ -111,7 +111,10 @@ function render(canvas,model,mode,options={}){
   gl.vertexAttribPointer(state.position,3,gl.FLOAT,false,24,0);gl.vertexAttribPointer(state.color,3,gl.FLOAT,false,24,12);gl.drawArrays(type,0,buffer.count);
  }
  const outlines=options.outlines!==false;
- if(outlines){gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(1,1)}else gl.disable(gl.POLYGON_OFFSET_FILL);
+ // A slope-scaled offset can move a grazing face behind hidden edges. Use
+ // only one fixed depth unit so coplanar seams remain visible without x-ray
+ // outlines when the camera is almost parallel to a brick face.
+ if(outlines){gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(0,1)}else gl.disable(gl.POLYGON_OFFSET_FILL);
  draw(state.mesh.fill,gl.TRIANGLES);gl.disable(gl.POLYGON_OFFSET_FILL);
  gl.depthMask(false);gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);
  if(options.grid!==false){
@@ -123,7 +126,7 @@ function render(canvas,model,mode,options={}){
  }
  if(outlines){gl.uniform1f(u.Opacity,state.mesh.source?.13:.65);gl.lineWidth(1);draw(state.mesh.lines,gl.LINES)}
  gl.depthMask(true);gl.disable(gl.BLEND);
- window.previewRenderDiagnostics??={};window.previewRenderDiagnostics[canvas.id]={renderer:'webgl_per_pixel_depth_v1',depthTestEnabled:gl.isEnabled(gl.DEPTH_TEST),depthBits:gl.getParameter(gl.DEPTH_BITS),faceCount:state.mesh.faceCount,glError:gl.getError()};
+ window.previewRenderDiagnostics??={};window.previewRenderDiagnostics[canvas.id]={renderer:'webgl_per_pixel_depth_v2',depthTestEnabled:gl.isEnabled(gl.DEPTH_TEST),depthBits:gl.getParameter(gl.DEPTH_BITS),outlineSlopeOffset:0,outlineDepthUnits:1,faceCount:state.mesh.faceCount,glError:gl.getError()};
  state.view={scale,cx,cy,width:w,height:h,depthCenter,depthRadius,proportion:Number($('proportion').value)};
  return state.mesh.faceCount;
 }
