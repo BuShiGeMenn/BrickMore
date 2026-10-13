@@ -1,0 +1,479 @@
+{
+  "configuration": {
+    "algorithmVersion": "quality_fresh_local_bridge_retile_delivery_v2",
+    "optimizerVersion": "fresh_local_monochrome_bridge_retile_v2",
+    "sourceRelease": "lego-modular-grounded-ab-80000-20261012-v1",
+    "sourceIndexSha256": "96351672b602fd405c38f1a9ed4358f7838255db9ac7f8cd23a90609451da72f",
+    "driverSha256": "5b7d6617a406b7dde8e80797d6e7c36e7638c74b6ab5fbc9dad33d841d8ed9e1",
+    "reusableDriverSha256": "ab458354f860b63529cf053366477e7262cda69c3f27969cd44021040f043be0",
+    "sourceCodeSha256": {
+      "algorithms/voxel_assembly_b/assemble_one.py": "82690e4a17d8edf6e9fec7e50e0d63053a4542fa0a082d80cf9f5e6208e911ec",
+      "algorithms/voxel_assembly_b/assembly_pipeline.py": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+      "algorithms/voxel_assembly_b/finalize_assembly.py": "8d2452469aeeca5fc65b6705de43a513ee7348ac38989f2d16b7de416848ba17",
+      "algorithms/voxel_assembly_b/layer_cover.py": "7fd0598d1fab9e25cc320f3f7fa43aa88733b56dc06075d958a74b29c939d25e",
+      "algorithms/voxel_assembly_b/toolkit_snapshot/brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+      "algorithms/voxel_assembly_b/toolkit_snapshot/interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+      "algorithms/voxel_assembly_b/toolkit_snapshot/optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+      "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f",
+      "algorithms/voxel_assembly_b/toolkit_snapshot/voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c",
+      "algorithms/voxel_assembly_b/verify_repository.py": "c7fb80d877a58aca9b09f583dd0e8cefa600a8162bf630ea5a29d046668c13cf",
+      "algorithms/voxel_assembly_q2/quality_core.py": "c75bc7b64e34b7476d8f48fa44033722782c9c743e5306d6aa403e18fc3e63ec",
+      "algorithms/voxel_assembly_q2/quality_pipeline.py": "c84b12bf03832f45be30692a1f9b97a68827b0182b35be04c5159d91777fc7e5",
+      "algorithms/voxel_assembly_q2/verify_quality.py": "669034eeb60a4fe0f6b08163af409bdf747b77bc8a4024a04ac8646ff06c3dc8",
+      "algorithms/voxel_assembly_q3/experiment.py": "44c96a231a41b6af4c15bc5ad173cc5399c7da3dc984f11c4631e8ff4430637c",
+      "algorithms/voxel_assembly_q3/gravity_audit.py": "ac17ed9a24cbd9e12d3ad6ce13c04639c5f3e03111203b943a66d441e745a3ab",
+      "algorithms/voxel_assembly_q3/joint_cover.py": "6f9b463ab019868fd40848d624080ab7c1bf2b4c21d937e8c4658cfb188f5c9e",
+      "algorithms/voxel_assembly_q3/verify_q3.py": "272084585d3537342bc49c85c2b9ba40083a6d89932cb055665bc1721a9518ed",
+      "algorithms/voxel_assembly_q4/mixed_cover.py": "cce830785bacd7602f31d4b772433d244117e2043094a159e80db5fa2e57287c",
+      "algorithms/voxel_assembly_q4/mixed_quality.py": "9b9c60fa886c42a94126eccb70d4e44859eeb1db37cd0e20ab22d686996a9afb",
+      "algorithms/voxel_assembly_q4/q4_experiment.py": "864221329ca2a3c6a0128945d56a78d58fa4a52e5d5bd380a2055fd09730d293",
+      "algorithms/voxel_assembly_q4/verify_q4.py": "f801c71cf014c40bc8a60bfe0fff079799539a29896020771e64b70c80635439",
+      "algorithms/voxel_assembly_relaxed/grounded_flow.py": "37c6c88933254d1e6808772580745a2b6810b1bc8a83bc4a2d83fdcf31c918da",
+      "algorithms/voxel_assembly_relaxed/modular_gravity.py": "519ac1d06ea84219d1b261dab53c574c62141bbfa8b8bbbee4094df6b472155e",
+      "algorithms/voxel_assembly_relaxed/real_connectors.py": "dea43575cb98633ce3ad57500a43b824f491987324955e6acd0b5a4b497829d6",
+      "algorithms/voxel_assembly_relaxed/relaxed_core.py": "da16cbb18eb97b510edb1bb039157182733d70c5fc97bc239a60324742c61cd2",
+      "algorithms/voxel_assembly_relaxed/relaxed_pipeline.py": "d499fe37e2eb21cc2e72f3e2682986a979d71fc2da8591dd2b5547ca5e1c7b9e",
+      "algorithms/voxel_assembly_retile/retile_core.py": "fe4c9424efb6fa74bb3bc5113833bb5859e1650f17f387eafb4fdd320fc0c6d6",
+      "algorithms/voxel_assembly_retile/retile_pipeline.py": "22f92a43ce2476dd7f748ebf3f594a801151994e6af9b6f6f0c4f37344f31052",
+      "algorithms/voxel_assembly_retile_full/full_core.py": "d8fd2f24fd681e10fc2cdc115847bd33b2d547178dac5e106e692a3774797ca7",
+      "algorithms/voxel_assembly_retile_full/full_pipeline.py": "e176e6ca8205c6d22ddfb0258e9ce92de1e492b1d7cb9fe024d80ddf91a37c94"
+    },
+    "scope": "Rerun other 19 categories (72,380); preserve all 7,620 completed piano/table results",
+    "modelCount": 80000,
+    "rerunModelCount": 72380,
+    "preservedModelCount": 7620,
+    "options": {
+      "seconds": 8.0,
+      "physicsSeconds": 5.0,
+      "ratio": 0.02
+    },
+    "workers": 16
+  },
+  "requestedModelCount": 80000,
+  "completedModelCount": 80000,
+  "complete": true,
+  "baselinePassed": 65503,
+  "geometryPassed": 79298,
+  "geometryFailed": 702,
+  "recoveredFailures": 13795,
+  "publishedSuccessRegressions": 0,
+  "categoryCounts": {
+    "A_basket": {
+      "modelCount": 1905,
+      "baselinePassed": 1790,
+      "geometryPassed": 1903,
+      "recoveredFailures": 113,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_bed": {
+      "modelCount": 1905,
+      "baselinePassed": 1728,
+      "geometryPassed": 1905,
+      "recoveredFailures": 177,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_bench": {
+      "modelCount": 1905,
+      "baselinePassed": 867,
+      "geometryPassed": 1836,
+      "recoveredFailures": 969,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_birdhouse": {
+      "modelCount": 1905,
+      "baselinePassed": 1493,
+      "geometryPassed": 1905,
+      "recoveredFailures": 412,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_bookshelf": {
+      "modelCount": 1905,
+      "baselinePassed": 1722,
+      "geometryPassed": 1840,
+      "recoveredFailures": 118,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 1,
+      "qualityScreenedSuccess": 1
+    },
+    "A_bottle": {
+      "modelCount": 1905,
+      "baselinePassed": 1292,
+      "geometryPassed": 1879,
+      "recoveredFailures": 587,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_bowl": {
+      "modelCount": 1905,
+      "baselinePassed": 1680,
+      "geometryPassed": 1893,
+      "recoveredFailures": 213,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_bus": {
+      "modelCount": 1905,
+      "baselinePassed": 1239,
+      "geometryPassed": 1905,
+      "recoveredFailures": 666,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_camera": {
+      "modelCount": 1905,
+      "baselinePassed": 1862,
+      "geometryPassed": 1905,
+      "recoveredFailures": 43,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 1,
+      "qualityScreenedSuccess": 0
+    },
+    "A_car": {
+      "modelCount": 1905,
+      "baselinePassed": 998,
+      "geometryPassed": 1905,
+      "recoveredFailures": 907,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_chair": {
+      "modelCount": 1905,
+      "baselinePassed": 1781,
+      "geometryPassed": 1882,
+      "recoveredFailures": 101,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 1,
+      "qualityScreenedSuccess": 0
+    },
+    "A_guitar": {
+      "modelCount": 1905,
+      "baselinePassed": 1842,
+      "geometryPassed": 1905,
+      "recoveredFailures": 63,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_jar": {
+      "modelCount": 1905,
+      "baselinePassed": 1897,
+      "geometryPassed": 1905,
+      "recoveredFailures": 8,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_mug": {
+      "modelCount": 1905,
+      "baselinePassed": 1864,
+      "geometryPassed": 1905,
+      "recoveredFailures": 41,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_piano": {
+      "modelCount": 1905,
+      "baselinePassed": 327,
+      "geometryPassed": 1905,
+      "recoveredFailures": 1578,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_pot": {
+      "modelCount": 1905,
+      "baselinePassed": 1821,
+      "geometryPassed": 1903,
+      "recoveredFailures": 82,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_sofa": {
+      "modelCount": 1905,
+      "baselinePassed": 1904,
+      "geometryPassed": 1905,
+      "recoveredFailures": 1,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_table": {
+      "modelCount": 1905,
+      "baselinePassed": 65,
+      "geometryPassed": 1808,
+      "recoveredFailures": 1743,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_tower": {
+      "modelCount": 1905,
+      "baselinePassed": 1700,
+      "geometryPassed": 1905,
+      "recoveredFailures": 205,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 7,
+      "qualityScreenedSuccess": 0
+    },
+    "A_train": {
+      "modelCount": 1905,
+      "baselinePassed": 1117,
+      "geometryPassed": 1905,
+      "recoveredFailures": 788,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "A_vessel": {
+      "modelCount": 1900,
+      "baselinePassed": 1367,
+      "geometryPassed": 1811,
+      "recoveredFailures": 444,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_basket": {
+      "modelCount": 1900,
+      "baselinePassed": 1828,
+      "geometryPassed": 1897,
+      "recoveredFailures": 69,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_bed": {
+      "modelCount": 1905,
+      "baselinePassed": 1874,
+      "geometryPassed": 1905,
+      "recoveredFailures": 31,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_bench": {
+      "modelCount": 1905,
+      "baselinePassed": 1732,
+      "geometryPassed": 1905,
+      "recoveredFailures": 173,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_birdhouse": {
+      "modelCount": 1905,
+      "baselinePassed": 1901,
+      "geometryPassed": 1905,
+      "recoveredFailures": 4,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_bookshelf": {
+      "modelCount": 1905,
+      "baselinePassed": 1801,
+      "geometryPassed": 1860,
+      "recoveredFailures": 59,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 90,
+      "qualityScreenedSuccess": 80
+    },
+    "B_bottle": {
+      "modelCount": 1905,
+      "baselinePassed": 1904,
+      "geometryPassed": 1905,
+      "recoveredFailures": 1,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_bowl": {
+      "modelCount": 1905,
+      "baselinePassed": 1349,
+      "geometryPassed": 1838,
+      "recoveredFailures": 489,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_bus": {
+      "modelCount": 1905,
+      "baselinePassed": 1769,
+      "geometryPassed": 1830,
+      "recoveredFailures": 61,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_camera": {
+      "modelCount": 1905,
+      "baselinePassed": 1357,
+      "geometryPassed": 1905,
+      "recoveredFailures": 548,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 2,
+      "qualityScreenedSuccess": 2
+    },
+    "B_car": {
+      "modelCount": 1905,
+      "baselinePassed": 1810,
+      "geometryPassed": 1877,
+      "recoveredFailures": 67,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_chair": {
+      "modelCount": 1905,
+      "baselinePassed": 1630,
+      "geometryPassed": 1905,
+      "recoveredFailures": 275,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_guitar": {
+      "modelCount": 1905,
+      "baselinePassed": 1903,
+      "geometryPassed": 1905,
+      "recoveredFailures": 2,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 76,
+      "qualityScreenedSuccess": 34
+    },
+    "B_jar": {
+      "modelCount": 1905,
+      "baselinePassed": 1886,
+      "geometryPassed": 1904,
+      "recoveredFailures": 18,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_mug": {
+      "modelCount": 1905,
+      "baselinePassed": 1888,
+      "geometryPassed": 1903,
+      "recoveredFailures": 15,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_piano": {
+      "modelCount": 1905,
+      "baselinePassed": 0,
+      "geometryPassed": 1902,
+      "recoveredFailures": 1902,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_pot": {
+      "modelCount": 1905,
+      "baselinePassed": 1579,
+      "geometryPassed": 1896,
+      "recoveredFailures": 317,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 5,
+      "qualityScreenedSuccess": 0
+    },
+    "B_sofa": {
+      "modelCount": 1905,
+      "baselinePassed": 1897,
+      "geometryPassed": 1905,
+      "recoveredFailures": 8,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_table": {
+      "modelCount": 1905,
+      "baselinePassed": 1629,
+      "geometryPassed": 1870,
+      "recoveredFailures": 241,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_tower": {
+      "modelCount": 1905,
+      "baselinePassed": 1905,
+      "geometryPassed": 1905,
+      "recoveredFailures": 0,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 37,
+      "qualityScreenedSuccess": 11
+    },
+    "B_train": {
+      "modelCount": 1905,
+      "baselinePassed": 1616,
+      "geometryPassed": 1856,
+      "recoveredFailures": 240,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    },
+    "B_vessel": {
+      "modelCount": 1905,
+      "baselinePassed": 1889,
+      "geometryPassed": 1905,
+      "recoveredFailures": 16,
+      "successRegressions": 0,
+      "finalGravityEquilibriumPassed": 0,
+      "qualityScreenedSuccess": 0
+    }
+  },
+  "physicsStatusCounts": {
+    "requires_uncalibrated_clutch": 63808,
+    "clutch_requirement_inconclusive": 14574,
+    "not_evaluated_geometry_failed": 702,
+    "gravity_equilibrium_passed": 220,
+    "global_tipping_or_zero_margin": 696
+  },
+  "finalGravityEquilibriumPassed": 220,
+  "qualityScreenedSuccess": 128,
+  "addedVoxelCount": 228582,
+  "removedVoxelCount": 125,
+  "recoloredOriginalVoxelCount": 0,
+  "maximumChangeRatio": 0.02,
+  "zeroVoxelChangeSuccessfulModels": 31532,
+  "allActualFilesIndependentlyVerified": true,
+  "allOriginalAndPromptBytesPreserved": true,
+  "gridSize": [
+    48,
+    48,
+    48
+  ],
+  "otherCategoriesReassembled": true,
+  "elapsedSeconds": 4703.513878899976,
+  "staticVerified": null,
+  "fullPhysics": false,
+  "rerunRequestedModelCount": 72380,
+  "preservedRequestedModelCount": 7620,
+  "rerunCompletedModelCount": 72380,
+  "preservedCompletedModelCount": 7620,
+  "freshGeometryPassed": 71808,
+  "verifiedSuccessFallbackCount": 5,
+  "recoveredFailuresThisRerun": 8331,
+  "recoveredFailuresInPreservedCategories": 5464,
+  "actualOriginalSourceBytesPreserved": true,
+  "allFrozenOriginalPromptBytesPreserved": true,
+  "generationVersionCounts": {
+    "fresh_rerun_20261013": 72380,
+    "preserved_piano_table_20261013": 7620
+  }
+}
