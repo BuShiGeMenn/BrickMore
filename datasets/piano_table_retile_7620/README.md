@@ -1,0 +1,36 @@
+# 钢琴、桌子：7,620 模型最新重拼与修正预览
+
+[完整模型与预览下载](https://github.com/BuShiGeMenn/BrickMore/releases/tag/lego-piano-table-retile-7620-20261013-v1)。本次处理全部 A/B 钢琴、桌子；日期 2026-10-13。
+
+| 类别 | 模型数 | 原几何通过 | 最新几何通过 | 最新通过率 | 仍失败 |
+|---|---:|---:|---:|---:|---:|
+| 钢琴 | 3,810 | 327 | 3,807 | 99.92% | 3 |
+| 桌子 | 3,810 | 1,694 | 3,678 | 96.54% | 132 |
+| 合计 | 7,620 | 2,021 | 7,485 | 98.23% | 135 |
+
+新增救回 5,464 个原失败项；2,021 个原成功结果全部保留。原始 48×48×48 模型及 38,100 条原五级双语记录保持原字节；保留原体素颜色，新增＋删除总改动≤2%。本次所选结果删除 0 格，新增总计 34,329 格。其他类别沿用原发布，未据此宣称新的 80,000 全量通过率。
+
+## 下载与预览
+
+下载四个 `piano_A/B_1905_models.zip`、`table_A/B_1905_models.zip` 及 `piano_table_metadata_preview.zip`，解压到同一目录。四个模型包的路径互不重叠，元数据包提供完整索引、最新 `index.html`、核验报告及实际运行源码快照。也可从仓库根目录运行：
+
+```text
+python tools/download_piano_table.py --output piano_table_latest --extract
+python -m http.server 8725 --directory piano_table_latest
+```
+
+浏览器打开 `http://127.0.0.1:8725/index.html`，可查看全部 7,620 个实际结果，按类别、批次、状态和编号筛选，旋转对照原体素与实际排砖。指定示例：`index.html?model=vx80k5p_20261010_A_piano_m0039`。
+
+预览已修正长砖遮挡：采用逐像素深度测试，替换按整面平均距离排序的旧显示。7 个视角共 15,241 个像素与独立射线/长方体最近表面检查一致。全量 1,044,094 块砖独立检查无砖体重叠；A 批钢琴、桌子第 39 个另使用实际安装的官方 LDraw 零件网格尺寸核对，均无砖体相交且占用和颜色一致。凸点仅为显示示意，砖体碰撞检查不将合法凸点进入插槽算作穿模。
+
+仓库还提供 [12 个真实结果的预览](../../preview/piano_table_retile/index.html)。下载或克隆仓库后启动本地文件服务查看；这些样例与完整包中的对应文件字节一致。
+
+## 文件与判定
+
+每模型路径为 `results/<A或B>/<piano或table>/<modelId>/`。包含原模型及原提示词、派生目标、`assembly.json`、实际 TXT/LDR、几何验证、物理报告及仅新增失败证据。成功为 `model.txt` / `model.ldr`，失败明确命名为 `.draft`，失败草稿仍覆盖完整目标。
+
+原提示词继续对应原模型；派生目标发生改变时没有重新验证或重绑原提示词。完整统计见 [summary.json](summary.json)，逐项清单见 [assembly_index.jsonl](assembly_index.jsonl)，校验与下载地址见 [download_manifest.json](download_manifest.json)。各 ZIP 自带逐文件 SHA-256 清单，下载器检查整包及解压文件 SHA，并使用封存的源码对实际 JSON/TXT/LDR 回读。
+
+**几何通过不是物理通过。** 7,485 个几何成功中 5,233 个需要未标定咬合力，2,252 个咬合力求解未确定；最终自重与完成层自重通过均为 0。`fullPhysics=false`、`staticVerified=null`；没有降低原物理模型或阈值。
+
+本版本作为独立 Release 发布，原模型包和历史拼接包保留原版本。

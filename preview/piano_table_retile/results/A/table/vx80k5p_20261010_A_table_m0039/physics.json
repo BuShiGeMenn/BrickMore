@@ -1,0 +1,58 @@
+{
+  "auditorVersion": "gravity_contact_equilibrium_q3_v2",
+  "assumptions": {
+    "studPitchMeters": 0.008,
+    "brickHeightMeters": 0.0096,
+    "massKilogramsPerOccupiedStudBrick": 0.001,
+    "internalContactHalfWidthStuds": 0.25,
+    "groundInsetStuds": 0.05,
+    "gravityMetersPerSecondSquared": 9.80665,
+    "massModel": "uniform mass proportional to occupied stud-brick volume; uncalibrated",
+    "contactModel": "vertical forces at four inset square contact corners per actual overlapping stud",
+    "groundModel": "unanchored horizontal plane, compression only",
+    "loadCase": "self weight only; no external lateral force, impact, or baseplate anchoring",
+    "clutchCapacityNewtons": null
+  },
+  "fullPhysics": false,
+  "staticVerified": null,
+  "calibratedPhysicalVerified": null,
+  "gravityEquilibriumPassed": false,
+  "solver": "scipy.optimize.linprog/HiGHS",
+  "scipyVersion": "1.18.1",
+  "centerOfMassInternalStudBrick": [
+    23.5,
+    23.5,
+    11.933940774487471
+  ],
+  "groundSupportPolygonStuds": [
+    [
+      14.05,
+      17.05
+    ],
+    [
+      32.95,
+      17.05
+    ],
+    [
+      32.95,
+      29.95
+    ],
+    [
+      14.05,
+      29.95
+    ]
+  ],
+  "groundTippingMarginMeters": 0.05159999999999999,
+  "gravityOnlyTippingAngleDegrees": 24.24661405661333,
+  "assumedMassKilograms": 0.878,
+  "compressionSolverStatus": 2,
+  "contactPointCount": 2548,
+  "tensionSolverStatus": 2,
+  "status": "clutch_requirement_inconclusive",
+  "minimumRequiredClutchNewtonsPerStud": null,
+  "layerPrefixGravityPassed": false,
+  "layerPrefixReports": [],
+  "geometryPolicyVersion": "modular_grounded_actual_connectors_flow_v4",
+  "geometryGuardAdapterVersion": "modular_geometry_guard_rejected_solver_diagnostics_v2",
+  "geometryGuardAdapterSha256": "519ac1d06ea84219d1b261dab53c574c62141bbfa8b8bbbee4094df6b472155e"
+}

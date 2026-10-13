@@ -1,0 +1,20 @@
+{
+  "status": "not_evaluated_geometry_failed",
+  "gravityEquilibriumPassed": false,
+  "layerPrefixGravityPassed": false,
+  "assumptions": {
+    "studPitchMeters": 0.008,
+    "brickHeightMeters": 0.0096,
+    "massKilogramsPerOccupiedStudBrick": 0.001,
+    "internalContactHalfWidthStuds": 0.25,
+    "groundInsetStuds": 0.05,
+    "gravityMetersPerSecondSquared": 9.80665,
+    "massModel": "uniform mass proportional to occupied stud-brick volume; uncalibrated",
+    "contactModel": "vertical forces at four inset square contact corners per actual overlapping stud",
+    "groundModel": "unanchored horizontal plane, compression only",
+    "loadCase": "self weight only; no external lateral force, impact, or baseplate anchoring",
+    "clutchCapacityNewtons": null
+  },
+  "staticVerified": null,
+  "fullPhysics": false
+}

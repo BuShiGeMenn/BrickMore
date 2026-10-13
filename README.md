@@ -1,5 +1,11 @@
 # BrickMore
 
+## 最新：钢琴与桌子重拼结果（2026-10-13）
+
+全部 A/B 钢琴、桌子 **7,620 个**模型已重新处理，几何通过 **7,485 个（98.23%）**：钢琴 3,807/3,810（99.92%），桌子 3,678/3,810（96.54%）。新增救回 5,464 个，原成功结果全部保留。完整模型与已修正遮挡的三维预览见 **[最新 Release](https://github.com/BuShiGeMenn/BrickMore/releases/tag/lego-piano-table-retile-7620-20261013-v1)**，详见 [统计、下载与核验](datasets/piano_table_retile_7620/README.md) 和 [12个真实预览样例](preview/piano_table_retile/index.html)。
+
+本次预览采用逐像素深度测试，修正长砖的遮挡假象；独立检查全部 1,044,094 块砖未发现砖体重叠。原网格仍为48³、原颜色保留、体素改动≤2%。这是几何通过，物理承载尚无通过结果；其他类别仍沿用原发布。
+
 ## 80,000 模型合并数据集
 
 AI_A + AI_B 共 **80,000 个体素模型、400,000 条中英双语训练记录**。两批原始模型、颜色及ID均保留；每个模型的L1—L5五条记录引用同一份几何。完整原始模型通过两个原始Release提供，拼接与校验成果另行发布；Git源码区保存统一索引、算法、汇总报告和真实样例，不把完整分包塞进Git历史。
@@ -31,6 +37,8 @@ python tools/download_dataset.py --shard all --output dataset_80000 --extract
 Q4 全量处理与独立新发布的流程见 [80,000模型 Q4 交付通道](datasets/q4_assembly_80000/README.md)。全量统计与发布状态以该目录生成的 `assembly_summary.json` 和 `release_verification.json` 为准；不会把实验样本通过率替代全量结果，也不会覆盖旧Release。
 
 新增算法 [真实连接件与多接地组件放宽档](algorithms/voxel_assembly_relaxed/README.md)，发布通道见 [80,000模型多接地组件交付](datasets/relaxed_assembly_80000/README.md)。允许独立组件和上方stud附件，但每个组件须通过实际stud路径到地面，仍拒绝悬空组件、碰撞、改色和超过2%体素改动。物理力与力矩见证模型及未知咬合力的保守判定不降低。目标几何通过率≥60%，以全量实测为准，不等于物理通过；新旧原模型和发布均不覆盖。
+
+新增 [钢琴与桌子接口重铺优化](algorithms/voxel_assembly_retile/README.md)：把已有砖与局部新增格一起重铺成真实跨接梁，沿用放宽版的真实stud、接地、原色及2%改动规则，物理模型不变。完整两类7,620个处理结果已独立发布，见 [最新统计与下载](datasets/piano_table_retile_7620/README.md)。之前固定失败样例的对照仍保留在 [优化报告](algorithms/voxel_assembly_retile/reports/OPTIMIZATION_REPORT.md)，不作为8万全量的新通过率。单模型入口为 `python tools/optimize_assembly_retile.py run model.json --out new_result`。
 
 新增算法源码位于 **[algorithms/voxel_assembly_b](algorithms/voxel_assembly_b/README.md)**，方法标注见 [ALGORITHM.md](algorithms/voxel_assembly_b/ALGORITHM.md)。包括同色标准砖贪心/beam拼接、MRV逐层位集精确覆盖，以及从真实JSON/TXT/LDR独立回读的几何校验；纯CPU，无模型权重或API密钥。
 

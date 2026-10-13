@@ -1,0 +1,150 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>钢琴与桌子 · 12 个真实样例</title><style>
+*{box-sizing:border-box}body{margin:0;background:#edf1f5;color:#203141;font:15px system-ui,"Microsoft YaHei",sans-serif}header{background:white;padding:23px 28px;border-bottom:1px solid #dce4eb}h1{font-size:25px;margin:0 0 8px}p{line-height:1.65;color:#637588;margin:6px 0}main{max-width:1450px;padding:22px;margin:auto}table{border-collapse:collapse;width:100%;background:#fff;border-radius:10px;margin-bottom:18px}th,td{padding:11px 15px;text-align:left;border-bottom:1px solid #e3e9ed}th{font-size:13px;color:#65778a}.filters,.toolbar,.summary{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:13px 0}button,select,input{font:inherit;padding:9px;border-radius:7px;border:1px solid #cedae3;background:white;color:#203141}button{cursor:pointer}#modelList{min-width:330px;max-width:100%}.chip{padding:6px 11px;border:1px solid #d9e4ea;border-radius:7px;background:white}.badge{font-size:13px;background:#fff0f2;color:#993e4b;border:1px solid #e4bcc4;padding:5px 9px;border-radius:6px}.badge.pass{background:#eefaf3;color:#216946;border-color:#bcdec9}.views{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:#fff;border:1px solid #dce4eb;border-radius:12px;overflow:hidden}.panelhead{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;gap:6px}canvas{display:block;width:100%;height:470px;cursor:grab;touch-action:none;background:#f3f6f9}.caption{font-size:12px;color:#65788a;padding:10px 15px;line-height:1.65}.note{margin-top:17px;background:white;padding:16px;border:1px solid #dce4eb;border-radius:10px}.links{display:flex;gap:15px;flex-wrap:wrap;margin:12px 0}a{color:#14746d}#modelId{font-size:13px;color:#697d8b;overflow-wrap:anywhere}#loading{color:#167367}@media(max-width:800px){.views{grid-template-columns:1fr}canvas{height:360px}main{padding:12px}header{padding:18px}th,td{padding:8px;font-size:12px}}
+</style></head><body><header><h1>钢琴与桌子 · 12 个真实样例</h1><p>最新全量 7,620 个模型中选取 12 个实际结果。以下表格仅统计这 12 个样例。左边是原始体素，右边是本次实际拼接结果；拖动旋转，滚轮缩放。</p></header><main>
+<table><thead><tr><th>类别</th><th>样例数</th><th>原几何通过</th><th>新几何通过</th><th>仍失败</th></tr></thead><tbody><tr><td>钢琴</td><td>6</td><td>0（0.00%）</td><td>5（83.33%）</td><td>1</td></tr><tr><td>桌子</td><td>6</td><td>1（16.67%）</td><td>3（50.00%）</td><td>3</td></tr></tbody></table>
+<div class="filters"><select id="category"><option value="">两类全部</option><option value="piano">钢琴</option><option value="table">桌子</option></select><select id="shard"><option value="">A、B 两批</option><option value="A">A 批</option><option value="B">B 批</option></select><select id="status"><option value="">全部结果</option><option value="success">几何通过</option><option value="draft">仍未通过</option></select><input id="search" placeholder="搜索模型编号" aria-label="搜索模型编号"><span id="count"></span></div>
+<div class="toolbar"><button id="previous">上一个</button><select id="modelList" aria-label="选择模型"></select><button id="next">下一个</button><span id="loading"></span></div><h2 id="title"></h2><div id="modelId"></div><div class="summary" id="summary"></div>
+<div class="toolbar"><button data-view="iso">立体</button><button data-view="front">正视</button><button data-view="side">侧视</button><button data-view="top">俯视</button><button data-view="bottom">看底部</button><button id="reset">重置视角</button><select id="proportion"><option value="1">体素比例</option><option value="1.2">乐高高度比例</option></select><label><input type="checkbox" id="studs" checked>显示凸点示意</label><input type="checkbox" id="ghost" hidden></div>
+<div class="views"><section class="panel"><div class="panelhead"><strong>原始体素模型</strong><span id="sourceCount"></span></div><canvas id="sourceCanvas"></canvas><div class="caption">原始文件和颜色均保留，网格为 48×48×48。</div></section><section class="panel"><div class="panelhead"><strong id="draftHeading">本次拼接结果</strong><select id="mode"><option value="risk">问题高亮</option><option value="draft">原色砖块</option><option value="target">派生目标体素</option></select><span id="badge" class="badge"></span></div><canvas id="draftCanvas"></canvas><div class="caption">红色表示未接地组件；凸点仅作显示示意。几何通过与物理状态分别记录。</div></section></div>
+<div class="note"><strong id="reason"></strong><p id="details"></p><div class="links"><a id="sourceLink">原始模型 JSON</a><a id="draftLink">拼接 LDR</a><a id="txtLink">排砖 TXT</a><a id="reportLink">检查报告</a></div></div><p>下载：<a href="https://github.com/BuShiGeMenn/BrickMore/releases/download/lego-piano-table-retile-7620-20261013-v1/piano_A_1905_models.zip">钢琴 A 批</a> · <a href="https://github.com/BuShiGeMenn/BrickMore/releases/download/lego-piano-table-retile-7620-20261013-v1/piano_B_1905_models.zip">钢琴 B 批</a> · <a href="https://github.com/BuShiGeMenn/BrickMore/releases/download/lego-piano-table-retile-7620-20261013-v1/table_A_1905_models.zip">桌子 A 批</a> · <a href="https://github.com/BuShiGeMenn/BrickMore/releases/download/lego-piano-table-retile-7620-20261013-v1/table_B_1905_models.zip">桌子 B 批</a> · <a href="../../datasets/piano_table_retile_7620/README.md">结果说明</a></p>
+</main><script id="index-data" type="application/json">[{"id":"vx80k5p_20261010_A_piano_m0001","category":"piano","shard":"A","passed":true,"path":"results/A/piano/vx80k5p_20261010_A_piano_m0001"},{"id":"vx80k5p_20261010_A_piano_m0039","category":"piano","shard":"A","passed":true,"path":"results/A/piano/vx80k5p_20261010_A_piano_m0039"},{"id":"vx80k5p_20261010_A_piano_m1905","category":"piano","shard":"A","passed":true,"path":"results/A/piano/vx80k5p_20261010_A_piano_m1905"},{"id":"vx80k5p_20261010_A_table_m0001","category":"table","shard":"A","passed":true,"path":"results/A/table/vx80k5p_20261010_A_table_m0001"},{"id":"vx80k5p_20261010_A_table_m0039","category":"table","shard":"A","passed":true,"path":"results/A/table/vx80k5p_20261010_A_table_m0039"},{"id":"vx80k5p_20261010_A_table_m0013","category":"table","shard":"A","passed":false,"path":"results/A/table/vx80k5p_20261010_A_table_m0013"},{"id":"vx80k5p_20261010_B_piano_m0001","category":"piano","shard":"B","passed":true,"path":"results/B/piano/vx80k5p_20261010_B_piano_m0001"},{"id":"vx80k5p_20261010_B_piano_m0039","category":"piano","shard":"B","passed":true,"path":"results/B/piano/vx80k5p_20261010_B_piano_m0039"},{"id":"vx80k5p_20261010_B_piano_m0371","category":"piano","shard":"B","passed":false,"path":"results/B/piano/vx80k5p_20261010_B_piano_m0371"},{"id":"vx80k5p_20261010_B_table_m0001","category":"table","shard":"B","passed":true,"path":"results/B/table/vx80k5p_20261010_B_table_m0001"},{"id":"vx80k5p_20261010_B_table_m0039","category":"table","shard":"B","passed":false,"path":"results/B/table/vx80k5p_20261010_B_table_m0039"},{"id":"vx80k5p_20261010_B_table_m0024","category":"table","shard":"B","passed":false,"path":"results/B/table/vx80k5p_20261010_B_table_m0024"}]</script><script>
+'use strict';const rows=JSON.parse(document.getElementById('index-data').textContent),$=id=>document.getElementById(id);let filtered=rows,selected=0,model=null,yaw=.72,pitch=.43,zoom=1,scheduled=false,request=0;
+// Opaque rectangular bodies use a per-pixel depth buffer. Whole-face painter
+// sorting cannot represent occlusion between long faces and small nearer parts.
+const previewGpuStates=new WeakMap();
+const previewFaces=[
+ {n:[1,0,0],v:[[1,0,0],[1,0,1],[1,1,1],[1,1,0]],shade:.80},
+ {n:[-1,0,0],v:[[0,0,1],[0,0,0],[0,1,0],[0,1,1]],shade:.80},
+ {n:[0,1,0],v:[[0,1,0],[1,1,0],[1,1,1],[0,1,1]],shade:1},
+ {n:[0,-1,0],v:[[0,0,1],[1,0,1],[1,0,0],[0,0,0]],shade:.62},
+ {n:[0,0,1],v:[[1,0,1],[0,0,1],[0,1,1],[1,1,1]],shade:.67},
+ {n:[0,0,-1],v:[[0,0,0],[1,0,0],[1,1,0],[0,1,0]],shade:.67}
+];
+function key(x,y,z){return `${x},${y},${z}`}
+function projection(x,y,z){
+ const height=Number($('proportion').value),s=Math.sin(yaw),c=Math.cos(yaw),sp=Math.sin(pitch),cp=Math.cos(pitch);
+ y*=height;return [x*c-z*s,-y*cp+(x*s+z*c)*sp,(x*s+z*c)*cp+y*sp];
+}
+function previewGpu(canvas){
+ if(previewGpuStates.has(canvas))return previewGpuStates.get(canvas);
+ const gl=canvas.getContext('webgl',{alpha:false,antialias:true,depth:true,preserveDrawingBuffer:true});
+ if(!gl)throw Error('浏览器无法启用三维预览，请使用支持 WebGL 的浏览器。');
+ function shader(type,text){const s=gl.createShader(type);gl.shaderSource(s,text);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s}
+ const vertex=shader(gl.VERTEX_SHADER,`
+ attribute vec3 aPosition;attribute vec3 aColor;
+ uniform vec2 uAngles,uViewport,uCenter,uDepth;uniform float uScale,uHeight;
+ varying vec3 vColor;
+ void main(){
+  float s=sin(uAngles.x),c=cos(uAngles.x),sp=sin(uAngles.y),cp=cos(uAngles.y);
+  vec3 p=aPosition;p.y*=uHeight;
+  float x=p.x*c-p.z*s,z=p.x*s+p.z*c;
+  float y=-p.y*cp+z*sp,d=z*cp+p.y*sp;
+  gl_Position=vec4((x-uCenter.x)*uScale*2.0/uViewport.x,-(y-uCenter.y)*uScale*2.0/uViewport.y,-(d-uDepth.x)/uDepth.y,1.0);
+  vColor=aColor;
+ }`);
+ const fragment=shader(gl.FRAGMENT_SHADER,`
+ precision mediump float;varying vec3 vColor;uniform float uOpacity;
+ void main(){gl_FragColor=vec4(vColor,uOpacity);}`);
+ const program=gl.createProgram();gl.attachShader(program,vertex);gl.attachShader(program,fragment);gl.linkProgram(program);
+ if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));
+ gl.deleteShader(vertex);gl.deleteShader(fragment);
+ const uniforms=Object.fromEntries(['Angles','Viewport','Center','Depth','Scale','Height','Opacity'].map(n=>[n,gl.getUniformLocation(program,'u'+n)]));
+ const state={gl,program,uniforms,position:gl.getAttribLocation(program,'aPosition'),color:gl.getAttribLocation(program,'aColor'),model:null,mode:null,studs:null,mesh:null};
+ previewGpuStates.set(canvas,state);canvas.dataset.renderer='webgl-depth-v1';
+ canvas.addEventListener('webglcontextlost',e=>e.preventDefault());
+ canvas.addEventListener('webglcontextrestored',()=>{previewGpuStates.delete(canvas);schedule()});
+ return state;
+}
+function previewRgb(c,shade=1){return [c>>16&255,c>>8&255,c&255].map(v=>Math.min(1,Math.max(0,v*shade/255)))}
+function previewMesh(model,mode,studs){
+ const source=mode==='source'||mode==='target',cells=mode==='source'?model.source:model.target;
+ const objects=source?cells.map(p=>[...p.slice(0,3),1,1,1,p[3],0]):mode==='before'?model.beforeBricks:model.bricks;
+ const occupied=new Set(cells.map(p=>key(...p.slice(0,3)))),owner=new Set();
+ if(!source)for(const b of objects)for(let x=b[0];x<b[0]+b[3];x++)for(let z=b[2];z<b[2]+b[5];z++)owner.add(key(x,b[1],z));
+ const fill=[],lines=[];let faceCount=0;
+ function vertex(array,p,c){array.push(...p,...c)}
+ function triangle(a,b,c,rgb){vertex(fill,a,rgb);vertex(fill,b,rgb);vertex(fill,c,rgb)}
+ function line(a,b,rgb=[.075,.105,.13]){vertex(lines,a,rgb);vertex(lines,b,rgb)}
+ function face(vertices,rgb){triangle(vertices[0],vertices[1],vertices[2],rgb);triangle(vertices[0],vertices[2],vertices[3],rgb);faceCount++}
+ for(const b of objects){
+  const [x,y,z,dx,dy,dz,c,bad]=b,paint=(mode==='risk'||mode==='before')&&bad?0xdf6372:c;
+  for(const f of previewFaces){
+   if(source&&occupied.has(key(x+f.n[0],y+f.n[1],z+f.n[2])))continue;
+   const points=f.v.map(p=>[x+p[0]*dx,y+p[1]*dy,z+p[2]*dz]);face(points,previewRgb(paint,f.shade));
+   if(source)for(let i=0;i<4;i++)line(points[i],points[(i+1)%4]);
+  }
+  if(!source){
+   const corners=[];for(let i=0;i<8;i++)corners.push([x+(i&1?dx:0),y+(i&2?dy:0),z+(i&4?dz:0)]);
+   for(let i=0;i<8;i++)for(const bit of [1,2,4])if(!(i&bit))line(corners[i],corners[i|bit]);
+  }
+  if(!source&&studs){
+   for(let sx=x;sx<x+dx;sx++)for(let sz=z;sz<z+dz;sz++){
+    if(owner.has(key(sx,y+dy,sz)))continue;
+    const top=[],bottom=[],segments=16,center=[sx+.5,y+dy+.16,sz+.5];
+    for(let i=0;i<segments;i++){const a=i*2*Math.PI/segments,px=sx+.5+Math.cos(a)*.24,pz=sz+.5+Math.sin(a)*.24;top.push([px,center[1],pz]);bottom.push([px,y+dy,pz])}
+    for(let i=0;i<segments;i++){
+     const j=(i+1)%segments;triangle(center,top[i],top[j],previewRgb(paint,1.08));
+     face([bottom[i],bottom[j],top[j],top[i]],previewRgb(paint,.75+.12*Math.cos((i+.5)*2*Math.PI/segments)));
+     line(top[i],top[j]);
+    }
+    faceCount++;
+   }
+  }
+ }
+ return {fill:new Float32Array(fill),lines:new Float32Array(lines),faceCount,source};
+}
+function previewUpload(gl,values){const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,values,gl.STATIC_DRAW);return {buffer,count:values.length/6}}
+function clearPreviewCanvas(canvas){
+ const state=previewGpuStates.get(canvas);if(!state)return;
+ state.gl.clearColor(243/255,246/255,249/255,1);state.gl.clear(state.gl.COLOR_BUFFER_BIT|state.gl.DEPTH_BUFFER_BIT);
+}
+function render(canvas,model,mode,options={}){
+ const box=canvas.getBoundingClientRect(),dpr=window.devicePixelRatio||1,w=box.width,h=box.height;
+ const width=Math.round(w*dpr),height=Math.round(h*dpr);if(canvas.width!==width)canvas.width=width;if(canvas.height!==height)canvas.height=height;
+ const state=previewGpu(canvas),gl=state.gl;if(gl.isContextLost())return 0;
+ const all=model.source.concat(model.target),lo=[0,1,2].map(i=>Math.min(...all.map(p=>p[i]))),hi=[0,1,2].map(i=>Math.max(...all.map(p=>p[i]))+1),bounds=[];
+ for(const x of [lo[0],hi[0]])for(const y of [lo[1],hi[1]+.2])for(const z of [lo[2],hi[2]])bounds.push(projection(x,y,z));
+ const left=Math.min(...bounds.map(p=>p[0])),right=Math.max(...bounds.map(p=>p[0])),top=Math.min(...bounds.map(p=>p[1])),bottom=Math.max(...bounds.map(p=>p[1]));
+ const scale=Math.min((w-58)/(right-left+1),(h-55)/(bottom-top+1))*zoom,cx=(left+right)/2,cy=(top+bottom)/2;
+ const near=Math.max(...bounds.map(p=>p[2])),far=Math.min(...bounds.map(p=>p[2])),depthCenter=(near+far)/2,depthRadius=(near-far)/2+2;
+ const studs=options.studs??$('studs').checked;
+ if(state.model!==model||state.mode!==mode||state.studs!==studs){
+  if(state.mesh){gl.deleteBuffer(state.mesh.fill.buffer);gl.deleteBuffer(state.mesh.lines.buffer)}
+  const mesh=previewMesh(model,mode,studs);state.mesh={fill:previewUpload(gl,mesh.fill),lines:previewUpload(gl,mesh.lines),faceCount:mesh.faceCount,source:mesh.source};
+  state.model=model;state.mode=mode;state.studs=studs;
+ }
+ gl.viewport(0,0,width,height);gl.clearColor(243/255,246/255,249/255,1);gl.clearDepth(1);gl.depthMask(true);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
+ gl.enable(gl.DEPTH_TEST);gl.depthFunc(gl.LEQUAL);gl.disable(gl.CULL_FACE);gl.disable(gl.BLEND);gl.useProgram(state.program);
+ const u=state.uniforms;gl.uniform2f(u.Angles,yaw,pitch);gl.uniform2f(u.Viewport,w,h);gl.uniform2f(u.Center,cx,cy);gl.uniform2f(u.Depth,depthCenter,depthRadius);
+ gl.uniform1f(u.Scale,scale);gl.uniform1f(u.Height,Number($('proportion').value));gl.uniform1f(u.Opacity,1);
+ function draw(buffer,type){
+  gl.bindBuffer(gl.ARRAY_BUFFER,buffer.buffer);gl.enableVertexAttribArray(state.position);gl.enableVertexAttribArray(state.color);
+  gl.vertexAttribPointer(state.position,3,gl.FLOAT,false,24,0);gl.vertexAttribPointer(state.color,3,gl.FLOAT,false,24,12);gl.drawArrays(type,0,buffer.count);
+ }
+ const outlines=options.outlines!==false;
+ if(outlines){gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(1,1)}else gl.disable(gl.POLYGON_OFFSET_FILL);
+ draw(state.mesh.fill,gl.TRIANGLES);gl.disable(gl.POLYGON_OFFSET_FILL);
+ gl.depthMask(false);gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);
+ if(options.grid!==false){
+  const lines=[],rgb=[.86,.90,.93];
+  for(let n=0;n<=12;n++){const x=lo[0]+n*(hi[0]-lo[0])/12,z=lo[2]+n*(hi[2]-lo[2])/12;
+   for(const p of [[x,0,lo[2]],[x,0,hi[2]],[lo[0],0,z],[hi[0],0,z]])lines.push(...p,...rgb);
+  }
+  const grid=previewUpload(gl,new Float32Array(lines));gl.uniform1f(u.Opacity,1);draw(grid,gl.LINES);gl.deleteBuffer(grid.buffer);
+ }
+ if(outlines){gl.uniform1f(u.Opacity,state.mesh.source?.13:.65);gl.lineWidth(1);draw(state.mesh.lines,gl.LINES)}
+ gl.depthMask(true);gl.disable(gl.BLEND);
+ window.previewRenderDiagnostics??={};window.previewRenderDiagnostics[canvas.id]={renderer:'webgl_per_pixel_depth_v1',depthTestEnabled:gl.isEnabled(gl.DEPTH_TEST),depthBits:gl.getParameter(gl.DEPTH_BITS),faceCount:state.mesh.faceCount,glError:gl.getError()};
+ state.view={scale,cx,cy,width:w,height:h,depthCenter,depthRadius,proportion:Number($('proportion').value)};
+ return state.mesh.faceCount;
+}
+
+function redraw(){scheduled=false;if(!model)return;window.previewState={modelId:model.id,sourceFaces:render($('sourceCanvas'),model,'source'),draftFaces:render($('draftCanvas'),model,$('mode').value),mode:$('mode').value};}function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(redraw)}}
+function graph(bricks){const parent=bricks.map((_,i)=>i),owner=new Map();function find(i){while(parent[i]!==i){parent[i]=parent[parent[i]];i=parent[i]}return i}bricks.forEach((b,i)=>{for(let x=b.x;x<b.x+b.h;x++)for(let z=b.y;z<b.y+b.w;z++)owner.set(key(x,b.z,z),i)});for(const [p,i] of owner){const [x,y,z]=p.split(',').map(Number),j=owner.get(key(x,y+1,z));if(j!==undefined)parent[find(i)]=find(j)}const ground=new Set(bricks.map((b,i)=>b.z===0?find(i):null).filter(i=>i!==null));return bricks.map((_,i)=>!ground.has(find(i)))}
+async function get(path){const r=await fetch(path);if(!r.ok)throw Error('无法读取结果文件');return r.json()}
+async function choose(i){if(!filtered.length)return;selected=(i+filtered.length)%filtered.length;$('modelList').value=String(selected);const row=filtered[selected],ticket=++request;$('loading').textContent='读取模型…';try{const [source,target,assembly,report]=await Promise.all(['source.model.json','target.model.json','assembly.json','report.json'].map(n=>get(row.path+'/'+n)));if(ticket!==request)return;const bad=graph(assembly.bricks),points=v=>v.voxels.map(p=>[p.x,p.y,p.z,(p.color[0]<<16)|(p.color[1]<<8)|p.color[2]]);model={id:row.id,source:points(source),target:points(target),bricks:assembly.bricks.map((b,j)=>[b.x,b.z,b.y,b.h,1,b.w,b.color,Number(bad[j])]),missing:[]};const g=report.geometryValidation,r=report.repairAudit;$('title').textContent=(row.category==='piano'?'钢琴':'桌子')+' · '+row.shard+' 批 · 模型 '+row.id.split('_m')[1];$('modelId').textContent=row.id;$('sourceCount').textContent=r.originalVoxelCount+' 个体素';$('summary').innerHTML=`<span class="chip">${g.brickCount} 块砖</span><span class="chip">未接地 ${g.studComponentCount-g.groundedComponentCount} 个组件</span><span class="chip">新增 ${r.addedVoxelCount} / 删除 ${r.removedVoxelCount} 格</span><span class="chip">漏拼 ${g.missingVoxelCount} 格</span>`;$('badge').textContent=g.passed?'几何通过':'仍未通过';$('badge').className='badge'+(g.passed?' pass':'');$('reason').textContent=g.passed?'所有组件均有真实上下凸点连接至地面。':'红色组件仍缺少接地路径，已保留失败标签。';const status=report.physics.status,description={requires_uncalibrated_clutch:'需要尚未标定的咬合力，未获物理通过',clutch_requirement_inconclusive:'咬合力求解未确定，未获物理通过',physics_solver_inconclusive:'物理求解未确定，未获物理通过',not_evaluated_geometry_failed:'几何未通过，未进入物理筛查',gravity_equilibrium_passed:'在报告假设下通过最终自重平衡'}[status]||status;$('details').textContent='原有格子不改色；本次目标修改比例 '+(r.changeRatio*100).toFixed(3)+'%。物理状态：'+description+'。完成层自重检查：'+(report.qualityScreenedSuccess?'通过':'未通过')+'。';const suffix=g.passed?'':'.draft';$('sourceLink').href=row.path+'/source.model.json';$('draftLink').href=row.path+'/model'+suffix+'.ldr';$('txtLink').href=row.path+'/model'+suffix+'.txt';$('reportLink').href=row.path+'/report.json';$('loading').textContent='';schedule()}catch(e){if(ticket===request)$('loading').textContent=e.message;console.error(e)}}
+function filter(){const q=$('search').value.trim().toLowerCase();filtered=rows.filter(r=>(!$('category').value||r.category===$('category').value)&&(!$('shard').value||r.shard===$('shard').value)&&(!$('status').value||r.passed===($('status').value==='success'))&&r.id.toLowerCase().includes(q));$('count').textContent=filtered.length+' 个模型';$('modelList').replaceChildren(...filtered.map((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=(r.category==='piano'?'钢琴':'桌子')+' '+r.shard+' '+r.id.split('_m')[1]+' · '+(r.passed?'几何通过':'仍失败');return o}));if(filtered.length)choose(0);else{++request;$('loading').textContent='没有匹配的模型';$('title').textContent='没有匹配的模型';$('modelId').textContent='';$('summary').replaceChildren();$('reason').textContent='';$('details').textContent='';model=null;for(const id of ['sourceCanvas','draftCanvas'])clearPreviewCanvas($(id))}}
+for(const canvas of [$('sourceCanvas'),$('draftCanvas')]){let drag=null;canvas.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY};canvas.setPointerCapture(e.pointerId)});canvas.addEventListener('pointermove',e=>{if(!drag)return;yaw+=(e.clientX-drag.x)*.008;pitch=Math.max(-1.4,Math.min(1.45,pitch+(e.clientY-drag.y)*.007));drag={x:e.clientX,y:e.clientY};schedule()});canvas.addEventListener('pointerup',()=>drag=null);canvas.addEventListener('pointercancel',()=>drag=null);canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.4,Math.min(4,zoom*Math.exp(-e.deltaY*.001)));schedule()},{passive:false})}
+
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{[yaw,pitch]=({iso:[.72,.43],front:[0,.05],side:[Math.PI/2,.05],top:[0,1.45],bottom:[.72,-.8]})[b.dataset.view];zoom=1;schedule()}));$('reset').addEventListener('click',()=>{yaw=.72;pitch=.43;zoom=1;schedule()});$('previous').addEventListener('click',()=>choose(selected-1));$('next').addEventListener('click',()=>choose(selected+1));$('modelList').addEventListener('change',()=>choose(Number($('modelList').value)));for(const id of ['category','shard','status'])$(id).addEventListener('change',filter);$('search').addEventListener('input',filter);for(const id of ['mode','studs','proportion'])$(id).addEventListener('change',schedule);window.addEventListener('resize',schedule);const requestedId=new URLSearchParams(location.search).get('model'),requested=rows.find(r=>r.id===requestedId);if(requested){$('category').value=requested.category;$('shard').value=requested.shard;$('search').value=requested.id}filter();
+</script></body></html>
