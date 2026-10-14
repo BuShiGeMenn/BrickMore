@@ -1,6 +1,12 @@
 # BrickMore
 
-## 最新：全量接口重铺结果（80,000 模型）
+## 最新：钢琴 B 重生成（双层键床，零增删拼接）
+
+B 批钢琴 **1,905 个全部重新生成并拼接通过**，每个琴键下方有两层连续键床，黑白键表面可见。拼接新增、删除和改色均为 **0**，保留新源模型的轮廓与颜色。B 类提示词采用 A 批五级格式，明确加入键床厚度和连接约束，比例与哈希按新几何更新。
+
+**[最新修订 Release](https://github.com/BuShiGeMenn/BrickMore/releases/tag/lego-piano-b-supported-1905-20261014-v1)** 包含新 B 原始模型、全部拼接文件，以及 **1,905 模型 / 9,525 提示词**的通过训练子集。其他 **78,095 个模型沿用下方原完整发布**。当前80,000模型预览采用原完整发布加本次B钢琴替换清单，不重复运行其他类别。完整下载、核验和合并预览见 [B钢琴交付说明](datasets/piano_b_supported_1905/README.md)，算法与零增删策略见 [算法说明](algorithms/voxel_piano_b_support/README.md)。
+
+## 原完整发布：全量接口重铺结果（80,000 模型）
 
 其他 19 类 **72,380 个实际重跑**，钢琴与桌子 **7,620 个原结果完整保留**。合计几何通过 **79,298/80,000（99.12%）**，比原放宽发布新增通过 **13,795 个**，旧成功退步 0 个。全部原始 48³ 体素和五级提示词保留，预览沿用遮挡修正 v2。完整结果见 [最新 Release](https://github.com/BuShiGeMenn/BrickMore/releases/tag/lego-retile-ab-80000-20261013-v1)；统计和核验命令见 [全量交付说明](datasets/retile_assembly_80000/README.md)，算法见 [全量重铺入口](algorithms/voxel_assembly_retile_full/README.md)。
 
