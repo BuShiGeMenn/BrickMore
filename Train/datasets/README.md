@@ -10,7 +10,7 @@
 
 ## 统一下载与合并
 
-在仓库根目录运行，Python 3.11或更新版本：
+在`Train` 目录运行，Python 3.11或更新版本：
 
 ```text
 python tools/download_dataset.py --shard all --output dataset_80000 --extract

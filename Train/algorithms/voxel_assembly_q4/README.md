@@ -18,7 +18,7 @@
 
 ## 复现
 
-Python 3.12、SciPy 1.18。命令从仓库根目录执行，数据路径自行替换：
+Python 3.12、SciPy 1.18。命令从`Train` 目录执行，数据路径自行替换：
 
 ```text
 python algorithms/voxel_assembly_q4/verify_q4.py

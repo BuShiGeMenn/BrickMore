@@ -6,7 +6,7 @@
 
 沿用同色标准矩形砖、实际上下凸点接触、每组件接地、零原格改色和新增＋删除≤原占用体素 2%规则。源模型及五级提示词字节保留，修改仅存在于派生目标中，派生 ID 使用 `_q7_`。实际 JSON/TXT/LDR 由两个几何检查器回读，失败草稿也覆盖完整目标。物理筛查仍使用原求解器与预算；未知咬合力不计通过，几何通过不代表完整实物认证。
 
-从仓库根目录运行，Python 3.11+，物理筛查需要 NumPy/SciPy：
+从`Train` 目录运行，Python 3.11+，物理筛查需要 NumPy/SciPy：
 
 ```text
 python algorithms/voxel_assembly_retile_full/full_pipeline.py run model.json --out new_result --baseline old_result --seconds 8 --physics-seconds 5

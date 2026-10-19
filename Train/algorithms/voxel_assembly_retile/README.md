@@ -6,7 +6,7 @@
 
 ## 单模型运行
 
-从仓库根目录运行，Python 3.11+；物理筛查和旧求解回退使用 NumPy/SciPy。
+从`Train` 目录运行，Python 3.11+；物理筛查和旧求解回退使用 NumPy/SciPy。
 
 ```text
 python tools/optimize_assembly_retile.py run your_model.json --out new_result --seconds 8 --physics-seconds 5

@@ -30,7 +30,7 @@ v3 已取消初版“每块最多新增四个体素”的候选限制，改为�
 
 ## 运行
 
-依赖 Python、NumPy、SciPy（实测 SciPy 1.18.0；需要含 `milp` 的版本）。在仓库根目录：
+依赖 Python、NumPy、SciPy（实测 SciPy 1.18.0；需要含 `milp` 的版本）。在`Train` 目录：
 
 ```powershell
 python algorithms/voxel_assembly_q3/experiment.py --dataset D:\360Downloads\C\voxel_A_20261011 --baseline-index D:\360Downloads\C\voxel_A_20261011_assembly\runs\A_layer_refinement_v1\selected_assembly_index.jsonl --out downloads\quality_q3\A_uniform --count 80 --seconds 24 --workers 6

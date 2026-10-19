@@ -12,7 +12,7 @@
 
 ## 下载与预览
 
-下载四个 `piano_A/B_1905_models.zip`、`table_A/B_1905_models.zip` 及 `piano_table_metadata_preview.zip`，解压到同一目录。四个模型包的路径互不重叠，元数据包提供完整索引、最新 `index.html`、核验报告及实际运行源码快照。也可从仓库根目录运行：
+下载四个 `piano_A/B_1905_models.zip`、`table_A/B_1905_models.zip` 及 `piano_table_metadata_preview.zip`，解压到同一目录。四个模型包的路径互不重叠，元数据包提供完整索引、最新 `index.html`、核验报告及实际运行源码快照。也可从`Train` 目录运行：
 
 ```text
 python tools/download_piano_table.py --output piano_table_latest --extract

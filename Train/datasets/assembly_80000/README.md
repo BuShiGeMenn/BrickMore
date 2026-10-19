@@ -6,7 +6,7 @@
 
 ## 下载与验证
 
-在仓库根目录运行：
+在`Train` 目录运行：
 
 ```text
 python tools/download_assembly.py --shard all --output assembly_80000 --workers 4 --extract

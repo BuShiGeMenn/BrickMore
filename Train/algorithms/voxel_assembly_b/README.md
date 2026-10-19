@@ -23,7 +23,7 @@ python -B assemble_one.py your_model.json --out output_model
 
 数据集根目录需有 manifest.json，以及其中 modelPath 或 modelJsonPath 指向的规范 model.json。必须显式指定下载或解压后的实际路径；源码不会自动下载40,000个模型。
 
-从仓库根目录运行的 A/B 通用入口（包含全量再读回和公开装配包校验，不自动上传）：
+从`Train` 目录运行的 A/B 通用入口（包含全量再读回和公开装配包校验，不自动上传）：
 
 ```text
 python tools/run_shard_assembly.py --shard A --dataset PATH_TO_AI_A --out PATH_TO_NEW_RUN --delivery PATH_TO_NEW_DELIVERY --workers 16

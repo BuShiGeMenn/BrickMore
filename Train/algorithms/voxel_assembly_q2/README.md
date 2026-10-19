@@ -40,7 +40,7 @@
 
 ## 使用
 
-在仓库根目录运行单模型优化，输入仍为Y-up整数坐标和RGB三元组：
+在`Train` 目录运行单模型优化，输入仍为Y-up整数坐标和RGB三元组：
 
 ```text
 python -B tools/optimize_assembly.py one --input MODEL.json --out NEW_OUTPUT --ratio 0.02 --seconds 12 --nodes 60000
