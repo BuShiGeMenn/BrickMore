@@ -1,0 +1,60 @@
+{
+  "input": {
+    "candidates": 480,
+    "available_glbs": 918,
+    "by_variant": {
+      "raw": 473,
+      "stitched": 445
+    },
+    "missing_by_variant": {
+      "raw": 7,
+      "stitched": 35
+    },
+    "categories": [
+      "basket",
+      "bed",
+      "bench",
+      "birdhouse",
+      "bookshelf",
+      "bottle",
+      "bowl",
+      "bus",
+      "camera",
+      "car",
+      "chair",
+      "guitar",
+      "jar",
+      "mug",
+      "piano",
+      "pot"
+    ]
+  },
+  "overall": {
+    "raw": {
+      "count": 473,
+      "siglip2": 0.05431916804769222,
+      "pe": 0.20398050472612864,
+      "truncated": {
+        "siglip2": 3,
+        "pe": 123
+      }
+    },
+    "stitched": {
+      "count": 445,
+      "siglip2": 0.05523313278841629,
+      "pe": 0.20203736191720106,
+      "truncated": {
+        "siglip2": 3,
+        "pe": 119
+      }
+    }
+  },
+  "paired_count": 438,
+  "paired_mean_delta": {
+    "siglip2": -0.001063962369358964,
+    "pe": -0.0012436427141977772
+  },
+  "rendered": 918,
+  "per_view_images": 7344,
+  "completed_at_utc": "2026-10-21T13:46:59.274734+00:00"
+}

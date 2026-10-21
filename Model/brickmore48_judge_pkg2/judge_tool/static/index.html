@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>BrickMore-48 人工判决工具</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; background: #1c1f24; color: #e8e6e0; }
+  header { display: flex; align-items: center; gap: 16px; padding: 10px 16px; background: #262a31; border-bottom: 2px solid #3485a0; position: sticky; top: 0; z-index: 10; }
+  header h1 { font-size: 16px; color: #7ec8e3; }
+  select { background: #2f343d; color: #fff; border: 1px solid #4a5160; border-radius: 4px; padding: 4px 8px; font-size: 14px; }
+  #progress { font-size: 13px; color: #9aa3b0; }
+  #exportBtn { margin-left: auto; background: #3485a0; color: #fff; border: 0; border-radius: 4px; padding: 6px 14px; cursor: pointer; font-size: 13px; }
+  #exportBtn:hover { background: #2a6d8a; }
+  main { padding: 14px 16px; max-width: 2000px; margin: 0 auto; }
+  #grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .card { background: #262a31; border-radius: 8px; overflow: hidden; border: 2px solid transparent; }
+  .card.selected { border-color: #46c46a; box-shadow: 0 0 12px rgba(70,196,106,.35); }
+  .card canvas, .bv-canvas canvas { width: 100%; aspect-ratio: 4/3; display: block; cursor: grab; background: #e2dfd7; }
+  .bv-canvas canvas { aspect-ratio: auto; height: 100%; }
+  canvas:active { cursor: grabbing; }
+  .meta { padding: 8px 10px; }
+  .tag { font-size: 12px; font-weight: 700; color: #7ec8e3; display: flex; align-items: center; gap: 8px; }
+  .tag .b1 { color: #e0a94a; }
+  .swap { margin-left: auto; background: none; border: 1px solid #4a5160; color: #9aa3b0; border-radius: 3px; font-size: 11px; padding: 1px 7px; cursor: pointer; }
+  .swap:hover { color: #fff; border-color: #7ec8e3; }
+  .prompt { font-size: 11px; color: #8d96a3; margin-top: 4px; line-height: 1.35; }
+  .zh { font-size: 12.5px; color: #ded9cd; margin-top: 3px; line-height: 1.45; padding-bottom: 2px; }
+  .btnrow { display: flex; gap: 6px; margin-top: 7px; }
+  .pick { flex: 1; background: #2f343d; color: #cfd6df; border: 1px solid #4a5160; border-radius: 4px; padding: 5px 0; cursor: pointer; font-size: 13px; }
+  .card.selected .pick { background: #2f7a44; border-color: #46c46a; color: #fff; }
+  .zoom { background: #2f343d; color: #cfd6df; border: 1px solid #4a5160; border-radius: 4px; padding: 5px 12px; cursor: pointer; font-size: 13px; }
+  .zoom:hover, .pick:hover { border-color: #7ec8e3; }
+  #note { width: 100%; margin-top: 10px; background: #262a31; border: 1px solid #4a5160; border-radius: 4px; color: #e8e6e0; padding: 6px 8px; font-size: 13px; }
+  #saveBar { margin-top: 12px; display: flex; gap: 10px; align-items: center; }
+  #noneBtn { background: none; border: 1px solid #c45b5b; color: #e08585; border-radius: 4px; padding: 8px 16px; cursor: pointer; font-size: 13px; }
+  #noneBtn:hover { background: #3a2a2a; }
+  #noneBtn.active { background: #8a3232; border-color: #ff7b7b; color: #fff; font-weight: 700; }
+  #saveBtn { background: #46c46a; border: 0; color: #08210f; font-weight: 700; border-radius: 4px; padding: 8px 22px; cursor: pointer; font-size: 14px; }
+  #saveBtn:disabled { background: #555; color: #999; cursor: default; }
+  #saveMsg { font-size: 13px; color: #9aa3b0; }
+  .hint { font-size: 12px; color: #77808c; margin-left: auto; }
+  /* 大图浮层 */
+  #bigview { display: none; position: fixed; inset: 0; background: rgba(10,12,15,.88); z-index: 100; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+  #bigview .bv-inner { width: min(86vw, 1500px); height: 76vh; display: flex; }
+  #bigview .bv-canvas { flex: 1; border-radius: 8px; overflow: hidden; }
+  #bigview .bv-meta { color: #ded9cd; font-size: 14px; max-width: min(86vw, 1500px); }
+  #bigview .bv-close { position: fixed; top: 14px; right: 20px; background: #3485a0; color: #fff; border: 0; border-radius: 4px; padding: 8px 18px; font-size: 14px; cursor: pointer; }
+  #bigview .bv-swap { position: fixed; top: 14px; right: 150px; background: #2f343d; color: #cfd6df; border: 1px solid #4a5160; border-radius: 4px; padding: 8px 14px; font-size: 13px; cursor: pointer; display: none; }
+  #bigview .bv-swap:hover { border-color: #7ec8e3; color: #fff; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "./js/three.module.js",
+               "three/addons/loaders/GLTFLoader.js": "./js/GLTFLoader.js",
+               "three/addons/loaders/DRACOLoader.js": "./js/DRACOLoader.js",
+               "three/addons/controls/OrbitControls.js": "./js/OrbitControls.js" } }
+</script>
+</head>
+<body>
+<header>
+  <h1>BrickMore-48 人工判决</h1>
+  类别 <select id="catSel"></select>
+  等级 <select id="lvlSel"></select>
+  <span id="progress"></span>
+  <button id="exportBtn">导出判决 JSON</button>
+</header>
+<main>
+  <div id="grid"></div>
+  <input id="note" placeholder="本组备注(可选):为什么选它 / 其他观察">
+  <div id="saveBar">
+    <button id="noneBtn">全部都不合格</button>
+    <button id="saveBtn" disabled>保存本组判决</button>
+    <span id="saveMsg"></span>
+    <span class="hint">左键拖动旋转 · 滚轮缩放 · 右键平移 · 「放大」看大图 · 有重铺版的卡片可切换 原版/重铺 · 判决自动写入 best.md</span>
+  </div>
+</main>
+<div id="bigview">
+  <button class="bv-close">关闭 (Esc)</button>
+  <button class="bv-swap">切换 原版/重铺</button>
+  <div class="bv-inner"><div class="bv-canvas"></div></div>
+  <div class="bv-meta"></div>
+</div>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const ITEMS = await (await fetch('items.json?v=' + Date.now())).json();
+const CATS = Object.keys(ITEMS);
+const ann = await (await fetch('/api/annotations').then(r => r.ok ? r.json() : Promise.resolve([])));
+const annByKey = new Map(ann.map(a => [a.category + '|' + Number(a.level), a]));
+const doneKey = new Set(annByKey.keys());
+
+let curCat = null, curLvl = null, choiceId = null, noneChoice = false;
+
+const catSel = document.getElementById('catSel');
+const lvlSel = document.getElementById('lvlSel');
+CATS.forEach(c => catSel.add(new Option(c, c)));
+[1, 2, 3, 4, 5].forEach(l => lvlSel.add(new Option('L' + l, l)));
+catSel.onchange = lvlSel.onchange = () => load(catSel.value, Number(lvlSel.value));
+
+function updateProgress() {
+  document.getElementById('progress').textContent =
+    `已完成 ${doneKey.size}/${CATS.length * 5} 组 · 当前 ${curCat} L${curLvl}` +
+    (doneKey.has(curCat + '|' + curLvl) ? ' ✓已判' : '');
+}
+
+// ---------- 三维查看器(Blender 真零件 GLB:倒角/真实凸点/标准 1.2 比例;GLB 材质导不出颜色,统一赋 LDraw 黄) ----------
+const BG = 0xc2c3bf;
+const brickMat = new THREE.MeshStandardMaterial({ color: 0xf2cd37, roughness: 0.45, metalness: 0.0 });
+const shadowMat = new THREE.ShadowMaterial({ opacity: 0.12 });
+const draco = new DRACOLoader();
+draco.setDecoderPath('./js/draco/');
+const loader = new GLTFLoader();
+loader.setDRACOLoader(draco);
+const viewers = [];
+
+function disposeGroup(g) {
+  g.traverse(o => { if (o.isMesh || o.isLineSegments || o.isLine) o.geometry.dispose(); });
+}
+
+function makeViewer(canvas, item, big = false) {
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.15;
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(BG);
+  const camera = new THREE.PerspectiveCamera(42, 4 / 3, 0.1, 20000);
+  // 纯灯光:高主光+低环境 → 砖面亮、凹缝深,贴近 Cycles 观感
+  scene.add(new THREE.HemisphereLight(0xffffff, 0xd8d2c4, 0.95));
+  scene.add(new THREE.AmbientLight(0xffffff, 0.14));
+  const key = new THREE.DirectionalLight(0xfff6e8, 0.9);
+  key.castShadow = true;
+  key.shadow.mapSize.set(512, 512);
+  key.shadow.bias = -0.0002;
+  key.shadow.normalBias = 0.05;
+  scene.add(key, key.target);
+  const fill = new THREE.DirectionalLight(0xdfe8f2, 0.12);
+  scene.add(fill);
+  // 地面:只在有阴影处显形,配合雾融入背景 → 无缝摄影棚
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), shadowMat);
+  ground.rotation.x = -Math.PI / 2;
+  ground.receiveShadow = true;
+  scene.add(ground);
+  const controls = new OrbitControls(camera, canvas);
+  controls.enableDamping = true;
+
+  const v = { canvas, item, renderer, scene, camera, controls, model: null, kind: 'raw', big };
+
+  function fit() {
+    const box = new THREE.Box3().setFromObject(v.model);
+    const size = box.getSize(new THREE.Vector3());
+    const maxDim = Math.max(size.x, size.y, size.z, 1e-6);
+    const center = box.getCenter(new THREE.Vector3());
+    camera.near = maxDim / 50; camera.far = maxDim * 60;
+    const dir = new THREE.Vector3(0.8, 0.62, 0.85).normalize().multiplyScalar(maxDim * 2.6);
+    camera.position.copy(center).add(dir);
+    camera.lookAt(center);
+    controls.target.copy(center);
+    camera.updateProjectionMatrix();
+    controls.update();
+    // 主光/阴影机位随模型适配(近顶方向,弱自投影)
+    key.position.copy(center).add(new THREE.Vector3(0.55, 1, 0.5).normalize().multiplyScalar(maxDim * 3));
+    key.target.position.copy(center);
+    const sc = key.shadow.camera, half = maxDim * 0.85;
+    sc.left = -half; sc.right = half; sc.top = half; sc.bottom = -half;
+    sc.near = maxDim * 0.5; sc.far = maxDim * 6;
+    sc.updateProjectionMatrix();
+    key.shadow.normalBias = Math.max(0.05, maxDim * 0.015);
+    // 地面贴模型底部,尺寸远超雾距 → 无缝背景
+    ground.position.set(center.x, box.min.y, center.z);
+    ground.scale.setScalar(maxDim * 40);
+    // 雾让地面远端融进背景色
+    scene.fog = new THREE.Fog(BG, maxDim * 4, maxDim * 16);
+  }
+
+  function build(gltf) {
+    if (v.model) { scene.remove(v.model); disposeGroup(v.model); }
+    const group = gltf.scene;
+    group.traverse(o => { if (o.isMesh) { o.material = brickMat; o.castShadow = true; } });
+    scene.add(group);
+    v.model = group;
+    fit();
+  }
+
+  v.load = kind => {
+    v.kind = kind;
+    const p = kind === 'raw' ? item.glb : item.stitched_glb;
+    loader.load('/obj/' + p, build, undefined, err => console.error('GLB load fail', p, err));
+  };
+  v.load('raw');
+
+  let lastW = 0, lastH = 0, dirty = true, visible = true;
+  // 按需渲染:静止时不重绘,避免 6 个画布的持续渲染占满主线程
+  const io = new IntersectionObserver(es => { visible = es[0].isIntersecting; if (visible) dirty = true; });
+  io.observe(canvas);
+  controls.addEventListener('change', () => { dirty = true; });
+  (function loop() {
+    if (v.dead || !canvas.isConnected) return;
+    requestAnimationFrame(loop);
+    if (!visible) return;
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    if (w && h && (w !== lastW || h !== lastH)) {
+      lastW = w; lastH = h;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      dirty = true;
+    }
+    const moved = controls.update();   // 阻尼运动中返回 true
+    if (moved || dirty) { dirty = false; renderer.render(scene, camera); }
+  })();
+
+  v.dispose = () => {
+    v.dead = true;
+    try { renderer.dispose(); renderer.forceContextLoss(); } catch (e) {}
+    if (v.model) disposeGroup(v.model);
+  };
+  return v;
+}
+
+// ---------- 卡片 ----------
+const grid = document.getElementById('grid');
+
+function disposeViewers() {
+  viewers.forEach(v => v.dispose());
+  viewers.length = 0;
+}
+
+function setNone(on) {
+  noneChoice = on;
+  document.getElementById('noneBtn').classList.toggle('active', on);
+  if (on) {
+    document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+    choiceId = null;
+  }
+  document.getElementById('saveBtn').disabled = !(on || choiceId);
+}
+
+function load(cat, lvl) {
+  disposeViewers();               // 必须先释放 WebGL 上下文,否则切换几组后画布全黑
+  curCat = cat; curLvl = lvl; choiceId = null; noneChoice = false;
+  document.getElementById('noneBtn').classList.remove('active');
+  document.getElementById('note').value = '';
+  document.getElementById('saveMsg').textContent = '';
+  document.getElementById('saveBtn').disabled = true;
+  grid.innerHTML = '';
+  const cands = ITEMS[cat]['L' + lvl];
+  const rec = annByKey.get(cat + '|' + lvl);
+  cands.forEach(item => {
+    const wrap = document.createElement('div');
+    wrap.className = 'card';
+    wrap.innerHTML = `<canvas></canvas><div class="meta">
+      <div class="tag"><span>${item.label}${item.batch === 1 ? ' <span class="b1">[首批]</span>' : ''} · ${item.id}</span>
+        ${item.stitched ? '<button class="swap">看重铺版</button>' : ''}</div>
+      <div class="prompt">${item.prompt}</div>
+      <div class="zh">${item.zh || ''}</div>
+      <div class="btnrow"><button class="pick">选为最佳</button><button class="zoom">放大</button></div></div>`;
+    grid.appendChild(wrap);
+    const v = makeViewer(wrap.querySelector('canvas'), item);
+    v.wrap = wrap;
+    viewers.push(v);
+    const swapBtn = wrap.querySelector('.swap');
+    if (swapBtn) swapBtn.onclick = () => {
+      v.load(v.kind === 'raw' ? 'stitched' : 'raw');
+      swapBtn.textContent = v.kind === 'raw' ? '看重铺版' : '看原版';
+    };
+    wrap.querySelector('.pick').onclick = () => {
+      setNone(false);
+      document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+      wrap.classList.add('selected');
+      choiceId = item.id;
+      document.getElementById('saveBtn').disabled = false;
+    };
+    wrap.querySelector('.zoom').onclick = () => openBig(item);
+  });
+  // 已判过的组:恢复上次的判决状态
+  if (rec) {
+    document.getElementById('note').value = rec.note || '';
+    if (rec.choice_id === 'NONE') {
+      setNone(true);
+    } else {
+      const v = viewers.find(x => x.item.id === rec.choice_id);
+      if (v) {
+        v.wrap.classList.add('selected');
+        choiceId = rec.choice_id;
+        document.getElementById('saveBtn').disabled = false;
+      }
+    }
+    document.getElementById('saveMsg').textContent = '本组已判过,可直接改判并重新保存';
+  }
+  updateProgress();
+}
+
+// ---------- 大图 ----------
+const bigview = document.getElementById('bigview');
+let bigV = null;
+
+function openBig(item) {
+  closeBig();
+  bigview.style.display = 'flex';
+  const holder = bigview.querySelector('.bv-canvas');
+  holder.innerHTML = '';
+  const canvas = document.createElement('canvas');
+  canvas.style.height = '100%';
+  holder.appendChild(canvas);
+  bigV = makeViewer(canvas, item, true);
+  renderBigMeta(item);
+  const swapBtn = bigview.querySelector('.bv-swap');
+  swapBtn.style.display = item.stitched ? 'block' : 'none';
+  swapBtn.onclick = () => {
+    if (!bigV) return;
+    bigV.load(bigV.kind === 'raw' ? 'stitched' : 'raw');
+    renderBigMeta(item);
+  };
+}
+function renderBigMeta(item) {
+  bigview.querySelector('.bv-meta').textContent =
+    `${item.label}${item.batch === 1 ? ' [首批]' : ''} · ${item.id} · ${item.zh || item.prompt}` +
+    (item.stitched ? ` · 当前:${bigV.kind === 'raw' ? '原版' : '重铺版'}` : '');
+}
+function closeBig() {
+  if (bigV) { bigV.dispose(); bigV = null; }
+  bigview.style.display = 'none';
+}
+document.querySelector('.bv-close').onclick = closeBig;
+window.addEventListener('keydown', e => { if (e.key === 'Escape') closeBig(); });
+
+// ---------- 保存 ----------
+document.getElementById('noneBtn').onclick = () => setNone(!noneChoice);
+
+document.getElementById('saveBtn').onclick = async () => {
+  let rec;
+  if (noneChoice) {
+    rec = { category: curCat, level: curLvl, choice_id: 'NONE', choice_label: '全部不合格', choice_prompt: '' };
+  } else {
+    if (!choiceId) return;
+    const chosen = viewers.find(v => v.item.id === choiceId).item;
+    rec = { category: curCat, level: curLvl, choice_id: choiceId, choice_label: chosen.label, choice_prompt: chosen.prompt };
+  }
+  rec.note = document.getElementById('note').value.trim();
+  const r = await fetch('/api/save', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(rec) });
+  const j = await r.json();
+  if (j.ok) {
+    annByKey.set(curCat + '|' + curLvl, rec);
+    doneKey.add(curCat + '|' + curLvl);
+    updateProgress();
+    document.getElementById('saveMsg').textContent = `已保存 ✓ (累计 ${j.total} 组) ${new Date().toLocaleTimeString()}`;
+  } else {
+    document.getElementById('saveMsg').textContent = '保存失败: ' + (j.error || '');
+  }
+};
+
+document.getElementById('exportBtn').onclick = () => window.open('/api/annotations');
+
+load(CATS[0], 1);
+window.__vt = { viewers, THREE };   // 调试句柄
+</script>
+</body>
+</html>

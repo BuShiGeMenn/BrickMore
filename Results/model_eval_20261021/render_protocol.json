@@ -1,0 +1,25 @@
+{
+  "version": "brickmore-eight-view-v1",
+  "width": 512,
+  "height": 512,
+  "azimuth_degrees": [
+    0,
+    45,
+    90,
+    135,
+    180,
+    225,
+    270,
+    315
+  ],
+  "elevation_degrees": 25,
+  "camera": "perspective",
+  "fov_degrees": 42,
+  "sphere_fit_margin": 1.12,
+  "material": "uniform LDraw yellow #f2cd37, matching bundled judge viewer",
+  "background": "#c2c3bf",
+  "exposure": 1.15,
+  "pooling": "max over eight views",
+  "text": "original English prompt; no template",
+  "scope": "semantic image-text alignment; not physical validity or color compliance"
+}

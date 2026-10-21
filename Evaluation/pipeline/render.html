@@ -1,0 +1,91 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>html,body{margin:0;padding:0;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/Model/brickmore48_judge_pkg1/judge_tool/static/js/three.module.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from '/Model/brickmore48_judge_pkg1/judge_tool/static/js/GLTFLoader.js';
+import {DRACOLoader} from '/Model/brickmore48_judge_pkg1/judge_tool/static/js/DRACOLoader.js';
+
+const renderer = new THREE.WebGLRenderer({antialias:true, preserveDrawingBuffer:true});
+renderer.setSize(512,512);
+renderer.setPixelRatio(1);
+renderer.toneMapping=THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure=1.15;
+renderer.shadowMap.enabled=true;
+renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+document.body.appendChild(renderer.domElement);
+const scene=new THREE.Scene();
+scene.background=new THREE.Color(0xc2c3bf);
+scene.add(new THREE.HemisphereLight(0xffffff,0xd8d2c4,.95));
+scene.add(new THREE.AmbientLight(0xffffff,.14));
+const key=new THREE.DirectionalLight(0xfff6e8,.9);
+key.castShadow=true;
+key.shadow.mapSize.set(1024,1024);
+key.shadow.bias=-.0002;
+scene.add(key,key.target);
+const fill=new THREE.DirectionalLight(0xdfe8f2,.12);
+fill.position.set(-1,.5,-1);
+scene.add(fill);
+const brickMaterial=new THREE.MeshStandardMaterial({color:0xf2cd37,roughness:.45,metalness:0});
+const ground=new THREE.Mesh(new THREE.PlaneGeometry(1,1),new THREE.ShadowMaterial({opacity:.12}));
+ground.rotation.x=-Math.PI/2;
+ground.receiveShadow=true;
+scene.add(ground);
+const camera=new THREE.PerspectiveCamera(42,1,.01,10000);
+const decoder=new DRACOLoader();
+decoder.setDecoderPath('/Model/brickmore48_judge_pkg1/judge_tool/static/js/draco/');
+decoder.setWorkerLimit(2);
+const loader=new GLTFLoader().setDRACOLoader(decoder);
+let model;
+window.renderModel=async function(url){
+  if(model){
+    scene.remove(model);
+    const geometries=new Set();
+    model.traverse(object=>{if(object.geometry)geometries.add(object.geometry)});
+    geometries.forEach(geometry=>geometry.dispose());
+    renderer.renderLists.dispose();
+  }
+  model=(await loader.loadAsync(url)).scene;
+  model.updateMatrixWorld(true);
+  model.traverse(object=>{
+    if(object.isMesh){
+      const materials=Array.isArray(object.material)?object.material:[object.material];
+      materials.forEach(material=>{if(material&&material!==brickMaterial)material.dispose()});
+      object.material=brickMaterial;
+      object.castShadow=true;
+    }
+  });
+  scene.add(model);
+  const box=new THREE.Box3().setFromObject(model);
+  if(box.isEmpty())throw new Error('Empty geometry');
+  const sphere=box.getBoundingSphere(new THREE.Sphere());
+  const center=sphere.center;
+  const radius=sphere.radius;
+  if(!Number.isFinite(radius)||radius<=0)throw new Error('Invalid model bounds');
+  const distance=radius/Math.sin(THREE.MathUtils.degToRad(21))*1.12;
+  camera.near=radius/100;
+  camera.far=radius*50;
+  camera.updateProjectionMatrix();
+  key.position.copy(center).add(new THREE.Vector3(.55,1,.5).normalize().multiplyScalar(radius*6));
+  key.target.position.copy(center);
+  Object.assign(key.shadow.camera,{left:-radius*1.5,right:radius*1.5,top:radius*1.5,bottom:-radius*1.5,near:radius*.5,far:radius*12});
+  key.shadow.camera.updateProjectionMatrix();
+  key.shadow.normalBias=radius*.003;
+  ground.position.set(center.x,box.min.y-radius*.0001,center.z);
+  ground.scale.setScalar(radius*80);
+  scene.fog=new THREE.Fog(0xc2c3bf,radius*10,radius*30);
+  const images=[];
+  const elevation=THREE.MathUtils.degToRad(25);
+  for(let view=0;view<8;view++){
+    const azimuth=THREE.MathUtils.degToRad(view*45);
+    camera.position.copy(center).add(new THREE.Vector3(Math.sin(azimuth)*Math.cos(elevation),Math.sin(elevation),Math.cos(azimuth)*Math.cos(elevation)).multiplyScalar(distance));
+    camera.lookAt(center);
+    renderer.render(scene,camera);
+    images.push(renderer.domElement.toDataURL('image/png').split(',')[1]);
+  }
+  return {images,bounds:box.min.toArray().concat(box.max.toArray()),triangles:renderer.info.render.triangles};
+};
+window.rendererInfo=()=>({three:THREE.REVISION,renderer:renderer.getContext().getParameter(renderer.getContext().RENDERER)});
+window.ready=true;
+</script>
