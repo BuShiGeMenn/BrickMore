@@ -1,0 +1,93 @@
+{
+  "scripts": {
+    "structure_kernel": {
+      "path": "Evaluation/BrickNet-master/src/bricknet/score.py",
+      "exists": true,
+      "sha256": "2f491f4cdcc7382dcd7fd6906173f6685147c15325b44e0d52ad65e99ed9fb04"
+    },
+    "released_vqa": {
+      "path": "Evaluation/BrickNet-master/eval/vqascore.py",
+      "exists": true,
+      "sha256": "8dd835076841ae2537a653443c8ab88a8ac4dd7e5bfc7a6ffced19700ae5c449"
+    },
+    "released_pe": {
+      "path": "Evaluation/BrickNet-master/eval/pe.py",
+      "exists": true,
+      "sha256": "ce499bd9bf113163153cbda1fb603e864758f0c58a5b82c47fe214d468b913ff"
+    },
+    "released_siglip2": {
+      "path": "Evaluation/BrickNet-master/eval/siglip2.py",
+      "exists": true,
+      "sha256": "553e43e1b550f51063bfcef48ed568aac245e0a308297294ab3a72c8e860bc32"
+    },
+    "generation_and_retry": {
+      "path": "Evaluation/pipeline/generate_paper_samples.py",
+      "exists": true,
+      "sha256": "76c2708aa5607a3b2ec5c2fce3c584d09ea69dd54446b4df3fc5204ccd3bb9e3"
+    },
+    "structure_and_survival": {
+      "path": "Evaluation/pipeline/evaluate_structure.py",
+      "exists": true,
+      "sha256": "7a740d54219e5e123c7bcc1afdc5cb844694effe0381b9584f1466bf66275944"
+    },
+    "paper_image_scoring": {
+      "path": "Evaluation/pipeline/evaluate_paper_images.py",
+      "exists": true,
+      "sha256": "b23f8290222ff8aa42c911c5a80938989be7f3856fa1c182c1e5a52cc9f6dd11"
+    },
+    "render_and_tar_adapter": {
+      "path": "Evaluation/pipeline/prepare_paper_inputs.py",
+      "exists": true,
+      "sha256": "b72cb67a0523629bfa07824084af36d49bbf827ff3f90d1c18110a69bf79c041"
+    },
+    "perplexity": {
+      "path": "Evaluation/pipeline/evaluate_perplexity.py",
+      "exists": true,
+      "sha256": "1ca526d5af74946e1a6ad467a887f40eae51d76ab9267af6ad0115e0f9dbc9ec"
+    },
+    "report": {
+      "path": "Evaluation/pipeline/report_paper_eval.py",
+      "exists": true,
+      "sha256": "c57dd409a7ecc307a71149fa92b182a6cf8dbde52ae9ae57b800fa3a58613dd8"
+    },
+    "isolated_setup": {
+      "path": "Evaluation/pipeline/setup_paper_environment.cmd",
+      "exists": true,
+      "sha256": "1b19cb1fbbdbf861811cf4699fbdb0ea7159b40fc457b7332eee9c182bea1cc0"
+    }
+  },
+  "missing_scripts": [],
+  "model_extensions": {
+    ".md": 4,
+    ".json": 8,
+    ".py": 4,
+    ".bat": 4,
+    ".glb": 918,
+    ".html": 4,
+    ".js": 32,
+    ".wasm": 4
+  },
+  "potential_structure_inputs": [],
+  "packages": {
+    "bricknet": "0.1.0",
+    "meshlib": "3.1.4.297",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "platformdirs": "4.4.0",
+    "torch": null,
+    "transformers": null,
+    "accelerate": null,
+    "peft": null,
+    "qwen-vl-utils": null,
+    "open_clip_torch": null,
+    "bricknet-render": null,
+    "bpy": null
+  },
+  "limitations": [
+    "GLB is not generated BrickNet path text.",
+    "Official 512 validation samples require data access.",
+    "Original collision numbers require bricknet 0.1.0 + inset meshes.",
+    "Paper says Qwen2.5-VL-7B; released eval code uses Qwen2-VL-7B.",
+    "The published P_inv macro/micro aggregation is not specified in available code."
+  ]
+}

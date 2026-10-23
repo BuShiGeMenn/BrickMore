@@ -1,5 +1,7 @@
 # Model 文件夹的 Base 模型评测
 
+新增的 BrickNet 论文评估入口与脚本盘点见 [PAPER_EVALUATION_README.md](PAPER_EVALUATION_README.md)。原有 Base 流程保持原样；新流程使用独立环境与输出目录。
+
 Python 环境与权重放在项目外：`D:\PythonEnvs\brickmore-eval`。
 调用 `Open-Eval.cmd` 后可使用下面命令；工作目录为 `D:\BrickMore`。
 

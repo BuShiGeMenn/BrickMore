@@ -1,0 +1,59 @@
+<!doctype html><meta charset="utf-8"><title>BrickNet evaluation</title><style>body{font:14px sans-serif;margin:24px}table{border-collapse:collapse}td,th{border:1px solid #ddd;padding:6px}th{position:sticky;top:0;background:#eee}pre{white-space:pre-wrap}</style><h1>BrickNet evaluation</h1><p>NA means unavailable. Each metric retains its own model/protocol. P_inv aggregation and historical reproduction limits are recorded in the source configuration.</p><pre>{
+  &quot;structure_aggregation&quot;: null,
+  &quot;overall&quot;: {
+    &quot;samples&quot;: 2,
+    &quot;siglip2_base&quot;: {
+      &quot;n&quot;: 2,
+      &quot;coverage&quot;: 1.0,
+      &quot;mean&quot;: 3.974736387135636e-06
+    },
+    &quot;pe_base&quot;: {
+      &quot;n&quot;: 2,
+      &quot;coverage&quot;: 1.0,
+      &quot;mean&quot;: 0.14622652530670166
+    }
+  },
+  &quot;by_variant&quot;: {
+    &quot;raw&quot;: {
+      &quot;samples&quot;: 1,
+      &quot;siglip2_base&quot;: {
+        &quot;n&quot;: 1,
+        &quot;coverage&quot;: 1.0,
+        &quot;mean&quot;: 3.7266393064783188e-06
+      },
+      &quot;pe_base&quot;: {
+        &quot;n&quot;: 1,
+        &quot;coverage&quot;: 1.0,
+        &quot;mean&quot;: 0.14627815783023834
+      }
+    },
+    &quot;stitched&quot;: {
+      &quot;samples&quot;: 1,
+      &quot;siglip2_base&quot;: {
+        &quot;n&quot;: 1,
+        &quot;coverage&quot;: 1.0,
+        &quot;mean&quot;: 4.2228334677929524e-06
+      },
+      &quot;pe_base&quot;: {
+        &quot;n&quot;: 1,
+        &quot;coverage&quot;: 1.0,
+        &quot;mean&quot;: 0.14617489278316498
+      }
+    }
+  },
+  &quot;paired_stitched_minus_raw&quot;: {
+    &quot;samples&quot;: 1,
+    &quot;siglip2_base&quot;: {
+      &quot;n&quot;: 1,
+      &quot;coverage&quot;: 1.0,
+      &quot;mean&quot;: 4.961941613146337e-07
+    },
+    &quot;pe_base&quot;: {
+      &quot;n&quot;: 1,
+      &quot;coverage&quot;: 1.0,
+      &quot;mean&quot;: -0.00010326504707336426
+    }
+  },
+  &quot;exact_paper_reproduction&quot;: false,
+  &quot;interpretation&quot;: &quot;Show coverage; do not compare unpaired means as a stitching effect. Do not combine semantic similarity and collision validity into an unvalidated total.&quot;
+}</pre><table><thead><tr><th>sample_id</th><th>package</th><th>candidate_id</th><th>category</th><th>level</th><th>variant</th><th>caption</th><th>siglip2_base</th><th>pe_base</th></tr></thead><tbody><tr><td>brickmore48_judge_pkg1__basket-L1V1__raw</td><td>brickmore48_judge_pkg1</td><td>basket-L1V1</td><td>basket</td><td>L1</td><td>raw</td><td>A round picnic basket.</td><td>3.7266393064783188e-06</td><td>0.14627815783023834</td></tr><tr><td>brickmore48_judge_pkg1__basket-L1V1__stitched</td><td>brickmore48_judge_pkg1</td><td>basket-L1V1</td><td>basket</td><td>L1</td><td>stitched</td><td>A round picnic basket.</td><td>4.2228334677929524e-06</td><td>0.14617489278316498</td></tr></tbody></table>

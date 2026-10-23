@@ -1,0 +1,211 @@
+{
+  "structure_aggregation": null,
+  "overall": {
+    "samples": 2,
+    "siglip2_base": {
+      "n": 2,
+      "coverage": 1.0,
+      "mean": 3.974736387135636e-06
+    },
+    "pe_base": {
+      "n": 2,
+      "coverage": 1.0,
+      "mean": 0.14622652530670166
+    }
+  },
+  "by_variant": {
+    "raw": {
+      "samples": 1,
+      "siglip2_base": {
+        "n": 1,
+        "coverage": 1.0,
+        "mean": 3.7266393064783188e-06
+      },
+      "pe_base": {
+        "n": 1,
+        "coverage": 1.0,
+        "mean": 0.14627815783023834
+      }
+    },
+    "stitched": {
+      "samples": 1,
+      "siglip2_base": {
+        "n": 1,
+        "coverage": 1.0,
+        "mean": 4.2228334677929524e-06
+      },
+      "pe_base": {
+        "n": 1,
+        "coverage": 1.0,
+        "mean": 0.14617489278316498
+      }
+    }
+  },
+  "groups": [
+    {
+      "variant": "raw",
+      "category": "basket",
+      "level": "L1",
+      "samples": 1,
+      "siglip2_base": {
+        "n": 1,
+        "coverage": 1.0,
+        "mean": 3.7266393064783188e-06
+      },
+      "pe_base": {
+        "n": 1,
+        "coverage": 1.0,
+        "mean": 0.14627815783023834
+      }
+    },
+    {
+      "variant": "stitched",
+      "category": "basket",
+      "level": "L1",
+      "samples": 1,
+      "siglip2_base": {
+        "n": 1,
+        "coverage": 1.0,
+        "mean": 4.2228334677929524e-06
+      },
+      "pe_base": {
+        "n": 1,
+        "coverage": 1.0,
+        "mean": 0.14617489278316498
+      }
+    }
+  ],
+  "paired_stitched_minus_raw": {
+    "samples": 1,
+    "siglip2_base": {
+      "n": 1,
+      "coverage": 1.0,
+      "mean": 4.961941613146337e-07
+    },
+    "pe_base": {
+      "n": 1,
+      "coverage": 1.0,
+      "mean": -0.00010326504707336426
+    }
+  },
+  "provenance": {
+    "siglip2_base": {
+      "path": "D:\\BrickMore\\Results\\paper_script_validation_20261024\\siglip2_smoke.jsonl",
+      "sha256": "b078663ebd8a299a3a583e49d7be81b193dec6f7cf617ec430501bb72a28cf18",
+      "configuration": {
+        "metric": "siglip2",
+        "preset": "local",
+        "model": "D:\\PythonEnvs\\brickmore-eval\\cache\\huggingface\\models\\siglip2-base",
+        "requested_revision": null,
+        "dtype": "bfloat16",
+        "device": "cuda:0",
+        "view_batch_size": 1,
+        "min_pixels": null,
+        "max_pixels": null,
+        "quantization": null,
+        "samples": 2,
+        "view_evaluations": 16,
+        "pooling": "max-of-8 then mean-over-models",
+        "paper_code_model_discrepancy": "Qwen2.5-VL-7B in paper vs Qwen2-VL-7B in released code",
+        "exact_paper_reproduction": false,
+        "remaining_protocol_limits": [
+          "historical rendering match not verified",
+          "paper/code VQA discrepancy not resolved"
+        ],
+        "input_manifest_sha256": "65e3eb4e9270a785a2b95b511a7718634f58bba949f8c80771b59f508131423b",
+        "sources": {
+          "paper_common.py": "9f5d15890de5ab59457d620609db9bb7e6e66637fa80cf432808017bbbdbf116",
+          "evaluate_paper_images.py": "b23f8290222ff8aa42c911c5a80938989be7f3856fa1c182c1e5a52cc9f6dd11",
+          "prepare_paper_inputs.py": "b72cb67a0523629bfa07824084af36d49bbf827ff3f90d1c18110a69bf79c041"
+        },
+        "resolved_model": {
+          "model": "D:\\PythonEnvs\\brickmore-eval\\cache\\huggingface\\models\\siglip2-base",
+          "revision": null,
+          "local_files": {
+            "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+            "download_manifest.json": "bd584103e4fe84020388a53dc68ca81c4fe61aac572471263576bb7aa9172cb2",
+            "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+            "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+            "special_tokens_map.json": "baec30ea10906f16adb8c18af7a34023002c1746542612b8b41c9f09e1351351",
+            "tokenizer.json": "cb9140fae3ac5122c972d37adf83e1248471a38147ad76f8215c8872c6fd8322",
+            "tokenizer.model": "61a7b147390c64585d6c3543dd6fc636906c9af3865a5548f27f31aee1d4c8e2",
+            "tokenizer_config.json": "14afe629fe4959b9e0d51e1852b8d9f7ad074f90a1a7125a4fcdd17f06e78fc8"
+          }
+        },
+        "packages": {
+          "torch": "2.8.0+cu128",
+          "torchvision": "0.23.0+cu128",
+          "transformers": "4.57.1",
+          "open_clip_torch": "3.2.0",
+          "timm": "1.0.22",
+          "pillow": "13.0.0",
+          "qwen-vl-utils": null,
+          "accelerate": null,
+          "bitsandbytes": null
+        },
+        "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+        "signature": "91aacc08d5185dd5b1a3f03656a107a078f3dfd09c23be6b5d032176aeda2486"
+      }
+    },
+    "pe_base": {
+      "path": "D:\\BrickMore\\Results\\paper_script_validation_20261024\\pe_smoke.jsonl",
+      "sha256": "f95f8be94906f38f5790f6b0783f0969e0c6018455fa5dabe06363ce056dbf56",
+      "configuration": {
+        "metric": "pe",
+        "preset": "local",
+        "model": "D:\\PythonEnvs\\brickmore-eval\\cache\\huggingface\\models\\pe-base",
+        "requested_revision": null,
+        "dtype": "float32",
+        "device": "cuda:0",
+        "view_batch_size": 1,
+        "min_pixels": null,
+        "max_pixels": null,
+        "quantization": null,
+        "samples": 2,
+        "view_evaluations": 16,
+        "pooling": "max-of-8 then mean-over-models",
+        "paper_code_model_discrepancy": "Qwen2.5-VL-7B in paper vs Qwen2-VL-7B in released code",
+        "exact_paper_reproduction": false,
+        "remaining_protocol_limits": [
+          "historical rendering match not verified",
+          "paper/code VQA discrepancy not resolved"
+        ],
+        "input_manifest_sha256": "65e3eb4e9270a785a2b95b511a7718634f58bba949f8c80771b59f508131423b",
+        "sources": {
+          "paper_common.py": "9f5d15890de5ab59457d620609db9bb7e6e66637fa80cf432808017bbbdbf116",
+          "evaluate_paper_images.py": "b23f8290222ff8aa42c911c5a80938989be7f3856fa1c182c1e5a52cc9f6dd11",
+          "prepare_paper_inputs.py": "b72cb67a0523629bfa07824084af36d49bbf827ff3f90d1c18110a69bf79c041"
+        },
+        "resolved_model": {
+          "model": "D:\\PythonEnvs\\brickmore-eval\\cache\\huggingface\\models\\pe-base",
+          "revision": null,
+          "local_files": {
+            "download_manifest.json": "181bf5899690f8e4def65f89b154aad2fb64843b38d7349dc1d5b877429b5c68",
+            "merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+            "open_clip_config.json": "c08131ecb058e3c8c9ba473f39e18e83b276db4866c5aaeed715484d9ac1dc87",
+            "open_clip_model.safetensors": "825ee22f574a250200c9f4a1ca02f2416643251b795f80c38ba1da61c1aa40df",
+            "special_tokens_map.json": "2cdb3b8331a60c92fc1e55a13e9fd61fd2293c5a51275fdcccd62b780052530e",
+            "tokenizer.json": "43d4281659ce30b6aca2c7485944b3d73925bb7f87c7234daf3b6b094a6d618c",
+            "tokenizer_config.json": "39bae5313c2da6467866dee758e754d69f0e302a875027b142531cb9c51c7c28",
+            "vocab.json": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363"
+          }
+        },
+        "packages": {
+          "torch": "2.8.0+cu128",
+          "torchvision": "0.23.0+cu128",
+          "transformers": "4.57.1",
+          "open_clip_torch": "3.2.0",
+          "timm": "1.0.22",
+          "pillow": "13.0.0",
+          "qwen-vl-utils": null,
+          "accelerate": null,
+          "bitsandbytes": null
+        },
+        "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+        "signature": "b69ce4000c78ab5a475957e433519048ae2b49b5ef9babebc9edec1535bd6952"
+      }
+    }
+  },
+  "exact_paper_reproduction": false,
+  "interpretation": "Show coverage; do not compare unpaired means as a stitching effect. Do not combine semantic similarity and collision validity into an unvalidated total."
+}

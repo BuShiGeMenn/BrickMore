@@ -1,0 +1,36 @@
+{
+  "metric": "placement_invalidity",
+  "bricknet_version": "0.1.0",
+  "backend": "paper-inset-triangle",
+  "parse_only": true,
+  "pinv_aggregation": "both",
+  "input_file_sha256": "17f070142437a6d37cde006598655522d307c70fc7b652e4789faf26fe51bbba",
+  "data_dir": "D:\\PythonEnvs\\brickmore-paper\\cache\\bricknet-v010",
+  "mesh_sha256": {},
+  "packages": {
+    "bricknet": "0.1.0",
+    "meshlib": "3.1.4.297",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pybullet": null
+  },
+  "bricknet_source_sha256": {
+    "__init__.py": "112d16f2249c23f6db91324635c3c6f62bebc080b0d54e7277d0b5c0af1ba49e",
+    "__main__.py": "8a275753454daf2073cc0a12e7ce97959e25df1fb5ab40e39c95f052703d76e6",
+    "_data\\v1\\color_names.json": "f726d32ac52db041b3a9f30befae83a30202988103eea09599d12df533afa7e6",
+    "_data\\v1\\labels.json.xz": "e9e4ef30813a94fa166bba9e407c9434df57b950ee74ab938583b9c28d8417db",
+    "_data\\v1\\part_aliases.json.xz": "1f94db3b84091303f3eba2513f32925fc4c0af406c2008ca486f364c87e03a1b",
+    "_data\\v1\\part_names.json": "445bb0c5fec41fae29543d0fb2b7149da274a2017f10cc9eafdd4fd4df3e7c5e",
+    "collision.py": "f7f0c730312dc9791dec9b5370bc6fa5261784f063f4b3f569558f3f5cfc23e7",
+    "core.py": "917a559beb79487e8246829af8feecd9c34d103a4c538f34030228ba2b50ddd9",
+    "data.py": "7a6384fd26fd6671da34b2e14392593aeefdf292d0b6d3c3506ff76dd31865ad",
+    "graph.py": "3d08f85d526cf31b36de1ba44759deff36a11f1a51602a54348866219cf4b8f2",
+    "score.py": "62f92971140c7005ae1ce3993261488ed8c2e2da6a2082fe82cc1564e981869e",
+    "tree.py": "10fa632649d9c2c05d6a4ca97d9eb261632d3796fe4ee3b3b97f42c4b59a31b3"
+  },
+  "sources": {
+    "paper_common.py": "9f5d15890de5ab59457d620609db9bb7e6e66637fa80cf432808017bbbdbf116",
+    "evaluate_structure.py": "7a740d54219e5e123c7bcc1afdc5cb844694effe0381b9584f1466bf66275944"
+  },
+  "signature": "f46b74788895e684457298816497d5fc86948d5d81aa4234c362632f201320dd"
+}

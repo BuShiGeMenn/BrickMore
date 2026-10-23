@@ -1,0 +1,66 @@
+<!doctype html><meta charset="utf-8"><title>BrickNet evaluation</title><style>body{font:14px sans-serif;margin:24px}table{border-collapse:collapse}td,th{border:1px solid #ddd;padding:6px}th{position:sticky;top:0;background:#eee}pre{white-space:pre-wrap}</style><h1>BrickNet evaluation</h1><p>NA means unavailable. Each metric retains its own model/protocol. P_inv aggregation and historical reproduction limits are recorded in the source configuration.</p><pre>{
+  &quot;structure_aggregation&quot;: {
+    &quot;samples&quot;: 2,
+    &quot;parseable_samples&quot;: 1,
+    &quot;parseable_rate&quot;: 0.5,
+    &quot;collision_observed_samples&quot;: 0,
+    &quot;collision_coverage&quot;: 0.0,
+    &quot;pinv_eligible_samples&quot;: 0,
+    &quot;pinv_eligible_actions&quot;: 0,
+    &quot;invalid_placements&quot;: 0,
+    &quot;pinv_macro&quot;: null,
+    &quot;pinv_micro&quot;: null,
+    &quot;selected_aggregation&quot;: &quot;both&quot;,
+    &quot;pinv&quot;: null,
+    &quot;pinv_aggregation_matches_published_table&quot;: &quot;unverified; original aggregation code not released&quot;,
+    &quot;parseable_and_collision_free_rate_observed&quot;: null,
+    &quot;mean_steps_before_connectivity_failure&quot;: 0.5,
+    &quot;mean_steps_before_collision_or_parse_failure_observed&quot;: null,
+    &quot;statuses&quot;: {
+      &quot;parse_only&quot;: 1,
+      &quot;parse_failed&quot;: 1
+    },
+    &quot;survival&quot;: [
+      {
+        &quot;step&quot;: 0,
+        &quot;connectivity_survival&quot;: 1.0,
+        &quot;collision_survival_observed&quot;: null
+      },
+      {
+        &quot;step&quot;: 1,
+        &quot;connectivity_survival&quot;: 0.5,
+        &quot;collision_survival_observed&quot;: null
+      }
+    ],
+    &quot;backend&quot;: &quot;paper-inset-triangle&quot;,
+    &quot;config_signature&quot;: &quot;f46b74788895e684457298816497d5fc86948d5d81aa4234c362632f201320dd&quot;
+  },
+  &quot;overall&quot;: {
+    &quot;samples&quot;: 2,
+    &quot;pinv_per_model&quot;: {
+      &quot;n&quot;: 0,
+      &quot;coverage&quot;: 0.0,
+      &quot;mean&quot;: null
+    }
+  },
+  &quot;by_variant&quot;: {
+    &quot;unknown&quot;: {
+      &quot;samples&quot;: 2,
+      &quot;pinv_per_model&quot;: {
+        &quot;n&quot;: 0,
+        &quot;coverage&quot;: 0.0,
+        &quot;mean&quot;: null
+      }
+    }
+  },
+  &quot;paired_stitched_minus_raw&quot;: {
+    &quot;samples&quot;: 0,
+    &quot;pinv_per_model&quot;: {
+      &quot;n&quot;: 0,
+      &quot;coverage&quot;: 0,
+      &quot;mean&quot;: null
+    }
+  },
+  &quot;exact_paper_reproduction&quot;: false,
+  &quot;interpretation&quot;: &quot;Show coverage; do not compare unpaired means as a stitching effect. Do not combine semantic similarity and collision validity into an unvalidated total.&quot;
+}</pre><table><thead><tr><th>sample_id</th><th>package</th><th>candidate_id</th><th>category</th><th>level</th><th>variant</th><th>caption</th><th>pinv_per_model</th></tr></thead><tbody><tr><td>fixture_root</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr><tr><td>fixture_invalid</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr></tbody></table>

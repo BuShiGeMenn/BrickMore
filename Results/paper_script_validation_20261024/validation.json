@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-24",
+  "script_implementation_complete": true,
+  "paper_numerical_reproduction_complete": false,
+  "unit_tests": {
+    "distinct_tests": 13,
+    "covered_across_two_environments": 13,
+    "failed_final": 0,
+    "brickmore_eval": {
+      "passed": 11,
+      "skipped_legacy_backend": 2
+    },
+    "brickmore_paper": {
+      "passed": 11,
+      "skipped_torch": 2
+    }
+  },
+  "integration_checks": {
+    "original_bricknet_version": "0.1.0",
+    "real_parser": "passed",
+    "real_meshlib_collision_on_synthetic_cubes": "passed",
+    "missing_mesh_is_unknown": "passed",
+    "parse_only_cli": "passed",
+    "path_to_ldr_cli": "passed",
+    "two_shards_eight_views_each": "passed",
+    "image_scorer_gpu_smoke": {
+      "siglip2": {
+        "samples": 2,
+        "views": 16,
+        "max_absolute_difference": 1.2864870768680703e-07
+      },
+      "pe": {
+        "samples": 2,
+        "views": 16,
+        "max_absolute_difference": 0.0001160651445388794
+      }
+    },
+    "report_csv_html": "passed",
+    "gpu_requirements_resolution_dry_run": "passed",
+    "vqa_generation_ppl_plan_validation": "passed; no model inference"
+  },
+  "not_run": [
+    "official 512 evaluation set",
+    "original complete collision mesh collection",
+    "7B VQA inference",
+    "official Blender renderer",
+    "Qwen3 PT/SFT checkpoint generation",
+    "full held-out perplexity"
+  ],
+  "external_environment": "D:\\PythonEnvs\\brickmore-paper",
+  "source_sha256": {
+    "audit_paper_eval.py": "323375023511ee47175663d13e33f78f7fb52fa4eec7535b18330b018844fbff",
+    "download_models.py": "1f11558b8721468b0654674b61d3310011832b9e752c5e8e28e6007e22456527",
+    "evaluate_models.py": "29b1ec5930dc0ede148a33d97e6015c638a9ddfae3eb7f58a79a164a6e638a96",
+    "evaluate_paper_images.py": "b23f8290222ff8aa42c911c5a80938989be7f3856fa1c182c1e5a52cc9f6dd11",
+    "evaluate_perplexity.py": "1ca526d5af74946e1a6ad467a887f40eae51d76ab9267af6ad0115e0f9dbc9ec",
+    "evaluate_structure.py": "7a740d54219e5e123c7bcc1afdc5cb844694effe0381b9584f1466bf66275944",
+    "generate_paper_samples.py": "76c2708aa5607a3b2ec5c2fce3c584d09ea69dd54446b4df3fc5204ccd3bb9e3",
+    "make_report.py": "184f80720cbdb922c4aefb6dafdf1727b4553cdce566e246532e396bef51e77f",
+    "paper_common.py": "9f5d15890de5ab59457d620609db9bb7e6e66637fa80cf432808017bbbdbf116",
+    "prepare_paper_inputs.py": "b72cb67a0523629bfa07824084af36d49bbf827ff3f90d1c18110a69bf79c041",
+    "report_paper_eval.py": "c57dd409a7ecc307a71149fa92b182a6cf8dbde52ae9ae57b800fa3a58613dd8"
+  },
+  "cli_help_checks": [
+    "audit_paper_eval.py",
+    "evaluate_structure.py",
+    "prepare_paper_inputs.py",
+    "evaluate_paper_images.py",
+    "generate_paper_samples.py",
+    "evaluate_perplexity.py",
+    "report_paper_eval.py"
+  ]
+}
