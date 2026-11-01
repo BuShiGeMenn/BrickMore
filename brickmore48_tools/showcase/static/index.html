@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>BrickMore-48 · 21 类人工精选模型展示</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; background: #1c1f24; color: #e8e6e0; }
+  /* 共享渲染画布:固定铺满窗口,垫在内容之下,不接收鼠标 */
+  #gl { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 1; pointer-events: none; }
+  header { position: relative; z-index: 2; display: flex; align-items: baseline; gap: 14px; padding: 14px 20px 10px; background: #262a31; border-bottom: 2px solid #3485a0; }
+  header h1 { font-size: 17px; color: #7ec8e3; }
+  header span { font-size: 13px; color: #9aa3b0; }
+  main { position: relative; z-index: 2; padding: 16px 20px 30px; max-width: 2000px; margin: 0 auto; }
+  #grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
+  .card { border-radius: 8px; overflow: hidden; background: transparent; }
+  .view { width: 100%; aspect-ratio: 4/3; cursor: grab; }
+  .view:active { cursor: grabbing; }
+  .meta { background: #262a31; padding: 9px 11px; }
+  .title { font-size: 15px; font-weight: 700; color: #7ec8e3; display: flex; align-items: center; gap: 8px; }
+  .title .zh { color: #ded9cd; font-weight: 600; }
+  .badge { font-size: 11px; color: #e0a94a; border: 1px solid #5a4d2c; border-radius: 3px; padding: 0 6px; }
+  .badge.fail { color: #ff8f8f; border-color: #8a3232; background: rgba(138, 50, 50, .25); font-weight: 700; }
+  .prompt { font-size: 11px; color: #8d96a3; margin-top: 4px; line-height: 1.35; }
+  .zh { font-size: 12.5px; color: #ded9cd; margin-top: 3px; line-height: 1.45; }
+  .note { font-size: 11px; color: #c98f8f; margin-top: 3px; }
+  .btnrow { margin-top: 7px; display: flex; }
+  .zoom { width: 100%; background: #2f343d; color: #cfd6df; border: 1px solid #4a5160; border-radius: 4px; padding: 5px 0; cursor: pointer; font-size: 13px; }
+  .zoom:hover { border-color: #7ec8e3; }
+  .hint { position: relative; z-index: 2; text-align: center; font-size: 12px; color: #77808c; padding: 4px 0 0; }
+  /* 大图:全屏透明拖拽层(z2)承接鼠标,关闭按钮/说明浮在上层(z3) */
+  #bigDrag { position: fixed; inset: 0; z-index: 2; display: none; cursor: grab; }
+  #bigDrag:active { cursor: grabbing; }
+  .bv-close { position: fixed; top: 14px; right: 20px; z-index: 3; background: #3485a0; color: #fff; border: 0; border-radius: 4px; padding: 8px 18px; font-size: 14px; cursor: pointer; display: none; }
+  .bv-meta { position: fixed; left: 0; right: 0; bottom: 14px; z-index: 3; text-align: center; color: #3a3a35; font-size: 14px; display: none; text-shadow: 0 0 6px #fff; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "./js/three.module.js",
+               "three/addons/loaders/GLTFLoader.js": "./js/GLTFLoader.js",
+               "three/addons/loaders/DRACOLoader.js": "./js/DRACOLoader.js",
+               "three/addons/controls/OrbitControls.js": "./js/OrbitControls.js" } }
+</script>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<header>
+  <h1>BrickMore-48 · 21 类人工精选模型</h1>
+  <span>每类展示人工判决的最佳模型(最高通过等级)· 左键拖动旋转 · 滚轮缩放 · 右键平移</span>
+</header>
+<main>
+  <div id="grid"></div>
+  <div class="hint">模型为 Blender LDraw 真零件几何 · piano 类人工判决五级未通过,展示其原生可拼重生成版</div>
+</main>
+<div id="bigDrag"></div>
+<button class="bv-close">关闭 (Esc)</button>
+<div class="bv-meta"></div>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const DATA = await (await fetch('showcase.json?v=' + Date.now())).json();
+
+// 渲染参数与判决工具一致;单一 WebGL 上下文 + 裁剪视口(避免浏览器上下文数量上限)
+const BG = 0xc2c3bf;
+const brickMat = new THREE.MeshStandardMaterial({ color: 0xf2cd37, roughness: 0.45, metalness: 0.0 });
+const shadowMat = new THREE.ShadowMaterial({ opacity: 0.12 });
+const draco = new DRACOLoader();
+draco.setDecoderPath('./js/draco/');
+const loader = new GLTFLoader();
+loader.setDRACOLoader(draco);
+
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('gl'), antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.15;
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.setScissorTest(true);
+
+const viewers = [];
+let bigV = null;
+
+function makeViewer(holder, item, big = false) {
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(BG);
+  const camera = new THREE.PerspectiveCamera(42, 4 / 3, 0.1, 20000);
+  scene.add(new THREE.HemisphereLight(0xffffff, 0xd8d2c4, 0.95));
+  scene.add(new THREE.AmbientLight(0xffffff, 0.14));
+  const key = new THREE.DirectionalLight(0xfff6e8, 0.9);
+  key.castShadow = true;
+  key.shadow.mapSize.set(512, 512);
+  key.shadow.bias = -0.0002;
+  key.shadow.normalBias = 0.05;
+  scene.add(key, key.target);
+  const fill = new THREE.DirectionalLight(0xdfe8f2, 0.12);
+  scene.add(fill);
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), shadowMat);
+  ground.rotation.x = -Math.PI / 2;
+  ground.receiveShadow = true;
+  scene.add(ground);
+  const controls = new OrbitControls(camera, holder);
+  controls.enableDamping = true;
+
+  const v = { holder, item, scene, camera, controls, key, ground, model: null, dead: false, big };
+
+  function fit() {
+    if (!v.model) return;
+    const box = new THREE.Box3().setFromObject(v.model);
+    const size = box.getSize(new THREE.Vector3());
+    const maxDim = Math.max(size.x, size.y, size.z, 1e-6);
+    const center = box.getCenter(new THREE.Vector3());
+    camera.near = maxDim / 50; camera.far = maxDim * 60;
+    const dir = new THREE.Vector3(0.8, 0.62, 0.85).normalize().multiplyScalar(maxDim * 2.6);
+    camera.position.copy(center).add(dir);
+    camera.lookAt(center);
+    controls.target.copy(center);
+    camera.updateProjectionMatrix();
+    controls.update();
+    key.position.copy(center).add(new THREE.Vector3(0.55, 1, 0.5).normalize().multiplyScalar(maxDim * 3));
+    key.target.position.copy(center);
+    const sc = key.shadow.camera, half = maxDim * 0.85;
+    sc.left = -half; sc.right = half; sc.top = half; sc.bottom = -half;
+    sc.near = maxDim * 0.5; sc.far = maxDim * 6;
+    sc.updateProjectionMatrix();
+    key.shadow.normalBias = Math.max(0.05, maxDim * 0.015);
+    ground.position.set(center.x, box.min.y, center.z);
+    ground.scale.setScalar(maxDim * 40);
+    scene.fog = new THREE.Fog(BG, maxDim * 4, maxDim * 16);
+  }
+
+  function attach(group) {
+    group.traverse(o => { if (o.isMesh) { o.material = brickMat; o.castShadow = true; } });
+    scene.add(group);
+    v.model = group;
+    fit();
+  }
+
+  if (big) {
+    attach(item.gltfScene.clone());        // 大图复用已解析几何(共享,不重复下载)
+  } else {
+    loader.load('/' + item.glb, gltf => {
+      item.gltfScene = gltf.scene;
+      attach(gltf.scene);
+    }, undefined, e => console.error('GLB fail', item.glb, e));
+  }
+  v.fit = fit;
+  return v;
+}
+
+const grid = document.getElementById('grid');
+for (const item of DATA) {
+  const wrap = document.createElement('div');
+  wrap.className = 'card';
+  wrap.innerHTML = `<div class="view"></div><div class="meta">
+    <div class="title">${item.category} <span class="zh">${item.cat_zh}</span>
+      <span class="badge">L${item.level} · ${item.label}</span>${item.unqualified ? ' <span class="badge fail">不合格</span>' : ''}</div>
+    <div class="prompt">${item.prompt}</div>
+    <div class="zh">${item.prompt_zh}</div>
+    ${item.note ? `<div class="note">${item.note}</div>` : ''}
+    <div class="btnrow"><button class="zoom">放大查看</button></div></div>`;
+  grid.appendChild(wrap);
+  viewers.push(makeViewer(wrap.querySelector('.view'), item));
+  wrap.querySelector('.zoom').onclick = () => openBig(item);
+}
+
+// 大图(全屏视口,最后渲染覆盖其余画面)
+const bigDrag = document.getElementById('bigDrag');
+const bvClose = document.querySelector('.bv-close');
+const bvMeta = document.querySelector('.bv-meta');
+function openBig(item) {
+  closeBig();
+  bigDrag.style.display = 'block';
+  bvClose.style.display = 'block';
+  bvMeta.style.display = 'block';
+  bigV = makeViewer(bigDrag, item, true);
+  bvMeta.textContent = `${item.category} ${item.cat_zh} · L${item.level} ${item.label} · ${item.id} · ${item.prompt_zh}`;
+}
+function closeBig() {
+  if (bigV) { bigV.dead = true; bigV.controls.dispose(); bigV = null; }
+  bigDrag.style.display = 'none';
+  bvClose.style.display = 'none';
+  bvMeta.style.display = 'none';
+}
+bvClose.onclick = closeBig;
+window.addEventListener('keydown', e => { if (e.key === 'Escape') closeBig(); });
+
+// 共享渲染循环:每帧只画视口内的卡片
+function renderAll() {
+  requestAnimationFrame(renderAll);
+  const W = window.innerWidth, H = window.innerHeight;
+  renderer.setSize(W, H, false);
+  for (const v of [...viewers, ...(bigV ? [bigV] : [])]) {
+    if (v.dead) continue;
+    const r = v.holder.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > H || r.right < 0 || r.left > W || r.width < 2) continue;
+    const w = r.width, h = r.height, left = r.left, bottom = H - r.bottom;
+    renderer.setViewport(left, bottom, w, h);
+    renderer.setScissor(left, bottom, w, h);
+    v.camera.aspect = w / h;
+    v.camera.updateProjectionMatrix();
+    v.controls.update();
+    renderer.render(v.scene, v.camera);
+  }
+}
+renderAll();
+</script>
+</body>
+</html>
