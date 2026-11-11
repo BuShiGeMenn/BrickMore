@@ -8,7 +8,11 @@
 | AI_B | 40,000 | 200,000 | [AI_B/download_manifest.json](AI_B/download_manifest.json) |
 | 合计 | 80,000 | 400,000 | [dataset_catalog.json](../dataset_catalog.json) |
 
-## 统一下载与合并
+## 当前整合口径与历史原始分片
+
+新版 B 批钢琴替换旧版对应 1,905 个槽位后，整合口径为 **79,301 / 80,000 几何通过，699 个未通过**。计算依据与验证边界见 [当前数据集统计口径](CURRENT_DATASET_STATUS.md)。下方下载和索引说明属于原始 A/B 发布，不会自动应用钢琴替换；新版钢琴的几何、描述及索引应以[新版钢琴发布](piano_b_supported_1905/README.md)为准。
+
+## 统一下载与合并（历史原始分片）
 
 在`Train` 目录运行，Python 3.11或更新版本：
 
@@ -42,7 +46,7 @@ python tools/download_dataset.py --shard B --output dataset_B --extract
 
 原归档中旧的 `awaiting_merge` 状态是生成时快照，未通过修改模型元数据伪造新验收；此次合并的实际结果以单独merge_report为准。跨批近形筛查及历史完整坐标去重不因上传而完成。
 
-AI_B只有3,288个模型在当前砖库与支撑规则下完成几何LEGO装配，其余模型仍作为原始体素数据完整保留。80,000模型不表示80,000个物理稳定的LEGO模型。算法和失败分类见 [拼接算法](../algorithms/voxel_assembly_b/README.md)。
+在早期装配版本中，AI_B有3,288个模型在当时砖库与支撑规则下完成几何LEGO装配，其余模型仍作为原始体素数据完整保留。80,000模型不表示80,000个物理稳定的LEGO模型。算法和失败分类见 [拼接算法](../algorithms/voxel_assembly_b/README.md)。
 
 ![AI_B 21类真实模型预览](AI_B/preview_21_categories.png)
 
