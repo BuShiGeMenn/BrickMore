@@ -1,0 +1,312 @@
+{
+  "samples": 6,
+  "primary": {
+    "BrickMore": {
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    "BrickGPT": {
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    "BrickNet": {
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.06521739130434782
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.1
+    }
+  },
+  "paired": {
+    "pinv": {
+      "common_prompts": 1,
+      "means": {
+        "BrickMore": 0.0,
+        "BrickGPT": 0.0,
+        "BrickNet": 0.0
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": 0.0,
+        "BrickNet_minus_BrickMore": 0.0
+      }
+    },
+    "vqa": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "pe": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "siglip2": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    }
+  },
+  "by_category_level": [
+    {
+      "system": "BrickMore",
+      "variant": "raw",
+      "primary": false,
+      "category": "bookshelf",
+      "level": 1,
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickMore",
+      "variant": "stitched",
+      "primary": true,
+      "category": "camera",
+      "level": 2,
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickMore",
+      "variant": "stitched",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickGPT",
+      "variant": "generated",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickNet",
+      "variant": "generated",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickNet",
+      "variant": "generated",
+      "primary": true,
+      "category": "car",
+      "level": 1,
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.13043478260869565
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.13043478260869565
+    }
+  ],
+  "protocol": {
+    "structure": "pinv_file_order, original BrickNet 0.1.0 inset collision kernel; original generation order not verified; no fixed-edge exemptions",
+    "image_scores": "Eight fixed views, max per model then arithmetic mean; no best-of-N sample selection",
+    "rendering": "Shared actual inset part surfaces, orthographic CPU rasterizer, 512px, 25-degree elevation, 45-degree azimuth steps, uniform yellow",
+    "color": "Uniform display color; no claim of generated-color accuracy",
+    "original_paper_reproduction": false,
+    "old_run_scores_mixed": false,
+    "primary": "114 matched prompts x three systems; fixed first supplied BrickMore candidate and final/stitched preference; raw counterparts and extra candidates are supplementary"
+  }
+}

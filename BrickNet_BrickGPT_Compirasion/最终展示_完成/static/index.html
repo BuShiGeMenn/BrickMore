@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>BrickMore-48 · 合格模型合集(判决最佳 + 第二轮 + 同事新尝试)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; background: #1c1f24; color: #e8e6e0; }
+  #gl { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 1; pointer-events: none; }
+  header { position: relative; z-index: 2; display: flex; align-items: center; gap: 12px; padding: 12px 20px; background: #262a31; border-bottom: 2px solid #3485a0; position: sticky; top: 0; flex-wrap: wrap; }
+  header h1 { font-size: 16px; color: #7ec8e3; }
+  header .sub { font-size: 12px; color: #9aa3b0; }
+  header .chip { font-size: 11px; padding: 1px 7px; border-radius: 3px; border: 1px solid; }
+  .c-judged { color: #7ec8e3; border-color: #2c6478; }
+  .c-round2 { color: #7fd89a; border-color: #2f7a44; }
+  .c-collab { color: #e0a94a; border-color: #5a4d2c; }
+  header select { margin-left: auto; background: #2f343d; color: #fff; border: 1px solid #4a5160; border-radius: 4px; padding: 4px 8px; }
+  main { position: relative; z-index: 2; padding: 14px 20px 40px; max-width: 2100px; margin: 0 auto; }
+  section { margin-top: 22px; }
+  section h2 { font-size: 14px; color: #7ec8e3; padding: 4px 0 8px; border-bottom: 1px solid #343a44; }
+  .row { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; margin-top: 10px; }
+  .card { border-radius: 8px; overflow: hidden; background: transparent; }
+  .view { width: 100%; aspect-ratio: 4/3; cursor: grab; }
+  .view:active { cursor: grabbing; }
+  .meta { background: #262a31; padding: 8px 10px; }
+  .title { font-size: 12.5px; font-weight: 700; color: #7ec8e3; display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+  .src { font-size: 10px; border-radius: 3px; padding: 0 5px; border: 1px solid; }
+  .src.judged { color: #7ec8e3; border-color: #2c6478; }
+  .src.round2 { color: #7fd89a; border-color: #2f7a44; }
+  .src.collab { color: #e0a94a; border-color: #5a4d2c; }
+  .badge { font-size: 10px; color: #9aa3b0; }
+  .swap { margin-left: auto; background: none; border: 1px solid #4a5160; color: #9aa3b0; border-radius: 3px; font-size: 10px; padding: 1px 6px; cursor: pointer; }
+  .swap:hover { color: #fff; border-color: #7ec8e3; }
+  .prompt { font-size: 10.5px; color: #8d96a3; margin-top: 3px; line-height: 1.35; }
+  .zh { font-size: 11.5px; color: #ded9cd; margin-top: 2px; line-height: 1.4; }
+  .btnrow { margin-top: 6px; }
+  .zoom { width: 100%; background: #2f343d; color: #cfd6df; border: 1px solid #4a5160; border-radius: 4px; padding: 4px 0; cursor: pointer; font-size: 12px; }
+  .zoom:hover { border-color: #7ec8e3; }
+  #bigDrag { position: fixed; inset: 0; z-index: 2; display: none; cursor: grab; }
+  #bigDrag:active { cursor: grabbing; }
+  .bv-close { position: fixed; top: 14px; right: 20px; z-index: 3; background: #3485a0; color: #fff; border: 0; border-radius: 4px; padding: 8px 18px; font-size: 14px; cursor: pointer; display: none; }
+  .bv-meta { position: fixed; left: 0; right: 0; bottom: 14px; z-index: 3; text-align: center; color: #3a3a35; font-size: 14px; display: none; text-shadow: 0 0 6px #fff; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "./js/three.module.js",
+               "three/addons/loaders/GLTFLoader.js": "./js/GLTFLoader.js",
+               "three/addons/loaders/DRACOLoader.js": "./js/DRACOLoader.js",
+               "three/addons/controls/OrbitControls.js": "./js/OrbitControls.js" } }
+</script>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<header>
+  <h1>BrickMore-48 · 合格模型合集</h1>
+  <span class="sub">每个"类×等级"下并列展示:</span>
+  <span class="chip c-judged">人工判决最佳</span>
+  <span class="chip c-round2">第二轮重做</span>
+  <span class="chip c-collab">同事新尝试(已验证)</span>
+  <select id="jump"><option value="">跳转到…</option></select>
+</header>
+<main id="main"></main>
+<div id="bigDrag"></div>
+<button class="bv-close">关闭 (Esc)</button>
+<div class="bv-meta"></div>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const DATA = await (await fetch('curated.json?v=' + Date.now())).json();
+
+const BG = 0xc2c3bf;
+const brickMat = new THREE.MeshStandardMaterial({ color: 0xf2cd37, roughness: 0.45, metalness: 0.0 });
+const shadowMat = new THREE.ShadowMaterial({ opacity: 0.12 });
+const draco = new DRACOLoader();
+draco.setDecoderPath('./js/draco/');
+const loader = new GLTFLoader();
+loader.setDRACOLoader(draco);
+
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('gl'), antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.15;
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.setScissorTest(true);
+
+const viewers = [];
+let bigV = null;
+
+function makeViewer(holder, item, big = false) {
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(BG);
+  const camera = new THREE.PerspectiveCamera(42, 4 / 3, 0.1, 20000);
+  scene.add(new THREE.HemisphereLight(0xffffff, 0xd8d2c4, 0.95));
+  scene.add(new THREE.AmbientLight(0xffffff, 0.14));
+  const key = new THREE.DirectionalLight(0xfff6e8, 0.9);
+  key.castShadow = true;
+  key.shadow.mapSize.set(512, 512);
+  key.shadow.bias = -0.0002;
+  scene.add(key, key.target);
+  scene.add(new THREE.DirectionalLight(0xdfe8f2, 0.12));
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), shadowMat);
+  ground.rotation.x = -Math.PI / 2;
+  ground.receiveShadow = true;
+  scene.add(ground);
+  const controls = new OrbitControls(camera, holder);
+  controls.enableDamping = true;
+  const v = { holder, scene, camera, controls, key, ground, model: null, dead: false, kind: 'raw' };
+
+  function fit() {
+    if (!v.model) return;
+    const box = new THREE.Box3().setFromObject(v.model);
+    const size = box.getSize(new THREE.Vector3());
+    const maxDim = Math.max(size.x, size.y, size.z, 1e-6);
+    const center = box.getCenter(new THREE.Vector3());
+    camera.near = maxDim / 50; camera.far = maxDim * 60;
+    const dir = new THREE.Vector3(0.8, 0.62, 0.85).normalize().multiplyScalar(maxDim * 2.6);
+    camera.position.copy(center).add(dir);
+    camera.lookAt(center);
+    controls.target.copy(center);
+    camera.updateProjectionMatrix();
+    controls.update();
+    key.position.copy(center).add(new THREE.Vector3(0.55, 1, 0.5).normalize().multiplyScalar(maxDim * 3));
+    key.target.position.copy(center);
+    const sc = key.shadow.camera, half = maxDim * 0.85;
+    sc.left = -half; sc.right = half; sc.top = half; sc.bottom = -half;
+    sc.near = maxDim * 0.5; sc.far = maxDim * 6;
+    sc.updateProjectionMatrix();
+    key.shadow.normalBias = Math.max(0.05, maxDim * 0.015);
+    ground.position.set(center.x, box.min.y, center.z);
+    ground.scale.setScalar(maxDim * 40);
+    scene.fog = new THREE.Fog(BG, maxDim * 4, maxDim * 16);
+  }
+
+  function attach(group) {
+    if (v.model) { scene.remove(v.model); v.model.traverse(o => { if (o.isMesh) o.geometry.dispose(); }); }
+    group.traverse(o => { if (o.isMesh) { o.material = brickMat; o.castShadow = true; } });
+    scene.add(group);
+    v.model = group;
+    fit();
+  }
+  v.load = kind => {
+    v.kind = kind;
+    const path = kind === 'raw' ? item.glb : item.stitched_glb;
+    if (!path) return;
+    loader.load('/' + path, gltf => attach(big ? gltf.scene.clone() : gltf.scene),
+                undefined, e => console.error('GLB fail', path, e));
+  };
+  v.load(item.glb ? 'raw' : 'stitched');
+  return v;
+}
+
+const SRC_STYLE = { judged: ['judged', '人工判决'], round2: ['round2', '第二轮'], collab: ['collab', '同事新尝试'] };
+const main = document.getElementById('main');
+const keys = [...new Set(DATA.map(d => `${d.category}_${d.level == null ? 'X' : 'L' + d.level}`))];
+const jump = document.getElementById('jump');
+const lvlName = l => l == null ? '新尝试' : 'L' + l;
+for (const k of keys) jump.add(new Option(k.replace('_', ' · ').replace('_X', ' · 新尝试'), k));
+jump.onchange = () => { const el = document.getElementById('sec-' + jump.value); if (el) el.scrollIntoView({ behavior: 'smooth' }); };
+
+for (const k of keys) {
+  const items = DATA.filter(d => `${d.category}_${d.level == null ? 'X' : 'L' + d.level}` === k);
+  const sec = document.createElement('section');
+  sec.id = 'sec-' + k;
+  const order = { judged: 0, round2: 1 };
+  items.sort((a, b) => (order[a.source] ?? 2) - (order[b.source] ?? 2) || String(a.id).localeCompare(String(b.id)));
+  sec.innerHTML = `<h2>${items[0].category} · ${lvlName(items[0].level)} — ${items.length} 个合格模型</h2><div class="row"></div>`;
+  const row = sec.querySelector('.row');
+  for (const item of items) {
+    const [cls, txt] = item.source === 'judged' ? SRC_STYLE.judged
+      : item.source === 'round2' ? SRC_STYLE.round2 : SRC_STYLE.collab;
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `<div class="view"></div><div class="meta">
+      <div class="title">${item.id}<span class="src ${cls}">${item.source_zh || txt}</span>
+        <span class="badge">${item.status === 'retiled' ? '重铺验证' : item.status === 'raw_ok' ? '原生可拼' : ''}</span>
+        ${item.stitched_glb ? '<button class="swap">看重铺版</button>' : ''}</div>
+      <div class="prompt">${item.prompt || ''}</div>
+      <div class="zh">${item.prompt_zh || ''}</div>
+      <div class="btnrow"><button class="zoom">放大查看</button></div></div>`;
+    row.appendChild(card);
+    const v = makeViewer(card.querySelector('.view'), item);
+    viewers.push(v);
+    const sw = card.querySelector('.swap');
+    if (sw) sw.onclick = () => {
+      v.load(v.kind === 'raw' ? 'stitched' : 'raw');
+      sw.textContent = v.kind === 'raw' ? '看重铺版' : '看原版';
+    };
+    card.querySelector('.zoom').onclick = () => openBig(item);
+  }
+  main.appendChild(sec);
+}
+
+const bigDrag = document.getElementById('bigDrag');
+const bvClose = document.querySelector('.bv-close');
+const bvMeta = document.querySelector('.bv-meta');
+function openBig(item) {
+  closeBig();
+  bigDrag.style.display = 'block'; bvClose.style.display = 'block'; bvMeta.style.display = 'block';
+  bigV = makeViewer(bigDrag, item, true);
+  bvMeta.textContent = `${item.id} · ${item.source_zh || ''} · ${item.prompt_zh || ''}`;
+}
+function closeBig() {
+  if (bigV) { bigV.dead = true; bigV.controls.dispose(); bigV = null; }
+  bigDrag.style.display = 'none'; bvClose.style.display = 'none'; bvMeta.style.display = 'none';
+}
+bvClose.onclick = closeBig;
+window.addEventListener('keydown', e => { if (e.key === 'Escape') closeBig(); });
+
+function renderAll() {
+  requestAnimationFrame(renderAll);
+  const W = window.innerWidth, H = window.innerHeight;
+  renderer.setSize(W, H, false);
+  for (const v of [...viewers, ...(bigV ? [bigV] : [])]) {
+    if (v.dead) continue;
+    const r = v.holder.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > H || r.right < 0 || r.left > W || r.width < 2) continue;
+    renderer.setViewport(r.left, H - r.bottom, r.width, r.height);
+    renderer.setScissor(r.left, H - r.bottom, r.width, r.height);
+    v.camera.aspect = r.width / r.height;
+    v.camera.updateProjectionMatrix();
+    v.controls.update();
+    renderer.render(v.scene, v.camera);
+  }
+}
+renderAll();
+</script>
+</body>
+</html>

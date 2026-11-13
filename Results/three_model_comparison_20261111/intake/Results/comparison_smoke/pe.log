@@ -1,0 +1,8 @@
+
+COMMAND ["/mnt/brickmore-data/brickmore-jrd-20261025/runtime/envs/paper/bin/python", "-X", "utf8", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparison-20261110/BrickMoreComparison/Scripts/evaluate_paper_images.py", "--metric", "pe", "--preset", "paper-text", "--model", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparison-20261110/BrickMoreComparison/Downloads/models/pe", "--offline", "--device", "cuda:0", "--batch-size", "1", "--renders", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparison-20261110/BrickMoreComparison/Results/comparison_smoke/rendered/renders.jsonl", "--out", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparison-20261110/BrickMoreComparison/Results/comparison_smoke/pe.jsonl"]
+1/6 brickmore__bookshelf-L1-C1__raw 0.204832
+2/6 brickmore__camera_L2_P1_G__stitched 0.125524
+3/6 brickmore__basket-L1V5__stitched 0.148678
+4/6 brickgpt__basket_L1_P01__generated 0.101249
+5/6 bricknet__basket_L1_P01__generated 0.052632
+6/6 bricknet__car_L1_P01__generated 0.146476

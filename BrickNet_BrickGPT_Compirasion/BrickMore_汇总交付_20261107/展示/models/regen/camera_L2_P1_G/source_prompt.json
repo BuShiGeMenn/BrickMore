@@ -1,0 +1,32 @@
+{
+  "candidate_id": "reconstructed-camera-L2-v1",
+  "is_current_model": false,
+  "source_zh": "重新构造，参考训练元素与同级模板",
+  "prompt": "A rounded camera carries a circular lens at the front. The barrel connects to its body, the grip is on the right side, and the shutter and viewfinder sit on top.",
+  "prompt_zh": "一台圆角相机，正面带圆镜头。镜筒连接机身，握柄在右侧，快门和取景器位于顶部。",
+  "evidence": {
+    "reference_file": "Train/samples/models/camera/vx80k5p_20261010_A_camera_m0001/prompts.json",
+    "reference_file_sha256": "39e1c08387ea530b8d00512212ac6b08ec9c0ff868175423981dbe7b9c7b2e36",
+    "reference_record_id": "vx80k5p_20261010_A_camera_m0001_l2",
+    "reference_caption": "A rounded camera with forward circular lens, grip and top shutter. The lens barrel joins the front body; the grip is on the right and viewfinder and shutter are above.",
+    "required_parts": [
+      "body",
+      "lens",
+      "glass",
+      "grip",
+      "shutter",
+      "viewfinder"
+    ],
+    "prompt_level": 2,
+    "fact_groups": [
+      1,
+      2
+    ],
+    "level_rule": "基础轮廓，加部件位置与连接关系；不添加比例与配色。",
+    "newly_constructed": true,
+    "exact_caption_match": false,
+    "original_caption_prefix_match": false,
+    "geometry_source": "Train/programs/geometry.py",
+    "caption_level_source": "Train/programs/captions.py"
+  }
+}

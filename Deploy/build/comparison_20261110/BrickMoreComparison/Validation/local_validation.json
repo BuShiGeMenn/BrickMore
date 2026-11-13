@@ -1,0 +1,184 @@
+{
+  "created": "2026-11-10T07:05:05.529070+00:00",
+  "server_connected": false,
+  "input_audit": {
+    "passed": true,
+    "source_root": "D:\\BrickMore\\BrickNet_BrickGPT_Compirasion",
+    "total_records": 462,
+    "primary_records": 342,
+    "primary_counts": {
+      "BrickMore": 114,
+      "BrickGPT": 114,
+      "BrickNet": 114
+    },
+    "all_counts": {
+      "BrickMore": 234,
+      "BrickGPT": 114,
+      "BrickNet": 114
+    },
+    "matched_prompts": 114,
+    "formal_groups": 105,
+    "part_types": 324,
+    "legacy_adapter_crosschecked": true,
+    "glb_mesh_bounds_checks": 1900,
+    "procedural_glb_reconstructions": 42,
+    "maximum_render_collider_bounds_difference_ldu": 0.23922361200675368,
+    "source_naming_note": "BrickGPT/ A_ldr_57.zip and B_ldr_57.zip contain BrickNet; identified using accompanying generation report.",
+    "primary_policy": "Fixed 114 A/B prompts. BrickMore first pre-existing model_ids entry, stitched if available, raw otherwise. No metric-based best-of-N.",
+    "supplemental_policy": "Other displayed BrickMore candidates, raw/stitched counterparts, and ungraded car trials retained separately; duplicate delivery copies and unreferenced historical files excluded.",
+    "previous_server_data": {
+      "old_918": "/mnt/brickmore-data/brickmore-jrd-20261025/BrickMore/Results/server_paper_full_20261026/",
+      "eval630": "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/eval630-20261027/BrickMoreEval630/Results/eval630_full_v2/",
+      "source": "archived chat records only; no server connection or current verification",
+      "original_package": "brickmore-eval630-four-scores-20261027.tar.gz"
+    }
+  },
+  "self_tests": {
+    "passed": 5,
+    "failed": 0,
+    "checks": [
+      "342 records form exactly 114 same-caption triplets",
+      "Original BrickNet 0.1.0 collision: overlapping, separated, normal vertical mating",
+      "CPU and image-score journals resume, reject changed config, back up incomplete final JSON line",
+      "Real interrupted HTTP payload resumes an existing .part file via Range, reconnects, validates checksum, and then skips cached download",
+      "Generated shell scripts have LF-only bytes, trailing newline, and matching checksum entries"
+    ]
+  },
+  "cpu_smoke": {
+    "records": 6,
+    "views": 48,
+    "all_structure_status_ok": true,
+    "all_png_hashes_verified": true,
+    "terminal_stage_progress_verified": true,
+    "second_identical_run_reused_all_results": true,
+    "structure_results": [
+      {
+        "sample_id": "brickmore__bookshelf-L1-C1__raw",
+        "status": "ok",
+        "pinv": 0.0,
+        "invalid_placements": 0,
+        "n_actions": 138
+      },
+      {
+        "sample_id": "brickmore__camera_L2_P1_G__stitched",
+        "status": "ok",
+        "pinv": 0.0,
+        "invalid_placements": 0,
+        "n_actions": 138
+      },
+      {
+        "sample_id": "brickmore__basket-L1V5__stitched",
+        "status": "ok",
+        "pinv": 0.0,
+        "invalid_placements": 0,
+        "n_actions": 420
+      },
+      {
+        "sample_id": "brickgpt__basket_L1_P01__generated",
+        "status": "ok",
+        "pinv": 0.0,
+        "invalid_placements": 0,
+        "n_actions": 112
+      },
+      {
+        "sample_id": "bricknet__basket_L1_P01__generated",
+        "status": "ok",
+        "pinv": 0.0,
+        "invalid_placements": 0,
+        "n_actions": 14
+      },
+      {
+        "sample_id": "bricknet__car_L1_P01__generated",
+        "status": "ok",
+        "pinv": 0.13043478260869565,
+        "invalid_placements": 6,
+        "n_actions": 46
+      }
+    ],
+    "runtime": {
+      "numpy": "2.2.6",
+      "numba": "0.61.2",
+      "meshlib": "3.1.4.297",
+      "pillow": "11.3.0"
+    }
+  },
+  "gpu_interface_only": {
+    "pe": {
+      "preset": "local",
+      "summary": {
+        "metric": "pe",
+        "samples": 2,
+        "mean_of_max_scores": 0.21265093237161636,
+        "elapsed_seconds_this_invocation": 1.2660000000032596,
+        "peak_allocated_mib": 2490.97119140625,
+        "config_signature": "0a0c97e5f1a2457ed8f8e3b395a2966f285ce1ed4ac62297d550c09fc0d46fa8"
+      },
+      "model": "D:\\PythonEnvs\\brickmore-eval\\cache\\huggingface\\models\\pe-base",
+      "samples": [
+        {
+          "sample_id": "brickmore__bookshelf-L1-C1__raw",
+          "view_count": 8,
+          "max_score": 0.25230059027671814
+        },
+        {
+          "sample_id": "bricknet__car_L1_P01__generated",
+          "view_count": 8,
+          "max_score": 0.1730012744665146
+        }
+      ]
+    },
+    "siglip2": {
+      "preset": "local",
+      "summary": {
+        "metric": "siglip2",
+        "samples": 2,
+        "mean_of_max_scores": 0.2969958241446875,
+        "elapsed_seconds_this_invocation": 0.7190000000118744,
+        "peak_allocated_mib": 743.4423828125,
+        "config_signature": "270776504cbe05a9316f4bd3b15901ea6fd1d14e9a72c73b4f2c071405e39f17"
+      },
+      "model": "D:\\PythonEnvs\\brickmore-eval\\cache\\huggingface\\models\\siglip2-base",
+      "samples": [
+        {
+          "sample_id": "brickmore__bookshelf-L1-C1__raw",
+          "view_count": 8,
+          "max_score": 0.5926666259765625
+        },
+        {
+          "sample_id": "bricknet__car_L1_P01__generated",
+          "view_count": 8,
+          "max_score": 0.0013250223128125072
+        }
+      ]
+    }
+  },
+  "gpu_resume": {
+    "metric": "pe",
+    "result": "2/2 CACHED_ALL",
+    "model_allocation_skipped": true
+  },
+  "wheel_plan": {
+    "target": "Linux x86_64 CPython 3.12 glibc >=2.31",
+    "compatible_PyPI_wheel_metadata_verified": 9,
+    "payloads_in_main_bundle": false
+  },
+  "limitations": [
+    "Full Qwen2.5-VL-7B / PE bigG / SigLIP2 Giant scoring was not run locally; run server smoke before full evaluation.",
+    "Base model values above only validate the interface and are not the three-system comparison results.",
+    "Linux shell syntax checked locally; native Linux GPU runtime must pass server doctor.",
+    "Main archive contains part assets and evaluation inputs, not large scoring-model weights or dependency wheels."
+  ],
+  "packaging_fix": {
+    "issue": "Windows text-mode writes reintroduced CRLF into generated shell scripts",
+    "resolution": "Generated text and checksum files now written as explicit UTF-8/ASCII bytes with LF",
+    "original_archive_sha256": "f8bace6d96e8ee98b6961c70e8eceeb33388802b287a47659dedf462d2414782",
+    "repair_verified_against_original_archive": true,
+    "repair_repeat_safe": true,
+    "repair_changed_checksum_entries_only": [
+      "setup.sh",
+      "run.sh",
+      "Scripts/environment.sh"
+    ],
+    "bash_preamble_execution_passed": true
+  }
+}

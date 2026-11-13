@@ -1,0 +1,141 @@
+{
+  "round3": {
+    "basket_L2": "basket-L2-Q07",
+    "bench_L4": "bench-L4-Q05",
+    "bench_L5": "bench-L5-Q07",
+    "mug_L3": "mug-L3-Q03",
+    "mug_L4": "mug-L4-Q05",
+    "mug_L5": "mug-L5-Q03",
+    "table_L5": "table-L5-Q05"
+  },
+  "review": {
+    "schema_version": 1,
+    "revision": 9,
+    "updated_at": "2026-11-07T11:20:50.194187+00:00",
+    "decisions": {
+      "camera_L2": {
+        "status": "regenerate",
+        "candidate_id": null,
+        "note": ""
+      },
+      "car_L3": {
+        "status": "selected",
+        "candidate_id": "car-之前_微调01",
+        "note": ""
+      },
+      "car_L4": {
+        "status": "regenerate",
+        "candidate_id": null,
+        "note": ""
+      },
+      "car_L5": {
+        "status": "regenerate",
+        "candidate_id": null,
+        "note": ""
+      },
+      "guitar_L1": {
+        "status": "regenerate",
+        "candidate_id": null,
+        "note": ""
+      },
+      "piano_L5": {
+        "status": "selected",
+        "candidate_id": "piano-L5V3",
+        "note": ""
+      },
+      "vessel_L1": {
+        "status": "regenerate",
+        "candidate_id": null,
+        "note": ""
+      }
+    }
+  },
+  "changes": [
+    {
+      "group": "camera_L2",
+      "before": [
+        "camera-L2-C1"
+      ],
+      "after": [
+        "camera_L2_P1_G"
+      ],
+      "action": "重生成候选替换",
+      "visual_review": "pending"
+    },
+    {
+      "group": "car_L3",
+      "before": [
+        "car-L3-A"
+      ],
+      "after": [
+        "car-之前_微调01"
+      ],
+      "action": "用户复审替换",
+      "visual_review": "user_selected"
+    },
+    {
+      "group": "car_L4",
+      "before": [
+        "car-L4-A"
+      ],
+      "after": [
+        "car_L4_P1_G"
+      ],
+      "action": "重生成候选替换",
+      "visual_review": "pending"
+    },
+    {
+      "group": "car_L5",
+      "before": [
+        "car-L5V5"
+      ],
+      "after": [
+        "car_L5_P1_G",
+        "car_L5_P1_S104"
+      ],
+      "action": "重生成候选替换",
+      "visual_review": "pending"
+    },
+    {
+      "group": "guitar_L1",
+      "before": [
+        "guitar-L1-A"
+      ],
+      "after": [
+        "guitar_L1_P2_G"
+      ],
+      "action": "重生成候选替换",
+      "visual_review": "pending"
+    },
+    {
+      "group": "piano_L5",
+      "before": [
+        "piano-L5V2"
+      ],
+      "after": [
+        "piano-L5V3"
+      ],
+      "action": "用户复审替换",
+      "visual_review": "user_selected"
+    },
+    {
+      "group": "vessel_L1",
+      "before": [
+        "vessel-L1V4"
+      ],
+      "after": [
+        "vessel_L1_P2_G"
+      ],
+      "action": "重生成候选替换",
+      "visual_review": "pending"
+    }
+  ],
+  "regenerated_candidates": [
+    "camera_L2_P1_G",
+    "car_L4_P1_G",
+    "car_L5_P1_G",
+    "guitar_L1_P2_G",
+    "vessel_L1_P2_G",
+    "car_L5_P1_S104"
+  ]
+}

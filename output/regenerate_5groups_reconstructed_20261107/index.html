@@ -1,0 +1,49 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BrickMore · 五组重生成</title>
+<script type="importmap">{"imports":{"three":"./static/three.module.js"}}</script>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f5f7;color:#19232f;font:15px/1.6 system-ui,"Microsoft YaHei",sans-serif}
+header{padding:24px 36px 18px;background:#fff;border-bottom:1px solid #dde2e8}h1{margin:0;font-size:26px}header p{margin:6px 0 0;color:#5b6675}
+main{display:grid;grid-template-columns:290px 1fr;gap:24px;max-width:1440px;margin:auto;padding:24px}.cards{display:grid;gap:12px;align-content:start}
+.card{display:flex;align-items:center;gap:12px;text-align:left;background:#fff;border:1px solid #dde2e8;border-radius:12px;padding:10px;cursor:pointer;width:100%;color:inherit}.card.selected{border:2px solid #b87b13;padding:9px}.card img{width:90px;height:80px;object-fit:cover;border-radius:7px}.card strong{display:block;font-size:15px}.card small{color:#647081}
+.panel{background:#fff;border:1px solid #dde2e8;border-radius:16px;overflow:hidden}#viewer{height:520px;position:relative;background:#e9edf2}#viewer canvas{display:block}.details{padding:22px 26px}h2{margin:0 0 10px;font-size:22px}.prompt{padding:14px 16px;border-left:3px solid #d2a241;background:#faf6ec;color:#493e2c;margin:12px 0;white-space:pre-wrap}.stats{color:#536171;font-size:14px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.actions a,button.toggle{color:#714b0b;text-decoration:none;border:1px solid #d8b97d;border-radius:7px;background:#fffaf0;padding:7px 12px;cursor:pointer;font:inherit}.note{font-size:13px;color:#718092;margin:12px 0 0}#status{position:absolute;top:12px;left:16px;color:#596675;font-size:13px}
+@media(max-width:850px){main{grid-template-columns:1fr;padding:14px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.card img{width:60px;height:60px}#viewer{height:420px}header{padding:20px}}
+</style>
+<header><h1>BrickMore · 五组重生成</h1><p>camera L2 / car L4 / car L5 / guitar L1 / vessel L1 · 新措辞，训练元素，同级复杂度 · car L3 与 piano L5 保持原选择</p></header>
+<main><aside class="cards" id="cards"></aside><section class="panel"><div id="viewer"><span id="status">正在载入</span></div><div class="details"><h2 id="title"></h2><div class="stats" id="stats"></div><div class="prompt" id="prompt"></div><button class="toggle" id="toggle">查看原始排砖</button><div class="actions" id="links"></div><p class="note">左键旋转，滚轮缩放，右键平移。黄色为统一展示色；模型输出不包含颜色。几何和凸点连通检查不等同于物理稳定性认证，外形请人工复审。</p></div></section></main>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from './static/OrbitControls.js';
+const rows=await(await fetch('manifest.json')).json();
+const host=document.querySelector('#viewer'),scene=new THREE.Scene();scene.background=new THREE.Color('#e9edf2');
+const camera=new THREE.PerspectiveCamera(35,1,.1,10000),renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;host.append(renderer.domElement);
+const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;
+scene.add(new THREE.HemisphereLight(0xffffff,0x8191a6,2.1));
+for(const [x,y,z,p] of [[40,70,35,3],[-40,30,-15,1.2]]){let light=new THREE.DirectionalLight(0xffffff,p);light.position.set(x,y,z);scene.add(light)}
+let model=null,current=null,raw=false,serial=0;
+const material=new THREE.MeshStandardMaterial({color:0xe8b42b,roughness:.36,metalness:0});
+const studGeo=new THREE.CylinderGeometry(.24,.24,.2,16);
+function resize(){const w=host.clientWidth,h=host.clientHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix()}
+new ResizeObserver(resize).observe(host);resize();
+function clean(){if(!model)return;scene.remove(model);model.traverse(o=>{if(o.geometry&&o.geometry!==studGeo)o.geometry.dispose()})}
+async function show(row,reset=true){current=row;const ticket=++serial;
+document.querySelector('#title').textContent=row.category+' · L'+row.level+' · Seed '+row.seed;
+document.querySelector('#prompt').textContent=row.prompt;
+document.querySelector('#stats').textContent=(row.validation?'几何通过 · '+row.validation.brick_count+' 块砖 · '+row.validation.occupied_voxels+' 个占用格 · 单一凸点连通':'几何检查未通过，保留原始结果')+' · 外形待人工复审';
+document.querySelector('#status').textContent=raw?'原始生成排砖':'保形重铺 / 最终几何';
+document.querySelector('#toggle').textContent=raw?'查看最终几何':'查看原始排砖';
+document.querySelectorAll('.card').forEach(c=>c.classList.toggle('selected',c.dataset.id===row.id));
+const links=document.querySelector('#links');links.replaceChildren();
+for(const [file,label]of [['model.ldr','下载 LDR'],['model.glb','下载 GLB'],['model.txt','下载排砖 TXT'],['raw.txt','模型原始输出'],['validation.json','检查记录'],['raw_report.json','原始检查']]){if(!row.validation&&(file.startsWith('model')||file==='validation.json'))continue;let a=document.createElement('a');a.href=row.folder+'/'+file;a.textContent=label;a.download='';links.append(a)}
+let f=raw?'raw_geometry.json':(row.validation?'model.json':'raw_geometry.json');
+const {bricks}=await(await fetch(row.folder+'/'+f)).json();if(ticket!==serial)return;
+clean();model=new THREE.Group();const cells=new Set();for(const b of bricks)for(let x=b.x;x<b.x+b.h;x++)for(let y=b.y;y<b.y+b.w;y++)cells.add(`${x},${y},${b.z}`);
+for(const b of bricks){let body=new THREE.Mesh(new THREE.BoxGeometry(b.h-.028,1.188,b.w-.028),material);body.position.set(b.x+b.h/2,(b.z+.5)*1.2,b.y+b.w/2);model.add(body);
+for(let x=b.x;x<b.x+b.h;x++)for(let y=b.y;y<b.y+b.w;y++){if(cells.has(`${x},${y},${b.z+1}`))continue;let s=new THREE.Mesh(studGeo,material);s.position.set(x+.5,(b.z+1)*1.2+.1,y+.5);model.add(s)}}
+let box=new THREE.Box3().setFromObject(model),center=box.getCenter(new THREE.Vector3());model.position.sub(center);scene.add(model);
+if(reset){let size=box.getSize(new THREE.Vector3()),r=Math.max(size.x,size.y,size.z);camera.position.set(r*1.7,r*1.25,r*1.9);controls.target.set(0,0,0);controls.update()}}
+for(const row of rows){const button=document.createElement('button');button.className='card';button.dataset.id=row.id;const img=document.createElement('img');img.src=row.folder+'/'+(row.preview_image||'preview.png');const label=document.createElement('span'),strong=document.createElement('strong'),small=document.createElement('small');strong.textContent=row.category+' · L'+row.level;small.textContent=(row.id.endsWith('_G')?'确定性解码':'Seed '+row.seed)+(row.source_candidate_id.startsWith('reconstructed-')?' · 新构造提示词':(row.source_candidate_id.startsWith('dataset-')?' · dataset 同级文本':(row.current_prompt?' · 当前提示词':' · 原同级备选')));label.append(strong,small);button.append(img,label);button.onclick=()=>{raw=false;show(row)};document.querySelector('#cards').append(button)}
+document.querySelector('#toggle').onclick=()=>{raw=!raw;show(current,false)};
+if(rows.length)await show(rows[0]);
+renderer.setAnimationLoop(()=>{controls.update();renderer.render(scene,camera)});
+</script></html>

@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "review_source": "picks_review.json",
+  "review_revision": 9,
+  "group_count": 5,
+  "prompt_count": 8,
+  "description": "现有英文提示词原文；仅包含本次不合格组的同级提示词，未改写。",
+  "groups": [
+    {
+      "group": "camera_L2",
+      "category": "camera",
+      "level": 2,
+      "name_zh": "相机",
+      "review_note": "",
+      "prompts": [
+        {
+          "candidate_id": "camera-L2-C1",
+          "is_current_model": true,
+          "source_zh": "同事·成功集",
+          "prompt": "Box-shaped camera with a flat body and a lens extending from the front.",
+          "prompt_zh": ""
+        },
+        {
+          "candidate_id": "camera-L2V2",
+          "is_current_model": false,
+          "source_zh": "原人工优选",
+          "prompt": "A compact camera with a large front lens ring.",
+          "prompt_zh": "一台紧凑相机,前面有大镜头环。"
+        }
+      ]
+    },
+    {
+      "group": "car_L4",
+      "category": "car",
+      "level": 4,
+      "name_zh": "汽车",
+      "review_note": "",
+      "prompts": [
+        {
+          "candidate_id": "car-L4-A",
+          "is_current_model": true,
+          "source_zh": "人工判决最佳",
+          "prompt": "A sedan twelve studs long with a flat hood, a raked windshield into a two-seat cabin, a rear window sloping to a short trunk, and four black wheels under the body.",
+          "prompt_zh": "一辆轿车,长十二粒,引擎盖平坦,风挡倾斜通入双人座舱,后窗斜落至短行李箱,车身下有四个黑色车轮。"
+        },
+        {
+          "candidate_id": "car-新微调_L4_05",
+          "is_current_model": false,
+          "source_zh": "同事",
+          "prompt": "A sedan stretching twelve studs: long flat hoodline, angled windshield feeding the cabin, sloped rear glass to a short trunk, four dark wheels tucked under.",
+          "prompt_zh": ""
+        }
+      ]
+    },
+    {
+      "group": "car_L5",
+      "category": "car",
+      "level": 5,
+      "name_zh": "汽车",
+      "review_note": "",
+      "prompts": [
+        {
+          "candidate_id": "car-L5V5",
+          "is_current_model": true,
+          "source_zh": "人工判决最佳",
+          "prompt": "A detailed sedan stretching twelve studs: soft-rounded hood, center grille, paired headlights, leaning windshield, side-window roof, sweeping rear to a stubby lit trunk, mirrors out wide and notched-arch wheels below.",
+          "prompt_zh": "一辆精致的轿车,长达十二粒:柔和圆润的引擎盖,中央格栅,成对前灯,倾斜风挡,带侧窗的车顶,尾部一路延伸到短小带灯的行李箱,后视镜外伸,下面是缺口轮拱车轮。"
+        },
+        {
+          "candidate_id": "car-新微调_L5_03",
+          "is_current_model": false,
+          "source_zh": "同事",
+          "prompt": "A finished sedan built on a twelve-stud body — rounded hood, grille line, twin headlights, sharply raked windshield, smooth windowed roof, fastback glass to a low short trunk with lights, side mirrors and notched-arch wheels at each corner.",
+          "prompt_zh": ""
+        }
+      ]
+    },
+    {
+      "group": "guitar_L1",
+      "category": "guitar",
+      "level": 1,
+      "name_zh": "吉他",
+      "review_note": "",
+      "prompts": [
+        {
+          "candidate_id": "guitar-L1-A",
+          "is_current_model": true,
+          "source_zh": "人工判决最佳",
+          "prompt": "An acoustic guitar.",
+          "prompt_zh": "一把民谣吉他。"
+        }
+      ]
+    },
+    {
+      "group": "vessel_L1",
+      "category": "vessel",
+      "level": 1,
+      "name_zh": "船",
+      "review_note": "",
+      "prompts": [
+        {
+          "candidate_id": "vessel-L1V4",
+          "is_current_model": true,
+          "source_zh": "人工判决最佳",
+          "prompt": "A tiny yacht shape.",
+          "prompt_zh": "一个小游艇造型。"
+        }
+      ]
+    }
+  ],
+  "retained_groups": {
+    "car_L3": "car-之前_微调01",
+    "piano_L5": "piano-L5V3"
+  }
+}

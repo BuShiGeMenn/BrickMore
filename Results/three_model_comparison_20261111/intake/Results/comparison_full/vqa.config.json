@@ -1,0 +1,60 @@
+{
+  "metric": "vqa",
+  "preset": "paper-text",
+  "model": "/mnt/brickmore-data/brickmore-jrd-20261025/runtime/cache/huggingface/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "requested_revision": null,
+  "dtype": "bfloat16",
+  "device": "cuda:0",
+  "view_batch_size": 1,
+  "min_pixels": null,
+  "max_pixels": null,
+  "quantization": null,
+  "samples": 462,
+  "view_evaluations": 3696,
+  "pooling": "max-of-8 then mean-over-models",
+  "paper_code_model_discrepancy": "Qwen2.5-VL-7B in paper vs Qwen2-VL-7B in released code",
+  "exact_paper_reproduction": false,
+  "remaining_protocol_limits": [
+    "historical rendering match not verified",
+    "paper/code VQA discrepancy not resolved"
+  ],
+  "input_manifest_sha256": "2c8c5657a216593ebda7d9ab5354fd65fe288bd130bd4528d26d8f23ce576091",
+  "sources": {
+    "paper_common.py": "70388c3039272346a7eeb47d9e9d6f1d88bc9e786bb7523b0c99a40a7edd41ea",
+    "evaluate_paper_images.py": "a90e851a6a0189d9bcf626e36fc1196ce91d47ccdb870953f19de64bdfd4c540",
+    "prepare_paper_inputs.py": "b72cb67a0523629bfa07824084af36d49bbf827ff3f90d1c18110a69bf79c041"
+  },
+  "resolved_model": {
+    "model": "/mnt/brickmore-data/brickmore-jrd-20261025/runtime/cache/huggingface/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "revision": null,
+    "local_files": {
+      "chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+      "config.json": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+      "generation_config.json": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "model-00001-of-00005.safetensors": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+      "model-00002-of-00005.safetensors": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+      "model-00003-of-00005.safetensors": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+      "model-00004-of-00005.safetensors": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+      "model-00005-of-00005.safetensors": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+      "model.safetensors.index.json": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+      "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "transformers": "4.57.1",
+    "open_clip_torch": "3.2.0",
+    "timm": "1.0.22",
+    "pillow": "13.0.0",
+    "qwen-vl-utils": "0.0.14",
+    "accelerate": "1.10.1",
+    "bitsandbytes": null
+  },
+  "device_name": "NVIDIA GeForce RTX 3090",
+  "signature": "778e5926c408c1e02f962bc0a18f9747bf17242b8221332217dda4bb32877bb8"
+}

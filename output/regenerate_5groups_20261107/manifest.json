@@ -1,0 +1,447 @@
+[
+  {
+    "id": "camera_L2_P1_S71107",
+    "group": "camera_L2",
+    "category": "camera",
+    "level": 2,
+    "seed": 71107,
+    "prompt": "Box-shaped camera with a flat body and a lens extending from the front.",
+    "source_candidate_id": "camera-L2-C1",
+    "current_prompt": true,
+    "folder": "models/camera_L2_P1_S71107",
+    "raw": {
+      "brick_count": 282,
+      "occupied_voxels": 1134,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 8,
+      "unsupported_from_below": 6,
+      "geometry_valid": true,
+      "single_stud_component": false,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nBox-shaped camera with a flat body and a lens extending from the front.",
+      "prompt": "Box-shaped camera with a flat body and a lens extending from the front.",
+      "seed": 71107,
+      "input_tokens": 217,
+      "generated_tokens": 3476,
+      "completed": true,
+      "seconds": 182.672,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.7241358757019043,
+      "options": {
+        "max_new_tokens": 8192,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "seconds": 0.609,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 202,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 219,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true
+    },
+    "status": "rejected_by_user",
+    "validation": {
+      "brick_count": 219,
+      "occupied_voxels": 1134,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 3,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "visual_review": {
+      "decision": "rejected",
+      "reviewer": "user",
+      "note": "Previous generated candidates all unqualified"
+    }
+  },
+  {
+    "id": "car_L4_P1_S71107",
+    "group": "car_L4",
+    "category": "car",
+    "level": 4,
+    "seed": 71107,
+    "prompt": "A sedan twelve studs long with a flat hood, a raked windshield into a two-seat cabin, a rear window sloping to a short trunk, and four black wheels under the body.",
+    "source_candidate_id": "car-L4-A",
+    "current_prompt": true,
+    "folder": "models/car_L4_P1_S71107",
+    "raw": {
+      "brick_count": 147,
+      "occupied_voxels": 832,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 15,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA sedan twelve studs long with a flat hood, a raked windshield into a two-seat cabin, a rear window sloping to a short trunk, and four black wheels under the body.",
+      "prompt": "A sedan twelve studs long with a flat hood, a raked windshield into a two-seat cabin, a rear window sloping to a short trunk, and four black wheels under the body.",
+      "seed": 71107,
+      "input_tokens": 240,
+      "generated_tokens": 1770,
+      "completed": true,
+      "seconds": 89.078,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.4948010444641113,
+      "options": {
+        "max_new_tokens": 8192,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "method": "original_inference",
+      "shape_preserved": true
+    },
+    "status": "rejected_by_user",
+    "validation": {
+      "brick_count": 147,
+      "occupied_voxels": 832,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 15,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "visual_review": {
+      "decision": "rejected",
+      "reviewer": "user",
+      "note": "Previous generated candidates all unqualified"
+    }
+  },
+  {
+    "id": "car_L5_P1_S71107",
+    "group": "car_L5",
+    "category": "car",
+    "level": 5,
+    "seed": 71107,
+    "prompt": "A detailed sedan stretching twelve studs: soft-rounded hood, center grille, paired headlights, leaning windshield, side-window roof, sweeping rear to a stubby lit trunk, mirrors out wide and notched-arch wheels below.",
+    "source_candidate_id": "car-L5V5",
+    "current_prompt": true,
+    "folder": "models/car_L5_P1_S71107",
+    "raw": {
+      "brick_count": 162,
+      "occupied_voxels": 1122,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 5,
+      "unsupported_from_below": 15,
+      "geometry_valid": true,
+      "single_stud_component": false,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA detailed sedan stretching twelve studs: soft-rounded hood, center grille, paired headlights, leaning windshield, side-window roof, sweeping rear to a stubby lit trunk, mirrors out wide and notched-arch wheels below.",
+      "prompt": "A detailed sedan stretching twelve studs: soft-rounded hood, center grille, paired headlights, leaning windshield, side-window roof, sweeping rear to a stubby lit trunk, mirrors out wide and notched-arch wheels below.",
+      "seed": 71107,
+      "input_tokens": 246,
+      "generated_tokens": 2009,
+      "completed": true,
+      "seconds": 103.203,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.5285544395446777,
+      "options": {
+        "max_new_tokens": 8192,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "seconds": 1.328,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 137,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 144,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 137,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true
+    },
+    "status": "rejected_by_user",
+    "validation": {
+      "brick_count": 137,
+      "occupied_voxels": 1122,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 9,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "visual_review": {
+      "decision": "rejected",
+      "reviewer": "user",
+      "note": "Previous generated candidates all unqualified"
+    }
+  },
+  {
+    "id": "guitar_L1_P1_S71107",
+    "group": "guitar_L1",
+    "category": "guitar",
+    "level": 1,
+    "seed": 71107,
+    "prompt": "An acoustic guitar.",
+    "source_candidate_id": "guitar-L1-A",
+    "current_prompt": true,
+    "folder": "models/guitar_L1_P1_S71107",
+    "raw": {
+      "brick_count": 255,
+      "occupied_voxels": 1255,
+      "overlap_voxels": 3,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 6,
+      "unsupported_from_below": 8,
+      "geometry_valid": false,
+      "single_stud_component": false,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nAn acoustic guitar.",
+      "prompt": "An acoustic guitar.",
+      "seed": 71107,
+      "input_tokens": 206,
+      "generated_tokens": 3208,
+      "completed": true,
+      "seconds": 178.015,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.6859302520751953,
+      "options": {
+        "max_new_tokens": 8192,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "seconds": 0.438,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 238,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true
+    },
+    "status": "rejected_by_user",
+    "validation": {
+      "brick_count": 238,
+      "occupied_voxels": 1255,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 8,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "visual_review": {
+      "decision": "rejected",
+      "reviewer": "user",
+      "note": "Previous generated candidates all unqualified"
+    }
+  },
+  {
+    "id": "vessel_L1_P1_S71107",
+    "group": "vessel_L1",
+    "category": "vessel",
+    "level": 1,
+    "seed": 71107,
+    "prompt": "A tiny yacht shape.",
+    "source_candidate_id": "vessel-L1V4",
+    "current_prompt": true,
+    "folder": "models/vessel_L1_P1_S71107",
+    "raw": {
+      "brick_count": 173,
+      "occupied_voxels": 650,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 7,
+      "unsupported_from_below": 15,
+      "geometry_valid": true,
+      "single_stud_component": false,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA tiny yacht shape.",
+      "prompt": "A tiny yacht shape.",
+      "seed": 71107,
+      "input_tokens": 207,
+      "generated_tokens": 2140,
+      "completed": true,
+      "seconds": 111.531,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.5380921363830566,
+      "options": {
+        "max_new_tokens": 8192,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "seconds": 0.375,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 124,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 124,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 121,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true
+    },
+    "status": "rejected_by_user",
+    "validation": {
+      "brick_count": 121,
+      "occupied_voxels": 650,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 4,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "visual_review": {
+      "decision": "rejected",
+      "reviewer": "user",
+      "note": "Previous generated candidates all unqualified"
+    }
+  }
+]

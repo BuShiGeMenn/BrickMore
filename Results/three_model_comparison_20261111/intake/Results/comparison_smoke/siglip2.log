@@ -1,0 +1,13 @@
+
+COMMAND ["/mnt/brickmore-data/brickmore-jrd-20261025/runtime/envs/paper/bin/python", "-X", "utf8", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparison-20261110/BrickMoreComparison/Scripts/evaluate_paper_images.py", "--metric", "siglip2", "--preset", "paper-text", "--model", "/mnt/brickmore-data/brickmore-jrd-20261025/runtime/cache/huggingface/hub/models--google--siglip2-giant-opt-patch16-384/snapshots/a713301b217d38485fb2204c808367d10bc3cc40", "--offline", "--device", "cuda:0", "--batch-size", "1", "--renders", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparison-20261110/BrickMoreComparison/Results/comparison_smoke/rendered/renders.jsonl", "--out", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparison-20261110/BrickMoreComparison/Results/comparison_smoke/siglip2.jsonl"]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.34it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  4.76it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  4.47it/s]
+1/6 brickmore__bookshelf-L1-C1__raw 0.622459
+2/6 brickmore__camera_L2_P1_G__stitched 0.042088
+3/6 brickmore__basket-L1V5__stitched 0.000380
+4/6 brickgpt__basket_L1_P01__generated 0.000001
+5/6 bricknet__basket_L1_P01__generated 0.000000
+6/6 bricknet__car_L1_P01__generated 0.017986

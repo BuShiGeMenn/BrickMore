@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "exported_at": "2026-11-07T11:20:52.659Z",
+  "revision": 9,
+  "complete": true,
+  "decisions": {
+    "camera_L2": {
+      "status": "regenerate",
+      "candidate_id": null,
+      "note": "",
+      "category": "camera",
+      "level": 2,
+      "current_id": "camera-L2-C1",
+      "raw_glb": null,
+      "stitched_glb": null,
+      "source_level": null,
+      "source_zh": null
+    },
+    "car_L3": {
+      "status": "selected",
+      "candidate_id": "car-之前_微调01",
+      "note": "",
+      "category": "car",
+      "level": 3,
+      "current_id": "car-L3-A",
+      "raw_glb": "models/collab_car-之前_微调01_raw.glb",
+      "stitched_glb": "models/collab_car-之前_微调01_st.glb",
+      "source_level": null,
+      "source_zh": "同事"
+    },
+    "car_L4": {
+      "status": "regenerate",
+      "candidate_id": null,
+      "note": "",
+      "category": "car",
+      "level": 4,
+      "current_id": "car-L4-A",
+      "raw_glb": null,
+      "stitched_glb": null,
+      "source_level": null,
+      "source_zh": null
+    },
+    "car_L5": {
+      "status": "regenerate",
+      "candidate_id": null,
+      "note": "",
+      "category": "car",
+      "level": 5,
+      "current_id": "car-L5V5",
+      "raw_glb": null,
+      "stitched_glb": null,
+      "source_level": null,
+      "source_zh": null
+    },
+    "guitar_L1": {
+      "status": "regenerate",
+      "candidate_id": null,
+      "note": "",
+      "category": "guitar",
+      "level": 1,
+      "current_id": "guitar-L1-A",
+      "raw_glb": null,
+      "stitched_glb": null,
+      "source_level": null,
+      "source_zh": null
+    },
+    "piano_L5": {
+      "status": "selected",
+      "candidate_id": "piano-L5V3",
+      "note": "",
+      "category": "piano",
+      "level": 5,
+      "current_id": "piano-L5V2",
+      "raw_glb": "models/collab_piano-L5V3_raw.glb",
+      "stitched_glb": "models/collab_piano-L5V3_st.glb",
+      "source_level": 5,
+      "source_zh": "同事 · 已验证备选"
+    },
+    "vessel_L1": {
+      "status": "regenerate",
+      "candidate_id": null,
+      "note": "",
+      "category": "vessel",
+      "level": 1,
+      "current_id": "vessel-L1V4",
+      "raw_glb": null,
+      "stitched_glb": null,
+      "source_level": null,
+      "source_zh": null
+    }
+  },
+  "picks": {
+    "camera_L2": null,
+    "car_L3": "car-之前_微调01",
+    "car_L4": null,
+    "car_L5": null,
+    "guitar_L1": null,
+    "piano_L5": "piano-L5V3",
+    "vessel_L1": null
+  },
+  "pending_groups": [],
+  "regenerate_groups": [
+    "camera_L2",
+    "car_L4",
+    "car_L5",
+    "guitar_L1",
+    "vessel_L1"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+  "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+  "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA rounded camera carries a circular lens at the front. The barrel connects to its body, the grip is on the right side, and the shutter and viewfinder sit on top.",
+  "prompt": "A rounded camera carries a circular lens at the front. The barrel connects to its body, the grip is on the right side, and the shutter and viewfinder sit on top.",
+  "seed": 42,
+  "input_tokens": 238,
+  "generated_tokens": 2270,
+  "completed": true,
+  "seconds": 99.485,
+  "dtype": "bfloat16",
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "peak_allocated_gib": 3.562340259552002,
+  "options": {
+    "max_new_tokens": 8192,
+    "do_sample": false
+  },
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1"
+  }
+}

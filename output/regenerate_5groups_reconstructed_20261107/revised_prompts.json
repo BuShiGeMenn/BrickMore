@@ -1,0 +1,352 @@
+{
+  "schema_version": 3,
+  "review_source": "picks_review.json",
+  "review_revision": 9,
+  "group_count": 5,
+  "prompt_count": 7,
+  "description": "Newly constructed wording for all five groups; dataset captions used as evidence only, never copied into the model prompt.",
+  "groups": [
+    {
+      "group": "camera_L2",
+      "category": "camera",
+      "level": 2,
+      "name_zh": "相机",
+      "review_note": "",
+      "prompts": [
+        {
+          "candidate_id": "reconstructed-camera-L2-v1",
+          "is_current_model": false,
+          "source_zh": "重新构造，参考训练元素与同级模板",
+          "prompt": "A rounded camera carries a circular lens at the front. The barrel connects to its body, the grip is on the right side, and the shutter and viewfinder sit on top.",
+          "prompt_zh": "一台圆角相机，正面带圆镜头。镜筒连接机身，握柄在右侧，快门和取景器位于顶部。",
+          "evidence": {
+            "reference_file": "Train/samples/models/camera/vx80k5p_20261010_A_camera_m0001/prompts.json",
+            "reference_file_sha256": "39e1c08387ea530b8d00512212ac6b08ec9c0ff868175423981dbe7b9c7b2e36",
+            "reference_record_id": "vx80k5p_20261010_A_camera_m0001_l2",
+            "reference_caption": "A rounded camera with forward circular lens, grip and top shutter. The lens barrel joins the front body; the grip is on the right and viewfinder and shutter are above.",
+            "required_parts": [
+              "body",
+              "lens",
+              "glass",
+              "grip",
+              "shutter",
+              "viewfinder"
+            ],
+            "prompt_level": 2,
+            "fact_groups": [
+              1,
+              2
+            ],
+            "level_rule": "基础轮廓，加部件位置与连接关系；不添加比例与配色。",
+            "newly_constructed": true,
+            "exact_caption_match": false,
+            "original_caption_prefix_match": false,
+            "geometry_source": "Train/programs/geometry.py",
+            "caption_level_source": "Train/programs/captions.py"
+          }
+        }
+      ],
+      "original_prompts": [
+        {
+          "candidate_id": "camera-L2-C1",
+          "is_current_model": true,
+          "source_zh": "同事·成功集",
+          "prompt": "Box-shaped camera with a flat body and a lens extending from the front.",
+          "prompt_zh": ""
+        },
+        {
+          "candidate_id": "camera-L2V2",
+          "is_current_model": false,
+          "source_zh": "原人工优选",
+          "prompt": "A compact camera with a large front lens ring.",
+          "prompt_zh": "一台紧凑相机,前面有大镜头环。"
+        }
+      ]
+    },
+    {
+      "group": "car_L4",
+      "category": "car",
+      "level": 4,
+      "name_zh": "汽车",
+      "review_note": "",
+      "prompts": [
+        {
+          "candidate_id": "reconstructed-car-L4-v1",
+          "is_current_model": false,
+          "source_zh": "重新构造，参考训练元素与同级模板",
+          "prompt": "A streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width.",
+          "prompt_zh": "一辆流线汽车，有弧顶驾驶舱和四个独立车轮。驾驶舱位于主体车身上方，前后轮对分居两侧并连接车身。圆润的实体表面承载相接的部件。整车宽度约为前后长度的 0.68 倍，高度约为宽度的 0.69 倍。",
+          "evidence": {
+            "reference_file": "Train/samples/models/car/vx80k5p_20261010_A_car_m0001/prompts.json",
+            "reference_file_sha256": "b18ab954b203a1de1c9d074961289e32a5aa93d3c4a77c0f8018398a635c1495",
+            "reference_record_id": "vx80k5p_20261010_A_car_m0001_l4",
+            "reference_caption": "A streamlined car with curved cabin roof and four separate wheels. The cabin rises over the body; four attached wheels occupy the left and right front and rear positions. Curved substantial surfaces carry their continuously attached functional parts. Overall width is 0.68 times depth; height is 0.69 times width. Parts follow functional positions.",
+            "required_parts": [
+              "body",
+              "cabin",
+              "wheel",
+              "window"
+            ],
+            "prompt_level": 4,
+            "fact_groups": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "level_rule": "基础结构、连续曲面与部件连接，加 dataset 中的实际比例；不添加配色。",
+            "newly_constructed": true,
+            "exact_caption_match": false,
+            "original_caption_prefix_match": false,
+            "geometry_source": "Train/programs/geometry.py",
+            "caption_level_source": "Train/programs/captions.py",
+            "measured_ratios": {
+              "width_to_depth": 0.68,
+              "height_to_width": 0.69
+            }
+          }
+        }
+      ],
+      "original_prompts": [
+        {
+          "candidate_id": "car-L4-A",
+          "is_current_model": true,
+          "source_zh": "人工判决最佳",
+          "prompt": "A sedan twelve studs long with a flat hood, a raked windshield into a two-seat cabin, a rear window sloping to a short trunk, and four black wheels under the body.",
+          "prompt_zh": "一辆轿车,长十二粒,引擎盖平坦,风挡倾斜通入双人座舱,后窗斜落至短行李箱,车身下有四个黑色车轮。"
+        },
+        {
+          "candidate_id": "car-新微调_L4_05",
+          "is_current_model": false,
+          "source_zh": "同事",
+          "prompt": "A sedan stretching twelve studs: long flat hoodline, angled windshield feeding the cabin, sloped rear glass to a short trunk, four dark wheels tucked under.",
+          "prompt_zh": ""
+        }
+      ]
+    },
+    {
+      "group": "car_L5",
+      "category": "car",
+      "level": 5,
+      "name_zh": "汽车",
+      "review_note": "",
+      "prompts": [
+        {
+          "candidate_id": "reconstructed-car-L5-v1",
+          "is_current_model": false,
+          "source_zh": "重新构造，参考训练元素与同级模板",
+          "prompt": "A streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width. The body and cabin are red, the windows are light blue, and the four wheels are near black, with continuous color regions. A front view reveals the functional parts; side and overhead views show their depth, connections and arrangement.",
+          "prompt_zh": "一辆流线汽车，有弧顶驾驶舱和四个独立车轮。驾驶舱位于主体车身上方，前后轮对分居两侧并连接车身。圆润的实体表面承载相接的部件。整车宽度约为前后长度的 0.68 倍，高度约为宽度的 0.69 倍。车身和驾驶舱为红色，车窗为浅蓝色，四轮为近黑色，各部位采用连续色区。正视显示功能部件，侧视和俯视显示其厚度、连接及布局。",
+          "evidence": {
+            "reference_file": "Train/samples/models/car/vx80k5p_20261010_A_car_m0001/prompts.json",
+            "reference_file_sha256": "b18ab954b203a1de1c9d074961289e32a5aa93d3c4a77c0f8018398a635c1495",
+            "reference_record_id": "vx80k5p_20261010_A_car_m0001_l5",
+            "reference_caption": "A streamlined car with curved cabin roof and four separate wheels. The cabin rises over the body; four attached wheels occupy the left and right front and rear positions. Curved substantial surfaces carry their continuously attached functional parts. Overall width is 0.68 times depth; height is 0.69 times width. Parts follow functional positions. Continuous near black, light blue, red color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+            "required_parts": [
+              "body",
+              "cabin",
+              "wheel",
+              "window"
+            ],
+            "prompt_level": 5,
+            "fact_groups": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "level_rule": "包含 L1–L4 信息，再加训练中真实存在的部件配色与观察视角。",
+            "newly_constructed": true,
+            "exact_caption_match": false,
+            "original_caption_prefix_match": false,
+            "geometry_source": "Train/programs/geometry.py",
+            "caption_level_source": "Train/programs/captions.py",
+            "measured_ratios": {
+              "width_to_depth": 0.68,
+              "height_to_width": 0.69
+            },
+            "documented_part_colors": {
+              "body": "red",
+              "cabin": "red",
+              "window": "glass/light blue",
+              "wheel": "black/near black"
+            }
+          }
+        }
+      ],
+      "original_prompts": [
+        {
+          "candidate_id": "car-L5V5",
+          "is_current_model": true,
+          "source_zh": "人工判决最佳",
+          "prompt": "A detailed sedan stretching twelve studs: soft-rounded hood, center grille, paired headlights, leaning windshield, side-window roof, sweeping rear to a stubby lit trunk, mirrors out wide and notched-arch wheels below.",
+          "prompt_zh": "一辆精致的轿车,长达十二粒:柔和圆润的引擎盖,中央格栅,成对前灯,倾斜风挡,带侧窗的车顶,尾部一路延伸到短小带灯的行李箱,后视镜外伸,下面是缺口轮拱车轮。"
+        },
+        {
+          "candidate_id": "car-新微调_L5_03",
+          "is_current_model": false,
+          "source_zh": "同事",
+          "prompt": "A finished sedan built on a twelve-stud body — rounded hood, grille line, twin headlights, sharply raked windshield, smooth windowed roof, fastback glass to a low short trunk with lights, side mirrors and notched-arch wheels at each corner.",
+          "prompt_zh": ""
+        }
+      ]
+    },
+    {
+      "group": "guitar_L1",
+      "category": "guitar",
+      "level": 1,
+      "name_zh": "吉他",
+      "review_note": "",
+      "prompts": [
+        {
+          "candidate_id": "reconstructed-guitar-L1-v1",
+          "is_current_model": false,
+          "source_zh": "重新构造，参考训练元素与同级模板",
+          "prompt": "A guitar with a rounded, waisted body, a narrow neck and a distinct headstock.",
+          "prompt_zh": "一把吉他，琴身圆润收腰，带细长琴颈和清晰的琴头。",
+          "evidence": {
+            "reference_file": "Train/samples/models/guitar/vx80k5p_20261010_A_guitar_m0001/prompts.json",
+            "reference_file_sha256": "ea818eaf05517eb83f466bcfda25785681a3600b4d503e1ade539fa32aa5b1e6",
+            "reference_record_id": "vx80k5p_20261010_A_guitar_m0001_l1",
+            "reference_caption": "A rounded waist guitar with continuous body, neck and headstock.",
+            "required_parts": [
+              "body",
+              "neck",
+              "headstock",
+              "bridge"
+            ],
+            "prompt_level": 1,
+            "fact_groups": [
+              1
+            ],
+            "level_rule": "基础轮廓与主要部件；不添加比例、配色或逐部件连接细则。",
+            "newly_constructed": true,
+            "exact_caption_match": false,
+            "original_caption_prefix_match": false,
+            "geometry_source": "Train/programs/geometry.py",
+            "caption_level_source": "Train/programs/captions.py"
+          }
+        },
+        {
+          "candidate_id": "reconstructed-guitar-L1-v2",
+          "is_current_model": false,
+          "source_zh": "重新构造，参考训练元素与同级模板",
+          "prompt": "A rounded waist guitar whose curved body leads into a slender neck topped by a headstock.",
+          "prompt_zh": "一把圆润收腰的吉他，弧形琴身向上接入细长琴颈，顶端为琴头。",
+          "evidence": {
+            "reference_file": "Train/samples/models/guitar/vx80k5p_20261010_A_guitar_m0001/prompts.json",
+            "reference_file_sha256": "ea818eaf05517eb83f466bcfda25785681a3600b4d503e1ade539fa32aa5b1e6",
+            "reference_record_id": "vx80k5p_20261010_A_guitar_m0001_l1",
+            "reference_caption": "A rounded waist guitar with continuous body, neck and headstock.",
+            "required_parts": [
+              "body",
+              "neck",
+              "headstock",
+              "bridge"
+            ],
+            "prompt_level": 1,
+            "fact_groups": [
+              1
+            ],
+            "level_rule": "基础轮廓与主要部件；不添加比例、配色或逐部件连接细则。",
+            "newly_constructed": true,
+            "exact_caption_match": false,
+            "original_caption_prefix_match": false,
+            "geometry_source": "Train/programs/geometry.py",
+            "caption_level_source": "Train/programs/captions.py",
+            "refinement": "Retain the documented category phrase; independently reconstruct the rest of the sentence."
+          }
+        }
+      ],
+      "original_prompts": [
+        {
+          "candidate_id": "guitar-L1-A",
+          "is_current_model": true,
+          "source_zh": "人工判决最佳",
+          "prompt": "An acoustic guitar.",
+          "prompt_zh": "一把民谣吉他。"
+        }
+      ]
+    },
+    {
+      "group": "vessel_L1",
+      "category": "vessel",
+      "level": 1,
+      "name_zh": "船",
+      "review_note": "",
+      "prompts": [
+        {
+          "candidate_id": "reconstructed-vessel-L1-v1",
+          "is_current_model": false,
+          "source_zh": "重新构造，参考训练元素与同级模板",
+          "prompt": "A boat with a rounded hull, bow, stern, deck and an open interior.",
+          "prompt_zh": "一艘船，圆润船壳带艏、艉、甲板和内部开口。",
+          "evidence": {
+            "reference_file": "Train/samples/models/vessel/vx80k5p_20261010_A_vessel_m0001/prompts.json",
+            "reference_file_sha256": "e8665ecf9555949a7f54bb35517a895270fd615ced4cd543bc0482e44b1bcc5b",
+            "reference_record_id": "vx80k5p_20261010_A_vessel_m0001_l1",
+            "reference_caption": "A rounded monohull boat with bow, stern, deck and interior opening.",
+            "required_parts": [
+              "hull",
+              "deck"
+            ],
+            "prompt_level": 1,
+            "fact_groups": [
+              1
+            ],
+            "level_rule": "基础轮廓与主要部件；不添加比例、配色或逐部件连接细则。",
+            "newly_constructed": true,
+            "exact_caption_match": false,
+            "original_caption_prefix_match": false,
+            "geometry_source": "Train/programs/geometry.py",
+            "caption_level_source": "Train/programs/captions.py"
+          }
+        },
+        {
+          "candidate_id": "reconstructed-vessel-L1-v2",
+          "is_current_model": false,
+          "source_zh": "重新构造，参考训练元素与同级模板",
+          "prompt": "A rounded monohull boat, its bow and stern framing a deck with an open interior.",
+          "prompt_zh": "一艘圆壳单体船，艏艉之间是带内部开口的甲板。",
+          "evidence": {
+            "reference_file": "Train/samples/models/vessel/vx80k5p_20261010_A_vessel_m0001/prompts.json",
+            "reference_file_sha256": "e8665ecf9555949a7f54bb35517a895270fd615ced4cd543bc0482e44b1bcc5b",
+            "reference_record_id": "vx80k5p_20261010_A_vessel_m0001_l1",
+            "reference_caption": "A rounded monohull boat with bow, stern, deck and interior opening.",
+            "required_parts": [
+              "hull",
+              "deck"
+            ],
+            "prompt_level": 1,
+            "fact_groups": [
+              1
+            ],
+            "level_rule": "基础轮廓与主要部件；不添加比例、配色或逐部件连接细则。",
+            "newly_constructed": true,
+            "exact_caption_match": false,
+            "original_caption_prefix_match": false,
+            "geometry_source": "Train/programs/geometry.py",
+            "caption_level_source": "Train/programs/captions.py",
+            "refinement": "Retain the documented category phrase; independently reconstruct the rest of the sentence."
+          }
+        }
+      ],
+      "original_prompts": [
+        {
+          "candidate_id": "vessel-L1V4",
+          "is_current_model": true,
+          "source_zh": "人工判决最佳",
+          "prompt": "A tiny yacht shape.",
+          "prompt_zh": "一个小游艇造型。"
+        }
+      ]
+    }
+  ],
+  "retained_groups": {
+    "car_L3": "car-之前_微调01",
+    "piano_L5": "piano-L5V3"
+  },
+  "prompt_policy": "new_wording_from_documented_training_elements_and_level_rules; no_verbatim_dataset_prompts",
+  "previous_generation_review": "Original-prompt batch rejected by user; verbatim-dataset batch retained as reference only"
+}

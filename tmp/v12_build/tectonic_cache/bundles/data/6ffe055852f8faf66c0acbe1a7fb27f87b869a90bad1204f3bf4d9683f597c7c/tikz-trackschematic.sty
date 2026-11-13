@@ -1,0 +1,53 @@
+%% symbol library for TikZ track schematics
+%
+% Copyright (c) 2018 - 2022, Martin Scheidt (ISC license)
+%
+% Permission to use, copy, modify, and/or distribute this file for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+%
+\NeedsTeXFormat{LaTeX2e}%
+\ProvidesPackage{tikz-trackschematic}[2022-02-15 v0.6.3 tikz-trackschematic]%
+%%%%%%%%%%%%%%%
+% Package options
+%%%%%%%%%%%%%%%
+\RequirePackage{tikz,xkeyval,etoolbox}%
+\newtoggle{development}%
+\DeclareOptionX{dev}[\settoggle{development}{false}]{\settoggle{development}{true}}
+\ProcessOptionsX
+%
+
+\iftoggle{development}{%
+  \PackageInfo{tikz-trackschematic}{development mode}%
+  %
+  \IfFileExists{tikz-trackschematic-dev.sty}{%
+    \usetikzlibrary{trackschematic-dev.topology}%
+    \usetikzlibrary{trackschematic-dev.trafficcontrol}%
+    \usetikzlibrary{trackschematic-dev.vehicles}%
+    \usetikzlibrary{trackschematic-dev.constructions}%
+    \usetikzlibrary{trackschematic-dev.electrics}%
+    \usetikzlibrary{trackschematic-dev.measures}%
+    \usetikzlibrary{trackschematic-dev.symbology}%
+    \usetikzlibrary{trackschematic-dev}%
+  }{%
+    \PackageWarning{tikz-trackschematic}{development mode not available}{execute the dev-install.sh script provided by the package repository}%
+    \PackageWarning{tikz-trackschematic}{development mode not available}{continuing in normal mode}%
+    \usetikzlibrary{trackschematic.topology}%
+    \usetikzlibrary{trackschematic.trafficcontrol}%
+    \usetikzlibrary{trackschematic.vehicles}%
+    \usetikzlibrary{trackschematic.constructions}%
+    \usetikzlibrary{trackschematic.electrics}%
+    \usetikzlibrary{trackschematic.measures}%
+    \usetikzlibrary{trackschematic.symbology}%
+  }%
+}{%
+  \usetikzlibrary{trackschematic.topology}%
+  \usetikzlibrary{trackschematic.trafficcontrol}%
+  \usetikzlibrary{trackschematic.vehicles}%
+  \usetikzlibrary{trackschematic.constructions}%
+  \usetikzlibrary{trackschematic.electrics}%
+  \usetikzlibrary{trackschematic.measures}%
+  \usetikzlibrary{trackschematic.symbology}%
+}%
+%
+%%%%%%%%%%%%%%%
+\endinput%
+%

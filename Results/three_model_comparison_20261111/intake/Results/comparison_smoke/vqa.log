@@ -1,0 +1,12 @@
+
+COMMAND ["/mnt/brickmore-data/brickmore-jrd-20261025/runtime/envs/paper/bin/python", "-X", "utf8", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparison-20261110/BrickMoreComparison/Scripts/evaluate_paper_images.py", "--metric", "vqa", "--preset", "paper-text", "--model", "/mnt/brickmore-data/brickmore-jrd-20261025/runtime/cache/huggingface/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5", "--offline", "--device", "cuda:0", "--batch-size", "1", "--renders", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparison-20261110/BrickMoreComparison/Results/comparison_smoke/rendered/renders.jsonl", "--out", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparison-20261110/BrickMoreComparison/Results/comparison_smoke/vqa.jsonl"]
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 242.36it/s]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+1/6 brickmore__bookshelf-L1-C1__raw 0.405254
+2/6 brickmore__camera_L2_P1_G__stitched 0.036912
+3/6 brickmore__basket-L1V5__stitched 0.058574
+4/6 brickgpt__basket_L1_P01__generated 0.057347
+5/6 bricknet__basket_L1_P01__generated 0.001943
+6/6 bricknet__car_L1_P01__generated 0.022867

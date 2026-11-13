@@ -1,0 +1,6260 @@
+{
+  "overall": {
+    "BrickMore": {
+      "n": 114,
+      "pinv": 0.0,
+      "vqa": 0.2176313120232264,
+      "pe": 0.1856129301483171,
+      "siglip2": 0.12305883454635741,
+      "pinv_micro": 0.0,
+      "zero_collision_models": 114,
+      "mean_parts": 413.0175438596491
+    },
+    "BrickGPT": {
+      "n": 114,
+      "pinv": 0.0,
+      "vqa": 0.1400644503606089,
+      "pe": 0.14572550542652607,
+      "siglip2": 0.0296741955983548,
+      "pinv_micro": 0.0,
+      "zero_collision_models": 114,
+      "mean_parts": 152.28947368421052
+    },
+    "BrickNet": {
+      "n": 114,
+      "pinv": 0.21985760703965898,
+      "vqa": 0.06236630446850493,
+      "pe": 0.13016410691565589,
+      "siglip2": 0.009999539112354343,
+      "pinv_micro": 0.24623493975903615,
+      "zero_collision_models": 20,
+      "mean_parts": 23.29824561403509
+    }
+  },
+  "by_level": {
+    "1": {
+      "BrickMore": {
+        "n": 21,
+        "pinv": 0.0,
+        "vqa": 0.2200504253352327,
+        "pe": 0.1692984579574494,
+        "siglip2": 0.04782787183788579,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 21,
+        "mean_parts": 366.6666666666667
+      },
+      "BrickGPT": {
+        "n": 21,
+        "pinv": 0.0,
+        "vqa": 0.10847111819644592,
+        "pe": 0.13636479012313343,
+        "siglip2": 0.017345317989482297,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 21,
+        "mean_parts": 153.1904761904762
+      },
+      "BrickNet": {
+        "n": 21,
+        "pinv": 0.1483260279326532,
+        "vqa": 0.08327211205258729,
+        "pe": 0.11510518264202844,
+        "siglip2": 0.0034631853394333605,
+        "pinv_micro": 0.16091954022988506,
+        "zero_collision_models": 6,
+        "mean_parts": 20.714285714285715
+      }
+    },
+    "2": {
+      "BrickMore": {
+        "n": 21,
+        "pinv": 0.0,
+        "vqa": 0.3615378222173257,
+        "pe": 0.17627824488140287,
+        "siglip2": 0.10265457653198003,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 21,
+        "mean_parts": 352.6190476190476
+      },
+      "BrickGPT": {
+        "n": 21,
+        "pinv": 0.0,
+        "vqa": 0.25067821425008807,
+        "pe": 0.14147615468218214,
+        "siglip2": 0.03314185228562462,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 21,
+        "mean_parts": 134.0952380952381
+      },
+      "BrickNet": {
+        "n": 21,
+        "pinv": 0.21794814787619893,
+        "vqa": 0.02825385384009375,
+        "pe": 0.11775190702506474,
+        "siglip2": 0.013478612898468714,
+        "pinv_micro": 0.24752475247524752,
+        "zero_collision_models": 4,
+        "mean_parts": 24.047619047619047
+      }
+    },
+    "3": {
+      "BrickMore": {
+        "n": 23,
+        "pinv": 0.0,
+        "vqa": 0.2363960836082697,
+        "pe": 0.18394221559814786,
+        "siglip2": 0.13864700597554,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 23,
+        "mean_parts": 452.60869565217394
+      },
+      "BrickGPT": {
+        "n": 23,
+        "pinv": 0.0,
+        "vqa": 0.17109104024110938,
+        "pe": 0.14329796867526096,
+        "siglip2": 0.03763911609965329,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 23,
+        "mean_parts": 145.1304347826087
+      },
+      "BrickNet": {
+        "n": 23,
+        "pinv": 0.22698763747676792,
+        "vqa": 0.07135798650067401,
+        "pe": 0.13005368443934814,
+        "siglip2": 0.012553035954281115,
+        "pinv_micro": 0.2651072124756335,
+        "zero_collision_models": 2,
+        "mean_parts": 22.304347826086957
+      }
+    },
+    "4": {
+      "BrickMore": {
+        "n": 25,
+        "pinv": 0.0,
+        "vqa": 0.1934876535832882,
+        "pe": 0.19997492969036101,
+        "siglip2": 0.16824292311212047,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 25,
+        "mean_parts": 434.84
+      },
+      "BrickGPT": {
+        "n": 25,
+        "pinv": 0.0,
+        "vqa": 0.10775375908793648,
+        "pe": 0.15347035348415375,
+        "siglip2": 0.030177810355329484,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 25,
+        "mean_parts": 166.12
+      },
+      "BrickNet": {
+        "n": 25,
+        "pinv": 0.2583717601230594,
+        "vqa": 0.09017789903316953,
+        "pe": 0.14747301027178764,
+        "siglip2": 0.01760650830902364,
+        "pinv_micro": 0.29152542372881357,
+        "zero_collision_models": 4,
+        "mean_parts": 23.6
+      }
+    },
+    "5": {
+      "BrickMore": {
+        "n": 24,
+        "pinv": 0.0,
+        "vqa": 0.09676312956131976,
+        "pe": 0.1946966281781594,
+        "siglip2": 0.14473422946988043,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 24,
+        "mean_parts": 445.75
+      },
+      "BrickGPT": {
+        "n": 24,
+        "pinv": 0.0,
+        "vqa": 0.07484472737451142,
+        "pe": 0.1518931525448958,
+        "siglip2": 0.029270116385830807,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 24,
+        "mean_parts": 159.875
+      },
+      "BrickNet": {
+        "n": 24,
+        "pinv": 0.2371666602288784,
+        "vqa": 0.03633467751327165,
+        "pe": 0.13627705443650484,
+        "siglip2": 0.002303631714099789,
+        "pinv_micro": 0.2463295269168026,
+        "zero_collision_models": 4,
+        "mean_parts": 25.541666666666668
+      }
+    }
+  },
+  "by_category": {
+    "basket": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.11364257857203483,
+        "pe": 0.1905794471502304,
+        "siglip2": 0.3909486514108721,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 404.4
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.030020885914564133,
+        "pe": 0.12371175736188889,
+        "siglip2": 0.0037036430887045666,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 259
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.3195238095238095,
+        "vqa": 0.021600474417209626,
+        "pe": 0.11203585416078568,
+        "siglip2": 0.0016857072543057683,
+        "pinv_micro": 0.29545454545454547,
+        "zero_collision_models": 1,
+        "mean_parts": 17.6
+      }
+    },
+    "bed": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.1808697611093521,
+        "pe": 0.21257748901844026,
+        "siglip2": 0.31514683766290547,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 406.8
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.07848334200680256,
+        "pe": 0.12331344932317734,
+        "siglip2": 0.009063201672233845,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 148.6
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.13034188034188035,
+        "vqa": 0.01665200461866334,
+        "pe": 0.11267905682325363,
+        "siglip2": 0.00044841940314483965,
+        "pinv_micro": 0.13008130081300814,
+        "zero_collision_models": 0,
+        "mean_parts": 24.6
+      }
+    },
+    "bench": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.30694928467273713,
+        "pe": 0.21633916795253755,
+        "siglip2": 0.22838170159375296,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 582
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.2414033129811287,
+        "pe": 0.18775933980941772,
+        "siglip2": 0.024427996694794275,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 76.6
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.25132275132275134,
+        "vqa": 0.03286471981555224,
+        "pe": 0.11769859790802002,
+        "siglip2": 4.063628560686538e-05,
+        "pinv_micro": 0.2440944881889764,
+        "zero_collision_models": 0,
+        "mean_parts": 25.4
+      }
+    },
+    "birdhouse": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.012016963050700723,
+        "pe": 0.2103048473596573,
+        "siglip2": 0.26747913332656026,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 411.2
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.010123035125434398,
+        "pe": 0.14308760613203048,
+        "siglip2": 0.0009482948344157194,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 287.2
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.31052738927738927,
+        "vqa": 0.008149775399942882,
+        "pe": 0.1352272018790245,
+        "siglip2": 0.010954516696438077,
+        "pinv_micro": 0.3188405797101449,
+        "zero_collision_models": 0,
+        "mean_parts": 27.6
+      }
+    },
+    "bookshelf": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.4764766536653042,
+        "pe": 0.19005304276943208,
+        "siglip2": 0.13976657420862465,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 332.2
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.4185645296704024,
+        "pe": 0.15626280456781388,
+        "siglip2": 0.023497500251357904,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 79.8
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.39855821371610844,
+        "vqa": 0.09035065695643425,
+        "pe": 0.11475068926811219,
+        "siglip2": 7.190207191740683e-05,
+        "pinv_micro": 0.381294964028777,
+        "zero_collision_models": 0,
+        "mean_parts": 27.8
+      }
+    },
+    "bottle": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.40219706334173677,
+        "pe": 0.1746925264596939,
+        "siglip2": 0.006143495556898415,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 489.4
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.15786394402384757,
+        "pe": 0.15279081761837005,
+        "siglip2": 0.00040386051332461646,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 127
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.08498168498168499,
+        "vqa": 0.05675825751386583,
+        "pe": 0.12449723780155182,
+        "siglip2": 0.00020194007902318845,
+        "pinv_micro": 0.15294117647058825,
+        "zero_collision_models": 3,
+        "mean_parts": 17
+      }
+    },
+    "bowl": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.10509487800300121,
+        "pe": 0.15589461028575896,
+        "siglip2": 0.0015742456993393717,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 458.2
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.05452743455534801,
+        "pe": 0.1431881844997406,
+        "siglip2": 0.0007149361019241241,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 219.6
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.20606060606060606,
+        "vqa": 0.002693113865279884,
+        "pe": 0.12235981971025467,
+        "siglip2": 2.0416475706497294e-06,
+        "pinv_micro": 0.21951219512195122,
+        "zero_collision_models": 1,
+        "mean_parts": 8.2
+      }
+    },
+    "bus": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.5630304992198945,
+        "pe": 0.17071103155612946,
+        "siglip2": 0.05431446994189173,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 363.8
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.4253403902053833,
+        "pe": 0.1551050752401352,
+        "siglip2": 0.11300161629915237,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 60.4
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.2333792278182522,
+        "vqa": 0.2895507331937551,
+        "pe": 0.13895820826292038,
+        "siglip2": 0.0048754845505754926,
+        "pinv_micro": 0.25517241379310346,
+        "zero_collision_models": 0,
+        "mean_parts": 29
+      }
+    },
+    "camera": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.21952970027923585,
+        "pe": 0.1680009961128235,
+        "siglip2": 0.023312002250531805,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 441.4
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.13299537411221535,
+        "pe": 0.1043880507349968,
+        "siglip2": 5.215162591269973e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 182.6
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.16818181818181818,
+        "vqa": 0.36858985243597997,
+        "pe": 0.17427964210510255,
+        "siglip2": 0.02617682820164191,
+        "pinv_micro": 0.19117647058823528,
+        "zero_collision_models": 1,
+        "mean_parts": 13.6
+      }
+    },
+    "car": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.038787455725832844,
+        "pe": 0.15728359818458557,
+        "siglip2": 0.00028421237366274,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 304.8
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.042182465837686325,
+        "pe": 0.16671904623508454,
+        "siglip2": 0.0015964392081514235,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 110.8
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.13164885327371156,
+        "vqa": 0.06682712332039956,
+        "pe": 0.15574689954519272,
+        "siglip2": 0.004596585796807062,
+        "pinv_micro": 0.12422360248447205,
+        "zero_collision_models": 0,
+        "mean_parts": 32.2
+      }
+    },
+    "chair": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.725357042811811,
+        "pe": 0.2187820255756378,
+        "siglip2": 0.4060875453054905,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 253.6
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.6363070365274325,
+        "pe": 0.21478268206119538,
+        "siglip2": 0.28695286375004797,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 81.8
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.08062015503875969,
+        "vqa": 0.0489736367482692,
+        "pe": 0.1523909091949463,
+        "siglip2": 0.04477794618087501,
+        "pinv_micro": 0.1092436974789916,
+        "zero_collision_models": 3,
+        "mean_parts": 23.8
+      }
+    },
+    "guitar": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.3344931252300739,
+        "pe": 0.18051074147224427,
+        "siglip2": 0.011240520980209112,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 321
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.12836030835751444,
+        "pe": 0.12336668819189071,
+        "siglip2": 0.001726940417734113,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 30.6
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.21199134199134198,
+        "vqa": 0.009429826514679007,
+        "pe": 0.10843883901834488,
+        "siglip2": 9.880982395316095e-06,
+        "pinv_micro": 0.37962962962962965,
+        "zero_collision_models": 2,
+        "mean_parts": 21.6
+      }
+    },
+    "jar": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.2901834685355425,
+        "pe": 0.17548078298568726,
+        "siglip2": 0.01324163042481814,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 437.8
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.1146207288838923,
+        "pe": 0.1323443293571472,
+        "siglip2": 0.0006425355442232217,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 227.8
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.10500000000000001,
+        "vqa": 0.18389111198484898,
+        "pe": 0.12288744300603867,
+        "siglip2": 0.025192596605013762,
+        "pinv_micro": 0.15447154471544716,
+        "zero_collision_models": 3,
+        "mean_parts": 24.6
+      }
+    },
+    "mug": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.2546708580106497,
+        "pe": 0.17245612740516664,
+        "siglip2": 0.033508303575217724,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 393.6
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.20989841199479997,
+        "pe": 0.14503131806850433,
+        "siglip2": 0.0033091772776970172,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 292.8
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.31027298850574714,
+        "vqa": 0.01902753569311244,
+        "pe": 0.09407319203019142,
+        "siglip2": 2.2094036967246212e-05,
+        "pinv_micro": 0.30275229357798167,
+        "zero_collision_models": 1,
+        "mean_parts": 21.8
+      }
+    },
+    "piano": {
+      "BrickMore": {
+        "n": 6,
+        "pinv": 0.0,
+        "vqa": 0.09916204144246876,
+        "pe": 0.17921286076307297,
+        "siglip2": 0.11568934967120488,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 6,
+        "mean_parts": 320.3333333333333
+      },
+      "BrickGPT": {
+        "n": 6,
+        "pinv": 0.0,
+        "vqa": 0.0538843828253448,
+        "pe": 0.1415259651839733,
+        "siglip2": 0.03784207345969056,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 6,
+        "mean_parts": 133.16666666666666
+      },
+      "BrickNet": {
+        "n": 6,
+        "pinv": 0.23346234826497983,
+        "vqa": 0.006645170268408644,
+        "pe": 0.1265485261877378,
+        "siglip2": 6.735631360813936e-05,
+        "pinv_micro": 0.2611464968152866,
+        "zero_collision_models": 0,
+        "mean_parts": 26.166666666666668
+      }
+    },
+    "pot": {
+      "BrickMore": {
+        "n": 8,
+        "pinv": 0.0,
+        "vqa": 0.01228173085837625,
+        "pe": 0.17524876818060875,
+        "siglip2": 0.14886312456783912,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 8,
+        "mean_parts": 472.25
+      },
+      "BrickGPT": {
+        "n": 8,
+        "pinv": 0.0,
+        "vqa": 0.004977839084858715,
+        "pe": 0.11648625647649169,
+        "siglip2": 0.001222277860487786,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 8,
+        "mean_parts": 237.375
+      },
+      "BrickNet": {
+        "n": 8,
+        "pinv": 0.14937711744776963,
+        "vqa": 0.00761061876983149,
+        "pe": 0.1332064475864172,
+        "siglip2": 0.002753143822211257,
+        "pinv_micro": 0.18110236220472442,
+        "zero_collision_models": 1,
+        "mean_parts": 15.875
+      }
+    },
+    "sofa": {
+      "BrickMore": {
+        "n": 10,
+        "pinv": 0.0,
+        "vqa": 0.031588412495329975,
+        "pe": 0.20678607523441314,
+        "siglip2": 0.006527087619178929,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 10,
+        "mean_parts": 352.4
+      },
+      "BrickGPT": {
+        "n": 10,
+        "pinv": 0.0,
+        "vqa": 0.01981545104063116,
+        "pe": 0.16262066289782523,
+        "siglip2": 0.014454663634114694,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 10,
+        "mean_parts": 133.9
+      },
+      "BrickNet": {
+        "n": 10,
+        "pinv": 0.24424342234826105,
+        "vqa": 0.004577106877695769,
+        "pe": 0.1293577842414379,
+        "siglip2": 0.00012782807432358821,
+        "pinv_micro": 0.24899598393574296,
+        "zero_collision_models": 1,
+        "mean_parts": 24.9
+      }
+    },
+    "table": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.3724203869700432,
+        "pe": 0.19292282164096833,
+        "siglip2": 0.12394675192772411,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 480
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.3392983917146921,
+        "pe": 0.15838492810726165,
+        "siglip2": 0.008402672433226144,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 126
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.17012820512820512,
+        "vqa": 0.025135513697750866,
+        "pe": 0.12270934879779816,
+        "siglip2": 0.0001255079416296212,
+        "pinv_micro": 0.2248062015503876,
+        "zero_collision_models": 1,
+        "mean_parts": 25.8
+      }
+    },
+    "tower": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.2205515126697719,
+        "pe": 0.18200852870941162,
+        "siglip2": 0.29663675744086504,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 790.2
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.04060794143006206,
+        "pe": 0.1681768476963043,
+        "siglip2": 0.10311791431158782,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 146.8
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.3602148732583515,
+        "vqa": 0.013114273897372186,
+        "pe": 0.1438562661409378,
+        "siglip2": 0.015124404822927318,
+        "pinv_micro": 0.39855072463768115,
+        "zero_collision_models": 1,
+        "mean_parts": 27.6
+      }
+    },
+    "train": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.024607506487518548,
+        "pe": 0.17506391704082488,
+        "siglip2": 0.005438665382098406,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 349.6
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.00551779679954052,
+        "pe": 0.13102325648069382,
+        "siglip2": 0.018710908424911566,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 85
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.3248870590853455,
+        "vqa": 0.0413552223239094,
+        "pe": 0.15772453546524048,
+        "siglip2": 0.04092172762611881,
+        "pinv_micro": 0.3419354838709677,
+        "zero_collision_models": 0,
+        "mean_parts": 31
+      }
+    },
+    "vessel": {
+      "BrickMore": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.11929313167929649,
+        "pe": 0.17928749322891235,
+        "siglip2": 0.09822753444314003,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 352
+      },
+      "BrickGPT": {
+        "n": 5,
+        "pinv": 0.0,
+        "vqa": 0.0150974340736866,
+        "pe": 0.1116548478603363,
+        "siglip2": 2.354719645154546e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 5,
+        "mean_parts": 122.4
+      },
+      "BrickNet": {
+        "n": 5,
+        "pinv": 0.20746753246753247,
+        "vqa": 0.0976825013756752,
+        "pe": 0.13372378051280975,
+        "siglip2": 0.04801975773820573,
+        "pinv_micro": 0.18110236220472442,
+        "zero_collision_models": 1,
+        "mean_parts": 25.4
+      }
+    }
+  },
+  "by_category_level": {
+    "basket/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.05857350677251816,
+        "pe": 0.14867810904979706,
+        "siglip2": 0.0003799845289904624,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 420
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.05734671652317047,
+        "pe": 0.10124948620796204,
+        "siglip2": 1.2098656725356705e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 112
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0019425442442297935,
+        "pe": 0.05263178050518036,
+        "siglip2": 4.363462480228009e-09,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 14
+      }
+    },
+    "basket/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.08973079919815063,
+        "pe": 0.20101675391197205,
+        "siglip2": 0.6791787147521973,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 351
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.03563011437654495,
+        "pe": 0.13470549881458282,
+        "siglip2": 1.1478768101369496e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 283
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.25,
+        "vqa": 0.005514924414455891,
+        "pe": 0.10805098712444305,
+        "siglip2": 4.785094461112749e-06,
+        "pinv_micro": 0.25,
+        "zero_collision_models": 0,
+        "mean_parts": 20
+      }
+    },
+    "basket/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.008957285434007645,
+        "pe": 0.15663601458072662,
+        "siglip2": 0.0020507434383034706,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 568
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.011281169950962067,
+        "pe": 0.08173728734254837,
+        "siglip2": 1.1861120086109622e-08,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 256
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.3333333333333333,
+        "vqa": 0.034385841339826584,
+        "pe": 0.10858204215765,
+        "siglip2": 4.785094461112749e-06,
+        "pinv_micro": 0.3333333333333333,
+        "zero_collision_models": 0,
+        "mean_parts": 9
+      }
+    },
+    "basket/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.26624980568885803,
+        "pe": 0.22097626328468323,
+        "siglip2": 0.39233678579330444,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 319
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.009400542825460434,
+        "pe": 0.13717928528785706,
+        "siglip2": 0.0005193048855289817,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 313
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.3142857142857143,
+        "vqa": 0.019960056990385056,
+        "pe": 0.13679015636444092,
+        "siglip2": 0.0003569706459529698,
+        "pinv_micro": 0.3142857142857143,
+        "zero_collision_models": 0,
+        "mean_parts": 35
+      }
+    },
+    "basket/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.1447014957666397,
+        "pe": 0.22559009492397308,
+        "siglip2": 0.8807970285415649,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 364
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.03644588589668274,
+        "pe": 0.16368722915649414,
+        "siglip2": 0.01798621006309986,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 331
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.7,
+        "vqa": 0.0461990050971508,
+        "pe": 0.15412430465221405,
+        "siglip2": 0.008061991073191166,
+        "pinv_micro": 0.7,
+        "zero_collision_models": 0,
+        "mean_parts": 10
+      }
+    },
+    "bed/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.2528263032436371,
+        "pe": 0.18674540519714355,
+        "siglip2": 0.0029810327105224133,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 459
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.02479371428489685,
+        "pe": 0.08902609348297119,
+        "siglip2": 1.3709573067899328e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 108
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.15384615384615385,
+        "vqa": 0.002059968886896968,
+        "pe": 0.0967714786529541,
+        "siglip2": 5.42221869181958e-06,
+        "pinv_micro": 0.15384615384615385,
+        "zero_collision_models": 0,
+        "mean_parts": 13
+      }
+    },
+    "bed/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.1534862518310547,
+        "pe": 0.19963376224040985,
+        "siglip2": 0.29421496391296387,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 429
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.1696816086769104,
+        "pe": 0.11737941950559616,
+        "siglip2": 0.00021654405281879008,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 130
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.1388888888888889,
+        "vqa": 0.06465175747871399,
+        "pe": 0.12546472251415253,
+        "siglip2": 0.0013250223128125072,
+        "pinv_micro": 0.1388888888888889,
+        "zero_collision_models": 0,
+        "mean_parts": 36
+      }
+    },
+    "bed/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.08404490351676941,
+        "pe": 0.2502683103084564,
+        "siglip2": 0.6791787147521973,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 312
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.08770117908716202,
+        "pe": 0.14721190929412842,
+        "siglip2": 0.01912403479218483,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 200
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.19230769230769232,
+        "vqa": 0.012749570421874523,
+        "pe": 0.15572571754455566,
+        "siglip2": 0.0009110511746257544,
+        "pinv_micro": 0.19230769230769232,
+        "zero_collision_models": 0,
+        "mean_parts": 26
+      }
+    },
+    "bed/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.25478529930114746,
+        "pe": 0.1954771727323532,
+        "siglip2": 0.006692850962281227,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 329
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.026244210079312325,
+        "pe": 0.09490284323692322,
+        "siglip2": 1.67014204635052e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 223
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.08333333333333333,
+        "vqa": 0.0033895857632160187,
+        "pe": 0.10639674961566925,
+        "siglip2": 4.737905499041517e-07,
+        "pinv_micro": 0.08333333333333333,
+        "zero_collision_models": 0,
+        "mean_parts": 12
+      }
+    },
+    "bed/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.15920604765415192,
+        "pe": 0.2307627946138382,
+        "siglip2": 0.5926666259765625,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 505
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0839959979057312,
+        "pe": 0.1680469810962677,
+        "siglip2": 0.02595735713839531,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 82
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.08333333333333333,
+        "vqa": 0.00040914054261520505,
+        "pe": 0.07903661578893661,
+        "siglip2": 1.2751904421293148e-07,
+        "pinv_micro": 0.08333333333333333,
+        "zero_collision_models": 0,
+        "mean_parts": 36
+      }
+    },
+    "bench/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.039476603269577026,
+        "pe": 0.1895153969526291,
+        "siglip2": 0.00712142838165164,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 354
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.05153944343328476,
+        "pe": 0.18963590264320374,
+        "siglip2": 0.0010322310263291001,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 65
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.2962962962962963,
+        "vqa": 0.01950099878013134,
+        "pe": 0.12673217058181763,
+        "siglip2": 6.144174221844878e-06,
+        "pinv_micro": 0.2962962962962963,
+        "zero_collision_models": 0,
+        "mean_parts": 27
+      }
+    },
+    "bench/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.9766550064086914,
+        "pe": 0.20792031288146973,
+        "siglip2": 0.00023050670279189944,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 318
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.9316707849502563,
+        "pe": 0.22574400901794434,
+        "siglip2": 0.0010322310263291001,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 34
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.2222222222222222,
+        "vqa": 0.031189188361167908,
+        "pe": 0.08161420375108719,
+        "siglip2": 1.2751904421293148e-07,
+        "pinv_micro": 0.2222222222222222,
+        "zero_collision_models": 0,
+        "mean_parts": 27
+      }
+    },
+    "bench/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.26978635787963867,
+        "pe": 0.21000009775161743,
+        "siglip2": 0.02595735713839531,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 688
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.05577613785862923,
+        "pe": 0.118772953748703,
+        "siglip2": 1.67014204635052e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 46
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.10714285714285714,
+        "vqa": 0.07187279313802719,
+        "pe": 0.10005957633256912,
+        "siglip2": 6.144174221844878e-06,
+        "pinv_micro": 0.10714285714285714,
+        "zero_collision_models": 0,
+        "mean_parts": 28
+      }
+    },
+    "bench/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.14618690311908722,
+        "pe": 0.25472787022590637,
+        "siglip2": 0.7310585379600525,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 713
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.11743142455816269,
+        "pe": 0.20763026177883148,
+        "siglip2": 0.11920291930437088,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 81
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.25,
+        "vqa": 0.013877148739993572,
+        "pe": 0.13028331100940704,
+        "siglip2": 7.484622619813308e-05,
+        "pinv_micro": 0.25,
+        "zero_collision_models": 0,
+        "mean_parts": 24
+      }
+    },
+    "bench/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.10264155268669128,
+        "pe": 0.21953216195106506,
+        "siglip2": 0.3775406777858734,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 837
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.05059877410531044,
+        "pe": 0.19701357185840607,
+        "siglip2": 0.0008559006964787841,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 157
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.38095238095238093,
+        "vqa": 0.027883470058441162,
+        "pe": 0.14980372786521912,
+        "siglip2": 0.00011591933434829116,
+        "pinv_micro": 0.38095238095238093,
+        "zero_collision_models": 0,
+        "mean_parts": 21
+      }
+    },
+    "birdhouse/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.029092632234096527,
+        "pe": 0.20080262422561646,
+        "siglip2": 0.03514484688639641,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 323
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.023428209125995636,
+        "pe": 0.10514334589242935,
+        "siglip2": 1.1365636964910664e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 497
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.125,
+        "vqa": 0.03406302258372307,
+        "pe": 0.13880132138729095,
+        "siglip2": 8.481103577651083e-05,
+        "pinv_micro": 0.125,
+        "zero_collision_models": 0,
+        "mean_parts": 32
+      }
+    },
+    "birdhouse/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.001427396317012608,
+        "pe": 0.20620161294937134,
+        "siglip2": 0.562176525592804,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 323
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.00234141550026834,
+        "pe": 0.15992207825183868,
+        "siglip2": 0.0035936026833951473,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 190
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.48484848484848486,
+        "vqa": 0.0051203141920268536,
+        "pe": 0.13291914761066437,
+        "siglip2": 0.0012448433553799987,
+        "pinv_micro": 0.48484848484848486,
+        "zero_collision_models": 0,
+        "mean_parts": 33
+      }
+    },
+    "birdhouse/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.003950228914618492,
+        "pe": 0.20143339037895203,
+        "siglip2": 0.004609572235494852,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 687
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.002344726352021098,
+        "pe": 0.1344069540500641,
+        "siglip2": 0.00011591933434829116,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 274
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.28125,
+        "vqa": 0.00019911154231522232,
+        "pe": 0.11024796962738037,
+        "siglip2": 8.398072168347426e-06,
+        "pinv_micro": 0.28125,
+        "zero_collision_models": 0,
+        "mean_parts": 32
+      }
+    },
+    "birdhouse/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.009302474558353424,
+        "pe": 0.21754790842533112,
+        "siglip2": 0.562176525592804,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 351
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.003934279549866915,
+        "pe": 0.16595694422721863,
+        "siglip2": 0.000626334105618298,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 200
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.46153846153846156,
+        "vqa": 0.0010078763589262962,
+        "pe": 0.1705457866191864,
+        "siglip2": 0.053403329104185104,
+        "pinv_micro": 0.46153846153846156,
+        "zero_collision_models": 0,
+        "mean_parts": 26
+      }
+    },
+    "birdhouse/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.01631208322942257,
+        "pe": 0.2255387008190155,
+        "siglip2": 0.17328819632530212,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 372
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.018566545099020004,
+        "pe": 0.15000870823860168,
+        "siglip2": 0.0004044814850203693,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 275
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.2,
+        "vqa": 0.00035855232272297144,
+        "pe": 0.12362178415060043,
+        "siglip2": 3.1201914680423215e-05,
+        "pinv_micro": 0.2,
+        "zero_collision_models": 0,
+        "mean_parts": 15
+      }
+    },
+    "bookshelf/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.6123997569084167,
+        "pe": 0.20185615122318268,
+        "siglip2": 0.3775406777858734,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 299
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.11058799177408218,
+        "pe": 0.16457369923591614,
+        "siglip2": 0.000487857119878754,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 42
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.12121212121212122,
+        "vqa": 0.030159734189510345,
+        "pe": 0.11651594936847687,
+        "siglip2": 3.1201914680423215e-05,
+        "pinv_micro": 0.12121212121212122,
+        "zero_collision_models": 0,
+        "mean_parts": 33
+      }
+    },
+    "bookshelf/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.015085380524396896,
+        "pe": 0.17188304662704468,
+        "siglip2": 0.0010322310263291001,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 190
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0010327992495149374,
+        "pe": 0.09344520419836044,
+        "siglip2": 2.5360185418321635e-07,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 59
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.6774193548387096,
+        "vqa": 0.007669936865568161,
+        "pe": 0.10354572534561157,
+        "siglip2": 1.2751904421293148e-07,
+        "pinv_micro": 0.6774193548387096,
+        "zero_collision_models": 0,
+        "mean_parts": 31
+      }
+    },
+    "bookshelf/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.5524113178253174,
+        "pe": 0.17900675535202026,
+        "siglip2": 0.18242552876472473,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 650
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.4845598042011261,
+        "pe": 0.1491445153951645,
+        "siglip2": 0.014957086183130741,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 91
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.24,
+        "vqa": 0.04084817320108414,
+        "pe": 0.1066914051771164,
+        "siglip2": 7.484622619813308e-05,
+        "pinv_micro": 0.24,
+        "zero_collision_models": 0,
+        "mean_parts": 25
+      }
+    },
+    "bookshelf/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.5103514790534973,
+        "pe": 0.20771130919456482,
+        "siglip2": 0.031143832951784134,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 244
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.6431082487106323,
+        "pe": 0.17257332801818848,
+        "siglip2": 0.006692850962281227,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 131
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.631578947368421,
+        "vqa": 0.3108484447002411,
+        "pe": 0.12966763973236084,
+        "siglip2": 0.00023050670279189944,
+        "pinv_micro": 0.631578947368421,
+        "zero_collision_models": 0,
+        "mean_parts": 19
+      }
+    },
+    "bookshelf/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.6921353340148926,
+        "pe": 0.1898079514503479,
+        "siglip2": 0.10669060051441193,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 278
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.8535338044166565,
+        "pe": 0.20157727599143982,
+        "siglip2": 0.09534945338964462,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 76
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.3225806451612903,
+        "vqa": 0.06222699582576752,
+        "pe": 0.11733272671699524,
+        "siglip2": 2.2827996872365475e-05,
+        "pinv_micro": 0.3225806451612903,
+        "zero_collision_models": 0,
+        "mean_parts": 31
+      }
+    },
+    "bottle/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.3788711130619049,
+        "pe": 0.1995890736579895,
+        "siglip2": 0.009708477184176445,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 488
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.1564215123653412,
+        "pe": 0.16778717935085297,
+        "siglip2": 0.0008040859247557819,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 126
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.14285714285714285,
+        "vqa": 0.012865002267062664,
+        "pe": 0.084587961435318,
+        "siglip2": 2.902311962316162e-06,
+        "pinv_micro": 0.14285714285714285,
+        "zero_collision_models": 0,
+        "mean_parts": 14
+      }
+    },
+    "bottle/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.6264275312423706,
+        "pe": 0.13267411291599274,
+        "siglip2": 0.00712142838165164,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 377
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.25383883714675903,
+        "pe": 0.1389467716217041,
+        "siglip2": 0.0003150386910419911,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 142
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.01706777885556221,
+        "pe": 0.09195882827043533,
+        "siglip2": 3.2563121976636467e-07,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 20
+      }
+    },
+    "bottle/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.5175485014915466,
+        "pe": 0.19730716943740845,
+        "siglip2": 0.005554925184696913,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 615
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.3136026859283447,
+        "pe": 0.16655991971492767,
+        "siglip2": 0.000552778656128794,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 139
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.2320042997598648,
+        "pe": 0.15761005878448486,
+        "siglip2": 0.0003799845289904624,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 6
+      }
+    },
+    "bottle/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.46215638518333435,
+        "pe": 0.17132040858268738,
+        "siglip2": 0.007577241398394108,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 547
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.059890639036893845,
+        "pe": 0.14504043757915497,
+        "siglip2": 0.0002959570847451687,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 147
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.28205128205128205,
+        "vqa": 0.019013475626707077,
+        "pe": 0.09870363026857376,
+        "siglip2": 1.5381732509922585e-07,
+        "pinv_micro": 0.28205128205128205,
+        "zero_collision_models": 0,
+        "mean_parts": 39
+      }
+    },
+    "bottle/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.025981785729527473,
+        "pe": 0.17257186770439148,
+        "siglip2": 0.0007554056355729699,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 420
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.005566045641899109,
+        "pe": 0.14561977982521057,
+        "siglip2": 5.144220995134674e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 81
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0028407310601323843,
+        "pe": 0.18962571024894714,
+        "siglip2": 0.000626334105618298,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 6
+      }
+    },
+    "bowl/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.01649906300008297,
+        "pe": 0.11317873001098633,
+        "siglip2": 3.9278620533877984e-07,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 403
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0009858723497018218,
+        "pe": 0.10284373164176941,
+        "siglip2": 2.8453348122070565e-08,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 249
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.36363636363636365,
+        "vqa": 1.3114681678416673e-05,
+        "pe": 0.07327450811862946,
+        "siglip2": 1.7429786680622783e-07,
+        "pinv_micro": 0.36363636363636365,
+        "zero_collision_models": 0,
+        "mean_parts": 11
+      }
+    },
+    "bowl/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.007250526919960976,
+        "pe": 0.14206594228744507,
+        "siglip2": 9.028038039105013e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 552
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0012905310140922666,
+        "pe": 0.12315469980239868,
+        "siglip2": 2.726470256675384e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 214
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.3333333333333333,
+        "vqa": 0.005372526124119759,
+        "pe": 0.15853771567344666,
+        "siglip2": 8.851569646139978e-07,
+        "pinv_micro": 0.3333333333333333,
+        "zero_collision_models": 0,
+        "mean_parts": 6
+      }
+    },
+    "bowl/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.023321395739912987,
+        "pe": 0.18889935314655304,
+        "siglip2": 0.00712142838165164,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 395
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.00018867634935304523,
+        "pe": 0.10488812625408173,
+        "siglip2": 5.715004363082699e-07,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 88
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.16666666666666666,
+        "vqa": 0.0003404784365557134,
+        "pe": 0.08156170696020126,
+        "siglip2": 2.8736855028910213e-07,
+        "pinv_micro": 0.16666666666666666,
+        "zero_collision_models": 0,
+        "mean_parts": 12
+      }
+    },
+    "bowl/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.46108824014663696,
+        "pe": 0.17053939402103424,
+        "siglip2": 0.0005193048855289817,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 472
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.03695480898022652,
+        "pe": 0.15883345901966095,
+        "siglip2": 0.0024726230185478926,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 342
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.16666666666666666,
+        "vqa": 0.000440612668171525,
+        "pe": 0.16136404871940613,
+        "siglip2": 3.0894946121406974e-06,
+        "pinv_micro": 0.16666666666666666,
+        "zero_collision_models": 0,
+        "mean_parts": 6
+      }
+    },
+    "bowl/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.01731516420841217,
+        "pe": 0.16478963196277618,
+        "siglip2": 0.00013982206291984767,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 469
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.2332172840833664,
+        "pe": 0.22622090578079224,
+        "siglip2": 0.001098731067031622,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 205
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.007298837415874004,
+        "pe": 0.13706111907958984,
+        "siglip2": 5.771919859398622e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 6
+      }
+    },
+    "bus/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.5637291669845581,
+        "pe": 0.155079185962677,
+        "siglip2": 0.012431650422513485,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 343
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.4196002781391144,
+        "pe": 0.1471465826034546,
+        "siglip2": 0.09009299427270889,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 52
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.09523809523809523,
+        "vqa": 0.5449248552322388,
+        "pe": 0.12083492428064346,
+        "siglip2": 0.0020507434383034706,
+        "pinv_micro": 0.09523809523809523,
+        "zero_collision_models": 0,
+        "mean_parts": 21
+      }
+    },
+    "bus/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.7409967184066772,
+        "pe": 0.20637649297714233,
+        "siglip2": 0.01912403479218483,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 509
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.6929389834403992,
+        "pe": 0.17295652627944946,
+        "siglip2": 0.042087726294994354,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 67
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.36363636363636365,
+        "vqa": 0.025574607774615288,
+        "pe": 0.13721339404582977,
+        "siglip2": 0.00011591933434829116,
+        "pinv_micro": 0.36363636363636365,
+        "zero_collision_models": 0,
+        "mean_parts": 22
+      }
+    },
+    "bus/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.6180866360664368,
+        "pe": 0.1712346076965332,
+        "siglip2": 0.004609572235494852,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 353
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.5275346040725708,
+        "pe": 0.16011737287044525,
+        "siglip2": 0.17328819632530212,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 56
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.2777777777777778,
+        "vqa": 0.24669696390628815,
+        "pe": 0.14494109153747559,
+        "siglip2": 4.2647468944778666e-05,
+        "pinv_micro": 0.2777777777777778,
+        "zero_collision_models": 0,
+        "mean_parts": 36
+      }
+    },
+    "bus/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.28613486886024475,
+        "pe": 0.16654659807682037,
+        "siglip2": 0.23370636999607086,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 251
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.15815463662147522,
+        "pe": 0.1540822833776474,
+        "siglip2": 0.14033624529838562,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 67
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.3902439024390244,
+        "vqa": 0.3114864230155945,
+        "pe": 0.14349746704101562,
+        "siglip2": 0.000552778656128794,
+        "pinv_micro": 0.3902439024390244,
+        "zero_collision_models": 0,
+        "mean_parts": 41
+      }
+    },
+    "bus/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.6062051057815552,
+        "pe": 0.15431827306747437,
+        "siglip2": 0.0017007222631946206,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 363
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.32847344875335693,
+        "pe": 0.14122261106967926,
+        "siglip2": 0.11920291930437088,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 60
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.04,
+        "vqa": 0.31907081604003906,
+        "pe": 0.14830416440963745,
+        "siglip2": 0.02161533385515213,
+        "pinv_micro": 0.04,
+        "zero_collision_models": 0,
+        "mean_parts": 25
+      }
+    },
+    "camera/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.14759421348571777,
+        "pe": 0.13440042734146118,
+        "siglip2": 2.93115390377352e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 410
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.06284680217504501,
+        "pe": 0.07187826186418533,
+        "siglip2": 1.6536895373064908e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 274
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.3,
+        "vqa": 0.45718979835510254,
+        "pe": 0.12054465711116791,
+        "siglip2": 1.892514956125524e-05,
+        "pinv_micro": 0.3,
+        "zero_collision_models": 0,
+        "mean_parts": 10
+      }
+    },
+    "camera/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.036912333220243454,
+        "pe": 0.1255243718624115,
+        "siglip2": 0.042087726294994354,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 138
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.016574295237660408,
+        "pe": 0.0944105014204979,
+        "siglip2": 2.4300241420860402e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 288
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.2,
+        "vqa": 0.08654303103685379,
+        "pe": 0.22048023343086243,
+        "siglip2": 0.10669060051441193,
+        "pinv_micro": 0.2,
+        "zero_collision_models": 0,
+        "mean_parts": 10
+      }
+    },
+    "camera/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.017030704766511917,
+        "pe": 0.20294895768165588,
+        "siglip2": 0.00020342698553577065,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 504
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 3.8068661524448544e-05,
+        "pe": 0.09786175191402435,
+        "siglip2": 9.931192579415438e-08,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 102
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.09090909090909091,
+        "vqa": 0.0006297364016063511,
+        "pe": 0.1291441023349762,
+        "siglip2": 1.7778551409719512e-05,
+        "pinv_micro": 0.09090909090909091,
+        "zero_collision_models": 0,
+        "mean_parts": 11
+      }
+    },
+    "camera/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.6719923615455627,
+        "pe": 0.1887776255607605,
+        "siglip2": 0.006692850962281227,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 582
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.5248666405677795,
+        "pe": 0.11765149980783463,
+        "siglip2": 6.60521473037079e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 154
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.25,
+        "vqa": 0.9591770172119141,
+        "pe": 0.19414173066616058,
+        "siglip2": 0.020332353189587593,
+        "pinv_micro": 0.25,
+        "zero_collision_models": 0,
+        "mean_parts": 28
+      }
+    },
+    "camera/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.2241188883781433,
+        "pe": 0.18835359811782837,
+        "siglip2": 0.06754669547080994,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 573
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.06065106391906738,
+        "pe": 0.14013823866844177,
+        "siglip2": 0.0001686527393758297,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 95
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.3394096791744232,
+        "pe": 0.20708748698234558,
+        "siglip2": 0.0038244836032390594,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 9
+      }
+    },
+    "car/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.011393130756914616,
+        "pe": 0.1291947215795517,
+        "siglip2": 0.0003799845289904624,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 549
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.018612250685691833,
+        "pe": 0.15531250834465027,
+        "siglip2": 0.005554925184696913,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 108
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.13043478260869565,
+        "vqa": 0.022867435589432716,
+        "pe": 0.14647576212882996,
+        "siglip2": 0.01798621006309986,
+        "pinv_micro": 0.13043478260869565,
+        "zero_collision_models": 0,
+        "mean_parts": 46
+      }
+    },
+    "car/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.010662436485290527,
+        "pe": 0.1520167589187622,
+        "siglip2": 7.889262633398175e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 279
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.039003241807222366,
+        "pe": 0.144941046833992,
+        "siglip2": 1.3007129382458515e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 120
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.07317073170731707,
+        "vqa": 0.001500528771430254,
+        "pe": 0.10657470673322678,
+        "siglip2": 6.825602838489431e-08,
+        "pinv_micro": 0.07317073170731707,
+        "zero_collision_models": 0,
+        "mean_parts": 41
+      }
+    },
+    "car/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.16665978729724884,
+        "pe": 0.1506679803133011,
+        "siglip2": 0.000626334105618298,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 414
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.1518344134092331,
+        "pe": 0.17632246017456055,
+        "siglip2": 0.0004044814850203693,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 101
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.20833333333333334,
+        "vqa": 0.3095996081829071,
+        "pe": 0.17398490011692047,
+        "siglip2": 0.002182716503739357,
+        "pinv_micro": 0.20833333333333334,
+        "zero_collision_models": 0,
+        "mean_parts": 24
+      }
+    },
+    "car/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.005128465127199888,
+        "pe": 0.17726926505565643,
+        "siglip2": 0.00020342698553577065,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 141
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0012894370593130589,
+        "pe": 0.17183344066143036,
+        "siglip2": 0.001098731067031622,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 114
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.14285714285714285,
+        "vqa": 3.080423266510479e-05,
+        "pe": 0.1540260910987854,
+        "siglip2": 1.3007129382458515e-05,
+        "pinv_micro": 0.14285714285714285,
+        "zero_collision_models": 0,
+        "mean_parts": 21
+      }
+    },
+    "car/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 9.345896251033992e-05,
+        "pe": 0.17726926505565643,
+        "siglip2": 0.00020342698553577065,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 141
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0001729862269712612,
+        "pe": 0.1851857751607895,
+        "siglip2": 0.0009110511746257544,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 111
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.10344827586206896,
+        "vqa": 0.00013723982556257397,
+        "pe": 0.197673037648201,
+        "siglip2": 0.0028009270317852497,
+        "pinv_micro": 0.10344827586206896,
+        "zero_collision_models": 0,
+        "mean_parts": 29
+      }
+    },
+    "chair/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.9718673825263977,
+        "pe": 0.23826846480369568,
+        "siglip2": 0.42250463366508484,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 287
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.5721880793571472,
+        "pe": 0.22875845432281494,
+        "siglip2": 0.10669060051441193,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 100
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.003995186649262905,
+        "pe": 0.13120295107364655,
+        "siglip2": 9.516251338936854e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 14
+      }
+    },
+    "chair/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.9159913063049316,
+        "pe": 0.22333842515945435,
+        "siglip2": 0.14033624529838562,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 132
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.9035038948059082,
+        "pe": 0.2189287692308426,
+        "siglip2": 0.5,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 56
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.06976744186046512,
+        "vqa": 0.0033028919715434313,
+        "pe": 0.13433577120304108,
+        "siglip2": 0.00010889690747717395,
+        "pinv_micro": 0.06976744186046512,
+        "zero_collision_models": 0,
+        "mean_parts": 43
+      }
+    },
+    "chair/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.7668247222900391,
+        "pe": 0.2240518480539322,
+        "siglip2": 0.851952850818634,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 288
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.8746553063392639,
+        "pe": 0.22250351309776306,
+        "siglip2": 0.5926666259765625,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 82
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.17064209282398224,
+        "pe": 0.22716838121414185,
+        "siglip2": 0.22270013391971588,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 14
+      }
+    },
+    "chair/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.9619565010070801,
+        "pe": 0.2166847586631775,
+        "siglip2": 0.5926666259765625,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 304
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.8307416439056396,
+        "pe": 0.21361392736434937,
+        "siglip2": 0.23370636999607086,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 85
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.061305176466703415,
+        "pe": 0.14804615080356598,
+        "siglip2": 0.0004044814850203693,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 18
+      }
+    },
+    "chair/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.010145301930606365,
+        "pe": 0.19156663119792938,
+        "siglip2": 0.022977370768785477,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 257
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0004462582292035222,
+        "pe": 0.1901087462902069,
+        "siglip2": 0.0017007222631946206,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 86
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.3333333333333333,
+        "vqa": 0.0056228358298540115,
+        "pe": 0.121201291680336,
+        "siglip2": 0.0006667023408226669,
+        "pinv_micro": 0.3333333333333333,
+        "zero_collision_models": 0,
+        "mean_parts": 30
+      }
+    },
+    "guitar/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.7604577541351318,
+        "pe": 0.17896625399589539,
+        "siglip2": 0.0006667023408226669,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 134
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.3120364546775818,
+        "pe": 0.12913605570793152,
+        "siglip2": 8.851569646139978e-07,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 30
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.027154427021741867,
+        "pe": 0.12406139075756073,
+        "siglip2": 6.825602838489431e-08,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 8
+      }
+    },
+    "guitar/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.23895233869552612,
+        "pe": 0.18629086017608643,
+        "siglip2": 0.0003569706459529698,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 402
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.03926844149827957,
+        "pe": 0.14038291573524475,
+        "siglip2": 1.9947297005273867e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 25
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.09090909090909091,
+        "vqa": 0.00013629916065838188,
+        "pe": 0.09404505789279938,
+        "siglip2": 6.023573462243803e-08,
+        "pinv_micro": 0.09090909090909091,
+        "zero_collision_models": 0,
+        "mean_parts": 11
+      }
+    },
+    "guitar/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.42551061511039734,
+        "pe": 0.1822446584701538,
+        "siglip2": 0.011687257327139378,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 142
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.2210279405117035,
+        "pe": 0.15454059839248657,
+        "siglip2": 0.008577484637498856,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 19
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.6190476190476191,
+        "vqa": 0.0024994800332933664,
+        "pe": 0.10639424622058868,
+        "siglip2": 3.7266393064783188e-06,
+        "pinv_micro": 0.6190476190476191,
+        "zero_collision_models": 0,
+        "mean_parts": 42
+      }
+    },
+    "guitar/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.2120036780834198,
+        "pe": 0.1831361949443817,
+        "siglip2": 0.01590639166533947,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 301
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0681493952870369,
+        "pe": 0.10479561239480972,
+        "siglip2": 4.539786823443137e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 43
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.003203615779057145,
+        "pe": 0.11937946826219559,
+        "siglip2": 2.902311962316162e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 7
+      }
+    },
+    "guitar/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.035541240125894547,
+        "pe": 0.17191573977470398,
+        "siglip2": 0.027585282921791077,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 626
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0013193098129704595,
+        "pe": 0.08797825872898102,
+        "siglip2": 8.939696272136644e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 36
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.35,
+        "vqa": 0.014155310578644276,
+        "pe": 0.09831403195858002,
+        "siglip2": 4.2647468944778666e-05,
+        "pinv_micro": 0.35,
+        "zero_collision_models": 0,
+        "mean_parts": 40
+      }
+    },
+    "jar/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.01664070226252079,
+        "pe": 0.14431242644786835,
+        "siglip2": 2.1444948288262822e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 425
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.002105653751641512,
+        "pe": 0.10870952904224396,
+        "siglip2": 8.764246928194552e-08,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 139
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0018764771521091461,
+        "pe": 0.10660456120967865,
+        "siglip2": 8.764246928194552e-08,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 14
+      }
+    },
+    "jar/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.31400877237319946,
+        "pe": 0.18491141498088837,
+        "siglip2": 0.010328153148293495,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 515
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.17377617955207825,
+        "pe": 0.1306258589029312,
+        "siglip2": 1.1478768101369496e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 217
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.4,
+        "vqa": 0.08542380481958389,
+        "pe": 0.10072208940982819,
+        "siglip2": 1.3846004549122881e-05,
+        "pinv_micro": 0.4,
+        "zero_collision_models": 0,
+        "mean_parts": 45
+      }
+    },
+    "jar/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.6819915771484375,
+        "pe": 0.14831441640853882,
+        "siglip2": 0.0004044814850203693,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 439
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.26455754041671753,
+        "pe": 0.12752994894981384,
+        "siglip2": 2.586742994026281e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 260
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.125,
+        "vqa": 0.355521023273468,
+        "pe": 0.1384638547897339,
+        "siglip2": 2.4300241420860402e-05,
+        "pinv_micro": 0.125,
+        "zero_collision_models": 0,
+        "mean_parts": 8
+      }
+    },
+    "jar/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.38197454810142517,
+        "pe": 0.1842299997806549,
+        "siglip2": 0.053403329104185104,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 432
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.09739449620246887,
+        "pe": 0.16960054636001587,
+        "siglip2": 0.003172682598233223,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 372
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.47523462772369385,
+        "pe": 0.2036653459072113,
+        "siglip2": 0.12592275440692902,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 8
+      }
+    },
+    "jar/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.05630174279212952,
+        "pe": 0.21563565731048584,
+        "siglip2": 0.0020507434383034706,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 378
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.03526977449655533,
+        "pe": 0.1252557635307312,
+        "siglip2": 2.561282371971174e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 151
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0013996269553899765,
+        "pe": 0.0649813637137413,
+        "siglip2": 1.9947297005273867e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 48
+      }
+    },
+    "mug/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.23559629917144775,
+        "pe": 0.20074963569641113,
+        "siglip2": 0.00628990214318037,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 506
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.25209763646125793,
+        "pe": 0.1480618268251419,
+        "siglip2": 5.829126530443318e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 239
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.02345540001988411,
+        "pe": 0.12427402287721634,
+        "siglip2": 7.484622619813308e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 14
+      }
+    },
+    "mug/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.9135296940803528,
+        "pe": 0.17580214142799377,
+        "siglip2": 0.07159119844436646,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 313
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.7780072689056396,
+        "pe": 0.14222702383995056,
+        "siglip2": 7.484622619813308e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 471
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.10344827586206896,
+        "vqa": 0.06065788120031357,
+        "pe": 0.1081714928150177,
+        "siglip2": 2.2827996872365475e-05,
+        "pinv_micro": 0.10344827586206896,
+        "zero_collision_models": 0,
+        "mean_parts": 29
+      }
+    },
+    "mug/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.09352222084999084,
+        "pe": 0.16040551662445068,
+        "siglip2": 0.042087726294994354,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 383
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.010665100067853928,
+        "pe": 0.17375105619430542,
+        "siglip2": 0.004609572235494852,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 167
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.6666666666666666,
+        "vqa": 0.010774010792374611,
+        "pe": 0.0955289900302887,
+        "siglip2": 4.495181656238856e-06,
+        "pinv_micro": 0.6666666666666666,
+        "zero_collision_models": 0,
+        "mean_parts": 18
+      }
+    },
+    "mug/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.015536675229668617,
+        "pe": 0.16469892859458923,
+        "siglip2": 0.02595735713839531,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 383
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.005731210578233004,
+        "pe": 0.09545966982841492,
+        "siglip2": 0.00011591933434829116,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 343
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.4375,
+        "vqa": 7.4798740570258815e-06,
+        "pe": 0.05949237570166588,
+        "siglip2": 6.540436970681185e-06,
+        "pinv_micro": 0.4375,
+        "zero_collision_models": 0,
+        "mean_parts": 16
+      }
+    },
+    "mug/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.015169400721788406,
+        "pe": 0.1606244146823883,
+        "siglip2": 0.02161533385515213,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 383
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0029908439610153437,
+        "pe": 0.16565701365470886,
+        "siglip2": 0.011687257327139378,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 244
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.34375,
+        "vqa": 0.0002429065789328888,
+        "pe": 0.0828990787267685,
+        "siglip2": 1.760343138812459e-06,
+        "pinv_micro": 0.34375,
+        "zero_collision_models": 0,
+        "mean_parts": 32
+      }
+    },
+    "piano/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.04015353322029114,
+        "pe": 0.17725013196468353,
+        "siglip2": 0.060086652636528015,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 270
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.14344383776187897,
+        "pe": 0.18231719732284546,
+        "siglip2": 0.05033063143491745,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 143
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.07692307692307693,
+        "vqa": 0.006979140918701887,
+        "pe": 0.10546979308128357,
+        "siglip2": 6.144174221844878e-06,
+        "pinv_micro": 0.07692307692307693,
+        "zero_collision_models": 0,
+        "mean_parts": 13
+      }
+    },
+    "piano/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.4162786900997162,
+        "pe": 0.15062841773033142,
+        "siglip2": 0.09009299427270889,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 520
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.019279710948467255,
+        "pe": 0.08997994661331177,
+        "siglip2": 4.495181656238856e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 130
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.2571428571428571,
+        "vqa": 0.00013038734323345125,
+        "pe": 0.07983644306659698,
+        "siglip2": 4.139937814784389e-08,
+        "pinv_micro": 0.2571428571428571,
+        "zero_collision_models": 0,
+        "mean_parts": 35
+      }
+    },
+    "piano/L3": {
+      "BrickMore": {
+        "n": 2,
+        "pinv": 0.0,
+        "vqa": 0.056108323857188225,
+        "pe": 0.18946974724531174,
+        "siglip2": 0.18801746144890785,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 2,
+        "mean_parts": 288
+      },
+      "BrickGPT": {
+        "n": 2,
+        "pinv": 0.0,
+        "vqa": 0.06115826405584812,
+        "pe": 0.13231006264686584,
+        "siglip2": 0.000623200656264089,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 2,
+        "mean_parts": 60.5
+      },
+      "BrickNet": {
+        "n": 2,
+        "pinv": 0.3403716216216216,
+        "vqa": 0.014007497113198042,
+        "pe": 0.13726787269115448,
+        "siglip2": 0.00013237757957540452,
+        "pinv_micro": 0.3333333333333333,
+        "zero_collision_models": 0,
+        "mean_parts": 34.5
+      }
+    },
+    "piano/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.004388842266052961,
+        "pe": 0.19164417684078217,
+        "siglip2": 0.027585282921791077,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 270
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.027909690514206886,
+        "pe": 0.19289091229438782,
+        "siglip2": 0.17328819632530212,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 205
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.05263157894736842,
+        "vqa": 0.0034539683256298304,
+        "pe": 0.14807727932929993,
+        "siglip2": 2.4300241420860402e-05,
+        "pinv_micro": 0.05263157894736842,
+        "zero_collision_models": 0,
+        "mean_parts": 19
+      }
+    },
+    "piano/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.02193453535437584,
+        "pe": 0.1768149435520172,
+        "siglip2": 0.14033624529838562,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 286
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.010356529615819454,
+        "pe": 0.11934760957956314,
+        "siglip2": 0.002182716503739357,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 200
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.3333333333333333,
+        "vqa": 0.0012925307964906096,
+        "pe": 0.15137189626693726,
+        "siglip2": 0.00010889690747717395,
+        "pinv_micro": 0.3333333333333333,
+        "zero_collision_models": 0,
+        "mean_parts": 21
+      }
+    },
+    "pot/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.019421087577939034,
+        "pe": 0.12112827599048615,
+        "siglip2": 3.7266393064783188e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 410
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.01759803295135498,
+        "pe": 0.061674345284700394,
+        "siglip2": 2.2159490242756874e-08,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 272
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.17391304347826086,
+        "vqa": 0.006538880988955498,
+        "pe": 0.06874658167362213,
+        "siglip2": 2.5360185418321635e-07,
+        "pinv_micro": 0.17391304347826086,
+        "zero_collision_models": 0,
+        "mean_parts": 23
+      }
+    },
+    "pot/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0016715126112103462,
+        "pe": 0.15937083959579468,
+        "siglip2": 0.0015011823270469904,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 293
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.002111422596499324,
+        "pe": 0.09353739023208618,
+        "siglip2": 2.6995778057425923e-07,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 118
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.03234761953353882,
+        "pe": 0.17162975668907166,
+        "siglip2": 9.610241977497935e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 7
+      }
+    },
+    "pot/L3": {
+      "BrickMore": {
+        "n": 2,
+        "pinv": 0.0,
+        "vqa": 0.030833574943244457,
+        "pe": 0.19415965676307678,
+        "siglip2": 0.122157733887434,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 2,
+        "mean_parts": 504.5
+      },
+      "BrickGPT": {
+        "n": 2,
+        "pinv": 0.0,
+        "vqa": 0.008062017848715186,
+        "pe": 0.12952535599470139,
+        "siglip2": 0.00029826429090462625,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 2,
+        "mean_parts": 313
+      },
+      "BrickNet": {
+        "n": 2,
+        "pinv": 0.08630952380952381,
+        "vqa": 0.009865752188488841,
+        "pe": 0.14097320660948753,
+        "siglip2": 0.01080879708968041,
+        "pinv_micro": 0.06896551724137931,
+        "zero_collision_models": 0,
+        "mean_parts": 14.5
+      }
+    },
+    "pot/L4": {
+      "BrickMore": {
+        "n": 2,
+        "pinv": 0.0,
+        "vqa": 0.006994321476668119,
+        "pe": 0.18983685225248337,
+        "siglip2": 0.47108087595552206,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 2,
+        "mean_parts": 531.5
+      },
+      "BrickGPT": {
+        "n": 2,
+        "pinv": 0.0,
+        "vqa": 0.0008000377674761694,
+        "pe": 0.1296851709485054,
+        "siglip2": 0.004568557829315978,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 2,
+        "mean_parts": 197.5
+      },
+      "BrickNet": {
+        "n": 2,
+        "pinv": 0.17914438502673796,
+        "vqa": 0.0009736587817315012,
+        "pe": 0.1486862674355507,
+        "siglip2": 0.00015052539492899086,
+        "pinv_micro": 0.17857142857142858,
+        "zero_collision_models": 0,
+        "mean_parts": 14
+      }
+    },
+    "pot/L5": {
+      "BrickMore": {
+        "n": 2,
+        "pinv": 0.0,
+        "vqa": 0.0007527269190177321,
+        "pe": 0.17674900591373444,
+        "siglip2": 0.001461433945223689,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 2,
+        "mean_parts": 501.5
+      },
+      "BrickGPT": {
+        "n": 2,
+        "pinv": 0.0,
+        "vqa": 0.0011945729493163526,
+        "pe": 0.12912863120436668,
+        "siglip2": 2.214326309513126e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 2,
+        "mean_parts": 244
+      },
+      "BrickNet": {
+        "n": 2,
+        "pinv": 0.2450980392156863,
+        "vqa": 0.00015981384785845876,
+        "pe": 0.12297814711928368,
+        "siglip2": 5.0747934210448875e-06,
+        "pinv_micro": 0.3,
+        "zero_collision_models": 0,
+        "mean_parts": 20
+      }
+    },
+    "sofa/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.004187908489257097,
+        "pe": 0.18911384046077728,
+        "siglip2": 0.002323162741959095,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 319
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.005450814962387085,
+        "pe": 0.2064460813999176,
+        "siglip2": 0.09534945338964462,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 61
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.08333333333333333,
+        "vqa": 0.0022858688607811928,
+        "pe": 0.10028105974197388,
+        "siglip2": 1.3007129382458515e-05,
+        "pinv_micro": 0.08333333333333333,
+        "zero_collision_models": 0,
+        "mean_parts": 36
+      }
+    },
+    "sofa/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.06534519046545029,
+        "pe": 0.1702280044555664,
+        "siglip2": 0.0002611903182696551,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 106
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.03820943087339401,
+        "pe": 0.16432015597820282,
+        "siglip2": 0.003172682598233223,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 48
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0625,
+        "vqa": 0.02036571316421032,
+        "pe": 0.08030161261558533,
+        "siglip2": 1.3007129382458515e-05,
+        "pinv_micro": 0.0625,
+        "zero_collision_models": 0,
+        "mean_parts": 16
+      }
+    },
+    "sofa/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.14283159375190735,
+        "pe": 0.18162134289741516,
+        "siglip2": 0.0004044814850203693,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 286
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.11235608905553818,
+        "pe": 0.18218813836574554,
+        "siglip2": 0.000458312890259549,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 56
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.26666666666666666,
+        "vqa": 0.005708047188818455,
+        "pe": 0.09050364047288895,
+        "siglip2": 7.338210252783028e-07,
+        "pinv_micro": 0.26666666666666666,
+        "zero_collision_models": 0,
+        "mean_parts": 15
+      }
+    },
+    "sofa/L4": {
+      "BrickMore": {
+        "n": 4,
+        "pinv": 0.0,
+        "vqa": 0.019638763274997473,
+        "pe": 0.22298933193087578,
+        "siglip2": 0.010955263045616448,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 4,
+        "mean_parts": 401.75
+      },
+      "BrickGPT": {
+        "n": 4,
+        "pinv": 0.0,
+        "vqa": 0.008467104431474581,
+        "pe": 0.16840452700853348,
+        "siglip2": 0.011369907242624322,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 4,
+        "mean_parts": 159.25
+      },
+      "BrickNet": {
+        "n": 4,
+        "pinv": 0.2813186813186813,
+        "vqa": 0.001922374067362398,
+        "pe": 0.14314832165837288,
+        "siglip2": 0.00014890766124153743,
+        "pinv_micro": 0.28,
+        "zero_collision_models": 1,
+        "mean_parts": 25
+      }
+    },
+    "sofa/L5": {
+      "BrickMore": {
+        "n": 3,
+        "pinv": 0.0,
+        "vqa": 0.008321459715565046,
+        "pe": 0.21164674560228983,
+        "siglip2": 0.006153663154691458,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 3,
+        "mean_parts": 402
+      },
+      "BrickGPT": {
+        "n": 3,
+        "pinv": 0.0,
+        "vqa": 0.002756585929698,
+        "pe": 0.1332113817334175,
+        "siglip2": 2.8852830837422516e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 3,
+        "mean_parts": 179
+      },
+      "BrickNet": {
+        "n": 3,
+        "pinv": 0.3015531660692951,
+        "vqa": 0.003240647764566044,
+        "pe": 0.14996608098347983,
+        "siglip2": 0.00021863400615984574,
+        "pinv_micro": 0.3170731707317073,
+        "zero_collision_models": 0,
+        "mean_parts": 27.333333333333332
+      }
+    },
+    "table/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.03167283162474632,
+        "pe": 0.18884029984474182,
+        "siglip2": 0.0015011823270469904,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 299
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.001979433000087738,
+        "pe": 0.12499184906482697,
+        "siglip2": 1.0677027830752195e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 84
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.358974358974359,
+        "vqa": 0.000594241195358336,
+        "pe": 0.12509191036224365,
+        "siglip2": 1.4738982827111613e-05,
+        "pinv_micro": 0.358974358974359,
+        "zero_collision_models": 0,
+        "mean_parts": 39
+      }
+    },
+    "table/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.9491036534309387,
+        "pe": 0.18426799774169922,
+        "siglip2": 0.01798621006309986,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 324
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.9782283306121826,
+        "pe": 0.18648149073123932,
+        "siglip2": 0.037326887249946594,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 83
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.024985723197460175,
+        "pe": 0.0860312208533287,
+        "siglip2": 4.785094461112749e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 7
+      }
+    },
+    "table/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.7693806290626526,
+        "pe": 0.15097779035568237,
+        "siglip2": 0.000458312890259549,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 588
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.6523782014846802,
+        "pe": 0.15587081015110016,
+        "siglip2": 0.002323162741959095,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 289
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.125,
+        "vqa": 0.08114426583051682,
+        "pe": 0.12372570484876633,
+        "siglip2": 0.00013982206291984767,
+        "pinv_micro": 0.125,
+        "zero_collision_models": 0,
+        "mean_parts": 8
+      }
+    },
+    "table/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.03824993595480919,
+        "pe": 0.2082819789648056,
+        "siglip2": 0.00712142838165164,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 529
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.01860559917986393,
+        "pe": 0.17074362933635712,
+        "siglip2": 0.00017952796770259738,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 24
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.2,
+        "vqa": 0.005279515869915485,
+        "pe": 0.15289917588233948,
+        "siglip2": 3.7636447814293206e-05,
+        "pinv_micro": 0.2,
+        "zero_collision_models": 0,
+        "mean_parts": 45
+      }
+    },
+    "table/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.07369488477706909,
+        "pe": 0.2322460412979126,
+        "siglip2": 0.5926666259765625,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 660
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.04530039429664612,
+        "pe": 0.15383686125278473,
+        "siglip2": 0.002182716503739357,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 150
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.16666666666666666,
+        "vqa": 0.013673822395503521,
+        "pe": 0.12579873204231262,
+        "siglip2": 0.00043055712012574077,
+        "pinv_micro": 0.16666666666666666,
+        "zero_collision_models": 0,
+        "mean_parts": 30
+      }
+    },
+    "tower/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.008841517381370068,
+        "pe": 0.14651983976364136,
+        "siglip2": 0.011687257327139378,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 550
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.007315905299037695,
+        "pe": 0.17453187704086304,
+        "siglip2": 0.012431650422513485,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 207
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.006474589463323355,
+        "pe": 0.15771758556365967,
+        "siglip2": 0.03514484688639641,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 15
+      }
+    },
+    "tower/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.9673551917076111,
+        "pe": 0.16988296806812286,
+        "siglip2": 0.02931223064661026,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 631
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.16266028583049774,
+        "pe": 0.15937381982803345,
+        "siglip2": 0.01798621006309986,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 37
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.42857142857142855,
+        "vqa": 0.04435662552714348,
+        "pe": 0.11354859173297882,
+        "siglip2": 2.4300241420860402e-05,
+        "pinv_micro": 0.42857142857142855,
+        "zero_collision_models": 0,
+        "mean_parts": 14
+      }
+    },
+    "tower/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.09356953203678131,
+        "pe": 0.18439969420433044,
+        "siglip2": 0.6791787147521973,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 657
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.015427776612341404,
+        "pe": 0.15768569707870483,
+        "siglip2": 0.044680867344141006,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 144
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.4594594594594595,
+        "vqa": 0.009501279331743717,
+        "pe": 0.13769648969173431,
+        "siglip2": 0.024423090741038322,
+        "pinv_micro": 0.4594594594594595,
+        "zero_collision_models": 0,
+        "mean_parts": 37
+      }
+    },
+    "tower/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.02741272561252117,
+        "pe": 0.21376639604568481,
+        "siglip2": 0.46879062056541443,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 1164
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0072014303877949715,
+        "pe": 0.14951980113983154,
+        "siglip2": 0.01798621006309986,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 48
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.41304347826086957,
+        "vqa": 0.0039501977153122425,
+        "pe": 0.13638868927955627,
+        "siglip2": 0.00012339458044152707,
+        "pinv_micro": 0.41304347826086957,
+        "zero_collision_models": 0,
+        "mean_parts": 46
+      }
+    },
+    "tower/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.005578596610575914,
+        "pe": 0.19547374546527863,
+        "siglip2": 0.29421496391296387,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 949
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.010434309020638466,
+        "pe": 0.19977304339408875,
+        "siglip2": 0.42250463366508484,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 298
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.5,
+        "vqa": 0.001288677449338138,
+        "pe": 0.17392997443675995,
+        "siglip2": 0.01590639166533947,
+        "pinv_micro": 0.5,
+        "zero_collision_models": 0,
+        "mean_parts": 26
+      }
+    },
+    "train/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.06503625959157944,
+        "pe": 0.1637950986623764,
+        "siglip2": 0.00017952796770259738,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 330
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.019439343363046646,
+        "pe": 0.13587586581707,
+        "siglip2": 0.0014103584690019488,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 90
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.3181818181818182,
+        "vqa": 0.17721177637577057,
+        "pe": 0.1655377745628357,
+        "siglip2": 0.010986941866576672,
+        "pinv_micro": 0.3181818181818182,
+        "zero_collision_models": 0,
+        "mean_parts": 22
+      }
+    },
+    "train/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.03585357964038849,
+        "pe": 0.18108513951301575,
+        "siglip2": 0.00628990214318037,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 299
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0030479372944682837,
+        "pe": 0.13916756212711334,
+        "siglip2": 0.09009299427270889,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 46
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.42105263157894735,
+        "vqa": 0.01211030688136816,
+        "pe": 0.12641537189483643,
+        "siglip2": 0.17328819632530212,
+        "pinv_micro": 0.42105263157894735,
+        "zero_collision_models": 0,
+        "mean_parts": 38
+      }
+    },
+    "train/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.008147254586219788,
+        "pe": 0.15579286217689514,
+        "siglip2": 0.0024726230185478926,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 343
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.0012592276325449347,
+        "pe": 0.15405648946762085,
+        "siglip2": 0.0020507434383034706,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 73
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.13636363636363635,
+        "vqa": 0.007354210130870342,
+        "pe": 0.16932907700538635,
+        "siglip2": 0.01590639166533947,
+        "pinv_micro": 0.13636363636363635,
+        "zero_collision_models": 0,
+        "mean_parts": 22
+      }
+    },
+    "train/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.006232660263776779,
+        "pe": 0.18732324242591858,
+        "siglip2": 0.009125636890530586,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 388
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.002053289208561182,
+        "pe": 0.13413408398628235,
+        "siglip2": 3.466326177203882e-07,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 89
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.4,
+        "vqa": 0.0009976562578231096,
+        "pe": 0.19138875603675842,
+        "siglip2": 0.00407013762742281,
+        "pinv_micro": 0.4,
+        "zero_collision_models": 0,
+        "mean_parts": 30
+      }
+    },
+    "train/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.007767778355628252,
+        "pe": 0.18732324242591858,
+        "siglip2": 0.009125636890530586,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 388
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.001789186499081552,
+        "pe": 0.09188228100538254,
+        "siglip2": 9.931192579415438e-08,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 127
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.3488372093023256,
+        "vqa": 0.009102161973714828,
+        "pe": 0.1359516978263855,
+        "siglip2": 0.0003569706459529698,
+        "pinv_micro": 0.3488372093023256,
+        "zero_collision_models": 0,
+        "mean_parts": 43
+      }
+    },
+    "vessel/L1": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.3567281663417816,
+        "pe": 0.14728352427482605,
+        "siglip2": 0.053403329104185104,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 122
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.018075499683618546,
+        "pe": 0.06856071949005127,
+        "siglip2": 1.1365636964910664e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 219
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.375,
+        "vqa": 0.3665618896484375,
+        "pe": 0.1310506910085678,
+        "siglip2": 0.00628990214318037,
+        "pinv_micro": 0.375,
+        "zero_collision_models": 0,
+        "mean_parts": 16
+      }
+    },
+    "vessel/L2": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.11556995660066605,
+        "pe": 0.17072376608848572,
+        "siglip2": 0.18242552876472473,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 404
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.022146984934806824,
+        "pe": 0.10036855936050415,
+        "siglip2": 1.0129991096619051e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 58
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.059309083968400955,
+        "pe": 0.11139297485351562,
+        "siglip2": 9.610241977497935e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 14
+      }
+    },
+    "vessel/L3": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.019650861620903015,
+        "pe": 0.16720138490200043,
+        "siglip2": 0.06754669547080994,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 513
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.009464713744819164,
+        "pe": 0.10703293979167938,
+        "siglip2": 4.2228334677929524e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 148
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.07142857142857142,
+        "vqa": 0.0010162051767110825,
+        "pe": 0.07739362865686417,
+        "siglip2": 6.144174221844878e-06,
+        "pinv_micro": 0.07142857142857142,
+        "zero_collision_models": 0,
+        "mean_parts": 42
+      }
+    },
+    "vessel/L4": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.023515794426202774,
+        "pe": 0.20708271861076355,
+        "siglip2": 0.04742587357759476,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 481
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.019313860684633255,
+        "pe": 0.1473284214735031,
+        "siglip2": 6.144174221844878e-06,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 140
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.5,
+        "vqa": 0.05214697867631912,
+        "pe": 0.2321055829524994,
+        "siglip2": 0.23370636999607086,
+        "pinv_micro": 0.5,
+        "zero_collision_models": 0,
+        "mean_parts": 22
+      }
+    },
+    "vessel/L5": {
+      "BrickMore": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.08100087940692902,
+        "pe": 0.20414607226848602,
+        "siglip2": 0.14033624529838562,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 240
+      },
+      "BrickGPT": {
+        "n": 1,
+        "pinv": 0.0,
+        "vqa": 0.00648611132055521,
+        "pe": 0.1349835991859436,
+        "siglip2": 9.610241977497935e-05,
+        "pinv_micro": 0.0,
+        "zero_collision_models": 1,
+        "mean_parts": 47
+      },
+      "BrickNet": {
+        "n": 1,
+        "pinv": 0.09090909090909091,
+        "vqa": 0.009378349408507347,
+        "pe": 0.11667602509260178,
+        "siglip2": 2.6995778057425923e-07,
+        "pinv_micro": 0.09090909090909091,
+        "zero_collision_models": 0,
+        "mean_parts": 33
+      }
+    }
+  },
+  "category_level_equal_weight": {
+    "BrickMore": {
+      "pinv": 0.0,
+      "vqa": 0.23466401346852922,
+      "pe": 0.18397521226415559,
+      "siglip2": 0.12572206207239453
+    },
+    "BrickGPT": {
+      "pinv": 0.0,
+      "vqa": 0.15109731393651657,
+      "pe": 0.1459087814603533,
+      "siglip2": 0.031839797188412566
+    },
+    "BrickNet": {
+      "pinv": 0.2168169643500278,
+      "vqa": 0.06735717685473395,
+      "pe": 0.1291373863579735,
+      "siglip2": 0.010742539932902332
+    }
+  },
+  "paired_comparisons": {
+    "BrickGPT": {
+      "pinv": {
+        "mean_difference": 0.0,
+        "wins": 0,
+        "ties": 114,
+        "losses": 0
+      },
+      "vqa": {
+        "mean_difference": 0.07756686166261748,
+        "wins": 91,
+        "ties": 0,
+        "losses": 23
+      },
+      "pe": {
+        "mean_difference": 0.039887424721791034,
+        "wins": 95,
+        "ties": 0,
+        "losses": 19
+      },
+      "siglip2": {
+        "mean_difference": 0.0933846389480026,
+        "wins": 91,
+        "ties": 0,
+        "losses": 23
+      }
+    },
+    "BrickNet": {
+      "pinv": {
+        "mean_difference": -0.21985760703965898,
+        "wins": 94,
+        "ties": 20,
+        "losses": 0
+      },
+      "vqa": {
+        "mean_difference": 0.15526500755472147,
+        "wins": 97,
+        "ties": 0,
+        "losses": 17
+      },
+      "pe": {
+        "mean_difference": 0.05544882323266121,
+        "wins": 98,
+        "ties": 0,
+        "losses": 16
+      },
+      "siglip2": {
+        "mean_difference": 0.11305929543400306,
+        "wins": 102,
+        "ties": 0,
+        "losses": 12
+      }
+    }
+  },
+  "category_leads_including_ties": {
+    "pinv": {
+      "BrickMore": 21,
+      "BrickGPT": 21,
+      "BrickNet": 0
+    },
+    "vqa": {
+      "BrickMore": 18,
+      "BrickGPT": 0,
+      "BrickNet": 3
+    },
+    "pe": {
+      "BrickMore": 19,
+      "BrickGPT": 1,
+      "BrickNet": 1
+    },
+    "siglip2": {
+      "BrickMore": 15,
+      "BrickGPT": 2,
+      "BrickNet": 4
+    }
+  },
+  "auxiliary": {
+    "records": 120,
+    "brickmore_raw_vs_stitched_primary_pairs": 110,
+    "paired_means": {
+      "pinv": {
+        "raw": 0.0018968581249270693,
+        "stitched": 0.0
+      },
+      "vqa": {
+        "raw": 0.20651856541080632,
+        "stitched": 0.2070608629774969
+      },
+      "pe": {
+        "raw": 0.18578852713108063,
+        "stitched": 0.18592171669006347
+      },
+      "siglip2": {
+        "raw": 0.13790675763222102,
+        "stitched": 0.12608455469962998
+      }
+    }
+  },
+  "protocol": {
+    "structure": "pinv_file_order, original BrickNet 0.1.0 inset collision kernel; original generation order not verified; no fixed-edge exemptions",
+    "image_scores": "Eight fixed views, max per model then arithmetic mean; no best-of-N sample selection",
+    "rendering": "Shared actual inset part surfaces, orthographic CPU rasterizer, 512px, 25-degree elevation, 45-degree azimuth steps, uniform yellow",
+    "color": "Uniform display color; no claim of generated-color accuracy",
+    "original_paper_reproduction": false,
+    "old_run_scores_mixed": false,
+    "primary": "114 matched prompts x three systems; fixed first supplied BrickMore candidate and final/stitched preference; raw counterparts and extra candidates are supplementary"
+  },
+  "audit": {
+    "passed": true,
+    "checks": 24705,
+    "failures": [],
+    "warnings": [
+      "siglip2: text truncation in 118 records / 29 primary prompts",
+      "pe: text truncation in 102 records / 25 primary prompts"
+    ],
+    "archive_sha256": "64a3d103a62657e9892b3daee46514e434478c6956f7e398c640d9fdf72093ec",
+    "expected_records": 462,
+    "primary_records": 342,
+    "matched_prompts": 114,
+    "categories": 21,
+    "category_level_groups": 105,
+    "image_files_verified": 3696,
+    "journal_counts": {
+      "structure": 462,
+      "render": 462,
+      "vqa": 462,
+      "pe": 462,
+      "siglip2": 462
+    },
+    "source_scores_csv_sha256": "5e16e25d336b56528376b83edd0b0a74eca688d0ce74f88a2803fadd34cd50fe",
+    "models": {
+      "vqa": "/mnt/brickmore-data/brickmore-jrd-20261025/runtime/cache/huggingface/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "pe": "/mnt/brickmore-data/brickmore-jrd-20261025/runtime/cache/huggingface/hub/models--timm--PE-Core-bigG-14-448/snapshots/17aa0c25addfa14198fa2ff73d845a22d433432e",
+      "siglip2": "/mnt/brickmore-data/brickmore-jrd-20261025/runtime/cache/huggingface/hub/models--google--siglip2-giant-opt-patch16-384/snapshots/a713301b217d38485fb2204c808367d10bc3cc40"
+    },
+    "stage_elapsed_seconds": {
+      "structure": 25.630897998809814,
+      "render": 90.23835825920105,
+      "vqa": 783.3336803913116,
+      "pe": 504.48211455345154,
+      "siglip2": 181.63599157333374
+    },
+    "total_stage_elapsed_seconds": 1585.379934310913,
+    "finished_utc": "2026-11-10T12:04:06.609885+00:00",
+    "truncation_records": {
+      "siglip2": [
+        {
+          "sample_id": "brickmore__basket-L5__raw",
+          "primary": false,
+          "prompt_id": "basket_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 68
+        },
+        {
+          "sample_id": "brickmore__basket-L5__stitched",
+          "primary": true,
+          "prompt_id": "basket_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 68
+        },
+        {
+          "sample_id": "brickmore__bench-L4-Q05__raw",
+          "primary": false,
+          "prompt_id": "bench_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 65
+        },
+        {
+          "sample_id": "brickmore__bench-L4-Q05__stitched",
+          "primary": true,
+          "prompt_id": "bench_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 65
+        },
+        {
+          "sample_id": "brickmore__bench-L5-Q07__raw",
+          "primary": false,
+          "prompt_id": "bench_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 103
+        },
+        {
+          "sample_id": "brickmore__bench-L5-Q07__stitched",
+          "primary": true,
+          "prompt_id": "bench_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 103
+        },
+        {
+          "sample_id": "brickmore__car_L4_P1_G__raw",
+          "primary": false,
+          "prompt_id": "car_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 77
+        },
+        {
+          "sample_id": "brickmore__car_L4_P1_G__stitched",
+          "primary": true,
+          "prompt_id": "car_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 77
+        },
+        {
+          "sample_id": "brickmore__car_L5_P1_G__raw",
+          "primary": false,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "brickmore__car_L5_P1_G__stitched",
+          "primary": true,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "brickmore__car_L5_P1_S104__raw",
+          "primary": false,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "brickmore__car_L5_P1_S104__stitched",
+          "primary": false,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "brickmore__mug-L4-Q05__raw",
+          "primary": false,
+          "prompt_id": "mug_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 80
+        },
+        {
+          "sample_id": "brickmore__mug-L4-Q05__stitched",
+          "primary": true,
+          "prompt_id": "mug_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 80
+        },
+        {
+          "sample_id": "brickmore__mug-L5-Q03__raw",
+          "primary": false,
+          "prompt_id": "mug_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 112
+        },
+        {
+          "sample_id": "brickmore__mug-L5-Q03__stitched",
+          "primary": true,
+          "prompt_id": "mug_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 112
+        },
+        {
+          "sample_id": "brickmore__piano-L4V2__raw",
+          "primary": false,
+          "prompt_id": "piano_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 90
+        },
+        {
+          "sample_id": "brickmore__piano-L4V2__stitched",
+          "primary": true,
+          "prompt_id": "piano_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 90
+        },
+        {
+          "sample_id": "brickmore__piano-L5V3__raw",
+          "primary": false,
+          "prompt_id": "piano_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 101
+        },
+        {
+          "sample_id": "brickmore__piano-L5V3__stitched",
+          "primary": true,
+          "prompt_id": "piano_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 101
+        },
+        {
+          "sample_id": "brickmore__pot-L4V1__raw",
+          "primary": false,
+          "prompt_id": "pot_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 74
+        },
+        {
+          "sample_id": "brickmore__pot-L4V1__stitched",
+          "primary": true,
+          "prompt_id": "pot_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 74
+        },
+        {
+          "sample_id": "brickmore__pot-L4V2__raw",
+          "primary": false,
+          "prompt_id": "pot_L4_P02",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "brickmore__pot-L4V2__stitched",
+          "primary": true,
+          "prompt_id": "pot_L4_P02",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "brickmore__pot-L5V1__raw",
+          "primary": false,
+          "prompt_id": "pot_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "brickmore__pot-L5V1__stitched",
+          "primary": true,
+          "prompt_id": "pot_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "brickmore__pot-L5V5__raw",
+          "primary": false,
+          "prompt_id": "pot_L5_P02",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "brickmore__pot-L5V5__stitched",
+          "primary": true,
+          "prompt_id": "pot_L5_P02",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V2__raw",
+          "primary": false,
+          "prompt_id": "sofa_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 93
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V2__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 93
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V3__raw",
+          "primary": false,
+          "prompt_id": "sofa_L4_P02",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V3__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L4_P02",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V4__raw",
+          "primary": false,
+          "prompt_id": "sofa_L4_P03",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 93
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V4__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L4_P03",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 93
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V5__raw",
+          "primary": false,
+          "prompt_id": "sofa_L4_P04",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V5__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L4_P04",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V2__raw",
+          "primary": false,
+          "prompt_id": "sofa_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 139
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V2__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 139
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V3__raw",
+          "primary": false,
+          "prompt_id": "sofa_L5_P02",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V3__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L5_P02",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V5__raw",
+          "primary": false,
+          "prompt_id": "sofa_L5_P03",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V5__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L5_P03",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickmore__table-L4V2__raw",
+          "primary": false,
+          "prompt_id": "table_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 88
+        },
+        {
+          "sample_id": "brickmore__table-L4V2__stitched",
+          "primary": true,
+          "prompt_id": "table_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 88
+        },
+        {
+          "sample_id": "brickmore__table-L5-Q05__raw",
+          "primary": false,
+          "prompt_id": "table_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 99
+        },
+        {
+          "sample_id": "brickmore__table-L5-Q05__stitched",
+          "primary": true,
+          "prompt_id": "table_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 99
+        },
+        {
+          "sample_id": "brickmore__tower-L4-R05__raw",
+          "primary": false,
+          "prompt_id": "tower_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickmore__tower-L4-R05__stitched",
+          "primary": true,
+          "prompt_id": "tower_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickmore__tower-L5-R07__raw",
+          "primary": false,
+          "prompt_id": "tower_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 104
+        },
+        {
+          "sample_id": "brickmore__tower-L5-R07__stitched",
+          "primary": true,
+          "prompt_id": "tower_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 104
+        },
+        {
+          "sample_id": "brickmore__train-L3-R05__raw",
+          "primary": false,
+          "prompt_id": "train_L3_P01",
+          "system": "BrickMore",
+          "level": 3,
+          "tokens": 69
+        },
+        {
+          "sample_id": "brickmore__train-L3-R05__stitched",
+          "primary": true,
+          "prompt_id": "train_L3_P01",
+          "system": "BrickMore",
+          "level": 3,
+          "tokens": 69
+        },
+        {
+          "sample_id": "brickmore__train-L4-R01__raw",
+          "primary": false,
+          "prompt_id": "train_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 87
+        },
+        {
+          "sample_id": "brickmore__train-L4-R01__stitched",
+          "primary": true,
+          "prompt_id": "train_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 87
+        },
+        {
+          "sample_id": "brickmore__train-L5-R01__raw",
+          "primary": false,
+          "prompt_id": "train_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 120
+        },
+        {
+          "sample_id": "brickmore__train-L5-R01__stitched",
+          "primary": true,
+          "prompt_id": "train_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 120
+        },
+        {
+          "sample_id": "brickmore__vessel-L4-R01__raw",
+          "primary": false,
+          "prompt_id": "vessel_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 70
+        },
+        {
+          "sample_id": "brickmore__vessel-L4-R01__stitched",
+          "primary": true,
+          "prompt_id": "vessel_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 70
+        },
+        {
+          "sample_id": "brickmore__vessel-L5-R09__raw",
+          "primary": false,
+          "prompt_id": "vessel_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 115
+        },
+        {
+          "sample_id": "brickmore__vessel-L5-R09__stitched",
+          "primary": true,
+          "prompt_id": "vessel_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 115
+        },
+        {
+          "sample_id": "brickgpt__bench_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "bench_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 65
+        },
+        {
+          "sample_id": "brickgpt__car_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "brickgpt__mug_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "mug_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 80
+        },
+        {
+          "sample_id": "brickgpt__piano_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "piano_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 90
+        },
+        {
+          "sample_id": "brickgpt__pot_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "pot_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "brickgpt__pot_L5_P02__generated",
+          "primary": true,
+          "prompt_id": "pot_L5_P02",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "brickgpt__sofa_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 139
+        },
+        {
+          "sample_id": "brickgpt__sofa_L5_P02__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P02",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickgpt__sofa_L5_P03__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P03",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickgpt__tower_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "tower_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickgpt__train_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "train_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 87
+        },
+        {
+          "sample_id": "brickgpt__train_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "train_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 120
+        },
+        {
+          "sample_id": "brickgpt__vessel_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "vessel_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 70
+        },
+        {
+          "sample_id": "brickgpt__vessel_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "vessel_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 115
+        },
+        {
+          "sample_id": "brickgpt__basket_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "basket_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 68
+        },
+        {
+          "sample_id": "brickgpt__bench_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "bench_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 103
+        },
+        {
+          "sample_id": "brickgpt__car_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "car_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 77
+        },
+        {
+          "sample_id": "brickgpt__mug_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "mug_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 112
+        },
+        {
+          "sample_id": "brickgpt__piano_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "piano_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 101
+        },
+        {
+          "sample_id": "brickgpt__pot_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "pot_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 74
+        },
+        {
+          "sample_id": "brickgpt__pot_L4_P02__generated",
+          "primary": true,
+          "prompt_id": "pot_L4_P02",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "brickgpt__sofa_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 93
+        },
+        {
+          "sample_id": "brickgpt__sofa_L4_P02__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P02",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickgpt__sofa_L4_P03__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P03",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 93
+        },
+        {
+          "sample_id": "brickgpt__sofa_L4_P04__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P04",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickgpt__table_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "table_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 88
+        },
+        {
+          "sample_id": "brickgpt__table_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "table_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 99
+        },
+        {
+          "sample_id": "brickgpt__tower_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "tower_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 104
+        },
+        {
+          "sample_id": "brickgpt__train_L3_P01__generated",
+          "primary": true,
+          "prompt_id": "train_L3_P01",
+          "system": "BrickGPT",
+          "level": 3,
+          "tokens": 69
+        },
+        {
+          "sample_id": "bricknet__bench_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "bench_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 65
+        },
+        {
+          "sample_id": "bricknet__car_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "bricknet__mug_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "mug_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 80
+        },
+        {
+          "sample_id": "bricknet__piano_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "piano_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 90
+        },
+        {
+          "sample_id": "bricknet__pot_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "pot_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "bricknet__pot_L5_P02__generated",
+          "primary": true,
+          "prompt_id": "pot_L5_P02",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "bricknet__sofa_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 139
+        },
+        {
+          "sample_id": "bricknet__sofa_L5_P02__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P02",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "bricknet__sofa_L5_P03__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P03",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "bricknet__tower_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "tower_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "bricknet__train_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "train_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 87
+        },
+        {
+          "sample_id": "bricknet__train_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "train_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 120
+        },
+        {
+          "sample_id": "bricknet__vessel_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "vessel_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 70
+        },
+        {
+          "sample_id": "bricknet__vessel_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "vessel_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 115
+        },
+        {
+          "sample_id": "bricknet__basket_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "basket_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 68
+        },
+        {
+          "sample_id": "bricknet__bench_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "bench_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 103
+        },
+        {
+          "sample_id": "bricknet__car_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "car_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 77
+        },
+        {
+          "sample_id": "bricknet__mug_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "mug_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 112
+        },
+        {
+          "sample_id": "bricknet__piano_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "piano_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 101
+        },
+        {
+          "sample_id": "bricknet__pot_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "pot_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 74
+        },
+        {
+          "sample_id": "bricknet__pot_L4_P02__generated",
+          "primary": true,
+          "prompt_id": "pot_L4_P02",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "bricknet__sofa_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 93
+        },
+        {
+          "sample_id": "bricknet__sofa_L4_P02__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P02",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "bricknet__sofa_L4_P03__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P03",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 93
+        },
+        {
+          "sample_id": "bricknet__sofa_L4_P04__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P04",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "bricknet__table_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "table_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 88
+        },
+        {
+          "sample_id": "bricknet__table_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "table_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 99
+        },
+        {
+          "sample_id": "bricknet__tower_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "tower_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 104
+        },
+        {
+          "sample_id": "bricknet__train_L3_P01__generated",
+          "primary": true,
+          "prompt_id": "train_L3_P01",
+          "system": "BrickNet",
+          "level": 3,
+          "tokens": 69
+        }
+      ],
+      "pe": [
+        {
+          "sample_id": "brickmore__bench-L5-Q07__raw",
+          "primary": false,
+          "prompt_id": "bench_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "brickmore__bench-L5-Q07__stitched",
+          "primary": true,
+          "prompt_id": "bench_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "brickmore__car_L4_P1_G__raw",
+          "primary": false,
+          "prompt_id": "car_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 77
+        },
+        {
+          "sample_id": "brickmore__car_L4_P1_G__stitched",
+          "primary": true,
+          "prompt_id": "car_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 77
+        },
+        {
+          "sample_id": "brickmore__car_L5_P1_G__raw",
+          "primary": false,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "brickmore__car_L5_P1_G__stitched",
+          "primary": true,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "brickmore__car_L5_P1_S104__raw",
+          "primary": false,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "brickmore__car_L5_P1_S104__stitched",
+          "primary": false,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "brickmore__mug-L4-Q05__raw",
+          "primary": false,
+          "prompt_id": "mug_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickmore__mug-L4-Q05__stitched",
+          "primary": true,
+          "prompt_id": "mug_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickmore__mug-L5-Q03__raw",
+          "primary": false,
+          "prompt_id": "mug_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 113
+        },
+        {
+          "sample_id": "brickmore__mug-L5-Q03__stitched",
+          "primary": true,
+          "prompt_id": "mug_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 113
+        },
+        {
+          "sample_id": "brickmore__piano-L4V2__raw",
+          "primary": false,
+          "prompt_id": "piano_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 88
+        },
+        {
+          "sample_id": "brickmore__piano-L4V2__stitched",
+          "primary": true,
+          "prompt_id": "piano_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 88
+        },
+        {
+          "sample_id": "brickmore__piano-L5V3__raw",
+          "primary": false,
+          "prompt_id": "piano_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 101
+        },
+        {
+          "sample_id": "brickmore__piano-L5V3__stitched",
+          "primary": true,
+          "prompt_id": "piano_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 101
+        },
+        {
+          "sample_id": "brickmore__pot-L4V1__raw",
+          "primary": false,
+          "prompt_id": "pot_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 74
+        },
+        {
+          "sample_id": "brickmore__pot-L4V1__stitched",
+          "primary": true,
+          "prompt_id": "pot_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 74
+        },
+        {
+          "sample_id": "brickmore__pot-L4V2__raw",
+          "primary": false,
+          "prompt_id": "pot_L4_P02",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 91
+        },
+        {
+          "sample_id": "brickmore__pot-L4V2__stitched",
+          "primary": true,
+          "prompt_id": "pot_L4_P02",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 91
+        },
+        {
+          "sample_id": "brickmore__pot-L5V1__raw",
+          "primary": false,
+          "prompt_id": "pot_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 107
+        },
+        {
+          "sample_id": "brickmore__pot-L5V1__stitched",
+          "primary": true,
+          "prompt_id": "pot_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 107
+        },
+        {
+          "sample_id": "brickmore__pot-L5V5__raw",
+          "primary": false,
+          "prompt_id": "pot_L5_P02",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 107
+        },
+        {
+          "sample_id": "brickmore__pot-L5V5__stitched",
+          "primary": true,
+          "prompt_id": "pot_L5_P02",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 107
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V2__raw",
+          "primary": false,
+          "prompt_id": "sofa_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V2__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V3__raw",
+          "primary": false,
+          "prompt_id": "sofa_L4_P02",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V3__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L4_P02",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V4__raw",
+          "primary": false,
+          "prompt_id": "sofa_L4_P03",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V4__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L4_P03",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V5__raw",
+          "primary": false,
+          "prompt_id": "sofa_L4_P04",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "brickmore__sofa-L4V5__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L4_P04",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V2__raw",
+          "primary": false,
+          "prompt_id": "sofa_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 142
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V2__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 142
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V3__raw",
+          "primary": false,
+          "prompt_id": "sofa_L5_P02",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V3__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L5_P02",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V5__raw",
+          "primary": false,
+          "prompt_id": "sofa_L5_P03",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickmore__sofa-L5V5__stitched",
+          "primary": true,
+          "prompt_id": "sofa_L5_P03",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickmore__table-L4V2__raw",
+          "primary": false,
+          "prompt_id": "table_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 86
+        },
+        {
+          "sample_id": "brickmore__table-L4V2__stitched",
+          "primary": true,
+          "prompt_id": "table_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 86
+        },
+        {
+          "sample_id": "brickmore__table-L5-Q05__raw",
+          "primary": false,
+          "prompt_id": "table_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 100
+        },
+        {
+          "sample_id": "brickmore__table-L5-Q05__stitched",
+          "primary": true,
+          "prompt_id": "table_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 100
+        },
+        {
+          "sample_id": "brickmore__tower-L4-R05__raw",
+          "primary": false,
+          "prompt_id": "tower_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "brickmore__tower-L4-R05__stitched",
+          "primary": true,
+          "prompt_id": "tower_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "brickmore__tower-L5-R07__raw",
+          "primary": false,
+          "prompt_id": "tower_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 105
+        },
+        {
+          "sample_id": "brickmore__tower-L5-R07__stitched",
+          "primary": true,
+          "prompt_id": "tower_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 105
+        },
+        {
+          "sample_id": "brickmore__train-L4-R01__raw",
+          "primary": false,
+          "prompt_id": "train_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 87
+        },
+        {
+          "sample_id": "brickmore__train-L4-R01__stitched",
+          "primary": true,
+          "prompt_id": "train_L4_P01",
+          "system": "BrickMore",
+          "level": 4,
+          "tokens": 87
+        },
+        {
+          "sample_id": "brickmore__train-L5-R01__raw",
+          "primary": false,
+          "prompt_id": "train_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 121
+        },
+        {
+          "sample_id": "brickmore__train-L5-R01__stitched",
+          "primary": true,
+          "prompt_id": "train_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 121
+        },
+        {
+          "sample_id": "brickmore__vessel-L5-R09__raw",
+          "primary": false,
+          "prompt_id": "vessel_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 114
+        },
+        {
+          "sample_id": "brickmore__vessel-L5-R09__stitched",
+          "primary": true,
+          "prompt_id": "vessel_L5_P01",
+          "system": "BrickMore",
+          "level": 5,
+          "tokens": 114
+        },
+        {
+          "sample_id": "brickgpt__car_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "brickgpt__mug_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "mug_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "brickgpt__piano_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "piano_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 88
+        },
+        {
+          "sample_id": "brickgpt__pot_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "pot_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 107
+        },
+        {
+          "sample_id": "brickgpt__pot_L5_P02__generated",
+          "primary": true,
+          "prompt_id": "pot_L5_P02",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 107
+        },
+        {
+          "sample_id": "brickgpt__sofa_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 142
+        },
+        {
+          "sample_id": "brickgpt__sofa_L5_P02__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P02",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickgpt__sofa_L5_P03__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P03",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "brickgpt__tower_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "tower_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "brickgpt__train_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "train_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 87
+        },
+        {
+          "sample_id": "brickgpt__train_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "train_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 121
+        },
+        {
+          "sample_id": "brickgpt__vessel_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "vessel_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 114
+        },
+        {
+          "sample_id": "brickgpt__bench_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "bench_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "brickgpt__car_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "car_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 77
+        },
+        {
+          "sample_id": "brickgpt__mug_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "mug_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 113
+        },
+        {
+          "sample_id": "brickgpt__piano_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "piano_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 101
+        },
+        {
+          "sample_id": "brickgpt__pot_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "pot_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 74
+        },
+        {
+          "sample_id": "brickgpt__pot_L4_P02__generated",
+          "primary": true,
+          "prompt_id": "pot_L4_P02",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 91
+        },
+        {
+          "sample_id": "brickgpt__sofa_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "brickgpt__sofa_L4_P02__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P02",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "brickgpt__sofa_L4_P03__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P03",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "brickgpt__sofa_L4_P04__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P04",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "brickgpt__table_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "table_L4_P01",
+          "system": "BrickGPT",
+          "level": 4,
+          "tokens": 86
+        },
+        {
+          "sample_id": "brickgpt__table_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "table_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 100
+        },
+        {
+          "sample_id": "brickgpt__tower_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "tower_L5_P01",
+          "system": "BrickGPT",
+          "level": 5,
+          "tokens": 105
+        },
+        {
+          "sample_id": "bricknet__car_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "car_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 123
+        },
+        {
+          "sample_id": "bricknet__mug_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "mug_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 79
+        },
+        {
+          "sample_id": "bricknet__piano_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "piano_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 88
+        },
+        {
+          "sample_id": "bricknet__pot_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "pot_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 107
+        },
+        {
+          "sample_id": "bricknet__pot_L5_P02__generated",
+          "primary": true,
+          "prompt_id": "pot_L5_P02",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 107
+        },
+        {
+          "sample_id": "bricknet__sofa_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 142
+        },
+        {
+          "sample_id": "bricknet__sofa_L5_P02__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P02",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "bricknet__sofa_L5_P03__generated",
+          "primary": true,
+          "prompt_id": "sofa_L5_P03",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 111
+        },
+        {
+          "sample_id": "bricknet__tower_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "tower_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "bricknet__train_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "train_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 87
+        },
+        {
+          "sample_id": "bricknet__train_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "train_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 121
+        },
+        {
+          "sample_id": "bricknet__vessel_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "vessel_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 114
+        },
+        {
+          "sample_id": "bricknet__bench_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "bench_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 106
+        },
+        {
+          "sample_id": "bricknet__car_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "car_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 77
+        },
+        {
+          "sample_id": "bricknet__mug_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "mug_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 113
+        },
+        {
+          "sample_id": "bricknet__piano_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "piano_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 101
+        },
+        {
+          "sample_id": "bricknet__pot_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "pot_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 74
+        },
+        {
+          "sample_id": "bricknet__pot_L4_P02__generated",
+          "primary": true,
+          "prompt_id": "pot_L4_P02",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 91
+        },
+        {
+          "sample_id": "bricknet__sofa_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "bricknet__sofa_L4_P02__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P02",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "bricknet__sofa_L4_P03__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P03",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 94
+        },
+        {
+          "sample_id": "bricknet__sofa_L4_P04__generated",
+          "primary": true,
+          "prompt_id": "sofa_L4_P04",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 78
+        },
+        {
+          "sample_id": "bricknet__table_L4_P01__generated",
+          "primary": true,
+          "prompt_id": "table_L4_P01",
+          "system": "BrickNet",
+          "level": 4,
+          "tokens": 86
+        },
+        {
+          "sample_id": "bricknet__table_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "table_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 100
+        },
+        {
+          "sample_id": "bricknet__tower_L5_P01__generated",
+          "primary": true,
+          "prompt_id": "tower_L5_P01",
+          "system": "BrickNet",
+          "level": 5,
+          "tokens": 105
+        }
+      ]
+    }
+  },
+  "truncation_summary": {
+    "pe": {
+      "context_length": 72,
+      "all_records": 102,
+      "primary_prompts": 25,
+      "by_level": {
+        "4": 12,
+        "5": 13
+      },
+      "prompt_tokens": {
+        "bench_L5_P01": 106,
+        "car_L4_P01": 77,
+        "car_L5_P01": 123,
+        "mug_L4_P01": 79,
+        "mug_L5_P01": 113,
+        "piano_L4_P01": 88,
+        "piano_L5_P01": 101,
+        "pot_L4_P01": 74,
+        "pot_L4_P02": 91,
+        "pot_L5_P01": 107,
+        "pot_L5_P02": 107,
+        "sofa_L4_P01": 94,
+        "sofa_L4_P02": 78,
+        "sofa_L4_P03": 94,
+        "sofa_L4_P04": 78,
+        "sofa_L5_P01": 142,
+        "sofa_L5_P02": 111,
+        "sofa_L5_P03": 111,
+        "table_L4_P01": 86,
+        "table_L5_P01": 100,
+        "tower_L4_P01": 78,
+        "tower_L5_P01": 105,
+        "train_L4_P01": 87,
+        "train_L5_P01": 121,
+        "vessel_L5_P01": 114
+      }
+    },
+    "siglip2": {
+      "context_length": 64,
+      "all_records": 118,
+      "primary_prompts": 29,
+      "by_level": {
+        "3": 1,
+        "4": 14,
+        "5": 14
+      },
+      "prompt_tokens": {
+        "basket_L5_P01": 68,
+        "bench_L4_P01": 65,
+        "bench_L5_P01": 103,
+        "car_L4_P01": 77,
+        "car_L5_P01": 123,
+        "mug_L4_P01": 80,
+        "mug_L5_P01": 112,
+        "piano_L4_P01": 90,
+        "piano_L5_P01": 101,
+        "pot_L4_P01": 74,
+        "pot_L4_P02": 94,
+        "pot_L5_P01": 106,
+        "pot_L5_P02": 106,
+        "sofa_L4_P01": 93,
+        "sofa_L4_P02": 79,
+        "sofa_L4_P03": 93,
+        "sofa_L4_P04": 79,
+        "sofa_L5_P01": 139,
+        "sofa_L5_P02": 111,
+        "sofa_L5_P03": 111,
+        "table_L4_P01": 88,
+        "table_L5_P01": 99,
+        "tower_L4_P01": 79,
+        "tower_L5_P01": 104,
+        "train_L3_P01": 69,
+        "train_L4_P01": 87,
+        "train_L5_P01": 120,
+        "vessel_L4_P01": 70,
+        "vessel_L5_P01": 115
+      }
+    }
+  },
+  "untruncated_subset_diagnostic": {
+    "pe": {
+      "n_per_system": 89,
+      "means": {
+        "BrickMore": 0.18206057170133913,
+        "BrickGPT": 0.14448951088478057,
+        "BrickNet": 0.12692709317368067
+      }
+    },
+    "siglip2": {
+      "n_per_system": 85,
+      "means": {
+        "BrickMore": 0.10876192358649699,
+        "BrickGPT": 0.03006794450108246,
+        "BrickNet": 0.010078099027506457
+      }
+    }
+  }
+}

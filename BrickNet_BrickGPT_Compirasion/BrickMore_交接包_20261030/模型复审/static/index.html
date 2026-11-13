@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#16191f">
+  <title>BrickMore · 模型复审</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='6' y='12' width='36' height='30' rx='7' fill='%23f2ce4b'/%3E%3Crect x='13' y='6' width='8' height='10' rx='2' fill='%23f2ce4b'/%3E%3Crect x='27' y='6' width='8' height='10' rx='2' fill='%23f2ce4b'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <script type="importmap">{"imports":{"three":"/assets/js/three.module.js"}}</script>
+</head>
+<body>
+  <canvas id="renderer" aria-hidden="true"></canvas>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="BrickMore 模型复审首页"><span class="brick-mark"><i></i><i></i></span><span>BRICKMORE<small>模型复审工作台</small></span></a>
+      <div class="save-status" id="save-status" role="status"><span class="status-dot"></span><span id="save-text">正在读取选择…</span></div>
+      <div class="header-actions"><button class="button secondary" id="export-csv">导出清单</button><button class="button primary" id="export-json"><span aria-hidden="true">↓</span> 导出选择 JSON</button></div>
+    </header>
+    <aside class="sidebar">
+      <div class="sidebar-label">本轮复审 <span>07 GROUPS</span></div>
+      <nav id="group-nav" aria-label="复审组别"></nav>
+      <div class="progress-box"><div class="progress-heading"><strong id="progress-label">0 / 7 已复审</strong><span id="progress-percent">0%</span></div><div class="progress-track"><div id="progress-fill"></div></div><p>逐组确认最佳模型，或标记需要重生成。</p></div>
+      <div class="local-note"><span class="small-dot"></span> 本地工作区<span>选择会自动保存到<br><code>picks_review.json</code></span></div>
+    </aside>
+    <main id="workspace" tabindex="-1">
+      <div class="page-kicker"><span class="eyebrow">MODEL REVIEW</span><span id="group-counter">01 / 07</span></div>
+      <div class="group-heading"><div><h1 id="group-title">正在加载模型…</h1><p id="group-subtitle">正在整理已有候选</p></div><div class="pager"><button id="prev-group" class="icon-button" aria-label="上一组">←</button><button id="next-group" class="icon-button" aria-label="下一组">→</button></div></div>
+      <div class="brief"><span class="brief-label">本组目标</span><p id="criterion"></p></div>
+      <div class="toolbar"><div><strong id="candidate-count"></strong><span class="toolbar-hint">左键旋转 · 滚轮缩放 · 右键平移</span></div><div class="view-actions"><label class="sync-label"><input type="checkbox" id="sync-views"> 同步视角</label><button class="text-button" id="reset-views">重置视角 ↺</button></div></div>
+      <div id="group-notice" class="notice" hidden></div>
+      <section id="candidates" class="candidate-grid" aria-label="候选模型"></section>
+      <section class="decision-panel" aria-label="复审结论"><div><span class="eyebrow">REVIEW DECISION</span><h2>没有合适的模型？</h2><p>可以判定本组全部不合格，留待重新生成。</p></div><button class="button reject-button" id="reject-group">全部不合格，需重生成</button></section>
+      <section class="notes-panel"><label for="review-note">复审备注 <span>可选 · 记录造型、比例或细节问题</span></label><textarea id="review-note" maxlength="4000" rows="2" placeholder="例如：车轮不清楚、琴颈比例不对、船体缺少明显轮廓…"></textarea></section>
+      <div class="group-footer"><div id="decision-summary" role="status">本组尚未选择</div><button class="button secondary" id="clear-group">撤销本组选择</button><button class="button primary" id="continue-group">下一组 →</button></div>
+      <p class="footer-note">本页仅使用包内已有模型。复审选择单独保存，完成后再合并到最终展示。</p>
+    </main>
+  </div>
+  <div class="modal" id="model-modal" hidden>
+    <div class="modal-backdrop"></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <div class="modal-header"><div><span class="eyebrow">DETAIL VIEW</span><h2 id="modal-title"></h2></div><div class="modal-controls"><div class="version-tabs" id="modal-version"><button data-kind="raw">原版</button><button data-kind="stitched">重铺版</button></div><button id="modal-close" class="icon-button" aria-label="关闭放大查看">✕</button></div></div>
+      <div id="modal-viewport" class="model-viewport"><span class="load-status" role="status">加载模型中…</span></div>
+      <div class="modal-footer"><span id="modal-caption"></span><button class="button primary" id="modal-select">选用此模型</button></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

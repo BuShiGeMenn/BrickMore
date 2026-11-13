@@ -1,0 +1,28 @@
+{
+  "candidate_id": "dataset-camera-L2-m0001",
+  "is_current_model": false,
+  "source_zh": "dataset 原始同级 caption",
+  "prompt": "A rounded camera with forward circular lens, grip and top shutter. The lens barrel joins the front body; the grip is on the right and viewfinder and shutter are above.",
+  "prompt_zh": "圆角相机有前向圆镜头、握柄和顶部快门。镜筒接机身正面，握柄位于右侧，取景结构和快门位于顶部。",
+  "evidence": {
+    "source_file": "Train/samples/models/camera/vx80k5p_20261010_A_camera_m0001/prompts.json",
+    "source_sha256": "39e1c08387ea530b8d00512212ac6b08ec9c0ff868175423981dbe7b9c7b2e36",
+    "record_id": "vx80k5p_20261010_A_camera_m0001_l2",
+    "model_id": "vx80k5p_20261010_A_camera_m0001",
+    "prompt_level": 2,
+    "prompt_type": "basic_structure",
+    "fact_groups": [
+      1,
+      2
+    ],
+    "required_parts": [
+      "body",
+      "lens",
+      "glass",
+      "grip",
+      "shutter",
+      "viewfinder"
+    ],
+    "exact_caption_match": true
+  }
+}

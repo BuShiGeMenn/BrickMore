@@ -1,0 +1,24 @@
+{
+  "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+  "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+  "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA tiny yacht shape.",
+  "prompt": "A tiny yacht shape.",
+  "seed": 71107,
+  "input_tokens": 207,
+  "generated_tokens": 2140,
+  "completed": true,
+  "seconds": 111.531,
+  "dtype": "bfloat16",
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "peak_allocated_gib": 3.5380921363830566,
+  "options": {
+    "max_new_tokens": 8192,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1"
+  }
+}

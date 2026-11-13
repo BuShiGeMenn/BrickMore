@@ -1,0 +1,667 @@
+[
+  {
+    "id": "camera_L2_P1_G",
+    "group": "camera_L2",
+    "category": "camera",
+    "level": 2,
+    "seed": 42,
+    "prompt": "A rounded camera carries a circular lens at the front. The barrel connects to its body, the grip is on the right side, and the shutter and viewfinder sit on top.",
+    "source_candidate_id": "reconstructed-camera-L2-v1",
+    "current_prompt": false,
+    "folder": "models/camera_L2_P1_G",
+    "prompt_evidence": {
+      "reference_file": "Train/samples/models/camera/vx80k5p_20261010_A_camera_m0001/prompts.json",
+      "reference_file_sha256": "39e1c08387ea530b8d00512212ac6b08ec9c0ff868175423981dbe7b9c7b2e36",
+      "reference_record_id": "vx80k5p_20261010_A_camera_m0001_l2",
+      "reference_caption": "A rounded camera with forward circular lens, grip and top shutter. The lens barrel joins the front body; the grip is on the right and viewfinder and shutter are above.",
+      "required_parts": [
+        "body",
+        "lens",
+        "glass",
+        "grip",
+        "shutter",
+        "viewfinder"
+      ],
+      "prompt_level": 2,
+      "fact_groups": [
+        1,
+        2
+      ],
+      "level_rule": "基础轮廓，加部件位置与连接关系；不添加比例与配色。",
+      "newly_constructed": true,
+      "exact_caption_match": false,
+      "original_caption_prefix_match": false,
+      "geometry_source": "Train/programs/geometry.py",
+      "caption_level_source": "Train/programs/captions.py"
+    },
+    "raw": {
+      "brick_count": 189,
+      "occupied_voxels": 1134,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 10,
+      "unsupported_from_below": 1,
+      "geometry_valid": true,
+      "single_stud_component": false,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA rounded camera carries a circular lens at the front. The barrel connects to its body, the grip is on the right side, and the shutter and viewfinder sit on top.",
+      "prompt": "A rounded camera carries a circular lens at the front. The barrel connects to its body, the grip is on the right side, and the shutter and viewfinder sit on top.",
+      "seed": 42,
+      "input_tokens": 238,
+      "generated_tokens": 2270,
+      "completed": true,
+      "seconds": 99.485,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.562340259552002,
+      "options": {
+        "max_new_tokens": 8192,
+        "do_sample": false
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "seconds": 4.235,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 138,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 138,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true
+    },
+    "status": "geometry_passed_pending_visual_review",
+    "validation": {
+      "brick_count": 138,
+      "occupied_voxels": 1134,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 1,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "preview_image": "reverse.png"
+  },
+  {
+    "id": "car_L4_P1_G",
+    "group": "car_L4",
+    "category": "car",
+    "level": 4,
+    "seed": 42,
+    "prompt": "A streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width.",
+    "source_candidate_id": "reconstructed-car-L4-v1",
+    "current_prompt": false,
+    "folder": "models/car_L4_P1_G",
+    "prompt_evidence": {
+      "reference_file": "Train/samples/models/car/vx80k5p_20261010_A_car_m0001/prompts.json",
+      "reference_file_sha256": "b18ab954b203a1de1c9d074961289e32a5aa93d3c4a77c0f8018398a635c1495",
+      "reference_record_id": "vx80k5p_20261010_A_car_m0001_l4",
+      "reference_caption": "A streamlined car with curved cabin roof and four separate wheels. The cabin rises over the body; four attached wheels occupy the left and right front and rear positions. Curved substantial surfaces carry their continuously attached functional parts. Overall width is 0.68 times depth; height is 0.69 times width. Parts follow functional positions.",
+      "required_parts": [
+        "body",
+        "cabin",
+        "wheel",
+        "window"
+      ],
+      "prompt_level": 4,
+      "fact_groups": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "level_rule": "基础结构、连续曲面与部件连接，加 dataset 中的实际比例；不添加配色。",
+      "newly_constructed": true,
+      "exact_caption_match": false,
+      "original_caption_prefix_match": false,
+      "geometry_source": "Train/programs/geometry.py",
+      "caption_level_source": "Train/programs/captions.py",
+      "measured_ratios": {
+        "width_to_depth": 0.68,
+        "height_to_width": 0.69
+      }
+    },
+    "raw": {
+      "brick_count": 160,
+      "occupied_voxels": 1169,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 8,
+      "unsupported_from_below": 21,
+      "geometry_valid": true,
+      "single_stud_component": false,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width.",
+      "prompt": "A streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width.",
+      "seed": 42,
+      "input_tokens": 276,
+      "generated_tokens": 1921,
+      "completed": true,
+      "seconds": 92.157,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.5189008712768555,
+      "options": {
+        "max_new_tokens": 8192,
+        "do_sample": false
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "seconds": 1.203,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 141,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true
+    },
+    "status": "geometry_passed_pending_visual_review",
+    "validation": {
+      "brick_count": 141,
+      "occupied_voxels": 1169,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 13,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "preview_image": "preview.png"
+  },
+  {
+    "id": "car_L5_P1_G",
+    "group": "car_L5",
+    "category": "car",
+    "level": 5,
+    "seed": 42,
+    "prompt": "A streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width. The body and cabin are red, the windows are light blue, and the four wheels are near black, with continuous color regions. A front view reveals the functional parts; side and overhead views show their depth, connections and arrangement.",
+    "source_candidate_id": "reconstructed-car-L5-v1",
+    "current_prompt": false,
+    "folder": "models/car_L5_P1_G",
+    "prompt_evidence": {
+      "reference_file": "Train/samples/models/car/vx80k5p_20261010_A_car_m0001/prompts.json",
+      "reference_file_sha256": "b18ab954b203a1de1c9d074961289e32a5aa93d3c4a77c0f8018398a635c1495",
+      "reference_record_id": "vx80k5p_20261010_A_car_m0001_l5",
+      "reference_caption": "A streamlined car with curved cabin roof and four separate wheels. The cabin rises over the body; four attached wheels occupy the left and right front and rear positions. Curved substantial surfaces carry their continuously attached functional parts. Overall width is 0.68 times depth; height is 0.69 times width. Parts follow functional positions. Continuous near black, light blue, red color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+      "required_parts": [
+        "body",
+        "cabin",
+        "wheel",
+        "window"
+      ],
+      "prompt_level": 5,
+      "fact_groups": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "level_rule": "包含 L1–L4 信息，再加训练中真实存在的部件配色与观察视角。",
+      "newly_constructed": true,
+      "exact_caption_match": false,
+      "original_caption_prefix_match": false,
+      "geometry_source": "Train/programs/geometry.py",
+      "caption_level_source": "Train/programs/captions.py",
+      "measured_ratios": {
+        "width_to_depth": 0.68,
+        "height_to_width": 0.69
+      },
+      "documented_part_colors": {
+        "body": "red",
+        "cabin": "red",
+        "window": "glass/light blue",
+        "wheel": "black/near black"
+      }
+    },
+    "raw": {
+      "brick_count": 160,
+      "occupied_voxels": 1169,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 8,
+      "unsupported_from_below": 21,
+      "geometry_valid": true,
+      "single_stud_component": false,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width. The body and cabin are red, the windows are light blue, and the four wheels are near black, with continuous color regions. A front view reveals the functional parts; side and overhead views show their depth, connections and arrangement.",
+      "prompt": "A streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width. The body and cabin are red, the windows are light blue, and the four wheels are near black, with continuous color regions. A front view reveals the functional parts; side and overhead views show their depth, connections and arrangement.",
+      "seed": 42,
+      "input_tokens": 322,
+      "generated_tokens": 1921,
+      "completed": true,
+      "seconds": 83.187,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.5263423919677734,
+      "options": {
+        "max_new_tokens": 8192,
+        "do_sample": false
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "seconds": 1.188,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 141,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true
+    },
+    "status": "geometry_passed_pending_visual_review",
+    "validation": {
+      "brick_count": 141,
+      "occupied_voxels": 1169,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 13,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "preview_image": "preview.png"
+  },
+  {
+    "id": "guitar_L1_P2_G",
+    "group": "guitar_L1",
+    "category": "guitar",
+    "level": 1,
+    "seed": 42,
+    "prompt": "A rounded waist guitar whose curved body leads into a slender neck topped by a headstock.",
+    "source_candidate_id": "reconstructed-guitar-L1-v2",
+    "current_prompt": false,
+    "folder": "models/guitar_L1_P2_G",
+    "prompt_evidence": {
+      "reference_file": "Train/samples/models/guitar/vx80k5p_20261010_A_guitar_m0001/prompts.json",
+      "reference_file_sha256": "ea818eaf05517eb83f466bcfda25785681a3600b4d503e1ade539fa32aa5b1e6",
+      "reference_record_id": "vx80k5p_20261010_A_guitar_m0001_l1",
+      "reference_caption": "A rounded waist guitar with continuous body, neck and headstock.",
+      "required_parts": [
+        "body",
+        "neck",
+        "headstock",
+        "bridge"
+      ],
+      "prompt_level": 1,
+      "fact_groups": [
+        1
+      ],
+      "level_rule": "基础轮廓与主要部件；不添加比例、配色或逐部件连接细则。",
+      "newly_constructed": true,
+      "exact_caption_match": false,
+      "original_caption_prefix_match": false,
+      "geometry_source": "Train/programs/geometry.py",
+      "caption_level_source": "Train/programs/captions.py",
+      "refinement": "Retain the documented category phrase; independently reconstruct the rest of the sentence."
+    },
+    "raw": {
+      "brick_count": 157,
+      "occupied_voxels": 945,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 3,
+      "unsupported_from_below": 8,
+      "geometry_valid": true,
+      "single_stud_component": false,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA rounded waist guitar whose curved body leads into a slender neck topped by a headstock.",
+      "prompt": "A rounded waist guitar whose curved body leads into a slender neck topped by a headstock.",
+      "seed": 42,
+      "input_tokens": 220,
+      "generated_tokens": 1971,
+      "completed": true,
+      "seconds": 91.531,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.518256664276123,
+      "options": {
+        "max_new_tokens": 8192,
+        "do_sample": false
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "seconds": 0.219,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 134,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true
+    },
+    "status": "geometry_passed_pending_visual_review",
+    "validation": {
+      "brick_count": 134,
+      "occupied_voxels": 945,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 3,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "preview_image": "preview.png"
+  },
+  {
+    "id": "vessel_L1_P2_G",
+    "group": "vessel_L1",
+    "category": "vessel",
+    "level": 1,
+    "seed": 42,
+    "prompt": "A rounded monohull boat, its bow and stern framing a deck with an open interior.",
+    "source_candidate_id": "reconstructed-vessel-L1-v2",
+    "current_prompt": false,
+    "folder": "models/vessel_L1_P2_G",
+    "prompt_evidence": {
+      "reference_file": "Train/samples/models/vessel/vx80k5p_20261010_A_vessel_m0001/prompts.json",
+      "reference_file_sha256": "e8665ecf9555949a7f54bb35517a895270fd615ced4cd543bc0482e44b1bcc5b",
+      "reference_record_id": "vx80k5p_20261010_A_vessel_m0001_l1",
+      "reference_caption": "A rounded monohull boat with bow, stern, deck and interior opening.",
+      "required_parts": [
+        "hull",
+        "deck"
+      ],
+      "prompt_level": 1,
+      "fact_groups": [
+        1
+      ],
+      "level_rule": "基础轮廓与主要部件；不添加比例、配色或逐部件连接细则。",
+      "newly_constructed": true,
+      "exact_caption_match": false,
+      "original_caption_prefix_match": false,
+      "geometry_source": "Train/programs/geometry.py",
+      "caption_level_source": "Train/programs/captions.py",
+      "refinement": "Retain the documented category phrase; independently reconstruct the rest of the sentence."
+    },
+    "raw": {
+      "brick_count": 122,
+      "occupied_voxels": 854,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 21,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA rounded monohull boat, its bow and stern framing a deck with an open interior.",
+      "prompt": "A rounded monohull boat, its bow and stern framing a deck with an open interior.",
+      "seed": 42,
+      "input_tokens": 221,
+      "generated_tokens": 1457,
+      "completed": true,
+      "seconds": 58.594,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.4472079277038574,
+      "options": {
+        "max_new_tokens": 8192,
+        "do_sample": false
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "method": "original_inference",
+      "shape_preserved": true
+    },
+    "status": "geometry_passed_pending_visual_review",
+    "validation": {
+      "brick_count": 122,
+      "occupied_voxels": 854,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 21,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "preview_image": "preview.png"
+  },
+  {
+    "id": "car_L5_P1_S104",
+    "group": "car_L5",
+    "category": "car",
+    "level": 5,
+    "seed": 104,
+    "prompt": "A streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width. The body and cabin are red, the windows are light blue, and the four wheels are near black, with continuous color regions. A front view reveals the functional parts; side and overhead views show their depth, connections and arrangement.",
+    "source_candidate_id": "reconstructed-car-L5-v1",
+    "current_prompt": false,
+    "folder": "models/car_L5_P1_S104",
+    "prompt_evidence": {
+      "reference_file": "Train/samples/models/car/vx80k5p_20261010_A_car_m0001/prompts.json",
+      "reference_file_sha256": "b18ab954b203a1de1c9d074961289e32a5aa93d3c4a77c0f8018398a635c1495",
+      "reference_record_id": "vx80k5p_20261010_A_car_m0001_l5",
+      "reference_caption": "A streamlined car with curved cabin roof and four separate wheels. The cabin rises over the body; four attached wheels occupy the left and right front and rear positions. Curved substantial surfaces carry their continuously attached functional parts. Overall width is 0.68 times depth; height is 0.69 times width. Parts follow functional positions. Continuous near black, light blue, red color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+      "required_parts": [
+        "body",
+        "cabin",
+        "wheel",
+        "window"
+      ],
+      "prompt_level": 5,
+      "fact_groups": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "level_rule": "包含 L1–L4 信息，再加训练中真实存在的部件配色与观察视角。",
+      "newly_constructed": true,
+      "exact_caption_match": false,
+      "original_caption_prefix_match": false,
+      "geometry_source": "Train/programs/geometry.py",
+      "caption_level_source": "Train/programs/captions.py",
+      "measured_ratios": {
+        "width_to_depth": 0.68,
+        "height_to_width": 0.69
+      },
+      "documented_part_colors": {
+        "body": "red",
+        "cabin": "red",
+        "window": "glass/light blue",
+        "wheel": "black/near black"
+      }
+    },
+    "raw": {
+      "brick_count": 124,
+      "occupied_voxels": 934,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 5,
+      "unsupported_from_below": 24,
+      "geometry_valid": true,
+      "single_stud_component": false,
+      "physical_stability_tested": false,
+      "format_errors": [],
+      "raw_dimension_order": "yx",
+      "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+    },
+    "generation": {
+      "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+      "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+      "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width. The body and cabin are red, the windows are light blue, and the four wheels are near black, with continuous color regions. A front view reveals the functional parts; side and overhead views show their depth, connections and arrangement.",
+      "prompt": "A streamlined car has a curved-roof cabin and four separate wheels. The cabin stands over the main body, while the wheels attach in front and rear pairs on its two sides. Rounded solid surfaces carry the connected parts. Across the whole car, width is about 0.68 of front-to-back length and height is about 0.69 of width. The body and cabin are red, the windows are light blue, and the four wheels are near black, with continuous color regions. A front view reveals the functional parts; side and overhead views show their depth, connections and arrangement.",
+      "seed": 104,
+      "input_tokens": 322,
+      "generated_tokens": 1489,
+      "completed": true,
+      "seconds": 78.234,
+      "dtype": "bfloat16",
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "peak_allocated_gib": 3.464606285095215,
+      "options": {
+        "max_new_tokens": 8192,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.1"
+      }
+    },
+    "retile": {
+      "seconds": 13.718,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 104,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 104,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 104,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 104,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 104,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true
+    },
+    "status": "geometry_passed_pending_visual_review",
+    "validation": {
+      "brick_count": 104,
+      "occupied_voxels": 934,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "voxel_components": 1,
+      "stud_components": 1,
+      "unsupported_from_below": 17,
+      "geometry_valid": true,
+      "single_stud_component": true,
+      "physical_stability_tested": false,
+      "shape_preserved": true,
+      "ldr_roundtrip_passed": true
+    },
+    "preview_image": "preview.png"
+  }
+]

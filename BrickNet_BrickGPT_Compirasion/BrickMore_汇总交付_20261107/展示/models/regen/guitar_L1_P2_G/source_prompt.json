@@ -1,0 +1,30 @@
+{
+  "candidate_id": "reconstructed-guitar-L1-v2",
+  "is_current_model": false,
+  "source_zh": "重新构造，参考训练元素与同级模板",
+  "prompt": "A rounded waist guitar whose curved body leads into a slender neck topped by a headstock.",
+  "prompt_zh": "一把圆润收腰的吉他，弧形琴身向上接入细长琴颈，顶端为琴头。",
+  "evidence": {
+    "reference_file": "Train/samples/models/guitar/vx80k5p_20261010_A_guitar_m0001/prompts.json",
+    "reference_file_sha256": "ea818eaf05517eb83f466bcfda25785681a3600b4d503e1ade539fa32aa5b1e6",
+    "reference_record_id": "vx80k5p_20261010_A_guitar_m0001_l1",
+    "reference_caption": "A rounded waist guitar with continuous body, neck and headstock.",
+    "required_parts": [
+      "body",
+      "neck",
+      "headstock",
+      "bridge"
+    ],
+    "prompt_level": 1,
+    "fact_groups": [
+      1
+    ],
+    "level_rule": "基础轮廓与主要部件；不添加比例、配色或逐部件连接细则。",
+    "newly_constructed": true,
+    "exact_caption_match": false,
+    "original_caption_prefix_match": false,
+    "geometry_source": "Train/programs/geometry.py",
+    "caption_level_source": "Train/programs/captions.py",
+    "refinement": "Retain the documented category phrase; independently reconstruct the rest of the sentence."
+  }
+}

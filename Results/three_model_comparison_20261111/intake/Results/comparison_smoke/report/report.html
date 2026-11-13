@@ -1,0 +1,58 @@
+<!doctype html><meta charset="utf-8"><title>BrickMore / BrickGPT / BrickNet comparison</title><style>body{font:16px system-ui;max-width:1200px;margin:30px auto;padding:0 20px;background:#f6f7fa;color:#152535}table{border-collapse:collapse;width:100%;background:white}td,th{padding:14px;border:1px solid #dce2e8;text-align:left}pre{white-space:pre-wrap;background:white;padding:20px;border-radius:12px}</style><h1>Three-system LEGO comparison</h1><p>Primary: fixed matched prompts. NA is unavailable, never zero. P_inv is lower-better; image metrics are higher-better.</p><table><tr><th>system</th><th>records</th><th>pinv</th><th>vqa</th><th>pe</th><th>siglip2</th></tr><tr><td>BrickMore</td><td>2</td><td>0.000000 (n=2)</td><td>0.047743 (n=2)</td><td>0.137101 (n=2)</td><td>0.021234 (n=2)</td></tr><tr><td>BrickGPT</td><td>1</td><td>0.000000 (n=1)</td><td>0.057347 (n=1)</td><td>0.101249 (n=1)</td><td>0.000001 (n=1)</td></tr><tr><td>BrickNet</td><td>2</td><td>0.065217 (n=2)</td><td>0.012405 (n=2)</td><td>0.099554 (n=2)</td><td>0.008993 (n=2)</td></tr></table><h2>Protocol and limitations</h2><pre>{
+  &quot;structure&quot;: &quot;pinv_file_order, original BrickNet 0.1.0 inset collision kernel; original generation order not verified; no fixed-edge exemptions&quot;,
+  &quot;image_scores&quot;: &quot;Eight fixed views, max per model then arithmetic mean; no best-of-N sample selection&quot;,
+  &quot;rendering&quot;: &quot;Shared actual inset part surfaces, orthographic CPU rasterizer, 512px, 25-degree elevation, 45-degree azimuth steps, uniform yellow&quot;,
+  &quot;color&quot;: &quot;Uniform display color; no claim of generated-color accuracy&quot;,
+  &quot;original_paper_reproduction&quot;: false,
+  &quot;old_run_scores_mixed&quot;: false,
+  &quot;primary&quot;: &quot;114 matched prompts x three systems; fixed first supplied BrickMore candidate and final/stitched preference; raw counterparts and extra candidates are supplementary&quot;
+}</pre><h2>Strict three-way paired results</h2><pre>{
+  &quot;pinv&quot;: {
+    &quot;common_prompts&quot;: 1,
+    &quot;means&quot;: {
+      &quot;BrickMore&quot;: 0.0,
+      &quot;BrickGPT&quot;: 0.0,
+      &quot;BrickNet&quot;: 0.0
+    },
+    &quot;differences&quot;: {
+      &quot;BrickGPT_minus_BrickMore&quot;: 0.0,
+      &quot;BrickNet_minus_BrickMore&quot;: 0.0
+    }
+  },
+  &quot;vqa&quot;: {
+    &quot;common_prompts&quot;: 1,
+    &quot;means&quot;: {
+      &quot;BrickMore&quot;: 0.05857350677251816,
+      &quot;BrickGPT&quot;: 0.05734671652317047,
+      &quot;BrickNet&quot;: 0.0019425442442297935
+    },
+    &quot;differences&quot;: {
+      &quot;BrickGPT_minus_BrickMore&quot;: -0.0012267902493476868,
+      &quot;BrickNet_minus_BrickMore&quot;: -0.056630962528288364
+    }
+  },
+  &quot;pe&quot;: {
+    &quot;common_prompts&quot;: 1,
+    &quot;means&quot;: {
+      &quot;BrickMore&quot;: 0.14867810904979706,
+      &quot;BrickGPT&quot;: 0.10124948620796204,
+      &quot;BrickNet&quot;: 0.05263178050518036
+    },
+    &quot;differences&quot;: {
+      &quot;BrickGPT_minus_BrickMore&quot;: -0.04742862284183502,
+      &quot;BrickNet_minus_BrickMore&quot;: -0.0960463285446167
+    }
+  },
+  &quot;siglip2&quot;: {
+    &quot;common_prompts&quot;: 1,
+    &quot;means&quot;: {
+      &quot;BrickMore&quot;: 0.0003799845289904624,
+      &quot;BrickGPT&quot;: 1.2098656725356705e-06,
+      &quot;BrickNet&quot;: 4.363462480228009e-09
+    },
+    &quot;differences&quot;: {
+      &quot;BrickGPT_minus_BrickMore&quot;: -0.00037877466331792675,
+      &quot;BrickNet_minus_BrickMore&quot;: -0.0003799801655279822
+    }
+  }
+}</pre><p>Full rows: scores.csv; category/level breakdown: by_category_level.csv.</p>

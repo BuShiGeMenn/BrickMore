@@ -1,0 +1,27 @@
+{
+  "candidate_id": "reconstructed-vessel-L1-v1",
+  "is_current_model": false,
+  "source_zh": "重新构造，参考训练元素与同级模板",
+  "prompt": "A boat with a rounded hull, bow, stern, deck and an open interior.",
+  "prompt_zh": "一艘船，圆润船壳带艏、艉、甲板和内部开口。",
+  "evidence": {
+    "reference_file": "Train/samples/models/vessel/vx80k5p_20261010_A_vessel_m0001/prompts.json",
+    "reference_file_sha256": "e8665ecf9555949a7f54bb35517a895270fd615ced4cd543bc0482e44b1bcc5b",
+    "reference_record_id": "vx80k5p_20261010_A_vessel_m0001_l1",
+    "reference_caption": "A rounded monohull boat with bow, stern, deck and interior opening.",
+    "required_parts": [
+      "hull",
+      "deck"
+    ],
+    "prompt_level": 1,
+    "fact_groups": [
+      1
+    ],
+    "level_rule": "基础轮廓与主要部件；不添加比例、配色或逐部件连接细则。",
+    "newly_constructed": true,
+    "exact_caption_match": false,
+    "original_caption_prefix_match": false,
+    "geometry_source": "Train/programs/geometry.py",
+    "caption_level_source": "Train/programs/captions.py"
+  }
+}

@@ -1,0 +1,380 @@
+%%
+%% This is file `pgflibraryeasing.code.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% easing.dtx  (with options: `package')
+%% 
+%% This is a generated file.
+%% 
+%% Copyright (C) 2021 Loh Ka-tsun
+%% 
+%% This file may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License, either version 1.3 of this license
+%% or (at your option) any later version.  The latest version of this
+%% license is in:
+%% 
+%%      http://www.latex-project.org/lppl.txt
+%% 
+%% and version 1.3 or later is part of all distributions of LaTeX version
+%% 2005/12/01 or later.
+%% 
+\newif\ifeasing@withfpu
+\expandafter\ifx\csname pgflibraryfpuifactive\endcsname\relax
+\easing@withfpufalse
+\else
+\easing@withfputrue
+\fi
+\ifeasing@withfpu
+\let\easing@cos\pgfmath@basic@cos@
+\let\easing@divide\pgfmath@basic@divide@
+\let\easing@exp\pgfmath@basic@exp@
+\let\easing@ln\pgfmath@basic@ln@
+\let\easing@sqrt\pgfmath@basic@sqrt@
+\else
+\let\easing@cos\pgfmathcos@
+\let\easing@divide\pgfmathdivide@
+\let\easing@exp\pgfmathexp@
+\let\easing@ln\pgfmathln@
+\let\easing@sqrt\pgfmathsqrt@
+\fi
+\def\easing@linearstep@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \ifdim1pt<\pgf@x\pgf@x 1pt\fi
+  \ifdim0pt>\pgf@x\pgf@x 0pt\fi
+  \pgfmathreturn\pgf@x
+  \endgroup
+}%
+\expandafter\def
+\csname easing@linearstep\ifeasing@withfpu @fixed\fi\endcsname#1#2#3{%
+  \begingroup
+  \pgf@xa#3pt
+  \pgf@xb#2pt
+  \pgf@xc#1pt
+  \ifdim\pgf@xb=\pgf@xc
+  \edef\pgfmathresult{\ifdim\pgf@xa>\pgf@xb 1\else 0\fi}%
+  \else
+  \advance\pgf@xa-\pgf@xc
+  \advance\pgf@xb-\pgf@xc
+  \easing@divide{\pgfmath@tonumber\pgf@xa}{\pgfmath@tonumber\pgf@xb}%
+  \easing@linearstep@ne\pgfmathresult
+  \fi
+  \pgfmathsmuggle\pgfmathresult
+  \endgroup
+}%
+\ifeasing@withfpu
+\def\easing@linearstep@float#1#2#3{%
+  \begingroup
+  \pgfmathfloatsubtract{#3}{#1}%
+  \edef\pgf@tempa{\pgfmathresult}%
+  \pgfmathfloatsubtract{#2}{#1}%
+  \edef\pgf@tempb{\pgfmathresult}%
+  \pgfmathfloatifflags{\pgf@tempb}{0}{%
+    \pgfmathfloatifflags{\pgf@tempa}{-}{%
+      \edef\pgfmathresult{0}%
+    }{%
+      \edef\pgfmathresult{1}%
+    }%
+  }{%
+    \pgfmathfloatdivide\pgf@tempa\pgf@tempb
+    \pgfmathfloattofixed{\pgfmathresult}%
+    \easing@linearstep@ne\pgfmathresult
+  }%
+  \pgfmathsmuggle\pgfmathresult
+  \endgroup
+}%
+\def\easing@linearstep#1#2#3{%
+  \pgflibraryfpuifactive{%
+    \easing@linearstep@float{#1}{#2}{#3}}{%
+    \easing@linearstep@fixed{#1}{#2}{#3}}%
+}%
+\fi
+\let\easing@lineareasein\easing@linearstep
+\pgfmathdeclarefunction{lineareasein}{3}{%
+  \easing@lineareasein{#1}{#2}{#3}}%
+\let\easing@lineareaseout\easing@linearstep
+\pgfmathdeclarefunction{lineareaseout}{3}{%
+  \easing@lineareasein{#1}{#2}{#3}}%
+\def\easing@derive@easein@nefromstep@ne#1{%
+  \expandafter\def\csname easing@#1easein@ne\endcsname##1{%
+    \begingroup
+    \pgf@x##1 pt
+    \divide\pgf@x 2
+    \csname easing@#1step@ne\endcsname{\pgfmath@tonumber\pgf@x}%
+    \pgf@x\pgfmathresult pt
+    \multiply\pgf@x 2
+    \pgfmathreturn\pgf@x
+    \endgroup
+  }%
+}%
+\def\easing@derive@easeout@nefromstep@ne#1{%
+  \expandafter\def\csname easing@#1easeout@ne\endcsname##1{%
+    \begingroup
+    \pgf@x##1 pt
+    \divide\pgf@x 2
+    \advance\pgf@x 0.5pt
+    \csname easing@#1step@ne\endcsname{\pgfmath@tonumber\pgf@x}%
+    \pgf@x\pgfmathresult pt
+    \multiply\pgf@x 2
+    \advance\pgf@x -1pt
+    \pgfmathreturn\pgf@x
+    \endgroup
+  }%
+}%
+\def\easing@derive@step@nefromeasein@ne#1{%
+  \expandafter\def\csname easing@#1step@ne\endcsname##1{%
+    \begingroup
+    \pgf@x##1 pt
+    \multiply\pgf@x 2
+    \ifdim\pgf@x<1pt
+    \csname easing@#1easein@ne\endcsname{\pgfmath@tonumber\pgf@x}%
+    \pgf@x\pgfmathresult pt
+    \divide\pgf@x 2
+    \else
+    \multiply\pgf@x -1
+    \advance\pgf@x 2pt
+    \csname easing@#1easein@ne\endcsname{\pgfmath@tonumber\pgf@x}%
+    \pgf@x\pgfmathresult pt
+    \divide\pgf@x 2
+    \multiply\pgf@x -1
+    \advance\pgf@x 1pt
+    \fi
+    \pgfmathreturn\pgf@x
+    \endgroup
+  }%
+}%
+\def\easing@derive@easeout@nefromeasein@ne#1{%
+  \expandafter\def\csname easing@#1easeout@ne\endcsname##1{%
+    \begingroup
+    \pgf@x##1pt
+    \multiply\pgf@x -1
+    \advance\pgf@x 1pt
+    \csname easing@#1easein@ne\endcsname{\pgfmath@tonumber\pgf@x}%
+    \pgf@x\pgfmathresult pt
+    \multiply\pgf@x -1
+    \advance\pgf@x 1pt
+    \pgfmathreturn\pgf@x
+    \endgroup
+  }%
+}%
+\def\easing@pgfmathinstall#1{%
+  \pgfmathdeclarefunction{#1step}{3}{%
+    \easing@linearstep{##1}{##2}{##3}%
+    \csname easing@#1step@ne\endcsname\pgfmathresult
+  }%
+  \pgfmathdeclarefunction{#1easein}{3}{%
+    \easing@linearstep{##1}{##2}{##3}%
+    \csname easing@#1easein@ne\endcsname\pgfmathresult
+  }%
+  \pgfmathdeclarefunction{#1easeout}{3}{%
+    \easing@linearstep{##1}{##2}{##3}%
+    \csname easing@#1easeout@ne\endcsname\pgfmathresult
+  }%
+}%
+\def\easing@smoothstep@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \edef\pgf@temp{\pgfmath@tonumber\pgf@x}%
+  \multiply\pgf@x-2
+  \advance\pgf@x 3pt
+  \pgf@x\pgf@temp\pgf@x
+  \pgf@x\pgf@temp\pgf@x
+  \pgfmathreturn\pgf@x
+  \endgroup
+}%
+\easing@derive@easein@nefromstep@ne{smooth}%
+\easing@derive@easeout@nefromstep@ne{smooth}%
+\easing@pgfmathinstall{smooth}%
+\def\easing@smootherstep@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \edef\pgf@temp{\pgfmath@tonumber\pgf@x}%
+  \multiply\pgf@x 6
+  \advance\pgf@x -15pt
+  \pgf@x\pgf@temp\pgf@x
+  \advance\pgf@x 10pt
+  \pgf@x\pgf@temp\pgf@x
+  \pgf@x\pgf@temp\pgf@x
+  \pgf@x\pgf@temp\pgf@x
+  \pgfmathreturn\pgf@x
+  \endgroup
+}%
+\easing@derive@easein@nefromstep@ne{smoother}%
+\easing@derive@easeout@nefromstep@ne{smoother}%
+\easing@pgfmathinstall{smoother}%
+\pgfkeys{/easing/.is family}%
+\pgfkeys{easing,
+  pow/exponent/.estore in=\easing@param@pow@exponent,
+  pow/exponent/.default=2.4,
+  pow/exponent}%
+\def\easing@poweasein@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \ifdim\pgf@x=0pt
+  \edef\pgfmathresult{0}%
+  \else
+  \easing@ln{#1}%
+  \pgf@x\pgfmathresult pt
+  \pgf@x\easing@param@pow@exponent\pgf@x
+  \easing@exp{\pgfmath@tonumber\pgf@x}%
+  \fi
+  \pgfmathsmuggle\pgfmathresult
+  \endgroup
+}%
+\easing@derive@easeout@nefromeasein@ne{pow}%
+\easing@derive@step@nefromeasein@ne{pow}%
+\easing@pgfmathinstall{pow}%
+\def\easing@quadeasein@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \edef\pgf@temp{\pgfmath@tonumber\pgf@x}%
+  \pgf@x\pgf@temp\pgf@x
+  \pgfmathreturn\pgf@x
+  \endgroup
+}%
+\easing@derive@step@nefromeasein@ne{quad}%
+\easing@derive@easeout@nefromeasein@ne{quad}%
+\easing@pgfmathinstall{quad}%
+\def\easing@cubiceasein@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \edef\pgf@temp{\pgfmath@tonumber\pgf@x}%
+  \pgf@x\pgf@temp\pgf@x
+  \pgf@x\pgf@temp\pgf@x
+  \pgfmathreturn\pgf@x
+  \endgroup
+}%
+\easing@derive@step@nefromeasein@ne{cubic}%
+\easing@derive@easeout@nefromeasein@ne{cubic}%
+\easing@pgfmathinstall{cubic}%
+\def\easing@quarteasein@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \edef\pgf@temp{\pgfmath@tonumber\pgf@x}%
+  \pgf@x\pgf@temp\pgf@x
+  \pgf@x\pgf@temp\pgf@x
+  \pgf@x\pgf@temp\pgf@x
+  \pgfmathreturn\pgf@x
+  \endgroup
+}%
+\easing@derive@step@nefromeasein@ne{quart}%
+\easing@derive@easeout@nefromeasein@ne{quart}%
+\easing@pgfmathinstall{quart}%
+\def\easing@quinteasein@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \edef\pgf@temp{\pgfmath@tonumber\pgf@x}%
+  \pgf@x\pgf@temp\pgf@x
+  \pgf@x\pgf@temp\pgf@x
+  \pgf@x\pgf@temp\pgf@x
+  \pgf@x\pgf@temp\pgf@x
+  \pgfmathreturn\pgf@x
+  \endgroup
+}%
+\easing@derive@step@nefromeasein@ne{quint}%
+\easing@derive@easeout@nefromeasein@ne{quint}%
+\easing@pgfmathinstall{quint}%
+\pgfkeys{easing,
+  back/overshoot/.estore in=\easing@param@back@overshoot,
+  back/overshoot/.default=1.6,
+  back/overshoot}%
+\def\easing@backeasein@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \edef\pgf@temp{\pgfmath@tonumber\pgf@x}%
+  \advance\pgf@x -1pt
+  \pgf@x\easing@param@back@overshoot\pgf@x
+  \advance\pgf@x\pgf@temp pt
+  \pgf@x\pgf@temp\pgf@x
+  \pgf@x\pgf@temp\pgf@x
+  \pgfmathreturn\pgf@x
+  \endgroup
+}%
+\easing@derive@step@nefromeasein@ne{back}%
+\easing@derive@easeout@nefromeasein@ne{back}%
+\easing@pgfmathinstall{back}%
+\def\easing@sineeasein@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \multiply\pgf@x 90
+  \easing@cos{\pgfmath@tonumber\pgf@x}%
+  \pgf@x\pgfmathresult pt
+  \multiply\pgf@x -1
+  \advance\pgf@x 1pt
+  \pgfmathreturn\pgf@x
+  \endgroup
+}%
+\def\easing@sinestep@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \multiply\pgf@x 180
+  \easing@cos{\pgfmath@tonumber\pgf@x}%
+  \pgf@x\pgfmathresult pt
+  \divide\pgf@x 2
+  \multiply\pgf@x -1
+  \advance\pgf@x 0.5pt
+  \pgfmathreturn\pgf@x
+  \endgroup
+}%
+\easing@derive@easeout@nefromeasein@ne{sine}%
+\easing@pgfmathinstall{sine}%
+\pgfkeys{easing,
+  exp/speed/.estore in=\easing@param@exponent@speed,
+  exp/speed/.default=7.2,
+  exp/speed}%
+\def\easing@expeasein@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \advance\pgf@x -1pt
+  \pgf@x\easing@param@exponent@speed\pgf@x
+  \easing@exp{\pgfmath@tonumber\pgf@x}%
+  \pgfmathsmuggle\pgfmathresult
+  \endgroup
+}%
+\easing@derive@step@nefromeasein@ne{exp}%
+\easing@derive@easeout@nefromeasein@ne{exp}%
+\easing@pgfmathinstall{exp}%
+\def\easing@circeasein@ne#1{%
+  \begingroup
+  \pgf@x#1pt
+  \advance\pgf@x -1pt
+  \edef\pgf@temp{\pgfmath@tonumber\pgf@x}%
+  \pgf@x\pgf@temp\pgf@x
+  \multiply\pgf@x -1
+  \advance\pgf@x 1pt
+  \easing@sqrt{\pgfmath@tonumber\pgf@x}%
+  \pgfmathsmuggle\pgfmathresult
+  \endgroup
+}%
+\easing@derive@step@nefromeasein@ne{circ}%
+\easing@derive@easeout@nefromeasein@ne{circ}%
+\easing@pgfmathinstall{circ}%
+\pgfkeys{easing,
+  elastic/frequency/.estore in=\easing@param@elastic@frequency,
+  elastic/damping/.estore in=\easing@param@elastic@damping,
+  elastic/frequency/.default=3,
+  elastic/damping/.default=7.2,
+  elastic/frequency, elastic/damping}%
+\def\easing@elasticeasein@ne#1{%
+  \begingroup
+  \pgf@xa#1pt
+  \advance\pgf@xa -1pt
+  \pgf@xb-\pgf@xa
+  \pgf@xa\easing@param@elastic@damping\pgf@xa
+  \easing@exp{\pgfmath@tonumber\pgf@xa}%
+  \pgf@xa\pgfmathresult pt
+  \pgf@xb 360\pgf@xb
+  \pgf@xb\easing@param@elastic@frequency\pgf@xb
+  \easing@cos{\pgfmath@tonumber\pgf@xb}%
+  \pgf@xa\pgfmathresult\pgf@xa
+  \pgfmathreturn\pgf@xa
+  \endgroup
+}%
+\easing@derive@step@nefromeasein@ne{elastic}%
+\easing@derive@easeout@nefromeasein@ne{elastic}%
+\easing@pgfmathinstall{elastic}%
+\endinput
+%%
+%% End of file `pgflibraryeasing.code.tex'.

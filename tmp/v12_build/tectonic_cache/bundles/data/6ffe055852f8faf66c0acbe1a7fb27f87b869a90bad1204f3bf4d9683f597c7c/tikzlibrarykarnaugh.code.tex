@@ -1,0 +1,1117 @@
+%% This is file `tikzlibrarykarnaugh.code.tex' formerly known as `tikz-karnaugh.tex',
+%% Version: 1.5
+%% Version date: 2022-02-15
+%% 
+%% Copyright (C) 2017-2022 by Luis Paulo Laus, laus@utfpr.edu.br
+%%
+%% This package can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License distributed from CTAN
+%% archives in directory macros/latex/base/lppl.txt; either
+%% version 1 of the License, or (at your option) any later version,
+%% with `The Package' referring to the software
+%% `tikzlibrarykarnaugh.code.tex'
+%% and its accompanying documentation and `The Copyright Holder'
+%% referring to the person Luis Paulo Laus.
+%% 
+%% 
+%% IMPORTANT NOTICE: 
+%% 
+%% For error reports, comments or suggestions in case of UNCHANGED 
+%% versions send mail to:
+%% laus@utfpr.edu.br
+%% 
+\typeout{}
+\typeout{Macros for typesetting Karnaugh maps}
+\typeout{Version 1.5 of 15 February 2022}
+\typeout{by Luis Paulo Laus, laus@utfpr.edu.br}
+\typeout{}
+%%
+%% Change History:
+%% 1.0: 22 December 2017: Original Version ported from kvmacros.tex
+%% 1.1: 10 January 2018: new style for the map outer box. Support for
+%% options in the identifiers and values lists. New vertical mode.
+%% New keys to enable indices and disable bars. Macro file renamed
+%% to proper tikz library file name.
+%% 1.2: 19 March 2018: stop using \pgftransformshift, new kmindex pos
+%% (kmindex posx and kmindex posy) to control index position, cell
+%% typesetting order switched (first content then index), parameter
+%% names changed to include ``km'' letters, new binary index mode
+%% 1.3: 14 October 2021: New American style KM (for maps with ones
+%% and zeros labels surrounding the map). In addition, a new macro for
+%% decimal to Gray Code conversion (\pgfmathdectoGray) is provided.
+%% 1.4: 8 February 2022: new style and length for American style;
+%% change some key names (standard); new 'karnaugh cell size' key;
+%% bug fixes; positioning of labels simplified; two new macros for type
+%% setting maps as they should appear and not using the truth table order.
+%% 1.5: 15 February 2022: bug fixes on Gray code generation
+%%
+%% Setting up some TikZ parameters for Karnaugh Maps
+%%
+\tikzset{
+  karnaugh/.style={
+    disable bars/.is if=disablebars,
+    kmbar/.style={|-|},
+    kmbar label/.style={},
+    kmbar sep/.initial=0.2\kmunitlength,
+    kmbar top sep/.initial=1\kmunitlength,
+    kmbar left sep/.initial=1\kmunitlength,
+    enable indices/.is if=enableindices,
+    kmindex/.style={red,font=\tiny},
+    kmindex posx/.initial=0.2\kmunitlength,
+    kmindex posy/.initial=0.8\kmunitlength,
+    kmindex pos/.style 2 args={kmindex posx={##1\kmunitlength},kmindex posy={##2\kmunitlength}},
+    binary index/.is if=indexbin,
+    Gray index/.is if=indexGray,
+    American style/.is if=Americanstyle,
+    kmsep line/.style={},
+    kmsep line length/.initial=1\kmunitlength,
+    kmlabel top/.style={above,blue,font=\footnotesize\ttfamily},
+    kmlabel left/.style={left,blue,font=\footnotesize\ttfamily},
+    kmcell/.style={},
+    kmvar/.style={},
+    kmbox/.style={},
+    kmlines/.style={},
+    x=1\kmunitlength,
+    y=1\kmunitlength,
+    every karnaugh/.try
+  },
+  karnaugh cell size/.code=\pgfmathsetlength\kmunitlength{#1}
+}
+
+%%
+%% New ifs for the options above
+%%
+\newif\ifenableindices
+\enableindicesfalse
+\newif\ifindexGray
+\indexGrayfalse
+\newif\ifdisablebars
+\disablebarsfalse
+\newif\ifindexbin
+\indexbinfalse
+\newif\ifAmericanstyle
+\Americanstylefalse
+%%
+%% We need a fixed dimension for a single field in a Karnaugh map
+%% and also, an auxiliary dimension to place the bars.
+%%
+\newdimen\kmunitlength
+\newdimen\kmtemplength
+\kmunitlength=8mm
+%%
+%% First, we have to introduce some counters:
+%%
+%% \kmrecursiondepth is used to control the recursion of the
+%% \karnaughmakemap macro.
+%%
+\newcount\kmrecursiondepth
+%%
+%% The \kmindexcounter is needed for the indices in the fields of the
+%% diagrams. 
+%%
+\newcount\kmindexcounter
+%% 
+%% \kmxsize and \kmysize store the dimensions of an entire diagram.
+%%
+\newcount\kmxsize
+\newcount\kmysize
+%%
+%% Some counters are necessary to compute the bars for the variable
+%% identifiers. Also used as temp varaibles in code conversion:
+%%
+\newcount\kmvarno
+\newcount\kmxvarno
+\newcount\kmyvarno
+\newcount\kmbarstart
+\newcount\kmbarlength
+\newcount\kmbarnum
+\newcount\kmbarmove
+\newcount\kmtemppos
+%%
+%% Single cells in a diagram should be indexed, which makes the map easier to
+%% use (ok, not really, but it might be useful).
+%%
+\def\kmcurrentindex{\kmcurrentindexdec}
+\def\kmcurrentindexdec{%
+    \the\kmindexcounter\global\advance\kmindexcounter by 1}%
+\def\kmcurrentindexbin{%
+    \kmdectobin{\kmindexcounter}\global\advance\kmindexcounter by 1}%
+\def\kmcurrentindexGray{%
+    \kmdectoKG{\kmindexcounter}\global\advance\kmindexcounter by 1}%
+\def\kmcurrentindexGraytab{%
+    \kmdectoKGtab{\kmindexcounter}\global\advance\kmindexcounter by 1}%
+\def\kmcurrentindexGrayvert{%
+    \kmdectoKGvert{\kmindexcounter}\global\advance\kmindexcounter by 1}%
+\def\kmcurrentindexGraytabvert{%
+    \kmdectoKGtabvert{\kmindexcounter}\global\advance\kmindexcounter by 1}%
+%%
+%% We need a macro that computes the powers of two.
+%% Computes #1=2^#2, both of which have to be counters and
+%% both are modified
+%%
+\def\kmpoweroftwo#1#2{{%
+  \ifnum#2>0%
+    \global\multiply#1 by 2% 
+    \advance#2 by -1%
+    \kmpoweroftwo{#1}{#2}%
+  \fi}}
+%%
+%% \pgfmathdectoGray
+%%
+%% Convert a representation of an integer from
+%% base 10 to Gray Code.
+%%
+%% #1 - a macro to store the result.
+%% #2 - a number in base 10 (in a macro, not a register)
+%%
+%% e.g.
+%%
+%% \pgfmathdectoGray\mynumber{9}
+%%
+%% \mynumber <- 1101
+%%
+{\makeatletter
+\gdef\pgfmathdectoGray#1#2{%
+    \pgfmathdectobase{\pgfresult@}{#2}{2}%
+    \c@pgfmath@counta=0\relax%
+    \let\pgfresult@@=\pgfmath@empty%
+    \let\pgf@lib@sh@next\pgfmathdectoGray@%
+    \expandafter\pgfmathdectoGray@\pgfresult@\pgf@stop%
+    \let#1=\pgfresult@@%
+    \pgfmath@ensurenumberlength{#1}}
+\gdef\pgfmathdectoGray@#1{%
+    \ifx#1\pgf@stop%
+        \let\pgf@lib@sh@next\relax%
+    \else%
+        \edef\pgfresult@@{\pgfresult@@\ifnum#1=\c@pgfmath@counta\relax0\else1\fi}% xor
+        \c@pgfmath@counta=#1\relax%
+    \fi%
+    \pgf@lib@sh@next}
+%%
+%% The macros \kmdectoKG converts the cell index
+%% to a binary code that resembles Gray code 
+%% deinterleaving the variables 
+%%
+\gdef\kmdectoKG#1{%
+    \kmbarnum=#1\relax% decimal number to be converted
+    \kmbarlength=\kmvarno\relax% number of bits
+    \let\kmresult@=\empty%
+    \let\kmresult@@=\empty%
+    \let\next\kmdectoKG@%
+    \next%
+    \kmresult@@\kmresult@}
+\gdef\kmdectoKGvert#1{%
+    \kmbarnum=#1\relax% decimal number to be converted
+    \kmbarlength=\kmvarno\relax% number of bits
+    \let\kmresult@=\empty%
+    \let\kmresult@@=\empty%
+    \let\next\kmdectoKG@%
+    \next%
+    \kmresult@\kmresult@@}
+\gdef\kmdectoKG@{%
+    \ifnum\kmbarlength=0%
+        \let\next\relax%
+    \else%
+        \edef\kmresult@{\ifodd\kmbarnum1\else0\fi\kmresult@}%
+        \divide \kmbarnum by 2%
+        \advance\kmbarlength by -1\relax%
+        \let\next\kmdectoKG@@%
+    \fi%
+    \next}
+\gdef\kmdectoKG@@{%
+    \ifnum\kmbarlength=0%
+        \let\next\relax%
+    \else%
+        \edef\kmresult@@{\ifodd\kmbarnum1\else0\fi\kmresult@@}%
+        \divide \kmbarnum by 2%
+        \advance\kmbarlength by -1\relax%
+        \let\next\kmdectoKG@%
+    \fi%
+    \next}
+%%
+%% The macros \kmdectoKGtab converts the cell index
+%% to a binary code that resembles Gray code 
+%% without deinterleaving the variables.
+%% Used in Table Mode
+%%
+\gdef\kmdectoKGtab#1{%
+    \kmbarnum=#1\relax% decimal number to be converted
+    \kmbarlength=\kmvarno\relax% number of bits
+    \let\kmresult@=\empty%
+    \let\kmresult@@=\empty%
+    \let\next\kmdectobin@%
+    \next%
+    \kmbarlength=\kmvarno\relax% number of bits
+    \kmbarmove=0\relax% last bit
+    \let\next\kmdectoKG@tab%
+    \expandafter\next\kmresult@\end%
+    \kmresult@@}
+\gdef\kmdectoKG@tab#1{%
+    \ifx#1\end%
+        \let\next\relax%
+    \else%
+        \edef\kmresult@@{\kmresult@@\ifnum#1=\kmbarmove\relax0\else1\fi}% xor
+        \kmbarmove=#1\relax%
+        \advance\kmbarlength by -1\relax%
+        \ifnum\kmbarlength=\kmxvarno\kmbarmove=0\fi%
+    \fi%
+    \next}%
+\gdef\kmdectoKGtabvert#1{%
+    \kmbarnum=#1\relax% decimal number to be converted
+    \kmbarlength=\kmvarno\relax% number of bits
+    \let\kmresult@=\empty%
+    \let\kmresult@@=\empty%
+    \let\kmresult@@@=\empty%
+    \let\next\kmdectobin@%
+    \next%
+    \kmbarlength=\kmvarno\relax% number of bits
+    \kmbarmove=0\relax% last bit
+    \let\next\kmdectoKG@tabvert%
+    \expandafter\next\kmresult@\end%
+    \kmresult@@@\kmresult@@}
+\gdef\kmdectoKG@tabvert#1{%
+    \ifx#1\end%
+        \let\next\relax%
+    \else%
+        \edef\kmresult@@{\kmresult@@\ifnum#1=\kmbarmove\relax0\else1\fi}% xor
+        \kmbarmove=#1\relax%
+        \advance\kmbarlength by -1\relax%
+        \ifnum\kmbarlength=\kmxvarno%
+            \kmbarmove=0\relax%
+            \let\next\kmdectoKG@@tabvert%
+        \fi%
+    \fi%
+    \next}
+\gdef\kmdectoKG@@tabvert#1{%
+    \ifx#1\end%
+        \let\next\relax%
+    \else%
+        \edef\kmresult@@@{\kmresult@@@\ifnum#1=\kmbarmove\relax0\else1\fi}% xor
+        \kmbarmove=#1\relax%
+    \fi
+    \next}
+%%
+%% The macros \kmdectobin converts a decimal number
+%% passed as argument to binary such that the number of
+%% digits (length) is equal to \kmvarno 
+%%
+%% e.g.
+%%
+%% \kmvarno=6\relax\kmdectobin{9}
+%%
+%% 001001
+%% 
+\gdef\kmdectobin#1{%
+    \kmbarnum=#1\relax% decimal number to be converted
+    \kmbarlength=\kmvarno\relax% number of bits
+    \let\kmresult@=\empty
+    \let\next\kmdectobin@%
+    \next%
+    \kmresult@}
+\gdef\kmdectobin@{%
+    \ifnum\kmbarlength=0%
+        \let\next\relax%
+    \else%
+        \edef\kmresult@{\ifodd\kmbarnum1\else0\fi\kmresult@}%
+        \divide \kmbarnum by 2%
+        \advance\kmbarlength by -1\relax%
+    \fi%
+    \next}
+%%
+%% The macros \kmdectoKGdec coverts an index to
+%% pseudo Gray code in decimal (test purpose).
+%% No vertical mode available
+%%
+\gdef\kmdectoKGdec#1{%
+    \kmbarnum=#1\relax% decimal number to be converted
+    \kmbarstart=0\relax%
+    \kmbarmove=0\relax%
+    \kmbarlength=1\relax%
+    \c@pgfmath@counta=\kmxsize\relax%
+    \kmdectoKGdec@%
+    \advance\kmbarmove by \kmbarstart%
+    \the\kmbarmove}
+\gdef\kmdectoKGdec@{%
+    \ifnum\kmbarnum=0%
+        \let\next\relax%
+    \else%
+        \ifodd\kmbarnum\advance\kmbarstart by \kmbarlength\fi%
+        \multiply\kmbarlength by 2%
+        \divide \kmbarnum by 2%
+        \let\next\kmdectoKGdec@@%
+    \fi%
+    \next}
+\gdef\kmdectoKGdec@@{%
+    \ifnum\kmbarnum=0%
+        \let\next\relax%
+    \else%
+        \ifodd\kmbarnum\advance\kmbarmove by \c@pgfmath@counta\fi%
+        \multiply\c@pgfmath@counta by 2%
+        \divide \kmbarnum by 2%
+        \let\next\kmdectoKGdec@%
+    \fi%
+    \next}
+} % makeatletter
+%%
+%% The macros \kmargumentstring and \kmsetoptstr are needed to
+%% process the variable-length parameters in \karnaughmap:
+%%
+\def\kmargumentstring#1{\gdef\kmstringbuf{#1{}\noexpand\end}}
+%%
+%% The macro \kmsetoptstr reads one token from the list of parameters in
+%% \karnaughmap in the form <[opt]>srt and sets the optional style kmtempsty 
+%% and saves its contents of the string srt in macro \kmstr
+%%
+\def\kmsetoptstr{\expandafter\kmgetonetok\kmstringbuf}
+%%
+%% The macros \kmgetonetok, \kmsplittok and \kmoptstrmake are
+%% auxiliary macros used to split the token and save to contents
+%%
+\def\kmgetonetok#1#2\end{\expandafter\kmsplittok#1{}\end \gdef\kmstringbuf{#2\noexpand\end}}
+\def\kmsplittok#1#2\end{\ifx#1[ \kmoptstrmake#2\end \else \kmoptstrmake]#1#2\end \fi}
+\def\kmoptstrmake#1]#2\end{\tikzset{kmtempsty/.style={#1}} \edef\kmstr{#2}}%\typeout{Teste #1 e #2}}
+%%\def\kmoptstrmake#1]#2\end{Test: #1 and #2.\par}
+%%
+%% The macro \karnaughmakemap calls itself recursively until the parameter #1
+%% equals 1, whereupon it draws one cell contents in a node and, if enabled,
+%% another node with the index.
+%%
+\def\karnaughmakemap#1#2#3#4{{%
+  \kmrecursiondepth #1\relax
+  \ifnum\kmrecursiondepth>1
+    \divide\kmrecursiondepth by 2
+    \edef\tempx{#3}
+    \edef\tempy{#4}
+    \kmtemppos=\tempx\relax
+    \advance\kmtemppos by \kmrecursiondepth
+    \edef\tempxs{\the\kmtemppos}
+    \kmtemppos=\tempy\relax
+    \advance\kmtemppos by \kmrecursiondepth
+    \edef\tempys{\the\kmtemppos}
+
+    \ifcase#2
+%%
+%% The parameter #2 of \karnaughmakemap is needed because the inner Karnaugh
+%% maps need to be mirrored. This is achieved by the following case-statement,
+%% which orders the inner Karnaugh maps properly:
+%% +---+---+
+%% | 0 | 1 |
+%% +---+---+
+%% | 2 | 3 |
+%% +---+---+
+%%
+%% Case 0: top-left Karnaugh map
+      \karnaughmakemap{\kmrecursiondepth}{0}{\tempx}{\tempys}%
+      \karnaughmakemap{\kmrecursiondepth}{1}{\tempxs}{\tempys}%
+      \karnaughmakemap{\kmrecursiondepth}{2}{\tempx}{\tempy}%
+      \karnaughmakemap{\kmrecursiondepth}{3}{\tempxs}{\tempy}%
+    \or
+%% Case 1: top-right Karnaugh map
+      \karnaughmakemap{\kmrecursiondepth}{1}{\tempxs}{\tempys}%
+      \karnaughmakemap{\kmrecursiondepth}{0}{\tempx}{\tempys}%
+      \karnaughmakemap{\kmrecursiondepth}{3}{\tempxs}{\tempy}%
+      \karnaughmakemap{\kmrecursiondepth}{2}{\tempx}{\tempy}%
+    \or
+%% Case 2: bottom-left Karnaugh map
+      \karnaughmakemap{\kmrecursiondepth}{2}{\tempx}{\tempy}%
+      \karnaughmakemap{\kmrecursiondepth}{3}{\tempxs}{\tempy}%
+      \karnaughmakemap{\kmrecursiondepth}{0}{\tempx}{\tempys}%
+      \karnaughmakemap{\kmrecursiondepth}{1}{\tempxs}{\tempys}%
+    \or
+%% Case 3: bottom-right Karnaugh map
+      \karnaughmakemap{\kmrecursiondepth}{3}{\tempxs}{\tempy}%
+      \karnaughmakemap{\kmrecursiondepth}{2}{\tempx}{\tempy}%
+      \karnaughmakemap{\kmrecursiondepth}{1}{\tempxs}{\tempys}%
+      \karnaughmakemap{\kmrecursiondepth}{0}{\tempx}{\tempys}%
+    \fi
+  \else
+    \kmsetoptstr{} % reads argument as <[opt]>str
+    \node[kmcell,kmtempsty,shift={(0.5\kmunitlength,0.5\kmunitlength)}] at (#3\kmunitlength,#4\kmunitlength){\kmstr};%
+    \ifenableindices
+      \node[kmindex,shift={(\pgfkeysvalueof{/tikz/kmindex posx},\pgfkeysvalueof{/tikz/kmindex posy})}]
+        at (#3\kmunitlength,#4\kmunitlength) {\kmcurrentindex};
+    \fi
+  \fi}}%
+%%
+%% \karnaughmaketopbar typesets the variable bars of a Karnaugh map that are
+%% located on top of the diagram:
+%%
+\def\karnaughmaketopbar{%
+  \kmbarstart=1
+  \kmpoweroftwo{\kmbarstart}{\kmxvarno} % \kmybarstart is the start 
+% position for the \foreach
+  \kmbarlength=\kmbarstart 
+  \multiply\kmbarlength by 2 % \kmbarlength is the length of a bar
+  \kmbarmove=\kmbarstart 
+  \multiply\kmbarmove by 4 % This is the move distance for the \draw.
+  \kmbarnum=\kmxsize
+  \divide\kmbarnum by \kmbarmove % This is the number of repetitions for
+% the \foreach. 
+% The highest-order variable bar needs a special treatment:
+  \ifnum\kmbarnum=0\kmbarnum=1\divide\kmbarlength by 2\fi 
+  \advance\kmbarmove by \kmbarstart
+  \kmtemplength=\pgfkeysvalueof{/tikz/kmbar top sep}
+  \multiply \kmtemplength by \kmxvarno
+  \advance \kmtemplength by \pgfkeysvalueof{/tikz/kmbar sep}
+  \advance \kmtemplength by \kmysize\kmunitlength
+  \kmsetoptstr % reads argument as <[opt]>str
+  \ifnum\kmbarnum=1
+    \draw[kmbar,xshift=\kmbarstart\kmunitlength,yshift=\kmtemplength,kmtempsty]
+      (0,0) -- node[above, kmbar label,kmtempsty]{\kmstr} (\kmbarlength\kmunitlength,0);
+  \else
+    \foreach \x in {\kmbarstart,\kmbarmove,...,\kmxsize}
+      \draw[kmbar,xshift=\x\kmunitlength,yshift=\kmtemplength,kmtempsty]
+        (0,0) -- node[above, kmbar label,kmtempsty]{\kmstr} (\kmbarlength\kmunitlength,0);
+  \fi
+}
+%%
+%% \karnaughmakeleftbar typesets the variable bars of a Karnaugh map that are
+%% located on the left of the diagram:
+%%
+\def\karnaughmakeleftbar{%
+  \kmbarstart=1
+  \kmpoweroftwo{\kmbarstart}{\kmyvarno} % \kmbarstart is the start 
+% position for the \foreach
+  \kmbarlength=\kmbarstart 
+  \multiply\kmbarlength by 2 % \kmbarlength is the length of a bar
+  \kmbarmove=\kmbarstart 
+  \multiply\kmbarmove by 4 % This now is the move distance for the
+% \foreach. 
+  \kmbarnum=\kmysize
+  \divide\kmbarnum by \kmbarmove % This now is the number of 
+% repetitions for the \draw. 
+%The highest-order variable bar needs a special treatment:
+  \ifnum\kmbarnum=0\kmbarstart=0\kmbarnum=1\divide\kmbarlength by 2\fi 
+  \advance\kmbarmove by \kmbarstart
+  \kmtemplength=-\pgfkeysvalueof{/tikz/kmbar left sep}
+  \multiply \kmtemplength by \kmyvarno
+  \advance \kmtemplength by -\pgfkeysvalueof{/tikz/kmbar sep}
+  \kmsetoptstr % reads argument as <[opt]>str
+  \ifnum\kmbarnum=1
+    \draw[kmbar,yshift=\kmbarstart\kmunitlength,xshift=\kmtemplength,kmtempsty]
+      (0,0) -- node[left,kmbar label,kmtempsty]{\kmstr} (0,\kmbarlength\kmunitlength);
+  \else
+    \foreach \y in {\kmbarstart,\kmbarmove,...,\kmysize}
+      \draw[kmbar,yshift=\y\kmunitlength,xshift=\kmtemplength,kmtempsty]
+        (0,0) -- node[left,kmbar label,kmtempsty]{\kmstr} (0,\kmbarlength\kmunitlength);
+  \fi
+}
+%% \karnaughmakebars calls \karnaughmaketopbar or \karnaughmakeleftbar
+%% depending on whether \kmvarno is odd or even.
+%%
+\def\karnaughmakebars{%
+  \ifnum\kmvarno>0
+    \let\next=\karnaughmakebars
+    \ifodd\kmvarno % We have to make a bar at the top
+      \advance\kmxvarno by -1
+      \karnaughmaketopbar
+    \else % We have to make a bar at the left
+      \advance\kmyvarno by -1
+      \karnaughmakeleftbar
+    \fi
+    \advance\kmvarno by -1
+  \else
+    \let\next=\relax
+  \fi
+  \next
+}
+%%
+%% \karnaughmakelabels is a modification of \karnaughmakebars.
+%% Instead of making the bars it sets two macros, \kmtoplabels
+%% and \kmleftlabels, with the labels for American style maps
+%%
+\def\karnaughmakelabels{%
+  \ifnum\kmvarno>0
+    \let\next=\karnaughmakelabels
+    \ifodd\kmvarno % We have to make the label for top
+      \advance\kmxvarno by -1
+      \kmsetoptstr % reads argument as <[opt]>str
+      \ifx\kmtoplabels\empty
+        \xdef\kmtoplabels{\kmstr}
+      \else
+        \xdef\kmtoplabels{\kmtoplabels, \kmstr}
+      \fi
+    \else          % We have to make the label for left
+      \advance\kmyvarno by -1
+      \kmsetoptstr % reads argument as <[opt]>str
+      \ifx\kmleftlabels\empty
+        \xdef\kmleftlabels{\kmstr}
+      \else
+        \xdef\kmleftlabels{\kmleftlabels, \kmstr}
+      \fi
+    \fi
+    \advance\kmvarno by -1
+  \else
+    \let\next=\relax
+  \fi
+  \next
+}
+
+%%
+%% \karnaughmap is the macro that a user calls if he wants to draw a
+%% Karnaugh map: 
+%%
+\def\karnaughmap#1#2#3#4#5{%
+%%
+%% #1 is the number of variables in the Karnaugh map
+%% #2 is the identifier of the function
+%% #3 is the list of identifiers of those variables 
+%% #4 is the list of tokens that have to be written into the map
+%% #5 a possibly empty set of TikZ commands that will be drown before
+%% the function values so the values will appear on top of them
+%%
+  \kmvarno=#1 % \kmvarno is the total number of variables 
+  \kmyvarno=#1 % \kmyvarno is the number of variable bars at the left 
+  \divide\kmyvarno by 2
+  \kmxvarno=#1 % \kmxvarno is the number of variable bars on top 
+  \advance\kmxvarno by -\kmyvarno
+  \kmxsize=1
+  \kmpoweroftwo{\kmxsize}{\kmxvarno}
+  \kmysize=1
+  \kmpoweroftwo{\kmysize}{\kmyvarno}
+  \kmtemppos=\kmxsize
+  \advance\kmtemppos by -1
+  \kmtemplength=\pgfkeysvalueof{/tikz/kmbar top sep}
+  \foreach \x in {1,...,\kmtemppos}
+    \draw[kmlines] (\x\kmunitlength,0) -- (\x\kmunitlength,\kmysize\kmunitlength);
+  \kmtemppos=\kmysize
+  \advance\kmtemppos by -1
+  \ifnum\kmtemppos>0
+    \foreach \y in {1,...,\kmtemppos}
+      \draw[kmlines] (0,\y\kmunitlength) -- (\kmxsize\kmunitlength,\y\kmunitlength);
+  \fi
+  \draw[kmbox] (0,0) rectangle (\kmxsize\kmunitlength,\kmysize\kmunitlength);
+  #5
+  \ifAmericanstyle
+    \kmtemppos=\kmxsize
+    \advance\kmtemppos by -1
+    \pgfmathsetbasenumberlength{\kmxvarno}
+    \foreach \x in {0,...,\kmtemppos}
+       \node[kmlabel top] at (0.5\kmunitlength+\x\kmunitlength,\kmysize\kmunitlength)  {\pgfmathdectoGray\mynumber{\x}\mynumber};
+    \kmtemppos=\kmysize
+    \advance\kmtemppos by -1
+    \ifnum\kmtemppos>0
+      \pgfmathsetbasenumberlength{\kmyvarno}
+      \foreach \y in {0,...,\kmtemppos}
+        \node[kmlabel left] at (0,1\kmysize\kmunitlength-0.5\kmunitlength-\y\kmunitlength)  {\pgfmathdectoGray\mynumber{\y}\mynumber};
+    \fi
+    \kmargumentstring{#3}
+    \gdef\kmtoplabels{}
+    \gdef\kmleftlabels{}
+    \karnaughmakelabels
+    \kmtemplength=\pgfkeysvalueof{/tikz/kmsep line length}
+    \draw[kmsep line] (0,\kmysize\kmunitlength) -- ++(-\kmtemplength,\kmtemplength) node[kmbar label,below left,pos=0.5]{\kmleftlabels} node[kmbar label,above right,pos=0.5]{\kmtoplabels} node[kmvar,above left]{#2};
+  \else
+    \ifdisablebars\relax\else
+      \node[kmvar,above left] at (0,\kmysize\kmunitlength){#2};
+      \kmargumentstring{#3}
+      \karnaughmakebars
+    \fi
+  \fi
+  \ifenableindices
+     \ifindexbin
+        \gdef\kmcurrentindex{\kmcurrentindexbin}
+     \else
+        \ifindexGray
+           \gdef\kmcurrentindex{\kmcurrentindexGray}
+        \else
+           \gdef\kmcurrentindex{\kmcurrentindexdec}
+        \fi
+     \fi
+  \fi
+  \kmvarno=#1 % \kmvarno is the total number of variables 
+  \kmindexcounter=0
+  \kmargumentstring{#4}
+  \karnaughmakemap{\the\kmysize}{0}{0}{0}
+  \ifodd\kmvarno
+    \divide\kmxsize by 2
+    \karnaughmakemap{\the\kmysize}{1}{\the\kmxsize}{0}
+  \fi
+}%
+%% Vertical Mode
+%% The next three macros are similar to the ones for normal mode.
+%% The macro \karnaughmakemapvert calls itself recursively until the parameter #1
+%% equals 1, whereupon it draws one cell contents in a node and, if enabled,
+%% another node with the index.
+%%
+\def\karnaughmakemapvert#1#2#3#4{{%
+  \kmrecursiondepth #1\relax
+  \ifnum\kmrecursiondepth>1
+    \divide\kmrecursiondepth by 2
+    \edef\tempx{#3}
+    \edef\tempy{#4}
+    \kmtemppos=\tempx\relax
+    \advance\kmtemppos by \kmrecursiondepth
+    \edef\tempxs{\the\kmtemppos}
+    \kmtemppos=\tempy\relax
+    \advance\kmtemppos by \kmrecursiondepth
+    \edef\tempys{\the\kmtemppos}
+
+    \ifcase#2
+%%
+%% The parameter #2 of \karnaughmakemapvert is needed because the inner Karnaugh
+%% maps need to be mirrored. This is achieved by the following case-statement,
+%% which orders the inner Karnaugh maps properly:
+%% +---+---+
+%% | 0 | 2 |
+%% +---+---+
+%% | 1 | 3 |
+%% +---+---+
+%%
+%% Case 0: top-left Karnaugh map
+      \karnaughmakemapvert{\kmrecursiondepth}{0}{\tempx}{\tempys}%
+      \karnaughmakemapvert{\kmrecursiondepth}{1}{\tempx}{\tempy}%
+      \karnaughmakemapvert{\kmrecursiondepth}{2}{\tempxs}{\tempys}%
+      \karnaughmakemapvert{\kmrecursiondepth}{3}{\tempxs}{\tempy}%
+    \or
+%% Case 1: bottom-left Karnaugh map
+      \karnaughmakemapvert{\kmrecursiondepth}{1}{\tempx}{\tempy}%
+      \karnaughmakemapvert{\kmrecursiondepth}{0}{\tempx}{\tempys}%
+      \karnaughmakemapvert{\kmrecursiondepth}{3}{\tempxs}{\tempy}%
+      \karnaughmakemapvert{\kmrecursiondepth}{2}{\tempxs}{\tempys}%
+    \or
+%% Case 2: top-right Karnaugh map
+      \karnaughmakemapvert{\kmrecursiondepth}{2}{\tempxs}{\tempys}%
+      \karnaughmakemapvert{\kmrecursiondepth}{3}{\tempxs}{\tempy}%
+      \karnaughmakemapvert{\kmrecursiondepth}{0}{\tempx}{\tempys}%
+      \karnaughmakemapvert{\kmrecursiondepth}{1}{\tempx}{\tempy}%
+    \or
+%% Case 3: bottom-right Karnaugh map
+      \karnaughmakemapvert{\kmrecursiondepth}{3}{\tempxs}{\tempy}%
+      \karnaughmakemapvert{\kmrecursiondepth}{2}{\tempxs}{\tempys}%
+      \karnaughmakemapvert{\kmrecursiondepth}{1}{\tempx}{\tempy}%
+      \karnaughmakemapvert{\kmrecursiondepth}{0}{\tempx}{\tempys}%
+    \fi
+  \else
+    \kmsetoptstr{} % reads argument as <[opt]>str
+    \node[kmcell,kmtempsty,shift={(0.5\kmunitlength,0.5\kmunitlength)}] at (#3\kmunitlength,#4\kmunitlength){\kmstr};
+    \ifenableindices
+      \node[kmindex,shift={(\pgfkeysvalueof{/tikz/kmindex posx},\pgfkeysvalueof{/tikz/kmindex posy})}]
+        at (#3\kmunitlength,#4\kmunitlength) {\kmcurrentindex};
+    \fi
+  \fi}}%
+%%
+%% \karnaughmakebarsvert calls \karnaughmaketopbar or \karnaughmakeleftbar
+%% depending on whether \kmvarno is odd or even.
+%%
+\def\karnaughmakebarsvert{%
+  \ifnum\kmvarno>0
+    \let\next=\karnaughmakebarsvert
+    \ifodd\kmvarno % We have to make a bar at the left
+      \advance\kmyvarno by -1
+      \karnaughmakeleftbar 
+    \else          % We have to make a bar at the top
+      \advance\kmxvarno by -1
+      \karnaughmaketopbar
+    \fi
+    \advance\kmvarno by -1
+  \else
+    \let\next=\relax
+  \fi
+  \next
+}
+
+%% \karnaughmakelabelsvert is a modification of \karnaughmakebarsvert.
+%% Instead of making the bars it sets two macros, \kmtoplabels
+%% and \kmleftlabels, with the labels for American style maps
+%%
+\def\karnaughmakelabelsvert{%
+  \ifnum\kmvarno>0
+    \let\next=\karnaughmakelabelsvert
+    \ifodd\kmvarno % We have to make the label for left
+      \advance\kmyvarno by -1
+      \kmsetoptstr % reads argument as <[opt]>str
+      \ifx\kmleftlabels\empty
+        \xdef\kmleftlabels{\kmstr}
+      \else
+        \xdef\kmleftlabels{\kmleftlabels, \kmstr}
+      \fi
+    \else          % We have to make the label for top
+      \advance\kmxvarno by -1
+      \kmsetoptstr % reads argument as <[opt]>str
+      \ifx\kmtoplabels\empty
+        \xdef\kmtoplabels{\kmstr}
+      \else
+        \xdef\kmtoplabels{\kmtoplabels, \kmstr}
+      \fi
+    \fi
+    \advance\kmvarno by -1
+  \else
+    \let\next=\relax
+  \fi
+  \next
+}
+%%
+%% \karnaughmapvert is the macro that a user calls if he wants to draw a
+%% Karnaugh map in vertical mode (not be confused with TeX vertical mode): 
+%%
+\def\karnaughmapvert#1#2#3#4#5{%
+%%
+%% #1 is the number of variables in the Karnaugh map
+%% #2 is the identifier of the function
+%% #3 is the list of identifiers of those variables 
+%% #4 is the list of tokens that have to be written into the map
+%% #5 a possibly empty set of TikZ commands that will be drown before
+%% the function values so the values will appear on top of them
+%%
+  \kmvarno=#1 % \kmvarno is the total number of variables 
+  \kmxvarno=#1 % \kmxvarno is the number of variable bars on top
+  \divide\kmxvarno by 2
+  \kmyvarno=#1 % \kmyvarno is the number of variable bars at the left
+  \advance\kmyvarno by -\kmxvarno
+  \kmxsize=1
+  \kmpoweroftwo{\kmxsize}{\kmxvarno}
+  \kmysize=1
+  \kmpoweroftwo{\kmysize}{\kmyvarno}
+  \kmtemppos=\kmxsize
+  \advance\kmtemppos by -1
+  \ifnum\kmtemppos>0
+    \foreach \x in {1,...,\kmtemppos}
+      \draw[kmlines] (\x\kmunitlength,0) -- (\x\kmunitlength,\kmysize\kmunitlength);
+  \fi
+  \kmtemppos=\kmysize
+  \advance\kmtemppos by -1
+  \foreach \y in {1,...,\kmtemppos}
+    \draw[kmlines] (0,\y\kmunitlength) -- (\kmxsize\kmunitlength,\y\kmunitlength);
+  \draw[kmbox] (0,0) rectangle (\kmxsize\kmunitlength,\kmysize\kmunitlength);
+  #5
+  \ifAmericanstyle
+    \kmtemppos=\kmxsize
+    \advance\kmtemppos by -1
+    \ifnum\kmtemppos>0
+      \pgfmathsetbasenumberlength{\kmxvarno}
+      \foreach \x in {0,...,\kmtemppos}
+         \node[kmlabel top] at (0.5\kmunitlength+\x\kmunitlength,\kmysize\kmunitlength)  {\pgfmathdectoGray\mynumber{\x}\mynumber};
+    \fi
+    \kmtemppos=\kmysize
+    \advance\kmtemppos by -1
+    \pgfmathsetbasenumberlength{\kmyvarno}
+    \foreach \y in {0,...,\kmtemppos}
+      \node[kmlabel left] at (0,1\kmysize\kmunitlength-0.5\kmunitlength-\y\kmunitlength)  {\pgfmathdectoGray\mynumber{\y}\mynumber};
+    \kmargumentstring{#3}
+    \gdef\kmtoplabels{}
+    \gdef\kmleftlabels{}
+    \karnaughmakelabelsvert
+    \kmtemplength=\pgfkeysvalueof{/tikz/kmsep line length}
+    \draw[kmsep line] (0,\kmysize\kmunitlength) -- ++(-\kmtemplength,\kmtemplength) node[kmbar label,below left,pos=0.5]{\kmleftlabels} node[kmbar label,above right,pos=0.5]{\kmtoplabels} node[kmvar,above left]{#2};
+  \else
+    \ifdisablebars\relax\else
+      \node[kmvar,above left] at (0,\kmysize\kmunitlength){#2};
+      \kmargumentstring{#3}
+      \karnaughmakebarsvert
+    \fi
+  \fi
+  \ifenableindices
+     \ifindexbin
+        \gdef\kmcurrentindex{\kmcurrentindexbin}
+     \else
+        \ifindexGray
+           \gdef\kmcurrentindex{\kmcurrentindexGrayvert}
+        \else
+           \gdef\kmcurrentindex{\kmcurrentindexdec}
+        \fi
+     \fi
+  \fi
+  \kmvarno=#1 % \kmvarno is the total number of variables 
+  \kmindexcounter=0
+  \kmargumentstring{#4}
+  \ifodd\kmvarno
+    \divide\kmysize by 2
+    \karnaughmakemapvert{\the\kmxsize}{0}{0}{\the\kmysize}
+    \karnaughmakemapvert{\the\kmxsize}{1}{0}{0}
+  \else
+    \karnaughmakemapvert{\the\kmxsize}{0}{0}{0}
+  \fi
+}%
+%%
+%% Table Mode
+%% Non-recursive mode. Input is given is Karnaugh map order and not in truth table
+%% order. It should allow for bigger maps because the algorithm employed is not the
+%% time and memory consuming recursive algorithm of the old macros. 
+%%
+%% \karnaughmakebarstab calls \karnaughmaketopbar or \karnaughmakeleftbar
+%% depending on whether \kmvarno is in the first or second half.
+%%
+\def\karnaughmakebarstab{%
+  \ifnum\kmvarno>0
+    \let\next=\karnaughmakebarstab
+    \ifnum\kmyvarno>0 % We have to make a bar at the left
+      \advance\kmyvarno by -1
+      \karnaughmakeleftbar
+    \else % We have to make a bar at the top
+      \advance\kmxvarno by -1
+      \karnaughmaketopbar
+    \fi
+    \advance\kmvarno by -1
+  \else
+    \let\next=\relax
+  \fi
+  \next
+}
+%%
+%% \karnaughmakelabelstab is a modification of \karnaughmakebarstab.
+%% Instead of making the bars it sets two macros, \kmtoplabels
+%% and \kmleftlabels, with the labels for American style maps
+%%
+\def\karnaughmakelabelstab{%
+  \ifnum\kmvarno>0
+    \let\next=\karnaughmakelabelstab
+    \ifnum\kmyvarno>0 % We have to make a bar at the left
+      \advance\kmyvarno by -1
+      \kmsetoptstr % reads argument as <[opt]>str
+      \ifx\kmleftlabels\empty
+        \xdef\kmleftlabels{\kmstr}
+      \else
+        \xdef\kmleftlabels{\kmleftlabels, \kmstr}
+      \fi
+    \else          % We have to make the label for top
+      \advance\kmxvarno by -1
+      \kmsetoptstr % reads argument as <[opt]>str
+      \ifx\kmtoplabels\empty
+        \xdef\kmtoplabels{\kmstr}
+      \else
+        \xdef\kmtoplabels{\kmtoplabels, \kmstr}
+      \fi
+    \fi
+    \advance\kmvarno by -1
+  \else
+    \let\next=\relax
+  \fi
+  \next
+}
+%% \karnaughmap is the macro that a user calls if he wants to draw a
+%% Karnaugh map: 
+%%
+\def\karnaughmaptab#1#2#3#4#5{%
+%%
+%% #1 is the number of variables in the Karnaugh map
+%% #2 is the identifier of the function
+%% #3 is the list of identifiers of those variables 
+%% #4 is the list of tokens that have to be written into the map
+%% #5 a possibly empty set of TikZ commands that will be drown before
+%% the function values so the values will appear on top of them
+%%
+  \kmvarno=#1 % \kmvarno is the total number of variables 
+  \kmyvarno=#1 % \kmyvarno is the number of variable bars at the left 
+  \divide\kmyvarno by 2
+  \kmxvarno=#1 % \kmxvarno is the number of variable bars on top 
+  \advance\kmxvarno by -\kmyvarno
+  \kmxsize=1
+  \kmpoweroftwo{\kmxsize}{\kmxvarno}
+  \kmysize=1
+  \kmpoweroftwo{\kmysize}{\kmyvarno}
+  \kmtemppos=\kmxsize
+  \advance\kmtemppos by -1
+  \kmtemplength=\pgfkeysvalueof{/tikz/kmbar top sep}
+  \foreach \x in {1,...,\kmtemppos}
+    \draw[kmlines] (\x\kmunitlength,0) -- (\x\kmunitlength,\kmysize\kmunitlength);
+  \kmtemppos=\kmysize
+  \advance\kmtemppos by -1
+  \ifnum\kmtemppos>0
+    \foreach \y in {1,...,\kmtemppos}
+      \draw[kmlines] (0,\y\kmunitlength) -- (\kmxsize\kmunitlength,\y\kmunitlength);
+  \fi
+  \draw[kmbox] (0,0) rectangle (\kmxsize\kmunitlength,\kmysize\kmunitlength);
+  #5
+  \ifAmericanstyle
+    \kmtemppos=\kmxsize
+    \advance\kmtemppos by -1
+    \pgfmathsetbasenumberlength{\kmxvarno}
+    \foreach \x in {0,...,\kmtemppos}
+       \node[kmlabel top] at (0.5\kmunitlength+\x\kmunitlength,\kmysize\kmunitlength)  {\pgfmathdectoGray\mynumber{\x}\mynumber};
+    \kmtemppos=\kmysize
+    \advance\kmtemppos by -1
+    \ifnum\kmtemppos>0
+      \pgfmathsetbasenumberlength{\kmyvarno}
+      \foreach \y in {0,...,\kmtemppos}
+        \node[kmlabel left] at (0,1\kmysize\kmunitlength-0.5\kmunitlength-\y\kmunitlength)  {\pgfmathdectoGray\mynumber{\y}\mynumber};
+    \fi
+    \kmargumentstring{#3}
+    \gdef\kmtoplabels{}
+    \gdef\kmleftlabels{}
+    \karnaughmakelabelstab
+    \kmtemplength=\pgfkeysvalueof{/tikz/kmsep line length}
+    \draw[kmsep line] (0,\kmysize\kmunitlength) -- ++(-\kmtemplength,\kmtemplength) node[kmbar label,below left,pos=0.5]{\kmleftlabels} node[kmbar label,above right,pos=0.5]{\kmtoplabels} node[kmvar,above left]{#2};
+  \else
+    \ifdisablebars\relax\else
+      \node[kmvar,above left] at (0,\kmysize\kmunitlength){#2};
+      \kmargumentstring{#3}
+      \karnaughmakebarstab
+    \fi
+  \fi
+  \ifenableindices
+     \kmvarno=#1 % \kmvarno is the total number of variables 
+     \ifindexbin
+        \gdef\kmcurrentindex{\kmcurrentindexbin}
+     \else
+        \ifindexGray
+           \gdef\kmcurrentindex{\kmcurrentindexGraytab}
+           \kmyvarno=#1 % \kmyvarno is the number of variable bars at the left 
+           \divide\kmyvarno by 2
+          \kmxvarno=#1 % \kmxvarno is the number of variable bars on top 
+          \advance\kmxvarno by -\kmyvarno
+        \else
+           \gdef\kmcurrentindex{\kmcurrentindexdec}
+        \fi
+     \fi
+  \fi
+  \kmindexcounter=0
+  \kmargumentstring{#4}
+  \advance\kmxsize by -1
+  \advance\kmysize by -1
+  \foreach \y in {\kmysize,...,0} {
+    \foreach \x in {0,...,\kmxsize} {
+      \kmsetoptstr{}
+      \node[kmcell,kmtempsty,shift={(0.5\kmunitlength,0.5\kmunitlength)}] at (\x\kmunitlength,\y\kmunitlength){\kmstr};%
+      \ifenableindices
+        \node[kmindex,shift={(\pgfkeysvalueof{/tikz/kmindex posx},\pgfkeysvalueof{/tikz/kmindex posy})}] at (\x\kmunitlength,\y\kmunitlength) {\kmcurrentindex};
+      \fi
+    }
+  }
+}%
+%%
+%% Vertical Table Mode
+%% The next three macros are similar to the ones for normal mode.
+%%
+%% \karnaughmakebarsvert calls \karnaughmaketopbar or \karnaughmakeleftbar
+%% depending on whether \kmvarno is in the first or second half.
+%%
+\def\karnaughmakebarstabvert{%
+  \ifnum\kmvarno>0
+    \let\next=\karnaughmakebarstabvert
+    \ifnum\kmxvarno>0 % We have to make a bar at the top
+      \advance\kmxvarno by -1
+      \karnaughmaketopbar
+    \else          % We have to make a bar at the left
+      \advance\kmyvarno by -1
+      \karnaughmakeleftbar
+    \fi
+    \advance\kmvarno by -1
+  \else
+    \let\next=\relax
+  \fi
+  \next
+}
+
+%% \karnaughmakelabelstabvert is a modification of \karnaughmakebarstabvert.
+%% Instead of making the bars it sets two macros, \kmtoplabels
+%% and \kmleftlabels, with the labels for American style maps
+%%
+\def\karnaughmakelabelstabvert{%
+  \ifnum\kmvarno>0
+    \let\next=\karnaughmakelabelstabvert
+    \ifnum\kmxvarno>0 % We have to make a bar at the top
+      \advance\kmxvarno by -1
+      \kmsetoptstr % reads argument as <[opt]>str
+      \ifx\kmtoplabels\empty
+        \xdef\kmtoplabels{\kmstr}
+      \else
+        \xdef\kmtoplabels{\kmtoplabels, \kmstr}
+      \fi
+    \else          % We have to make the label for left
+      \advance\kmyvarno by -1
+      \kmsetoptstr % reads argument as <[opt]>str
+      \ifx\kmleftlabels\empty
+        \xdef\kmleftlabels{\kmstr}
+      \else
+        \xdef\kmleftlabels{\kmleftlabels, \kmstr}
+      \fi
+    \fi
+    \advance\kmvarno by -1
+  \else
+    \let\next=\relax
+  \fi
+  \next
+}
+%%
+%% \karnaughmaptabvert is the macro that a user calls if he wants to draw a
+%% Karnaugh map in vertical mode (not be confused with TeX vertical mode): 
+%%
+\def\karnaughmaptabvert#1#2#3#4#5{%
+%%
+%% #1 is the number of variables in the Karnaugh map
+%% #2 is the identifier of the function
+%% #3 is the list of identifiers of those variables 
+%% #4 is the list of tokens that have to be written into the map
+%% #5 a possibly empty set of TikZ commands that will be drown before
+%% the function values so the values will appear on top of them
+%%
+  \kmvarno=#1 % \kmvarno is the total number of variables 
+  \kmxvarno=#1 % \kmxvarno is the number of variable bars on top
+  \divide\kmxvarno by 2
+  \kmyvarno=#1 % \kmyvarno is the number of variable bars at the left
+  \advance\kmyvarno by -\kmxvarno
+  \kmxsize=1
+  \kmpoweroftwo{\kmxsize}{\kmxvarno}
+  \kmysize=1
+  \kmpoweroftwo{\kmysize}{\kmyvarno}
+  \kmtemppos=\kmxsize
+  \advance\kmtemppos by -1
+  \ifnum\kmtemppos>0
+    \foreach \x in {1,...,\kmtemppos}
+      \draw[kmlines] (\x\kmunitlength,0) -- (\x\kmunitlength,\kmysize\kmunitlength);
+  \fi
+  \kmtemppos=\kmysize
+  \advance\kmtemppos by -1
+  \foreach \y in {1,...,\kmtemppos}
+    \draw[kmlines] (0,\y\kmunitlength) -- (\kmxsize\kmunitlength,\y\kmunitlength);
+  \draw[kmbox] (0,0) rectangle (\kmxsize\kmunitlength,\kmysize\kmunitlength);
+  #5
+  \ifAmericanstyle
+    \kmtemppos=\kmxsize
+    \advance\kmtemppos by -1
+    \ifnum\kmtemppos>0
+      \pgfmathsetbasenumberlength{\kmxvarno}
+      \foreach \x in {0,...,\kmtemppos}
+         \node[kmlabel top] at (0.5\kmunitlength+\x\kmunitlength,\kmysize\kmunitlength)  {\pgfmathdectoGray\mynumber{\x}\mynumber};
+    \fi
+    \kmtemppos=\kmysize
+    \advance\kmtemppos by -1
+    \pgfmathsetbasenumberlength{\kmyvarno}
+    \foreach \y in {0,...,\kmtemppos}
+      \node[kmlabel left] at (0,1\kmysize\kmunitlength-0.5\kmunitlength-\y\kmunitlength)  {\pgfmathdectoGray\mynumber{\y}\mynumber};
+    \kmargumentstring{#3}
+    \gdef\kmtoplabels{}
+    \gdef\kmleftlabels{}
+    \karnaughmakelabelstabvert
+    \kmtemplength=\pgfkeysvalueof{/tikz/kmsep line length}
+    \draw[kmsep line] (0,\kmysize\kmunitlength) -- ++(-\kmtemplength,\kmtemplength) node[kmbar label,below left,pos=0.5]{\kmleftlabels} node[kmbar label,above right,pos=0.5]{\kmtoplabels} node[kmvar,above left]{#2};
+  \else
+    \ifdisablebars\relax\else
+      \node[kmvar,above left] at (0,\kmysize\kmunitlength){#2};
+      \kmargumentstring{#3}
+      \karnaughmakebarstabvert
+    \fi
+  \fi
+  \ifenableindices
+     \kmvarno=#1 % \kmvarno is the total number of variables 
+     \ifindexbin
+        \gdef\kmcurrentindex{\kmcurrentindexbin}
+     \else
+        \ifindexGray
+           \gdef\kmcurrentindex{\kmcurrentindexGraytabvert}
+           \kmyvarno=#1 % \kmyvarno is the number of variable bars at the left 
+           \divide\kmyvarno by 2
+          \kmxvarno=#1 % \kmxvarno is the number of variable bars on top 
+          \advance\kmxvarno by -\kmyvarno
+        \else
+           \gdef\kmcurrentindex{\kmcurrentindexdec}
+        \fi
+     \fi
+  \fi
+  \kmindexcounter=0
+  \kmargumentstring{#4}
+  \advance\kmxsize by -1
+  \advance\kmysize by -1
+  \foreach \x in {0,...,\kmxsize} {
+    \foreach \y in {\kmysize,...,0} {
+      \kmsetoptstr{}
+      \node[kmcell,kmtempsty,shift={(0.5\kmunitlength,0.5\kmunitlength)}] at (\x\kmunitlength,\y\kmunitlength){\kmstr};%
+      \ifenableindices
+        \node[kmindex,shift={(\pgfkeysvalueof{/tikz/kmindex posx},\pgfkeysvalueof{/tikz/kmindex posy})}] at (\x\kmunitlength,\y\kmunitlength) {\kmcurrentindex};
+      \fi
+    }
+  }
+}%
+
+\endinput

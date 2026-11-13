@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-11-07T21:43:37.998691+08:00",
+  "source_zip": "重生成_5组_新提示词_20261107.zip",
+  "source_zip_sha256": "f81a51c89306fc4c0e851a5303019a78ba9adb3710c483f3018128a583796a61",
+  "source_zip_crc_passed": true,
+  "source_checksum_files_verified": 148,
+  "formal_groups": 105,
+  "categories": 21,
+  "model_count": 119,
+  "ungraded_models": 4,
+  "referenced_glbs": 228,
+  "source_counts": {
+    "judged": 45,
+    "round3": 7,
+    "nine_ldr": 7,
+    "成功的模型": 16,
+    "regenerated": 6,
+    "car_trials": 5,
+    "review_59": 21,
+    "round2": 12
+  },
+  "regenerated_groups": 5,
+  "regenerated_candidates": 6,
+  "archived_rejected_attempts": [
+    {
+      "id": "guitar_L1_P1_G",
+      "status": "rejected_visual_shape",
+      "review": {
+        "decision": "rejected",
+        "reason_zh": "未形成可辨认的吉他琴身、琴颈和琴头轮廓。"
+      }
+    },
+    {
+      "id": "vessel_L1_P1_G",
+      "status": "rejected_geometry",
+      "review": {
+        "decision": "rejected",
+        "reason_zh": "保形重铺在预算内未能得到单一凸点连通结构。"
+      }
+    }
+  ],
+  "duplicate_raw_output": [
+    [
+      "car_L4_P1_G",
+      "car_L5_P1_G"
+    ]
+  ],
+  "independent_geometry_checks": [
+    {
+      "id": "camera_L2_P1_G",
+      "group": "camera_L2",
+      "brick_count": 138,
+      "occupied_voxels": 1134,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "stud_components": 1,
+      "shape_preserved": true,
+      "physical_stability_tested": false
+    },
+    {
+      "id": "car_L4_P1_G",
+      "group": "car_L4",
+      "brick_count": 141,
+      "occupied_voxels": 1169,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "stud_components": 1,
+      "shape_preserved": true,
+      "physical_stability_tested": false
+    },
+    {
+      "id": "car_L5_P1_G",
+      "group": "car_L5",
+      "brick_count": 141,
+      "occupied_voxels": 1169,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "stud_components": 1,
+      "shape_preserved": true,
+      "physical_stability_tested": false
+    },
+    {
+      "id": "guitar_L1_P2_G",
+      "group": "guitar_L1",
+      "brick_count": 134,
+      "occupied_voxels": 945,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "stud_components": 1,
+      "shape_preserved": true,
+      "physical_stability_tested": false
+    },
+    {
+      "id": "vessel_L1_P2_G",
+      "group": "vessel_L1",
+      "brick_count": 122,
+      "occupied_voxels": 854,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "stud_components": 1,
+      "shape_preserved": true,
+      "physical_stability_tested": false
+    },
+    {
+      "id": "car_L5_P1_S104",
+      "group": "car_L5",
+      "brick_count": 104,
+      "occupied_voxels": 934,
+      "overlap_voxels": 0,
+      "out_of_bounds_bricks": 0,
+      "stud_components": 1,
+      "shape_preserved": true,
+      "physical_stability_tested": false
+    }
+  ],
+  "browser_verification": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8140/",
+    "models_loaded": 119,
+    "failed_models": 0,
+    "regenerated_candidates_loaded": 6,
+    "retained_model_raw_stitched_toggle": [
+      "car_L3",
+      "piano_L5"
+    ],
+    "fullscreen_and_rotation": "passed",
+    "console_errors_or_warnings": [],
+    "screenshot": "展示验收截图.png"
+  },
+  "http_verification": {
+    "status": "passed",
+    "glbs_verified": 228,
+    "additional_assets_verified": 9,
+    "record_downloads_verified": 18
+  }
+}

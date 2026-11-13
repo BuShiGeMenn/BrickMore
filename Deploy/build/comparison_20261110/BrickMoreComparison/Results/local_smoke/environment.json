@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "cpu_only": true,
+  "roles": {
+    "gpu": null,
+    "structure": "D:\\PythonEnvs\\brickmore-paper\\Scripts\\python.exe",
+    "render": "D:\\PythonEnvs\\brickmore-paper\\Scripts\\python.exe"
+  },
+  "models": {},
+  "missing": [],
+  "probes": [
+    {
+      "python": "D:\\PythonEnvs\\brickmore-paper\\Scripts\\python.exe",
+      "version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "modules": {
+        "numpy": true,
+        "scipy": true,
+        "numba": true,
+        "PIL": true,
+        "bricknet": true,
+        "meshlib": true,
+        "torch": false,
+        "torchvision": false,
+        "transformers": false,
+        "open_clip": false,
+        "qwen_vl_utils": false,
+        "huggingface_hub": false,
+        "accelerate": false
+      },
+      "models": {},
+      "bricknet_version": "0.1.0",
+      "versions": {
+        "numpy": "2.2.6",
+        "numba": "0.61.2",
+        "meshlib": "3.1.4.297",
+        "pillow": "11.3.0"
+      },
+      "render_ready": true,
+      "structure_ready": true
+    }
+  ],
+  "assets_ok": true,
+  "download_instructions": [
+    "On a connected Windows/Linux transfer host: python Scripts/fetch.py wheels",
+    "If model cache is missing: python Scripts/fetch.py models --metrics vqa pe siglip2",
+    "GPU dependency wheels: use matching Linux/WSL Python with python Scripts/fetch.py pip-plan",
+    "Transfer Downloads/ to the same extracted package on the internal server, then bash setup.sh --offline"
+  ]
+}

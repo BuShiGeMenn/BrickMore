@@ -1,0 +1,226 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+% Official CVPR 2026 style; this is a working manuscript, not a submission.
+\usepackage[pagenumbers]{cvpr}
+\usepackage[breaklinks,colorlinks,allcolors=blue]{hyperref}
+\usepackage{array}
+\usepackage{placeins}
+\setcounter{dbltopnumber}{4}
+\renewcommand{\dbltopfraction}{0.95}
+\renewcommand{\dblfloatpagefraction}{0.15}
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpsep}{14pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+\def\confName{CVPR}
+\def\confYear{2026}
+\def\paperID{*****}
+\begin{document}
+\twocolumn[{%
+\begin{center}
+{\Large\bfseries BrickMore}\par\vspace{0.6em}
+{\large Authors and affiliations to be added}\par\vspace{0.8em}
+\includegraphics[width=0.91\textwidth,height=0.29\textheight,keepaspectratio]{figures/original_overview.png}
+\captionof{figure}{Historical dataset conversion examples from the supplied reference: source voxels, repair targets, and brick layouts. Red voxels mark additions; the table example has no voxel modifications. These are rendered dataset examples, not photographs of physical assembly.}
+\label{fig:teaser}
+\end{center}\vspace{0.5em}
+}]
+
+\begin{abstract}
+Generating brick structures from text requires both alignment with natural language and valid geometric connections between discrete pieces. We present BrickMore, a text-to-brick framework that combines large-language-model-assisted data construction, language-model fine-tuning, and post-generation geometric repair. Using GPT-6.1 Sol, we develop an automated voxel-generation pipeline that produces three-dimensional voxel coordinates in batches. The resulting shapes are converted into brick layouts through same-color tiling, connectivity analysis, and local bridging and retiling. The source dataset contains approximately 80,000 voxel models across 21 object categories on a $48^3$ grid. Each model has five English descriptions at different levels of detail, for approximately 400,000 descriptions in total. In the latest integrated version, nearly 80,000 models pass the specified geometric checks. We fine-tune Qwen3-1.7B using low-rank adaptation (LoRA) on English descriptions and brick-placement sequences, enabling it to predict brick dimensions and positions from text.
+
+After generation, the pipeline forms a voxel union from the in-bounds portions of supported brick placements, uses mixed-integer linear programming (MILP) to seek an exact cover, and checks for a single stud-connected component. We evaluate the resulting structures against outputs from BrickGPT and BrickNet on 114 shared prompts. On the evaluated outputs, BrickMore achieves the highest mean scores across three text--image alignment metrics. It also obtains a mean invalid-placement ratio of 0.00\%, matching BrickGPT under the same metric. These comparisons use a shared rendering protocol.
+
+\end{abstract}
+\section{Introduction}
+Text-to-three-dimensional generation enables users to describe and create objects using natural language. Generating brick structures adds the requirement that a target shape be represented as discrete pieces and their spatial placements. In addition to matching the text, the resulting structure must account for overlaps and connections between bricks: a layout may resemble the described object while containing intersecting bricks or disconnected parts, and thus fail to meet the specified geometric requirements.
+
+Prior work has explored text-driven brick generation through different representations and generation constraints. BrickGPT trains an autoregressive language model on paired text and brick structures and applies validity checks and physics-aware rollback during inference (Pun et al. 2025). BrickNet uses a graph-based representation to generate assembly sequences involving a broader range of parts and connection types (Kulits and Schmid 2026). These works demonstrate the importance of structural representations and generation constraints for brick modeling.
+
+For voxel-based shapes, spatial adjacency between voxels does not necessarily imply a valid connection between bricks. A voxel shape can form a connected volume even when the bricks covering it only touch side by side without stud connections. This distinction affects both data construction and generation: converting voxel shapes into training targets requires attention to coverage and brick connectivity, while predicted layouts may also contain overlaps or disconnected components that require further processing.
+
+To study this problem, we present BrickMore. Using GPT-6.1 Sol, we develop an automated voxel-generation pipeline that produces three-dimensional voxel coordinates in batches, and we convert the resulting models into brick layouts. The source dataset contains 80,000 models across 21 object categories, represented on a $48^3$ grid, with five levels of English description for each model. We tile occupied voxels with same-color rectangular bricks and combine connection analysis with local bridging and retiling to address ungrounded components. Some derived targets involve limited changes to the source voxels; these changes and the original data are recorded separately. In the latest integrated version, 79,301 models pass the specified geometric checks.
+
+We fine-tune Qwen3-1.7B with LoRA on English descriptions and brick-placement sequences. Given a text prompt, the model predicts brick dimensions and positions; the current output does not include color. To address potential overlaps and connectivity defects, we form a target union from the in-bounds voxels of supported brick placements, use MILP to seek an exact cover, and check for a single stud-connected component. For some cases in which no feasible layout is found within the solver's time budget, the system regenerates a sequence using a different language-model sampling seed. The connectivity check is geometric; physical stability and the feasibility of an assembly order require separate evaluation.
+
+To evaluate the resulting structures, we compare the provided outputs of BrickMore, BrickGPT, and BrickNet on 114 shared prompts across 21 object categories and five description levels. We measure text--image alignment using VQAScore, PE, and SigLIP2, and evaluate the proportion of invalid brick placements using $P_{\mathrm{inv}}$. Under a common rendering protocol, BrickMore achieves the highest mean scores on all three text--image metrics. BrickMore and BrickGPT both obtain a mean $P_{\mathrm{inv}}$ of 0.00\% when evaluated in file order. These results describe the provided outputs under the specified evaluation protocol and do not independently establish physical stability or assembly feasibility.
+
+Our contributions are as follows:
+
+\begin{enumerate}
+\item We develop an automated $48^3$ voxel data-generation pipeline with the assistance of a large language model, producing 80,000 source models across 21 categories, each with five levels of English description. In the latest integrated version, 79,301 models pass the specified geometric checks.
+\item We develop a voxel-to-brick conversion pipeline that combines same-color tiling, connection analysis, and local bridging and retiling, while recording limited changes to source voxels in derived targets.
+\item We fine-tune Qwen3-1.7B for text-to-brick generation and combine it with a post-generation pipeline based on voxel unions, exact-cover MILP, and connectivity checks.
+\end{enumerate}
+\section{Related Work}
+Text-to-brick generation. BrickGPT represents a design as an autoregressively generated sequence of brick placements and uses brick-level rejection sampling together with physics-aware rollback during inference (Pun et al., 2025)~\cite{brickgpt}. BrickNet instead represents part connectivity through a graph-backed parametrization and trains autoregressive models on its assembly sequences (Kulits and Schmid, 2026)~\cite{bricknet}. BrickMore also generates placement sequences from text, then examines geometric reconstruction and connectivity in a separate post-generation stage.
+
+Stability analysis. StableLego studies the structural stability of block-stacking assemblies using an optimization formulation based on force balance (Liu et al., 2024)~\cite{stablelego}. Such analyses depend on their mechanical assumptions. In BrickMore, geometric connectivity and the contact-based screening described in the dataset materials address different properties; neither alone establishes that every generated model can be physically assembled and remains stable.
+
+\section{Dataset Construction}
+\subsection{Parametric Voxel Generation}
+The source dataset contains 80,000 voxel models on a $48^3$ grid across 21 object categories. Each model is paired with five English descriptions at different levels of detail. The generation workflow uses reusable programs to produce voxel coordinates in batches; model generation records and version information should be retained to support reproduction.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.88\textwidth,height=0.34\textheight,keepaspectratio]{figures/image6.png}\\[-0.3em]
+\caption{Historical data-construction workflow from the reference document; labels are retained from the original figure.}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.475\textwidth,height=0.15\textheight,keepaspectratio]{figures/image7.png}\hfill
+\includegraphics[width=0.475\textwidth,height=0.15\textheight,keepaspectratio]{figures/image8.png}\\
+\caption{Voxel model samples from the reference document, spanning 21 object categories.}
+\end{figure*}
+
+\subsection{Voxel-to-Brick Conversion}
+The conversion pipeline tiles occupied voxels with same-color rectangular bricks and analyzes their connections. Local bridging and retiling are used to address ungrounded components, with changes to source voxels recorded separately. The historical relaxed and retile dataset variants may contain multiple components that are individually grounded; this criterion differs from the single-component check used in the post-generation pipeline.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.2375\textwidth,height=0.15\textheight,keepaspectratio]{figures/image4.png}\hfill
+\includegraphics[width=0.2375\textwidth,height=0.15\textheight,keepaspectratio]{figures/image5.png}\hfill
+\includegraphics[width=0.2375\textwidth,height=0.15\textheight,keepaspectratio]{figures/image2.png}\hfill
+\includegraphics[width=0.2375\textwidth,height=0.15\textheight,keepaspectratio]{figures/image3.png}\\
+\includegraphics[width=0.2375\textwidth,height=0.15\textheight,keepaspectratio]{figures/image9.png}\hfill
+\includegraphics[width=0.2375\textwidth,height=0.15\textheight,keepaspectratio]{figures/image10.png}\hfill
+\includegraphics[width=0.2375\textwidth,height=0.15\textheight,keepaspectratio]{figures/image11.png}\hfill
+\includegraphics[width=0.2375\textwidth,height=0.15\textheight,keepaspectratio]{figures/image12.png}\\
+\caption{Historical examples of voxel targets and brick layouts after local repair.}
+\end{figure*}
+
+\subsection{Geometric Checks and Physical Screening}
+Geometric checks assess properties of the constructed layout under the relevant release rules. The reference materials also describe a contact-based gravity screening procedure under specified assumptions. Its outputs are screening results rather than proof of full physical stability; assumptions, coverage, and status counts for the exact dataset version require verification before being reported as final results.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.88\textwidth,height=0.34\textheight,keepaspectratio]{figures/image13.png}\\[-0.3em]
+\caption{Illustration of the historical contact-based gravity screening model; source labels are retained.}
+\end{figure*}
+
+\subsection{Dataset Output and Audit}
+The historical full retile report records 79,298 geometrically passing models. Replacing the original 1,905 batch-B piano slots, of which 1,902 passed, with the updated release containing 1,905 passing models yields an integrated accounting of 79,301 passing models. This number is computed from the two release reports; it is not a new full-dataset verification run. The original A/B download procedure does not automatically perform this replacement.
+
+\section{Dataset Statistics and Analysis}
+\begin{table*}[t]\centering\small\begin{tabular}{lr}\toprule
+Item & Value \\ \midrule
+Source models & 80,000 \\
+Categories & 21 \\
+Grid & $48^3$ \\
+English descriptions & Approximately 400,000 \\
+Historical retile geometry passes & 79,298 / 80,000 \\
+Integrated accounting & 79,301 / 80,000 \\
+\bottomrule\end{tabular}\caption{Dataset statistics and version boundaries.}\end{table*}
+The historical and integrated figures represent different version boundaries. The rules used by each release and the source of the integrated figure should accompany any comparison. The actual training manifest remains to be checked before identifying the version used to train Qwen3-1.7B.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.88\textwidth,height=0.34\textheight,keepaspectratio]{figures/image14.png}\\[-0.3em]
+\caption{Historical comparison of geometric conversion and screening outcomes. Version and numerical labels require verification.}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.88\textwidth,height=0.34\textheight,keepaspectratio]{figures/image15.png}\\[-0.3em]
+\caption{Historical category-level geometric pass rates. Version and numerical labels require verification.}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.88\textwidth,height=0.34\textheight,keepaspectratio]{figures/image16.png}\\[-0.3em]
+\caption{Historical results on a 160-model sample. Version and numerical labels require verification.}
+\end{figure*}
+
+\subsection{Physical Screening Results}
+Physical screening results should be reported separately from geometric pass rates, with the relevant assumptions, assessed sample count, and unresolved cases identified. Historical counts from different releases should not be combined without a version-matched audit.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.88\textwidth,height=0.34\textheight,keepaspectratio]{figures/image17.png}\\[-0.3em]
+\caption{Historical distributions of physical screening statuses. Counts refer to the specific releases shown.}
+\end{figure*}
+
+\section{BrickMore-48 Text-to-Brick Model}
+We fine-tune Qwen3-1.7B using LoRA on English descriptions and brick-placement sequences. Given a text prompt, the model predicts dimensions and positions of bricks. The current output does not include color. Training hyperparameters, data splits, training resources, and the precise training dataset version remain to be documented from the original training records.
+
+The post-generation pipeline forms a voxel union from the in-bounds portions of supported placements, seeks an exact cover using MILP, and checks for a single stud-connected component. When a feasible layout is not found within the solver time budget, the system may regenerate a sequence with a different sampling seed. The detailed selection and failure-handling procedure should be documented for the evaluated outputs.
+
+\section{Comparative Evaluation}
+\subsection{Setup and Metrics}
+We compare the provided outputs of BrickMore, BrickGPT, and BrickNet using 114 shared prompts covering 21 object categories and five description levels. The evaluation uses a common rendering protocol. Text--image alignment is assessed with VQAScore, PE, and SigLIP2; $P_{\mathrm{inv}}$ measures the proportion of invalid placements under the evaluation procedure.
+
+The report specifies eight rendered views per model and aggregates each text--image metric using the maximum across views before averaging over models. $P_{\mathrm{inv}}$ is averaged per model and evaluated in exported file order. The supplied outputs retain differences in candidate selection, filtering, and post-processing; the comparison therefore characterizes these evaluated outputs rather than an isolated model-only comparison.
+
+\subsection{Main Results}
+\begin{table*}[t]\centering\small\begin{tabular}{lrrrr}\toprule
+System & $P_{\mathrm{inv}}$ $\downarrow$ & VQAScore $\uparrow$ & PE $\uparrow$ & SigLIP2 $\uparrow$ \\ \midrule
+BrickMore & 0.00\% & 0.2176 & 0.1856 & 0.1231 \\
+BrickGPT & 0.00\% & 0.1401 & 0.1457 & 0.0297 \\
+BrickNet & 21.99\% & 0.0624 & 0.1302 & 0.0100 \\
+\bottomrule\end{tabular}\caption{Main comparative results on 114 matched prompts.}\end{table*}
+On these outputs, BrickMore has the highest mean on each of the three text--image metrics. BrickMore and BrickGPT both have a mean $P_{\mathrm{inv}}$ of 0.00\%; this measure does not distinguish them in the main comparison. Against BrickGPT, BrickMore scores higher on 91, 95, and 91 prompts for VQAScore, PE, and SigLIP2, respectively. The supplied analysis does not report a significance test.
+
+The mean numbers of parts are 413.0 for BrickMore, 152.3 for BrickGPT, and 23.3 for BrickNet. These differences describe the evaluated structures and should be considered when interpreting the scores; part count alone does not measure generation quality.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.88\textwidth,height=0.34\textheight,keepaspectratio]{figures/image18.png}\\[-0.3em]
+\caption{Historical baseline comparison with differing acceptance criteria; not the current matched main comparison.}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.88\textwidth,height=0.34\textheight,keepaspectratio]{figures/image19.png}\\[-0.3em]
+\caption{Historical failure categories in the supplied reference; sample definitions require verification.}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.88\textwidth,height=0.34\textheight,keepaspectratio]{figures/original_comparison.png}\\[-0.3em]
+\caption{Qualitative historical examples from the supplied reference. Column labels distinguish raw BrickMore, retiled BrickMore, and BrickGPT outputs.}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.75\textwidth,height=0.22\textheight,keepaspectratio]{figures/generated_gallery.png}\\[-0.3em]
+\caption{Selected BrickMore outputs from the 114-prompt evaluation. One chair is raw; the other outputs are retiled. Results use uniform evaluation rendering and are not photographs of physical assemblies.}
+\end{figure*}
+
+\subsection{Raw and Stitched Outputs}
+The supplied evaluation contains 110 matched raw and stitched BrickMore outputs. This paired subset is separate from the three-system main table. We match each pair by prompt, model identifier, and caption, and compare the mean scores before and after retiling.
+
+\begin{table*}[t]\centering\small\begin{tabular}{lrr}\toprule
+Metric & Raw & Stitched \\ \midrule
+$P_{\mathrm{inv}}$ $\downarrow$ & 0.1897\% & 0.0000\% \\
+VQAScore $\uparrow$ & 0.2065 & 0.2071 \\
+PE $\uparrow$ & 0.1858 & 0.1859 \\
+SigLIP2 $\uparrow$ & 0.1379 & 0.1261 \\
+\bottomrule\end{tabular}\caption{Paired raw and retiled results on 110 matched cases.}\end{table*}
+The mean invalid-placement ratio decreases to zero after retiling. VQAScore and PE change only slightly, while the mean SigLIP2 score decreases. These are descriptive results for the matched subset and do not establish a general causal effect.
+
+\subsection{Evaluation Boundaries}
+PE truncates 25 of the 114 main-comparison prompts, and SigLIP2 truncates 29; the affected prompts are the same across the three systems for each metric. The evaluation uses a common yellow rendering and therefore does not assess original colors. A zero $P_{\mathrm{inv}}$ does not establish stud connectivity, physical stability, or assembly feasibility.
+
+\section{Limitations and Discussion}
+The integrated dataset count is derived from versioned release reports, and the version actually used for training needs confirmation. Dataset conversion may permit multiple grounded components, while the generation-stage single-component check has a different scope. Physical screening is based on stated assumptions and does not replace calibrated clutch-strength measurement or physical assembly tests.
+
+The comparative evaluation covers 114 prompts and the provided outputs. The systems differ in their candidate selection and post-processing, and some text is truncated by evaluation models. These conditions limit how broadly the reported scores can be interpreted. Further paired uncertainty analysis can be conducted on the existing per-prompt records.
+
+\section{Conclusion}
+We present BrickMore, a text-to-brick framework combining LLM-assisted data construction, language-model fine-tuning, and post-generation geometric repair. The dataset workflow converts programmatically generated voxel shapes into brick layouts, while the generation pipeline predicts placements from text and checks reconstructed layouts. On 114 shared prompts, the evaluated BrickMore outputs achieve the highest means on three text--image metrics, while matching BrickGPT on mean invalid-placement ratio. The results should be interpreted under the stated evaluation and physical-screening boundaries.
+
+\FloatBarrier
+{\footnotesize
+\begin{thebibliography}{9}
+\bibitem{brickgpt} A. Pun, K. Deng, R. Liu, D. Ramanan, C. Liu, and J.-Y. Zhu. Generating physically stable and buildable brick structures from text. In \emph{ICCV}, 2025. \url{https://arxiv.org/abs/2505.05469}.
+\bibitem{bricknet} P. Kulits and C. Schmid. BrickNet: Graph-backed generative brick assembly. In \emph{CVPR}, 2026. \url{https://arxiv.org/abs/2604.22984}.
+\bibitem{stablelego} R. Liu, K. Deng, Z. Wang, and C. Liu. StableLego: Stability analysis of block stacking assembly. \emph{IEEE Robotics and Automation Letters}, 9(11):9383--9390, 2024. \url{https://doi.org/10.1109/LRA.2024.3414281}.
+\end{thebibliography}}
+\clearpage
+\onecolumn
+\appendix
+\section{Historical Tables from the Supplied Reference}
+The following transcribed tables preserve the historical reference material. They use different versions or evaluation criteria and are not substitutes for the current main comparison. Values, physical-screening coverage, and missing entries require verification. Dashes indicate missing entries in the supplied source.
+\input{archive/historical_tables}
+\end{document}
