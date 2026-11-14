@@ -1,0 +1,16 @@
+\begin{tikzpicture}[x=1cm,y=-1cm]
+\unitheader{5}{Tiling + repair}
+\begin{scope}[shift={(.55,.50)},scale=3.30,transform shape]
+\tikzset{every node/.append style={font=\fontsize{4.3}{5.2}\selectfont},
+         tinylabel/.style={font=\fontsize{3.7}{4.5}\selectfont,text=muted}}
+\begin{scope}[shift={(-13.77,-4.3)}]
+% 5. Tiling and repair: actual before/after geometry.
+\asset{birdhouse_voxels}{14.78}{5.72}{1.40}
+\draw[flow] (15.50,5.72)--(15.91,5.72);
+\asset{birdhouse_dataset}{16.70}{5.72}{1.53}
+\node at (15.725,6.79) {Layer-wise exact cover};
+\node[tinylabel] at (15.725,7.08) {MRV / MILP / beam $\cdot$ $\leq$2\% edits};
+
+\end{scope}
+\end{scope}
+\end{tikzpicture}

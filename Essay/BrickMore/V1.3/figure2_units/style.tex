@@ -1,0 +1,44 @@
+\usepackage{graphicx}
+\usepackage{fix-cm}
+\usepackage{tikz}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{amsmath}
+\renewcommand{\familydefault}{\sfdefault}
+\usetikzlibrary{arrows.meta,calc,positioning}
+\definecolor{ink}{HTML}{222B36}
+\definecolor{muted}{HTML}{647180}
+\definecolor{line}{HTML}{DCE2E8}
+\definecolor{accent}{HTML}{235780}
+\definecolor{wash}{HTML}{F0F4F8}
+\definecolor{warm}{HTML}{AC6830}
+\definecolor{repair}{HTML}{B35845}
+\tikzset{every node/.style={inner sep=0pt,text=ink,font=\fontsize{7.4}{9}\selectfont},
+  flow/.style={-{Stealth[length=1.5mm,width=1.1mm]},draw=muted,line width=.65pt},
+  heading/.style={anchor=west,font=\bfseries\fontsize{9}{10}\selectfont},
+  tinylabel/.style={font=\fontsize{6.6}{8}\selectfont,text=muted},
+  card/.style={draw=line,line width=.6pt,rounded corners=2pt,fill=white}}
+\newcommand{\asset}[4]{\node at (#2,#3) {\includegraphics[width=#4cm]{assets/#1.png}};}
+\definecolor{brick3005}{HTML}{DF4C4C}
+\definecolor{brick3004}{HTML}{3D7BCE}
+\definecolor{brick3622}{HTML}{E79A34}
+\definecolor{brick3010}{HTML}{33A697}
+\definecolor{brick3009}{HTML}{9472C7}
+\definecolor{brick3008}{HTML}{D6BE39}
+\definecolor{brick3003}{HTML}{E37BA7}
+\definecolor{brick3002}{HTML}{62BBCB}
+\definecolor{brick3001}{HTML}{86AA52}
+\definecolor{brick2456}{HTML}{AD7956}
+\definecolor{brick3007}{HTML}{687686}
+
+\definecolor{levelone}{HTML}{3D7BCE}
+\definecolor{leveltwo}{HTML}{298D81}
+\definecolor{levelthree}{HTML}{8063B3}
+\definecolor{levelfour}{HTML}{BD7A25}
+\definecolor{levelfive}{HTML}{638E39}
+\newcommand{\unitheader}[2]{
+  \path[use as bounding box] (0,0) rectangle (14,10.6);
+  \path[card,line width=.8pt,rounded corners=5pt] (.12,.12) rectangle (13.88,10.48);
+  \node[circle,fill=accent,text=white,minimum size=.62cm,font=\bfseries\fontsize{12}{14}\selectfont] at (.72,.76) {#1};
+  \node[anchor=west,font=\bfseries\fontsize{18}{21}\selectfont] at (1.25,.76) {#2};
+}

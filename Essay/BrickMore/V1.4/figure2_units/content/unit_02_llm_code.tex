@@ -1,0 +1,34 @@
+\begin{tikzpicture}[x=1cm,y=-1cm]
+\unitheader{2}{LLM programs}
+
+\path[fill=wash,draw=line,line width=.7pt,rounded corners=4pt] (.72,1.65) rectangle (13.28,8.82);
+\path[fill=accent,rounded corners=3pt] (.72,1.65) rectangle (13.28,2.34);
+\node[anchor=west,text=white,font=\bfseries\fontsize{11}{13}\selectfont] at (1.05,2.00) {produce.py};
+\node[anchor=east,text=white,font=\fontsize{10}{12}\selectfont] at (12.93,2.00) {AI\_A + AI\_B};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,2.9) {01};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (1.6,2.9) {\textcolor{levelthree}{def} generate(job, revision):};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,3.37) {02};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (2.34,3.37) {p = \textcolor{leveltwo}{plan}(job["category"], job["family"],};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,3.84) {03};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (4.005,3.84) {job["instance"], revision)};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,4.31) {04};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (2.34,4.31) {...};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,4.779999999999999) {05};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (2.34,4.779999999999999) {\textcolor{levelthree}{for} attempt \textcolor{levelthree}{in} range(1, 21):};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,5.25) {06};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (3.08,5.25) {co, la, pa, cl, e = \textcolor{leveltwo}{build}(p, scale)};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,5.72) {07};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (3.08,5.72) {v = \textcolor{leveltwo}{validate}(p, co, la, pa, e)};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,6.1899999999999995) {08};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (3.08,6.1899999999999995) {...};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,6.66) {09};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (3.08,6.66) {\textcolor{levelthree}{if} v["passed"]:};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,7.129999999999999) {10};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (3.82,7.129999999999999) {\textcolor{levelthree}{return} (p, co, la, pa, cl, e, v,};
+\node[anchor=east,text=muted,font=\ttfamily\fontsize{8}{10}\selectfont] at (1.27,7.6) {11};
+\node[anchor=west,font=\ttfamily\fontsize{10.3}{13}\selectfont] at (5.300000000000001,7.6) {history, initial)};
+
+\node[text=accent,font=\bfseries\fontsize{14}{17}\selectfont] at (7,9.37) {Parameterize $\rightarrow$ Build $\rightarrow$ Validate};
+\node[tinylabel,font=\fontsize{9}{11}\selectfont] at (7,9.98) {Project code excerpt; setup and resampling details omitted.};
+
+\end{tikzpicture}

@@ -1,0 +1,18 @@
+\begin{tikzpicture}[x=1cm,y=-1cm]
+\unitheader{4}{Deduplication}
+\begin{scope}[shift={(.55,.50)},scale=3.30,transform shape]
+\tikzset{every node/.append style={font=\fontsize{4.3}{5.2}\selectfont},
+         tinylabel/.style={font=\fontsize{3.7}{4.5}\selectfont,text=muted}}
+\begin{scope}[shift={(-13.77,-0.55)}]
+% 4. Dedup: three actual shape thumbnails flow into one retained item.
+\asset{birdhouse_voxels}{14.57}{1.73}{.87}
+\asset{birdhouse_voxels}{15.12}{2.24}{.87}
+\draw[flow] (15.41,1.93)--(15.81,1.93);
+\asset{birdhouse_voxels}{16.50}{1.91}{1.38}
+\node[circle,draw=accent,fill=white,text=accent,minimum size=.30cm,font=\bfseries\fontsize{7}{8}\selectfont] at (17.06,2.38) {1};
+\node at (15.725,2.94) {Exact + canonical hashing};
+\node[tinylabel] at (15.725,3.20) {48 axis transforms $\cdot$ 80k unique};
+
+\end{scope}
+\end{scope}
+\end{tikzpicture}

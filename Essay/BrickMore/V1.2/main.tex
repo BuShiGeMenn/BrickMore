@@ -30,7 +30,7 @@
 }]
 
 \begin{abstract}
-Generating brick structures from text requires both alignment with natural language and valid geometric connections between discrete pieces. We present BrickMore, a text-to-brick framework that combines large-language-model-assisted data construction, language-model fine-tuning, and post-generation geometric repair. Using GPT-6.1 Sol, we develop an agentic batch-generation pipeline in which the model writes parametric generator programs that then produce three-dimensional voxel models in batches. The resulting shapes are converted into brick layouts through same-color tiling, connectivity analysis, and local bridging and retiling. The source dataset contains approximately 80,000 voxel models across 21 object categories on a $48^3$ grid. Each model has five English descriptions at different levels of detail, for approximately 400,000 descriptions in total. In the latest integrated version, nearly 80,000 models pass the specified geometric checks. We fine-tune Qwen3-1.7B using low-rank adaptation (LoRA) on English descriptions and brick-placement sequences, enabling it to predict brick dimensions and positions from text.
+Generating brick structures from text requires both alignment with natural language and valid geometric connections between discrete pieces. We present BrickMore, a text-to-brick framework that combines large-language-model-assisted data construction, language-model fine-tuning, and post-generation geometric repair. Using GPT-6.1 Sol, we develop an agentic batch-generation pipeline in which the model writes parametric generator programs that then produce three-dimensional voxel models in batches. The resulting shapes are converted into brick layouts through same-color tiling, connectivity analysis, and local bridging and retiling. The source dataset contains 80,000 voxel models across 21 object categories on a $48^3$ grid. Each model has five bilingual captions at different levels of detail, for 400,000 bilingual records in total. In the latest integrated version, 79,301 models pass the specified geometric checks. We fine-tune Qwen3-1.7B using low-rank adaptation (LoRA) on the English captions and brick-placement sequences, enabling it to predict brick dimensions and positions from text.
 
 After generation, the pipeline forms a voxel union from the in-bounds portions of supported brick placements, uses mixed-integer linear programming (MILP) to seek an exact cover, and checks for a single stud-connected component. We evaluate the resulting structures against outputs from BrickGPT and BrickNet on 114 shared prompts. On the evaluated outputs, BrickMore achieves the highest mean scores across three text--image alignment metrics. It also obtains a mean invalid-placement ratio of 0.00\%, matching BrickGPT under the same metric. These comparisons use a shared rendering protocol.
 
@@ -42,7 +42,7 @@ Prior work has explored text-driven brick generation through different represent
 
 For voxel-based shapes, spatial adjacency between voxels does not necessarily imply a valid connection between bricks. A voxel shape can form a connected volume even when the bricks covering it only touch side by side without stud connections. This distinction affects both data construction and generation: converting voxel shapes into training targets requires attention to coverage and brick connectivity, while predicted layouts may also contain overlaps or disconnected components that require further processing.
 
-To study this problem, we present BrickMore. Using GPT-6.1 Sol, we develop an agentic batch-generation pipeline: the model writes parametric generator programs, which then produce voxel models in batches, and we convert the resulting models into brick layouts. The source dataset contains 80,000 models across 21 object categories, represented on a $48^3$ grid, with five levels of English description for each model. We tile occupied voxels with same-color rectangular bricks and combine connection analysis with local bridging and retiling to address ungrounded components. Some derived targets involve limited changes to the source voxels; these changes and the original data are recorded separately. In the latest integrated version, 79,301 models pass the specified geometric checks.
+To study this problem, we present BrickMore. Using GPT-6.1 Sol, we develop an agentic batch-generation pipeline: the model writes parametric generator programs, which then produce voxel models in batches, and we convert the resulting models into brick layouts. The source dataset contains 80,000 models across 21 object categories, represented on a $48^3$ grid, with five bilingual captions for each model. We tile occupied voxels with same-color rectangular bricks and combine connection analysis with local bridging and retiling to address ungrounded components. Some derived targets involve limited changes to the source voxels; these changes and the original data are recorded separately. In the latest integrated version, 79,301 models pass the specified geometric checks.
 
 We fine-tune Qwen3-1.7B with LoRA on English descriptions and brick-placement sequences. Given a text prompt, the model predicts brick dimensions and positions; the current output does not include color. To address potential overlaps and connectivity defects, we form a target union from the in-bounds voxels of supported brick placements, use MILP to seek an exact cover, and check for a single stud-connected component. For some cases in which no feasible layout is found within the solver's time budget, the system regenerates a sequence using a different language-model sampling seed. The connectivity check is geometric; physical stability and the feasibility of an assembly order require separate evaluation.
 
@@ -51,7 +51,7 @@ To evaluate the resulting structures, we compare the provided outputs of BrickMo
 Our contributions are as follows:
 
 \begin{enumerate}
-\item We develop an automated $48^3$ voxel data-generation pipeline by agentic batch generation with GPT-6.1 Sol, which writes parametric generator programs that produce 80,000 source models across 21 categories, each with five levels of English description. In the latest integrated version, 79,301 models pass the specified geometric checks.
+\item We develop an automated $48^3$ voxel data-generation pipeline by agentic batch generation with GPT-6.1 Sol, which writes parametric generator programs that produce 80,000 source models across 21 categories, each with five bilingual captions. In the latest integrated version, 79,301 models pass the specified geometric checks.
 \item We develop a voxel-to-brick conversion pipeline that combines same-color tiling, connection analysis, and local bridging and retiling, while recording limited changes to source voxels in derived targets.
 \item We fine-tune Qwen3-1.7B for text-to-brick generation and combine it with a post-generation pipeline based on voxel unions, exact-cover MILP, and connectivity checks.
 \end{enumerate}
@@ -69,7 +69,7 @@ Stability analysis. StableLego studies the structural stability of block-stackin
 
 \section{Dataset Construction}
 \subsection{Parametric Voxel Generation}
-The source dataset contains 80,000 voxel models on a $48^3$ grid across 21 object categories. Each model is paired with five English descriptions at different levels of detail. The models are produced by parametric generator programs written through an agentic batch-generation process with GPT-6.1 Sol; the programs, rather than the language model itself, emit the voxel coordinates in batches. Model generation records and version information should be retained to support reproduction.
+The source dataset contains 80,000 voxel models on a $48^3$ grid across 21 object categories. Each model is paired with five bilingual captions at different levels of detail. The models are produced by parametric generator programs written through an agentic batch-generation process with GPT-6.1 Sol; the programs, rather than the language model itself, emit the voxel coordinates in batches. Model generation records and version information should be retained to support reproduction.
 
 
 
@@ -114,11 +114,11 @@ Item & Value \\ \midrule
 Source models & 80,000 \\
 Categories & 21 \\
 Grid & $48^3$ \\
-English descriptions & Approximately 400,000 \\
+Bilingual caption records & 400,000 (five per model) \\
 Historical retile geometry passes & 79,298 / 80,000 \\
 Integrated accounting & 79,301 / 80,000 \\
 \bottomrule\end{tabular}\caption{Dataset statistics and version boundaries.}\end{table*}
-The historical and integrated figures represent different version boundaries. The rules used by each release and the source of the integrated figure should accompany any comparison. The actual training manifest remains to be checked before identifying the version used to train Qwen3-1.7B.
+The historical and integrated figures represent different version boundaries. The rules used by each release and the source of the integrated figure should accompany any comparison. Section~\ref{sec:training} uses the integrated 79,301-model corpus for fine-tuning on English captions.
 
 \begin{figure*}[t]
 \centering
@@ -148,7 +148,7 @@ Physical screening results should be reported separately from geometric pass rat
 \end{figure*}
 
 \section{BrickMore-48 Text-to-Brick Model}
-We fine-tune Qwen3-1.7B using LoRA on English descriptions and brick-placement sequences. Given a text prompt, the model predicts dimensions and positions of bricks. The current output does not include color. Training hyperparameters, data splits, training resources, and the precise training dataset version remain to be documented from the original training records.
+We fine-tune Qwen3-1.7B using LoRA on English descriptions and brick-placement sequences. Given a text prompt, the model predicts dimensions and positions of bricks. The current output does not include color. The training corpus, model-level split, and fine-tuning configuration are described in Section~\ref{sec:training}.
 
 Inference follows a seed-escalation and post-generation repair procedure, summarized in Algorithm~\ref{alg:inference-retiling}. The model samples a placement sequence with thinking disabled, temperature $0.7$, top-$p$ $0.9$, and a limit of $8192$ new tokens, using seeds $42$, $104$, and $2026$ in that order. A candidate is accepted when generation completes and the geometry validator reports no errors. If no such candidate exists, the pipeline keeps the completed draft with the fewest validator error records, denoted $\mathrm{Err}(\cdot)$, which counts line-format, library-membership, bounds, and overlap errors. It then forms a voxel union from the in-bounds cells of supported library placements, solves a shape-preserving exact cover with a single stud-connected component using mixed-integer linear programming (MILP) under a $12$s--$60$s--$180$s time ladder, and runs an independent audit. If no feasible cover is found within this budget, the raw draft is retained and regeneration with a new seed may be queued.
 
@@ -196,6 +196,122 @@ Inference follows a seed-escalation and post-generation repair procedure, summar
 {\footnotesize $\mathrm{Err}(\cdot)$ counts records from the geometry validator (line format, library membership, bounds, and overlaps). A completed sequence is one that ends with an end-of-sequence token. The default ladder is $T=\{12,60,180\}$. A later recovery path may extend the solver budget to $600$\,s and sample additional seeds outside $S$; those settings are not part of the default loop above.}
 \end{algorithm}
 
+\section{Training}
+\label{sec:training}
+We fine-tune Qwen3-1.7B on BrickMore-48, a $48^3$ corpus with a library of 20 brick types. Relative to StableText2Brick used by BrickGPT ($20^3$, 14 types), the library adds six footprints ($3{\times}2$, $2{\times}3$, $3{\times}1$, $1{\times}3$, $2{\times}8$, $8{\times}2$). Each object occupies 750--1,250 voxels with coordinates in $\{0,\ldots,47\}$ and belongs to one of 21 categories (about 3,800 models per category).
+
+\subsection{Data Filtering and Split}
+Every model is produced and checked by an assembly pipeline. The associated \texttt{validation.json} records three geometric constraints: a single six-neighbour connected component, grounding of every component, and exact coverage of the source voxels. This six-neighbour connectivity check is distinct from the single stud-connected component enforced by post-generation retiling (Algorithm~\ref{alg:inference-retiling}).
+
+Of the 80,000 source models, 702 (0.88\%) are flagged as drafts and rejected, leaving 79,298 validated models. Failures are concentrated in table (132), bookshelf (110), vessel (89), bowl (79), and bus (75). We exclude every failing model and train only on validated structures. Replacing the B-shard piano models by a later revised release of 1,905 models restores three previously failing models, yielding 79,301 unique models. Fine-tuning uses only the English captions (\texttt{captionEn}, L1--L5); the Chinese captions of this bilingual corpus are held out. The reported set comprises 396,610 (model, caption) samples, split by model at a 9:1 ratio so that the captions of one model never straddle the split: 356,955 training samples and 39,655 validation samples. Over three epochs the run consumes 2,228,044,818 tokens ($2.23$\,B).
+% TODO verify sample count
+% 79,301 models x 5 captions = 396,505, which differs from the reported 396,610; build_stats.json / trainer logs were not found in the project tree.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lr}
+\toprule
+Item & Count \\
+\midrule
+Raw models in BrickMore-48 & 80,000 \\
+Rejected by assembly validation (draft) & 702 (0.88\%) \\
+Validated models & 79,298 \\
+Piano models restored by the revised release & 3 \\
+Unique models used for training & 79,301 \\
+(model, caption) samples & 396,610 \\
+Training / validation samples & 356,955 / 39,655 \\
+Total tokens over 3 epochs & 2,228,044,818 \\
+\bottomrule
+\end{tabular}
+\caption{Data composition and filtering for fine-tuning.}
+\label{tab:training-data}
+\end{table}
+
+\subsection{Serialization and Instruction Template}
+Each sample is serialized as a three-turn chat, structurally identical to the official BrickGPT data-preparation script: a system prompt (``You are a helpful assistant.''), a user instruction adapted to the $48^3$ world that lists the 20 allowed dimensions and asks for a brick list in dimension-and-position form, and an assistant reply with one brick per line, e.g.\ $2{\times}4\ (x,y,z)$. Two implementation details matter for reproduction. First, no thinking mode is used: the assistant turn contains no thinking content, and inference sets \texttt{enable\_thinking=False} so that the generation distribution matches training. Second, brick dimensions are serialized in a Y-first, then X, order, which differs from the official StableText2Brick convention. Training and inference share this convention; downstream parsers must restore the dimension orientation consistently.
+
+\subsection{Fine-Tuning Configuration}
+Hyperparameters follow the Qwen3 fine-tuning script in the official BrickGPT repository, which is the maintained replacement for the LLaMA recipe in the original paper, rather than the LLaMA numbers themselves. The configuration is summarized in Table~\ref{tab:finetune-config}. Sequences are kept unpacked, as in that recipe, so that the one-caption-to-one-brick-sequence boundary is preserved. Evaluation and checkpointing run every 500 steps on a 2,000-sample validation subset, with \texttt{load\_best\_model\_at\_end} enabled. Dependency versions are pinned to the official TRL~$0.17$ stack; with TRL~$0.15$, the unpacked multi-GPU path hangs after the first backward pass.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{0.55\linewidth}@{}}
+\toprule
+Item & Value \\
+\midrule
+Base model & Qwen3-1.7B (bf16) \\
+Adaptation & LoRA, $r=16$, $\alpha=32$, dropout $0.05$ \\
+Target modules & all linear layers ($q$, $k$, $v$, $o$, gate, up, down) \\
+Learning rate & $10^{-4}$ \\
+Schedule & cosine, 100 warm-up steps \\
+Epochs & 3 \\
+Max sequence length & 8,192 \\
+Effective batch size & 8 (8 GPUs $\times$ 1 $\times$ 1 accumulation) \\
+Sequence organization & unpacked \\
+Precision & bf16 \\
+Gradient checkpointing & enabled \\
+Parallelism & DDP over 8$\times$RTX 4090D (24\,GB) \\
+Software stack & transformers 4.51.3, trl 0.17.0, peft 0.15.2, datasets 3.6.0, accelerate 1.6.0 \\
+\bottomrule
+\end{tabular}
+\caption{Fine-tuning configuration.}
+\label{tab:finetune-config}
+\end{table}
+
+\subsection{Training Dynamics}
+Training runs for 133,860 steps and completes in 25.3 hours ($\approx$202 GPU-hours) without interruption. Aggregate throughput is 24,448 tokens/s over eight GPUs. The mean training loss is 0.0273 and decreases smoothly. Validation loss, computed every 500 steps on the 2,000-sample subset, reaches a minimum of 0.0308 at step 79,000 (epoch 1.77) and then rises, ending at 0.0339 after epoch 3 (Table~\ref{tab:eval-loss}). Because \texttt{load\_best\_model\_at\_end} is enabled, the delivered weights are those of step 79,000, so the additional third epoch does not degrade the released model. For future runs, two epochs are a more economical recommendation and would save about one third of the compute.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrr}
+\toprule
+Progress & Step & eval\_loss \\
+\midrule
+Start & 500 & 0.1410 \\
+--- & 1,500 & 0.0950 \\
+--- & 10,500 & 0.0509 \\
+--- & 22,500 & 0.0404 \\
+End of epoch 1 & 44,500 & 0.0337 \\
+--- & 65,500 & 0.0316 \\
+Best (epoch 1.77) & 79,000 & 0.0308 \\
+End of epoch 3 & 133,860 & 0.0339 \\
+\bottomrule
+\end{tabular}
+\caption{Validation loss over training on a 2,000-sample subset.}
+\label{tab:eval-loss}
+\end{table}
+
+\subsection{Relation to the Official BrickGPT Recipe}
+Table~\ref{tab:brickgpt-recipe} compares the present configuration with the BrickGPT paper and with the official Qwen3 script that we follow. The data organization, instruction template, absence of thinking mode, and LoRA fine-tuning paradigm follow BrickGPT, while the concrete hyperparameters follow the official Qwen3 adaptation. Because the world size ($48^3$), brick library (20 types), and corpus (396,610 samples) are larger than those of the original work ($20^3$, 14 types, 240k prompts), the training budget is adjusted accordingly.
+
+% TODO verify against BrickGPT paper
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcc}
+\toprule
+Dimension & BrickGPT paper & Official Qwen3 script (ours) \\
+\midrule
+Base model & LLaMA-3.2-1B-Instruct & Qwen3-1.7B \\
+LoRA & $r=32$, $\alpha=16$, $q$/$v$ only (3.4M params) & $r=16$, $\alpha=32$, all linear layers \\
+Learning rate & $2{\times}10^{-3}$ (AdamW) & $10^{-4}$ \\
+Effective batch & 64 & 8 \\
+Max length & 4,096 & 8,192 \\
+Epochs & 3 & 3 \\
+Hardware & 8$\times$A6000, 12\,h & 8$\times$4090D, 25.3\,h \\
+Data & StableText2Brick, 47k structures / 240k prompts & BrickMore, 79.3k models / 396,610 samples \\
+\bottomrule
+\end{tabular}
+\caption{Our configuration versus the original BrickGPT paper and the official Qwen3 script.}
+\label{tab:brickgpt-recipe}
+\end{table*}
 
 \section{Comparative Evaluation}
 \subsection{Setup and Metrics}
@@ -254,7 +370,7 @@ The mean invalid-placement ratio decreases to zero after retiling. VQAScore and 
 PE truncates 25 of the 114 main-comparison prompts, and SigLIP2 truncates 29; the affected prompts are the same across the three systems for each metric. The evaluation uses a common yellow rendering and therefore does not assess original colors. A zero $P_{\mathrm{inv}}$ does not establish stud connectivity, physical stability, or assembly feasibility.
 
 \section{Limitations and Discussion}
-The integrated dataset count is derived from versioned release reports, and the version actually used for training needs confirmation. Dataset conversion may permit multiple grounded components, while the generation-stage single-component check has a different scope. Physical screening is based on stated assumptions and does not replace calibrated clutch-strength measurement or physical assembly tests.
+The integrated dataset count is derived from versioned release reports; Section~\ref{sec:training} describes the 79,301-model training corpus obtained from that accounting. Dataset conversion may permit multiple grounded components, and its validation uses six-neighbour connectivity, whereas post-generation retiling enforces a single stud-connected component. Physical screening is based on stated assumptions and does not replace calibrated clutch-strength measurement or physical assembly tests.
 
 The comparative evaluation covers 114 prompts and the provided outputs. The systems differ in their candidate selection and post-processing, and some text is truncated by evaluation models. These conditions limit how broadly the reported scores can be interpreted. Further paired uncertainty analysis can be conducted on the existing per-prompt records.
 

@@ -1,0 +1,83 @@
+% Editable TikZ layout. Units are centimetres; PNG assets contain only model renders.
+\begin{tikzpicture}[x=1cm,y=-1cm]
+\path[use as bounding box] (0,0) rectangle (17.8,10.25);
+\node[heading] at (.08,.20) {(a) Voxel-to-brick construction};
+\node[heading] at (12.1,.20) {(b) Connectivity repair};
+\draw[line] (11.80,.05)--(11.80,3.30);
+\node at (1.4,.61) {Voxels};
+\asset{table_voxels}{1.4}{1.91}{2.38}
+\node at (4.2,.61) {Bricks};
+\asset{table_dataset}{4.2}{1.91}{2.38}
+\node at (7.1,.61) {Voxels};
+\asset{birdhouse_voxels}{7.1}{1.91}{2.38}
+\node at (9.9,.61) {Bricks};
+\asset{birdhouse_dataset}{9.9}{1.91}{2.38}
+\node at (13.28,.61) {Raw};
+\asset{brickmore__camera_L2_P1_G__raw}{13.28}{1.91}{2.38}
+\node at (16.35,.61) {Retiled};
+\asset{brickmore__camera_L2_P1_G__stitched}{16.35}{1.91}{2.38}
+\draw[flow] (2.68,1.91)--(2.95,1.91);
+\draw[flow] (8.38,1.91)--(8.65,1.91);
+\draw[flow] (14.6,1.91)--(14.93,1.91);
+\node at (2.8,3.24) {Table: 1,117 voxels $\rightarrow$ 197 bricks};
+\node at (8.5,3.24) {Birdhouse: 937 voxels $\rightarrow$ 200 bricks};
+\node at (14.84,3.24) {Camera: raw $\rightarrow$ retiled};
+\draw[line] (.08,3.47)--(17.72,3.47);
+\node[anchor=west,tinylabel] at (.12,3.74) {Brick type};
+\fill[brick3005] (1.63,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (1.95,3.74) {$1\!\times\!1$};
+\fill[brick3004] (2.99,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (3.31,3.74) {$1\!\times\!2$};
+\fill[brick3622] (4.35,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (4.67,3.74) {$1\!\times\!3$};
+\fill[brick3010] (5.71,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (6.03,3.74) {$1\!\times\!4$};
+\fill[brick3009] (7.07,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (7.390000000000001,3.74) {$1\!\times\!6$};
+\fill[brick3008] (8.43,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (8.75,3.74) {$1\!\times\!8$};
+\fill[brick3003] (9.79,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (10.11,3.74) {$2\!\times\!2$};
+\fill[brick3002] (11.150000000000002,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (11.470000000000002,3.74) {$2\!\times\!3$};
+\fill[brick3001] (12.510000000000002,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (12.830000000000002,3.74) {$2\!\times\!4$};
+\fill[brick2456] (13.870000000000001,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (14.190000000000001,3.74) {$2\!\times\!6$};
+\fill[brick3007] (15.23,3.62) rectangle ++(.24,.24);
+\node[anchor=west,font=\fontsize{6.6}{8}\selectfont] at (15.55,3.74) {$2\!\times\!8$};
+\fill[wash,rounded corners=2pt] (.08,4.02) rectangle (17.72,4.78);
+\node[anchor=west,text=accent,font=\bfseries\fontsize{8}{9}\selectfont] at (.28,4.24) {Automated dataset construction};
+\node[anchor=west,tinylabel] at (.28,4.56) {80k source shapes $\cdot$ 21 categories $\cdot$ 5 captions};
+\draw[flow] (7.38,4.4)--(8.12,4.4);
+\node[text=accent,font=\bfseries\fontsize{8}{9}\selectfont] at (10.32,4.24) {LoRA training};
+\node at (10.32,4.56) {Qwen3-1.7B};
+\draw[flow] (12.12,4.4)--(12.88,4.4);
+\node[text=accent,font=\bfseries\fontsize{8}{9}\selectfont] at (15.27,4.24) {Text-to-brick pipeline};
+\node at (15.27,4.56) {Generate + repair};
+\node[heading] at (.08,5.11) {(c) Agentic batch generation};
+\node[anchor=east,tinylabel] at (17.72,5.11) {Constructed dataset examples};
+\asset{birdhouse_dataset}{1.7}{6.29}{2.15}
+\node at (1.7,7.39) {Birdhouse};
+\asset{camera_dataset}{5.3}{6.29}{2.15}
+\node at (5.3,7.39) {Camera};
+\asset{chair_dataset}{8.9}{6.29}{2.15}
+\node at (8.9,7.39) {Chair};
+\asset{car_dataset}{12.5}{6.29}{2.15}
+\node at (12.5,7.39) {Car};
+\asset{vessel_dataset}{16.1}{6.29}{2.15}
+\node at (16.1,7.39) {Vessel};
+\draw[line] (.08,7.60)--(17.72,7.60);
+\node[heading] at (.08,7.88) {(d) BrickMore model generation};
+\node[anchor=east,tinylabel] at (17.72,7.88) {Qwen3-1.7B outputs};
+\asset{brickmore__birdhouse-L1__stitched}{1.7}{8.99}{2.04}
+\node at (1.7,10.07) {Birdhouse $\cdot$ retiled};
+\asset{brickmore__camera_L2_P1_G__stitched}{5.3}{8.99}{2.04}
+\node at (5.3,10.07) {Camera $\cdot$ retiled};
+\asset{brickmore__chair-L2V5__raw}{8.9}{8.99}{2.04}
+\node at (8.9,10.07) {Chair $\cdot$ raw};
+\asset{brickmore__car-L1V2__stitched}{12.5}{8.99}{2.04}
+\node at (12.5,10.07) {Car $\cdot$ retiled};
+\asset{brickmore__vessel_L1_P2_G__stitched}{16.1}{8.99}{2.04}
+\node at (16.1,10.07) {Vessel $\cdot$ retiled};
+\end{tikzpicture}

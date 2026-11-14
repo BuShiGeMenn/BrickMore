@@ -1,0 +1,18 @@
+\begin{tikzpicture}[x=1cm,y=-1cm]
+\unitheader{7}{Training records}
+\begin{scope}[shift={(.55,.50)},scale=3.30,transform shape]
+\tikzset{every node/.append style={font=\fontsize{4.3}{5.2}\selectfont},
+         tinylabel/.style={font=\fontsize{3.7}{4.5}\selectfont,text=muted}}
+\begin{scope}[shift={(-4.67,-4.3)}]
+% 7. Machine-readable data record pictograms.
+\foreach \x/\y/\label in {5.03/5.27/LDR,6.15/5.44/TXT,7.27/5.61/JSON} {
+  \path[fill=wash,draw=line,rounded corners=1pt] (\x,\y) rectangle ++(.98,.90);
+  \node[text=accent,font=\bfseries\fontsize{7}{9}\selectfont] at (\x+.49,\y+.34) {\label};
+  \draw[muted,line width=.65pt] (\x+.17,\y+.61)--++(.64,0);
+}
+\node at (6.625,6.79) {Brick layouts + 5 captions};
+\node[tinylabel] at (6.625,7.08) {Round-trip audit + screening status};
+
+\end{scope}
+\end{scope}
+\end{tikzpicture}
