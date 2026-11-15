@@ -1,0 +1,21 @@
+\begin{tikzpicture}[x=1cm,y=-1cm]
+\unitheader{8}{BrickMore model}
+\begin{scope}[shift={(.55,.50)},scale=3.30,transform shape]
+\tikzset{every node/.append style={font=\fontsize{4.3}{5.2}\selectfont},
+         tinylabel/.style={font=\fontsize{3.7}{4.5}\selectfont,text=muted}}
+\begin{scope}[shift={(-0.12,-4.3)}]
+% 8. Compact neural-network icon, fine-tuning arrow and real output.
+\foreach \ya in {5.30,5.72,6.14} {
+  \foreach \yb in {5.43,5.99} {\draw[line] (.67,\ya)--(1.21,\yb);\draw[line] (1.21,\yb)--(1.75,\ya);}
+}
+\foreach \x/\ys in {.67/{5.30,5.72,6.14},1.21/{5.43,5.99},1.75/{5.30,5.72,6.14}} {
+  \foreach \y in \ys {\fill[accent] (\x,\y) circle (.075);}
+}
+\draw[flow] (1.97,5.72)--(2.26,5.72);
+\asset{brickmore__birdhouse-L1__stitched}{3.02}{5.72}{1.47}
+\node at (2.075,6.79) {LoRA $\rightarrow$ Qwen3-1.7B};
+\node[tinylabel] at (2.075,7.08) {Text $\rightarrow$ brick sequence + repair};
+
+\end{scope}
+\end{scope}
+\end{tikzpicture}

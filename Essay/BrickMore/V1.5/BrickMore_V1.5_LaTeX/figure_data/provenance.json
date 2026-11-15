@@ -1,0 +1,39 @@
+{
+  "dataset_examples": {
+    "table": {
+      "source_voxels": "Train\\preview\\piano_table_retile\\results\\A\\table\\vx80k5p_20261010_A_table_m0001\\source.model.json",
+      "brick_layout": "Train\\preview\\piano_table_retile\\results\\A\\table\\vx80k5p_20261010_A_table_m0001\\model.ldr"
+    },
+    "birdhouse": {
+      "source_voxels": "tmp\\teaser_design\\birdhouse_conversion\\source.model.json",
+      "brick_layout": "tmp\\teaser_design\\birdhouse_conversion\\model.ldr"
+    },
+    "camera": {
+      "source_voxels": "tmp\\teaser_design\\camera_conversion\\source.model.json",
+      "brick_layout": "tmp\\teaser_design\\camera_conversion\\model.ldr"
+    },
+    "chair": {
+      "source_voxels": "tmp\\teaser_design\\chair_conversion\\source.model.json",
+      "brick_layout": "tmp\\teaser_design\\chair_conversion\\model.ldr"
+    },
+    "car": {
+      "source_voxels": "tmp\\teaser_design\\car_conversion\\source.model.json",
+      "brick_layout": "tmp\\teaser_design\\car_conversion\\model.ldr"
+    },
+    "vessel": {
+      "source_voxels": "tmp\\teaser_design\\vessel_conversion\\source.model.json",
+      "brick_layout": "tmp\\teaser_design\\vessel_conversion\\model.ldr"
+    }
+  },
+  "generated_examples": [
+    "brickmore__camera_L2_P1_G__raw",
+    "brickmore__camera_L2_P1_G__stitched",
+    "brickmore__birdhouse-L1__stitched",
+    "brickmore__chair-L2V5__raw",
+    "brickmore__car-L1V2__stitched",
+    "brickmore__vessel_L1_P2_G__stitched"
+  ],
+  "assembly_source": "Deploy\\build\\comparison_20261110\\BrickMoreComparison\\Data\\assemblies",
+  "colors": "Diagnostic brick-type colors, not original voxel colors or model predictions.",
+  "rotations": "Rotated copies use the same color (e.g., 1x2 and 2x1)."
+}

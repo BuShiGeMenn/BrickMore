@@ -1,0 +1,69 @@
+\begin{table*}[!htbp]\centering\small
+\begin{tabular}{lr}\toprule
+Item & Historical value \\ \midrule
+Voxel models & 80,000 (40,000 per batch) \\
+Categories / structural families & 21 / 40 per category \\
+Grid / voxel count & $48^3$ / 750--1,250 \\
+Prompt records & 400,000 (five bilingual records per model) \\
+Uniqueness & 80,000 unique; 0 A/B duplicates \\
+Overlap with historical hashes & 0 / 55,255 \\
+Retile geometry passes & 79,298 (99.12\%) \\
+Bricks in full preview & 12,718,389 \\
+Final gravity equilibrium passes & 220 \\
+Final and layer-prefix passes & 128 \\
+\bottomrule\end{tabular}
+\caption{Historical dataset statistics transcribed from the supplied reference. The geometry count refers to the old retile release, not the later integrated count. Verify the preview and physical-screening totals against version-matched reports.}
+\end{table*}
+
+\begin{table*}[!htbp]\centering\scriptsize
+\begin{tabular}{llrrrrr}\toprule
+Version & Connectivity & Voxel changes & Passes & Rate & Final & Final + prefixes \\ \midrule
+Strict v3 & Single; support $\geq$10\%, overhang $\leq$2 & None & 7,902 & 9.88\% & -- & -- \\
+Relaxed & Each component grounded & +428,278 / -38,230 & 65,503 & 81.88\% & 2,650 & 478 \\
+Retile & Each component grounded & +228,582 / -125 & 79,298 & 99.12\% & 220 & 128 \\
+\midrule
+\multicolumn{7}{l}{Uniform 160-model sample (seed 38177); not full-dataset results} \\
+Baseline & Single stud-connected component & None & 22 & 13.75\% & -- & -- \\
+Q3 & Single stud-connected component & Added $\leq$2\% & 55 & 34.38\% & 8 & 2 \\
+Q4 (sparse) & Single stud-connected component & Added + removed $\leq$2\% & 57 & 35.63\% & 8 & 2 \\
+\bottomrule\end{tabular}
+\caption{Historical conversion-strategy table from the reference. Full-dataset and 160-model sample rows use different scopes; connectivity rules also differ. Final and prefix columns report screening outcomes under the stated historical assumptions.}
+\end{table*}
+
+\begin{table*}[!htbp]\centering\small
+\begin{tabular}{lrrr}\toprule
+Item & BrickGPT & BrickNet 1.7B & BrickMore-48 \\ \midrule
+Representation & $20^3$ bricks & Assembly graph & $48^3$ bricks \\
+Criterion & stable & Parseable & -- \\
+Passes & 66/114 & 114/114 & -- \\
+Median parts & 126.5 & 22 & -- \\
+Range & 19--497 & 6--48 & -- \\
+Mean time (s) & 189.6 & -- & -- \\
+\bottomrule\end{tabular}
+\caption{Historical baseline table in the source reference. These criteria differ, and missing BrickMore entries were marked TODO. This is not the current matched four-metric main table.}
+\end{table*}
+
+\begin{table*}[!htbp]\centering\small
+\begin{tabular}{lrrrrl}\toprule
+Level & $n$ & BrickGPT stable & BrickGPT median bricks & BrickNet median parts & BrickMore-48 \\ \midrule
+L1 & 21 & 13 & 112 & 15 & -- \\
+L2 & 21 & 15 & 118 & 22 & -- \\
+L3 & 23 & 12 & 102 & 22 & -- \\
+L4 & 25 & 12 & 140 & 21 & -- \\
+L5 & 24 & 14 & 150.5 & 29.5 & -- \\
+\bottomrule\end{tabular}
+\caption{Historical level-wise baseline table transcribed from the reference. The original BrickMore column was incomplete, and the other columns use different criteria.}
+\end{table*}
+
+\begin{table*}[!htbp]\centering\small
+\begin{tabular}{lrrrr}\toprule
+Method and source & $P_{\mathrm{inv}}$ & VQA & PE & SigLIP2 \\ \midrule
+BrickGPT (literature, as transcribed) & 0.063 & 0.050 & 0.157 & 0.052 \\
+BrickNet 1.7B (literature, as transcribed) & 0.260 & 0.593 & 0.282 & 0.631 \\
+BrickGPT (114 prompts, historical placeholder) & -- & -- & -- & -- \\
+BrickNet (114 prompts, historical placeholder) & -- & -- & -- & -- \\
+BrickMore-48 (114 prompts, historical placeholder) & -- & -- & -- & -- \\
+\bottomrule\end{tabular}
+\caption{Original reference table with literature values and historical placeholders. Literature values use another evaluation set and must not be directly compared with the present 114-prompt results; the precise $P_{\mathrm{inv}}$ definition and direction require checking against the original publication.}
+\end{table*}
+

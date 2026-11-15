@@ -1,0 +1,96 @@
+% Editable visual workflow. Arrows follow the supplied historical diagram.
+\begin{tikzpicture}[x=1cm,y=-1cm]
+\path[use as bounding box] (0,0) rectangle (17.8,7.85);
+\node[heading,text=warm] at (.12,.20) {Agentic batch voxel generation};
+\node[anchor=east,tinylabel] at (17.68,.20) {From reusable programs to diverse source shapes};
+\foreach \x in {.12,4.67,9.22,13.77} {
+  \path[card] (\x,.55) rectangle ++(3.91,2.85);
+  \path[card] (\x,4.30) rectangle ++(3.91,3.02);
+}
+\foreach \x/\y/\n/\title in {.32/.82/1/Specification,4.87/.82/2/LLM programs,9.42/.82/3/Voxels + captions,13.97/.82/4/Deduplication,
+ .32/4.57/8/BrickMore model,4.87/4.57/7/Training records,9.42/4.57/6/Contact screening,13.97/4.57/5/Tiling + repair} {
+  \node[circle,fill=accent,text=white,minimum size=.30cm,font=\bfseries\fontsize{6}{7}\selectfont] at (\x+.04,\y) {\n};
+  \node[anchor=west,font=\bfseries\fontsize{8}{9}\selectfont] at (\x+.29,\y) {\title};
+}
+% 1. Specification: a compact editable document pictogram.
+\path[fill=wash,draw=line] (1.33,1.18)--(2.40,1.18)--(2.78,1.56)--(2.78,2.62)--(1.33,2.62)--cycle;
+\draw[line] (2.40,1.18)--(2.40,1.56)--(2.78,1.56);
+\node[text=accent,font=\bfseries\fontsize{9}{10}\selectfont] at (2.04,1.72) {SPEC};
+\foreach \y in {2.02,2.22,2.42} {\draw[muted,line width=.65pt] (1.62,\y)--(2.43,\y);}
+\node at (2.075,2.94) {21 classes $\cdot$ 40 families each};
+\node[tinylabel] at (2.075,3.20) {$48^3$ grid $\cdot$ 750--1,250 voxels};
+% 2. LLM-authored deterministic parameterized generator.
+\path[fill=wash,draw=line,rounded corners=2pt] (5.28,1.25) rectangle (7.98,2.59);
+\fill[accent,rounded corners=1pt] (5.28,1.25) rectangle (7.98,1.57);
+\node[text=white,font=\bfseries\fontsize{7}{8}\selectfont] at (6.63,1.42) {AI\_A \quad + \quad AI\_B};
+\node[anchor=west,text=muted,font=\ttfamily\fontsize{7}{9}\selectfont] at (5.53,1.91) {shape(params)};
+\node[anchor=west,text=accent,font=\ttfamily\fontsize{7}{9}\selectfont] at (5.75,2.25) {emit(x, y, z)};
+\node at (6.625,2.94) {Write + run generation code};
+\node[tinylabel] at (6.625,3.20) {Deterministic, parameterized shapes};
+% 3. Real voxel image and a caption card.
+\asset{birdhouse_voxels}{10.76}{1.94}{1.65}
+\path[fill=wash,draw=line,rounded corners=2pt] (11.34,1.50) rectangle (12.80,2.31);
+\node[text=accent,font=\bfseries\fontsize{7}{8}\selectfont] at (12.07,1.71) {L1--L5};
+\foreach \y/\length in {1.94/.95,2.11/.69} {\draw[muted,line width=.65pt] (11.58,\y)--++(\length,0);}
+\node at (11.175,2.94) {Voxel models + descriptions};
+\node[tinylabel] at (11.175,3.20) {Connectivity + semantic checks};
+% 4. Dedup: three actual shape thumbnails flow into one retained item.
+\asset{birdhouse_voxels}{14.57}{1.73}{.87}
+\asset{birdhouse_voxels}{15.12}{2.24}{.87}
+\draw[flow] (15.41,1.93)--(15.81,1.93);
+\asset{birdhouse_voxels}{16.50}{1.91}{1.38}
+\node[circle,draw=accent,fill=white,text=accent,minimum size=.30cm,font=\bfseries\fontsize{7}{8}\selectfont] at (17.06,2.38) {1};
+\node at (15.725,2.94) {Exact + canonical hashing};
+\node[tinylabel] at (15.725,3.20) {48 axis transforms $\cdot$ 80k unique};
+% The main path, first row left-to-right, second row right-to-left.
+\foreach \x in {4.03,8.58,13.13} {\draw[flow] (\x,1.98)--++(.64,0);}
+\draw[flow] (15.725,3.40)--(15.725,4.30);
+\foreach \x in {13.77,9.22,4.67} {\draw[flow] (\x,5.79)--++(-.64,0);}
+% 5. Tiling and repair: actual before/after geometry.
+\asset{birdhouse_voxels}{14.78}{5.72}{1.40}
+\draw[flow] (15.50,5.72)--(15.91,5.72);
+\asset{birdhouse_dataset}{16.70}{5.72}{1.53}
+\node at (15.725,6.79) {Layer-wise exact cover};
+\node[tinylabel] at (15.725,7.08) {MRV / MILP / beam $\cdot$ $\leq$2\% edits};
+% 6. Visual contact model: an interlocked pair, contacts and gravity.
+\begin{scope}[shift={(9.70,5.32)}]
+  \fill[wash] (-.04,1.11) rectangle (2.87,1.19);
+  \draw[muted] (-.04,1.10)--(2.87,1.10);
+  \path[fill=brick3004,draw=white,line width=.6pt] (.18,.61)--(1.37,.61)--(1.37,1.08)--(.18,1.08)--cycle;
+  \path[fill=brick3004!75,draw=white,line width=.6pt] (.18,.61)--(.43,.41)--(1.62,.41)--(1.37,.61)--cycle;
+  \path[fill=brick3004!65!black,draw=white,line width=.6pt] (1.37,.61)--(1.62,.41)--(1.62,.88)--(1.37,1.08)--cycle;
+  \path[fill=brick3001,draw=white,line width=.6pt] (.64,.12)--(2.30,.12)--(2.30,.59)--(.64,.59)--cycle;
+  \path[fill=brick3001!75,draw=white,line width=.6pt] (.64,.12)--(.89,-.08)--(2.55,-.08)--(2.30,.12)--cycle;
+  \path[fill=brick3001!65!black,draw=white,line width=.6pt] (2.30,.12)--(2.55,-.08)--(2.55,.39)--(2.30,.59)--cycle;
+  \foreach \x in {.99,1.39,1.79,2.19} {\path[fill=brick3001,draw=white,line width=.4pt] (\x,-.055) ellipse (.075 and .035);}
+  \foreach \x in {.86,1.26,1.66,2.06} {\path[fill=brick3001,draw=white,line width=.4pt] (\x,.045) ellipse (.075 and .035);}
+  \foreach \x in {.83,1.12} {\fill[repair] (\x,.60) circle (.045);}
+  \draw[flow,draw=repair] (1.55,-.40)--(1.55,.25);
+  \node[anchor=west,text=repair,font=\fontsize{7}{8}\selectfont] at (1.69,-.34) {$mg$};
+\end{scope}
+\node at (11.175,6.79) {Self-weight LP + layer prefixes};
+\node[tinylabel] at (11.175,7.08) {Tipping margin + clutch force};
+% Repair return path, explicitly separate from the accepted-data path.
+\draw[flow,dashed,draw=repair,rounded corners=3pt] (11.175,4.30)--(11.175,3.84)--(14.91,3.84)--(14.91,4.30);
+\node[fill=white,inner sep=2pt,text=repair,font=\fontsize{6.5}{8}\selectfont] at (12.98,3.84) {If needed: repair / retile};
+% 7. Machine-readable data record pictograms.
+\foreach \x/\y/\label in {5.03/5.27/LDR,6.15/5.44/TXT,7.27/5.61/JSON} {
+  \path[fill=wash,draw=line,rounded corners=1pt] (\x,\y) rectangle ++(.98,.90);
+  \node[text=accent,font=\bfseries\fontsize{7}{9}\selectfont] at (\x+.49,\y+.34) {\label};
+  \draw[muted,line width=.65pt] (\x+.17,\y+.61)--++(.64,0);
+}
+\node at (6.625,6.79) {Brick layouts + 5 captions};
+\node[tinylabel] at (6.625,7.08) {Round-trip audit + screening status};
+% 8. Compact neural-network icon, fine-tuning arrow and real output.
+\foreach \ya in {5.30,5.72,6.14} {
+  \foreach \yb in {5.43,5.99} {\draw[line] (.67,\ya)--(1.21,\yb);\draw[line] (1.21,\yb)--(1.75,\ya);}
+}
+\foreach \x/\ys in {.67/{5.30,5.72,6.14},1.21/{5.43,5.99},1.75/{5.30,5.72,6.14}} {
+  \foreach \y in \ys {\fill[accent] (\x,\y) circle (.075);}
+}
+\draw[flow] (1.97,5.72)--(2.26,5.72);
+\asset{brickmore__birdhouse-L1__stitched}{3.02}{5.72}{1.47}
+\node at (2.075,6.79) {LoRA $\rightarrow$ Qwen3-1.7B};
+\node[tinylabel] at (2.075,7.08) {Text $\rightarrow$ brick sequence + repair};
+\node[heading,text=accent] at (.12,7.66) {Voxel-to-brick conversion, screening and downstream training};
+\end{tikzpicture}

@@ -1,0 +1,18 @@
+\begin{tikzpicture}[x=1cm,y=-1cm]
+\unitheader{6}{Geometric checks}
+\begin{scope}[shift={(.55,.50)},scale=3.30,transform shape]
+\tikzset{every node/.append style={font=\fontsize{4.3}{5.2}\selectfont},
+         tinylabel/.style={font=\fontsize{3.7}{4.5}\selectfont,text=muted}}
+\begin{scope}[shift={(-9.22,-4.3)}]
+% 6. The three geometric checks used for training-data selection.
+\path[fill=wash,draw=line,rounded corners=2pt] (9.55,5.14) rectangle (12.80,6.38);
+\foreach \y/\label in {5.39/One voxel component,5.76/Grounded brick components,6.13/Exact derived-target cover} {
+  \draw[accent,line width=.8pt] (9.72,\y)--++(.08,.08)--++(.15,-.18);
+  \node[anchor=west,font=\fontsize{6.3}{8}\selectfont] at (10.04,\y) {\label};
+}
+\node at (11.175,6.79) {Contact screening recorded};
+\node[tinylabel] at (11.175,7.08) {Geometry selects training data};
+
+\end{scope}
+\end{scope}
+\end{tikzpicture}
