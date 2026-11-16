@@ -23,3 +23,7 @@ python tools/download_dataset.py --shard all --output dataset_80000 --extract
 ## 本地模型生成的六个 LEGO 样例
 
 [查看六个样例、LDR 模型和完整下载包](Train/samples/brickgpt_qwen3_1p7b_six_20261020/README.md)。包含椅子、汽车、钢琴、吉他、马克杯和鸟屋的真实原始输出、生成报告、三维预览，以及五个通过的最终重铺版本。钢琴保留失败标记；几何通过不等同于物理稳定性验证。
+
+## 本地生成的 A 组 260 条样例
+
+**[查看完整结果、模型、积木序列和提示词](Train/samples/brickgpt_qwen3_1p7b_a_260_20261114/README.md)**。使用 BrickGPT-Qwen3-1.7B-BrickMore-48（revision 92d1c595f5fe076971cc2633d6844f097a84eef3）本地推理生成，未使用 MILP 重拼接。几何检查 164/260 通过；其余 96 个结果也保留，并在索引中标明。
