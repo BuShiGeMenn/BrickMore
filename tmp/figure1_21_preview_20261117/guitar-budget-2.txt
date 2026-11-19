@@ -1,0 +1,82 @@
+{
+  "modelId": "vx80k5p_20261010_A_guitar_m0001",
+  "status": "success",
+  "geometryValidation": {
+    "passed": true,
+    "tier": "relaxed_modular_geometry_not_physics",
+    "issues": [],
+    "brickCount": 160,
+    "studComponentCount": 1,
+    "groundedComponentCount": 1,
+    "allComponentsGrounded": true,
+    "exactCoverage": true,
+    "colorPreserved": true,
+    "missingVoxelCount": 0,
+    "extraVoxelCount": 0,
+    "upperAttachedBrickCount": 10,
+    "installationSequenceVerified": false,
+    "recoloredVoxelCount": 0,
+    "minimumSupportFraction": 0.0,
+    "maximumActualCantileverDistance": 4,
+    "fullPhysics": false,
+    "staticVerified": null
+  },
+  "repairAudit": {
+    "passed": true,
+    "originalVoxelCount": 847,
+    "targetVoxelCount": 848,
+    "addedVoxelCount": 1,
+    "removedVoxelCount": 0,
+    "recoloredOriginalVoxelCount": 0,
+    "changedVoxelCount": 1,
+    "changeRatio": 0.0011806375442739079,
+    "maximumChangeRatio": 0.02,
+    "maximumChangedVoxelCount": 16,
+    "occupancyIoU": 0.9988207547169812,
+    "allAdditionsWithinOneManhattanStepOfOriginal": true,
+    "addedColorsFromOriginalPalette": true,
+    "addedVoxelsInternalXYZRGB": [
+      {
+        "xyz": [
+          24,
+          25,
+          17
+        ],
+        "rgb": [
+          62,
+          48,
+          40
+        ]
+      }
+    ],
+    "sourceExactOccupancyHash": "8408b04da8e5b134bee5690174d58a1b7b857f9b6282a24cb570c8c5b0c49894",
+    "targetExactOccupancyHash": "7747466f9e4b22aea16d26e849ca39f1a798a81152481fd7b9ea2938c0a92e7d",
+    "semanticVerified": false,
+    "staticVerified": null,
+    "fullPhysics": false,
+    "auditorVersion": "mixed_local_repair_audit_q4_v1",
+    "allDeletionsEligibleUnsupportedDetail": true,
+    "groundVoxelCountPreserved": true,
+    "removedVoxelsInternalXYZRGB": []
+  },
+  "physics": {
+    "status": "not_attempted_geometry_only",
+    "gravityEquilibriumPassed": false,
+    "layerPrefixGravityPassed": false,
+    "assumptions": {
+      "studPitchMeters": 0.008,
+      "brickHeightMeters": 0.0096,
+      "massKilogramsPerOccupiedStudBrick": 0.001,
+      "internalContactHalfWidthStuds": 0.25,
+      "groundInsetStuds": 0.05,
+      "gravityMetersPerSecondSquared": 9.80665,
+      "massModel": "uniform mass proportional to occupied stud-brick volume; uncalibrated",
+      "contactModel": "vertical forces at four inset square contact corners per actual overlapping stud",
+      "groundModel": "unanchored horizontal plane, compression only",
+      "loadCase": "self weight only; no external lateral force, impact, or baseplate anchoring",
+      "clutchCapacityNewtons": null
+    },
+    "staticVerified": null,
+    "fullPhysics": false
+  }
+}

@@ -1,0 +1,66 @@
+name mathpazo
+category Package
+revision 77682
+shortdesc Fonts to typeset mathematics to match Palatino
+longdesc The Pazo Math fonts are a family of PostScript fonts suitable
+longdesc for typesetting mathematics in combination with the Palatino
+longdesc family of text fonts. The Pazo Math family is made up of five
+longdesc fonts provided in Adobe Type 1 format (PazoMath,
+longdesc PazoMath-Italic, PazoMath-Bold, PazoMath-BoldItalic, and
+longdesc PazoMathBlackboardBold). These contain, in designs that match
+longdesc Palatino, glyphs that are usually not available in Palatino and
+longdesc for which Computer Modern looks odd when combined with
+longdesc Palatino. These glyphs include the uppercase Greek alphabet in
+longdesc upright and slanted shapes in regular and bold weights, the
+longdesc lowercase Greek alphabet in slanted shape in regular and bold
+longdesc weights, several mathematical glyphs (partialdiff, summation,
+longdesc product, coproduct, emptyset, infinity, and proportional) in
+longdesc regular and bold weights, other glyphs (Euro and dotlessj) in
+longdesc upright and slanted shapes in regular and bold weights, and the
+longdesc uppercase letters commonly used to represent various number
+longdesc sets (C, I, N, Q, R, and Z) in blackboard bold. LaTeX macro
+longdesc support (using package mathpazo.sty) is provided in psnfss (a
+longdesc required part of any LaTeX distribution).
+depend fpl
+depend palatino
+containersize 63628
+containerchecksum b70dc1daa14ec1c6724d9b375a775a5e5b6c5258d00b88d487969f9a939ac54ebf3f1176c42e299a526aa375f582a3019433378274df3c5eab8692efef82ac7a
+doccontainersize 373528
+doccontainerchecksum 29f8a224e235fb10505a4da53778616f369343c2cf9ca6d8444b16a891e4f4b2fa6bfd4fd195af885fb9c0f9e513e1c98d21951cb96a05eca3c39f30f07e0c32
+srccontainersize 17980
+srccontainerchecksum 63a1c9798599c72aa45328e91d23a52091a2397a95933146ab89e771a051306d6bb798ff877ab1ad26c9870462ba92ab7c626b739e5b23f6776785b4e00e26ae
+runfiles size=41
+ texmf-dist/fonts/afm/public/mathpazo/fplmb.afm
+ texmf-dist/fonts/afm/public/mathpazo/fplmbb.afm
+ texmf-dist/fonts/afm/public/mathpazo/fplmbi.afm
+ texmf-dist/fonts/afm/public/mathpazo/fplmr.afm
+ texmf-dist/fonts/afm/public/mathpazo/fplmri.afm
+ texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/fplmbi.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/zplmb7m.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+ texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+ texmf-dist/fonts/type1/public/mathpazo/fplmb.pfb
+ texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb
+ texmf-dist/fonts/type1/public/mathpazo/fplmbi.pfb
+ texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb
+ texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb
+ texmf-dist/fonts/vf/public/mathpazo/zplmb7m.vf
+ texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
+ texmf-dist/fonts/vf/public/mathpazo/zplmb7y.vf
+ texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
+ texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
+ texmf-dist/fonts/vf/public/mathpazo/zplmr7v.vf
+ texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
+catalogue-also pxfonts newpx tex-gyre-math-pagella
+catalogue-ctan /fonts/mathpazo
+catalogue-license gpl
+catalogue-topics font font-type1 font-maths font-bbd tagged-pdf-partially
+catalogue-version 1.003

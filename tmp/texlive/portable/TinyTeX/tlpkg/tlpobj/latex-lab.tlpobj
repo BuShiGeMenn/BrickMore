@@ -1,0 +1,60 @@
+name latex-lab
+category Package
+revision 80377
+shortdesc LaTeX laboratory
+longdesc This bundle holds optional files that are loaded in certain
+longdesc situations by kernel code (if available). While this code is
+longdesc still in development and the use is experimental, it is stored
+longdesc outside the format so that there can be intermediate releases
+longdesc not affecting the production use of LaTeX. Once the code is
+longdesc finalized and properly tested it will eventually move to the
+longdesc kernel and the corresponding file in this bundle will vanish.
+longdesc Note that none of these files are directly user accessible in
+longdesc documents (i.e., they aren't packages), so the process is
+longdesc transparent to documents already using the new functionality.
+depend luamml
+depend pdfmanagement
+containersize 64264
+containerchecksum f5014fb534b9552792eb9af4d201c6103e32f3fe2939120bb591d101fc5027cb6ab9f03b42babbac035825ab5647a003d64327fae83c06d707b7084dfe5b4861
+doccontainersize 7937688
+doccontainerchecksum 7e7b3697c4bc52ca4494c6a59030ae303b43783994c1d9a11cf988d2f6ae29b080533b2b4cd46c4bc076492c9bc17d9c74e80c982b4bfa6a5abb8979a3909244
+srccontainersize 211188
+srccontainerchecksum b482c2ef539b82c49931a8003f00f43701db4e5b2982426a1ba02e80943df22a92003f61e5109b98c30a9f25760abedd4098bdea614319f4b7b0784369c0d3bd
+runfiles size=120
+ texmf-dist/tex/latex/latex-lab/documentmetadata-support.ltx
+ texmf-dist/tex/latex/latex-lab/latex-lab-amsmath.ltx
+ texmf-dist/tex/latex/latex-lab/latex-lab-enumitem.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-footmisc.ltx
+ texmf-dist/tex/latex/latex-lab/latex-lab-footnotes.ltx
+ texmf-dist/tex/latex/latex-lab/latex-lab-kernel-changes.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-math.ltx
+ texmf-dist/tex/latex/latex-lab/latex-lab-mathintent.ltx
+ texmf-dist/tex/latex/latex-lab/latex-lab-mathpkg.ltx
+ texmf-dist/tex/latex/latex-lab/latex-lab-mathtools.ltx
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-bib.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-block.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-context.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-firstaid.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-float.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-graphic.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-l3doc.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-latest.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-marginpar.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-math.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-minipage.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-names.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-new-or-2.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-sec-template.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-sec.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-table.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-text.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tikz.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-title.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-testphase-toc.sty
+ texmf-dist/tex/latex/latex-lab/latex-lab-unicode-math.ltx
+ texmf-dist/tex/latex/latex-lab/tagpdf-ns-latex-lab.def
+catalogue-contact-home https://www.latex-project.org
+catalogue-ctan /macros/latex/required/latex-lab
+catalogue-license lppl1.3c
+catalogue-topics format latex-devel
+catalogue-version 2026-06-01a

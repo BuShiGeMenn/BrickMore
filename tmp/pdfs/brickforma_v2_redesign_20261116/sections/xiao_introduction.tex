@@ -1,0 +1,18 @@
+\section{Introduction}
+Spatial reasoning supports tasks from robotics to automated design. Recent benchmarks use paper folding and procedural drawing to test how large language models (LLMs) infer shapes and transformations~\cite{zhou2026paperfolding,luo2026geogrambench}. Can a model also turn a short description into a three-dimensional object whose pieces are correctly sized, placed, and joined?
+
+A request such as \emph{a simple chair} leaves dimensions, proportions, and part layout implicit. A generator must infer that geometry, discretize it into fixed-size pieces at integer positions, and create stud connections between layers. Pieces can share a side while belonging to separate assemblies. In the \textsc{Text-to-Brick} task, a generator turns a natural-language description into placements that express the requested shape as a single stud-connected assembly.
+
+BrickGPT learns to predict placements autoregressively and uses physics-aware rollback during inference~\cite{brickgpt}. BrickNet encodes assembly connectivity with a graph that supports more part and connection types~\cite{bricknet}. These approaches motivate two questions. \textbf{Q1. How well do generators complete geometry from limited linguistic information?} A comparison by description level reveals behavior on short prompts that an aggregate mean can obscure. \textbf{Q2. How can a compact generator acquire the geometric knowledge needed to fill in missing details?} Large models can describe object proportions and functional parts. Turning that knowledge into checked layouts requires an explicit representation of geometry and connections.
+
+BrickForma uses executable programs to make geometric knowledge available for training (Figure~\ref{fig:teaser}). With GPT-6.1 Sol assistance, we write parametric generators that vary part dimensions, proportions, openings, and support arrangements. The programs produce 80,000 voxel models spanning 21 categories on a $48^3$ grid. Five levels of bilingual descriptions give progressively richer specifications of the same geometry. Same-color tiling, connection analysis, and local repair convert the voxels into checked brick targets. The integrated release records 79,301 models that pass the dataset's geometric checks. English caption--placement pairs supervise a LoRA adaptation of Qwen3-1.7B~\cite{qwen3,lora}.
+
+At inference, the model predicts dimensions and positions as a placement sequence. The sequence supplies a voxel union for geometric reconstruction. For drafts that need repair, mixed-integer linear programming seeks a tiling of that union with one stud-connected component. The solver can therefore change the parts and their connections while retaining the occupied volume.
+
+We evaluate the raw BrickForma outputs against BrickGPT and BrickNet on 265 matched prompts. BrickForma has the highest mean VQAScore, PE, and SigLIP2 in aggregate. At L1, BrickGPT leads VQAScore, and BrickForma leads PE and SigLIP2. An earlier audit of 110 raw/retiled pairs tests occupied-volume preservation and stud connectivity.
+
+\noindent\textbf{Program-based transfer with checked geometry.}
+BrickForma converts LLM-authored parametric programs into training layouts for a 1.7B-parameter model. At inference, an exact-cover reconstruction step addresses errors in the predicted brick connections.
+
+\noindent\textbf{A five-level dataset and matched evaluation.}
+BrickMore-48 links each source shape to five levels of description. We evaluate three systems at each level and report three measures of rendered text--image alignment, an invalid-placement ratio, and an audit of reconstruction on paired exports.

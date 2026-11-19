@@ -1,0 +1,106 @@
+{
+  "modelId": "vx80k5p_20261010_A_bus_m0001",
+  "status": "success",
+  "geometryValidation": {
+    "passed": true,
+    "tier": "relaxed_modular_geometry_not_physics",
+    "issues": [],
+    "brickCount": 166,
+    "studComponentCount": 4,
+    "groundedComponentCount": 4,
+    "allComponentsGrounded": true,
+    "exactCoverage": true,
+    "colorPreserved": true,
+    "missingVoxelCount": 0,
+    "extraVoxelCount": 0,
+    "upperAttachedBrickCount": 21,
+    "installationSequenceVerified": false,
+    "recoloredVoxelCount": 0,
+    "minimumSupportFraction": 0.0,
+    "maximumActualCantileverDistance": 2,
+    "fullPhysics": false,
+    "staticVerified": null
+  },
+  "repairAudit": {
+    "passed": true,
+    "originalVoxelCount": 1051,
+    "targetVoxelCount": 1054,
+    "addedVoxelCount": 3,
+    "removedVoxelCount": 0,
+    "recoloredOriginalVoxelCount": 0,
+    "changedVoxelCount": 3,
+    "changeRatio": 0.0028544243577545195,
+    "maximumChangeRatio": 0.02,
+    "maximumChangedVoxelCount": 21,
+    "occupancyIoU": 0.9971537001897534,
+    "allAdditionsWithinOneManhattanStepOfOriginal": true,
+    "addedColorsFromOriginalPalette": true,
+    "addedVoxelsInternalXYZRGB": [
+      {
+        "xyz": [
+          19,
+          30,
+          3
+        ],
+        "rgb": [
+          59,
+          107,
+          157
+        ]
+      },
+      {
+        "xyz": [
+          20,
+          13,
+          8
+        ],
+        "rgb": [
+          59,
+          107,
+          157
+        ]
+      },
+      {
+        "xyz": [
+          26,
+          13,
+          8
+        ],
+        "rgb": [
+          59,
+          107,
+          157
+        ]
+      }
+    ],
+    "sourceExactOccupancyHash": "da2b05d354fc54e3752519ed50717aeef1310bea5accad3fb8a1025240d63896",
+    "targetExactOccupancyHash": "ddefed852bf7eb050b923f840d32658ef9b31590d12c5b134e798db14634e2a3",
+    "semanticVerified": false,
+    "staticVerified": null,
+    "fullPhysics": false,
+    "auditorVersion": "mixed_local_repair_audit_q4_v1",
+    "allDeletionsEligibleUnsupportedDetail": true,
+    "groundVoxelCountPreserved": true,
+    "removedVoxelsInternalXYZRGB": []
+  },
+  "physics": {
+    "status": "not_attempted_geometry_only",
+    "gravityEquilibriumPassed": false,
+    "layerPrefixGravityPassed": false,
+    "assumptions": {
+      "studPitchMeters": 0.008,
+      "brickHeightMeters": 0.0096,
+      "massKilogramsPerOccupiedStudBrick": 0.001,
+      "internalContactHalfWidthStuds": 0.25,
+      "groundInsetStuds": 0.05,
+      "gravityMetersPerSecondSquared": 9.80665,
+      "massModel": "uniform mass proportional to occupied stud-brick volume; uncalibrated",
+      "contactModel": "vertical forces at four inset square contact corners per actual overlapping stud",
+      "groundModel": "unanchored horizontal plane, compression only",
+      "loadCase": "self weight only; no external lateral force, impact, or baseplate anchoring",
+      "clutchCapacityNewtons": null
+    },
+    "staticVerified": null,
+    "fullPhysics": false
+  }
+}

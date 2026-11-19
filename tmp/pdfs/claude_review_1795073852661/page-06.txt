@@ -1,0 +1,67 @@
+LevelnWords SystemP inv ↓VQAScore↑PE↑SigLIP2↑
+L1 105 13.6 BrickForma 0.48%0.1539 0.1388 0.0158
+BrickGPT0.00%0.1296 0.1302 0.0087
+BrickNet 18.59% 0.0346 0.1051 0.0005
+L2 105 26.4 BrickForma 0.69%0.1264 0.1465 0.0291
+BrickGPT0.00%0.0938 0.1338 0.0206
+BrickNet 18.35% 0.0394 0.1030 0.0008
+L3 105 37.5 BrickForma 0.98%0.1179 0.1477 0.0508
+BrickGPT0.00%0.0863 0.1415 0.0178
+BrickNet 22.98% 0.0209 0.1113 0.0012
+L4 105 52.5 BrickForma 1.08%0.0192 0.1780 0.0738
+BrickGPT0.00%0.0148 0.1605 0.0338
+BrickNet 17.24% 0.0025 0.1376 0.0011
+L5 105 78.8 BrickForma 0.75%0.0157 0.1730 0.0543
+BrickGPT0.00%0.0086 0.1542 0.0162
+BrickNet 14.95% 0.0030 0.1363 0.0020
+Table 4: Mean scores by description level. Each level contains 105 prompts per system; Words is the mean English word count
+of the prompts. Bold marks the best mean.
+Metric Raw Refined
+Pinv ↓0.1897% 0.0000%
+VQAScore↑0.2065 0.2071
+PE↑0.1858 0.1859
+SigLIP2↑0.1379 0.1261
+Mean parts 178.7 421.2
+Table 5: Raw versus refined BrickForma outputs on 110
+pairsfromtheearliercomparison.Eachpairsharesthesame
+prompt, model identifier, and caption.
+Export measure Raw Refined
+Single stud component 18/110 110/110
+Mean stud components 4.29 1.00
+No body-cell overlap 100/110 110/110
+Equal voxel unions after translation: 110/110
+Table 6: Export audit of the 110 matched raw/refined pairs
+fromtheearliercomparison.Voxelunionsarecomparedafter
+translation normalization.
+5.6 Evaluation Boundaries
+Our benchmark compares delivered exports from systems
+that differ in inference settings and part libraries. Descrip-
+tion levels differ in both semantic detail and token length,
+so PE truncates 121 prompts and SigLIP2 truncates 209
+(Appendix C). Uniform yellow rendering isolates geometric
+form and layout but does not assess color fidelity. Finally,
+the paired refinement audit covers only delivered pairs, so
+unsuccessful solver attempts are excluded from its denomi-
+nator.
+6 Limitations and Discussion
+Our experiments evaluate the data-construction and fine-
+tuning pipeline as a whole. Isolating the contribution of
+LLM-authored generators relative to hand-crafted procedu-
+ralbaselinesunderamatchedtrainingbudgetremainsfuture
+work.Moreover,datasetreleasechecksverifygroundingand
+coverage, and inference-time refinement enforces a single
+stud-connected component, but physical stability and feasi-
+ble assembly ordering require dedicated structural measure-
+ments. Finally, the integrated dataset release and the fine-
+tuning run record their sample counts separately (Table 1).
+7 Conclusion
+BrickForma turns LLM-authored parametric programs into
+checked voxel-to-brick targets and uses them to fine-tune
+Qwen3-1.7B forText-to-Brickassembly. On 525
+matched prompts spanning five description levels, its raw
+outputsleadonallthreetext–imagealignmentmetricswhile
+keeping the mean invalid-placement ratio at 0.79%. Com-
+bined with exact-cover MILP refinement, which enforces
+stud connectivity while preserving the voxel union, this di-
+visionoflaboroffersapracticalpathtowardconstructive3D
+spatial reasoning in compact models.

@@ -1,0 +1,75 @@
+% Figure 1 is 7 x 4.25 inches. One coordinate unit equals 1/400 inch.
+% Each PNG is one transparent square model tile. The layout, labels, legend,
+% arrows, and separators are editable TikZ elements.
+\begingroup%
+\newdimen\fOneUnit%
+\fOneUnit=.0025in\relax%
+\newcommand{\fOneTile}[4]{%
+  \node at (#2,#3) {%
+    \includegraphics[width=\dimexpr\fOneUnit*#4\relax]{figures/figure1_models/#1.png}};%
+}%
+% Left edge, top edge, tile edge, and categories in reading order.
+\newcommand{\fOneRow}[4]{%
+  \pgfmathtruncatemacro{\tileY}{#2+#3/2}%
+  \foreach \category [count=\groupIndex from 0] in {#4} {%
+    \pgfmathtruncatemacro{\leftX}{#1+\groupIndex*(3*#3+36)+#3/2}%
+    \pgfmathtruncatemacro{\middleX}{\leftX+#3+8}%
+    \pgfmathtruncatemacro{\rightX}{\middleX+#3+8}%
+    \fOneTile{\category-voxel}{\leftX}{\tileY}{#3}%
+    \fOneTile{\category-refined}{\middleX}{\tileY}{#3}%
+    \fOneTile{\category-brickforma}{\rightX}{\tileY}{#3}%
+    \ifnum\groupIndex>0
+      \draw[soft divider]
+        ({\leftX-#3/2-10},{#2+8}) -- ({\leftX-#3/2-10},{#2+#3-8});
+    \fi
+  }%
+}%
+\begin{tikzpicture}[
+  x=\fOneUnit,y=-\fOneUnit,
+  soft divider/.style={draw=muted!31,line width=.35pt,dash pattern=on 2.17pt off 1.45pt},
+  model stage/.style={font=\fontsize{8}{9.2}\selectfont}
+]
+\path[use as bounding box] (0,0) rectangle (2800,1700);
+
+% (a) Two source voxels in their original colors and their LEGO assemblies.
+\node[heading] at (52,35) {(a) Voxel to LEGO brick};
+\fOneTile{table-voxel-large}{194}{241}{326}
+\fOneTile{table-bricks-large}{635}{241}{326}
+\fOneTile{birdhouse-voxel-large}{1083}{241}{326}
+\fOneTile{birdhouse-bricks-large}{1514}{241}{326}
+\draw[flow] (377,246)--(452,246);
+\draw[flow] (1261,246)--(1336,246);
+
+% (b) Raw and refined versions of the same prediction.
+\draw[soft divider] (1825,13)--(1825,402);
+\node[heading] at (1869,35) {(b) Connectivity refinement};
+\fOneTile{camera-raw-large}{2072}{241}{326}
+\fOneTile{camera-refined-large}{2548}{241}{326}
+\node[model stage] at (2072,70) {Raw};
+\node[model stage] at (2548,70) {Refined};
+\draw[flow] (2273,246)--(2348,246);
+
+% Shared brick-type legend below the solid panel divider.
+\draw[draw=line,line width=.54pt] (48,418)--(2752,418);
+\node[anchor=west,tinylabel] at (51,449) {Brick type};
+\foreach \part/\studsAcross/\studsAlong [count=\legendIndex from 0] in {
+  3005/1/1,3004/1/2,3622/1/3,3010/1/4,3009/1/6,3008/1/8,
+  3003/2/2,3002/2/3,3001/2/4,2456/2/6,3007/2/8
+} {
+  \pgfmathtruncatemacro{\swatchX}{304+213*\legendIndex}
+  \fill[brick\part,rounded corners=.45pt] (\swatchX,432) rectangle ++(34,33);
+  \node[anchor=west,model stage] at ({\swatchX+49},449)
+    {$\studsAcross\!\times\!\studsAlong$};
+}%
+
+% (c) Source voxel, algorithmic assembly, and BrickForma output.
+\node[heading] at (52,506) {(c) 21 object categories};
+\fOneRow{54}{544}{214}{basket,bed,bench,birdhouse}
+\fOneRow{54}{778}{214}{bookshelf,bottle,bowl,bus}
+\fOneRow{45}{1012}{170}{camera,car,chair,guitar,jar}
+\fOneRow{54}{1202}{214}{mug,piano,pot,sofa}
+\fOneRow{54}{1436}{214}{table,tower,train,vessel}
+\foreach \dividerY in {768,1002,1192,1426}
+  \draw[soft divider] (48,\dividerY)--(2752,\dividerY);
+\end{tikzpicture}%
+\endgroup%

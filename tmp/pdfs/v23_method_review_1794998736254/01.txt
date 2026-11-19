@@ -1,0 +1,50 @@
+BrickForma: Crystallizing LLM Geometric Knowledge
+into Small Models for Text-to-Brick Assembly
+Anonymous submission
+(a) Voxel to LEGO brick
+ (b) Connectivity refinement
+Raw Refined
+Brick type 1×1 1×2 1×3 1×4 1×6 1×8 2×2 2×3 2×4 2×6 2×8
+(c) 21 object categories
+Figure1:BrickFormaoverview.(a)Voxel-to-LEGOconversion.(b)Connectivityrefinement.(c)Eachtripletshows,fromleftto
+right, a voxel model from an LLM-authored generator, the resulting LEGO assembly, and a same-category BrickForma output
+(fine-tuned Qwen3-1.7B). Brick-type colors are for display only and are excluded from training targets.
+Abstract
+Geometric spatial reasoning underlies applications from
+roboticstoautomateddesign,yettheabilityoflargelanguage
+models (LLMs) to turn a verbal description into a physically
+connectedthree-dimensionalassemblyremainslargelyunder-
+explored. Brick assembly is a demanding constructive probe
+of this ability: a short, underspecified prompt leaves dimen-
+sions,proportions,andpartlayoutimplicit,andavalidanswer
+must match the semantic intent of the prompt while complet-
+ing this geometry with discrete pieces that interlock through
+studs.WestudythissettingastheText-to-Bricktaskand
+presentBrickForma,aframeworkthatbuildstrainingdatafor
+a compact model using LLM-assisted parametric programs.
+Parametric programs written with large language model as-
+sistance generate 80,000 source voxel models across 21 cat-
+egories on a483 grid, each described at five levels of detail,
+This is an anonymized submission for review purposes only. Dis-
+tribution, citation, or public sharing of this manuscript is strictly
+prohibited. Copyright and publication details will appear in the
+final version if accepted.
+yielding approximately 400,000 captionrecords that tie vary-
+ingamountsoflanguagetosharedgeometry.Avoxel-to-brick
+conversion pipeline with connection analysis and local re-
+finement turns these shapes into geometrically checked brick
+targets, on which we fine-tune Qwen3-1.7B with low-rank
+adaptation to predict brick dimensions and positions from
+text. A mixed-integer linear programming stage then seeks
+an exact cover of the voxel target reconstructed from these
+predictions with a single stud-connected component. On 525
+sharedpromptsspanningfivedescriptionlevels,BrickForma’s
+raw outputs achieve the highest mean VQAScore, PE, and
+SigLIP2 at every level among the three systems. BrickForma
+has a mean invalid-placement ratio of 0.79%, compared with
+0.00% for BrickGPT and 18.42% for BrickNet. These results
+support using executable generators and geometric checks to
+train compact text-to-brick models.
+1 Introduction
+Spatial reasoning and geometric understanding are funda-
+mental to human cognition and to artificial intelligence,

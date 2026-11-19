@@ -1,0 +1,94 @@
+{
+  "modelId": "vx80k5p_20261010_A_bowl_m0001",
+  "status": "success",
+  "geometryValidation": {
+    "passed": true,
+    "tier": "relaxed_modular_geometry_not_physics",
+    "issues": [],
+    "brickCount": 199,
+    "studComponentCount": 1,
+    "groundedComponentCount": 1,
+    "allComponentsGrounded": true,
+    "exactCoverage": true,
+    "colorPreserved": true,
+    "missingVoxelCount": 0,
+    "extraVoxelCount": 0,
+    "upperAttachedBrickCount": 37,
+    "installationSequenceVerified": false,
+    "recoloredVoxelCount": 0,
+    "minimumSupportFraction": 0.0,
+    "maximumActualCantileverDistance": 3,
+    "fullPhysics": false,
+    "staticVerified": null
+  },
+  "repairAudit": {
+    "passed": true,
+    "originalVoxelCount": 931,
+    "targetVoxelCount": 933,
+    "addedVoxelCount": 2,
+    "removedVoxelCount": 0,
+    "recoloredOriginalVoxelCount": 0,
+    "changedVoxelCount": 2,
+    "changeRatio": 0.0021482277121374865,
+    "maximumChangeRatio": 0.02,
+    "maximumChangedVoxelCount": 18,
+    "occupancyIoU": 0.9978563772775991,
+    "allAdditionsWithinOneManhattanStepOfOriginal": true,
+    "addedColorsFromOriginalPalette": true,
+    "addedVoxelsInternalXYZRGB": [
+      {
+        "xyz": [
+          25,
+          15,
+          5
+        ],
+        "rgb": [
+          59,
+          107,
+          157
+        ]
+      },
+      {
+        "xyz": [
+          25,
+          31,
+          5
+        ],
+        "rgb": [
+          59,
+          107,
+          157
+        ]
+      }
+    ],
+    "sourceExactOccupancyHash": "acfcb684d2fa0cb24dc2f712194bf4a6cd2af7ac5901992ce646be63b9d9185a",
+    "targetExactOccupancyHash": "22018ca1f7eeff1e67cfff3e95a751841e93732d1c16e9ed6a606c26baeb546a",
+    "semanticVerified": false,
+    "staticVerified": null,
+    "fullPhysics": false,
+    "auditorVersion": "mixed_local_repair_audit_q4_v1",
+    "allDeletionsEligibleUnsupportedDetail": true,
+    "groundVoxelCountPreserved": true,
+    "removedVoxelsInternalXYZRGB": []
+  },
+  "physics": {
+    "status": "not_attempted_geometry_only",
+    "gravityEquilibriumPassed": false,
+    "layerPrefixGravityPassed": false,
+    "assumptions": {
+      "studPitchMeters": 0.008,
+      "brickHeightMeters": 0.0096,
+      "massKilogramsPerOccupiedStudBrick": 0.001,
+      "internalContactHalfWidthStuds": 0.25,
+      "groundInsetStuds": 0.05,
+      "gravityMetersPerSecondSquared": 9.80665,
+      "massModel": "uniform mass proportional to occupied stud-brick volume; uncalibrated",
+      "contactModel": "vertical forces at four inset square contact corners per actual overlapping stud",
+      "groundModel": "unanchored horizontal plane, compression only",
+      "loadCase": "self weight only; no external lateral force, impact, or baseplate anchoring",
+      "clutchCapacityNewtons": null
+    },
+    "staticVerified": null,
+    "fullPhysics": false
+  }
+}
