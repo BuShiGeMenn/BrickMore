@@ -1,0 +1,131 @@
+\ProvidesPackage{chinesecal}
+        [2026/06/18 v0.1 %
+         Chinese calendar for polyglossia]
+
+\@ifundefined{ifchinese@traditional}%
+  {\newif\ifchinese@traditional}{}
+
+\DeclareKeys[chinesecal]
+  {
+    twenty.store = \chinesecal@twenty,
+    twenty.initial:n = 二十,
+    thirty.store = \chinesecal@thirty,
+    thirty.initial:n = 三十,
+    eleven.store   = \chinesecal@eleven,
+    eleven.initial:n = 冬月,
+    twelve.store = \chinesecal@twelve,
+    twelve.initial:n = \ifchinese@traditional 臘月\else 腊月\fi,
+    day.choice:,
+    day / ordinal.code =
+      {%
+        \@chinesecal@ordinaldaytrue
+      },
+    day /  stem-branch.code =
+      {%
+        \@chinesecal@ordinaldayfalse
+      },
+    day.default:n = ordinal,
+    day/unknown.code = \PackageWarning{chinesecal}{Unknown day option `#1'},
+    year.choice:,
+    year / stem-branch.code =
+      {%
+        \@chinesecal@zodiacyearfalse
+      },
+    year /  zodiac.code =
+      {%
+        \@chinesecal@zodiacyeartrue
+      },
+    year.default:n = stem-branch,
+    year/unknown.code = \PackageWarning{chinesecal}{Unknown year option `#1'},
+    year-prefix.store = \chinesecal@yearprefix,
+    year-prefix.initial:n = \ifchinese@traditional 農曆\else 农历\fi,
+    gregorian-year.if = @chinesecal@gregorianyear,
+    gregorian-year.default:n = true,
+    gregorian-year-prefix.store = \chinesecal@gregorianyearprefix,
+    gregorian-year-prefix.initial:n = 公元,
+  }
+
+\newif\if@chinesecal@ordinalday\@chinesecal@ordinaldaytrue
+\newif\if@chinesecal@zodiacyear\@chinesecal@zodiacyearfalse
+\newif\if@chinesecal@gregorianyear\@chinesecal@gregorianyearfalse
+
+\ProcessKeyOptions[chinesecal]
+
+\def\chinesecal@month#1{\ifcase#1\or 正月\or 二月\or 三月\or 四月\or 五月\or 六月\or
+  七月\or 八月\or 九月\or 十月\or \chinesecal@eleven\or \chinesecal@twelve\fi
+}
+
+\def\chinesecal@day#1{\ifcase#1\or
+  初一\or 初二\or 初三\or 初四\or 初五\or 初六\or 初七\or 初八\or 初九\or 初十\or
+  十一\or 十二\or 十三\or 十四\or 十五\or 十六\or 十七\or 十八\or 十九\or 二十\or
+  \chinesecal@twenty 一\or \chinesecal@twenty 二\or \chinesecal@twenty 三\or \chinesecal@twenty 四\or
+  \chinesecal@twenty 五\or \chinesecal@twenty 六\or \chinesecal@twenty 七\or \chinesecal@twenty 八\or
+  \chinesecal@twenty 九\or \chinesecal@thirty\fi
+}
+
+\def\chinesecal@stem#1{\ifcase#1\or
+  甲\or 乙\or 丙\or 丁\or 戊\or 己\or 庚\or 辛\or 壬\or 癸\fi
+}
+
+\def\chinesecal@branch#1{\ifcase#1\or
+  子\or 丑\or 寅\or 卯\or 辰\or 巳\or 午\or 未\or 申\or 酉\or 戌\or 亥\fi
+}
+
+\def\chinesecal@leap{\ifchinese@traditional 閏\else 闰\fi}
+
+\def\chinesecal@zodiac#1{\ifcase#1\or
+  鼠\or 牛\or 虎\or 兔\or
+  \ifchinese@traditional 龍\else 龙\fi\or 蛇\or
+  \ifchinese@traditional 馬\else 马\fi\or 羊\or 猴\or
+  \ifchinese@traditional 雞\else 鸡\fi\or 狗\or
+  \ifchinese@traditional 豬\else 猪\fi\fi
+}
+
+\directlua{
+  local cal     = require("calendrica")
+  local chinese = require("calendrica-chinese")
+  
+  local luafnalloc = luatexbase.new_luafunction('chinesecal@gregoriantochinese')
+  token.set_lua('chinesecal@gregoriantochinese', luafnalloc)
+  lua.get_functions_table()[luafnalloc] = function()
+    local year  = tonumber(token.scan_string())
+    local month = tonumber(token.scan_string())
+    local day   = tonumber(token.scan_string())
+    local d = cal.new_date({year = year, month = month, day = day},cal.cal_gregorian)
+    local c = cal.as_date(d, cal.cal_chinese)
+    local year_stem_branch = chinese.chinese_year_name(c.year)
+    local day_stem_branch = chinese.chinese_day_name(cal.as_fixed(c))
+    local leap = c.leap and "\\chinesecal@leap" or ""
+    local last_new_year = cal.new_date({cycle=c.cycle, year=c.year, month=1, leap=false, day=1}, cal.cal_chinese)
+    local gregorian_of_last_new_year = cal.as_date(last_new_year,cal.cal_gregorian).year
+    local out = "{" .. gregorian_of_last_new_year .. "}"
+                .. "{" .. year_stem_branch[1]  .. "}" .. "{" .. year_stem_branch[2] .. "}" 
+                .. "{" .. leap .. "}" .. "{" .. c.month .. "}" .. "{" .. c.day .. "}"
+                .. "{" .. day_stem_branch[1] .. "}" .. "{" .. day_stem_branch[2] .. "}"
+    tex.sprint(\number\catcodetable@atletter,out)
+  end
+}
+
+
+\def\chinesecal@date#1#2#3#4#5#6#7#8{%
+  \if@chinesecal@gregorianyear
+    \chinesecal@gregorianyearprefix #1年%
+  \fi
+  \chinesecal@yearprefix
+  \if@chinesecal@zodiacyear
+    \chinesecal@zodiac{#3}%
+  \else
+    \chinesecal@stem{#2}\chinesecal@branch{#3}%
+  \fi
+  年%
+  #4\chinesecal@month{#5}%
+  \if@chinesecal@ordinalday
+    \chinesecal@day{#6}%
+  \else
+    \chinesecal@stem{#7}\chinesecal@branch{#8}%
+  \fi
+}
+
+\def\chinesedate{\expandafter\chinesecal@date\chinesecal@gregoriantochinese}
+
+\endinput

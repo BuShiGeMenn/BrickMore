@@ -1,0 +1,108 @@
+Algorithm 1BrickForma inference and refinement
+Require:promptc; fine-tuned modelθ; footprint libraryL
+(|L|=20); gridG={0, . . . ,47}3; seedsS=(42,104,2026);
+MILP time limitsT=(12,60,180)s
+Ensure:(B out,status),
+status∈ {Raw,Refined,Draft,Failed}
+1:A ← ∅{completed drafts}
+2:fors∈S(in order)do
+3:(B s,done)←Parse(Decode θ(c;s))
+4:ifdonethen
+5:A ← A ∪ {Bs}
+6:ifErr(B s) = 0then
+7:break{first valid draft}
+8:end if
+9:end if
+10:end for
+11:ifA=∅then
+12:return(∅,Failed){no draft completed}
+13:end if
+14:B←arg min B′∈A Err(B′)
+15:ifErr(B) = 0∧κ(B) = 1then
+16:return(B,Raw){valid and connected}
+17:end if
+18:C← ⋃︁b∈B,fp(b)∈L (︁vox(b)∩G )︁ {overlaps count once}
+19:forτ∈Tdo
+20:B ∗ ←SolveMILP(C,L;τ){exact cover,κ=1(App. C)}
+21:ifB ∗ found∧Audit(B ∗, C)then
+22:return(B ∗,Refined)
+23:end if
+24:end for
+25:QueueReseed(c){recovery: new seeds or 600s}
+26:return(B,Draft){keep the raw draft}
+solver intervention, the main benchmark scores every deliv-
+ered raw BrickForma export, including incomplete drafts;
+Appendix C reports the refinement diagnostic separately.
+Text–image alignment.Each export is rendered in a uni-
+form yellow material from eight512×512orthographic
+views, spaced45 ◦ apart in azimuth at25◦ elevation. Each
+alignment score takes the maximum over views and is then
+averaged across prompts. VQAScore (Lin et al. 2024) is
+the first-token probability of “Yes” under Qwen2.5-VL-7B-
+Instruct(Baietal.2025);PE(Bolyaetal.2025)isthecosine
+similarity between normalized image and text embeddings;
+and SigLIP2 (Tschannen et al. 2025) is the sigmoid of the
+image–text logit.
+Invalid placements.For an export withnplacements in
+fileorder,letI i indicatewhetherplacementiviolatesBrick-
+Net’s inset collision kernel (Kulits and Schmid 2026) given
+the preceding placements. We report the mean per-export
+invalid-placement ratioPinv =n −1 ∑︁ni=1 Ii.
+5.2 Main Results
+Across all 525 prompts, BrickForma’s raw outputs achieve
+the highest mean VQAScore (0.0866), PE (0.1568), and
+SigLIP2 (0.0448) (Table 3), outperforming BrickGPT on
+384,337,and327prompts,respectively.Allsixpairedalign-
+mentcomparisonsremainstatisticallysignificantafterHolm
+correction (Appendix C). For placement validity, BrickGPT
+achieves the lowest meanP inv (0.00%) through physics-
+SystemP inv ↓VQAScore↑PE↑SigLIP2↑
+BrickForma 0.79%0.0866 0.1568 0.0448
+BrickGPT0.00%0.0666 0.1440 0.0194
+BrickNet 18.42% 0.0201 0.1187 0.0011
+Table3:Meanscoresonthe525sharedprompts.BrickForma
+is scored on its delivered raw outputs. Bold marks the best
+mean.
+aware rollback, followedby BrickForma (0.79%) andBrick-
+Net (18.42%); 525, 331, and 139 of their outputs, respec-
+tively, contain no invalid placement (Figure 15). Figures 16
+and 17 show the pooled means and score distributions.
+Comparisonwiththeuntunedbackbone.Tomeasurethe
+effect of parametric supervision, and thus to address(Q2),
+we compare against untuned Qwen3-1.7B on 260 matched
+prompts, assigning zero alignment scores whenever it fails
+to produce a scorable layout. Mean VQAScore, PE, and
+SigLIP2risefrom0.0008,0.0354,and0.0014fortheuntuned
+backboneto0.0649,0.1564,and0.0328forrawBrickForma
+before geometric refinement (Appendix C).
+5.3 Performance across Description Levels
+Addressing(Q1), BrickForma leads on all three alignment
+metrics at every description level, from concise L1 requests
+to detailed L5 specifications (Table 4 and Figure 18). At L1,
+its mean VQAScore is 0.1539, compared with 0.1296 for
+BrickGPTand0.0346forBrickNet;BrickGPTkeepsP inv at
+0.00% at every level. Figure 3 shows qualitative L1 and L2
+examples under matched rendering conditions.
+5.4 Raw versus Refined Outputs
+Toquantifytheeffectofexact-coverreconstruction,weexam-
+ine110raw/refinedpairsfromanearlier114-promptcompar-
+ison; each pair shares the same prompt and model identifier
+(Table 5). Refinement eliminates invalid placements (Pinv
+drops from 0.1897% to 0.0000%) and raises the mean part
+countfrom178.7to421.2.VQAScoreandPEremainessen-
+tiallyunchanged,whereasSigLIP2decreasesfrom0.1379to
+0.1261.
+5.5 Geometric Refinement Audit
+Definingstudcontactsasfootprintoverlapsbetweenadjacent
+layers,wemapthesame110pairsontoagridwitha20LDU
+horizontal pitch and a 24LDU layer height, and align each
+exporttoacommonoccupied-cellorigin.All110pairskeep
+identical occupied voxel unions after translation, while the
+number of single-component assemblies rises from 18 to
+110 and the number of overlap-free layouts from 100 to 110
+(Table 6).
+In the separate 525-prompt diagnostic run, only 46 raw
+drafts form a single stud component, whereas all 525 final
+layouts are single stud-connected components that preserve
+their target voxel unions after the recovery procedure (Ap-
+pendix C).

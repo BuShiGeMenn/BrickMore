@@ -1,0 +1,91 @@
+name oberdiek
+category Package
+revision 79461
+shortdesc A bundle of packages submitted by Heiko Oberdiek
+longdesc The bundle comprises packages to provide: bmpsize: get bitmap
+longdesc size and resolution data; centernot: a horizontally-centred
+longdesc \not symbol; chemarr: extensible chemists' reaction arrows;
+longdesc classlist: record information about document class(es) used;
+longdesc colonequals: poor man's mathematical relation symbols;
+longdesc dvipscol: dvips colour stack management; engord: define
+longdesc counter-printing operations producing English ordinals;
+longdesc eolgrab: collect arguments delimited by end of line; flags:
+longdesc setting and clearing flags in bit fields and converting the bit
+longdesc field into a decimal number; holtxdoc: extra documentation
+longdesc macros; hypbmsec: bookmarks in sectioning commands; hypgotoe:
+longdesc experimental package for links to embedded files; hyphsubst:
+longdesc substitute hyphenation patterns; ifdraft: switch for option
+longdesc draft; iflang: provides expandable checks for the current
+longdesc language; pdfcolparallel: fixes colour problems in package
+longdesc parallel; pdfcolparcolumns: fixes colour problems in package
+longdesc parcolumns; pdfcrypt: setting PDF encryption; protecteddef:
+longdesc define a command that protected against expansion;
+longdesc resizegather: automatically resize overly large equations;
+longdesc rotchiffre: performs simple rotation cyphers; scrindex:
+longdesc redefines environment 'theindex' of package 'index', if a class
+longdesc from KOMA-Script is loaded; setouterhbox: set \hbox in outer
+longdesc horizontal mode; settobox: getting box sizes; stackrel:
+longdesc extensions of the \stackrel command; stampinclude: selects the
+longdesc files for \include by inspecting the timestamp of the .aux
+longdesc file(s); thepdfnumber: canonical numbers for use in PDF files
+longdesc and elsewhere; twoopt: commands with two optional arguments;
+longdesc Each of the packages is represented by two files, a .dtx
+longdesc (documented source) and a PDF file; the .ins file necessary for
+longdesc installation is extracted by running the .dtx file with Plain
+longdesc TeX.
+depend auxhook
+depend grfext
+depend grffile
+depend iftex
+depend infwarerr
+depend kvoptions
+depend pdftexcmds
+containersize 31916
+containerchecksum 8984f4dcdf7623fda25c80d0da9b687e8c29ba9ae746085c302adb6c6a165f5d1859896ca6dfd5e590665d7245fc72d402ae22830d3f91e0bdf5c09b9779d405
+doccontainersize 6797372
+doccontainerchecksum daaf69a25a39fe20b2b37a1025022bc35be0c3f7d9fd4423fab52a72057115bc10945ad0343dc8577a210a08ebe83fb39a410bc2660c8510108c55833b6c7358
+srccontainersize 87296
+srccontainerchecksum df3dd80ceaab19c418f811055303c6e79e79fada41e59f090731a72b2e6632dbb2071a02b148f61bbc446f7d09eb8325c0c67c0bffe5f29aafcfcf2d63a50d15
+runfiles size=82
+ texmf-dist/bibtex/bib/oberdiek/oberdiek-bundle.bib
+ texmf-dist/bibtex/bib/oberdiek/oberdiek-source.bib
+ texmf-dist/tex/generic/oberdiek/engord.sty
+ texmf-dist/tex/generic/oberdiek/eolgrab.sty
+ texmf-dist/tex/generic/oberdiek/fibnum.sty
+ texmf-dist/tex/generic/oberdiek/hyphsubst.sty
+ texmf-dist/tex/generic/oberdiek/iflang.sty
+ texmf-dist/tex/generic/oberdiek/pdfcrypt.sty
+ texmf-dist/tex/generic/oberdiek/protecteddef.sty
+ texmf-dist/tex/generic/oberdiek/rotchiffre.sty
+ texmf-dist/tex/generic/oberdiek/setouterhbox.sty
+ texmf-dist/tex/generic/oberdiek/thepdfnumber.sty
+ texmf-dist/tex/latex/oberdiek/bmpsize-base.sty
+ texmf-dist/tex/latex/oberdiek/bmpsize-dvipdfm.def
+ texmf-dist/tex/latex/oberdiek/bmpsize-dvipdfmx.def
+ texmf-dist/tex/latex/oberdiek/bmpsize-dvips.def
+ texmf-dist/tex/latex/oberdiek/bmpsize-test.tex
+ texmf-dist/tex/latex/oberdiek/bmpsize.sty
+ texmf-dist/tex/latex/oberdiek/centernot.sty
+ texmf-dist/tex/latex/oberdiek/chemarr.sty
+ texmf-dist/tex/latex/oberdiek/classlist.sty
+ texmf-dist/tex/latex/oberdiek/colonequals.sty
+ texmf-dist/tex/latex/oberdiek/dvipscol.sty
+ texmf-dist/tex/latex/oberdiek/enparen.sty
+ texmf-dist/tex/latex/oberdiek/flags.sty
+ texmf-dist/tex/latex/oberdiek/holtxdoc.sty
+ texmf-dist/tex/latex/oberdiek/hypbmsec.sty
+ texmf-dist/tex/latex/oberdiek/hypgotoe.sty
+ texmf-dist/tex/latex/oberdiek/ifdraft.sty
+ texmf-dist/tex/latex/oberdiek/pdfcolparallel.sty
+ texmf-dist/tex/latex/oberdiek/pdfcolparcolumns.sty
+ texmf-dist/tex/latex/oberdiek/resizegather.sty
+ texmf-dist/tex/latex/oberdiek/scrindex.sty
+ texmf-dist/tex/latex/oberdiek/settobox.sty
+ texmf-dist/tex/latex/oberdiek/stackrel.sty
+ texmf-dist/tex/latex/oberdiek/stampinclude.sty
+ texmf-dist/tex/latex/oberdiek/twoopt.sty
+catalogue-contact-bugs https://github.com/LaTeX-Package-Repositories/oberdiek/issues
+catalogue-contact-repository https://github.com/LaTeX-Package-Repositories/oberdiek
+catalogue-ctan /macros/latex/contrib/oberdiek
+catalogue-license lppl1.3c
+catalogue-topics collection

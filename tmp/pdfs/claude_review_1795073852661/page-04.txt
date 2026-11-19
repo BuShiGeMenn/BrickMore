@@ -1,0 +1,92 @@
+Agentic batch voxel generation Programs→diverse source shapes
+1 Specification 2 LLM programs 3 Voxels + captions 4 Deduplication
+8 BrickForma 7 Training records 6 Contact screening 5 Brick conversion
+SPEC
+21 classes; 40 fam./class
+483; 750–1,250 voxels
+ChatGPT 6.1 Sol
+shape(params)
+emit(x,y,z)
+Write + run generators
+Parametric programs
+L1 L2 L3
+L4L5
+Five caption levels
+One shared LEGO model
+1
+Exact + canonical hashes
+80k unique voxel shapes
+Geometry checks
+Layer-wise exact cover
+MRV / MILP / early beam
+mg
+Self-weight LP + prefixes
+Tipping + clutch demand
+LDR TXT JSON
+Brick layouts + 5 captions
+Audit + screening status
+LoRA→Qwen3-1.7B
+Text→bricks + refinement
+Figure 2: Data-construction workflow. GPT-6.1 Sol assists in writing parametric programs that produce voxel shapes and their
+captions.Afterdeduplication,theshapesareconvertedtobricks,refined,andcheckedbeforeexport.Dashedarrowstracecontact
+screening and its recorded status. Brick colors follow the legend in Figure 1.
+Item Value
+Base model Qwen3-1.7B (bf16)
+Adaptation LoRA,r= 16,α= 32, dropout0.05,
+all linear layers
+Optimization LR10 −4, cosine, 100 warm-up steps,
+3 epochs
+Batch / max length effective 8 (8 GPUs×1) / 8,192
+Hardware DDP, 8×RTX 4090D (24GB)
+Released checkpoint step 79,000 (best validation loss)
+Software transformers 4.51.3, trl 0.17.0, peft
+0.15.2
+Table 2: Fine-tuning configuration (details in Appendix B).
+a shape fall in the same partition. The483 workspace uses
+20 oriented footprints (the 11 brick sizes in their distinct
+planar rotations). Each instruction lists the allowed brick
+dimensions,andthetargetgivesoneplacementperline,such
+as2×4 (x, y, z), ordered first by Y and then by X. Targets
+encode pure geometry, with no color tokens.
+Training follows the BrickGPT Qwen3 recipe (Pun et al.
+2025) (Table 2), with unpacked sequences to preserve cap-
+tion boundaries. The run completed 133,860 steps in 25.3
+hours on eight GPUs. Validation loss reached its minimum
+of 0.0308 at step 79,000, which we release as the check-
+point, and rose slightly to 0.0339 by the end of epoch 3
+(Appendix B).
+4.2 Inference and Refinement
+AsoutlinedinAlgorithm1,decodingrunswiththinkingdis-
+abled,temperature0.7,top-p0.9,andan8,192-tokenbudget,
+trying seeds 42, 104, and 2026 in order. A draft is complete
+onceitemitsanend-of-sequencetoken.Thepipelinestopsat
+the first completed draft that passes the geometry validator;
+if none passes, it takes the completed draft with the fewest
+validatorerrors,andifnodraftcompletes,itreportsafailure.
+HereErr(B)countsthevalidatorerrorsinalayoutB(unsup-
+ported footprints, out-of-bounds placements, and overlaps),
+soadraftisvalidwhenErr(B) = 0,andκ(B)isthenumber
+ofstud-connectedcomponents.Avaliddraftwithκ(B) = 1
+is returned unchanged.
+Forallotherdrafts,weisolatethesemanticshapeproposal
+by forming the in-bounds voxel unionCof all placements
+withasupportedfootprint(countingoverlapsonce)andhand
+structural assembly to an MILP solver. The solver seeks an
+exact cover ofCthat forms a single stud-connected compo-
+nent, under time limits of 12, 60, and 180 seconds, and an
+independent audit then checks placement validity, coverage,
+and connectivity. Because the cover is exact, a refined lay-
+out occupies exactly the voxel setCderived from its draft.
+If all time limits are exhausted, the pipeline keeps the raw
+draft and queues a reseed; optional recovery runs extend the
+budget to 600 seconds or sample additional seeds. Through-
+outtheevaluation,wecallpre-solvermodeloutputsrawand
+solver-reconstructed outputsrefined(Appendix C gives the
+exact-cover constraints).
+5 Comparative Evaluation
+5.1 Setup and Metrics
+WeevaluateBrickFormaagainstBrickGPTandBrickNeton
+525sharedpromptsspanning21categoriesandfivedescrip-
+tion levels (105 prompts per level). Scoring one delivered
+output per system and prompt yields 1,575 LDraw exports.
+To isolate the geometric quality of the learned model before

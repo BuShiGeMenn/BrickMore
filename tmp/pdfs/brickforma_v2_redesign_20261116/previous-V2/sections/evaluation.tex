@@ -1,0 +1,45 @@
+\section{Comparative Evaluation}
+\label{sec:eval}
+\subsection{Setup and Metrics}
+\label{sec:setup}
+The November 16 evaluation contains 1,315 LDraw exports across two cohorts spanning 21 categories and five description levels. Group B is the main comparison: 265 shared prompts, 53 per level, with one delivered output per system per prompt. The BrickForma inputs are raw outputs generated with its Q8\_0 weights. Group A contains 260 matched prompts for BrickGPT and BrickNet. Figure~\ref{fig:comparison-cohorts} summarizes the counts. We score all supplied exports in both cohorts.
+
+We use uniform yellow material and render each export at $512{\times}512$ from eight orthographic azimuths at $45^\circ$ intervals and $25^\circ$ elevation. For each text--image metric we take the maximum over views, then average over prompts. VQAScore~\cite{vqascore} uses the first-token probability of \textquotedblleft Yes\textquotedblright\ from Qwen2.5-VL-7B-Instruct~\cite{qwen25vl}. PE~\cite{pe} uses cosine similarity of normalized embeddings, and SigLIP2~\cite{siglip2} uses the sigmoid of the image--text logit. We compute $P_{\mathrm{inv}}$ as the mean fraction of invalid placements per model in export order, using BrickNet's inset collision kernel~\cite{bricknet}.
+
+\subsection{Performance across Description Levels}
+Table~\ref{tab:levels} and Figure~\ref{fig:comparison-levels} address Q1 by separating Group B into L1--L5. BrickForma leads PE and SigLIP2 at all five levels and VQAScore at L2--L5. At L1 (13.4 words on average), BrickGPT has a slightly higher VQAScore (0.1911 versus 0.1841). BrickGPT has the lowest mean $P_{\mathrm{inv}}$ at each level. Figure~\ref{fig:gallery} illustrates individual outcomes from the same comparison.
+\input{sections/level_results}
+
+\subsection{Aggregate Results}
+\input{sections/main_results_table}
+BrickForma attains the highest mean VQAScore (0.1079), PE (0.1572), and SigLIP2 (0.0565) on Group B (Table~\ref{tab:main}). It exceeds BrickGPT on 188, 166, and 168 of 265 prompts for the three metrics, respectively. All six pairwise comparisons pass Holm correction under both paired tests (Appendix~\ref{app:eval}). The raw BrickForma exports have mean $P_{\mathrm{inv}}$ of 0.81\%, compared with 0.00\% for BrickGPT and 17.88\% for BrickNet. Figures~\ref{fig:comparison-means} and~\ref{fig:comparison-distributions} show the means and score distributions.
+
+\subsection{Geometry Before and After Reconstruction}
+\label{sec:diagnostics}
+We assess reconstruction on 110 raw/retiled pairs from the earlier 114-prompt comparison. Adjacent-layer footprint overlap defines stud contacts. After mapping exports to a grid with 20 LDU horizontal pitch and 24 LDU layer height and translating occupied cells to a common origin, all 110 pairs have equal voxel unions. The number with a single stud component rises from 18 to 110 (Table~\ref{tab:export-audit}).
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Export measure & Raw & Retiled \\
+\midrule
+Single stud component & 18/110 & 110/110 \\
+Mean stud components & 4.29 & 1.00 \\
+No body-cell overlap & 100/110 & 110/110 \\
+\midrule
+\multicolumn{3}{@{}l@{}}{Equal voxel unions after translation: 110/110} \\
+\bottomrule
+\end{tabular}
+\caption{Earlier export audit of 110 matched raw/retiled pairs. Union equality uses translation normalization.}
+\label{tab:export-audit}
+\end{table}
+
+Across these pairs $P_{\mathrm{inv}}$ falls from 0.1897\% to 0.0000\%, while mean part count rises from 178.7 to 421.2. In the separate 525-prompt diagnostic cohort, 46 raw layouts (8.8\%) have a single stud component, and all 525 final layouts pass both geometry checks after the reported recovery procedure (Appendix~\ref{app:eval}).
+
+\section{Limitations and Discussion}
+The transfer described in Q2 combines program design, geometric checks, and supervised fine-tuning. Isolating the contribution of large-model program authoring would require controls with alternative generators and matched training budgets.
+
+The delivered systems use different inference settings and part libraries. Description levels vary in both content and length, and long descriptions may be truncated (Appendix~\ref{app:eval}). Alignment scores describe rendered appearance, while $P_{\mathrm{inv}}$ measures collisions under the stated file order. Physical stability and assembly-order feasibility require separate validation.
+
+\section{Conclusion}
+BrickForma uses executable programs to synthesize voxel shapes and converts them into checked training layouts for Qwen3-1.7B. On the 265 matched prompts, its raw exports lead all three alignment metrics in aggregate. Earlier reconstruction audits show that exact-cover repair can preserve the predicted volume while supplying connections that the model frequently misses.

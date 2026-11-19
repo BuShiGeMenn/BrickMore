@@ -1,0 +1,73 @@
+Figure 9: Geometric pass rates by category for the three conversion releases in Table 7.
+Baseline Metric W/L/T Signp H Wilc.p H
+BrickGPT VQAScore 384/141/01.5×10 −26 4.8×10 −20
+PE 337/188/01.6×10 −10 3.1×10 −12
+SigLIP2 327/198/02.0×10 −8 7.3×10 −12
+BrickNet VQAScore 460/65/01.6×10 −73 4.6×10 −60
+PE 406/119/04.6×10 −37 1.3×10 −47
+SigLIP2 408/115/29.4×10 −39 2.4×10 −42
+Table10:Two-sidedpairedtestsonthe525prompts.W/L/T
+countsBrickForma’swins,losses,andties.Eachtestapplies
+Holm correction across its six comparisons.
+Forma places bricks in a483 workspace, which partly ex-
+plains the difference in part counts. The systems also differ
+in candidate selection, filtering, and post-processing. On the
+BrickFormaside,45ofthe114comparisonoutputs,together
+withtheirprompts,werechosenbyhumanreviewasthebest
+ofsixcandidatephrasingsinacategory–levelgroup;awinner
+wasfoundin79ofthe105groups,and45ofthosewinnersen-
+teredthiscomparison.Theremaining69outputscomefrom
+later fill-in, regeneration, collaborator, and review rounds:
+35 replaced a judged winner in 34 groups, and 34 filled 26
+groups in which no candidate had been judged acceptable.
+Together, the 114 outputs cover all 105 groups.1 The 114
+outputs comprise 110 refined layouts and four raw layouts.
+The earlier BrickGPT records report an eight-regeneration
+budget with Gurobi disabled.
+Sensitivityoftheearliercomparison.Withequalweight-
+ing over the 105 category–level groups, BrickForma scores
+1The six candidates are the five new-batch phrasings and one
+first-batch phrasing documented in the evaluation-set README.
+Of the 69 later outputs, 21 come from a review round, 16 and 7
+from two collaborator-contributed sets, 12 from a second-round
+redo, 7 from a third-round fill-in, 5 from regeneration, and 1 from
+a car-specific trial, as recorded in the delivery manifest. BrickGPT
+wasthenrunonceoneachselectedprompt(seed42),andBrickNet
+contributed one accepted sample per prompt (up to 30 attempts).
+0.2347, 0.1840, and 0.1257 and BrickGPT scores 0.1511,
+0.1459,and0.0318onVQAScore,PE,andSigLIP2,respec-
+tively. After excluding prompts truncated by each encoder,
+PE is 0.1821 versus 0.1445 on 89 prompts, and SigLIP2 is
+0.1088 versus 0.0301 on 85 prompts. The PE and SigLIP2
+text encoders read at most 72 and 64 tokens, respectively.
+Inference refinement.For the clipped voxel unionC,
+letB(v)index the candidate placements from the oriented
+footprint library that covervand lie entirely withinC.
+With binary placement variablesx b, exact coverage re-
+quires ∑︁b∈B(v) xb = 1for eachv∈C, which preserves
+the union and excludes overlaps. To enforce a single stud-
+connected component, a standard single-commodity flow
+formulation routes flow from a virtual rootrthrough di-
+rectedstud-contactedges(b, b′)∈ Ebetweenadjacentlayers.
+Groundedcandidateplacementsb∈ Bgndreceiverootinflow
+fr,b ≥0; internal edge flows satisfy0≤f b,b′ ≤M xb and
+0≤f b,b′ ≤M xb′ with capacity boundM=|C|; and flow
+conservation ∑︁(u,b)∈E∪{(r,b)} fu,b −∑︁(b,v)∈E fb,v =x ben-
+sures that every selected placement is connected to the root.
+We solve the MILP with SciPy’s HiGHS interface under the
+time tiers of Algorithm 1, and a feasible cover must also
+pass the independent placement, coverage, and connectiv-
+ity audit. The logged run summaries record the solver time
+tiers and audit outcomes, but per-run objective weights and
+gap tolerances were not retained. Contact-based self-weight
+screening uses a separate LP (Appendix A).
+Diagnostic cohort.To probe what the fine-tuned model
+learns, we inspected 525 BrickForma generations from a di-
+agnostic set (21 categories×five levels×five phrasings).
+Together with 105 first-batch prompts, this diagnostic batch
+formed the six-phrasing candidate pool from which 45 of
+the 114 comparison outputs were selected (35 of them from
+the 525), as described above. Algorithm 1 describes the de-
+fault candidate-selection and refinement rules. The diagnos-
+tic manifests record either a refinement tier or a raw layout
+kept unchanged. For 28 prompts, a recovery path sampled

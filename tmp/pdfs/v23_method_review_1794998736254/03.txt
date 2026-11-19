@@ -1,0 +1,90 @@
+Agentic batch voxel generation Programs→diverse source shapes
+1 Specification 2 LLM programs 3 Voxels + captions 4 Deduplication
+8 BrickForma 7 Training records 6 Contact screening 5 Brick conversion
+SPEC
+21 classes; 40 fam./class
+483; 750–1,250 voxels
+ChatGPT 6.1 Sol
+shape(params)
+emit(x,y,z)
+Write + run generators
+Parametric programs
+L1 L2 L3
+L4L5
+Five caption levels
+One shared LEGO model
+1
+Exact + canonical hashes
+80k unique voxel shapes
+Geometry checks
+Layer-wise exact cover
+MRV / MILP / early beam
+mg
+Self-weight LP + prefixes
+Tipping + clutch demand
+LDR TXT JSON
+Brick layouts + 5 captions
+Audit + screening status
+LoRA→Qwen3-1.7B
+Text→bricks + refinement
+Figure 2: Data-construction workflow. GPT-6.1 Sol assists in writing parametric programs that produce voxel shapes and
+captions. After deduplication, the shapes are converted to bricks, refined, and checked before export. Dashed arrows trace
+contact screening and its recorded status. Brick colors follow the legend in Figure 1.
+2 Related Work
+Brick assembly and generation.Prior work formulates
+brickassemblyasgraphgeneration,sequentialconstruction,
+or structural understanding (Thompson et al. 2020; Chung
+etal.2021;Walsmanetal.2022).BrickGPT(Punetal.2025)
+predicts autoregressive placement sequences and validates
+candidate bricks during decoding, while BrickNet (Kulits
+and Schmid 2026) adopts an assembly-graph representation
+overabroadercatalogofpartsandconnectors.Ratherthanre-
+lying solely on autoregressive decoding or graph prediction
+to maintain structural validity, BrickForma predicts abso-
+lutegrid placementsforrectangular footprintsanddelegates
+globalstudconnectivitytoexact-covervoxelreconstruction.
+Stability analysis.StableLego introduces a force-balance
+modeltoevaluateblock-stackingassemblies(Liuetal.2024).
+InBrickForma,inference-timerefinementenforcesstudcon-
+nectivity and exact voxel coverage, while our dataset-level
+contact screening applies complementary force and ground-
+contact assumptions to flag physically plausible structures
+(Appendix A).
+Procedural data and parameter-efficient fine-tuning.
+Proceduralgenerationenablessystematiccontrolovershape
+diversity and dataset scale (Raistrick et al. 2023). Brick-
+Forma leverages an LLM to author executable parametric
+generators, verifies their geometric outputs algorithmically,
+and fine-tunes a compact text-only model on the resulting
+caption–placementpairsviaLoRA(Huetal.2022),adopting
+BrickGPT’s serialized placement representation (Pun et al.
+2025).
+3 Dataset Construction
+3.1 Parametric Voxel Generation
+To crystallize broad geometric priors into explicit supervi-
+sion, GPT-6.1 Sol assists in authoring analytic parametric
+generator programs across 21 object categories, each par-
+titioned into 40 structural families (47–48 instances per
+family in each 40,000-model shard). For every instance, a
+planning module samples independent design parameters—
+governingcategory-specificcomponents,proportions,open-
+ings, and support structures—and deterministically raster-
+izes the geometry onto a483 grid (Y=0ground contact)
+while deriving L1–L5 captions from the same underlying
+plan. Rather than applying random cell deletion, cavity fill-
+ing, or post-hoc bridges, density adjustments regenerate the
+entire shape from its continuous parameters until automated
+checks confirm 750–1,250 occupied voxels and a single six-
+neighbor connected component. Exact and canonical oc-
+cupancy hashes across 48 axis and sign transforms verify
+zero cross-shard duplicates, with geometry plans and ver-
+sion identifiers preserved alongside each record (Figure 2,
+whereshape(params)denotes the analytic shape and
+emit(x,y,z)records occupied voxel coordinates).
+BrickForma-48 (archived underBrickMore-48in the
+accompanying dataset and checkpoint releases) pairs each
+shape with five bilingual descriptions. L1 names the object
+and its primary parts, whereas L2–L5 progressively layer
+structural, proportional, appearance, and viewpoint details
+onto the exact same source geometry (see Appendix A for a
+birdhouse example).

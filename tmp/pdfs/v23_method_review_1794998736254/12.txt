@@ -1,0 +1,73 @@
+Figure 9: Geometric pass rates by category for the three conversion releases in Table 7.
+Baseline Metric W/L/T Signp H Wilc.p H
+BrickGPT VQAScore 384/141/01.5×10 −26 4.8×10 −20
+PE 337/188/01.6×10 −10 3.1×10 −12
+SigLIP2 327/198/02.0×10 −8 7.3×10 −12
+BrickNet VQAScore 460/65/01.6×10 −73 4.6×10 −60
+PE 406/119/04.6×10 −37 1.3×10 −47
+SigLIP2 408/115/29.4×10 −39 2.4×10 −42
+Table 10: Two-sided paired tests on 525 prompts. W/L/T
+countsBrickFormawins,lossesandties.EachtestusesHolm
+correction across six comparisons.
+Forma places bricks in a483 workspace, which partly ex-
+plains the difference in part counts. The systems differ in
+candidate selection, filtering, and post-processing. On the
+BrickForma side, 45 of the 114 comparison outputs, to-
+gether with their prompts, were chosen by human review
+as the best of six candidate phrasings in a category–level
+group; a winner was available in 79 of 105 groups, and 45
+ofthosewinnersenteredthiscomparison.Theremaining69
+outputs come from later fill-in, regeneration, colleague, and
+reviewrounds:35replacedajudgedwinnerin34groups,and
+34 filled 26 groups in which no candidate had been judged
+acceptable; together the 114 outputs cover all 105 groups.1
+The 114 outcomes comprised 110 refined layouts and four
+raw layouts. The earlier BrickGPT records report an eight-
+regeneration budget and Gurobi disabled.
+Sensitivityoftheearliercomparison.Withequalweight-
+ing over the 105 category–level groups, BrickForma scores
+1The six candidates are the five new-batch phrasings and one
+first-batch phrasing documented in the evaluation-set README.
+Amongthe69:review_5921,acolleaguesuccessset16,second-
+roundredo12,third-roundfill-in7,colleaguenine_ldr7,regen-
+eration 5, andcar_trials1, as recorded in the 11-07 delivery
+manifest. BrickGPT was then run once on each selected prompt
+(seed 42); BrickNet contributed one accepted sample per prompt
+(up to 30 attempts).
+0.2347 / 0.1840 / 0.1257 and BrickGPT scores 0.1511 /
+0.1459 / 0.0318 on VQAScore / PE / SigLIP2. After ex-
+cluding prompts truncated by each encoder, PE is 0.1821
+versus 0.1445 on 89 prompts and SigLIP2 is 0.1088 versus
+0.0301 on 85 prompts. The PE and SigLIP2 text encoders
+read at most 72 and 64 tokens, respectively.
+Inference refinement.For the clipped voxel unionC,
+letB(v)index candidate placements from the oriented
+footprint library that covervand stay entirely withinC.
+Withbinaryplacementvariablesx b,exactcoveragerequires∑︁
+b∈B(v) xb = 1for eachv∈C. This preserves the union
+and excludes overlaps. To enforce a single stud-connected
+component, a standard single-commodity flow formulation
+routesflowfromavirtualrootrthroughdirectedstud-contact
+edges(b, b′)∈ Eacross adjacent layers: grounded candidate
+placementsb∈ Bgnd receive root inflowfr,b ≥0, internal
+edge flows satisfy0≤f b,b′ ≤M xb and0≤f b,b′ ≤M xb′
+(for capacity boundM=|C|), and flow conservation∑︁
+(u,b)∈E∪{(r,b)} fu,b − ∑︁(b,v)∈E fb,v =x b ensures every
+selected placement is connected to the root. SciPy’s HiGHS
+MILPinterfaceusesthetimetiersinAlgorithm1.Afeasible
+cover must also pass the independent placement, coverage,
+and connectivity audit. The logged run summaries record
+the solver time tiers and independent audit outcomes, while
+per-run objective weights and gap tolerances were not re-
+tained. Contact-based self-weight screening uses a separate
+LP (Appendix A).
+Diagnostic cohort.To probe what the fine-tuned model
+learns, we inspected 525 BrickForma generations from a di-
+agnostic set (21 categories×five levels×five phrasings).
+The 525-prompt diagnostic batch, together with 105 first-
+batch prompts, formed the six-phrasing candidate pool from
+which 45 of the 114 comparison outputs were selected (35
+of them from the 525), as described above. Algorithm 1 de-
+scribes the default candidate-selection and refinement rules.
+The diagnostic manifests record either a refinement tier or
+a raw layout kept unchanged. For 28 prompts a recovery
