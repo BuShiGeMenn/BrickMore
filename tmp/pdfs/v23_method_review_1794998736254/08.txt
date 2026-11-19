@@ -1,0 +1,103 @@
+2025. SigLIP 2: Multilingual Vision-Language Encoders
+with Improved Semantic Understanding, Localization, and
+Dense Features. arXiv:2502.14786.
+Walsman, A.; Zhang, M.; Kotar, K.; Desingh, K.; Farhadi,
+A.;andFox,D.2022. BreakandMake:InteractiveStructural
+Understanding Using LEGO Bricks. InProceedings of the
+European Conference on Computer Vision (ECCV).
+Yang, A.; Li, A.; Yang, B.; Zhang, B.; Hui, B.; Zheng, B.;
+Yu, B.; Gao, C.; et al. 2025. Qwen3 Technical Report.
+arXiv:2505.09388.
+Zhou,D.;Xu,Y.;Huang,Z.;Yan,Z.;Liu,W.;Miao,Y.;Ren,
+J.;andLiu,F.2026. PaperFoldingPuzzles:CanMultimodal
+LargeLanguageModelsPerformSpatialReasoning? InPro-
+ceedings of the AAAI Conference on Artificial Intelligence,
+volume 40, 13584–13592.
+A Technical Appendix: Dataset Details
+The historical figures and tables in this appendix retain the
+suppliedmeasurementsandmodelrenders,withlabelstrans-
+lated into English. They use release-specific versions and
+criteria and are not substitutes for the integrated statistics or
+the current main comparison.
+Contact-based gravity screening.We model 8mm stud
+spacing, 9.6mm brick height, and 1g per occupied stud-
+brick cell. Each overlapping stud contributes four vertical
+contactpointsatthecornersofasquarewithhalf-width0.25
+stud. The horizontal ground can only provide compression
+at the corners of ground-level brick footprints inset by 0.05
+stud. A linear program (LP) seeks vertical force balance
+and balance of the two gravity-induced moments for every
+brick. We verify the resulting contact forces against these
+equations.Afterthefinalassemblypasses,thesamecheckis
+appliedtothebricksthrougheachcompletedlayer,bottomto
+top. Each stud-connected component of a prefix is checked
+independently on the unanchored ground.
+Tippingmarginandclutchdemand.Thetippingmargin
+is the minimum signed inward distance from the horizontal
+center-of-mass projection to the edges of the convex hull of
+the ground contacts. We convert the margin from studs to
+meters and reject zero or negative margins within numerical
+tolerance. If the compression-only LP is infeasible after this
+check,asecondLPpermitstensionatinternalstudcontacts.
+It minimizes the largest total tensile force across the four
+contact points of any single stud. We report this minimum
+required clutch force in newtons per stud. Actual clutch ca-
+pacity is uncalibrated. A verified compression-only solution
+qualifiesforagravity-screeningpass,whilesolutionsrequir-
+ing tensile support are recorded separately.
+Caption example.The five captions of one model share a
+prefix and add detail level by level. The L1 prompt is “An
+ovalbirdhousewithcurvedroof,enclosedroomandfronten-
+trance.”ItsL5descriptionis:“Anovalbirdhousewithcurved
+roof, enclosed room and front entrance. The protective roof
+joins the walls; the circular front entrance reaches a real in-
+terior cavity. Curved substantial surfaces carry their contin-
+uouslyattachedfunctionalparts.Overallwidthis1.15times
+depth;heightis0.80timeswidth.Partsfollowfunctionalpo-
+sitions.Continuousred,tan,browncolorregionsdistinguish
+thebodyandattachments.Thefrontrevealsfunctionalparts;
+side and top views reveal depth, connections and layout.”
+Release Passing Added Removed
+Strict v3 7,902 – –
+Relaxed 65,503 428,278 38,230
+Local refinement 79,298 228,582 125
+Table 7: Geometric pass counts of the 80,000 source mod-
+els under successive conversion releases (relaxed: several
+grounded components allowed), with total voxels added and
+removed, as in the corresponding release reports.
+B Technical Appendix: Training Details
+Aggregate throughput is 24,448 tokens/s over eight GPUs,
+and the mean training loss is 0.0273. Evaluation and check-
+pointing run every 500 steps. With TRL 0.15, the unpacked
+multi-GPUpathhangsafterthefirstbackwardpass,whichis
+whytheTRL0.17stackispinned.Becausevalidationlossis
+lowestduringepoch2,twoepochswouldbeamoreeconom-
+ical setting for future runs (about one third less compute).
+Thefullsoftwarestackistransformers4.51.3,trl0.17.0,peft
+0.15.2, datasets 3.6.0, and accelerate 1.6.0, with bf16 preci-
+sion, gradient checkpointing, and unpacked sequences.
+Progress Step Validation loss
+Start 500 0.1410
+— 1,500 0.0950
+— 10,500 0.0509
+— 22,500 0.0404
+≈End of epoch 1 44,500 0.0337
+— 65,500 0.0316
+Best (epoch 1.77) 79,000 0.0308
+End of epoch 3 133,860 0.0339
+Table 8: Validation loss on the 2,000-sample validation sub-
+set. One epoch is≈44,620 steps; the nearest evaluation to
+the end of epoch 1 is step 44,500.
+C Technical Appendix: Additional
+Evaluation Material
+Matched evaluation.The 525 matched prompts combine
+265 previously delivered BrickForma Q8_0 exports with
+260 supplemental exports. We score the single raw export
+supplied for each prompt. This protocol measures the de-
+livered drafts without filtering on completion or geome-
+try, rerunning Algorithm 1, or choosing a candidate by its
+scores. The supplemental records flag 8 incomplete gener-
+ations and 96 failures of the source geometry check out of
+260, with potential overlap. The 265 earlier exports lack
+corresponding completion and geometry flags. We score
+all 1,575 LDraw exports on all four metrics, using 12,600

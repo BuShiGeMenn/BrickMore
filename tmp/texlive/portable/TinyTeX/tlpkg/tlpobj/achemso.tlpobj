@@ -1,0 +1,103 @@
+name achemso
+category Package
+revision 79461
+shortdesc Support for American Chemical Society journal submissions
+longdesc The bundle provides a BibTeX style file following the
+longdesc requirements of the American Chemical Society (ACS), and a
+longdesc package to pass settings to the BibTeX style. It also includes
+longdesc a class which was used for submission support in the past. All
+longdesc of this material is largely of historical interest and is
+longdesc retained for stability. For new material, the chem-acs style is
+longdesc available for bibliographies, and a short template for the ACS
+longdesc website is better suited to submission.
+containersize 19516
+containerchecksum 0983ba3c4e72b4727e5b76ed3b275cda3df368a2df834a7d4abf0b897574382b88888bcf8dbd1b516b72727c1981e503278242a63b20d292eef5966422d2cba1
+doccontainersize 808496
+doccontainerchecksum f72d723e415a7f83eb9d3f0e4027728f3465cad0130942dadcc98d6c5cf97734d8ad48367fa5c9f93a7363580e94ee1c6b76fafb6a0c0773b090c711a87c6117
+srccontainersize 25892
+srccontainerchecksum 447feef887bf9f6421bad9f7b79e9d868ed9b727b77234b2ce5cbfb80298a372764ec92fc3be1f162dbce55ca41794643362e9c763d0a189b1d2d7ee04823b22
+runfiles size=106
+ texmf-dist/bibtex/bst/achemso/achemso.bst
+ texmf-dist/bibtex/bst/achemso/biochem.bst
+ texmf-dist/tex/latex/achemso/achemso-aaembp.cfg
+ texmf-dist/tex/latex/achemso/achemso-aaemcq.cfg
+ texmf-dist/tex/latex/achemso/achemso-aamick.cfg
+ texmf-dist/tex/latex/achemso/achemso-aanmf6.cfg
+ texmf-dist/tex/latex/achemso/achemso-aapmcd.cfg
+ texmf-dist/tex/latex/achemso/achemso-aastgj.cfg
+ texmf-dist/tex/latex/achemso/achemso-abmcb8.cfg
+ texmf-dist/tex/latex/achemso/achemso-abseba.cfg
+ texmf-dist/tex/latex/achemso/achemso-acbcct.cfg
+ texmf-dist/tex/latex/achemso/achemso-accacs.cfg
+ texmf-dist/tex/latex/achemso/achemso-achre4.cfg
+ texmf-dist/tex/latex/achemso/achemso-acncdm.cfg
+ texmf-dist/tex/latex/achemso/achemso-acsccc.cfg
+ texmf-dist/tex/latex/achemso/achemso-acscii.cfg
+ texmf-dist/tex/latex/achemso/achemso-acsodf.cfg
+ texmf-dist/tex/latex/achemso/achemso-aeacb3.cfg
+ texmf-dist/tex/latex/achemso/achemso-aeacc4.cfg
+ texmf-dist/tex/latex/achemso/achemso-aeecco.cfg
+ texmf-dist/tex/latex/achemso/achemso-aelccp.cfg
+ texmf-dist/tex/latex/achemso/achemso-aesccq.cfg
+ texmf-dist/tex/latex/achemso/achemso-aewcaa.cfg
+ texmf-dist/tex/latex/achemso/achemso-afsthl.cfg
+ texmf-dist/tex/latex/achemso/achemso-aidcbc.cfg
+ texmf-dist/tex/latex/achemso/achemso-amacgu.cfg
+ texmf-dist/tex/latex/achemso/achemso-amachv.cfg
+ texmf-dist/tex/latex/achemso/achemso-amclct.cfg
+ texmf-dist/tex/latex/achemso/achemso-amlccd.cfg
+ texmf-dist/tex/latex/achemso/achemso-amlcef.cfg
+ texmf-dist/tex/latex/achemso/achemso-amrcda.cfg
+ texmf-dist/tex/latex/achemso/achemso-anaccx.cfg
+ texmf-dist/tex/latex/achemso/achemso-ancac3.cfg
+ texmf-dist/tex/latex/achemso/achemso-ancham.cfg
+ texmf-dist/tex/latex/achemso/achemso-anmafm.cfg
+ texmf-dist/tex/latex/achemso/achemso-aoiab5.cfg
+ texmf-dist/tex/latex/achemso/achemso-apcach.cfg
+ texmf-dist/tex/latex/achemso/achemso-apchd5.cfg
+ texmf-dist/tex/latex/achemso/achemso-appccd.cfg
+ texmf-dist/tex/latex/achemso/achemso-asbcd6.cfg
+ texmf-dist/tex/latex/achemso/achemso-ascecg.cfg
+ texmf-dist/tex/latex/achemso/achemso-ascefj.cfg
+ texmf-dist/tex/latex/achemso/achemso-bcches.cfg
+ texmf-dist/tex/latex/achemso/achemso-bichaw.cfg
+ texmf-dist/tex/latex/achemso/achemso-bomaf6.cfg
+ texmf-dist/tex/latex/achemso/achemso-cgdefu.cfg
+ texmf-dist/tex/latex/achemso/achemso-chreay.cfg
+ texmf-dist/tex/latex/achemso/achemso-cmatex.cfg
+ texmf-dist/tex/latex/achemso/achemso-crtoec.cfg
+ texmf-dist/tex/latex/achemso/achemso-enfuem.cfg
+ texmf-dist/tex/latex/achemso/achemso-esthag.cfg
+ texmf-dist/tex/latex/achemso/achemso-estlcu.cfg
+ texmf-dist/tex/latex/achemso/achemso-iecred.cfg
+ texmf-dist/tex/latex/achemso/achemso-inoraj.cfg
+ texmf-dist/tex/latex/achemso/achemso-jaaucr.cfg
+ texmf-dist/tex/latex/achemso/achemso-jacsat.cfg
+ texmf-dist/tex/latex/achemso/achemso-jafcau.cfg
+ texmf-dist/tex/latex/achemso/achemso-jceaax.cfg
+ texmf-dist/tex/latex/achemso/achemso-jceda8.cfg
+ texmf-dist/tex/latex/achemso/achemso-jcisd8.cfg
+ texmf-dist/tex/latex/achemso/achemso-jctcce.cfg
+ texmf-dist/tex/latex/achemso/achemso-jmcmar.cfg
+ texmf-dist/tex/latex/achemso/achemso-jnprdf.cfg
+ texmf-dist/tex/latex/achemso/achemso-joceah.cfg
+ texmf-dist/tex/latex/achemso/achemso-jpcafh.cfg
+ texmf-dist/tex/latex/achemso/achemso-jpcbfk.cfg
+ texmf-dist/tex/latex/achemso/achemso-jpccck.cfg
+ texmf-dist/tex/latex/achemso/achemso-jpclcd.cfg
+ texmf-dist/tex/latex/achemso/achemso-jprobs.cfg
+ texmf-dist/tex/latex/achemso/achemso-langd5.cfg
+ texmf-dist/tex/latex/achemso/achemso-mamobx.cfg
+ texmf-dist/tex/latex/achemso/achemso-mpohbp.cfg
+ texmf-dist/tex/latex/achemso/achemso-nalefd.cfg
+ texmf-dist/tex/latex/achemso/achemso-oprdfk.cfg
+ texmf-dist/tex/latex/achemso/achemso-orgnd7.cfg
+ texmf-dist/tex/latex/achemso/achemso-orlef7.cfg
+ texmf-dist/tex/latex/achemso/achemso.cls
+ texmf-dist/tex/latex/achemso/achemso.sty
+ texmf-dist/tex/latex/achemso/natmove.sty
+catalogue-contact-repository https://github.com/josephwright/achemso
+catalogue-ctan /macros/latex/contrib/achemso
+catalogue-license lppl1.3c other-free
+catalogue-topics bibtex-supp chemistry class journalpub tagged-pdf-partially
+catalogue-version 3.14

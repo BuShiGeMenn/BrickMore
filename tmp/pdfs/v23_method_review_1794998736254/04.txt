@@ -1,0 +1,103 @@
+Dataset (release reports)
+Source models / categories / grid 80,000 / 21 /48 3
+Bilingual caption records 400,000
+Failing in full refined release 702 (0.88%)
+Passing in full refined release 79,298
+Piano models restored by revised release 3
+Integrated passing models 79,301
+Fine-tuning corpus
+(model, English caption) samples 396,610
+Training / validation samples 356,955 / 39,655
+Tokens over 3 epochs 2,228,044,818
+Table 1: Dataset and fine-tuning corpus. The two blocks are
+counted separately: the upper block from the dataset release
+reports, the lower block as recorded for the fine-tuning run.
+3.2 Voxel-to-Brick Conversion and Checks
+Converting a connected voxel volume into a buildable brick
+target requires separating mere spatial adjacency from ver-
+tical stud connectivity. Our pipeline tiles each layer with
+same-color rectangular bricks and analyzes the resulting
+stud-connected components. When ungrounded fragments
+arise, local refinement modifies the layout while logging all
+voxel edits against the source shape, raising the geometry-
+pass count from 65,503 to 79,298 (recovering 13,795 fail-
+ures). Across the corpus, refinement adds 228,582 voxels
+and removes 125, while 31,532 passing models require no
+edits at all.
+For challenging layouts, conversion falls back to layer-
+wise exact-cover search or a mixed-integer linear program
+(MILP) that explicitly enforces a stud path to the ground.
+A minimum-remaining-values (MRV) heuristic branches on
+the uncovered voxel with the fewest valid candidate bricks;
+theinitialreleasealsoemployedboundedbeamsearchwhen
+greedy placement failed the geometric audit, ranking partial
+layoutsbyuncoveredvoxelsandremainingstudcomponents.
+Release-levelverificationconfirmsthattargetvoxelsform
+a single six-neighbor component, every brick component is
+grounded, and the brick assembly exactly covers the derived
+target. While multiple independently grounded components
+maypassrelease-levelchecks,inference-timerefinementen-
+forces a stricter single-component constraint. Separately, a
+self-weight screen evaluates the final assembly and, if fea-
+sible, each bottom-up completed-layer prefix, recording the
+tippingmarginandestimatingper-studtensiledemandwhen
+compression alone cannot balance gravity (Appendix A).
+3.3 Integrated Release and Training Corpus
+The full refined release leaves 702 geometry failures. A re-
+vised batch-B piano release passes all 1,905 slots compared
+with 1,902 in the full refined release, yielding an integrated
+count of79,298−1,902 + 1,905 = 79,301passing models.
+Table 1 summarizes both the dataset release counts and the
+recorded fine-tuning corpus.
+Item Value
+Base model Qwen3-1.7B (bf16)
+Adaptation LoRA,r= 16,α= 32, dropout0.05,
+all linear layers
+Optimization LR10 −4, cosine, 100 warm-up steps,
+3 epochs
+Batch / max length effective 8 (8 GPUs×1) / 8,192
+Hardware DDP, 8×RTX 4090D (24GB)
+Released checkpoint step 79,000 (best validation loss)
+Software transformers 4.51.3, trl 0.17.0, peft
+0.15.2
+Table 2: Fine-tuning configuration (details in Appendix B).
+4 BrickForma Text-to-Brick Model
+4.1 Fine-Tuning
+We fine-tune Qwen3-1.7B with LoRA on English L1–L5
+captions paired with their checked brick layouts, using a
+model-level9:1splitsoallfivedescriptionsofagivenshape
+remaininthesamepartition.The48 3 workspaceuses20ori-
+ented footprints (11 brick sizes up to planar rotation). Each
+instruction specifies the allowed brick dimensions, and the
+target lists one placement per line—such as2×4 (x, y, z)—
+serialized Y-first and then X, capturing pure geometry with-
+out color tokens.
+Training follows the BrickGPT Qwen3 recipe (Pun et al.
+2025) (Table 2) with unpacked sequences to preserve cap-
+tion boundaries. The run completed 133,860 steps in 25.3
+hours across eight GPUs. Validation loss reached its mini-
+mum of 0.0308 at step 79,000—which we retain as the re-
+leasedcheckpoint—beforerisingslightlyto0.0339attheend
+of epoch 3 (Appendix B).
+4.2 Inference and Refinement
+AsoutlinedinAlgorithm1,decodingrunswiththinkingdis-
+abled, temperature0.7, top-p0.9, and a 8,192-token budget
+across seeds 42, 104, and 2026. A draft is considered com-
+plete upon emitting an end-of-sequence token; the pipeline
+selects the first completed draft that passes the geometry
+validator, or otherwise the completed draft with the fewest
+reportederrors.Anyvalidrawdraftalreadyformingasingle
+stud-connected component is returned directly.
+For disconnected or overlapping drafts, we isolate the se-
+manticshapeproposalbyformingthein-boundsvoxelunion
+Cof all supported placements (counting overlaps once) and
+delegate structural assembly to an MILP solver. The solver
+seeks an exact cover ofCforming a single stud-connected
+component under time tiers of 12, 60, and 180 seconds, fol-
+lowed by an independent audit of placement validity, cover-
+age,andconnectivity.Ifthebudgetisexhausted,thepipeline
+retains the raw draft and queues a reseed, with optional re-
+coveryrunsextendingthebudgetto600secondsorsampling
+additionalseeds.Throughoutourevaluation,werefertopre-
+solvermodeloutputsasrawandsolver-reconstructedoutputs
+asrefined(see Appendix C for the exact-cover constraints).

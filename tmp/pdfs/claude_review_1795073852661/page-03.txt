@@ -1,0 +1,107 @@
+BrickGPTandBrickNet,coveringtext–imagealignmentand
+invalid placements from concise prompts to detailed speci-
+fications, shows that BrickForma achieves the highest mean
+alignment scores at all five levels.
+2 Related Work
+Brick assembly and generation.Prior work formulates
+brickassemblyasgraphgeneration,sequentialconstruction,
+or structural understanding (Thompson et al. 2020; Chung
+etal.2021;Walsmanetal.2022).BrickGPT(Punetal.2025)
+predicts autoregressive placement sequences and validates
+candidate bricks during decoding, while BrickNet (Kulits
+and Schmid 2026) adopts an assembly-graph representation
+overabroadercatalogofpartsandconnectors.Ratherthanre-
+lying solely on autoregressive decoding or graph prediction
+to maintain structural validity, BrickForma predicts abso-
+lutegrid placementsforrectangular footprintsanddelegates
+globalstudconnectivitytoexact-covervoxelreconstruction.
+Stability analysis.StableLEGO introduces a force-
+balancemodelforevaluatingblock-stackingassemblies(Liu
+et al. 2024). In BrickForma, inference-time refinement en-
+forces stud connectivity and exact voxel coverage, while
+dataset-levelcontactscreeningappliescomplementaryforce
+and ground-contact assumptions to flag physically plausible
+structures (Appendix A).
+3 Dataset Construction
+3.1 Parametric Voxel Generation
+To crystallize broad geometric priors into explicit supervi-
+sion, GPT-6.1 Sol assists in authoring analytic parametric
+generatorprogramsfor21objectcategories,eachpartitioned
+into40structuralfamilies(47–48instancesperfamilyineach
+40,000-model shard). For every instance, a planning mod-
+ule samples independent design parameters, which govern
+category-specific components, proportions, openings, and
+support structures. It then deterministically rasterizes the
+geometry onto a483 grid (Y=0is ground contact) and de-
+rives the L1–L5 captions from the same underlying plan.
+Instead of applying random cell deletion, cavity filling, or
+post-hoc bridges, density adjustments regenerate the entire
+shapefromitscontinuousparametersuntilautomatedchecks
+confirm 750–1,250 occupied voxels forming a single six-
+neighbor connected component. Exact and canonical occu-
+pancy hashes over the 48 axis-permutation and sign trans-
+formsconfirmzerocross-shardduplicates,andthegeometry
+planandversionidentifiersarestoredwitheachrecord(Fig-
+ure 2, whereshape(params)denotes the analytic shape
+andemit(x,y,z)records occupied voxel coordinates).
+BrickForma pairs each shape with five bilingual descrip-
+tions. L1 names the object and its primary parts, and L2–
+L5 progressively add structural, proportional, appearance,
+and viewpoint details about the same source geometry (Ap-
+pendix A gives a birdhouse example).
+3.2 Voxel-to-Brick Conversion and Checks
+Converting a connected voxel volume into a buildable brick
+target requires separating mere spatial adjacency from ver-
+tical stud connectivity. Our pipeline tiles each layer with
+Dataset (release reports)
+Source models / categories / grid 80,000 / 21 /48 3
+Caption records 400,000
+Failing in full refined release 702 (0.88%)
+Passing in full refined release 79,298
+Piano models restored by revised release 3
+Integrated passing models 79,301
+Fine-tuning corpus
+Voxel-model & caption samples 396,610
+Training / test samples 356,955 / 39,655
+Table 1: Dataset and fine-tuning corpus. The two blocks are
+counted separately: the upper block comes from the dataset
+release reports, and the lower block is as recorded for the
+fine-tuning run.
+same-color rectangular bricks and analyzes the resulting
+stud-connected components. When ungrounded fragments
+arise, local refinement modifies the layout and logs every
+voxel edit against the source shape, raising the geometry-
+passcountfrom65,503to79,298(13,795recoveredfailures).
+Across the corpus, refinement adds 228,582 voxels and re-
+moves 125, and 31,532 passing models require no edits at
+all.
+For challenging layouts, conversion falls back to layer-
+wiseexact-coversearchortoamixed-integerlinearprogram
+(MILP) that explicitly enforces a stud path to the ground.
+A minimum-remaining-values (MRV) heuristic branches on
+the uncovered voxel with the fewest valid candidate bricks.
+When greedy placement failed the geometric audit, the ini-
+tial release also used bounded beam search, ranking partial
+layoutsbyuncoveredvoxelsandremainingstudcomponents.
+Release-level verification confirms that the target voxels
+formasinglesix-neighborcomponent,thateverybrickcom-
+ponentisgrounded,andthatthebrickassemblyexactlycov-
+ers the derived target. Release-level checks allow several
+independently grounded components; inference-time refine-
+ment enforces a single component. Separately, a self-weight
+screenevaluatesthefinalassemblyand,wherefeasible,each
+bottom-up prefix of completed layers. It records the tipping
+marginandestimatestheper-studtensiledemandwhencom-
+pression alone cannot balance gravity (Appendix A).
+3.3 Integrated Release and Training Corpus
+Thefullrefinedreleasepasses79,298modelsandleaves702
+geometry failures. A revised release of the batch-B piano
+models passes all 1,905 piano slots, compared with 1,902
+in the full refined release, so the integrated release contains
+79,298−1,902 + 1,905 = 79,301passing models. Table 1
+summarizes the release counts and the fine-tuning corpus.
+4 BrickForma Text-to-Brick Model
+4.1 Fine-Tuning
+We fine-tune Qwen3-1.7B with LoRA on English L1–L5
+captions paired with their checked brick layouts. We split
+the data 9:1 at the model level, so all five descriptions of

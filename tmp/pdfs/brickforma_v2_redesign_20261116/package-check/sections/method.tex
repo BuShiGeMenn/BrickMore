@@ -1,0 +1,40 @@
+\section{Related Work}
+\paragraph{Brick assembly and generation.}
+Prior work treats brick assembly as graph generation, sequential construction, or structure understanding~\cite{thompson2020lego,brickbybrick,breakandmake}. BrickGPT predicts autoregressive placement sequences and checks candidate placements during decoding~\cite{brickgpt}. BrickNet represents a wider range of parts and connectors with an assembly graph~\cite{bricknet}. BrickForma generates absolute grid positions for rectangular footprints and reconstructs the predicted volume to enforce stud connectivity.
+
+\paragraph{Stability analysis.}
+StableLego uses a force-balance model to assess block-stacking assemblies~\cite{stablelego}. BrickForma checks stud connectivity and voxel coverage during geometric reconstruction. The dataset's contact-based screening makes additional assumptions about forces and ground contact (Appendix~\ref{app:dataset}).
+
+\paragraph{Procedural data and parameter-efficient fine-tuning.}
+Procedural generation offers control over shape variation and scale~\cite{infinigen}. BrickForma uses a language model to author executable generators, checks their geometric outputs algorithmically, and fine-tunes a text-only model on the resulting caption--placement pairs using LoRA~\cite{lora}. Its training format follows BrickGPT's serialized placements~\cite{brickgpt}.
+
+\section{Dataset Construction}
+\label{sec:dataset}
+\subsection{Parametric Voxel Generation}
+GPT-6.1 Sol assists in writing parameterized programs for 21 object categories. Each program defines an object family through part dimensions, proportions, openings, and support arrangements. Executing the programs gives 80,000 source voxel models in two 40,000-model shards on a $48^3$ grid, with 750--1,250 occupied cells per object. Exact and canonical occupancy hashes over 48 axis/sign transforms found no cross-shard duplicates. Geometry plans and version identifiers accompany the records (Figure~\ref{fig:data-workflow}).
+
+BrickMore-48 pairs each shape with five bilingual descriptions. L1 expresses the object and its main parts, while progressively richer descriptions add structure, proportions, appearance, and views. The geometry is shared by all five levels, so the same target provides supervision for both concise and detailed requests. Appendix~\ref{app:dataset} gives a birdhouse example.
+
+\subsection{Voxel-to-Brick Conversion and Checks}
+The conversion tiles each layer with same-color rectangular footprints and inspects the resulting stud components. Local bridging and retiling address ungrounded components, with edits recorded against the source voxels. The retile release raises the geometry-pass count from 65,503 to 79,298, recovering 13,795 failures. Across the corpus it adds 228,582 and removes 125 voxels, and 31,532 passing models require no edits.
+
+The release checks that the target voxels are six-neighbor connected, every brick component is grounded, and brick placement exactly covers the derived target. Several individually grounded brick components may pass these release checks. Inference uses a stricter single-component constraint. Contact-based gravity screening records a separate outcome (Appendix~\ref{app:dataset}).
+
+\subsection{Integrated Release and Training Corpus}
+The full retile release contains 702 geometry failures. A revised batch-B piano release passes all 1,905 slots where the full retile release passed 1,902, giving a report-derived integrated count of $79{,}298-1{,}902+1{,}905=79{,}301$. Table~\ref{tab:training-data} reports the release and recorded fine-tuning counts.
+\input{sections/recorded_training_counts}
+
+\section{BrickForma Text-to-Brick Model}
+\label{sec:model}
+\subsection{Fine-Tuning}
+\label{sec:training}
+We fine-tune Qwen3-1.7B with LoRA on English L1--L5 captions and their checked brick layouts. A model-level 9:1 split keeps descriptions of the same shape together. The $48^3$ grid uses 20 oriented footprints (11 brick sizes up to planar rotation). The instruction lists the allowed dimensions, and the target gives one placement per line, such as $2{\times}4\ (x,y,z)$. Dimensions are serialized Y-first, then X. The sequence describes geometry and omits color.
+
+Fine-tuning follows the BrickGPT Qwen3 script~\cite{brickgpt} (Table~\ref{tab:finetune-config}). Unpacked sequences preserve caption boundaries. The run reached 133,860 steps in 25.3 hours on eight GPUs. Validation loss reached 0.0308 at step 79,000, the released checkpoint, and 0.0339 at the end of epoch 3. Appendix~\ref{app:training} records the validation checkpoints.
+\input{sections/finetune_config}
+
+\subsection{Inference and Retiling}
+Algorithm~\ref{alg:inference-retiling} samples with thinking disabled, temperature $0.7$, top-$p$ $0.9$, and at most 8,192 new tokens. It tries seeds 42, 104, and 2026, keeping the first completed draft that passes the geometry validator or the completed draft with the fewest format, library, bounds, and overlap errors. A valid draft with a single stud component is returned as is.
+
+For other drafts, the pipeline forms the in-bounds voxel union $C$ of supported placements, counting overlaps once. Mixed-integer linear programming (MILP) seeks an exact cover of $C$ with one stud-connected component at 12, 60, and 180 seconds. An accepted solution passes an independent audit of placement validity, coverage, and connectivity. If the budget is exhausted, the pipeline can retain the draft and queue a new seed. Recovery runs can sample additional seeds or extend the budget to 600 seconds. We call the drafts \emph{raw} and the accepted reconstructions \emph{retiled}.
+\input{sections/inference_algorithm}
