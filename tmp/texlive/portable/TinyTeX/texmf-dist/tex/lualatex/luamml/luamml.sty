@@ -1,0 +1,341 @@
+%%
+%% This is file `luamml.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% luamml.dtx  (with options: `package,luatex')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from luamml.sty.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file luamml.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%% Copyright (C) 2020-2026 by Marcel Krueger
+%%
+%% This file may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either
+%% version 1.3c of this license or (at your option) any later
+%% version. The latest version of this license is in:
+%%
+%% http://www.latex-project.org/lppl.txt
+%%
+%% and version 1.3 or later is part of all distributions of
+%% LaTeX version 2005/12/01 or later.
+\ProvidesExplPackage {luamml} {2026-06-20} {0.9.2}
+  {Automatically generate presentational MathML from LuaTeX math expressions}
+\int_new:N \l__luamml_flag_int
+\int_new:N \l__luamml_pretty_int
+\tl_new:N \l__luamml_filename_tl
+\tl_new:N \l__luamml_root_tl
+\tl_set:Nn \l__luamml_root_tl { mrow }
+\tl_new:N \l__luamml_label_tl
+\int_new:N \tracingmathml
+
+\int_set:Nn \l__luamml_pretty_int { 1 }
+\tex_mathflattenmode:D = 0 \scan_stop:
+\lua_load_module:n { luamml-mathflatten }
+\lua_load_module:n { luamml-tex }
+\hook_new_with_args:nn { luamml / converted } { 1 }
+
+\cs_new_protected:Npn \__luamml_output_hook:n {
+  \hook_use:nnw { luamml / converted } { 1 }
+}
+\__luamml_register_output_hook:N \__luamml_output_hook:n
+
+\cs_new_protected:Npn \luamml_process: {
+  \tl_set:Nn \l__luamml_label_tl {}
+  \int_set:Nn \l__luamml_flag_int { 3 }
+}
+\cs_set_eq:NN \luamml_flag_process: \luamml_process:
+\cs_new:Npn \__luamml_maybe_structelem: {
+  (
+    8 * \int_mod:nn {
+      \int_div_truncate:nn { \l__luamml_flag_int } {8}
+    } {2}
+  ) +
+}
+\cs_new:Npn \__luamml_style_to_num:N #1 {
+  32 * #1
+}
+\cs_new_protected:Npn \luamml_save:n #1 {
+  \tl_set:Nn \l__luamml_label_tl {#1}
+  \int_set:Nn \l__luamml_flag_int { \__luamml_maybe_structelem: 1 }
+}
+\cs_new_protected:Npn \luamml_save:nN #1#2 {
+  \tl_set:Nn \l__luamml_label_tl {#1}
+  \int_set:Nn \l__luamml_flag_int { \__luamml_maybe_structelem: 17 + \__luamml_style_to_num:N #2 }
+}
+\cs_new_protected:Npn \luamml_save:nn #1 {
+  \tl_set:Nn \l__luamml_label_tl {#1}
+  \int_set:Nn \l__luamml_flag_int { \__luamml_maybe_structelem: 5 }
+  \tl_set:Nn \l__luamml_root_tl
+}
+\cs_new_protected:Npn \luamml_save:nNn #1#2 {
+  \tl_set:Nn \l__luamml_label_tl {#1}
+  \int_set:Nn \l__luamml_flag_int { \__luamml_maybe_structelem: 21 + \__luamml_style_to_num:N #2 }
+  \tl_set:Nn \l__luamml_root_tl
+}
+\cs_set_eq:NN \luamml_flag_save:n \luamml_save:n
+\cs_set_eq:NN \luamml_flag_save:nN \luamml_save:nN
+\cs_set_eq:NN \luamml_flag_save:nn \luamml_save:nn
+\cs_set_eq:NN \luamml_flag_save:nNn \luamml_save:nNn
+\cs_new_protected:Npn \luamml_ignore: {
+  \int_set:Nn \l__luamml_flag_int { 0 }
+}
+\cs_set_eq:NN \luamml_flag_ignore: \luamml_ignore:
+\cs_new_protected:Npn \luamml_structelem: {
+  \tl_set:Nn \l__luamml_label_tl {}
+  \int_set:Nn \l__luamml_flag_int { 11 }
+}
+\cs_set_eq:NN \luamml_flag_structelem: \luamml_structelem:
+\cs_new_protected:Npn \luamml_set_filename:n {
+  \tl_set:Nn \l__luamml_filename_tl
+}
+\luamml_process:
+\cs_new_protected:Npn \luamml_annotate:nen #1#2#3 {
+  \__luamml_flattened_mathgroup_begin:
+    #3
+  \__luamml_annotate_end:we \tex_numexpr:D #1 \scan_stop: {#2}
+}
+
+\cs_new_protected:Npn \luamml_annotate:en #1#2 {
+  \__luamml_flattened_mathgroup_begin:
+    #2
+  \__luamml_annotate_end:e {#1}
+}
+\cs_new_protected:Npn \luamml_attribute:een #1#2#3 {
+  \__luamml_flattened_mathgroup_begin:
+    #3
+  \__luamml_annotate_attribute_end:wee {#1} {#2}
+}
+
+\cs_new_protected:Npn \luamml_attribute_core:een #1#2#3 {
+  \__luamml_flattened_mathgroup_begin:
+    #3
+  \__luamml_annotate_attribute_end:wee core {#1} {#2}
+}
+
+\cs_new_eq:NN \luamml_pdf_write: \scan_stop:
+\NewTaggingSocketPlug{math/luamml/save/nNn}{luamml}
+ {
+   \luamml_save:nNn #1
+ }
+\AssignTaggingSocketPlug{math/luamml/save/nNn}{luamml}
+\NewTaggingSocketPlug{math/luamml/save/nn}{luamml}
+ {
+   \luamml_save:nn #1
+ }
+\AssignTaggingSocketPlug{math/luamml/save/nn}{luamml}
+\NewTaggingSocketPlug{math/luamml/annotate/false}{luamml}
+ {
+   \luamml_annotate:en { core = false }
+    {
+      #2
+    }
+ }
+\AssignTaggingSocketPlug{math/luamml/annotate/false}{luamml}
+\AddToHook{package/array/after}{\lua_now:n { require'luamml-array' }}
+\NewTaggingSocketPlug{math/luamml/array/save}{luamml}
+ {
+   \__luamml_array_save_array:
+ }
+\NewTaggingSocketPlug{math/luamml/array/finalize}{luamml}
+ {
+   \mode_if_math:T { \__luamml_array_finalize_array: }
+ }
+\NewTaggingSocketPlug{math/luamml/array/initcol}{luamml}
+ {
+   \__luamml_array_init_col:
+ }
+\NewTaggingSocketPlug{math/luamml/array/finalizecol}{luamml}
+ {
+   \__luamml_array_finalize_col:w #1~
+ }
+\AssignTaggingSocketPlug{math/luamml/array/save}{luamml}
+\AssignTaggingSocketPlug{math/luamml/array/finalize}{luamml}
+\AssignTaggingSocketPlug{math/luamml/array/initcol}{luamml}
+\AssignTaggingSocketPlug{math/luamml/array/finalizecol}{luamml}
+\NewTaggingSocketPlug{math/luamml/mtable/finalizecol}{luamml}
+ {
+   \use:c{__luamml_amsmath_add_#1_to_row:}
+ }
+\AssignTaggingSocketPlug{math/luamml/mtable/finalizecol}{luamml}
+
+\NewTaggingSocketPlug{math/luamml/mtable/innertable/save}{luamml}
+ {
+   \__luamml_amsmath_save_inner_table:n \@currenvir
+ }
+\AssignTaggingSocketPlug{math/luamml/mtable/innertable/save}{luamml}
+\NewTaggingSocketPlug{math/luamml/mtable/smallmatrix/save}{luamml}
+ {
+   \__luamml_amsmath_save_smallmatrix:
+ }
+\AssignTaggingSocketPlug{math/luamml/mtable/smallmatrix/save}{luamml}
+\NewTaggingSocketPlug{math/luamml/mtable/innertable/finalize}{luamml}
+ {
+   \__luamml_amsmath_finalize_inner_table:
+ }
+\AssignTaggingSocketPlug{math/luamml/mtable/innertable/finalize}{luamml}
+\NewTaggingSocketPlug{math/luamml/mtable/finalize}{luamml}
+ {
+   \__luamml_amsmath_finalize_table:n {#1}
+ }
+\AssignTaggingSocketPlug{math/luamml/mtable/finalize}{luamml}
+\NewTaggingSocketPlug{math/luamml/mtable/aligncol}{luamml}
+ {
+   \__luamml_amsmath_set_row_columnalign:n {#1}
+ }
+\AssignTaggingSocketPlug{math/luamml/mtable/aligncol}{luamml}
+
+\int_new:N \l__luamml_amsmath_tag_struct_num_int
+\NewTaggingSocketPlug{math/luamml/mtable/tag/save}{luamml}
+ {
+   \__luamml_amsmath_save_tag_with_struct_elem:N \l__luamml_amsmath_tag_struct_num_int
+ }
+\AssignTaggingSocketPlug{math/luamml/mtable/tag/save}{luamml}
+\NewTaggingSocketPlug{math/luamml/mtable/tag/set}{luamml}
+ {
+   \__luamml_amsmath_set_tag:
+ }
+\AssignTaggingSocketPlug{math/luamml/mtable/tag/set}{luamml}
+
+\clist_map_inline:nn
+  {
+    eqnarray,
+    eqnarray*,
+    align,
+    align*,
+    alignat,
+    alignat*,
+    xalignat,
+    xalignat*,
+    %xxalignat,
+    flalign,
+    flalign*,
+    gather,
+    gather*,
+    %multline, % NO
+    %multline*, % NO
+    equation,
+    equation*,
+    %split, % NO
+  }
+  {\tl_const:cn { c__luamml_label_#1_tl}{}}
+\NewTaggingSocketPlug{math/display/tag/begin}{luamml}
+ {
+   \tag_mc_end:
+   \bool_lazy_and:nnT
+    { \tl_if_exist_p:c { c__luamml_label_ \@currenvir _tl } }
+    { \int_if_odd_p:n { \int_div_truncate:nn { \l__luamml_flag_int } { 8 } } }
+    {
+      \tag_struct_begin:n {tag=mtext,stash}
+      \int_set:Nn \l__luamml_amsmath_tag_struct_num_int { \tag_get:n {struct_num} }
+    }
+   \tag_mc_begin:n {}
+ }
+\AssignTaggingSocketPlug{math/display/tag/begin}{luamml}
+\NewTaggingSocketPlug{math/display/tag/end}{luamml}
+ {
+   \tag_mc_end:
+   \bool_lazy_and:nnT
+    { \tl_if_exist_p:c { c__luamml_label_ \@currenvir _tl } }
+    { \int_if_odd_p:n { \int_div_truncate:nn { \l__luamml_flag_int } { 8 } } }
+    {
+      \tag_struct_end:
+    }
+   \tag_mc_begin:n {}
+ }
+\AssignTaggingSocketPlug{math/display/tag/end}{luamml}
+\NewTaggingSocketPlug{math/luamml/hbox}{luamml}
+ {
+   \bool_lazy_and:nnTF
+    { \mode_if_math_p: }
+    { \int_if_odd_p:n { \int_div_truncate:nn { \l__luamml_flag_int } { 8 } } }
+    {
+      \tag_struct_begin:n
+       {
+         tag=mtext,
+         stash,
+       }
+      \tag_mc_begin:n {}
+      \luamml_annotate:en
+       {
+         nucleus = true,
+         structnum=\tag_get:n{struct_num}
+       }
+       { #2 }
+      \tag_mc_end:
+      \tag_struct_end:
+    }
+    { #2 }
+  }
+\AssignTaggingSocketPlug{math/luamml/hbox}{luamml}
+\NewTaggingSocketPlug{math/luamml/artifact}{luamml}
+ {
+   \int_if_odd:nT { \int_div_truncate:nn { \l__luamml_flag_int } { 8 } }
+    {
+      \tag_mc_begin:n{artifact}
+    }
+ }
+\AssignTaggingSocketPlug{math/luamml/artifact}{luamml}
+\NewTaggingSocketPlug{math/luamml/finph@nt}{luamml}
+ {
+   \luamml_annotate:nen {1}
+    {
+     nucleus = true,
+     mathml =
+      {
+        [0] = 'mpadded',
+        \ifh@\else
+         width = 0,
+        \fi
+        \ifv@\else
+         height = 0, depth = 0,
+        \fi
+        consume_label'mathphant',
+      },
+    }
+    { #2 }
+ }
+\AssignTaggingSocketPlug{math/luamml/finph@nt}{luamml}
+
+\NewTaggingSocketPlug{math/luamml/finsm@sh}{luamml}
+ {
+   \luamml_annotate:nen {2}
+    {
+     nucleus = true,
+     mathml = consume_label('mathsmash',
+           function(padded, core)
+             padded.height, padded.depth = 0, 0~
+             return~padded, core~
+           end),
+    }
+    { #2 }
+ }
+\AssignTaggingSocketPlug{math/luamml/finsm@sh}{luamml}
+\cs_new_protected:Npn \__luamml_patch_package:nn #1 #2 {
+  \@ifpackageloaded {#1} {#2} {
+    \hook_gput_code:nnn {package/#1/after} {luamml} {#2}
+  }
+}
+\cs_new_protected:Npn \__luamml_patch_package:n #1 {
+  \__luamml_patch_package:nn {#1} {
+    \RequirePackage { luamml-patches-#1 }
+  }
+}
+\RequirePackage { luamml-patches-kernel }
+\__luamml_patch_package:n {amsmath}
+
+\endinput
+%%
+%% End of file `luamml.sty'.

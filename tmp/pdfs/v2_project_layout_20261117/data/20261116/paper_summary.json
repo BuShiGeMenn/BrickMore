@@ -1,0 +1,323 @@
+{
+  "source_scores_sha256": "2c00f41478e4dd6f3870c85a2a02901d202e037f05942570920afae0e52dde38",
+  "cohort_means": {
+    "A": {
+      "BrickGPT": {
+        "pinv": 0.0,
+        "vqa": 0.04014168858723049,
+        "pe": 0.14218748601583334,
+        "siglip2": 0.012484887636842494
+      },
+      "BrickNet": {
+        "pinv": 0.18974425900769573,
+        "vqa": 0.01420645481994006,
+        "pe": 0.12006051106235156,
+        "siglip2": 0.0007020621442270866
+      }
+    },
+    "B": {
+      "BrickMore": {
+        "pinv": 0.008111049694670072,
+        "vqa": 0.10793796666993381,
+        "pe": 0.15719248239161834,
+        "siglip2": 0.0564816760677128
+      },
+      "BrickGPT": {
+        "pinv": 0.0,
+        "vqa": 0.09261266859352615,
+        "pe": 0.14587139799347465,
+        "siglip2": 0.026220870185188816
+      },
+      "BrickNet": {
+        "pinv": 0.17883380737111662,
+        "vqa": 0.02585193635252807,
+        "pe": 0.11732034101941675,
+        "siglip2": 0.0015529975801807298
+      }
+    }
+  },
+  "levels_b": {
+    "1": {
+      "count": 53,
+      "mean_words": 13.415094339622641,
+      "means": {
+        "BrickMore": {
+          "pinv": 0.004078724702434488,
+          "vqa": 0.18409120061276657,
+          "pe": 0.14094736876915087,
+          "siglip2": 0.025385677229515426
+        },
+        "BrickGPT": {
+          "pinv": 0.0,
+          "vqa": 0.19113672637522883,
+          "pe": 0.1322586141386122,
+          "siglip2": 0.013245878685858173
+        },
+        "BrickNet": {
+          "pinv": 0.15142461803120685,
+          "vqa": 0.04447323912060289,
+          "pe": 0.10322627955871932,
+          "siglip2": 0.00017791605453030212
+        }
+      }
+    },
+    "2": {
+      "count": 53,
+      "mean_words": 26.39622641509434,
+      "means": {
+        "BrickMore": {
+          "pinv": 0.007757682286215106,
+          "vqa": 0.1651296479397405,
+          "pe": 0.14529508296048865,
+          "siglip2": 0.024102402463407054
+        },
+        "BrickGPT": {
+          "pinv": 0.0,
+          "vqa": 0.13538818747433395,
+          "pe": 0.1391097662864991,
+          "siglip2": 0.020626290677842114
+        },
+        "BrickNet": {
+          "pinv": 0.17744732350338194,
+          "vqa": 0.05787875540987011,
+          "pe": 0.10366100726543732,
+          "siglip2": 0.0013157129889910394
+        }
+      }
+    },
+    "3": {
+      "count": 53,
+      "mean_words": 37.320754716981135,
+      "means": {
+        "BrickMore": {
+          "pinv": 0.007337099212502526,
+          "vqa": 0.1467385527758556,
+          "pe": 0.1479108157866406,
+          "siglip2": 0.07169669473472488
+        },
+        "BrickGPT": {
+          "pinv": 0.0,
+          "vqa": 0.10607308530103732,
+          "pe": 0.13964927871272248,
+          "siglip2": 0.019941279892174233
+        },
+        "BrickNet": {
+          "pinv": 0.2329792030078699,
+          "vqa": 0.021083807168941107,
+          "pe": 0.10747506596007438,
+          "siglip2": 0.0012021703308223153
+        }
+      }
+    },
+    "4": {
+      "count": 53,
+      "mean_words": 52.320754716981135,
+      "means": {
+        "BrickMore": {
+          "pinv": 0.013848620692975155,
+          "vqa": 0.02394668180369201,
+          "pe": 0.17915213979640096,
+          "siglip2": 0.0913869009869762
+        },
+        "BrickGPT": {
+          "pinv": 0.0,
+          "vqa": 0.01979605935350333,
+          "pe": 0.16088862984247929,
+          "siglip2": 0.04870568394658225
+        },
+        "BrickNet": {
+          "pinv": 0.18675102981937874,
+          "vqa": 0.002308759454059705,
+          "pe": 0.1343588892300174,
+          "siglip2": 0.001561181363761865
+        }
+      }
+    },
+    "5": {
+      "count": 53,
+      "mean_words": 78.58490566037736,
+      "means": {
+        "BrickMore": {
+          "pinv": 0.007533121579223086,
+          "vqa": 0.019783750217614415,
+          "pe": 0.17265700464541056,
+          "siglip2": 0.06983670492394045
+        },
+        "BrickGPT": {
+          "pinv": 0.0,
+          "vqa": 0.010669284463527322,
+          "pe": 0.15745070098706013,
+          "siglip2": 0.028585217723487315
+        },
+        "BrickNet": {
+          "pinv": 0.14556686249374567,
+          "vqa": 0.003515120609166551,
+          "pe": 0.13788046308283536,
+          "siglip2": 0.003508007162798128
+        }
+      }
+    }
+  },
+  "paired_tests_b": [
+    {
+      "baseline": "BrickGPT",
+      "metric": "VQAScore",
+      "wins": 188,
+      "losses": 77,
+      "ties": 0,
+      "sign_p": 6.95269785647892e-12,
+      "wilcoxon_w": 10465.0,
+      "wilcoxon_p": 9.964194809155127e-09,
+      "sign_p_holm": 2.085809356943676e-11,
+      "wilcoxon_p_holm": 2.989258442746538e-08
+    },
+    {
+      "baseline": "BrickGPT",
+      "metric": "PE",
+      "wins": 166,
+      "losses": 99,
+      "ties": 0,
+      "sign_p": 4.6116272082555484e-05,
+      "wilcoxon_w": 11849.0,
+      "wilcoxon_p": 3.780378940653693e-06,
+      "sign_p_holm": 4.6116272082555484e-05,
+      "wilcoxon_p_holm": 3.780378940653693e-06
+    },
+    {
+      "baseline": "BrickGPT",
+      "metric": "SigLIP2",
+      "wins": 168,
+      "losses": 97,
+      "ties": 0,
+      "sign_p": 1.529927125122695e-05,
+      "wilcoxon_w": 11537.5,
+      "wilcoxon_p": 1.1017362476932978e-06,
+      "sign_p_holm": 3.05985425024539e-05,
+      "wilcoxon_p_holm": 2.2034724953865956e-06
+    },
+    {
+      "baseline": "BrickNet",
+      "metric": "VQAScore",
+      "wins": 237,
+      "losses": 28,
+      "ties": 0,
+      "sign_p": 2.0266597807235453e-42,
+      "wilcoxon_w": 2505.0,
+      "wilcoxon_p": 9.903952819454247e-34,
+      "sign_p_holm": 1.215995868434127e-41,
+      "wilcoxon_p_holm": 5.9423716916725485e-33
+    },
+    {
+      "baseline": "BrickNet",
+      "metric": "PE",
+      "wins": 209,
+      "losses": 56,
+      "ties": 0,
+      "sign_p": 6.169596187467399e-22,
+      "wilcoxon_w": 4468.0,
+      "wilcoxon_p": 6.059925598770312e-26,
+      "sign_p_holm": 3.0847980937336995e-21,
+      "wilcoxon_p_holm": 3.029962799385156e-25
+    },
+    {
+      "baseline": "BrickNet",
+      "metric": "SigLIP2",
+      "wins": 207,
+      "losses": 57,
+      "ties": 1,
+      "sign_p": 3.586601737202336e-21,
+      "wilcoxon_w": 4826.5,
+      "wilcoxon_p": 2.0280459853056787e-24,
+      "sign_p_holm": 1.4346406948809345e-20,
+      "wilcoxon_p_holm": 8.112183941222715e-24
+    }
+  ],
+  "truncation_b": {
+    "pe": {
+      "truncated_prompt_count": 59,
+      "untruncated_means": {
+        "BrickMore": 0.15187202943760214,
+        "BrickGPT": 0.14302550126047966,
+        "BrickNet": 0.1116379555947717
+      }
+    },
+    "siglip2": {
+      "truncated_prompt_count": 106,
+      "untruncated_means": {
+        "BrickMore": 0.04039492480921578,
+        "BrickGPT": 0.01793781641862484,
+        "BrickNet": 0.0008985997914478856
+      }
+    }
+  },
+  "gallery": {
+    "B22_L1": {
+      "caption": "An armchair with a seat, a back and two arms on four legs.",
+      "samples": {
+        "BrickMore": {
+          "sample_id": "brickmore__B22_L1__generated",
+          "vqa": 0.940149188041687
+        },
+        "BrickGPT": {
+          "sample_id": "brickgpt__B22_L1__generated",
+          "vqa": 0.6035647988319397
+        },
+        "BrickNet": {
+          "sample_id": "bricknet__B22_L1__generated",
+          "vqa": 0.12273544818162918
+        }
+      }
+    },
+    "B19_L1": {
+      "caption": "A hatchback with a short hood, a tall cabin and a rear door.",
+      "samples": {
+        "BrickMore": {
+          "sample_id": "brickmore__B19_L1__generated",
+          "vqa": 0.0008573808590881526
+        },
+        "BrickGPT": {
+          "sample_id": "brickgpt__B19_L1__generated",
+          "vqa": 0.05086468905210495
+        },
+        "BrickNet": {
+          "sample_id": "bricknet__B19_L1__generated",
+          "vqa": 0.023725686594843864
+        }
+      }
+    },
+    "B06_L2": {
+      "caption": "A storage bench with a seat lid over a closed box and two side panels. A slatted seat spans two framed supports; the backrest joins the rear posts.",
+      "samples": {
+        "BrickMore": {
+          "sample_id": "brickmore__B06_L2__generated",
+          "vqa": 0.42940467596054077
+        },
+        "BrickGPT": {
+          "sample_id": "brickgpt__B06_L2__generated",
+          "vqa": 0.30881837010383606
+        },
+        "BrickNet": {
+          "sample_id": "bricknet__B06_L2__generated",
+          "vqa": 0.3727754056453705
+        }
+      }
+    },
+    "B17_L2": {
+      "caption": "A rangefinder camera with a flat body, one lens and two top dials. A lens barrel projects from the front; the body carries a viewfinder hump.",
+      "samples": {
+        "BrickMore": {
+          "sample_id": "brickmore__B17_L2__generated",
+          "vqa": 0.012244312092661858
+        },
+        "BrickGPT": {
+          "sample_id": "brickgpt__B17_L2__generated",
+          "vqa": 0.05582961067557335
+        },
+        "BrickNet": {
+          "sample_id": "bricknet__B17_L2__generated",
+          "vqa": 0.31195759773254395
+        }
+      }
+    }
+  }
+}
