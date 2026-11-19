@@ -1,0 +1,23 @@
+name morefloats
+category Package
+revision 77682
+shortdesc Increase the number of simultaneous LaTeX floats
+longdesc LaTeX can, by default, only cope with 18 outstanding floats;
+longdesc any more, and you get the error "too many unprocessed floats".
+longdesc This package releases the limit; TeX itself imposes limits
+longdesc (which are independent of the help offered by e-TeX). However,
+longdesc if your floats can't be placed anywhere, extending the number
+longdesc of floats merely delays the arrival of the inevitable error
+longdesc message.
+containersize 4276
+containerchecksum 6ac75ff63d8ad22e72ff469d79a0e1dd7e5e34fdb97fefab6d3ca98c98dd338cc94cbad8f18bd8ea253226c9adcb1bf153dfdedbb934e5f45a7ca16baf6030ca
+doccontainersize 556536
+doccontainerchecksum 54295eb8ef1cabed0e6eb677e616bf165987c9cfb6066bbacb66430c2db77178f8dd7896487b6d211727a5f531634c30ca0d439f6898c0a552f29372f995dfa1
+srccontainersize 13632
+srccontainerchecksum f49721351ee5da58a329cd79ed8a41b95398e76e8782b51706ffd7724ae786252854d51c84b6dbf17cfa413ba46abe58f87d9724a7c57dfd89dbf9beb8e0facf
+runfiles size=10
+ texmf-dist/tex/latex/morefloats/morefloats.sty
+catalogue-ctan /macros/latex/contrib/morefloats
+catalogue-license lppl1.3c
+catalogue-topics float tagged-pdf
+catalogue-version 1.1a

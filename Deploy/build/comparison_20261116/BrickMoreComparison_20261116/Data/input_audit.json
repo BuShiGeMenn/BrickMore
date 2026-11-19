@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "dataset": "comparison_20261116",
+  "total_records": 1315,
+  "source_root": "D:\\BrickMore\\BrickMore_Comparision",
+  "all_counts": {
+    "BrickMore": 265,
+    "BrickGPT": 525,
+    "BrickNet": 525
+  },
+  "primary_records": 795,
+  "primary_counts": {
+    "BrickMore": 265,
+    "BrickGPT": 265,
+    "BrickNet": 265
+  },
+  "matched_prompts": 265,
+  "cohorts": {
+    "A": {
+      "prompts": 260,
+      "systems": [
+        "BrickGPT",
+        "BrickNet"
+      ]
+    },
+    "B": {
+      "prompts": 265,
+      "systems": [
+        "BrickMore",
+        "BrickGPT",
+        "BrickNet"
+      ]
+    }
+  },
+  "formal_groups": 105,
+  "part_types": 722,
+  "bricknet_order": "User confirmed A 260 then B 265 in Markdown order; 0-based file index.",
+  "bricknet_boundaries": {
+    "0": "A01_L1",
+    "259": "A52_L5",
+    "260": "B01_L1",
+    "524": "B53_L5"
+  },
+  "original_prompt_checks": {
+    "BrickMore_embedded_B": 265,
+    "BrickGPT_reports_A": 260,
+    "BrickGPT_reports_B": 265
+  },
+  "duplicate_zip_ldr_checks": 1050,
+  "primary_policy": "B: 265 identical prompts x BrickMore, BrickGPT and BrickNet. A: 260 identical prompts x BrickGPT and BrickNet.",
+  "smoke_prompt_ids": [
+    "A01_L1",
+    "B01_L1"
+  ],
+  "new_meshes_extracted": 466
+}

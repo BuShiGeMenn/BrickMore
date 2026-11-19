@@ -1,0 +1,22 @@
+name etexcmds
+category Package
+revision 79461
+shortdesc Avoid name clashes with e-TeX commands
+longdesc New primitive commands are introduced in e-TeX; sometimes the
+longdesc names collide with existing macros. This package solves the
+longdesc name clashes by adding a prefix to e-TeX's commands. For
+longdesc example, eTeX's \unexpanded is provided as \etex@unexpanded.
+containersize 2476
+containerchecksum 5d9d3fc05a3e097f4cf6bb486fde026e94d539fe3e7c3939468ab00127ce781308a12ab1bf58ffcac6dabe720e2f7176954baa46095b424b3c5b685a64a6ec33
+doccontainersize 300584
+doccontainerchecksum b2c9435bc8f85daca0a8c1bb071ffa473de142101cf2ca65caefb0ecd54a9c7014ca5c6593b27e4baf2b836b3197c1ab6e65e4bcc103542483346273f5dca16b
+srccontainersize 5444
+srccontainerchecksum d91524c80d154a1d8c1c4d9859f0b8c5cf436153e316a53173ced8a3ef370431e25265c69fc46c8f212e57298ec5f52dcdc195c985a1da4077301347373fe5fe
+runfiles size=2
+ texmf-dist/tex/generic/etexcmds/etexcmds.sty
+catalogue-contact-bugs https://github.com/LaTeX-Package-Repositories/etexcmds/issues
+catalogue-contact-repository https://github.com/LaTeX-Package-Repositories/etexcmds
+catalogue-ctan /macros/latex/contrib/etexcmds
+catalogue-license lppl1.3
+catalogue-topics macro-supp tagged-pdf
+catalogue-version 1.7

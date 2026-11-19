@@ -1,0 +1,24 @@
+name count1to
+category Package
+revision 79618
+shortdesc Make use of count1 to count9
+longdesc A LaTeX package which sets count 1 (to 'absolute' page number),
+longdesc counts 2-8 to the numbers of the current \part, \chapter
+longdesc (always 0 in article class), ... \subparagraph, and count 9 to
+longdesc 1 or 0, according to whether the page is odd or even. These
+longdesc values can be used to select pages with some drivers. The
+longdesc package uses the everyshi package.
+containersize 1704
+containerchecksum 7f445d0c77c596030c5564042cc878473b6a330e808431bece96e1ebc3fceed0ea8cda73f92b07679c9dea944dcc6b8d3e68dce38d01a9849a86137190e511fd
+doccontainersize 539724
+doccontainerchecksum ac55fa32595f137aec1938bbe2edc9500cc544958c69a9884792bf7979259bc84051e1033533a0786c34be8272c501ab1cccc76422c9f2648732e56b0577fb6e
+srccontainersize 6152
+srccontainerchecksum e13204fedd57de2905b1edde40a28038c09cad5c40b65d3c6f10e2e09e19855b44da7e9cfe2268ce076b5c0b66c167866f9dec5437d36a08e045a75e2ce2daec
+runfiles size=1
+ texmf-dist/tex/latex/count1to/count1to.sty
+catalogue-contact-bugs https://gitlab.com/TeXhackse/count1to/issues
+catalogue-contact-repository https://gitlab.com/TeXhackse/count1to
+catalogue-ctan /macros/latex/contrib/count1to
+catalogue-license lppl1.3c
+catalogue-topics macro-supp
+catalogue-version 2.11

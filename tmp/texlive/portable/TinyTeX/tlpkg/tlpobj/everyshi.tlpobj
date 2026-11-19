@@ -1,0 +1,26 @@
+name everyshi
+category Package
+revision 77682
+shortdesc Take action at every \shipout
+longdesc This package provides hooks into \sshipout called \EveryShipout
+longdesc and \AtNextShipout analogous to \AtBeginDocument. With the
+longdesc introduction of the LaTeX hook management this package became
+longdesc obsolete in 2020 and is only provided for backwards
+longdesc compatibility. For current versions of LaTeX it is only mapping
+longdesc the hooks to the original everyshi macros. In case you use an
+longdesc older LaTeX format, everyshi will automatically fall back to
+longdesc its old implementation by loading everyshi-2001-05-15.
+containersize 2012
+containerchecksum 2579905d347524dd2cecda3fe9cc2114bce98785d973d4bf906041f8b768782610d18526992f325761212cdb6d6ec6e3cc5319a6ff77a0199dea7feb9f8aa412
+doccontainersize 132240
+doccontainerchecksum 3cf78acda4c8092f2384b7b8e580f5289e4ca544cc0c3d54adefd2425d24888055f4506b1da0787fde3910f8c2cb61bea8ab11133feb8edb9b7ec89a1da25e68
+srccontainersize 4772
+srccontainerchecksum 625a710c5467dd1e7125ffa3b34ecb4ebcc6764ab6b9564f613195a9bb78f8f5215288f9dc1abd28ff45634680f71b7b92e7cb4d13400cb659a5e59d0dd7b1fa
+runfiles size=2
+ texmf-dist/tex/latex/everyshi/everyshi-2001-05-15.sty
+ texmf-dist/tex/latex/everyshi/everyshi.sty
+catalogue-also bophook atbegshi
+catalogue-ctan /macros/latex/contrib/everyshi
+catalogue-license lppl1.3c
+catalogue-topics defer-stuff obsolete tagged-pdf
+catalogue-version 4.00

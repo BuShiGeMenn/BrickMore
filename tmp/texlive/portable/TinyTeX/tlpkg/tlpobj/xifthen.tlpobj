@@ -1,0 +1,24 @@
+name xifthen
+category Package
+revision 80517
+shortdesc Extended conditional commands
+longdesc This package extends the ifthen package by implementing new
+longdesc commands to go within the first argument of \ifthenelse: to
+longdesc test whether a string is void or not, if a command is defined
+longdesc or equivalent to another. The package also enables use of
+longdesc complex expressions as introduced by the package calc, together
+longdesc with the ability of defining new commands to handle complex
+longdesc tests.
+depend ifmtarg
+depend tools
+containersize 2120
+containerchecksum 35fc4bbef0fd81d1de5fcac7e2b1ad5529f9a047128d37827e7a4a618b78db5650e4cf937ede62b2ba3a62b18dad471f7fbd6fc31a4adf0e4fa5eab04a86a362
+doccontainersize 482656
+doccontainerchecksum dec04d5e215fbcf7da0d2757821f085ad5ed7647fc86593a0fa589d09f685adfd3875dc1b15f6e58d3f96bb647b877ae7f73b8f71b53236ebac87fbad497164b
+runfiles size=2
+ texmf-dist/tex/latex/xifthen/xifthen.sty
+catalogue-also ifthen ifthenx
+catalogue-ctan /macros/latex/contrib/xifthen
+catalogue-license lppl
+catalogue-topics cond-comp macro-supp tagged-pdf
+catalogue-version 1.4.0

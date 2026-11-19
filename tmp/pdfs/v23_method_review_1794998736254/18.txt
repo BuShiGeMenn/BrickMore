@@ -1,0 +1,36 @@
+0% 25% 50% 75%
+Pinv threshold
+0%
+50%
+100%
+Invalid placement ratio (lower is better)
+0.0 0.3 0.6 0.9
+VQAScore threshold
+0%
+50%
+100%
+VQAScore (higher is better)
+0.00 0.08 0.16 0.24
+PE threshold
+0%
+50%
+100%
+PE (higher is better)
+0.00 0.25 0.50 0.75
+SigLIP2 threshold
+0%
+50%
+100%
+SigLIP2 (higher is better)
+Cumulative share of outputs
+BrickForma BrickGPT BrickNet
+Figure 17: Empirical cumulative distributions of the four scores. Each curve gives the fraction of a system’s 525 outputs at or
+below the threshold on the horizontal axis.
+Method and sourceP inv VQA PE SigLIP2
+BrickGPT (literature, as transcribed) 0.063 0.050 0.157 0.052
+BrickNet 1.7B (literature, as transcribed) 0.260 0.593 0.282 0.631
+BrickGPT (114 historical prompts) – – – –
+BrickNet (114 historical prompts) – – – –
+BrickForma-48 (114 historical prompts) – – – –
+Table 16: Transcribed literature values and unavailable historical scores. The literature entries use separate evaluation sets, and
+the source does not specify a common definition forPinv.

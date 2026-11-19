@@ -1,0 +1,28 @@
+name gincltex
+category Package
+revision 78251
+shortdesc Include TeX files as graphics (.tex support for \includegraphics)
+longdesc The package builds on the standard LaTeX packages graphics
+longdesc and/or graphicx and allows external LaTeX source files to be
+longdesc included, in the same way as graphic files, by
+longdesc \includegraphics. In effect, then package adds support for the
+longdesc .tex extension. Some of the lower level operations like
+longdesc clipping and trimming are implemented using the adjustbox
+longdesc package which includes native pdfLaTeX support and uses the pgf
+longdesc package for other output formats.
+depend svn-prov
+containersize 1924
+containerchecksum e9f4d142d048933ff687e281e64aa337a1a7fccc71b0989aeaeea75b568984c35648eadc2fcbd320fd0dad672d11fb7035b0d1f683ed195f5e906046659c241e
+doccontainersize 168440
+doccontainerchecksum b105e922ede36706524d94932d2430c382ab16f7aeb37f6d36e30f66314f4f4629a4cc8761e278880248c36bf167620e922665c7b0e8cfb79de39eb04546f6b4
+srccontainersize 5132
+srccontainerchecksum 6bfc4c94728e9a525d7f0f2b942f616675345f1976d061d9c0dbbdf794c3889e06f9e60d64fa1b2992169f533b40dc8d45314906f00b53542f4e58f55c00927d
+runfiles size=1
+ texmf-dist/tex/latex/gincltex/gincltex.sty
+catalogue-contact-bugs https://github.com/MartinScharrer/gincltex/issues
+catalogue-contact-home https://github.com/MartinScharrer/gincltex
+catalogue-contact-repository https://github.com/MartinScharrer/gincltex.git
+catalogue-ctan /macros/latex/contrib/gincltex
+catalogue-license lppl1.3
+catalogue-topics graphics listing tagged-pdf-incompatible
+catalogue-version 0.3

@@ -1,0 +1,25 @@
+name minifp
+category Package
+revision 76924
+shortdesc Fixed-point real computations to 8 decimals
+longdesc The package provides basic arithmetic operations to 8 decimal
+longdesc places for plain TeX or LaTeX. Results are exact when they fit
+longdesc within the digit limits. Along with the basic package is an
+longdesc optional extension that adds computation of sin, cos, log,
+longdesc sqrt, exp, powers and angles. These are also exact when
+longdesc theoretically possible and are otherwise accurate to at least 7
+longdesc decimal places. In addition, the package provides a stack-based
+longdesc programming environment.
+containersize 9980
+containerchecksum 9ef37a03a57f34b80c9fa18c404676e2e21c6f30aad454fa28f66e06d1371462707232a79f81abd46c35f354c434e58cac36191580746e84ac9b234c7c851c3a
+doccontainersize 435560
+doccontainerchecksum d0542381f4d0d6eb477ec7b03ca40fb078813bbd7de114aaaf1c8b687aa99770b1d6f8f30c39bc913d931dee4961429109ed6b4aee20319cac56e7a4a7f8b234
+srccontainersize 43836
+srccontainerchecksum b106e12423067c03946b8a0a6aecf3ee9035c44d774ac1d7a05655251dd637f3f62ca61dc7f606c2da2705d18ea8bcf6ea9dfa678bc8628e4b01162303be9fc0
+runfiles size=13
+ texmf-dist/tex/generic/minifp/mfpextra.tex
+ texmf-dist/tex/generic/minifp/minifp.sty
+catalogue-ctan /macros/generic/minifp
+catalogue-license lppl1.3
+catalogue-topics arithmetic calculation random
+catalogue-version 0.96

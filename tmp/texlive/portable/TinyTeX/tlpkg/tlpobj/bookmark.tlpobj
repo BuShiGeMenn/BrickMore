@@ -1,0 +1,29 @@
+name bookmark
+category Package
+revision 79461
+shortdesc A new bookmark (outline) organization for hyperref
+longdesc This package implements a new bookmark (outline) organization
+longdesc for package hyperref. Bookmark properties such as style and
+longdesc color can now be set. Other action types are available (URI,
+longdesc GoToR, Named). The bookmarks are generated in the first compile
+longdesc run. Package hyperref uses two runs.
+containersize 8400
+containerchecksum 08a45966511441c0118e87163f8ac3b7cb34728e01ad79ee8c57063e06baaa075d3f39f7cb14efc5cb2843b6f8a57d381b077b541f3f855dac281fbfd8dfa12e
+doccontainersize 624916
+doccontainerchecksum 5fee7684170ca44b47667daabe1367cf4fe3da0f842a6f1891cf98ccb08b7e73825feed0f4f9c998234afc205a1d197da6e5a3e8c6d26e3b003882dfa3e7e3b8
+srccontainersize 19772
+srccontainerchecksum d81be62585d97ff75ebb0729016e843fe1168ed71773280105f242941bcfc0067ef0c51dbaddcd592d52cee6d96489c0f424e74f456fc37026490b65f6567d90
+runfiles size=20
+ texmf-dist/tex/latex/bookmark/bkm-dvipdfmx.def
+ texmf-dist/tex/latex/bookmark/bkm-dvips.def
+ texmf-dist/tex/latex/bookmark/bkm-luatex.def
+ texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+ texmf-dist/tex/latex/bookmark/bkm-vtex.def
+ texmf-dist/tex/latex/bookmark/bkm-xetex.def
+ texmf-dist/tex/latex/bookmark/bookmark.sty
+catalogue-contact-bugs https://github.com/LaTeX-Package-Repositories/bookmark/issues
+catalogue-contact-repository https://github.com/LaTeX-Package-Repositories/bookmark
+catalogue-ctan /macros/latex/contrib/bookmark
+catalogue-license lppl1.3c
+catalogue-topics hyper tagged-pdf
+catalogue-version 1.32

@@ -1,0 +1,28 @@
+name urlbst
+category Package
+revision 76790
+shortdesc Web support for BibTeX
+longdesc Supports a new BibTeX 'webpage' entry type and 'url',
+longdesc 'lastchecked', and 'eprint' and 'DOI' fields. The Perl script
+longdesc urlbst can be used to add this support to an arbitrary .bst
+longdesc file which has a reasonably conventional structure. The result
+longdesc is meant to be robust rather than pretty.
+depend urlbst.ARCH
+containersize 14288
+containerchecksum b7610050449837d3c20cce1567429a2c9b5ef3e2387d96b519880cd31c1b37e243205adaaeb7739ec7afa62722d7e2372fc8158554f10ade2cfe5a6de03c0c6e
+doccontainersize 252716
+doccontainerchecksum 95b7115697b437c99011dacace9c26dc973e05cd4239b85a588b7f37682af303ef9207d6cac7592fc0e0c9154bd23ce1392401111c8e584e7fd492f9d76691fa
+srccontainersize 23308
+srccontainerchecksum c518a51cbccb85554065185656f53bbe3148b01dad9d4ee4efaa63f03fb0aa20d0630bf786d56654d0ee4bd4890bbe78d10fa62cd9a89e1b500d1bbd19e09c5b
+runfiles size=43
+ texmf-dist/bibtex/bst/urlbst/abbrvurl.bst
+ texmf-dist/bibtex/bst/urlbst/alphaurl.bst
+ texmf-dist/bibtex/bst/urlbst/plainurl.bst
+ texmf-dist/bibtex/bst/urlbst/unsrturl.bst
+ texmf-dist/scripts/urlbst/urlbst
+catalogue-contact-home https://purl.org/nxg/dist/urlbst
+catalogue-contact-repository https://heptapod.host/nxg/urlbst
+catalogue-ctan /biblio/bibtex/contrib/urlbst
+catalogue-license gpl2 lppl
+catalogue-topics bibtex-supp
+catalogue-version 0.9.1

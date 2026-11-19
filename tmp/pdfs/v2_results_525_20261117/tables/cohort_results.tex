@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrr}
+\toprule
+Group & System & $P_{\mathrm{inv}}\downarrow$ & VQAScore $\uparrow$ & PE $\uparrow$ & SigLIP2 $\uparrow$ \\
+\midrule
+A & BrickForma & 0.78\% & \textbf{0.0649} & \textbf{0.1564} & \textbf{0.0328} \\
+ & BrickGPT & \textbf{0.00\%} & 0.0401 & 0.1422 & 0.0125 \\
+ & BrickNet & 18.97\% & 0.0142 & 0.1201 & 0.0007 \\
+\midrule
+B & BrickForma & 0.81\% & \textbf{0.1079} & \textbf{0.1572} & \textbf{0.0565} \\
+ & BrickGPT & \textbf{0.00\%} & 0.0926 & 0.1459 & 0.0262 \\
+ & BrickNet & 17.88\% & 0.0259 & 0.1173 & 0.0016 \\
+\bottomrule
+\end{tabular}
+\caption{Mean scores by cohort. Groups A and B contain 260 and 265 prompts per system, respectively.}
+\label{tab:cohort-results}
+\end{table}

@@ -1,0 +1,10 @@
+{
+  "source": "https://github.com/AvaLovelace1/BrickGPT",
+  "commit": "9c53c7cb65f9de0df89562cc74b2d2e270fbcab4",
+  "license": "MIT",
+  "changes": [
+    "Injected offline model and tokenizer into the original BrickGPT generator",
+    "Imported Gurobi lazily so the connectivity-based mode needs no solver",
+    "Included only source needed for generation and LDraw export"
+  ]
+}

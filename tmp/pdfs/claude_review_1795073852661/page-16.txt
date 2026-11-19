@@ -1,0 +1,61 @@
+0.0% 8.0% 16.0% 24.0%
+BrickForma
+BrickGPT
+BrickNet
+0.79%
+0.00%
+18.42%
+Invalid placement ratio (lower is better)
+0.00 0.04 0.08 0.12
+BrickForma
+BrickGPT
+BrickNet
+0.0866
+0.0666
+0.0201
+VQAScore (higher is better)
+0.00 0.06 0.12 0.18
+BrickForma
+BrickGPT
+BrickNet
+0.1568
+0.1440
+0.1187
+PE (higher is better)
+0.00 0.02 0.04 0.06
+BrickForma
+BrickGPT
+BrickNet
+0.0448
+0.0194
+0.0011
+SigLIP2 (higher is better)
+Figure16:Meanscoresonthe525matchedprompts.Eachmeanweightsallpromptsequally.TheplottedvaluesmatchTable3.
+0% 25% 50% 75%
+Pinv threshold
+0%
+50%
+100%
+Invalid placement ratio (lower is better)
+0.0 0.3 0.6 0.9
+VQAScore threshold
+0%
+50%
+100%
+VQAScore (higher is better)
+0.00 0.08 0.16 0.24
+PE threshold
+0%
+50%
+100%
+PE (higher is better)
+0.00 0.25 0.50 0.75
+SigLIP2 threshold
+0%
+50%
+100%
+SigLIP2 (higher is better)
+Cumulative share of outputs
+BrickForma BrickGPT BrickNet
+Figure 17: Empirical cumulative distributions of the four scores. Each curve gives the fraction of a system’s 525 outputs that
+score at or below the threshold on the horizontal axis.

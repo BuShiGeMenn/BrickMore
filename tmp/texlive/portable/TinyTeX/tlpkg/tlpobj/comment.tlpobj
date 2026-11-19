@@ -1,0 +1,27 @@
+name comment
+category Package
+revision 77682
+shortdesc Selectively include/exclude portions of text
+longdesc Selectively include/exclude pieces of text, allowing the user
+longdesc to define new, separately controlled, comment versions. All
+longdesc text between \comment ... \endcomment or \begin{comment} ...
+longdesc \end{comment} is discarded. The opening and closing commands
+longdesc should appear on a line of their own. No starting spaces,
+longdesc nothing after it. This environment should work with arbitrary
+longdesc amounts of comment, and the comment can be arbitrary text.
+longdesc Other 'comment' environments are defined and
+longdesc selected/deselected with \includecomment{versiona} and
+longdesc \excludecomment{versionb} These environments are used as
+longdesc \versiona ... \endversiona or \begin{versiona} ...
+longdesc \end{versiona} with the opening and closing commands again on a
+longdesc line of their own.
+containersize 4112
+containerchecksum 63eea2876f5e72d34279a9d3e09b8fedf497886425b6cd45520366a6e2d488fda2a058c0aff294ca504dcd1d6b859d15dd16fd300acc25221ea0094f3f5d97a4
+doccontainersize 535060
+doccontainerchecksum 8a8af73c9c3b37f79cef97b6c884499b5a6514262e9e70f7947ba9a9fd6e18cfe64a7d07ce276fa19482f0ee0d70c7acbb840fbaf883d8397d04356415da069f
+runfiles size=3
+ texmf-dist/tex/latex/comment/comment.sty
+catalogue-ctan /macros/latex/contrib/comment
+catalogue-license gpl2
+catalogue-topics cond-comp editorial tagged-pdf
+catalogue-version 3.8

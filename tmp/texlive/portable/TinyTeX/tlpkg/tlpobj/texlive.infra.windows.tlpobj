@@ -1,0 +1,19 @@
+name texlive.infra.windows
+category TLCore
+revision 77973
+shortdesc windows files of texlive.infra
+containersize 3086180
+containerchecksum 0ba6744c88bb8d56f87c5cd213f33729c4850f36a27a66d00ee481920c3052e622358370e8cf4f8202926ff22fb70c24d581f846aab750a09ddcafc1b17ca8f8
+binfiles arch=windows size=1944
+ bin/windows/mktexlsr.exe
+ bin/windows/runscript.dll
+ bin/windows/runscript.exe
+ bin/windows/runscript.tlu
+ bin/windows/tlmgr.bat
+ bin/windows/utf8runscript.exe
+ bin/windows/wrunscript.exe
+ tlpkg/installer/curl/curl.exe
+ tlpkg/installer/lz4/lz4.exe
+ tlpkg/installer/tar.exe
+ tlpkg/installer/wget/wget.exe
+ tlpkg/installer/xz/xz.exe

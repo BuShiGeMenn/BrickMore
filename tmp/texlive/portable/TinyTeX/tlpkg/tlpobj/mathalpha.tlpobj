@@ -1,0 +1,30 @@
+name mathalpha
+category Package
+revision 77682
+shortdesc General package for loading maths alphabets in LaTeX
+longdesc Package mathalfa was renamed to mathalpha. For backward
+longdesc compatibility the old name will continue to be recognized in
+longdesc LaTeX documents. The package provides means of loading maths
+longdesc alphabets (such as are normally addressed via macros \mathcal,
+longdesc \mathbb, \mathfrak and \mathscr), offering various features
+longdesc normally missing in existing packages for this job.
+execute addMap mathalpha.map
+containersize 127116
+containerchecksum 6536eb0cf020e1c6b6189e06382141199a8ec690002181c0775f06dd6f20d3b9c13aa42924184b55f39a63441b46c8fef44b232e8880dce505fc88af688f6245
+doccontainersize 2065184
+doccontainerchecksum 8a838d74f15adcac0bf2f6aa0167319fb024d78fe1458722a74a57413348211ef964e4c67eb6716c9b3ebe5736fe32a156ef914627f9a4384d9f8c4991c06259
+runfiles size=52
+ texmf-dist/fonts/map/dvips/mathalpha/mathalpha.map
+ texmf-dist/fonts/tfm/public/mathalpha/mathalpha-ncmbb-bold.tfm
+ texmf-dist/fonts/tfm/public/mathalpha/mathalpha-ncmbb-book.tfm
+ texmf-dist/fonts/tfm/public/mathalpha/mathalpha-ncmbb-regular.tfm
+ texmf-dist/fonts/type1/public/mathalpha/mathalpha-ncmbb-bold.pfb
+ texmf-dist/fonts/type1/public/mathalpha/mathalpha-ncmbb-book.pfb
+ texmf-dist/fonts/type1/public/mathalpha/mathalpha-ncmbb-regular.pfb
+ texmf-dist/tex/latex/mathalpha/mathalfa.sty
+ texmf-dist/tex/latex/mathalpha/mathalpha.sty
+catalogue-alias mathalfa
+catalogue-ctan /macros/latex/contrib/mathalpha
+catalogue-license lppl1.3c
+catalogue-topics maths tagged-pdf-partially
+catalogue-version 1.145

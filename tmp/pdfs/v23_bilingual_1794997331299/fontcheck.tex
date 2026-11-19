@@ -1,0 +1,7 @@
+\documentclass{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes}
+\IfFontExistsTF{SimSun}{\newfontfamily\cfont{SimSun}[AutoFakeBold=2]}{\newfontfamily\cfont{FandolSong-Regular.otf}}
+\begin{document}
+English paragraph 2026. {\cfont\XeTeXlinebreaklocale "zh" 中文字符测试，三维空间推理与乐高积木。}
+\end{document}

@@ -1,0 +1,29 @@
+name soul
+category Package
+revision 79461
+shortdesc Hyphenation for letterspacing, underlining, and more
+longdesc The package provides hyphenable spacing out (letterspacing),
+longdesc underlining, striking out, etc., using the TeX hyphenation
+longdesc algorithm to find the proper hyphens automatically. It also
+longdesc provides a mechanism that can be used to implement similar
+longdesc tasks, that have to treat text syllable by syllable. This is
+longdesc shown in two examples. This version is a merge of the original
+longdesc soul package from Melchior Franz and the soulutf8 package from
+longdesc Heiko Oberdiek and supports also UTF8.
+containersize 8992
+containerchecksum 0aea0aeba256d2a20a15c84e6e00b52fea973272f3bea0f9ca064d62c538f7306d8940454be80749b8dfec9e730183f39f611d090fcd8439ae3370bb61176c84
+doccontainersize 812456
+doccontainerchecksum 190a513fa59a40277097c6fffb9ba50a51d6ea769bc54ddbdd4035fced717ff3b8457e88f10684f59a9aeb473fec75931efe3c725e716f07e6e090d64bb3c593
+srccontainersize 40556
+srccontainerchecksum 36fa719767bccdee8eda2e57c17fbdae0202a9d1942f7f925bea9f2d9a946620619186b77d287b7f41d71165342549f8db370a0c0881b390f7cf3e39c56f4f97
+runfiles size=13
+ texmf-dist/tex/generic/soul/soul-ori.sty
+ texmf-dist/tex/generic/soul/soul.sty
+ texmf-dist/tex/generic/soul/soulutf8.sty
+catalogue-alias soulutf8
+catalogue-contact-bugs https://github.com/LaTeX-Package-Repositories/soul/issues
+catalogue-contact-repository https://github.com/LaTeX-Package-Repositories/soul
+catalogue-ctan /macros/generic/soul
+catalogue-license lppl1.3
+catalogue-topics letterspace tagged-pdf-incompatible underline
+catalogue-version 3.2

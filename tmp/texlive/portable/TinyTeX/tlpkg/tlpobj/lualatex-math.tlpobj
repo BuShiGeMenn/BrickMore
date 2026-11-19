@@ -1,0 +1,28 @@
+name lualatex-math
+category Package
+revision 77682
+shortdesc Fixes for mathematics-related LuaLaTeX issues
+longdesc The package patches a few commands of the LaTeX2e kernel and
+longdesc the amsmath and mathtools packages to be more compatible with
+longdesc the LuaTeX engine. It is only meaningful for LuaLaTeX documents
+longdesc containing mathematical formulas, and does not exhibit any new
+longdesc functionality. The fixes are mostly moved from the unicode-math
+longdesc package to this package since they are not directly related to
+longdesc Unicode mathematics typesetting.
+depend etoolbox
+depend filehook
+containersize 3340
+containerchecksum d20188549889ac56c1f3f886f56ca787247a7e323d4d0a1664bd0a95427ef70228e3ae0fe316faacf2107f37c22fe81f7945fdaee4be9ee7613216f95bc73f1e
+doccontainersize 201248
+doccontainerchecksum 585bfea74421522fd22643165cdf4a14b675d6ea44e5e1ae4410a49c8718dff7d945cf1b21834e9b59341dcf497669a840231e3e465cb4403c4064d27d22387e
+srccontainersize 9532
+srccontainerchecksum fb689100713e17a7a6ab7b1f1c28d6a0bd9e3cdafe0dbe7a472143ebb2f5a5793e6826dc5e30d299a161e05bef4b73cf71dcb929659af8f2ce4d653f7878cfee
+runfiles size=4
+ texmf-dist/tex/lualatex/lualatex-math/lualatex-math.lua
+ texmf-dist/tex/lualatex/lualatex-math/lualatex-math.sty
+catalogue-contact-bugs https://github.com/phst/lualatex-math/issues
+catalogue-contact-repository https://github.com/phst/lualatex-math
+catalogue-ctan /macros/luatex/latex/lualatex-math
+catalogue-license lppl1.3c
+catalogue-topics maths luatex tagged-pdf
+catalogue-version 1.12

@@ -1,0 +1,15 @@
+Figure 4: Voxel model samples spanning the 21 object categories.
+Dimension BrickGPT paper Official Qwen3 script (ours)
+Base model LLaMA-3.2-1B-Instruct Qwen3-1.7B
+LoRAr= 32,α= 16, dropout0.05,q/vonly (3.4M params)r= 16,α= 32, all linear layers
+Learning rate2×10 −3 (AdamW)10 −4
+Effective batch 64 8
+Max length 4,096 8,192
+Epochs 3 3
+Hardware 8×RTX A6000, 12h 8×4090D, 25.3h
+Data StableText2Brick, 47k structures / 240k prompts BrickForma-48, 79.3k models / 396,610 samples
+Table9:OurconfigurationversustheoriginalBrickGPTpaper(Punetal.2025).BrickGPT-papervaluesaretakenfromSec.5.1
+andAppendixAofarXiv:2505.05469(basemodel,LoRAr=32,α=16,dropout0.05,q/vonlywith3.4Mparameters,AdamW
+learning rate0.002, global batch 64, 4096-token length filter, 3 epochs, 8×RTX A6000 and 12h, and 47k+ structures / 240k
+prompts).Thedataorganization,instructiontemplate,absenceofthinkingmode,andLoRAparadigmfollowBrickGPT;concrete
+hyperparameters follow the official Qwen3 adaptation, with the budget adjusted for the larger world, library, and corpus.

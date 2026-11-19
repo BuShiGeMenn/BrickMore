@@ -1,0 +1,9 @@
+\ProvidesFile{gloss-norsk.ldf}[2026/09/11 v2.13 polyglossia: module for Norwegian (Bokmal)]
+
+% We only provide this gloss for babel compatibility. Since norsk is 
+% actually norwegian bokmal, we use 'norwegian' with variant 'bokmal' now.
+
+\InheritGlossFile{norwegian}
+
+\endinput
+

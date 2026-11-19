@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "dataset": "qwen_A_B_supplement_20261117",
+  "total_records": 345,
+  "all_counts": {
+    "Qwen3-1.7B-base": 80,
+    "Qwen1.7b B LDR": 265
+  },
+  "expected_inputs": 525,
+  "coverage": {
+    "no_placement": 178,
+    "scoreable_partial": 80,
+    "unsupported_part": 2,
+    "scoreable_ldr": 265
+  },
+  "cohorts": {
+    "A": {
+      "prompts": 260,
+      "systems": [
+        "Qwen3-1.7B-base"
+      ]
+    },
+    "B": {
+      "prompts": 265,
+      "systems": [
+        "Qwen1.7b B LDR"
+      ]
+    }
+  },
+  "primary_policy": "A scores are limited to strictly parsed placements from 80 incomplete representations. B scores cover all 265 supplied LDRs.",
+  "smoke_prompt_ids": [
+    "A02_L3",
+    "A08_L4",
+    "B01_L1"
+  ],
+  "part_types": 17,
+  "new_meshes_extracted": 0,
+  "original_archives": {
+    "A260_对照包_20261117.zip": "88492921495ee188e6e1174f2e73b97fca0424e3f865753498fcc9988c30190e",
+    "base_qwen_A260_results.zip": "0d246c1f11b3ecac6d6fa07f5907c482bf2836bfaa05e22c3f358c2f03716be1",
+    "Qwen1.7b.zip": "ea476c4c77dc5a4808b9cd43b9d14fefe60aa80c6025d947909e8eb4d157304e"
+  },
+  "excluded_duplicate_brickgpt_ldrs": 260,
+  "duplicate_base_files_in_comparison_zip": 780,
+  "reference_manifest_sha256": "ab4fc3982ec762c48e91cfb2b6801caff2cc9da635a4c34fb15faf0d886b4b96"
+}

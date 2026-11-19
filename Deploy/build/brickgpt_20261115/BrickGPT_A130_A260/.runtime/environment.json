@@ -1,0 +1,28 @@
+{
+  "python": "D:\\PythonEnvs\\brickmore-eval\\Scripts\\python.exe",
+  "python_version": "3.12.10",
+  "weights": {
+    "base": null,
+    "adapter": null
+  },
+  "device": "cuda",
+  "bundle_free_gib": 82.21,
+  "errors": [
+    "Missing base weights. Run download on a connected host, or supply a local model path.",
+    "Missing adapter weights. Run download on a connected host, or supply a local model path."
+  ],
+  "numpy": "2.5.4",
+  "networkx": "3.4.2",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.1",
+  "safetensors": "0.8.0",
+  "accelerate": "1.10.1",
+  "peft": "0.17.1",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "free_gib": 4.52,
+    "total_gib": 6.0,
+    "bf16": true
+  },
+  "ready": false
+}

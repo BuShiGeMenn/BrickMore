@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{0.58\linewidth}@{}}
+\toprule
+Item & Value \\
+\midrule
+Base model & Qwen3-1.7B (bf16) \\
+Adaptation & LoRA, $r=16$, $\alpha=32$, dropout $0.05$, all linear layers \\
+Optimization & LR $10^{-4}$, cosine, 100 warm-up steps, 3 epochs \\
+Batch / max length & effective 8 (8 GPUs $\times$ 1) / 8,192 \\
+Hardware & DDP, 8$\times$RTX 4090D (24\,GB) \\
+Released checkpoint & step 79,000 (best validation loss) \\
+Software & transformers 4.51.3, trl 0.17.0, peft 0.15.2 \\
+\bottomrule
+\end{tabular}
+\caption{Fine-tuning configuration (details in Appendix~\ref{app:training}).}
+\label{tab:finetune-config}
+\end{table}

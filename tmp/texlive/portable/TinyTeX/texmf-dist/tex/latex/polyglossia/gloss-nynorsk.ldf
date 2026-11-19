@@ -1,0 +1,9 @@
+\ProvidesFile{gloss-nynorsk.ldf}[2026/09/11 v2.13 polyglossia: module for Norwegian (Nynorsk)]
+
+% We only provide this gloss for babel compatibility. Since nynorsk is 
+% a norwegian variety, we use 'norwegian' with variant 'nynorsk' now.
+
+\InheritGlossFile{norwegian}
+
+\endinput
+

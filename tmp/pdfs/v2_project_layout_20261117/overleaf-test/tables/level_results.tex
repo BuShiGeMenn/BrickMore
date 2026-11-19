@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrlrrrr}
+\toprule
+Level & $n$ & Words & System & $P_{\mathrm{inv}}\downarrow$ & VQAScore $\uparrow$ & PE $\uparrow$ & SigLIP2 $\uparrow$ \\
+\midrule
+L1 & 53 & 13.4 & BrickForma & 0.41\% & 0.1841 & \textbf{0.1409} & \textbf{0.0254} \\
+ &  &  & BrickGPT & \textbf{0.00\%} & \textbf{0.1911} & 0.1323 & 0.0132 \\
+ &  &  & BrickNet & 15.14\% & 0.0445 & 0.1032 & 0.0002 \\
+\midrule
+L2 & 53 & 26.4 & BrickForma & 0.78\% & \textbf{0.1651} & \textbf{0.1453} & \textbf{0.0241} \\
+ &  &  & BrickGPT & \textbf{0.00\%} & 0.1354 & 0.1391 & 0.0206 \\
+ &  &  & BrickNet & 17.74\% & 0.0579 & 0.1037 & 0.0013 \\
+\midrule
+L3 & 53 & 37.3 & BrickForma & 0.73\% & \textbf{0.1467} & \textbf{0.1479} & \textbf{0.0717} \\
+ &  &  & BrickGPT & \textbf{0.00\%} & 0.1061 & 0.1396 & 0.0199 \\
+ &  &  & BrickNet & 23.30\% & 0.0211 & 0.1075 & 0.0012 \\
+\midrule
+L4 & 53 & 52.3 & BrickForma & 1.38\% & \textbf{0.0239} & \textbf{0.1792} & \textbf{0.0914} \\
+ &  &  & BrickGPT & \textbf{0.00\%} & 0.0198 & 0.1609 & 0.0487 \\
+ &  &  & BrickNet & 18.68\% & 0.0023 & 0.1344 & 0.0016 \\
+\midrule
+L5 & 53 & 78.6 & BrickForma & 0.75\% & \textbf{0.0198} & \textbf{0.1727} & \textbf{0.0698} \\
+ &  &  & BrickGPT & \textbf{0.00\%} & 0.0107 & 0.1575 & 0.0286 \\
+ &  &  & BrickNet & 14.56\% & 0.0035 & 0.1379 & 0.0035 \\
+\bottomrule
+\end{tabular}
+\caption{Group B means by description level. Each level contains 53 prompts per system. Words is the mean English word count. Bold marks the best mean.}
+\label{tab:level-results}
+\end{table*}

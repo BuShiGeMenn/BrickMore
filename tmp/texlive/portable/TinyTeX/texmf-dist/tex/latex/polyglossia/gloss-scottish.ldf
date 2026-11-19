@@ -1,0 +1,8 @@
+\ProvidesFile{gloss-scottish.ldf}[2026/09/11 v2.13 polyglossia: module for Scottish Gaelic]
+
+% We only provide this gloss for babel compatibility. Since scottish is 
+% a gaelic variety, we use 'gaelic' with variant 'scottish' now.
+
+\InheritGlossFile{gaelic}
+
+\endinput

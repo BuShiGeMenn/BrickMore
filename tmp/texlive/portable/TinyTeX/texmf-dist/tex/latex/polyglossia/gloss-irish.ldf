@@ -1,0 +1,8 @@
+\ProvidesFile{gloss-irish.ldf}[2026/09/11 v2.13 polyglossia: module for Irish]
+
+% We only provide this gloss for babel compatibility. Since irish is 
+% a gaelic variety, we use 'gaelic' with variant 'irish' now.
+
+\InheritGlossFile{gaelic}
+
+\endinput

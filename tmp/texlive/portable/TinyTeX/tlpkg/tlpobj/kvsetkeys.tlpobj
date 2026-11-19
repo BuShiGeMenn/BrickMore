@@ -1,0 +1,23 @@
+name kvsetkeys
+category Package
+revision 79461
+shortdesc Key value parser with default handler support
+longdesc This package provides \kvsetkeys, a variant of package keyval's
+longdesc \setkeys. It allows the user to specify a handler that deals
+longdesc with unknown options. Active commas and equal signs may be used
+longdesc (e.g. see babel's shorthands) and only one level of curly
+longdesc braces are removed from the values.
+containersize 3592
+containerchecksum 2ed2a56d262ef1d14ad7de4ce580aa3dc12fa0d9358fabe56e1346617e7c8bd86aaa6e04d6101b3bf7515fbd7b4b48f0b8767f14f70db67c1c058c3af90ecfb1
+doccontainersize 390776
+doccontainerchecksum 4f0995e87a518ba5f867604d14d300e7dd3d708e260fe210ce8d0d79cf8782df337eb5cb2d09c38f12e34c234223b67a97a5697231c1395bb2edd9b37bc9126b
+srccontainersize 10608
+srccontainerchecksum 3a734a79b2176ed72fbec82f77fac12cb09bd95db738e956b1af1d065b85dcd06711c87c31afe6c71a59f14c889dc200a5fb10cb166b1765654e21044f902c1e
+runfiles size=4
+ texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+catalogue-contact-bugs https://github.com/LaTeX-Package-Repositories/kvsetkeys/issues
+catalogue-contact-repository https://github.com/LaTeX-Package-Repositories/kvsetkeys
+catalogue-ctan /macros/latex/contrib/kvsetkeys
+catalogue-license lppl1.3
+catalogue-topics keyval tagged-pdf
+catalogue-version 1.19

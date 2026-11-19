@@ -1,0 +1,45 @@
+Figure 12: BrickForma outputs from the earlier 114-prompt comparison. The chair is raw; the other examples are refined.
+Quantity (525 prompts) Value
+Raw layout is a single stud component 46 (8.8%)
+Stud components per failing raw layout (median / max) 5 / 33
+Failing raw layouts with duplicated voxels 50 / 479
+Detached fragments (airborne / grounded) 1,320 / 920
+MILP tier reached (12 / 60 / 180 / 600s) 326 / 133 / 18 / 2
+Prompts resampled outsideS28
+Final: single stud component, union unchanged 525 / 525
+Raw bricks, median (range) 183 (77–623)
+Final assembly bricks, median 452
+Table 11: Structural diagnostics of raw outputs (Section 5.5). “Union unchanged” means that the final assembly covers exactly
+the in-bounds voxel union of the raw draft; it does not assess whether the shape matches the prompt.
+0 5,000 10,000
+Already
+rejected
+Collision
+Not in
+library
+Out of
+bounds
+8,207
+2,757
+8
+4
+(a) BrickGPT rejections
+114 prompts
+0 10 20 30
+Dangling node
+Missing
+connector
+Invalid edge
+syntax
+Index / dim.
+error
+Unknown part
+or color
+24
+10
+10
+6
+3
+(b) BrickNet failures
+53 attempts
+Figure 13: Failure categories in the earlier 114-prompt comparison; values as given in the corresponding run records.

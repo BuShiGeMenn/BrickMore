@@ -1,0 +1,23 @@
+name framed
+category Package
+revision 77682
+shortdesc Framed or shaded regions that can break across pages
+longdesc The package creates three environments: framed, which puts an
+longdesc ordinary frame box around the region, shaded, which shades the
+longdesc region, and leftbar, which places a line at the left side. The
+longdesc environments allow a break at their start (the \FrameCommand
+longdesc enables creation of a title that is "attached" to the
+longdesc environment); breaks are also allowed in the course of the
+longdesc framed/shaded matter. There is also a command \MakeFramed to
+longdesc make your own framed-style environments.
+containersize 7908
+containerchecksum be2a3ba0a9dc5a6b7aba0c4dfdb2e8e6e767b9d744383a94ebb9e9ed50c2feadf3e958c7a4bcbc20d098426ea50a05b962863ac8b9460bbbb0fa4b9ca62138bc
+doccontainersize 239020
+doccontainerchecksum d0f1e253980116d1de34f3c4357b8e068213cbed8bded90cadf8f3821e952c2d53d5d17087394d9fa0356ffbea7b7eb5206306190e816fe7a4b60c99dba70aec
+runfiles size=6
+ texmf-dist/tex/latex/framed/framed.sty
+catalogue-also mdframed
+catalogue-ctan /macros/latex/contrib/framed
+catalogue-license other-free
+catalogue-topics boxing box-breaking decoration tagged-pdf-incompatible
+catalogue-version 0.96

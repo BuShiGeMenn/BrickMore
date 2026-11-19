@@ -1,0 +1,7 @@
+\documentclass{article}
+\usepackage{fontspec}
+\IfFileExists{C:/Windows/Fonts/times.ttf}{\setmainfont{times.ttf}[Path=C:/Windows/Fonts/,BoldFont=timesbd.ttf,ItalicFont=timesi.ttf,BoldItalicFont=timesbi.ttf]}{}
+\IfFileExists{C:/Windows/Fonts/simsun.ttc}{\newfontfamily\cfont{simsun.ttc}[Path=C:/Windows/Fonts/,FontIndex=0,AutoFakeBold=1.5]}{\newfontfamily\cfont{FandolSong-Regular.otf}}
+\begin{document}
+English paragraph 2026. {\cfont\XeTeXlinebreaklocale "zh" 中文字符测试，三维空间推理与乐高积木。}
+\end{document}
