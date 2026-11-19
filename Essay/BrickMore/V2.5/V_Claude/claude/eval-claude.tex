@@ -1,0 +1,39 @@
+% Polished Comparative Evaluation section (proofread by Claude). Original text is in main-original.tex.
+\section{Comparative Evaluation}
+\label{sec:eval}
+\subsection{Setup and Metrics}
+\label{sec:setup}
+We evaluate BrickForma against BrickGPT and BrickNet on 525 shared prompts spanning 21 categories and five description levels (105 prompts per level). Scoring one delivered output per system and prompt yields 1,575 LDraw exports. To isolate the geometric quality of the learned model before solver intervention, the main benchmark scores every delivered raw BrickForma export, including incomplete drafts; Appendix~\ref{app:eval} reports the refinement diagnostic separately.
+
+\emph{Text--image alignment.}
+Each export is rendered in a uniform yellow material from eight $512{\times}512$ orthographic views, spaced $45^\circ$ apart in azimuth at $25^\circ$ elevation. Each alignment score takes the maximum over views and is then averaged across prompts. VQAScore~\cite{vqascore} is the first-token probability of \textquotedblleft Yes\textquotedblright\ under Qwen2.5-VL-7B-Instruct~\cite{qwen25vl}; PE~\cite{pe} is the cosine similarity between normalized image and text embeddings; and SigLIP2~\cite{siglip2} is the sigmoid of the image--text logit.
+
+\emph{Invalid placements.}
+For an export with $n$ placements in file order, let $I_i$ indicate whether placement $i$ violates BrickNet's inset collision kernel~\cite{bricknet} given the preceding placements. We report the mean per-export invalid-placement ratio $P_{\mathrm{inv}}=n^{-1}\sum_{i=1}^{n}I_i$.
+
+\subsection{Main Results}
+\input{claude/main_results_table-claude}
+Across all 525 prompts, BrickForma's raw outputs achieve the highest mean VQAScore (0.0866), PE (0.1568), and SigLIP2 (0.0448) (Table~\ref{tab:main}), outperforming BrickGPT on 384, 337, and 327 prompts, respectively. All six paired alignment comparisons remain statistically significant after Holm correction (Appendix~\ref{app:eval}). For placement validity, BrickGPT achieves the lowest mean $P_{\mathrm{inv}}$ (0.00\%) through physics-aware rollback, followed by BrickForma (0.79\%) and BrickNet (18.42\%); 525, 331, and 139 of their outputs, respectively, contain no invalid placement (Figure~\ref{fig:comparison-zero-invalid}). Figures~\ref{fig:comparison-means} and~\ref{fig:comparison-distributions} show the pooled means and score distributions.
+
+\paragraph{Comparison with the untuned backbone.}
+To measure the effect of parametric supervision, and thus to address \textbf{(Q2)}, we compare against untuned Qwen3-1.7B on 260 matched prompts, assigning zero alignment scores whenever it fails to produce a scorable layout. Mean VQAScore, PE, and SigLIP2 rise from 0.0008, 0.0354, and 0.0014 for the untuned backbone to 0.0649, 0.1564, and 0.0328 for raw BrickForma before geometric refinement (Appendix~\ref{app:eval}).
+
+\subsection{Performance across Description Levels}
+\input{claude/level_results-claude}
+Addressing \textbf{(Q1)}, BrickForma leads on all three alignment metrics at every description level, from concise L1 requests to detailed L5 specifications (Table~\ref{tab:level-results} and Figure~\ref{fig:comparison-levels}). At L1, its mean VQAScore is 0.1539, compared with 0.1296 for BrickGPT and 0.0346 for BrickNet; BrickGPT keeps $P_{\mathrm{inv}}$ at 0.00\% at every level. Figure~\ref{fig:gallery} shows qualitative L1 and L2 examples under matched rendering conditions.
+
+\input{claude/short_prompt_comparison-claude}
+
+\subsection{Raw versus Refined Outputs}
+\input{claude/raw_refined_results-claude}
+To quantify the effect of exact-cover reconstruction, we examine 110 raw/refined pairs from an earlier 114-prompt comparison; each pair shares the same prompt and model identifier (Table~\ref{tab:raw-refined}). Refinement eliminates invalid placements ($P_{\mathrm{inv}}$ drops from 0.1897\% to 0.0000\%) and raises the mean part count from 178.7 to 421.2. VQAScore and PE remain essentially unchanged, whereas SigLIP2 decreases from 0.1379 to 0.1261.
+
+\subsection{Geometric Refinement Audit}
+\label{sec:diagnostics}
+Defining stud contacts as footprint overlaps between adjacent layers, we map the same 110 pairs onto a grid with a 20\,LDU horizontal pitch and a 24\,LDU layer height, and align each export to a common occupied-cell origin. All 110 pairs keep identical occupied voxel unions after translation, while the number of single-component assemblies rises from 18 to 110 and the number of overlap-free layouts from 100 to 110 (Table~\ref{tab:export-audit}).
+\input{claude/refinement_geometry-claude}
+
+In the separate 525-prompt diagnostic run, only 46 raw drafts form a single stud component, whereas all 525 final layouts are single stud-connected components that preserve their target voxel unions after the recovery procedure (Appendix~\ref{app:eval}).
+
+\subsection{Evaluation Boundaries}
+Our benchmark compares delivered exports from systems that differ in inference settings and part libraries. Description levels differ in both semantic detail and token length, so PE truncates 121 prompts and SigLIP2 truncates 209 (Appendix~\ref{app:eval}). Uniform yellow rendering isolates geometric form and layout but does not assess color fidelity. Finally, the paired refinement audit covers only delivered pairs, so unsuccessful solver attempts are excluded from its denominator.
