@@ -1,0 +1,5288 @@
+{
+  "samples": 345,
+  "primary": {
+    "Qwen3-1.7B-base": {
+      "records": 80,
+      "pinv": {
+        "n": 80,
+        "missing": 0,
+        "mean": 0.3967068785576208
+      },
+      "vqa": {
+        "n": 80,
+        "missing": 0,
+        "mean": 0.002628298629912251
+      },
+      "pe": {
+        "n": 80,
+        "missing": 0,
+        "mean": 0.11494503105059266
+      },
+      "siglip2": {
+        "n": 80,
+        "missing": 0,
+        "mean": 0.004465622162165173
+      },
+      "pinv_micro": 0.5582232893157263
+    },
+    "Qwen1.7b B LDR": {
+      "records": 265,
+      "pinv": {
+        "n": 265,
+        "missing": 0,
+        "mean": 0.004900759617740749
+      },
+      "vqa": {
+        "n": 265,
+        "missing": 0,
+        "mean": 0.017921695985104128
+      },
+      "pe": {
+        "n": 265,
+        "missing": 0,
+        "mean": 0.11727437521770315
+      },
+      "siglip2": {
+        "n": 265,
+        "missing": 0,
+        "mean": 0.020513583724965166
+      },
+      "pinv_micro": 0.013909587680079483
+    }
+  },
+  "paired": {
+    "pinv": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "vqa": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "pe": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "siglip2": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    }
+  },
+  "by_category_level": [
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "basket",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0014700785977765918
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.11700354516506195
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 5.829126530443318e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "basket",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0006145972292870283
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.14369720220565796
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.004609572235494852
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bed",
+      "level": 3,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.2803030303030303
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.006162366073112935
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.15114463865756989
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0002602004096843302
+      },
+      "pinv_micro": 0.25
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bed",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.6666666666666666
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.00016256835078820586
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.204962819814682
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 5.829126530443318e-05
+      },
+      "pinv_micro": 0.6666666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bed",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.00031690660398453474
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.20614683628082275
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 9.610241977497935e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bed",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 3.195583758497378e-06
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.04542720317840576
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.5229979055675358e-08
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bench",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.008180365897715092
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.13630394637584686
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.0129991096619051e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bench",
+      "level": 4,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.4793729372937294
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0010002272756537423
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.13504861295223236
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 6.88628682610215e-06
+      },
+      "pinv_micro": 0.9431818181818182
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bench",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9791666666666666
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0009740390232764184
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.16492962837219238
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 7.889262633398175e-06
+      },
+      "pinv_micro": 0.9791666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bench",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9791666666666666
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.005536918994039297
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.10282339155673981
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.1365636964910664e-06
+      },
+      "pinv_micro": 0.9791666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 4,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.5798611111111112
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0006093025076552294
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.16300532966852188
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0012693002790911123
+      },
+      "pinv_micro": 0.7804878048780488
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.00010830513201653957
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.15864001214504242
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.008061991073191166
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 3,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.9791666666666666
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.002346150722587481
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.08978639543056488
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.1566009732177918e-06
+      },
+      "pinv_micro": 0.9791666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.001551738940179348
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.12377196550369263
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.2878952020400902e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bottle",
+      "level": 2,
+      "batch": "A",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.5826210826210826
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0011603565459760528
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0945551668604215
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 4.0865282547504954e-05
+      },
+      "pinv_micro": 0.42911877394636017
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bottle",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0005709832767024636
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.17954182624816895
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0001686527393758297
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bottle",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.00017120841948781163
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.1226900964975357
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 6.205049430718645e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bowl",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9895833333333334
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0001085981130017899
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.07752108573913574
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 5.42221869181958e-06
+      },
+      "pinv_micro": 0.9895833333333334
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bowl",
+      "level": 4,
+      "batch": "A",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.4375
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0003673140660490996
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.11581751455863316
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.6160865066534218e-05
+      },
+      "pinv_micro": 0.4803921568627451
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bowl",
+      "level": 2,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.28125
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00443179695867002
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.07317381538450718
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.0790184603592934e-06
+      },
+      "pinv_micro": 0.140625
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bowl",
+      "level": 3,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.4895833333333333
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0038035985198803246
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.06432370096445084
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.59664906315993e-06
+      },
+      "pinv_micro": 0.6351351351351351
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bowl",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.5
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.00020059691451024264
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.10889826714992523
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 9.422446396456508e-07
+      },
+      "pinv_micro": 0.5
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bus",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.42857142857142855
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0012016809778288007
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.08710899949073792
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.7429786680622783e-07
+      },
+      "pinv_micro": 0.42857142857142855
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bus",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.003072730265557766
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09880668669939041
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 6.962256520637311e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bus",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.2
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.006125421728938818
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.13444101810455322
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0024726230185478926
+      },
+      "pinv_micro": 0.2
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bus",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.7894736842105263
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 3.3679913030937314e-05
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.1448502093553543
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0013250223128125072
+      },
+      "pinv_micro": 0.7894736842105263
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "camera",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.2857142857142857
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.6614132618997246e-05
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09538546204566956
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 3.9278620533877984e-07
+      },
+      "pinv_micro": 0.2857142857142857
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "car",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0001675279636401683
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.07316572964191437
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.2878952020400902e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "car",
+      "level": 4,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.6006944444444444
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00018156416626879945
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.11766815930604935
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.3415705780062126e-05
+      },
+      "pinv_micro": 0.6547619047619048
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "car",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.46153846153846156
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.00020045753626618534
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.07935803383588791
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 2.1233784082141938e-06
+      },
+      "pinv_micro": 0.46153846153846156
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "car",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 5.80650957999751e-05
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.11989699304103851
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 8.481103577651083e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "chair",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.6190476190476191
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0015084461774677038
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.11762846261262894
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 3.0894946121406974e-06
+      },
+      "pinv_micro": 0.6190476190476191
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "chair",
+      "level": 2,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.14285714285714285
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.001668717770371586
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.07530341297388077
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.614800076296888e-06
+      },
+      "pinv_micro": 0.03636363636363636
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "chair",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0012728943256661296
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.14711864292621613
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0002611903182696551
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "chair",
+      "level": 5,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.06944444444444445
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0019194004125893116
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.1332182064652443
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00011773460119002266
+      },
+      "pinv_micro": 0.078125
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "chair",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.3076310096948873e-05
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09706909954547882
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 2.8453348122070565e-08
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "guitar",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.16666666666666666
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.5354837159975432e-05
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0900006890296936
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.9555681518568235e-08
+      },
+      "pinv_micro": 0.16666666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "guitar",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.00014047807781025767
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.11066137254238129
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 2.1444948288262822e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "guitar",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.4
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.107732441596454e-05
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.08527061343193054
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.855391076333035e-07
+      },
+      "pinv_micro": 0.4
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "guitar",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.001195482793264091
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.16198334097862244
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.000552778656128794
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "jar",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.2
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 8.953674841905013e-05
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.10624338686466217
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.3846004549122881e-05
+      },
+      "pinv_micro": 0.2
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "jar",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9795918367346939
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0005695629515685141
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.06099628284573555
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.0129991096619051e-05
+      },
+      "pinv_micro": 0.9795918367346939
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "jar",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.7222222222222222
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 2.37585227296222e-05
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.12103655189275742
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.3007129382458515e-05
+      },
+      "pinv_micro": 0.7222222222222222
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "jar",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.6666666666666666
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0004970576846972108
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09707709401845932
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 2.561282371971174e-06
+      },
+      "pinv_micro": 0.6666666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "mug",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.3333333333333333
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.003971941769123077
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.06144970655441284
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 6.825602838489431e-08
+      },
+      "pinv_micro": 0.3333333333333333
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "mug",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.7333333333333333
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0014407889684662223
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.10346893966197968
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 6.475947884609923e-07
+      },
+      "pinv_micro": 0.7333333333333333
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "mug",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.5714285714285714
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0013073566369712353
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.1321728229522705
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.4593761079595424e-06
+      },
+      "pinv_micro": 0.5714285714285714
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "mug",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.041666666666666664
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.004701321478933096
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.07297231256961823
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 2.6995778057425923e-07
+      },
+      "pinv_micro": 0.041666666666666664
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "piano",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09090909090909091
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0003294035268481821
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0672658234834671
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 2.561282371971174e-06
+      },
+      "pinv_micro": 0.09090909090909091
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "piano",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9948630136986302
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.000966148916631937
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.15924730896949768
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.001098731067031622
+      },
+      "pinv_micro": 0.9948630136986302
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "sofa",
+      "level": 2,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.25
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00675201287958771
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.14277849346399307
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0004243678704369813
+      },
+      "pinv_micro": 0.25
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "sofa",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.8181818181818182
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0014101990964263678
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.10280248522758484
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 2.2827996872365475e-05
+      },
+      "pinv_micro": 0.8181818181818182
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "sofa",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.6428571428571429
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.2362622328510042e-05
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.10995359718799591
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 2.6995778057425923e-07
+      },
+      "pinv_micro": 0.6428571428571429
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "table",
+      "level": 1,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.4513888888888889
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.005721854977309704
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.06234561279416084
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 2.3943747464727494e-06
+      },
+      "pinv_micro": 0.6418918918918919
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "table",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.25
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0006965877255424857
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.05670683830976486
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 9.516251338936854e-06
+      },
+      "pinv_micro": 0.25
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "table",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.7640449438202247
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0008461641264148057
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0986158549785614
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 6.60521473037079e-05
+      },
+      "pinv_micro": 0.7640449438202247
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "table",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0005820506485179067
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.08207616209983826
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 5.144220995134674e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "tower",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9464285714285714
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.005426744930446148
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.17077715694904327
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.007577241398394108
+      },
+      "pinv_micro": 0.9464285714285714
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "tower",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.03899901732802391
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.18625716865062714
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.005220125429332256
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "tower",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.75
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0020916431676596403
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.23685823380947113
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.32082128524780273
+      },
+      "pinv_micro": 0.75
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "train",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.7804878048780488
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.012993644922971725
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.10269062221050262
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 3.689884806590271e-07
+      },
+      "pinv_micro": 0.7804878048780488
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "train",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.5652173913043478
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.006234684959053993
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.13163715600967407
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.5689549400121905e-05
+      },
+      "pinv_micro": 0.5652173913043478
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "vessel",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.01565876230597496
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.1341213583946228
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 3.1201914680423215e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "vessel",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.8181818181818182
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.00210274918936193
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.11041829735040665
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.9947297005273867e-06
+      },
+      "pinv_micro": 0.8181818181818182
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "vessel",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.3333333333333333
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0005323172663338482
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.10894334316253662
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.9947297005273867e-06
+      },
+      "pinv_micro": 0.3333333333333333
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.0273921049019918e-05
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.05948587879538536
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.1127383276773344e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 8.397415228955651e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.06081143394112587
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.0945016654773099e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 3.192622102687892e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.08005989342927933
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.848691726991092e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 3.5706233916243946e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.09264365211129189
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 2.731809034983712e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 9.15453188099491e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.09264365211129189
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 2.731809034983712e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bed",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0019214076455682516
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.09814287722110748
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.4588185943439385e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bed",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00011136988177895546
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.08380820229649544
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 5.310188484486389e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bed",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00012004919335595332
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.08499564602971077
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 5.389939730093829e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bed",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00016165408851520624
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.11001592129468918
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.3038481938565383e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bed",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0006472460881923325
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.11105837672948837
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.3038481938565383e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bench",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.02747129462659359
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.09914271533489227
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.6509675759834863e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bench",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.020893663458991796
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.09687353298068047
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.3730129690969761e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bench",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00043359593064451474
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.09516721963882446
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 2.1247157278025952e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bench",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00047935405746102333
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.12373456731438637
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.1864296816099795e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bench",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0011479911700007506
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.10568693280220032
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.1864296816099795e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0012641877547139302
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.1362353041768074
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.0804379598994274e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0012196925235912204
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.14848900586366653
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0009076522892428329
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.003952393541112542
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.15475200861692429
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0008263026757049374
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00018060615548165515
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.18116191029548645
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00020190284703858197
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 9.947230864781886e-05
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.17166323959827423
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00020190284703858197
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0007431572288965071
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.09851665794849396
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 3.6407512737923753e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0012334279108472401
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.09757838025689125
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.2342601252157692e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.002335880647422073
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.10879912227392197
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.503963964452851e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00013139634552317148
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.1411447376012802
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.221907587023452e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0003962991986554698
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.1257418766617775
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.221907587023452e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bottle",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.02699580229818821
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.12506155669689178
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0014794828603044152
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bottle",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.03099486045539379
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.14646024256944656
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.004100579069927335
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bottle",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.021624272922053933
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.15488215535879135
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.005361741234082729
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bottle",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0065855831489898264
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.186643548309803
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.013122731586918235
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bottle",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.005445029761176556
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.18523259460926056
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.012516014277935028
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bowl",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.2606020902694581e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.08851970359683037
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.488801387949934e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bowl",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 3.39952731565063e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0997534729540348
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.119973971228319e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bowl",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.1958896872529294e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.10255176573991776
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 2.4209879484260455e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bowl",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 5.4794087418486015e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.1408138871192932
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0001745980712257733
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bowl",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.3077663197691436e-05
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.10924603417515755
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.00017161970026791096
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bus",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.295087059816069e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0783364325761795
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 6.651209929486868e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bus",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.5984882111297338e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0853942446410656
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.097582419149148e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bus",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.6894083993720415e-07
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.07916487380862236
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 3.6775213629880454e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bus",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.583417819503666e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.11854353547096252
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.7917563127411995e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bus",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 5.644106863655907e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.11464910209178925
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.722603883536067e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "camera",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 4.5914053771412e-05
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.10388035327196121
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0009051550926493235
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "camera",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0001335950400971342
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.10724837705492973
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.003145452578678487
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "camera",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 6.693409886793233e-05
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.11327970400452614
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.004866388712798653
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "camera",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 7.780548367009033e-05
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.146001435816288
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.010838692174729658
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "camera",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0002602029635454528
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.14848440140485764
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.010838692174729658
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "car",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.768755794273602e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.1020117923617363
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 2.157590816409538e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "car",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 3.478503003861988e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.10463413596153259
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 5.816292713234361e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "car",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.5721824411230045e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.12271424382925034
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 1.8838923596220525e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "car",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 2.890262976507074e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.15083400905132294
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 7.005471573506838e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "car",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 2.6031759716715897e-06
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.13846898078918457
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 7.030160560361765e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "chair",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.018157064947672552
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.10393976916869481
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 8.299857654492371e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "chair",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.03892595433717361
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.099706269800663
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 5.14609396304877e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "chair",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.02062401582331101
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.09618564446767171
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 5.326127688931592e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "chair",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0027291552287351806
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12515680491924286
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 6.913895231264178e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "chair",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.000200370249634337
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.11310381690661113
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 1.1776491703585634e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "guitar",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 1.1402255457445184e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.11350010583798091
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 6.5745214972897275e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "guitar",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00020349220236918578
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.1344913144906362
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 3.8601900087087415e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "guitar",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 8.110326158809281e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.13302680104970932
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 8.999505007523112e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "guitar",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 6.585477573632185e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.14035236338774362
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00038489283663996804
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "guitar",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.2628439182881266e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.1357285330692927
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00038489283663996804
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "jar",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0034347054485503272
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.10779015223185222
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.000103292311905534
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "jar",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0028046616595626497
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.1122465580701828
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00014816347296194485
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "jar",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0011711380842219417
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12177141010761261
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00012343328914236432
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "jar",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00019614012126112357
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.1461486667394638
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0003715081378080261
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "jar",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0002698358827425788
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.13837280869483948
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0003715081378080261
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "mug",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.008052882983368667
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.10806696613629659
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00017067180813986246
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "mug",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.025145019152356934
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.10758880525827408
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 9.432848128199112e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "mug",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.009206800546962768
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12482292701800664
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 8.05689077575759e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "mug",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0018026045509031974
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.13954887787501016
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 7.637035006761531e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "mug",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.19047619047619047
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0009091827541851671
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.13601387788852057
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 8.045822511348888e-06
+      },
+      "pinv_micro": 0.375
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "piano",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00010838241064448084
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0908978208899498
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 1.7664081516007477e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "piano",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.53320032091627e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.07906859616438548
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 3.929086081673934e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "piano",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.3206803234643303e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.09590663015842438
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 4.9513981442335835e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "piano",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 1.1389362650030913e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12572154899438223
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 3.615743707996444e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "piano",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.9658857556569274e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12824438015619913
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 4.598723990056897e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "pot",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0003048193466383964
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.07963984211285909
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 4.267732708266673e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "pot",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00017563953285086123
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.11479172358910243
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 3.586238108255202e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "pot",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00047528302093269303
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12205456693967183
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00013005093781733498
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "pot",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 5.3309543242600434e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.1458947459856669
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00010917734137668352
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "pot",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 5.7934779154796466e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.14691809813181558
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00010917734137668352
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "sofa",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 1.462121095604137e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.06987606858213742
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 1.4358151290139176e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "sofa",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.0411532280680453e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.07014323770999908
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 5.076909891007139e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "sofa",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 4.840388783122762e-07
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.07275800655285518
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.874929180052277e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "sofa",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 1.6180427261739776e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.09820362677176793
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.4016086020613634e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "sofa",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.4771213702479145e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.10744510839382808
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.4016086020613634e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "table",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00019463734622604534
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.08619717011849086
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 7.004284512390768e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "table",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0009261066055235764
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.07934695978959401
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 6.99449903625767e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "table",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0003967414416668665
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.07667446384827296
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.4969286774497354e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "table",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 5.223128512928573e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.10726913809776306
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 8.344740914859964e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "table",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0010334234563439775
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.07925807436307271
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 1.1230888958380092e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "tower",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.476221260925134
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.18882023294766745
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.3153366247812907
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "tower",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12121212121212122
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.4760368416706721
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.19536071022351584
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.18654598450909057
+      },
+      "pinv_micro": 0.21052631578947367
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "tower",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12121212121212122
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.33305466175079346
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.20659440755844116
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.173119913165768
+      },
+      "pinv_micro": 0.21052631578947367
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "tower",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.030591153539717197
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.23909233510494232
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.5325055420398712
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "tower",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.015866495048006374
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.22016885379950205
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.5506489276885986
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "train",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 4.059018692714744e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.07969339688618977
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 1.317164943041386e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "train",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 4.844173607428578e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.08266736070315044
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 4.94534300325237e-07
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "train",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 3.316879557739109e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.09032212197780609
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 3.2711144844673377e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "train",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 1.1975780807915726e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.11169368276993434
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 3.531973864786172e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "train",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 4.161078489535915e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.09278337160746257
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 5.987306091507587e-06
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "vessel",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00738450265400085
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.09575894971688588
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.003671330898972277
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "vessel",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0011575246982526248
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.09135189404090245
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 2.4978444495597312e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "vessel",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 6.125248160060437e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.10597020387649536
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 8.781931774137774e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "vessel",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 3.153765608961597e-05
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.14120329916477203
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00016016170472236504
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "vessel",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 3,
+        "missing": 0,
+        "mean": 9.744559520186158e-06
+      },
+      "pe": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12977449099222818
+      },
+      "siglip2": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.00017006447766713487
+      },
+      "pinv_micro": 0.0
+    }
+  ],
+  "protocol": {
+    "structure": "pinv_file_order, original BrickNet 0.1.0 inset collision kernel; original generation order not verified; no fixed-edge exemptions",
+    "image_scores": "Eight fixed views, max per model then arithmetic mean; no best-of-N sample selection",
+    "rendering": "Shared actual inset part surfaces, orthographic CPU rasterizer, 512px, 25-degree elevation, 45-degree azimuth steps, uniform yellow",
+    "color": "Uniform display color; no claim of generated-color accuracy",
+    "original_paper_reproduction": false,
+    "old_run_scores_mixed": false,
+    "primary": "A scores are limited to strictly parsed placements from 80 incomplete representations. B scores cover all 265 supplied LDRs."
+  },
+  "by_batch": {
+    "A": {
+      "expected_prompts": 260,
+      "selected_prompts": 80,
+      "systems": {
+        "Qwen3-1.7B-base": {
+          "records": 80,
+          "pinv": {
+            "n": 80,
+            "missing": 0,
+            "mean": 0.3967068785576208
+          },
+          "vqa": {
+            "n": 80,
+            "missing": 0,
+            "mean": 0.002628298629912251
+          },
+          "pe": {
+            "n": 80,
+            "missing": 0,
+            "mean": 0.11494503105059266
+          },
+          "siglip2": {
+            "n": 80,
+            "missing": 0,
+            "mean": 0.004465622162165173
+          },
+          "pinv_micro": 0.5582232893157263
+        }
+      },
+      "paired": {}
+    },
+    "B": {
+      "expected_prompts": 265,
+      "selected_prompts": 265,
+      "systems": {
+        "Qwen1.7b B LDR": {
+          "records": 265,
+          "pinv": {
+            "n": 265,
+            "missing": 0,
+            "mean": 0.004900759617740749
+          },
+          "vqa": {
+            "n": 265,
+            "missing": 0,
+            "mean": 0.017921695985104128
+          },
+          "pe": {
+            "n": 265,
+            "missing": 0,
+            "mean": 0.11727437521770315
+          },
+          "siglip2": {
+            "n": 265,
+            "missing": 0,
+            "mean": 0.020513583724965166
+          },
+          "pinv_micro": 0.013909587680079483
+        }
+      },
+      "paired": {}
+    }
+  },
+  "source_input_coverage": {
+    "A": {
+      "no_placement": 178,
+      "scoreable_partial": 80,
+      "unsupported_part": 2
+    },
+    "B": {
+      "scoreable_ldr": 265
+    }
+  }
+}
