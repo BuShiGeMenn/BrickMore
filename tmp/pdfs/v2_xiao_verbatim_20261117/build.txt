@@ -1,0 +1,553 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LC_ALL = "C.UTF-8",
+	LC_CTYPE = "C",
+	LC_NUMERIC = "C",
+	LC_COLLATE = "C",
+	LC_TIME = (unset),
+	LC_MONETARY = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the system default locale ("Chinese (Simplified)_China.936").
+Initial Win CP for (console input, console output, system): (CP936, CP65001, CP936)
+I changed them all to CP936
+Rc files read (in order):
+  NONE
+Latexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.
+No existing .aux file, so I'll make a simple one, and require run of *latex.
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'pdflatex' forced or previously required:
+    Reason or flag: 'Initial setup'
+
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -file-line-error -recorder  "main.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (./aaai2027.sty
+Conference Style for AAAI for LaTeX 2e
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/newtx/newtxtext.sty `newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes and its extensions (msharpe) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xpatch/xpatch.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/carlisle/scalefnt.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/kastrup/binhex.tex) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/fontaxes/fontaxes.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/fontaxes/fontaxes-v1.sty))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/helvet.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/courier.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/url/url.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/caption/caption.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/algorithms/algorithm.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/float/float.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/algorithms/algorithmic.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (./sections/xiao_frontmatter.tex) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/newtx/t1ntxtlf.fd) (./main.aux) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (./sections/teaser.tex) (./sections/xiao_abstract.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/t1pcr.fd)
+Underfull \vbox (badness 10000) has occurred while \output is active [1{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc} <./figure1.pdf>]) (./sections/xiao_introduction.tex
+
+Package natbib Warning: Citation `zhou2026paperfoldingpuzzle' on page 2 undefined on input line 13.
+
+
+Package natbib Warning: Citation `luo2026geogrambench' on page 2 undefined on input line 13.
+
+
+Package natbib Warning: Citation `brickgpt' on page 2 undefined on input line 18.
+
+
+Package natbib Warning: Citation `bricknet' on page 2 undefined on input line 18.
+
+
+LaTeX Warning: Reference `tab:level-results' on page 2 undefined on input line 18.
+
+
+Package natbib Warning: Citation `qwen3' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `lora' on page 2 undefined on input line 23.
+
+[2])
+
+LaTeX Warning: Reference `fig:teaser' on page 3 undefined on input line 38.
+
+
+LaTeX Warning: Reference `fig:teaser' on page 3 undefined on input line 38.
+
+(./sections/method.tex
+
+Package natbib Warning: Citation `thompson2020lego' on page 3 undefined on input line 3.
+
+
+Package natbib Warning: Citation `brickbybrick' on page 3 undefined on input line 3.
+
+
+Package natbib Warning: Citation `breakandmake' on page 3 undefined on input line 3.
+
+
+Package natbib Warning: Citation `brickgpt' on page 3 undefined on input line 3.
+
+
+Package natbib Warning: Citation `bricknet' on page 3 undefined on input line 3.
+
+
+Package natbib Warning: Citation `stablelego' on page 3 undefined on input line 6.
+
+
+LaTeX Warning: Reference `app:dataset' on page 3 undefined on input line 6.
+
+
+Package natbib Warning: Citation `infinigen' on page 3 undefined on input line 9.
+
+
+Package natbib Warning: Citation `lora' on page 3 undefined on input line 9.
+
+
+Package natbib Warning: Citation `brickgpt' on page 3 undefined on input line 9.
+
+
+LaTeX Warning: Reference `fig:data-workflow' on page 3 undefined on input line 14.
+
+
+LaTeX Warning: Reference `app:dataset' on page 3 undefined on input line 16.
+
+
+LaTeX Warning: Reference `app:dataset' on page 3 undefined on input line 21.
+
+
+LaTeX Warning: Reference `tab:training-data' on page 3 undefined on input line 24.
+
+(./sections/recorded_training_counts.tex) [3]
+
+Package natbib Warning: Citation `brickgpt' on page 4 undefined on input line 33.
+
+
+LaTeX Warning: Reference `tab:finetune-config' on page 4 undefined on input line 33.
+
+
+LaTeX Warning: Reference `app:training' on page 4 undefined on input line 33.
+
+(./sections/finetune_config.tex
+
+LaTeX Warning: Reference `app:training' on page 4 undefined on input line 18.
+
+
+LaTeX Warning: Reference `app:training' on page 4 undefined on input line 18.
+
+)
+
+LaTeX Warning: Reference `alg:inference-retiling' on page 4 undefined on input line 37.
+
+(./sections/inference_algorithm.tex)) (./sections/evaluation.tex
+
+LaTeX Warning: Reference `fig:comparison-cohorts' on page 4 undefined on input line 5.
+
+
+Package natbib Warning: Citation `vqascore' on page 4 undefined on input line 8.
+
+
+Package natbib Warning: Citation `qwen25vl' on page 4 undefined on input line 8.
+
+
+Package natbib Warning: Citation `pe' on page 4 undefined on input line 8.
+
+
+Package natbib Warning: Citation `siglip2' on page 4 undefined on input line 8.
+
+
+Package natbib Warning: Citation `bricknet' on page 4 undefined on input line 11.
+
+[4 <./figure2.pdf>] (./sections/main_results_table.tex)
+
+LaTeX Warning: Reference `tab:main' on page 5 undefined on input line 15.
+
+
+LaTeX Warning: Reference `app:eval' on page 5 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:comparison-means' on page 5 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:comparison-distributions' on page 5 undefined on input line 15.
+
+(./sections/level_results.tex)
+
+LaTeX Warning: Reference `tab:level-results' on page 5 undefined on input line 19.
+
+
+LaTeX Warning: Reference `fig:comparison-levels' on page 5 undefined on input line 19.
+
+
+LaTeX Warning: Reference `fig:gallery' on page 5 undefined on input line 19.
+
+(./sections/matched_gallery.tex) (./sections/raw_retiled_results.tex)
+
+LaTeX Warning: Reference `tab:raw-retiled' on page 5 undefined on input line 24.
+
+
+LaTeX Warning: Reference `tab:export-audit' on page 5 undefined on input line 28.
+
+
+LaTeX Warning: Reference `app:eval' on page 5 undefined on input line 46.
+
+
+LaTeX Warning: Reference `app:eval' on page 5 undefined on input line 49.
+
+
+LaTeX Warning: Reference `tab:training-data' on page 5 undefined on input line 54.
+
+) [5{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] [6] [7 <./figures/matched_short_prompts_20261116.png (PNG copy)>]
+No file main.bbl.
+(./sections/appendices.tex
+
+LaTeX Warning: Reference `tab:conversion' on page 8 undefined on input line 59.
+
+
+LaTeX Warning: Reference `tab:conversion' on page 8 undefined on input line 59.
+
+
+Package natbib Warning: Citation `brickgpt' on page 8 undefined on input line 125.
+
+
+Package natbib Warning: Citation `brickgpt' on page 8 undefined on input line 125.
+
+(./sections/evaluation_details.tex
+
+LaTeX Warning: Reference `tab:group-a' on page 8 undefined on input line 2.
+
+(./sections/batch_a_results.tex)
+
+LaTeX Warning: Reference `tab:sig' on page 8 undefined on input line 6.
+
+(./sections/latest_paired_tests.tex)
+
+LaTeX Warning: Reference `alg:inference-retiling' on page 8 undefined on input line 19.
+
+
+LaTeX Warning: Reference `tab:diag' on page 8 undefined on input line 19.
+
+
+LaTeX Warning: Reference `app:eval' on page 8 undefined on input line 19.
+
+[8] [9 <./figures/image7_en.png (PNG copy)>] [10 <./figures/image8_en.png (PNG copy)> <./figures/image4.png (PNG copy)> <./figures/image5.png (PNG copy)> <./figures/image2.png (PNG copy)> <./figures/image3.png (PNG copy)> <./figures/image9.png (PNG copy)> <./figures/image10.png (PNG copy)> <./figures/image11.png (PNG copy)> <./figures/image12.png (PNG copy)>])
+
+LaTeX Warning: Reference `sec:diagnostics' on page 11 undefined on input line 154.
+
+
+LaTeX Warning: Reference `sec:diagnostics' on page 11 undefined on input line 154.
+
+(./sections/comparison_figures.tex
+
+LaTeX Warning: Reference `tab:main' on page 11 undefined on input line 11.
+
+
+LaTeX Warning: Reference `tab:main' on page 11 undefined on input line 11.
+
+
+LaTeX Warning: Reference `tab:level-results' on page 11 undefined on input line 25.
+
+
+LaTeX Warning: Reference `tab:level-results' on page 11 undefined on input line 25.
+
+)
+
+LaTeX Warning: Reference `tab:training-data' on page 11 undefined on input line 176.
+
+
+LaTeX Warning: Reference `app:dataset' on page 11 undefined on input line 176.
+
+(./archive/historical_tables.tex))
+
+Package natbib Warning: There were undefined citations.
+
+[11 <./figures/image13_en.png (PNG copy)> <./figures/image14_en.pdf>] [12 <./figures/image15_en.png (PNG copy)>] [13] [14 <./figures/image16_en.png (PNG copy)> <./figures/image17_en.pdf>] [15 <./figures/generated_gallery_en.png (PNG copy)> <./figures/image19_en.pdf>] [16 <./figures/original_comparison_en.png (PNG copy)> <./figures/comparison_20261116/01-cohorts.pdf>] [17 <./figures/comparison_20261116/02-means.pdf> <./figures/comparison_20261116/03-distributions.pdf>] [18 <./figures/comparison_20261116/04-by-level.pdf>] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)<d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (18 pages, 4190369 bytes).
+Transcript written on main.log.
+Latexmk: Getting log file 'main.log'
+Latexmk: Examining 'main.fls'
+Latexmk: Examining 'main.log'
+Latexmk: Missing bbl file 'main.bbl' in following:
+ No file main.bbl.
+Latexmk: References changed.
+Latexmk: Log file says output to 'main.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file 'main.bbl' for 'pdflatex'
+Create bibtex main
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: applying rule 'bibtex main'...
+Rule 'bibtex main':  Reasons for rerun
+Category 'other':
+  Rerun of 'bibtex main' forced or previously required:
+    Reason or flag: 'Initial set up of rule'
+
+------------
+Run number 1 of rule 'bibtex main'
+------------
+------------
+Running 'bibtex  "main.aux"'
+------------
+This is BibTeX, Version 0.99e (TeX Live 2026)
+The top-level auxiliary file: main.aux
+The style file: aaai2027.bst
+Database file #1: references.bib
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  main.aux
+  main.bbl
+
+------------
+Run number 2 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -file-line-error -recorder  "main.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (./aaai2027.sty
+Conference Style for AAAI for LaTeX 2e
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/newtx/newtxtext.sty `newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes and its extensions (msharpe) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xpatch/xpatch.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/carlisle/scalefnt.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/kastrup/binhex.tex) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/fontaxes/fontaxes.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/fontaxes/fontaxes-v1.sty))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/helvet.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/courier.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/url/url.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/caption/caption.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/algorithms/algorithm.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/float/float.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/algorithms/algorithmic.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (./sections/xiao_frontmatter.tex) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/newtx/t1ntxtlf.fd) (./main.aux) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (./sections/teaser.tex) (./sections/xiao_abstract.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/t1pcr.fd)
+Underfull \vbox (badness 10000) has occurred while \output is active [1{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc} <./figure1.pdf>]) (./sections/xiao_introduction.tex
+
+Package natbib Warning: Citation `zhou2026paperfoldingpuzzle' on page 2 undefined on input line 13.
+
+
+Package natbib Warning: Citation `luo2026geogrambench' on page 2 undefined on input line 13.
+
+
+Package natbib Warning: Citation `brickgpt' on page 2 undefined on input line 18.
+
+
+Package natbib Warning: Citation `bricknet' on page 2 undefined on input line 18.
+
+
+Package natbib Warning: Citation `qwen3' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `lora' on page 2 undefined on input line 23.
+
+[2]) (./sections/method.tex
+
+Package natbib Warning: Citation `thompson2020lego' on page 3 undefined on input line 3.
+
+
+Package natbib Warning: Citation `brickbybrick' on page 3 undefined on input line 3.
+
+
+Package natbib Warning: Citation `breakandmake' on page 3 undefined on input line 3.
+
+
+Package natbib Warning: Citation `brickgpt' on page 3 undefined on input line 3.
+
+
+Package natbib Warning: Citation `bricknet' on page 3 undefined on input line 3.
+
+
+Package natbib Warning: Citation `stablelego' on page 3 undefined on input line 6.
+
+
+Package natbib Warning: Citation `infinigen' on page 3 undefined on input line 9.
+
+
+Package natbib Warning: Citation `lora' on page 3 undefined on input line 9.
+
+
+Package natbib Warning: Citation `brickgpt' on page 3 undefined on input line 9.
+
+(./sections/recorded_training_counts.tex) [3]
+
+Package natbib Warning: Citation `brickgpt' on page 4 undefined on input line 33.
+
+(./sections/finetune_config.tex) (./sections/inference_algorithm.tex)) (./sections/evaluation.tex
+
+Package natbib Warning: Citation `vqascore' on page 4 undefined on input line 8.
+
+
+Package natbib Warning: Citation `qwen25vl' on page 4 undefined on input line 8.
+
+
+Package natbib Warning: Citation `pe' on page 4 undefined on input line 8.
+
+
+Package natbib Warning: Citation `siglip2' on page 4 undefined on input line 8.
+
+
+Package natbib Warning: Citation `bricknet' on page 4 undefined on input line 11.
+
+[4 <./figure2.pdf>] (./sections/main_results_table.tex) (./sections/level_results.tex) (./sections/matched_gallery.tex) (./sections/raw_retiled_results.tex)) [5{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] [6] [7 <./figures/matched_short_prompts_20261116.png (PNG copy)>] (./main.bbl) (./sections/appendices.tex
+
+Package natbib Warning: Citation `brickgpt' on page 8 undefined on input line 125.
+
+
+Package natbib Warning: Citation `brickgpt' on page 8 undefined on input line 125.
+
+(./sections/evaluation_details.tex (./sections/batch_a_results.tex) [8] (./sections/latest_paired_tests.tex) [9 <./figures/image7_en.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Underfull \vbox (badness 10000) has occurred while \output is active [10 <./figures/image8_en.png (PNG copy)> <./figures/image4.png (PNG copy)> <./figures/image5.png (PNG copy)> <./figures/image2.png (PNG copy)> <./figures/image3.png (PNG copy)> <./figures/image9.png (PNG copy)> <./figures/image10.png (PNG copy)> <./figures/image11.png (PNG copy)> <./figures/image12.png (PNG copy)>]
+Underfull \vbox (badness 3635) has occurred while \output is active) (./sections/comparison_figures.tex) (./archive/historical_tables.tex
+Underfull \vbox (badness 10000) has occurred while \output is active [11 <./figures/image13_en.png (PNG copy)> <./figures/image14_en.pdf>]))
+
+Package natbib Warning: There were undefined citations.
+
+[12 <./figures/image15_en.png (PNG copy)>] [13]
+
+LaTeX Warning: Text page 14 contains only floats.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+
+LaTeX Warning: Text page 14 contains only floats.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [14 <./figures/image16_en.png (PNG copy)> <./figures/image17_en.pdf>] [15 <./figures/generated_gallery_en.png (PNG copy)> <./figures/image19_en.pdf>] [16 <./figures/original_comparison_en.png (PNG copy)> <./figures/comparison_20261116/01-cohorts.pdf>] [17 <./figures/comparison_20261116/02-means.pdf> <./figures/comparison_20261116/03-distributions.pdf>] [18 <./figures/comparison_20261116/04-by-level.pdf>] (./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)<d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (18 pages, 4195552 bytes).
+Transcript written on main.log.
+Latexmk: Getting log file 'main.log'
+Latexmk: Examining 'main.fls'
+Latexmk: Examining 'main.log'
+Latexmk: Found input bbl file 'main.bbl'
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: Log file says output to 'main.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file 'main.bbl' for 'pdflatex'
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: applying rule 'bibtex main'...
+Rule 'bibtex main':  Reasons for rerun
+Changed files or newly in use/created:
+  main.aux
+
+------------
+Run number 2 of rule 'bibtex main'
+------------
+------------
+Running 'bibtex  "main.aux"'
+------------
+This is BibTeX, Version 0.99e (TeX Live 2026)
+The top-level auxiliary file: main.aux
+The style file: aaai2027.bst
+Database file #1: references.bib
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  main.aux
+
+------------
+Run number 3 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -file-line-error -recorder  "main.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (./aaai2027.sty
+Conference Style for AAAI for LaTeX 2e
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/newtx/newtxtext.sty `newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes and its extensions (msharpe) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xpatch/xpatch.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/carlisle/scalefnt.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/kastrup/binhex.tex) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/fontaxes/fontaxes.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/fontaxes/fontaxes-v1.sty))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/helvet.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/courier.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/url/url.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/caption/caption.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/algorithms/algorithm.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/float/float.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/algorithms/algorithmic.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (./sections/xiao_frontmatter.tex) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/newtx/t1ntxtlf.fd) (./main.aux) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (./sections/teaser.tex) (./sections/xiao_abstract.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/t1pcr.fd)
+Underfull \vbox (badness 10000) has occurred while \output is active [1{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc} <./figure1.pdf>]) (./sections/xiao_introduction.tex [2]) (./sections/method.tex
+Underfull \vbox (badness 1997) has occurred while \output is active (./sections/recorded_training_counts.tex) (./sections/finetune_config.tex) [3] (./sections/inference_algorithm.tex)) (./sections/evaluation.tex [4 <./figure2.pdf>] (./sections/main_results_table.tex) (./sections/level_results.tex) (./sections/matched_gallery.tex) (./sections/raw_retiled_results.tex)) [5{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] [6] (./main.bbl [7 <./figures/matched_short_prompts_20261116.png (PNG copy)>]) (./sections/appendices.tex (./sections/evaluation_details.tex (./sections/batch_a_results.tex) (./sections/latest_paired_tests.tex) [8] [9 <./figures/image7_en.png (PNG copy)>] [10 <./figures/image8_en.png (PNG copy)> <./figures/image4.png (PNG copy)> <./figures/image5.png (PNG copy)> <./figures/image2.png (PNG copy)> <./figures/image3.png (PNG copy)> <./figures/image9.png (PNG copy)> <./figures/image10.png (PNG copy)> <./figures/image11.png (PNG copy)> <./figures/image12.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active) (./sections/comparison_figures.tex) (./archive/historical_tables.tex [11 <./figures/image13_en.png (PNG copy)> <./figures/image14_en.pdf>] [12 <./figures/image15_en.png (PNG copy)>])) [13 <./figures/image16_en.png (PNG copy)> <./figures/image17_en.pdf>] [14] [15 <./figures/generated_gallery_en.png (PNG copy)> <./figures/image19_en.pdf>] [16 <./figures/original_comparison_en.png (PNG copy)> <./figures/comparison_20261116/01-cohorts.pdf>] [17 <./figures/comparison_20261116/02-means.pdf> <./figures/comparison_20261116/03-distributions.pdf>] [18 <./figures/comparison_20261116/04-by-level.pdf>] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)<d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (18 pages, 4195592 bytes).
+Transcript written on main.log.
+Latexmk: Getting log file 'main.log'
+Latexmk: Examining 'main.fls'
+Latexmk: Examining 'main.log'
+Latexmk: Found input bbl file 'main.bbl'
+Latexmk: References changed.
+Latexmk: Log file says output to 'main.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file 'main.bbl' for 'pdflatex'
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: applying rule 'bibtex main'...
+Rule 'bibtex main':  Reasons for rerun
+Changed files or newly in use/created:
+  main.aux
+
+------------
+Run number 3 of rule 'bibtex main'
+------------
+------------
+Running 'bibtex  "main.aux"'
+------------
+This is BibTeX, Version 0.99e (TeX Live 2026)
+The top-level auxiliary file: main.aux
+The style file: aaai2027.bst
+Database file #1: references.bib
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  main.aux
+
+------------
+Run number 4 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -file-line-error -recorder  "main.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (./aaai2027.sty
+Conference Style for AAAI for LaTeX 2e
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/newtx/newtxtext.sty `newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes and its extensions (msharpe) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xpatch/xpatch.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/carlisle/scalefnt.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/kastrup/binhex.tex) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/fontaxes/fontaxes.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/fontaxes/fontaxes-v1.sty))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/helvet.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/courier.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/url/url.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg))) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/caption/caption.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/algorithms/algorithm.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/float/float.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/algorithms/algorithmic.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (./sections/xiao_frontmatter.tex) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/newtx/t1ntxtlf.fd) (./main.aux) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty) (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (./sections/teaser.tex) (./sections/xiao_abstract.tex (d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/tex/latex/psnfss/t1pcr.fd)
+Underfull \vbox (badness 10000) has occurred while \output is active [1{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc} <./figure1.pdf>]) (./sections/xiao_introduction.tex [2]) (./sections/method.tex
+Underfull \vbox (badness 1997) has occurred while \output is active (./sections/recorded_training_counts.tex) (./sections/finetune_config.tex) [3] (./sections/inference_algorithm.tex)) (./sections/evaluation.tex [4 <./figure2.pdf>] (./sections/main_results_table.tex) (./sections/level_results.tex) (./sections/matched_gallery.tex) (./sections/raw_retiled_results.tex)) [5{d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] [6] (./main.bbl [7 <./figures/matched_short_prompts_20261116.png (PNG copy)>]) (./sections/appendices.tex (./sections/evaluation_details.tex (./sections/batch_a_results.tex) (./sections/latest_paired_tests.tex) [8] [9 <./figures/image7_en.png (PNG copy)>] [10 <./figures/image8_en.png (PNG copy)> <./figures/image4.png (PNG copy)> <./figures/image5.png (PNG copy)> <./figures/image2.png (PNG copy)> <./figures/image3.png (PNG copy)> <./figures/image9.png (PNG copy)> <./figures/image10.png (PNG copy)> <./figures/image11.png (PNG copy)> <./figures/image12.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active) (./sections/comparison_figures.tex) (./archive/historical_tables.tex [11 <./figures/image13_en.png (PNG copy)> <./figures/image14_en.pdf>] [12 <./figures/image15_en.png (PNG copy)>])) [13 <./figures/image16_en.png (PNG copy)> <./figures/image17_en.pdf>] [14] [15 <./figures/generated_gallery_en.png (PNG copy)> <./figures/image19_en.pdf>] [16 <./figures/original_comparison_en.png (PNG copy)> <./figures/comparison_20261116/01-cohorts.pdf>] [17 <./figures/comparison_20261116/02-means.pdf> <./figures/comparison_20261116/03-distributions.pdf>] [18 <./figures/comparison_20261116/04-by-level.pdf>] (./main.aux) )
+(see the transcript file for additional information)<d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/BrickMore/tmp/texlive/portable/TinyTeX/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (18 pages, 4195592 bytes).
+Transcript written on main.log.
+Latexmk: Getting log file 'main.log'
+Latexmk: Examining 'main.fls'
+Latexmk: Examining 'main.log'
+Latexmk: Found input bbl file 'main.bbl'
+Latexmk: Log file says output to 'main.pdf'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file 'main.bbl' for 'pdflatex'
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: All targets (main.pdf) are up-to-date
+
+Reverting Windows console CPs to (in,out) = (936,65001)
