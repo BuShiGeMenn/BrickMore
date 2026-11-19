@@ -1,0 +1,382 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "A47_L4",
+    "prompt": "A round tower with a round base, circular walls and a domed crown. A continuous wall rises from a wide base; a narrowing crown caps the top. Circular walls keep an even thickness up to the crown. Overall width is 0.80 times depth; height is 2.40 times width. Parts follow functional positions.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA round tower with a round base, circular walls and a domed crown. A continuous wall rises from a wide base; a narrowing crown caps the top. Circular walls keep an even thickness up to the crown. Overall width is 0.80 times depth; height is 2.40 times width. Parts follow functional positions.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 7,
+    "completed": true,
+    "generated_tokens": 1908,
+    "input_tokens": 271,
+    "seconds": 43.188,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 7,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "3b8118764c8eeb2381043e266701e7e4cdc463333e257610590b544294152bee",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 271,
+      "prompt_ms": 133.519,
+      "prompt_per_token_ms": 0.492690036900369,
+      "prompt_per_second": 2029.6736794014334,
+      "predicted_n": 1908,
+      "predicted_ms": 42914.102,
+      "predicted_per_token_ms": 22.503461982170947,
+      "predicted_per_second": 44.43760701319114
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 7,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 171,
+    "occupied_voxels": 1273,
+    "overlap_voxels": 0,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 12,
+    "unsupported_from_below": 3,
+    "geometry_valid": true,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 1273,
+    "target_voxels": 1273,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "441e8d3f14b70fbbb4c2ed45d0caf9e6005a73ec562d613a02e922be0da4a04c",
+    "target_voxel_sha256": "441e8d3f14b70fbbb4c2ed45d0caf9e6005a73ec562d613a02e922be0da4a04c"
+  },
+  "attempts": [
+    {
+      "seconds": 12.109,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 11,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 1,
+          "brick_count": 253,
+          "stud_components": 10,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 11739,
+      "run_count": 326,
+      "flow_edges": 5172,
+      "budget_seconds": 12,
+      "seconds": 12.235000000000582,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 60.282,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 11,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 159,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 160,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 161,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 7,
+          "status": 1,
+          "brick_count": 212,
+          "stud_components": 7,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 11739,
+      "run_count": 326,
+      "flow_edges": 5172,
+      "budget_seconds": 60,
+      "seconds": 60.21899999999732,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 56.625,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 11,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 159,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 160,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 161,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 7,
+          "status": 0,
+          "brick_count": 161,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 8,
+          "status": 0,
+          "brick_count": 161,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 9,
+          "status": 0,
+          "brick_count": 162,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 10,
+          "status": 0,
+          "brick_count": 162,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 11,
+          "status": 0,
+          "brick_count": 162,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 180,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 162,
+    "voxels": 1273,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "441e8d3f14b70fbbb4c2ed45d0caf9e6005a73ec562d613a02e922be0da4a04c",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 162,
+  "output_sha256": {
+    "raw.txt": "d69e31c949066a6a6d61600e0dfc071ac07dd4a0a6245e04a86ee015c8dc79fc",
+    "generation.json": "e07795a9ccc13baa9decba9a9436544166ef06cf49443dcbfbb24af064bb7c79",
+    "refined.ldr": "27f7a8c27c7b312b37541c7acf572f7637f5b5ccaae8762ff1f86717bff45de7",
+    "refined.txt": "ff4fc40aa384e69cd098ee2921a16be1ac510fe7166a41cb94d7a79a6f9d90f3",
+    "refined.json": "06f99044115ff00baaee7535ddd055ac173ab965f0d48dd7e1ac94af4d26d08d"
+  }
+}

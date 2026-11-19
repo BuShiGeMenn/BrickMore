@@ -1,0 +1,514 @@
+{
+  "samples": 5,
+  "primary": {
+    "BrickMore": {
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.03429321572184563
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.17395132780075073
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09534945338964462
+      },
+      "pinv_micro": 0.0
+    },
+    "BrickGPT": {
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.020613359287381172
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09777694940567017
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.3440409674103648e-08
+      },
+      "pinv_micro": 0.0
+    },
+    "BrickNet": {
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.008108772337436676
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.047693394124507904
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.855391076333035e-07
+      },
+      "pinv_micro": 0.0
+    }
+  },
+  "paired": {
+    "pinv": {
+      "common_prompts": 1,
+      "means": {
+        "BrickMore": 0.0,
+        "BrickGPT": 0.0,
+        "BrickNet": 0.0
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": 0.0,
+        "BrickNet_minus_BrickMore": 0.0
+      }
+    },
+    "vqa": {
+      "common_prompts": 1,
+      "means": {
+        "BrickMore": 0.03429321572184563,
+        "BrickGPT": 0.020613359287381172,
+        "BrickNet": 0.008108772337436676
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": -0.013679856434464455,
+        "BrickNet_minus_BrickMore": -0.02618444338440895
+      }
+    },
+    "pe": {
+      "common_prompts": 1,
+      "means": {
+        "BrickMore": 0.17395132780075073,
+        "BrickGPT": 0.09777694940567017,
+        "BrickNet": 0.047693394124507904
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": -0.07617437839508057,
+        "BrickNet_minus_BrickMore": -0.12625793367624283
+      }
+    },
+    "siglip2": {
+      "common_prompts": 1,
+      "means": {
+        "BrickMore": 0.09534945338964462,
+        "BrickGPT": 1.3440409674103648e-08,
+        "BrickNet": 1.855391076333035e-07
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": -0.09534943994923495,
+        "BrickNet_minus_BrickMore": -0.09534926785053699
+      }
+    }
+  },
+  "by_category_level": [
+    {
+      "system": "BrickMore",
+      "variant": "generated",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "batch": "B",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.03429321572184563
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.17395132780075073
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09534945338964462
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickGPT",
+      "variant": "generated",
+      "primary": false,
+      "category": "basket",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.01807459257543087
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.10295543074607849
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 4.139937814784389e-08
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickGPT",
+      "variant": "generated",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "batch": "B",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.020613359287381172
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09777694940567017
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.3440409674103648e-08
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickNet",
+      "variant": "generated",
+      "primary": false,
+      "category": "basket",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.5806451612903226
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.003997892141342163
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09842481464147568
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 7.734421814120651e-08
+      },
+      "pinv_micro": 0.5806451612903226
+    },
+    {
+      "system": "BrickNet",
+      "variant": "generated",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "batch": "B",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.008108772337436676
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.047693394124507904
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.855391076333035e-07
+      },
+      "pinv_micro": 0.0
+    }
+  ],
+  "protocol": {
+    "structure": "pinv_file_order, original BrickNet 0.1.0 inset collision kernel; original generation order not verified; no fixed-edge exemptions",
+    "image_scores": "Eight fixed views, max per model then arithmetic mean; no best-of-N sample selection",
+    "rendering": "Shared actual inset part surfaces, orthographic CPU rasterizer, 512px, 25-degree elevation, 45-degree azimuth steps, uniform yellow",
+    "color": "Uniform display color; no claim of generated-color accuracy",
+    "original_paper_reproduction": false,
+    "old_run_scores_mixed": false,
+    "primary": "B: 265 identical prompts x BrickMore, BrickGPT and BrickNet. A: 260 identical prompts x BrickGPT and BrickNet."
+  },
+  "by_batch": {
+    "A": {
+      "expected_prompts": 260,
+      "selected_prompts": 1,
+      "systems": {
+        "BrickGPT": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.0
+          },
+          "vqa": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.01807459257543087
+          },
+          "pe": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.10295543074607849
+          },
+          "siglip2": {
+            "n": 1,
+            "missing": 0,
+            "mean": 4.139937814784389e-08
+          },
+          "pinv_micro": 0.0
+        },
+        "BrickNet": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.5806451612903226
+          },
+          "vqa": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.003997892141342163
+          },
+          "pe": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.09842481464147568
+          },
+          "siglip2": {
+            "n": 1,
+            "missing": 0,
+            "mean": 7.734421814120651e-08
+          },
+          "pinv_micro": 0.5806451612903226
+        }
+      },
+      "paired": {
+        "pinv": {
+          "common_prompts": 1,
+          "means": {
+            "BrickGPT": 0.0,
+            "BrickNet": 0.5806451612903226
+          },
+          "differences": {
+            "BrickNet_minus_BrickGPT": 0.5806451612903226
+          }
+        },
+        "vqa": {
+          "common_prompts": 1,
+          "means": {
+            "BrickGPT": 0.01807459257543087,
+            "BrickNet": 0.003997892141342163
+          },
+          "differences": {
+            "BrickNet_minus_BrickGPT": -0.014076700434088707
+          }
+        },
+        "pe": {
+          "common_prompts": 1,
+          "means": {
+            "BrickGPT": 0.10295543074607849,
+            "BrickNet": 0.09842481464147568
+          },
+          "differences": {
+            "BrickNet_minus_BrickGPT": -0.004530616104602814
+          }
+        },
+        "siglip2": {
+          "common_prompts": 1,
+          "means": {
+            "BrickGPT": 4.139937814784389e-08,
+            "BrickNet": 7.734421814120651e-08
+          },
+          "differences": {
+            "BrickNet_minus_BrickGPT": 3.594483999336262e-08
+          }
+        }
+      }
+    },
+    "B": {
+      "expected_prompts": 265,
+      "selected_prompts": 1,
+      "systems": {
+        "BrickMore": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.0
+          },
+          "vqa": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.03429321572184563
+          },
+          "pe": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.17395132780075073
+          },
+          "siglip2": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.09534945338964462
+          },
+          "pinv_micro": 0.0
+        },
+        "BrickGPT": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.0
+          },
+          "vqa": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.020613359287381172
+          },
+          "pe": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.09777694940567017
+          },
+          "siglip2": {
+            "n": 1,
+            "missing": 0,
+            "mean": 1.3440409674103648e-08
+          },
+          "pinv_micro": 0.0
+        },
+        "BrickNet": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.0
+          },
+          "vqa": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.008108772337436676
+          },
+          "pe": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.047693394124507904
+          },
+          "siglip2": {
+            "n": 1,
+            "missing": 0,
+            "mean": 1.855391076333035e-07
+          },
+          "pinv_micro": 0.0
+        }
+      },
+      "paired": {
+        "pinv": {
+          "common_prompts": 1,
+          "means": {
+            "BrickMore": 0.0,
+            "BrickGPT": 0.0,
+            "BrickNet": 0.0
+          },
+          "differences": {
+            "BrickGPT_minus_BrickMore": 0.0,
+            "BrickNet_minus_BrickMore": 0.0
+          }
+        },
+        "vqa": {
+          "common_prompts": 1,
+          "means": {
+            "BrickMore": 0.03429321572184563,
+            "BrickGPT": 0.020613359287381172,
+            "BrickNet": 0.008108772337436676
+          },
+          "differences": {
+            "BrickGPT_minus_BrickMore": -0.013679856434464455,
+            "BrickNet_minus_BrickMore": -0.02618444338440895
+          }
+        },
+        "pe": {
+          "common_prompts": 1,
+          "means": {
+            "BrickMore": 0.17395132780075073,
+            "BrickGPT": 0.09777694940567017,
+            "BrickNet": 0.047693394124507904
+          },
+          "differences": {
+            "BrickGPT_minus_BrickMore": -0.07617437839508057,
+            "BrickNet_minus_BrickMore": -0.12625793367624283
+          }
+        },
+        "siglip2": {
+          "common_prompts": 1,
+          "means": {
+            "BrickMore": 0.09534945338964462,
+            "BrickGPT": 1.3440409674103648e-08,
+            "BrickNet": 1.855391076333035e-07
+          },
+          "differences": {
+            "BrickGPT_minus_BrickMore": -0.09534943994923495,
+            "BrickNet_minus_BrickMore": -0.09534926785053699
+          }
+        }
+      }
+    }
+  }
+}
