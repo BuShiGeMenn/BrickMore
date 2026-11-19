@@ -1,0 +1,1894 @@
+{
+  "historical_batch_records": 525,
+  "strict_matches": 31,
+  "join_rule": "ID + exact caption + raw part count + retiled part count; not cryptographic lineage.",
+  "warning": "Budget tiers are not solver elapsed times. Batch-wide seconds include other work; no solver-only latency reported.",
+  "joins": [
+    {
+      "model_id": "basket-L1V5",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "basket-L2-Q07",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "basket-L3V1",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "60s"
+      ]
+    },
+    {
+      "model_id": "basket-L4",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "basket-L5",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bed-L1V3",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "60s"
+      ]
+    },
+    {
+      "model_id": "bed-L2V2",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "60s"
+      ]
+    },
+    {
+      "model_id": "bed-L3V5",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "60s"
+      ]
+    },
+    {
+      "model_id": "bed-L4V1",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "180s"
+      ]
+    },
+    {
+      "model_id": "bed-L5",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bench-L1V5",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "600s"
+      ]
+    },
+    {
+      "model_id": "bench-L2V4",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "600s"
+      ]
+    },
+    {
+      "model_id": "bench-L3-A",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bench-L4-Q05",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bench-L5-Q07",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "birdhouse-L1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "birdhouse-L2",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "birdhouse-L3",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "birdhouse-L4",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "birdhouse-L5V3",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "60s"
+      ]
+    },
+    {
+      "model_id": "bookshelf-L1-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bookshelf-L2-A",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bookshelf-L3-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bookshelf-L4V2",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "bookshelf-L5-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bottle-L1V5",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "bottle-L3V4",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "bottle-L4V3",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "bottle-L5V1",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "bowl-L1V1",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w0.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "bowl-L2-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bowl-L3-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bowl-L4-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bowl-L5-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bus-L1-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bus-L2-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bus-L3-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bus-L4-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "bus-L5-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "camera-L1-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "camera_L2_P1_G",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "camera-L3-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "camera-L4-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "camera-L5-C1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "car-L1V2",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w2.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "car-L2V4",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w2.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "car-\u4e4b\u524d_\u5fae\u8c0301",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "car_L4_P1_G",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "car_L5_P1_G",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "chair-L1-A",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "chair-L3V5",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w2.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "chair-L4V5",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w2.json"
+      ],
+      "budget_tiers": [
+        "60s"
+      ]
+    },
+    {
+      "model_id": "chair-L5V3",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w2.json"
+      ],
+      "budget_tiers": [
+        "60s"
+      ]
+    },
+    {
+      "model_id": "guitar_L1_P2_G",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "guitar-L2V2",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "guitar-L4-A",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "guitar-L5V2",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "jar-L1V5",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "jar-L2-A",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "jar-L3V1",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "jar-L4V1",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "jar-L5V3",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "mug-L1V1",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "mug-L2V5",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "mug-L3-Q03",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "mug-L4-Q05",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "mug-L5-Q03",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "piano-L1V2",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "piano-L2V1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "piano-L3V2",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "piano-L3V5",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "piano-L4V2",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "piano-L5V3",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "pot-L1-A",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "pot-L2V1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "pot-L3V1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "pot-L3V5",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "pot-L4V1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "pot-L4V2",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "pot-L5V1",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "pot-L5V5",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "sofa-L1V3",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "60s"
+      ]
+    },
+    {
+      "model_id": "sofa-L3-A",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "sofa-L4V2",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "sofa-L4V3",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "sofa-L4V4",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "sofa-L4V5",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "sofa-L5V2",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "sofa-L5V3",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "sofa-L5V5",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "table-L1V3",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "180s"
+      ]
+    },
+    {
+      "model_id": "table-L2-A",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "table-L3-A",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "table-L4V2",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "table-L5-Q05",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "tower-L1V1",
+      "strict_match_count": 1,
+      "source_logs": [
+        "manifest_w1.json"
+      ],
+      "budget_tiers": [
+        "12s"
+      ]
+    },
+    {
+      "model_id": "tower-L2-A",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "tower-L3-R05",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "tower-L4-R05",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "tower-L5-R07",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "train-L1-R03",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "train-L2-R05",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "train-L3-R05",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "train-L4-R01",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "train-L5-R01",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "vessel_L1_P2_G",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "vessel-L2-R03",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "vessel-L3-R03",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "vessel-L4-R01",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    },
+    {
+      "model_id": "vessel-L5-R09",
+      "strict_match_count": 0,
+      "source_logs": [],
+      "budget_tiers": []
+    }
+  ],
+  "collision_crosscheck": [
+    {
+      "sample_id": "brickmore__basket-L1V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__basket-L1V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__basket-L2-Q07__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__basket-L2-Q07__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__basket-L3V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__basket-L3V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__basket-L4__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__basket-L4__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__basket-L5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__basket-L5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bed-L1V3__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bed-L1V3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bed-L2V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bed-L2V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bed-L3V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bed-L3V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bed-L4V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bed-L4V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bed-L5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bed-L5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bench-L1V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bench-L1V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bench-L2V4__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bench-L2V4__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bench-L3-A__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bench-L3-A__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bench-L4-Q05__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bench-L4-Q05__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bench-L5-Q07__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bench-L5-Q07__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__birdhouse-L1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__birdhouse-L1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__birdhouse-L2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__birdhouse-L2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__birdhouse-L3__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__birdhouse-L3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__birdhouse-L4__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__birdhouse-L4__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__birdhouse-L5V3__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__birdhouse-L5V3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bookshelf-L1-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bookshelf-L1-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bookshelf-L2-A__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bookshelf-L2-A__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bookshelf-L3-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bookshelf-L3-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bookshelf-L4V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bookshelf-L4V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bookshelf-L5-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bookshelf-L5-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bottle-L1V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bottle-L1V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bottle-L3V4__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bottle-L3V4__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bottle-L4V3__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bottle-L4V3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bottle-L5V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bottle-L5V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bowl-L1V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bowl-L1V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bowl-L2-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bowl-L2-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bowl-L3-C1__raw",
+      "body_overlap": true,
+      "source_invalid_placements": 1
+    },
+    {
+      "sample_id": "brickmore__bowl-L3-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bowl-L4-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bowl-L4-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bowl-L5-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bowl-L5-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bus-L1-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bus-L1-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bus-L2-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bus-L2-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bus-L3-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bus-L3-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bus-L4-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bus-L4-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bus-L5-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__bus-L5-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__camera-L1-C1__raw",
+      "body_overlap": true,
+      "source_invalid_placements": 5
+    },
+    {
+      "sample_id": "brickmore__camera-L1-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__camera_L2_P1_G__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__camera_L2_P1_G__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__camera-L3-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__camera-L3-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__camera-L4-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__camera-L4-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__camera-L5-C1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__camera-L5-C1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__car-L1V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__car-L1V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__car-L2V4__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__car-L2V4__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__car-\u4e4b\u524d_\u5fae\u8c0301__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__car-\u4e4b\u524d_\u5fae\u8c0301__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__car_L4_P1_G__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__car_L4_P1_G__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__car_L5_P1_G__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__car_L5_P1_G__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__chair-L1-A__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__chair-L1-A__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__chair-L3V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__chair-L3V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__chair-L4V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__chair-L4V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__chair-L5V3__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__chair-L5V3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__guitar_L1_P2_G__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__guitar_L1_P2_G__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__guitar-L2V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__guitar-L2V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__guitar-L4-A__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__guitar-L4-A__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__guitar-L5V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__guitar-L5V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__jar-L1V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__jar-L1V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__jar-L2-A__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__jar-L2-A__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__jar-L3V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__jar-L3V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__jar-L4V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__jar-L4V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__jar-L5V3__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__jar-L5V3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__mug-L1V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__mug-L1V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__mug-L2V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__mug-L2V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__mug-L3-Q03__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__mug-L3-Q03__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__mug-L4-Q05__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__mug-L4-Q05__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__mug-L5-Q03__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__mug-L5-Q03__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__piano-L1V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__piano-L1V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__piano-L2V1__raw",
+      "body_overlap": true,
+      "source_invalid_placements": 9
+    },
+    {
+      "sample_id": "brickmore__piano-L2V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__piano-L3V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__piano-L3V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__piano-L3V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__piano-L3V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__piano-L4V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__piano-L4V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__piano-L5V3__raw",
+      "body_overlap": true,
+      "source_invalid_placements": 6
+    },
+    {
+      "sample_id": "brickmore__piano-L5V3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L1-A__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L1-A__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L2V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L2V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L3V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L3V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L3V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L3V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L4V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L4V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L4V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L4V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L5V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L5V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__pot-L5V5__raw",
+      "body_overlap": true,
+      "source_invalid_placements": 1
+    },
+    {
+      "sample_id": "brickmore__pot-L5V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L1V3__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L1V3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L3-A__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L3-A__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L4V2__raw",
+      "body_overlap": true,
+      "source_invalid_placements": 1
+    },
+    {
+      "sample_id": "brickmore__sofa-L4V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L4V3__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L4V3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L4V4__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L4V4__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L4V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L4V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L5V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L5V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L5V3__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L5V3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L5V5__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__sofa-L5V5__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__table-L1V3__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__table-L1V3__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__table-L2-A__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__table-L2-A__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__table-L3-A__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__table-L3-A__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__table-L4V2__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__table-L4V2__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__table-L5-Q05__raw",
+      "body_overlap": true,
+      "source_invalid_placements": 1
+    },
+    {
+      "sample_id": "brickmore__table-L5-Q05__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__tower-L1V1__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__tower-L1V1__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__tower-L2-A__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__tower-L2-A__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__tower-L3-R05__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__tower-L3-R05__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__tower-L4-R05__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__tower-L4-R05__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__tower-L5-R07__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__tower-L5-R07__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__train-L1-R03__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__train-L1-R03__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__train-L2-R05__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__train-L2-R05__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__train-L3-R05__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__train-L3-R05__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__train-L4-R01__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__train-L4-R01__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__train-L5-R01__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__train-L5-R01__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__vessel_L1_P2_G__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__vessel_L1_P2_G__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__vessel-L2-R03__raw",
+      "body_overlap": true,
+      "source_invalid_placements": 3
+    },
+    {
+      "sample_id": "brickmore__vessel-L2-R03__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__vessel-L3-R03__raw",
+      "body_overlap": true,
+      "source_invalid_placements": 2
+    },
+    {
+      "sample_id": "brickmore__vessel-L3-R03__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__vessel-L4-R01__raw",
+      "body_overlap": true,
+      "source_invalid_placements": 2
+    },
+    {
+      "sample_id": "brickmore__vessel-L4-R01__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__vessel-L5-R09__raw",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    },
+    {
+      "sample_id": "brickmore__vessel-L5-R09__stitched",
+      "body_overlap": false,
+      "source_invalid_placements": 0
+    }
+  ]
+}
