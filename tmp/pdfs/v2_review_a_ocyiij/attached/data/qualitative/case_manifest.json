@@ -1,0 +1,427 @@
+{
+  "selection": {
+    "repository": "BuShiGeMenn/BrickMore",
+    "commit": "dfe1c94fc86b722247ed5c8208011313f535c5ec",
+    "base_url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/",
+    "cases": [
+      "chair_L1_P01",
+      "car_L1_P01",
+      "bench_L2_P01",
+      "camera_L2_P01"
+    ],
+    "display_views": [
+      1,
+      5
+    ],
+    "view_degrees": [
+      45,
+      225
+    ],
+    "elevation_degrees": 25,
+    "selection": "Two L1 and two L2 categories. Chair/bench show higher BrickForma VQAScore; car/camera are counterexamples where BrickNet has higher VQAScore. Illustrative cases, not an estimated success rate. The same two archived camera azimuths are shown for every system; views are not selected using metric maxima.",
+    "geometry_source": "Exact main-comparison sample IDs and primary flags; no alternative candidate substituted."
+  },
+  "cases": [
+    {
+      "prompt_id": "chair_L1_P01",
+      "prompt": "A simple chair.",
+      "level": 1,
+      "systems": [
+        {
+          "system": "BrickForma",
+          "source_system": "BrickMore",
+          "sample_id": "brickmore__chair-L1-A__stitched",
+          "model_id": "chair-L1-A",
+          "variant": "stitched",
+          "primary": true,
+          "assembly_sha256": "28cb4b49e6858f7ba3be837409640c70a0956d2ba53f63c55f5a603c9ca0c17a",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/brickmore__chair-L1-A__stitched/01.png",
+              "sha256": "acdde29b2b4957d8ce93df3832d6d1d9b110e90351a6e1339c1738d1a812cba3",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickmore__chair-L1-A__stitched/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/brickmore__chair-L1-A__stitched/05.png",
+              "sha256": "9ea74f7a3ebdcc98211be81b699348e8be3793b514ee6a8e9c420e709e729f72",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickmore__chair-L1-A__stitched/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.0,
+            "vqa": 0.9718673825263977,
+            "pe": 0.23826846480369568,
+            "siglip2": 0.42250463366508484
+          }
+        },
+        {
+          "system": "BrickGPT",
+          "source_system": "BrickGPT",
+          "sample_id": "brickgpt__chair_L1_P01__generated",
+          "model_id": "chair_L1_P01",
+          "variant": "generated",
+          "primary": true,
+          "assembly_sha256": "1f2ebaf85cc23b61f02f45af3a07f888b36021f3242481f4a4a4830335e1acde",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/brickgpt__chair_L1_P01__generated/01.png",
+              "sha256": "96ab4f22a87fc943f58769c291095fe579165725203237ef5954f3ffe8ab6bc1",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickgpt__chair_L1_P01__generated/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/brickgpt__chair_L1_P01__generated/05.png",
+              "sha256": "5c8c6b2b457556b4510dbf87fcb2e000a79101b0a88e6aae1243e14877aad503",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickgpt__chair_L1_P01__generated/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.0,
+            "vqa": 0.5721880793571472,
+            "pe": 0.22875845432281494,
+            "siglip2": 0.10669060051441193
+          }
+        },
+        {
+          "system": "BrickNet",
+          "source_system": "BrickNet",
+          "sample_id": "bricknet__chair_L1_P01__generated",
+          "model_id": "chair_L1_P01",
+          "variant": "generated",
+          "primary": true,
+          "assembly_sha256": "42f1ecb46aa5c429be7a6ad2f7ab53aba395a47d0cc041155d8464afb0f423fa",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/bricknet__chair_L1_P01__generated/01.png",
+              "sha256": "4b462857c9b5301232a88865c474c679c9ed5ec3306c0e445c7f5904184aa281",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/bricknet__chair_L1_P01__generated/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/bricknet__chair_L1_P01__generated/05.png",
+              "sha256": "0394e4ea458ed27df328a76bd644adee0ff3aef8ed41953ceaf37752756f8b85",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/bricknet__chair_L1_P01__generated/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.0,
+            "vqa": 0.003995186649262905,
+            "pe": 0.13120295107364655,
+            "siglip2": 9.516251338936854e-06
+          }
+        }
+      ]
+    },
+    {
+      "prompt_id": "car_L1_P01",
+      "prompt": "A compact four-door car.",
+      "level": 1,
+      "systems": [
+        {
+          "system": "BrickForma",
+          "source_system": "BrickMore",
+          "sample_id": "brickmore__car-L1V2__stitched",
+          "model_id": "car-L1V2",
+          "variant": "stitched",
+          "primary": true,
+          "assembly_sha256": "eda7705768da729504329206cfad92039004d12ee325f487c8b96aeeadb1a22f",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/brickmore__car-L1V2__stitched/01.png",
+              "sha256": "18dfd86be4850542408c21020f09c4e8c1467c1bd753f57cbc42dd26b77451c0",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickmore__car-L1V2__stitched/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/brickmore__car-L1V2__stitched/05.png",
+              "sha256": "e2642049fb9b1db7c0b04093844db7d6222a3569c67f2e9511bd4e959270a490",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickmore__car-L1V2__stitched/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.0,
+            "vqa": 0.011393130756914616,
+            "pe": 0.1291947215795517,
+            "siglip2": 0.0003799845289904624
+          }
+        },
+        {
+          "system": "BrickGPT",
+          "source_system": "BrickGPT",
+          "sample_id": "brickgpt__car_L1_P01__generated",
+          "model_id": "car_L1_P01",
+          "variant": "generated",
+          "primary": true,
+          "assembly_sha256": "aa4de21c951056070cdfca6ffedfd46a57fbbd2dc3576db3da7382c319b9e8e0",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/brickgpt__car_L1_P01__generated/01.png",
+              "sha256": "bb57c92327e6a907f96da38a2ac85d2dc23c9f09ca737c4c4e76e3251f1a7387",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickgpt__car_L1_P01__generated/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/brickgpt__car_L1_P01__generated/05.png",
+              "sha256": "27134b09e177ce6d7f5de4af4e5cabcd9cb0114473ddf9065a930cbada562446",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickgpt__car_L1_P01__generated/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.0,
+            "vqa": 0.018612250685691833,
+            "pe": 0.15531250834465027,
+            "siglip2": 0.005554925184696913
+          }
+        },
+        {
+          "system": "BrickNet",
+          "source_system": "BrickNet",
+          "sample_id": "bricknet__car_L1_P01__generated",
+          "model_id": "car_L1_P01",
+          "variant": "generated",
+          "primary": true,
+          "assembly_sha256": "716bad574918bb35c479999b14e2cff55a786728535370c3ad398554515db8d2",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/bricknet__car_L1_P01__generated/01.png",
+              "sha256": "2cde7ac948b7de2810254f822e8b3605a989845365b0c116e190c84b16dd4181",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/bricknet__car_L1_P01__generated/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/bricknet__car_L1_P01__generated/05.png",
+              "sha256": "4757df3ef9cd01e03abef0c2acc35597a99882fafc24f292064a4d7a9f1b5a37",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/bricknet__car_L1_P01__generated/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.13043478260869565,
+            "vqa": 0.022867435589432716,
+            "pe": 0.14647576212882996,
+            "siglip2": 0.01798621006309986
+          }
+        }
+      ]
+    },
+    {
+      "prompt_id": "bench_L2_P01",
+      "prompt": "A straight bench with a plank top and chunky leg blocks.",
+      "level": 2,
+      "systems": [
+        {
+          "system": "BrickForma",
+          "source_system": "BrickMore",
+          "sample_id": "brickmore__bench-L2V4__stitched",
+          "model_id": "bench-L2V4",
+          "variant": "stitched",
+          "primary": true,
+          "assembly_sha256": "9126a8a88bf4dac6d4447f71c4a0c0ff9001c9da51163211b34c4ee0f5d5eb6f",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/brickmore__bench-L2V4__stitched/01.png",
+              "sha256": "119fe7f39cc9f44a5f38a36c7dd88c037ebf47987d977b4787f9d28523716f93",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickmore__bench-L2V4__stitched/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/brickmore__bench-L2V4__stitched/05.png",
+              "sha256": "21a590c1cb62d5cf014b70406c0ae6b86da45e7e5a488c5dc12d6c39045e2527",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickmore__bench-L2V4__stitched/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.0,
+            "vqa": 0.9766550064086914,
+            "pe": 0.20792031288146973,
+            "siglip2": 0.00023050670279189944
+          }
+        },
+        {
+          "system": "BrickGPT",
+          "source_system": "BrickGPT",
+          "sample_id": "brickgpt__bench_L2_P01__generated",
+          "model_id": "bench_L2_P01",
+          "variant": "generated",
+          "primary": true,
+          "assembly_sha256": "9fc112252cf3e7c3f47f1d3430dad93e16e7bfe70087a8d76e5e17db693861aa",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/brickgpt__bench_L2_P01__generated/01.png",
+              "sha256": "19cf446f44f930d9ef483c48094171331a76f0d5ecba819895b423867f422fba",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickgpt__bench_L2_P01__generated/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/brickgpt__bench_L2_P01__generated/05.png",
+              "sha256": "fd36607fa3648a6577c1c23d392cf448951b46be8f08bed9d26e5619709dcd97",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickgpt__bench_L2_P01__generated/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.0,
+            "vqa": 0.9316707849502563,
+            "pe": 0.22574400901794434,
+            "siglip2": 0.0010322310263291001
+          }
+        },
+        {
+          "system": "BrickNet",
+          "source_system": "BrickNet",
+          "sample_id": "bricknet__bench_L2_P01__generated",
+          "model_id": "bench_L2_P01",
+          "variant": "generated",
+          "primary": true,
+          "assembly_sha256": "21cb3012b3f75ee976adfa27d6a1f2c62941c6ff004d2c379376f4fd065b2bab",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/bricknet__bench_L2_P01__generated/01.png",
+              "sha256": "fb3814fecc62db500db08a47d8e6e5a8627e29181a295b67704cea37723fba63",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/bricknet__bench_L2_P01__generated/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/bricknet__bench_L2_P01__generated/05.png",
+              "sha256": "822c7a17b217f95b270a33cbe6f10e125fe519faf9007a648ee154e171f53589",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/bricknet__bench_L2_P01__generated/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.2222222222222222,
+            "vqa": 0.031189188361167908,
+            "pe": 0.08161420375108719,
+            "siglip2": 1.2751904421293148e-07
+          }
+        }
+      ]
+    },
+    {
+      "prompt_id": "camera_L2_P01",
+      "prompt": "A rounded camera carries a circular lens at the front. The barrel connects to its body, the grip is on the right side, and the shutter and viewfinder sit on top.",
+      "level": 2,
+      "systems": [
+        {
+          "system": "BrickForma",
+          "source_system": "BrickMore",
+          "sample_id": "brickmore__camera_L2_P1_G__stitched",
+          "model_id": "camera_L2_P1_G",
+          "variant": "stitched",
+          "primary": true,
+          "assembly_sha256": "e8c44b7b2f7f67656ed1363f5670de9383bcc6e0ebbe493fd8978f93c1c27190",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/brickmore__camera_L2_P1_G__stitched/01.png",
+              "sha256": "5c1bc5e095af88c41a3d8e1a5eada109d6c061233a4079793cc642c139b168d7",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickmore__camera_L2_P1_G__stitched/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/brickmore__camera_L2_P1_G__stitched/05.png",
+              "sha256": "ca14166deb2d82d1f2d756587d599f2504ed79b1abc5bd758ebc392b6111179d",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickmore__camera_L2_P1_G__stitched/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.0,
+            "vqa": 0.036912333220243454,
+            "pe": 0.1255243718624115,
+            "siglip2": 0.042087726294994354
+          }
+        },
+        {
+          "system": "BrickGPT",
+          "source_system": "BrickGPT",
+          "sample_id": "brickgpt__camera_L2_P01__generated",
+          "model_id": "camera_L2_P01",
+          "variant": "generated",
+          "primary": true,
+          "assembly_sha256": "c739ecc91a82fdeca4f57bc1d1cdda6802c052feab1f79db1227f0468d607cc7",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/brickgpt__camera_L2_P01__generated/01.png",
+              "sha256": "0c4449c111c267b48bc9f75b3f7a1dedc85406e34f311a5df16201d6bf46f83e",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickgpt__camera_L2_P01__generated/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/brickgpt__camera_L2_P01__generated/05.png",
+              "sha256": "9ea6c4c5452d3c197bfe76b4947f94f473c49efe894ce070a44f2efb301e37ee",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/brickgpt__camera_L2_P01__generated/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.0,
+            "vqa": 0.016574295237660408,
+            "pe": 0.0944105014204979,
+            "siglip2": 2.4300241420860402e-05
+          }
+        },
+        {
+          "system": "BrickNet",
+          "source_system": "BrickNet",
+          "sample_id": "bricknet__camera_L2_P01__generated",
+          "model_id": "camera_L2_P01",
+          "variant": "generated",
+          "primary": true,
+          "assembly_sha256": "11b4eb7b5ec84b57011226261aa97db090e14f1ee30f271c34007b926e9f7937",
+          "views": [
+            {
+              "view": 1,
+              "azimuth_degrees": 45,
+              "path": "figures/short_prompts/source/bricknet__camera_L2_P01__generated/01.png",
+              "sha256": "e49a4bb4837b99cba92b240f6d6b6fade04138996407398bbe4e7c830686d856",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/bricknet__camera_L2_P01__generated/01.png"
+            },
+            {
+              "view": 5,
+              "azimuth_degrees": 225,
+              "path": "figures/short_prompts/source/bricknet__camera_L2_P01__generated/05.png",
+              "sha256": "dab9c5c5b0ee0a22680e0110d000805b160b63bf07b6bb997c8bc775261d02e0",
+              "url": "https://raw.githubusercontent.com/BuShiGeMenn/BrickMore/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/rendered/views/bricknet__camera_L2_P01__generated/05.png"
+            }
+          ],
+          "scores": {
+            "pinv": 0.2,
+            "vqa": 0.08654303103685379,
+            "pe": 0.22048023343086243,
+            "siglip2": 0.10669060051441193
+          }
+        }
+      ]
+    }
+  ],
+  "verified_images": 96
+}
