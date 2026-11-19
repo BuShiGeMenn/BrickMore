@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A49_L2",
+  "batch": "A",
+  "category": "train",
+  "level": 2,
+  "caption": "A steam locomotive with a boiler, a cab and six wheels. A body carries a cab and windows; wheels join the chassis beneath.",
+  "source_sha256": "ec6be292032d2c4c5692a15d220417582d3d3aff2a749913ab5f5140dc125a17",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 128,
+  "normalization": {
+    "original_voxels": 850,
+    "target_voxels": 850,
+    "duplicate_cell_occupancies": 7,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "91882f85005816646eb99a6e2ee071ec896cf4b983dfb39942bd7f997bcd736f",
+    "target_voxel_sha256": "91882f85005816646eb99a6e2ee071ec896cf4b983dfb39942bd7f997bcd736f"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 128,
+    "voxels": 850,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 7,
+    "unsupported_from_below": 24,
+    "target_voxel_sha256": "91882f85005816646eb99a6e2ee071ec896cf4b983dfb39942bd7f997bcd736f",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.203,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 107,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 107,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 107,
+    "voxels": 850,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "91882f85005816646eb99a6e2ee071ec896cf4b983dfb39942bd7f997bcd736f",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "41788d3ef1df588b34022cb5d24c6b76896c05e63d3b3f5e9fcf58ace28d5e88",
+    "refined.txt": "04d14531a5c5740d7bbbe51e9733779448762b8854eceefc1eeb25de0350a9db",
+    "refined.json": "120559751272f926f9772223c6d865dd0c171f6348bba4e3d1ab5b69e246fab8"
+  },
+  "ldr_path": "refined_ldr/A49_L2.ldr",
+  "elapsed_seconds": 0.265
+}

@@ -1,0 +1,52 @@
+{
+  "prompt_id": "A30_L3",
+  "batch": "A",
+  "category": "car",
+  "level": 3,
+  "caption": "A sports coupe with a low cabin, a long hood and a short deck. A cabin carries windows and a hood; four wheels attach below the body. Streamlined body panels keep an even thickness over the cabin.",
+  "source_sha256": "6661a2887df0b1c2238d5564598bbe062a179c51484ffeff0c43f7f9ad7a0410",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 90,
+  "normalization": {
+    "original_voxels": 609,
+    "target_voxels": 609,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "6e769127800f2c5a7eec29f0f7a7598614aeefffffa64f22db15433a793d2a06",
+    "target_voxel_sha256": "6e769127800f2c5a7eec29f0f7a7598614aeefffffa64f22db15433a793d2a06"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 90,
+    "voxels": 609,
+    "stud_components": 11,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 13,
+    "target_voxel_sha256": "6e769127800f2c5a7eec29f0f7a7598614aeefffffa64f22db15433a793d2a06",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    595,
+    14
+  ],
+  "elapsed_seconds": 0.0
+}

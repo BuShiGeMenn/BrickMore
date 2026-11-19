@@ -1,0 +1,164 @@
+{
+  "prompt_id": "B02_L4",
+  "batch": "B",
+  "category": "basket",
+  "level": 4,
+  "caption": "A shallow fruit basket with a low rim, a wide cavity and an arched carrying handle. Continuous woven walls enclose a cavity; both arched handle ends join the rim. Oval walls keep an even thickness and the handle arch stays continuous. Overall width is 1.55 times depth; height is 0.28 times width. Parts follow functional positions.",
+  "source_sha256": "065b3f3376bdfe9a775d6c5b2bd009ee54c31b8a0b944c7487498b26ef007ca1",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 353,
+  "normalization": {
+    "original_voxels": 1222,
+    "target_voxels": 1222,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a0bcb232918a6cd086bd24d88e60191d82711b48aca006ad00d96effde4a9a95",
+    "target_voxel_sha256": "a0bcb232918a6cd086bd24d88e60191d82711b48aca006ad00d96effde4a9a95"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 353,
+    "voxels": 1222,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "a0bcb232918a6cd086bd24d88e60191d82711b48aca006ad00d96effde4a9a95",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 4.281,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 301,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 286,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 286,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 286,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 288,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 286,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 288,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 7,
+          "status": 0,
+          "brick_count": 297,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 8,
+          "status": 0,
+          "brick_count": 286,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 9,
+          "status": 0,
+          "brick_count": 286,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 10,
+          "status": 0,
+          "brick_count": 309,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 309,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 309,
+    "voxels": 1222,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "a0bcb232918a6cd086bd24d88e60191d82711b48aca006ad00d96effde4a9a95",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "bbe56b84fb8f282447c1d166459cbdd8660490583b3227fabec8def140bf5893",
+    "refined.txt": "048843230aa3ebbecdda692f61686295c43d2d4dc07376f2c5022df986481e44",
+    "refined.json": "cd5ea75b8fa42e715e2a93dcaca25df007d337485aa145bfddc79f9d6f4a9b60"
+  },
+  "ldr_path": "refined_ldr/B02_L4.ldr",
+  "elapsed_seconds": 4.359
+}

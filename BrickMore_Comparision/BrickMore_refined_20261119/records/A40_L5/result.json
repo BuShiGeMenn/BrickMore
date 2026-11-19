@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A40_L5",
+  "batch": "A",
+  "category": "piano",
+  "level": 5,
+  "caption": "A digital slab piano with a slim body, a full keyboard and a single support column. A full width keyboard sits on a shelf; the cabinet carries a straight lid. Flat cabinet panels keep a constant thickness with a stepped keyboard shelf. Overall width is 2.60 times depth; height is 0.35 times width. Parts follow functional positions. Continuous dark brown, near black, ivory white color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "be4c840f8d48aacf41d29b2463cf00ea64db1727a94cae3a625f835b93749d49",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 180,
+  "normalization": {
+    "original_voxels": 1931,
+    "target_voxels": 1931,
+    "duplicate_cell_occupancies": 4,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "dd34d302d282e0b41cf760b109c36c29a6bc8e9fb7197a98bc3ee98a3a6bdfc1",
+    "target_voxel_sha256": "dd34d302d282e0b41cf760b109c36c29a6bc8e9fb7197a98bc3ee98a3a6bdfc1"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 180,
+    "voxels": 1931,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 4,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "dd34d302d282e0b41cf760b109c36c29a6bc8e9fb7197a98bc3ee98a3a6bdfc1",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.359,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 182,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 182,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 182,
+    "voxels": 1931,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "dd34d302d282e0b41cf760b109c36c29a6bc8e9fb7197a98bc3ee98a3a6bdfc1",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "33e6b11fc4cff66f6ed53de00a71ea7698b5124e7ddaa312587ccf33471e131e",
+    "refined.txt": "244e6e80132cee3dd0181fa3a19223fdfe47263c0a78029fd13b71924878d821",
+    "refined.json": "0939fe88a71a386e155c09b7bb309a25cdc810f1b1f7d291ed4daa05bcd3e6c0"
+  },
+  "ldr_path": "refined_ldr/A40_L5.ldr",
+  "elapsed_seconds": 1.421
+}

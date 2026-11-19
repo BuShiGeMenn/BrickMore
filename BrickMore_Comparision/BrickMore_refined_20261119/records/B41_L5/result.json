@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B41_L5",
+  "batch": "B",
+  "category": "sofa",
+  "level": 5,
+  "caption": "A chaise sofa with a long chaise cushion, a back and two arms. Cushions rest on the seat frame; a rear backrest and both arms join it. Rounded cushions keep an even thickness and attach continuously to the frame. Overall width is 2.10 times depth; height is 0.47 times width. Parts follow functional positions. Continuous cream, dark brown, brown color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "ea9c83bbe4a61ecc8c6f28a75e4a30f660e4e378ecc7ba9afd44632f2407a6bc",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 151,
+  "normalization": {
+    "original_voxels": 1032,
+    "target_voxels": 1032,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a02149a01b7658f1dc0baae80941af8e2ee3436d791158182e83c1fbb3b1a1ab",
+    "target_voxel_sha256": "a02149a01b7658f1dc0baae80941af8e2ee3436d791158182e83c1fbb3b1a1ab"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 151,
+    "voxels": 1032,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "a02149a01b7658f1dc0baae80941af8e2ee3436d791158182e83c1fbb3b1a1ab",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.485,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 137,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 137,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 137,
+    "voxels": 1032,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "a02149a01b7658f1dc0baae80941af8e2ee3436d791158182e83c1fbb3b1a1ab",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "cf8ef5ed937948f090c1106dc6e32968236f298ac77a9233d486adabf7e0390f",
+    "refined.txt": "00832816de57a0ba55f768dfc26e1a2f0e7cfea6f96cc1b0ebae18f1103a5ee2",
+    "refined.json": "5b0a773e5ac54789f1650a456ced011e292450e481c700f379f5dba0654319cc"
+  },
+  "ldr_path": "refined_ldr/B41_L5.ldr",
+  "elapsed_seconds": 0.594
+}

@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "A02_L2",
+    "prompt": "A square storage basket with a closed base, four flat walls and two squared handles. Four flat walls enclose a cavity; two straight handles join opposite walls.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA square storage basket with a closed base, four flat walls and two squared handles. Four flat walls enclose a cavity; two straight handles join opposite walls.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 7,
+    "completed": true,
+    "generated_tokens": 4114,
+    "input_tokens": 234,
+    "seconds": 280.078,
+    "dtype": "bfloat16",
+    "options": {
+      "max_new_tokens": 8192,
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20
+    },
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "peak_allocated_gib": 3.8139538764953613,
+    "torch_version": "2.8.0+cu128",
+    "transformers_version": "4.57.1"
+  },
+  "parsed": {
+    "brick_count": 329,
+    "occupied_voxels": 1202,
+    "overlap_voxels": 0,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 3,
+    "unsupported_from_below": 11,
+    "geometry_valid": true,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 1202,
+    "target_voxels": 1202,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "77a6cd532d50b4eeb540305f5043d5f7d79d15802a8864330f597fcb6f22995e",
+    "target_voxel_sha256": "77a6cd532d50b4eeb540305f5043d5f7d79d15802a8864330f597fcb6f22995e"
+  },
+  "attempts": [
+    {
+      "seconds": 0.906,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 297,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 297,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 297,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 297,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 297,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 297,
+    "voxels": 1202,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "77a6cd532d50b4eeb540305f5043d5f7d79d15802a8864330f597fcb6f22995e",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 297,
+  "output_sha256": {
+    "raw.txt": "69fd9dcfa06e5fb8e149fbf74f079c10c5761a046b93cffdc6d1802bfc054c91",
+    "generation.json": "705019a0c656a3c0c3e6cfab9a6bf34986f51149660b6fdf447266b86daada2f",
+    "refined.ldr": "09a6197c7bba07a3b3778b4b8a33a78ee599928f0e9ee291666788a8897d39e2",
+    "refined.txt": "8f88334ae776eaa8d63976737b8153dd7eb69b88ade3d4f02e4344487f39b76e",
+    "refined.json": "29871af7aa57915a3fe14510b806da45ace5b1b35ae26cc8e58ac84b5a2938e8"
+  }
+}

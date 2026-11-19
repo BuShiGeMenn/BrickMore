@@ -1,0 +1,53 @@
+{
+  "prompt_id": "B51_L2",
+  "batch": "B",
+  "category": "vessel",
+  "level": 2,
+  "caption": "A sailboat with a hull, a cabin and one mast base. A hull carries a deck and a cabin; the bow and stern close it.",
+  "source_sha256": "3a75553e12369fd74c9c42089d1bd5821650f78cddab9fa460bc7aa9ac48c9a1",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 151,
+  "normalization": {
+    "original_voxels": 1010,
+    "target_voxels": 1010,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "42d800363461b7e1350d43285b06de1524240cc3926703fab8104661936c6535",
+    "target_voxel_sha256": "42d800363461b7e1350d43285b06de1524240cc3926703fab8104661936c6535"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 151,
+    "voxels": 1010,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "42d800363461b7e1350d43285b06de1524240cc3926703fab8104661936c6535",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    994,
+    15,
+    1
+  ],
+  "elapsed_seconds": 0.0
+}

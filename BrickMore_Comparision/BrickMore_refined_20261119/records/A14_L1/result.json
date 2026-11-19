@@ -1,0 +1,122 @@
+{
+  "prompt_id": "A14_L1",
+  "batch": "A",
+  "category": "bookshelf",
+  "level": 1,
+  "caption": "A ladder shelf with four leaning shelves and two side rails.",
+  "source_sha256": "0b4f9d3b6b66cd068b7eb4de4b673cd7e4999556655304620e08d5b5bb72dfd5",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 132,
+  "normalization": {
+    "original_voxels": 929,
+    "target_voxels": 929,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "e6a04f2f31a21a5adcad06c825be40684a6cfad39dddb8435d124daaf6a129f8",
+    "target_voxel_sha256": "e6a04f2f31a21a5adcad06c825be40684a6cfad39dddb8435d124daaf6a129f8"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 132,
+    "voxels": 929,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "e6a04f2f31a21a5adcad06c825be40684a6cfad39dddb8435d124daaf6a129f8",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.797,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 82,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 82,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 82,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 87,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 82,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 82,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 82,
+    "voxels": 929,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "e6a04f2f31a21a5adcad06c825be40684a6cfad39dddb8435d124daaf6a129f8",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "0b260b001845fae9c2d9e5afb7d900525a4bcb4ae9d20fd2ea447ccc16af12cd",
+    "refined.txt": "04e7f0237ee03b04c08e292266db1d895a5798b044e573b3d140f95eb132382b",
+    "refined.json": "49920f2495a91fad92fc8b5a165a57eae9512b6f0af36336d8075c1f575d9837"
+  },
+  "ldr_path": "refined_ldr/A14_L1.ldr",
+  "elapsed_seconds": 0.844
+}

@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B38_L1",
+  "batch": "B",
+  "category": "pot",
+  "level": 1,
+  "caption": "A milk pot with a small cavity, one long handle and a pouring rim.",
+  "source_sha256": "56059f542196849caaeb7c47d5c51663d0222b53331938e77a87efd5a63d91e5",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 361,
+  "normalization": {
+    "original_voxels": 1596,
+    "target_voxels": 1596,
+    "duplicate_cell_occupancies": 7,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5a04db7a060b14906b637aa6fa118e0e5770fe7a073188af42e380111a707256",
+    "target_voxel_sha256": "5a04db7a060b14906b637aa6fa118e0e5770fe7a073188af42e380111a707256"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 361,
+    "voxels": 1596,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 7,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "5a04db7a060b14906b637aa6fa118e0e5770fe7a073188af42e380111a707256",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.25,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 356,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 356,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 356,
+    "voxels": 1596,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "5a04db7a060b14906b637aa6fa118e0e5770fe7a073188af42e380111a707256",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "8a9a383041a9306f488e31cdf67589ef5c00134ba37fc2f7872acac301ddb0e4",
+    "refined.txt": "d79c0149673bee45f188701097e311935c797131c51a4bd0f7762996c4f11762",
+    "refined.json": "732c244f0d4a117c4ff279f8ff252cc660b23af91721b74841567321cc240eeb"
+  },
+  "ldr_path": "refined_ldr/B38_L1.ldr",
+  "elapsed_seconds": 0.328
+}

@@ -1,0 +1,36 @@
+{
+  "algorithm": "comparison_525_exact_cover_single_stud_flow_v1",
+  "source_code_sha256": "1ced30c545ec546c0ef06effd3fe995927f304db1d1a079fe373dc0cda6c4ae3",
+  "reused_code_sha256": {
+    "brickmore48_tools\\pipeline\\regenerate_review5.py": "b4c5e097499ba07595bcf157455271e4d36859e88492a250f76751637ab50f62",
+    "brickmore48_tools\\analysis\\raw_failure_autopsy.py": "7e2aa532aca733a064cdb089b5e0dd1bf544472774744728552eb554302135f3",
+    "Train\\algorithms\\voxel_assembly_b\\assembly_pipeline.py": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+    "Train\\algorithms\\voxel_assembly_b\\toolkit_snapshot\\voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f"
+  },
+  "implementation_note": "The archived single_stud_cover.py was unavailable. Existing project regenerate_review5.retile connected exact-cover cuts are reused. A single real stud-run flow implementation supplies a second formulation. Both require exact target coverage and one actual stud-contact component. 12/60/180-second tiers and all individual solver calls are recorded. Failed original outputs retain their records and are replaced in the final selection by regenerated candidates using the same prompt.",
+  "regeneration": true,
+  "physical_stability_tested": false,
+  "initial_refinement_runtime": {
+    "python_executable": "D:\\PythonEnvs\\brickmore-paper\\Scripts\\python.exe",
+    "python_version": "3.12.10",
+    "scipy_version": "1.15.3",
+    "numpy_version": "2.2.6",
+    "workers": 2,
+    "highs_threads_per_worker": 1,
+    "mip_relative_gap": 0.08
+  },
+  "regeneration_provenance": "regeneration_provenance.json",
+  "final_source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "archived_code_sha256": {
+    "brickmore48_tools/pipeline/refine_comparison.py": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "brickmore48_tools/pipeline/regenerate_comparison_failures.py": "3ccb6c4d7b60cfd79f9995ae2ef9c331e7d6eed09fbe9bd6942523b628be23cb",
+    "brickmore48_tools/pipeline/regenerate_review5.py": "b4c5e097499ba07595bcf157455271e4d36859e88492a250f76751637ab50f62",
+    "brickmore48_tools/analysis/raw_failure_autopsy.py": "7e2aa532aca733a064cdb089b5e0dd1bf544472774744728552eb554302135f3",
+    "Train/algorithms/voxel_assembly_b/assembly_pipeline.py": "573dc86d9dde8400fd36663ef524b7e535530ce7268f2ec1bbb27dd65796ad5c",
+    "Train/algorithms/voxel_assembly_b/toolkit_snapshot/voxel_assembly.py": "9a6006791ef2f34c39fb413002def9ee185c70acd83872276b5788cfbefb884f",
+    "Train/algorithms/voxel_assembly_b/toolkit_snapshot/optimized_geometry.py": "502f10fa5e2a9c4da41278045cc1c6722168f47d2708d3b89f03c89d4d701b74",
+    "Train/algorithms/voxel_assembly_b/toolkit_snapshot/brick_catalog.py": "168e4f80609a11e7e523107cd13d10716e4470ddc13bb8217e82da0a666c4b61",
+    "Train/algorithms/voxel_assembly_b/toolkit_snapshot/interlocking.py": "8dceedb1d93cf5937a3421e94ce1f1f1e7c2c7228d3da8cb1c6b2c3434f0d563",
+    "Train/algorithms/voxel_assembly_b/toolkit_snapshot/voxel_io.py": "630d71aa3c5a91f800984888b4204d0c030236de5db945f7651f77eb90f7c08c"
+  }
+}

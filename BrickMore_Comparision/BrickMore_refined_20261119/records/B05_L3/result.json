@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B05_L3",
+  "batch": "B",
+  "category": "bench",
+  "level": 3,
+  "caption": "A backless slab bench with a thick single slab seat and two end supports. A seat slab rests on two curved supports; the backrest joins both ends. Curved seat edges stay continuous with an even slab thickness.",
+  "source_sha256": "ef3a8d8869ece97d93188f1de09f68acae6ced28adfc3bde2c6cb919ca5fab22",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 96,
+  "normalization": {
+    "original_voxels": 736,
+    "target_voxels": 736,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "7a31c399b2fe1021813923821c0ecfb3b2935aed421244b58fecb97f15932594",
+    "target_voxel_sha256": "7a31c399b2fe1021813923821c0ecfb3b2935aed421244b58fecb97f15932594"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 96,
+    "voxels": 736,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "7a31c399b2fe1021813923821c0ecfb3b2935aed421244b58fecb97f15932594",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 3.25,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 88,
+          "stud_components": 7,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 89,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 89,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 89,
+    "voxels": 736,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "7a31c399b2fe1021813923821c0ecfb3b2935aed421244b58fecb97f15932594",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "d23f1f9b6af557e786d8fb77bab5c8643db41c8b89e9175db60d099030d7f027",
+    "refined.txt": "0ccee71d6f6db332e2d2f3bc7f46f23cd0c93732c0075e4bb9b7f90affb9e5bd",
+    "refined.json": "5638489a572e114b2f9103477faec3651cb49e8f432807dd89e52ec57bf93a7c"
+  },
+  "ldr_path": "refined_ldr/B05_L3.ldr",
+  "elapsed_seconds": 3.266
+}

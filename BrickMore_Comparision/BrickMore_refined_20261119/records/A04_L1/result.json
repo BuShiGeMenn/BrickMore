@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A04_L1",
+  "batch": "A",
+  "category": "bed",
+  "level": 1,
+  "caption": "A platform bed with a low frame, a mattress platform and four corner supports.",
+  "source_sha256": "48a5edcf8cef68e3810fbf88c1fd439bb45aa40348478b6bd7b19bbb1ceb0f39",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 163,
+  "normalization": {
+    "original_voxels": 1324,
+    "target_voxels": 1324,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "15a81662797310e442baf2681b9a52a7c3df9ae6b188ab065e0939982817e5a5",
+    "target_voxel_sha256": "15a81662797310e442baf2681b9a52a7c3df9ae6b188ab065e0939982817e5a5"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 163,
+    "voxels": 1324,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "15a81662797310e442baf2681b9a52a7c3df9ae6b188ab065e0939982817e5a5",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 5.281,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 153,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 153,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 153,
+    "voxels": 1324,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "15a81662797310e442baf2681b9a52a7c3df9ae6b188ab065e0939982817e5a5",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "051cb5255ed8a5d2b7401850aadf2f88da26c3baa3a0a821d1b3cef4ccb8cb9f",
+    "refined.txt": "5fe526b3933d3884e9fd0eeb31a5a8f5e5abe29e3847d194a1d2f9c8401644f7",
+    "refined.json": "209c4ee87b679051919d08464f6c2405104d16ccb89599e231f1248af011625c"
+  },
+  "ldr_path": "refined_ldr/A04_L1.ldr",
+  "elapsed_seconds": 5.703
+}

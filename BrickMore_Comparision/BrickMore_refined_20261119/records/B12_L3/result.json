@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B12_L3",
+  "batch": "B",
+  "category": "bottle",
+  "level": 3,
+  "caption": "A square flask bottle with a flat body, a short neck and a sealed base. A sealed base carries four flat walls; a stepped shoulder narrows to a neck. Faceted walls keep a constant thickness along the straight body.",
+  "source_sha256": "53fa815c8a7be8a3a00164061db9062d6664e8485970edca04d20bf51919a119",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 120,
+  "normalization": {
+    "original_voxels": 1037,
+    "target_voxels": 1037,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a9d10e8eb2a5a2bff363d563f81cfb95431a78c4a0573c643afbc0c93d86f74f",
+    "target_voxel_sha256": "a9d10e8eb2a5a2bff363d563f81cfb95431a78c4a0573c643afbc0c93d86f74f"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 120,
+    "voxels": 1037,
+    "stud_components": 12,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "a9d10e8eb2a5a2bff363d563f81cfb95431a78c4a0573c643afbc0c93d86f74f",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.422,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 110,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 110,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 110,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 110,
+    "voxels": 1037,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "a9d10e8eb2a5a2bff363d563f81cfb95431a78c4a0573c643afbc0c93d86f74f",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "c8a93a35e959a4db644f6b809177bba2337b0fa35805371b19ef1113c70e34b5",
+    "refined.txt": "2cf0fb9e5166ec0a928d209a1467e0691d2db6c7e54adbb3982bb94b35d9522e",
+    "refined.json": "d3d20edfc4c6e92fc3964003b73deba2aa83ec9caf4e077ac8e9830df73d2533"
+  },
+  "ldr_path": "refined_ldr/B12_L3.ldr",
+  "elapsed_seconds": 0.485
+}

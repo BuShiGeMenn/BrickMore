@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A47_L1",
+  "batch": "A",
+  "category": "tower",
+  "level": 1,
+  "caption": "A round tower with a round base, circular walls and a domed crown.",
+  "source_sha256": "d9dba79171444b9b69672f7acaec39b93a17c406c1a6c0237c41321688c740b2",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 265,
+  "normalization": {
+    "original_voxels": 929,
+    "target_voxels": 929,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "ffbb89497fa7809c109d1818e3992d68341e8390562d0747aba65089131ce097",
+    "target_voxel_sha256": "ffbb89497fa7809c109d1818e3992d68341e8390562d0747aba65089131ce097"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 265,
+    "voxels": 929,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "ffbb89497fa7809c109d1818e3992d68341e8390562d0747aba65089131ce097",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.079,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 263,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 263,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 263,
+    "voxels": 929,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "ffbb89497fa7809c109d1818e3992d68341e8390562d0747aba65089131ce097",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "70f422cbc2e3781d4d565a17f600f3a28429cc7c8619d54ec24defdc730bf515",
+    "refined.txt": "7f48e6fadca0607ab8147ed1d92cd08a64e6212727ead52b3a41565893a28da1",
+    "refined.json": "14382f4d2c8a104d347bed43902556cf3db5c0669631c08bdc645cdfe0b203f3"
+  },
+  "ldr_path": "refined_ldr/A47_L1.ldr",
+  "elapsed_seconds": 0.141
+}

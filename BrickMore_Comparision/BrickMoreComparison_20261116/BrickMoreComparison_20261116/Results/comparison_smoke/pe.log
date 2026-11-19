@@ -1,0 +1,7 @@
+
+COMMAND ["/mnt/brickmore-data/brickmore-jrd-20261025/runtime/envs/paper/bin/python", "-X", "utf8", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparision_20261116/BrickMoreComparison_20261116/Scripts/evaluate_paper_images.py", "--metric", "pe", "--preset", "paper-text", "--model", "/mnt/brickmore-data/brickmore-jrd-20261025/runtime/cache/huggingface/hub/models--timm--PE-Core-bigG-14-448/snapshots/17aa0c25addfa14198fa2ff73d845a22d433432e", "--offline", "--device", "cuda:0", "--batch-size", "1", "--renders", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparision_20261116/BrickMoreComparison_20261116/Results/comparison_smoke/rendered/renders.jsonl", "--out", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparision_20261116/BrickMoreComparison_20261116/Results/comparison_smoke/pe.jsonl"]
+1/5 brickmore__B01_L1__generated 0.173951
+2/5 brickgpt__A01_L1__generated 0.102955
+3/5 brickgpt__B01_L1__generated 0.097777
+4/5 bricknet__A01_L1__generated 0.098425
+5/5 bricknet__B01_L1__generated 0.047693

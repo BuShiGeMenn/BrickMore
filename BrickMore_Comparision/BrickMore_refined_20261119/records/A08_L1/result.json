@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A08_L1",
+  "batch": "A",
+  "category": "bench",
+  "level": 1,
+  "caption": "A backrest bench with a seat slab, a full backrest and four straight legs.",
+  "source_sha256": "0718bb8545bbfc7e71035708e8e650a755ef7202fc82a6ed85510ddaf407490f",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 118,
+  "normalization": {
+    "original_voxels": 949,
+    "target_voxels": 949,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "61939659417576ffda0d61074b40c8f0215f16fb65bd5634b095843d43343c78",
+    "target_voxel_sha256": "61939659417576ffda0d61074b40c8f0215f16fb65bd5634b095843d43343c78"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 118,
+    "voxels": 949,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "61939659417576ffda0d61074b40c8f0215f16fb65bd5634b095843d43343c78",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.203,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 112,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 112,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 112,
+    "voxels": 949,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "61939659417576ffda0d61074b40c8f0215f16fb65bd5634b095843d43343c78",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "8c64bc66dbeb35ca893c1d7737c3825380bf274d2f83988d107096e9d04e0c92",
+    "refined.txt": "59c5fe9a693f17a0245b993867dcb59474e7785d55b7b053063510197432d791",
+    "refined.json": "a40447c32dd5234e81e9106802369e07a9f65af78e9dce7f093901c9a1cf9376"
+  },
+  "ldr_path": "refined_ldr/A08_L1.ldr",
+  "elapsed_seconds": 0.266
+}

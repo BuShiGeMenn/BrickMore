@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A07_L5",
+  "batch": "A",
+  "category": "bench",
+  "level": 5,
+  "caption": "A slatted garden bench with five seat slats, a slatted back and two armrests. A slatted seat spans two framed supports; the backrest joins the rear posts. Straight slats keep a constant thickness and the frame stays square. Overall width is 2.20 times depth; height is 0.55 times width. Parts follow functional positions. Continuous dark gray, tan, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "38e9e37a3bb25b478556a2d71abddd877418a291efea9c2005e0c7e1ded2997d",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 312,
+  "normalization": {
+    "original_voxels": 2448,
+    "target_voxels": 2448,
+    "duplicate_cell_occupancies": 3,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "4d65d4fe661461399893be8ad1c1d0cd7d8a1b100a3a279a10bdb437cb47e38a",
+    "target_voxel_sha256": "4d65d4fe661461399893be8ad1c1d0cd7d8a1b100a3a279a10bdb437cb47e38a"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 312,
+    "voxels": 2448,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 3,
+    "unsupported_from_below": 20,
+    "target_voxel_sha256": "4d65d4fe661461399893be8ad1c1d0cd7d8a1b100a3a279a10bdb437cb47e38a",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 11.796,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 237,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 237,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 237,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 237,
+    "voxels": 2448,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "4d65d4fe661461399893be8ad1c1d0cd7d8a1b100a3a279a10bdb437cb47e38a",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "58b041ad554a841d27575cd53ac43fbf835b2fd07ae0ea2ae5abd11e44946ddf",
+    "refined.txt": "9c6132838755a772a5e9111b4bb3c36bca8548a28a9d7564dab32c70493bd950",
+    "refined.json": "1395f09b3f668bf0979dd854a9911d6d97d90ed99e6a51ee685ddfcf38eef2a8"
+  },
+  "ldr_path": "refined_ldr/A07_L5.ldr",
+  "elapsed_seconds": 11.875
+}

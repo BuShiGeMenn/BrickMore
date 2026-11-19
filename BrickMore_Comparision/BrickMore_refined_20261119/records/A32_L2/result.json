@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A32_L2",
+  "batch": "A",
+  "category": "chair",
+  "level": 2,
+  "caption": "A lounge chair with a wide seat, a reclined back and two arms. A seat panel joins four legs; a curved backrest rises from the rear legs.",
+  "source_sha256": "83aaaed9395537ced6753a771cb94f2f9f600af6a8a2d0f4a7d820330e496514",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 110,
+  "normalization": {
+    "original_voxels": 1000,
+    "target_voxels": 1000,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "dfe4f223cd989d08f147a5b9b3b284c49babe4b02a524fd043700f83e1a11ce4",
+    "target_voxel_sha256": "dfe4f223cd989d08f147a5b9b3b284c49babe4b02a524fd043700f83e1a11ce4"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 110,
+    "voxels": 1000,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "dfe4f223cd989d08f147a5b9b3b284c49babe4b02a524fd043700f83e1a11ce4",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.328,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 106,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 106,
+    "voxels": 1000,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "dfe4f223cd989d08f147a5b9b3b284c49babe4b02a524fd043700f83e1a11ce4",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "e717b37a16a3c308d213bc72e844016b25686f536256470b76ef0857df953d24",
+    "refined.txt": "ad13e87579621df566a8ba454262145d0ba9a2b05885d39762c368060c7c6442",
+    "refined.json": "ebb12e4f11b14c77b746ff20ae451448faccdd4e8d856661a842d8bc09e68d40"
+  },
+  "ldr_path": "refined_ldr/A32_L2.ldr",
+  "elapsed_seconds": 2.391
+}

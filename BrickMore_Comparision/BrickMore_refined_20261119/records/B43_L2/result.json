@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B43_L2",
+  "batch": "B",
+  "category": "table",
+  "level": 2,
+  "caption": "A coffee table with a low top, four short legs and a shelf beneath. A framed top joins four legs; a straight apron links the legs.",
+  "source_sha256": "85887d868d6cdf9d78e31d0c1d72d7e9321ef73e2ac818d8401f24a79e09955c",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 174,
+  "normalization": {
+    "original_voxels": 1005,
+    "target_voxels": 1005,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "4cac6541cb9c1184d4d6154c18bb85aa7acc8d7582946e1189318b6dc21535f9",
+    "target_voxel_sha256": "4cac6541cb9c1184d4d6154c18bb85aa7acc8d7582946e1189318b6dc21535f9"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 174,
+    "voxels": 1005,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "4cac6541cb9c1184d4d6154c18bb85aa7acc8d7582946e1189318b6dc21535f9",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.109,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 153,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 153,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 153,
+    "voxels": 1005,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "4cac6541cb9c1184d4d6154c18bb85aa7acc8d7582946e1189318b6dc21535f9",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "169d003eb6671790d73d5317089e67f70907ee6aa694b8d0c01ab64a0f905b85",
+    "refined.txt": "e889b8bf82a07f608bddc1a9014b7577d39af29f99fdcfd3330f8374a8852de1",
+    "refined.json": "1f791afa32a5a4c716978c11d8f1d85c4b558cbccd9fa2658fbe3fe946dc68ef"
+  },
+  "ldr_path": "refined_ldr/B43_L2.ldr",
+  "elapsed_seconds": 12.172
+}

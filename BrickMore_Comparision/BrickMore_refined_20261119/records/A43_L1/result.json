@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A43_L1",
+  "batch": "A",
+  "category": "sofa",
+  "level": 1,
+  "caption": "A two seat sofa with two seat cushions, a rear back and two side arms.",
+  "source_sha256": "27ec0c924270be8bc361cc1103278f0bf38e1672d01a8d3fdb46167028c91b34",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 133,
+  "normalization": {
+    "original_voxels": 1110,
+    "target_voxels": 1110,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "f261baf753e7e0d312b3e95fafbec00c5751636d57e49d9d2bc1955cb447294e",
+    "target_voxel_sha256": "f261baf753e7e0d312b3e95fafbec00c5751636d57e49d9d2bc1955cb447294e"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 133,
+    "voxels": 1110,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "f261baf753e7e0d312b3e95fafbec00c5751636d57e49d9d2bc1955cb447294e",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.343,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 125,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 125,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 125,
+    "voxels": 1110,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "f261baf753e7e0d312b3e95fafbec00c5751636d57e49d9d2bc1955cb447294e",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "d91858f7978ebaf4d9a85e6a4514951acf43e419fea43fa957cae11b9a533293",
+    "refined.txt": "c91d85fcd4f61421eba1b2f14630492273b6eb5ee98102a5ee7e682b07f0cf1a",
+    "refined.json": "d938b87b8657c0cdd2e7475b14f32ac516a4c916a2c27a6e13436adfc3a6b965"
+  },
+  "ldr_path": "refined_ldr/A43_L1.ldr",
+  "elapsed_seconds": 0.406
+}

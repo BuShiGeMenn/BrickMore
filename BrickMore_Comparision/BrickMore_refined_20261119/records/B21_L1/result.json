@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B21_L1",
+  "batch": "B",
+  "category": "chair",
+  "level": 1,
+  "caption": "A dining chair with a square seat, a tall back and four legs.",
+  "source_sha256": "6b7c7b4ea7d32bf4748ccd8e788674a2ef6d781169c709cc3270238d7360e8f6",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 131,
+  "normalization": {
+    "original_voxels": 1037,
+    "target_voxels": 1037,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "e63bb90101af4075f24d5f45d5a1bdd26a329f0559c74cf68642ee5dd3ef1b12",
+    "target_voxel_sha256": "e63bb90101af4075f24d5f45d5a1bdd26a329f0559c74cf68642ee5dd3ef1b12"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 131,
+    "voxels": 1037,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 13,
+    "target_voxel_sha256": "e63bb90101af4075f24d5f45d5a1bdd26a329f0559c74cf68642ee5dd3ef1b12",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.313,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 118,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 118,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 118,
+    "voxels": 1037,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "e63bb90101af4075f24d5f45d5a1bdd26a329f0559c74cf68642ee5dd3ef1b12",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "114c0c88a859070951fb62c7ed0d767004bd43c66f9708db046cae97e59ac9bf",
+    "refined.txt": "b4e33c713f79d7a8ece50ed4f69504c92d29d0d1cd7fce60c1f3683df621dd10",
+    "refined.json": "6b298d59e0d1eb07b512098d73a2c5c5e360fb132660585c8818b2d36ff77621"
+  },
+  "ldr_path": "refined_ldr/B21_L1.ldr",
+  "elapsed_seconds": 0.36
+}

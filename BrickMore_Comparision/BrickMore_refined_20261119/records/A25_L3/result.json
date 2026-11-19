@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A25_L3",
+  "batch": "A",
+  "category": "camera",
+  "level": 3,
+  "caption": "A compact camera with a small body, one front lens and a shutter button. A flat body carries a circular lens mount and a top dial. Boxy body panels keep a constant thickness at the lens mount.",
+  "source_sha256": "3c646e2eeb587e1048ab431998bb86a758e56875c46c56050fd574c6ea219533",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 167,
+  "normalization": {
+    "original_voxels": 987,
+    "target_voxels": 987,
+    "duplicate_cell_occupancies": 28,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "98dfece2ea13596a82e435fccf39ddb10c15a49c168311f75cdcf9c33a739040",
+    "target_voxel_sha256": "98dfece2ea13596a82e435fccf39ddb10c15a49c168311f75cdcf9c33a739040"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 167,
+    "voxels": 987,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 28,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "98dfece2ea13596a82e435fccf39ddb10c15a49c168311f75cdcf9c33a739040",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.265,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 142,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 142,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 142,
+    "voxels": 987,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "98dfece2ea13596a82e435fccf39ddb10c15a49c168311f75cdcf9c33a739040",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "03eadb6d42f83fab45ca26e1bd05c4b06c3b8917d3b6c0a03b0a35008c3813cd",
+    "refined.txt": "1c9e28db15a161b1d9d959e86170eb374daa0b8aaede66e63a0272a87bb3972d",
+    "refined.json": "de640c49f76cc8433d4b4237c35730763ce90e558885fa350fc16464fbc5fe22"
+  },
+  "ldr_path": "refined_ldr/A25_L3.ldr",
+  "elapsed_seconds": 0.312
+}

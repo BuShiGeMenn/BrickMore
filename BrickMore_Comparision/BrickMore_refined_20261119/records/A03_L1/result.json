@@ -1,0 +1,89 @@
+{
+  "prompt_id": "A03_L1",
+  "batch": "A",
+  "category": "basket",
+  "level": 1,
+  "caption": "A tall laundry basket with a tall cavity, an open top and one flat lift handle.",
+  "source_sha256": "4164239b6101ddb5417059a68c2e53a5784fc3c05254c94ec9bc8b67c8fbae7f",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 276,
+  "normalization": {
+    "original_voxels": 1053,
+    "target_voxels": 1053,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "c493b4561c1539541fc5649e5857fd383e1b7378f5e25ef41e09d5cfcaf2f582",
+    "target_voxel_sha256": "c493b4561c1539541fc5649e5857fd383e1b7378f5e25ef41e09d5cfcaf2f582"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 276,
+    "voxels": 1053,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "c493b4561c1539541fc5649e5857fd383e1b7378f5e25ef41e09d5cfcaf2f582",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 5821,
+      "run_count": 159,
+      "flow_edges": 1804,
+      "budget_seconds": 12,
+      "seconds": 4.813000000001921,
+      "solver_status": 0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "has_incumbent": true,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "method": "exact_cover_single_real_stud_run_flow",
+  "status": "passed",
+  "refined_bricks": 256,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 256,
+    "voxels": 1053,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "c493b4561c1539541fc5649e5857fd383e1b7378f5e25ef41e09d5cfcaf2f582",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "7feb3c32215798fff4e09d71d2af07b37bc80379cf93adccd2f0891bb08b73f3",
+    "refined.txt": "2b5375cf322951dd83d03274080a5d61ab49df6ad54c1805b44a7ce271491f90",
+    "refined.json": "ed30256dc7836acd29d56dd2af763745a680bb54b13a866a2c9e90b264506db5"
+  },
+  "ldr_path": "refined_ldr/A03_L1.ldr",
+  "elapsed_seconds": 4.891
+}

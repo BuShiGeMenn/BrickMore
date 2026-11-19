@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A40_L1",
+  "batch": "A",
+  "category": "piano",
+  "level": 1,
+  "caption": "A digital slab piano with a slim body, a full keyboard and a single support column.",
+  "source_sha256": "12e3c03b53c097ea69717a845378ddabaccb16829862510901cec3c7c456f3f6",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 168,
+  "normalization": {
+    "original_voxels": 1242,
+    "target_voxels": 1242,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a87f85699ba2736cc1a7f49fc254a183867b114a96b27e5bccab95bd4a6096f2",
+    "target_voxel_sha256": "a87f85699ba2736cc1a7f49fc254a183867b114a96b27e5bccab95bd4a6096f2"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 168,
+    "voxels": 1242,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "a87f85699ba2736cc1a7f49fc254a183867b114a96b27e5bccab95bd4a6096f2",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.438,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 168,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 168,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 168,
+    "voxels": 1242,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "a87f85699ba2736cc1a7f49fc254a183867b114a96b27e5bccab95bd4a6096f2",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "6a12279f65f7f120c7f03f8ebd88b2fc59e16c12ad67847ac865006c63d15be4",
+    "refined.txt": "bd534705617f83873ce5d8d3eb05e227eacaad8b4e8b2c7dd39205094eb903a3",
+    "refined.json": "fff118af62a84572f72041cfac7bb8308d2aa66fabb921e15bdb2bf80afd8040"
+  },
+  "ldr_path": "refined_ldr/A40_L1.ldr",
+  "elapsed_seconds": 0.5
+}

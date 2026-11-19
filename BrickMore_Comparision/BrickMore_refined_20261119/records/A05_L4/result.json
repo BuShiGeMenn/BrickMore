@@ -1,0 +1,76 @@
+{
+  "prompt_id": "A05_L4",
+  "batch": "A",
+  "category": "bed",
+  "level": 4,
+  "caption": "A bunk bed with two stacked frames, four posts and a short ladder. A mattress rests on the frame; two straight end boards join the corners. Flat frame boards keep an even thickness with four squared legs beneath. Overall width is 1.20 times depth; height is 0.85 times width. Parts follow functional positions.",
+  "source_sha256": "0129c2f00dbfe824175879540da36d91f2d6d2a4ee5c5af4d8bacfe7b05dbff4",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 88,
+  "normalization": {
+    "original_voxels": 630,
+    "target_voxels": 630,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "62c0a50e1c55a765be76211d1a6ac4afdd204888256c985086db9b77b80bdb73",
+    "target_voxel_sha256": "62c0a50e1c55a765be76211d1a6ac4afdd204888256c985086db9b77b80bdb73"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 88,
+    "voxels": 630,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "62c0a50e1c55a765be76211d1a6ac4afdd204888256c985086db9b77b80bdb73",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 88,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 88,
+    "voxels": 630,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "62c0a50e1c55a765be76211d1a6ac4afdd204888256c985086db9b77b80bdb73",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "e285f4e4bb15f1ea79293a2e4a1869cee0ae686af0f9ce9d08b97cb656c20db8",
+    "refined.txt": "4f123d98e964cd36287b1b22228375fb6f4a0553afec355ae66ccd5d49e2141c",
+    "refined.json": "51e2260b92bec0ebf251708bd33a0fbefd951d214b9d17617c41666598936388"
+  },
+  "ldr_path": "refined_ldr/A05_L4.ldr",
+  "elapsed_seconds": 0.063
+}

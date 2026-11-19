@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A19_L4",
+  "batch": "A",
+  "category": "bowl",
+  "level": 4,
+  "caption": "A round mixing bowl with a wide cavity, continuous walls and a sealed base. Continuous walls rise from a sealed base; the top edge stays open. Circular walls keep an even thickness around the cavity. Overall width is 1.00 times depth; height is 0.42 times width. Parts follow functional positions.",
+  "source_sha256": "ee0943341be4508e36704e6de0a25c68a99c633a7078c5a1613a4acea8f5f437",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 288,
+  "normalization": {
+    "original_voxels": 1143,
+    "target_voxels": 1143,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "7f7b9299f58b01664679f533bfd672eeb3733f0a869ec2ad2526c2c3af7e1690",
+    "target_voxel_sha256": "7f7b9299f58b01664679f533bfd672eeb3733f0a869ec2ad2526c2c3af7e1690"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 288,
+    "voxels": 1143,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "7f7b9299f58b01664679f533bfd672eeb3733f0a869ec2ad2526c2c3af7e1690",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.266,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 226,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 228,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 228,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 228,
+    "voxels": 1143,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "7f7b9299f58b01664679f533bfd672eeb3733f0a869ec2ad2526c2c3af7e1690",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "7d2e61ab43e81b62a4bfe18a2e2f651f1e4c2fe8c917c590c0406a86c7b64e26",
+    "refined.txt": "08483f49645dc28ea5af0db790a07c91f716ca641b48cea45b78e6ace9e949ba",
+    "refined.json": "b6cb5ef8cf94606784f6ea515454e095fe258bce11eab3e1b7a0e138cbc35286"
+  },
+  "ldr_path": "refined_ldr/A19_L4.ldr",
+  "elapsed_seconds": 2.344
+}

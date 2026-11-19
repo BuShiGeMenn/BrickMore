@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B50_L5",
+  "batch": "B",
+  "category": "train",
+  "level": 5,
+  "caption": "A tram with a rounded body, large windows and four wheels. A body carries a cab and windows; wheels join the chassis beneath. Rounded body panels keep an even thickness along the chassis. Overall width is 2.40 times depth; height is 0.65 times width. Parts follow functional positions. Continuous dark gray, near black, red color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "55507b2aaa1f7884bc57a29e3c8a9c7a828a0e5b26bac80a45544d82e494d33e",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 184,
+  "normalization": {
+    "original_voxels": 912,
+    "target_voxels": 912,
+    "duplicate_cell_occupancies": 3,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "eaf3617a9331ac8d017d04671d7c426321a5b13b4c1e940f76cde14749c3f121",
+    "target_voxel_sha256": "eaf3617a9331ac8d017d04671d7c426321a5b13b4c1e940f76cde14749c3f121"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 184,
+    "voxels": 912,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 3,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "eaf3617a9331ac8d017d04671d7c426321a5b13b4c1e940f76cde14749c3f121",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.672,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 108,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 109,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 109,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 109,
+    "voxels": 912,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "eaf3617a9331ac8d017d04671d7c426321a5b13b4c1e940f76cde14749c3f121",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "b72224340a3e786d9f7bf7caa9c90bb633ec29164b6e577b8e0acc1c0b8a21d6",
+    "refined.txt": "2416e642858cc8392946d69d2669d4beae5fa30a654e0ab25a120ac61bcd3711",
+    "refined.json": "21fdae66c9fadf4db812c1124ebd05a1c4dc132cfd6f7234bb3e2e07f4daf918"
+  },
+  "ldr_path": "refined_ldr/B50_L5.ldr",
+  "elapsed_seconds": 0.719
+}

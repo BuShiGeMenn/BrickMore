@@ -1,0 +1,77 @@
+{
+  "prompt_id": "A16_L1",
+  "batch": "A",
+  "category": "bottle",
+  "level": 1,
+  "caption": "A wide shoulder bottle with a broad body, a rounded shoulder and a short neck.",
+  "source_sha256": "42ad26d52c87f914ca188fa1dc4da8256e6ea744f0406bb8ebb6d508e2371a79",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 511,
+  "normalization": {
+    "original_voxels": 1781,
+    "target_voxels": 1781,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "4423cff8745ec932cfb2f5ad65d17b6f37461951b61d4adae64677db0e063596",
+    "target_voxel_sha256": "4423cff8745ec932cfb2f5ad65d17b6f37461951b61d4adae64677db0e063596"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 511,
+    "voxels": 1781,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "4423cff8745ec932cfb2f5ad65d17b6f37461951b61d4adae64677db0e063596",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 511,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 511,
+    "voxels": 1781,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "4423cff8745ec932cfb2f5ad65d17b6f37461951b61d4adae64677db0e063596",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "7412ac6c197559745dbd0ae309c42461ace1143d52debfd67bada5bb2a6ff683",
+    "refined.txt": "52e79064b7aaf1d51fa1370e246c8d72c91867e4a6fba01f12974431ce5fa64b",
+    "refined.json": "bdf076b69a972ce213b94ba1af51d4e92fd5bd1240d4154dff623159470b7c18"
+  },
+  "ldr_path": "refined_ldr/A16_L1.ldr",
+  "elapsed_seconds": 0.078
+}

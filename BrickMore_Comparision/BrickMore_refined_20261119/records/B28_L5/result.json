@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B28_L5",
+  "batch": "B",
+  "category": "jar",
+  "level": 5,
+  "caption": "An apothecary jar with a narrow neck, a domed lid and a wide body. A sealed base carries rounded walls; a short wide neck ends in a mouth. Circular walls keep an even thickness up to the neck. Overall width is 0.95 times depth; height is 1.00 times width. Parts follow functional positions. Continuous cyan, white, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "497839480f16fc50c67287e332df4fc349bc213c0f31673edaa9dd4092909303",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 324,
+  "normalization": {
+    "original_voxels": 1137,
+    "target_voxels": 1137,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "245cd8560a80d9fb6dd9c7bfc6b7bf0a02abf6341b42fb64c8088740b50262f0",
+    "target_voxel_sha256": "245cd8560a80d9fb6dd9c7bfc6b7bf0a02abf6341b42fb64c8088740b50262f0"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 324,
+    "voxels": 1137,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "245cd8560a80d9fb6dd9c7bfc6b7bf0a02abf6341b42fb64c8088740b50262f0",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.188,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 291,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 291,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 291,
+    "voxels": 1137,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "245cd8560a80d9fb6dd9c7bfc6b7bf0a02abf6341b42fb64c8088740b50262f0",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "1f4e5cd5303a1de24bae06273569c9633a3b1e7e509df8fdf567e91c109246da",
+    "refined.txt": "46db2f85be400648de79282f1ed7d7a6e941cc44fd942b2b74b8d8abfd3476cb",
+    "refined.json": "fd87bf84d1b3d6129b0239fe6dd460b1962c2950ac87611a209e146374b0684a"
+  },
+  "ldr_path": "refined_ldr/B28_L5.ldr",
+  "elapsed_seconds": 0.25
+}

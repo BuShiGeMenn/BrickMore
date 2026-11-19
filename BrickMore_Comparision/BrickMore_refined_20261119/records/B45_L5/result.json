@@ -1,0 +1,52 @@
+{
+  "prompt_id": "B45_L5",
+  "batch": "B",
+  "category": "tower",
+  "level": 5,
+  "caption": "A square tower with a square base, four walls and one side opening. Four flat walls rise from a base; a stepped crown caps the top. Faceted walls keep a constant thickness with a stepped crown line. Overall width is 0.75 times depth; height is 2.60 times width. Parts follow functional positions. Continuous cream, dark brown, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "01688952dbb3c669072de4be395be8a7e078c712200c0b62e8938950644d2286",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 165,
+  "normalization": {
+    "original_voxels": 1199,
+    "target_voxels": 1199,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "4f98fdb3fe3e4da249e976ab3a2d25cec8cf8945e11bd0125a8f1cd5345dd98b",
+    "target_voxel_sha256": "4f98fdb3fe3e4da249e976ab3a2d25cec8cf8945e11bd0125a8f1cd5345dd98b"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 165,
+    "voxels": 1199,
+    "stud_components": 17,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 21,
+    "target_voxel_sha256": "4f98fdb3fe3e4da249e976ab3a2d25cec8cf8945e11bd0125a8f1cd5345dd98b",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    1191,
+    8
+  ],
+  "elapsed_seconds": 0.0
+}

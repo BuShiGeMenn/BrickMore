@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B44_L5",
+  "batch": "B",
+  "category": "table",
+  "level": 5,
+  "caption": "A console table with a narrow top, a lower shelf and four slim legs. A framed top joins four legs; a straight apron links the legs. Flat tabletop panels keep a constant thickness with squared legs. Overall width is 2.40 times depth; height is 0.75 times width. Parts follow functional positions. Continuous oak brown, white, charcoal color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "0b49890a0329c1b2c17e27a325426a135ca72d318db08c369daebb48a81c614f",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 186,
+  "normalization": {
+    "original_voxels": 1115,
+    "target_voxels": 1115,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "826c93ce906480ee0db9cf483311dcd455c511d69e1a260e15478cec965fff83",
+    "target_voxel_sha256": "826c93ce906480ee0db9cf483311dcd455c511d69e1a260e15478cec965fff83"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 186,
+    "voxels": 1115,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "826c93ce906480ee0db9cf483311dcd455c511d69e1a260e15478cec965fff83",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.578,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 158,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 158,
+    "voxels": 1115,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "826c93ce906480ee0db9cf483311dcd455c511d69e1a260e15478cec965fff83",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "f190854d9013f34c9bbfbeba8edbcf38bf5cb5c298f64414d8f85258267c9c13",
+    "refined.txt": "734383a86cf40f8564868cc0c234c6165b3759acf1b45272554d28c8e41b8418",
+    "refined.json": "e30976ce55e8ebedf2a4380935a6d06d02fafb9b70f8905a5e4568fd75839365"
+  },
+  "ldr_path": "refined_ldr/B44_L5.ldr",
+  "elapsed_seconds": 0.672
+}

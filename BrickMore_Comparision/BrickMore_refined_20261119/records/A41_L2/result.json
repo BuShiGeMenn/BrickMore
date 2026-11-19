@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A41_L2",
+  "batch": "A",
+  "category": "pot",
+  "level": 2,
+  "caption": "A saucepan with a shallow cavity, one long handle and a small helper ear. Continuous walls enclose a cavity; two handles join opposite wall sides.",
+  "source_sha256": "ed49862d6d03e6cf168993730e8407f95548da7bcf4fa038e9fd5ee46bd44d21",
+  "original_geometry_valid": false,
+  "original_generation_complete": false,
+  "raw_bricks": 642,
+  "normalization": {
+    "original_voxels": 2248,
+    "target_voxels": 2248,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5ba925009fe69f7fd59d7043d807c29d64cbae93d3109d361554dff873a80c33",
+    "target_voxel_sha256": "5ba925009fe69f7fd59d7043d807c29d64cbae93d3109d361554dff873a80c33"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 642,
+    "voxels": 2248,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "5ba925009fe69f7fd59d7043d807c29d64cbae93d3109d361554dff873a80c33",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.359,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 587,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 599,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 599,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 599,
+    "voxels": 2248,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "5ba925009fe69f7fd59d7043d807c29d64cbae93d3109d361554dff873a80c33",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "bc10172578398d62b4176dce798926c2228c16488825b90a4ea6a0c119f5cfc4",
+    "refined.txt": "7b337f3473f218ef160a03615e0f2e2afce92ed014e671c7d3b8c15880cffad1",
+    "refined.json": "6e9334c1d15b5fe0bad3408f17a41914a6e0d4e5f6306f7f7338f01af5249791"
+  },
+  "ldr_path": "refined_ldr/A41_L2.ldr",
+  "elapsed_seconds": 0.453
+}

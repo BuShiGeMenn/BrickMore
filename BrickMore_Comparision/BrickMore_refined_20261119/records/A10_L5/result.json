@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A10_L5",
+  "batch": "A",
+  "category": "birdhouse",
+  "level": 5,
+  "caption": "A gable roof birdhouse with a closed chamber, a round entrance and a gable roof. Enclosed walls form a chamber; a round entrance pierces the front. Curved roof planes keep a constant thickness above the chamber walls. Overall width is 1.10 times depth; height is 0.95 times width. Parts follow functional positions. Continuous red, white, dark brown color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "6957794b8b340725088ac8f6d23a0a3f676a185abbaf7f19dd22b5e85c85c864",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 226,
+  "normalization": {
+    "original_voxels": 969,
+    "target_voxels": 969,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "2339495e5e3be9030f9712b8c94cd01612b6663f11f04eb6a7d72a0120e3d374",
+    "target_voxel_sha256": "2339495e5e3be9030f9712b8c94cd01612b6663f11f04eb6a7d72a0120e3d374"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 226,
+    "voxels": 969,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "2339495e5e3be9030f9712b8c94cd01612b6663f11f04eb6a7d72a0120e3d374",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.485,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 214,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 209,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 209,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 209,
+    "voxels": 969,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "2339495e5e3be9030f9712b8c94cd01612b6663f11f04eb6a7d72a0120e3d374",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "28e53fbd8e9da8a464da194830425dbba17adaf1ac25a1d6a3008c2625a161a6",
+    "refined.txt": "d64918ac9b5656614fd8a86f07e5c402ca0d0bc826908ffdd3f7eab564f69330",
+    "refined.json": "27892d440e341ad36697b95283e0a477b56d71c8a2fb18584d74cc6f5f53e11c"
+  },
+  "ldr_path": "refined_ldr/A10_L5.ldr",
+  "elapsed_seconds": 0.563
+}

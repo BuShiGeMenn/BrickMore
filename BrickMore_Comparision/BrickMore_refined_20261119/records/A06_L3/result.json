@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A06_L3",
+  "batch": "A",
+  "category": "bed",
+  "level": 3,
+  "caption": "A daybed with a long frame, a low back rail and a single mattress. A mattress rests on the frame; curved headboard and footboard join the frame sides. Rounded frame edges carry their continuously attached supports.",
+  "source_sha256": "c4225a39f5e028a5ba7f71844c65acf14649301ac6f4b459915a15f8caeee0a5",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 108,
+  "normalization": {
+    "original_voxels": 902,
+    "target_voxels": 902,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "124105db36fd57c561c19af96bcd6773a2c975242a2be4b0ed80feb4a89c2acf",
+    "target_voxel_sha256": "124105db36fd57c561c19af96bcd6773a2c975242a2be4b0ed80feb4a89c2acf"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 108,
+    "voxels": 902,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "124105db36fd57c561c19af96bcd6773a2c975242a2be4b0ed80feb4a89c2acf",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.281,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 96,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 96,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 96,
+    "voxels": 902,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "124105db36fd57c561c19af96bcd6773a2c975242a2be4b0ed80feb4a89c2acf",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "581762465fb1ec1b246f7077e1b640f9cabcea92f6900e190c6654ee240bb5de",
+    "refined.txt": "31ca0e3829742f38c36436d88a286dfeb03cd8a5243b2cdb7b3af3861a42b130",
+    "refined.json": "4636c8e58fe225bf2e14a6f9bb33cfff61553f012fe13e2e041bda8dacf12a37"
+  },
+  "ldr_path": "refined_ldr/A06_L3.ldr",
+  "elapsed_seconds": 0.344
+}

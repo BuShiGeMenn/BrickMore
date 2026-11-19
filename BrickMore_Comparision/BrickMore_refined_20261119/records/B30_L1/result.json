@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B30_L1",
+  "batch": "B",
+  "category": "mug",
+  "level": 1,
+  "caption": "A straight mug with a straight wall, a sealed base and one loop handle.",
+  "source_sha256": "c348317a8ca1545eec4d41b1373cbcef96b6bc44f19fc7d72a2037031f186634",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 220,
+  "normalization": {
+    "original_voxels": 973,
+    "target_voxels": 973,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "008e181bce1714cc42f589732f0a165c886ee3cf95155a8aafa76b5758c0a180",
+    "target_voxel_sha256": "008e181bce1714cc42f589732f0a165c886ee3cf95155a8aafa76b5758c0a180"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 220,
+    "voxels": 973,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "008e181bce1714cc42f589732f0a165c886ee3cf95155a8aafa76b5758c0a180",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 3.906,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 201,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 201,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 201,
+    "voxels": 973,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "008e181bce1714cc42f589732f0a165c886ee3cf95155a8aafa76b5758c0a180",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "410d7e4c540a5cb86f7917ab77c443d8fd88303fca32b03f4a3b6e380fec5d7b",
+    "refined.txt": "e12175e6fc2f0d1958fb9abf97ff616bf0ebd57ec758acc7affac400b5e9e35f",
+    "refined.json": "a91beb7c473753b53d976e038fb0aa0e2b0f370bffce9bbbe9ffe69ec4bd5c63"
+  },
+  "ldr_path": "refined_ldr/B30_L1.ldr",
+  "elapsed_seconds": 3.953
+}

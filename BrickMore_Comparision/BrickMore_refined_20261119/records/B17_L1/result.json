@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B17_L1",
+  "batch": "B",
+  "category": "camera",
+  "level": 1,
+  "caption": "A rangefinder camera with a flat body, one lens and two top dials.",
+  "source_sha256": "4e283c71cc2aadc1a7f0bb990bc1d53b2751025c47614f9bdcd3d6c3863cab62",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 148,
+  "normalization": {
+    "original_voxels": 995,
+    "target_voxels": 995,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "439599bc1c0db6a4cd0c3d75a13ff072325418df84f52650337e2218dd920e24",
+    "target_voxel_sha256": "439599bc1c0db6a4cd0c3d75a13ff072325418df84f52650337e2218dd920e24"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 148,
+    "voxels": 995,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "439599bc1c0db6a4cd0c3d75a13ff072325418df84f52650337e2218dd920e24",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.672,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 115,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 115,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 115,
+    "voxels": 995,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "439599bc1c0db6a4cd0c3d75a13ff072325418df84f52650337e2218dd920e24",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "2e0664148c2a74aaf896b3b4fe6873dc9f2741228ffda57c509d654e19033b02",
+    "refined.txt": "02e9a327e7cd8e3b334dd526bcc3ce09e1cd3ca6186f864a2702611c2e36e3e0",
+    "refined.json": "30b776d456cc5a82e441275211755803c5188d04e18e05de7abbbcd1edf1108a"
+  },
+  "ldr_path": "refined_ldr/B17_L1.ldr",
+  "elapsed_seconds": 0.734
+}

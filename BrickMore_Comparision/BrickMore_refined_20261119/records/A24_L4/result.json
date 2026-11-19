@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A24_L4",
+  "batch": "A",
+  "category": "bus",
+  "level": 4,
+  "caption": "An articulated bus with two body sections, a joint bellows and six wheels. A boxy body carries side windows and a cab; four wheels join the chassis. Flat body panels keep a constant thickness along the chassis. Overall width is 4.40 times depth; height is 0.52 times width. Parts follow functional positions.",
+  "source_sha256": "1dfd0322f294b51060519648de053e5aad096408383024d61d05f24f3191e53c",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 149,
+  "normalization": {
+    "original_voxels": 995,
+    "target_voxels": 995,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "04096b16c6509ba278b6f1963037813c5da258ce3dfaa3431811763893b6bbdf",
+    "target_voxel_sha256": "04096b16c6509ba278b6f1963037813c5da258ce3dfaa3431811763893b6bbdf"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 149,
+    "voxels": 995,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "04096b16c6509ba278b6f1963037813c5da258ce3dfaa3431811763893b6bbdf",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.266,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 125,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 125,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 125,
+    "voxels": 995,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "04096b16c6509ba278b6f1963037813c5da258ce3dfaa3431811763893b6bbdf",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "30c230071506f9d542c961ca89842fc67afd2fe065754975a145fde1f9d78ba0",
+    "refined.txt": "21cc88afc9c4882b3faa2c5edc717b0960037841c991bcb28437ae15381520a2",
+    "refined.json": "ce9f2dca05856a318624a2d08db5e572c48eb0267e3136b5ca106db224449208"
+  },
+  "ldr_path": "refined_ldr/A24_L4.ldr",
+  "elapsed_seconds": 0.313
+}

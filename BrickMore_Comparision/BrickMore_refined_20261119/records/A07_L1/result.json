@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A07_L1",
+  "batch": "A",
+  "category": "bench",
+  "level": 1,
+  "caption": "A slatted garden bench with five seat slats, a slatted back and two armrests.",
+  "source_sha256": "45830a49bb0ca3ce4517a84383aa6dd394e3bc71ef9b2cdccf874cee08f9544c",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 120,
+  "normalization": {
+    "original_voxels": 994,
+    "target_voxels": 994,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "6aa526bd438fa78888380aff9d5a20caabad5dfe771fe0e65878626030afc783",
+    "target_voxel_sha256": "6aa526bd438fa78888380aff9d5a20caabad5dfe771fe0e65878626030afc783"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 120,
+    "voxels": 994,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "6aa526bd438fa78888380aff9d5a20caabad5dfe771fe0e65878626030afc783",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.359,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 113,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 113,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 113,
+    "voxels": 994,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "6aa526bd438fa78888380aff9d5a20caabad5dfe771fe0e65878626030afc783",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "f85fcf2a3a9bdc184a3f330695112b11763f27e92fd1985ce995cad82daf3889",
+    "refined.txt": "6b84cf5a4a0218daa99dfa1b46a6523a05ddab7aa714db498487858dd20406e4",
+    "refined.json": "3e71e1ea63a6a7f9673f8a7f0e369ed287c035e2c1da29526365ec2254329fbc"
+  },
+  "ldr_path": "refined_ldr/A07_L1.ldr",
+  "elapsed_seconds": 0.406
+}

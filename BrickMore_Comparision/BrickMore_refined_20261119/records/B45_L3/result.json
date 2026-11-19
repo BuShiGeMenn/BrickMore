@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B45_L3",
+  "batch": "B",
+  "category": "tower",
+  "level": 3,
+  "caption": "A square tower with a square base, four walls and one side opening. Four flat walls rise from a base; a stepped crown caps the top. Faceted walls keep a constant thickness with a stepped crown line.",
+  "source_sha256": "a663eec005d1e7590398828b7fa0863f304beff09c0df1a1b6e6fdca1ffa1aee",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 307,
+  "normalization": {
+    "original_voxels": 1270,
+    "target_voxels": 1270,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "022127230d512d052b5dc2f5b2d81a058bbd1ffe641ca0ad01294badcce5cc74",
+    "target_voxel_sha256": "022127230d512d052b5dc2f5b2d81a058bbd1ffe641ca0ad01294badcce5cc74"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 307,
+    "voxels": 1270,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "022127230d512d052b5dc2f5b2d81a058bbd1ffe641ca0ad01294badcce5cc74",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.313,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 255,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 262,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 262,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 262,
+    "voxels": 1270,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "022127230d512d052b5dc2f5b2d81a058bbd1ffe641ca0ad01294badcce5cc74",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "a5994c31f0c54a9ddc273cd1ee181fa135bf4ed0302eab2f1ec84c703b0a041e",
+    "refined.txt": "ac3794fdea6666bd6c7332dffa66e4469ab655782a9b78e1cbb53e5121de40a1",
+    "refined.json": "c5ebf23dd68553edf384a7832d9fd6918e4bb1b12bba49ff6c026caab497669c"
+  },
+  "ldr_path": "refined_ldr/B45_L3.ldr",
+  "elapsed_seconds": 1.391
+}

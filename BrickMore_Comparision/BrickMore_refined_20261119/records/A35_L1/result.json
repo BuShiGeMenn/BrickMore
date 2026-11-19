@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A35_L1",
+  "batch": "A",
+  "category": "jar",
+  "level": 1,
+  "caption": "A storage jar with lid with a tall body, a flat lid and a sealed base.",
+  "source_sha256": "8b4651aaf0d7543ac449db0adb4912888f6f96584197580f2c1ae51420f76ea5",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 204,
+  "normalization": {
+    "original_voxels": 898,
+    "target_voxels": 898,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "7164238549c36ebecd9f7bf655db01aaae96f1f9a5f3690f7641e50dd332024e",
+    "target_voxel_sha256": "7164238549c36ebecd9f7bf655db01aaae96f1f9a5f3690f7641e50dd332024e"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 204,
+    "voxels": 898,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "7164238549c36ebecd9f7bf655db01aaae96f1f9a5f3690f7641e50dd332024e",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 4.984,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 185,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 185,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 185,
+    "voxels": 898,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "7164238549c36ebecd9f7bf655db01aaae96f1f9a5f3690f7641e50dd332024e",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "fafa1e79c8ae2ee247513b512bc674562fc88b37663eca8e165a0edc84beb797",
+    "refined.txt": "78248d8bcb9a795b878ac4f22a567f4d0064587825219ea84376509c1c896411",
+    "refined.json": "c6264d11bd5e1c28a801c54dc3e8c9d272e30475bc47ea6ea32078429d0a38e0"
+  },
+  "ldr_path": "refined_ldr/A35_L1.ldr",
+  "elapsed_seconds": 5.062
+}

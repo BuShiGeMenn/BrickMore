@@ -1,0 +1,164 @@
+{
+  "prompt_id": "B14_L2",
+  "batch": "B",
+  "category": "bowl",
+  "level": 2,
+  "caption": "A shallow fruit bowl with a wide shallow cavity and a low rim. Continuous walls rise from a sealed base; the top edge stays open.",
+  "source_sha256": "db763bbb07749fdb1a6fdf035a5e10455b83e8d756a0d03d2a7812d30237f676",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 282,
+  "normalization": {
+    "original_voxels": 1239,
+    "target_voxels": 1239,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "6af6cf196849aaa0893b7e7b47f979942eed15854be2c362ba3b3caa6896b06b",
+    "target_voxel_sha256": "6af6cf196849aaa0893b7e7b47f979942eed15854be2c362ba3b3caa6896b06b"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 282,
+    "voxels": 1239,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 18,
+    "target_voxel_sha256": "6af6cf196849aaa0893b7e7b47f979942eed15854be2c362ba3b3caa6896b06b",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.109,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 247,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 247,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 247,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 1,
+          "brick_count": 466,
+          "stud_components": 9,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 9705,
+      "run_count": 193,
+      "flow_edges": 2684,
+      "budget_seconds": 12,
+      "seconds": 12.093000000000757,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 12.204,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 247,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 247,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 247,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 247,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 247,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 247,
+    "voxels": 1239,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "6af6cf196849aaa0893b7e7b47f979942eed15854be2c362ba3b3caa6896b06b",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "1fa287ed8b6ce40e388f7e62805cf731159eab8b34b200154b3ae35f46bfc972",
+    "refined.txt": "bd784ba7e9e951861d8fb2a14b63ffb895e718fd6e9ba005a9a0f12f3f6ae742",
+    "refined.json": "c73e865069ed3cacc2401b0a278c18356ef205fdc684da96352c41970e0d513c"
+  },
+  "ldr_path": "refined_ldr/B14_L2.ldr",
+  "elapsed_seconds": 36.5
+}

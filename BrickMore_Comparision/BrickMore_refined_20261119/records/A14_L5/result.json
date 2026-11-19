@@ -1,0 +1,124 @@
+{
+  "prompt_id": "A14_L5",
+  "batch": "A",
+  "category": "bookshelf",
+  "level": 5,
+  "caption": "A ladder shelf with four leaning shelves and two side rails. Shelves join two curved side panels; each shelf leaves a clear gap. Curved side panels keep an even thickness with shelves attached along the inside. Overall width is 1.80 times depth; height is 1.50 times width. Parts follow functional positions. Continuous dark brown, tan, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "ef378e8fcd2218ffe783a2c821f71d476fc6de5838bd7b7964e8fd5b1ed4090d",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 611,
+  "normalization": {
+    "original_voxels": 2171,
+    "target_voxels": 2099,
+    "duplicate_cell_occupancies": 3,
+    "dropped_brick_indices": [
+      582,
+      583,
+      584,
+      585,
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      592,
+      593,
+      594,
+      595,
+      596,
+      597,
+      598,
+      599,
+      600,
+      601,
+      602,
+      603,
+      604,
+      605,
+      606,
+      607,
+      608,
+      609,
+      610
+    ],
+    "clipped_brick_indices": [],
+    "removed_voxels": 72,
+    "added_voxels": 0,
+    "original_voxel_sha256": "d295a9287620791e1fcd391b58a82c7ae7a042bc03a857e3a7eddfeecf5bbe4c",
+    "target_voxel_sha256": "f307a1ebfbf7a008933e4fabe44e6427da6f4ab656a0a78b25f729770e7e8d98"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": false,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": false,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 611,
+    "voxels": 2171,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 72,
+    "duplicate_cell_occupancies": 3,
+    "unsupported_from_below": 25,
+    "target_voxel_sha256": "f307a1ebfbf7a008933e4fabe44e6427da6f4ab656a0a78b25f729770e7e8d98",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.297,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 558,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 558,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 558,
+    "voxels": 2099,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "f307a1ebfbf7a008933e4fabe44e6427da6f4ab656a0a78b25f729770e7e8d98",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": false,
+  "output_sha256": {
+    "refined.ldr": "3c7d0df25cd7f2ccd34c681166f81e552e1e3723ba090fea7459e8b46fa999fe",
+    "refined.txt": "e8fb7ec5c4e30a919ff9a01018445872e8b85cd5760b529396f7ab3142ac3a60",
+    "refined.json": "2c3f5eaf2f0d93ac887da1576c5960da7db28a95a304790ecdb6e7f0bae51997"
+  },
+  "ldr_path": "refined_ldr/A14_L5.ldr",
+  "elapsed_seconds": 0.406
+}

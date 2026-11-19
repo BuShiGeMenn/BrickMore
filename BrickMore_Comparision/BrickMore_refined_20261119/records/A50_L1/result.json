@@ -1,0 +1,108 @@
+{
+  "prompt_id": "A50_L1",
+  "batch": "A",
+  "category": "train",
+  "level": 1,
+  "caption": "A passenger car with a long body, window rows and four wheels.",
+  "source_sha256": "6a0cce7b021e3c5d295d6c65c0cff1c63ebc077258b2bb3f30af5d5a8d64c762",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 128,
+  "normalization": {
+    "original_voxels": 660,
+    "target_voxels": 660,
+    "duplicate_cell_occupancies": 16,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "e7b016319a6a0c19991a629b8f82a66c82b19fc6e65f07f9464b572c38f85c4e",
+    "target_voxel_sha256": "e7b016319a6a0c19991a629b8f82a66c82b19fc6e65f07f9464b572c38f85c4e"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 128,
+    "voxels": 660,
+    "stud_components": 10,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 16,
+    "unsupported_from_below": 30,
+    "target_voxel_sha256": "e7b016319a6a0c19991a629b8f82a66c82b19fc6e65f07f9464b572c38f85c4e",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.594,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 94,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 95,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 95,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 95,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 95,
+    "voxels": 660,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "e7b016319a6a0c19991a629b8f82a66c82b19fc6e65f07f9464b572c38f85c4e",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "8bd971cf935a86213f4c415ef95883d550206765d401fd481f54c0d8198bd7cf",
+    "refined.txt": "730e24b55f9537931d8e947ac2d8a391be7732e8346de7051aff62c3d96f5de8",
+    "refined.json": "f7415e056b5733d01a25e887010a23e3142263d68f740d892e7a8bb561b82a6f"
+  },
+  "ldr_path": "refined_ldr/A50_L1.ldr",
+  "elapsed_seconds": 1.656
+}

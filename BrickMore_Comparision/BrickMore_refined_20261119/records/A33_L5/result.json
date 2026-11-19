@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A33_L5",
+  "batch": "A",
+  "category": "guitar",
+  "level": 5,
+  "caption": "An electric guitar with a solid body, two pickups and a slim neck. A flat body joins a fretted neck; the headstock carries tuners. Flat body panels keep a constant thickness with straight neck sides. Overall width is 0.80 times depth; height is 2.10 times width. Parts follow functional positions. Continuous red, white, charcoal color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "76cc2e6b3c75d40527362925cb5c1d772e28e8a952674e48bd4b545ac96281c0",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 234,
+  "normalization": {
+    "original_voxels": 1385,
+    "target_voxels": 1385,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "7db451d2a994edfca434ec8b2b0bf791500d182f30e6711ebb6f257851000b84",
+    "target_voxel_sha256": "7db451d2a994edfca434ec8b2b0bf791500d182f30e6711ebb6f257851000b84"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 234,
+    "voxels": 1385,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "7db451d2a994edfca434ec8b2b0bf791500d182f30e6711ebb6f257851000b84",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.468,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 187,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 192,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 192,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 192,
+    "voxels": 1385,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "7db451d2a994edfca434ec8b2b0bf791500d182f30e6711ebb6f257851000b84",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "a816f7eb25dc78847ca2ec14347fd218610b1acc8183dfc5d749af0e1838864f",
+    "refined.txt": "fd5026764f76339c7f280e291aaae17ec3a40d493f8c35a69ed3a2a7a3f9ecfd",
+    "refined.json": "7d168881f75340fea1c45a599f23e2a2cc887a33085399575c4b97f98caf42fe"
+  },
+  "ldr_path": "refined_ldr/A33_L5.ldr",
+  "elapsed_seconds": 0.531
+}

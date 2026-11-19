@@ -1,0 +1,108 @@
+{
+  "prompt_id": "B07_L4",
+  "batch": "B",
+  "category": "birdhouse",
+  "level": 4,
+  "caption": "A two tier birdhouse with two stacked chambers with two entrances. Four walls form a chamber; a square entrance sits in the front. Flat wall panels keep an even thickness with a stepped roof line. Overall width is 1.15 times depth; height is 1.10 times width. Parts follow functional positions.",
+  "source_sha256": "839a4c5139bb4f293dca93e16f562217741b0418b2cf045ac5063cec553ab64e",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 279,
+  "normalization": {
+    "original_voxels": 1192,
+    "target_voxels": 1192,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "8297fc9ae619b43112949ad3b23937a8c77b679dba710ef9a5f6b33584514aba",
+    "target_voxel_sha256": "8297fc9ae619b43112949ad3b23937a8c77b679dba710ef9a5f6b33584514aba"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 279,
+    "voxels": 1192,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "8297fc9ae619b43112949ad3b23937a8c77b679dba710ef9a5f6b33584514aba",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.5,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 238,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 253,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 238,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 238,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 238,
+    "voxels": 1192,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "8297fc9ae619b43112949ad3b23937a8c77b679dba710ef9a5f6b33584514aba",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "c1cc3b4d9675cb0076c48bbd68d7b797c96a84f62fbc21686c3ff430353a1575",
+    "refined.txt": "d8458bad631ed88b763133da61e9aa7348762c34104b74539efd9436e9001c9c",
+    "refined.json": "b0ed4f73f7712500222c8007f8889df490e07f507102c93053192e92ad53e90b"
+  },
+  "ldr_path": "refined_ldr/B07_L4.ldr",
+  "elapsed_seconds": 0.563
+}

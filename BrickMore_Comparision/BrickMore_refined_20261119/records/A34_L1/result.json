@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A34_L1",
+  "batch": "A",
+  "category": "guitar",
+  "level": 1,
+  "caption": "A bass guitar with a long scale neck, a solid body and four tuners.",
+  "source_sha256": "aab86f6b4b8ff8f050ac266d8d6c5ad7d23a0a4527029d6fd53698a00969a21b",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 147,
+  "normalization": {
+    "original_voxels": 944,
+    "target_voxels": 944,
+    "duplicate_cell_occupancies": 13,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "c90c51b2c7b5becc9f1267062398ab74ac9f95eaa264654656212b9240bdcdac",
+    "target_voxel_sha256": "c90c51b2c7b5becc9f1267062398ab74ac9f95eaa264654656212b9240bdcdac"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 147,
+    "voxels": 944,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 13,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "c90c51b2c7b5becc9f1267062398ab74ac9f95eaa264654656212b9240bdcdac",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.156,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 118,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 118,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 118,
+    "voxels": 944,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "c90c51b2c7b5becc9f1267062398ab74ac9f95eaa264654656212b9240bdcdac",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "36b644d1c7e71c7cd61c348b976e1bf1f7829d350f0a65df20de84d1f7c97d72",
+    "refined.txt": "5d5010c79576e46f20178640f47bb5de3676d578949088dc0a9b03b95e0896fa",
+    "refined.json": "2918402f6ce0aad34ef3cc0f7f7622ddc96b7bb1a9b7e4056ce5dbcb43fad40a"
+  },
+  "ldr_path": "refined_ldr/A34_L1.ldr",
+  "elapsed_seconds": 0.203
+}

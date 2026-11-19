@@ -1,0 +1,136 @@
+{
+  "prompt_id": "A09_L3",
+  "batch": "A",
+  "category": "bench",
+  "level": 3,
+  "caption": "A curved park bench with a curved seat, a curved back and three curved supports. A seat slab rests on two curved supports; the backrest joins both ends. Curved seat edges stay continuous with an even slab thickness.",
+  "source_sha256": "80bef85d09a4fe0e02788fc7cbf0f46f057feac99ece521be01ff10c2f4ff07b",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 156,
+  "normalization": {
+    "original_voxels": 974,
+    "target_voxels": 974,
+    "duplicate_cell_occupancies": 7,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "c44c2cd4174b272510887f3d90d0deeed68e028538139ae82060f919edcba10e",
+    "target_voxel_sha256": "c44c2cd4174b272510887f3d90d0deeed68e028538139ae82060f919edcba10e"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 156,
+    "voxels": 974,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 7,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "c44c2cd4174b272510887f3d90d0deeed68e028538139ae82060f919edcba10e",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.094,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 131,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 377,
+          "stud_components": 3,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 11117,
+      "run_count": 247,
+      "flow_edges": 4249,
+      "budget_seconds": 12,
+      "seconds": 12.077999999994063,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 12.75,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 131,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 131,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 131,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 131,
+    "voxels": 974,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "c44c2cd4174b272510887f3d90d0deeed68e028538139ae82060f919edcba10e",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "b2d1481467d4a99e835f08db4849b5c3d7e1db0ee9d201a9d38c4e84d6f80fed",
+    "refined.txt": "1ed72d2ab8a8dd80127e7946ee154ab893374189fd1eb79fbe362a3fcdc17f3b",
+    "refined.json": "e322cba2ea7cf7685c165fae79602428d1371922cc069a468b1f97f8ee6f8f9a"
+  },
+  "ldr_path": "refined_ldr/A09_L3.ldr",
+  "elapsed_seconds": 37.0
+}

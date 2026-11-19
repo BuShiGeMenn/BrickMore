@@ -1,0 +1,52 @@
+{
+  "prompt_id": "A47_L4",
+  "batch": "A",
+  "category": "tower",
+  "level": 4,
+  "caption": "A round tower with a round base, circular walls and a domed crown. A continuous wall rises from a wide base; a narrowing crown caps the top. Circular walls keep an even thickness up to the crown. Overall width is 0.80 times depth; height is 2.40 times width. Parts follow functional positions.",
+  "source_sha256": "9046bfa771feda42da5be1f7414dbd53828983cf96187c61a1babbd76a988708",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 298,
+  "normalization": {
+    "original_voxels": 1016,
+    "target_voxels": 1016,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "bccd11fb71b28f49076fa364a00598bf72ad74f5b81d8bca792117fd378e8d75",
+    "target_voxel_sha256": "bccd11fb71b28f49076fa364a00598bf72ad74f5b81d8bca792117fd378e8d75"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 298,
+    "voxels": 1016,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "bccd11fb71b28f49076fa364a00598bf72ad74f5b81d8bca792117fd378e8d75",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    1013,
+    3
+  ],
+  "elapsed_seconds": 0.0
+}

@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B35_L5",
+  "batch": "B",
+  "category": "piano",
+  "level": 5,
+  "caption": "A baby grand piano with a short curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid. Curved case surfaces keep an even thickness around the keyboard. Overall width is 1.00 times depth; height is 0.48 times width. Parts follow functional positions. Continuous near black, white, brown wood color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "4397b98b81a40dc4823938f1c9c406cd86f76455f993d2aff94ec6b250ba278b",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 122,
+  "normalization": {
+    "original_voxels": 855,
+    "target_voxels": 855,
+    "duplicate_cell_occupancies": 27,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "48d04ae15b5b6e889aa60449c7602574d6bbe2bef7f922061a160c4067d4fa66",
+    "target_voxel_sha256": "48d04ae15b5b6e889aa60449c7602574d6bbe2bef7f922061a160c4067d4fa66"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 122,
+    "voxels": 855,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 27,
+    "unsupported_from_below": 29,
+    "target_voxel_sha256": "48d04ae15b5b6e889aa60449c7602574d6bbe2bef7f922061a160c4067d4fa66",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 10.875,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 87,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 87,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 87,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 87,
+    "voxels": 855,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 20,
+    "target_voxel_sha256": "48d04ae15b5b6e889aa60449c7602574d6bbe2bef7f922061a160c4067d4fa66",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "9445440eb85b23e1188bbadb5cf7562953632e85ad8787c6b92565be9bec2930",
+    "refined.txt": "dd2596d90046bef021d4db2e5b2970a14ffede5df696c3f7b80bbecb1b84f98b",
+    "refined.json": "d15c9a9bc2956a7e3e8e1a50e0eb819630ac8ff07bcde97b3310286e28251b87"
+  },
+  "ldr_path": "refined_ldr/B35_L5.ldr",
+  "elapsed_seconds": 10.922
+}

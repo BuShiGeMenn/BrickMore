@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A26_L1",
+  "batch": "A",
+  "category": "camera",
+  "level": 1,
+  "caption": "A dslr camera with a deep body, a lens barrel and a viewfinder hump.",
+  "source_sha256": "1592eaecf41d9f8cc1bd6faa05b52a9f43077456a2ed688d550e72d0a9c4275a",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 296,
+  "normalization": {
+    "original_voxels": 1599,
+    "target_voxels": 1599,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "9c82c4a86f949bbeefb67aaa9e9871388cd80b8774d31164ada506b9b5a0fe76",
+    "target_voxel_sha256": "9c82c4a86f949bbeefb67aaa9e9871388cd80b8774d31164ada506b9b5a0fe76"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 296,
+    "voxels": 1599,
+    "stud_components": 10,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "9c82c4a86f949bbeefb67aaa9e9871388cd80b8774d31164ada506b9b5a0fe76",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.86,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 260,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 260,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 260,
+    "voxels": 1599,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "9c82c4a86f949bbeefb67aaa9e9871388cd80b8774d31164ada506b9b5a0fe76",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "5b4eb8829845d0471d2d1190ac7b1db0d43a8352e7e7035da9f490792ae94666",
+    "refined.txt": "9618da9e8fe3a29ae9eb4bad027657347d7a36cd7487128443bfb4885b2d36de",
+    "refined.json": "58fffd1d8f20cc1babf1475407d8a099fbbff78331f5ea649cc6674fbbb8102a"
+  },
+  "ldr_path": "refined_ldr/A26_L1.ldr",
+  "elapsed_seconds": 2.907
+}

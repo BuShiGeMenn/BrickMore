@@ -1,0 +1,77 @@
+{
+  "prompt_id": "B06_L1",
+  "batch": "B",
+  "category": "bench",
+  "level": 1,
+  "caption": "A storage bench with a seat lid over a closed box and two side panels.",
+  "source_sha256": "18932275f803ab30c0b704101a1f6ab0b8edbb412c8df9eec374096b9d45cab0",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 97,
+  "normalization": {
+    "original_voxels": 773,
+    "target_voxels": 773,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "836f47529bb5fb3a71936e2db3f309c336e2e33a275d790ac7e2375b9af7fa8f",
+    "target_voxel_sha256": "836f47529bb5fb3a71936e2db3f309c336e2e33a275d790ac7e2375b9af7fa8f"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 97,
+    "voxels": 773,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "836f47529bb5fb3a71936e2db3f309c336e2e33a275d790ac7e2375b9af7fa8f",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 97,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 97,
+    "voxels": 773,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "836f47529bb5fb3a71936e2db3f309c336e2e33a275d790ac7e2375b9af7fa8f",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "53cecb78080c8627cfff54f6e4594a9684c684f3ff0294524bef66e80b8a8358",
+    "refined.txt": "17ff274107030173f6ebf378996c84fd4ee7f94aea7a270ef5a87b2ede7aef08",
+    "refined.json": "978aa72c89911a8329c5f0726f068f229facf887bc0e19ee05090d3ec364d7c1"
+  },
+  "ldr_path": "refined_ldr/B06_L1.ldr",
+  "elapsed_seconds": 0.062
+}

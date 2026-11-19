@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B20_L1",
+  "batch": "B",
+  "category": "car",
+  "level": 1,
+  "caption": "A station wagon with a long roof, a flat cargo cabin and four wheels.",
+  "source_sha256": "8cae79214e5f8a94a37a35bc9b2b8691a31400a9962b09577281622204811f0b",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 173,
+  "normalization": {
+    "original_voxels": 1251,
+    "target_voxels": 1251,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "bd568daadd2aaca89468cd60ce6f4bb5029d03b92cb4f9cd7ebe2b192c9c8033",
+    "target_voxel_sha256": "bd568daadd2aaca89468cd60ce6f4bb5029d03b92cb4f9cd7ebe2b192c9c8033"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 173,
+    "voxels": 1251,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "bd568daadd2aaca89468cd60ce6f4bb5029d03b92cb4f9cd7ebe2b192c9c8033",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.859,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 140,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 140,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 140,
+    "voxels": 1251,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "bd568daadd2aaca89468cd60ce6f4bb5029d03b92cb4f9cd7ebe2b192c9c8033",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "e88af6f6fa747b6edbd0d76ee3e4c5cb097133c63ce600c674c88aa9ae0e0545",
+    "refined.txt": "b39bbed50747f2f2785bc2760926c5f373207534e3f221395921dd33cb85b519",
+    "refined.json": "b9954951cdd8349458512b2eae85ae0e3a62ae689b4fe99925db23bd359a97b1"
+  },
+  "ldr_path": "refined_ldr/B20_L1.ldr",
+  "elapsed_seconds": 0.906
+}

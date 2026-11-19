@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B23_L2",
+  "batch": "B",
+  "category": "chair",
+  "level": 2,
+  "caption": "A bar stool chair with a small seat, a low back and four tall legs. A square seat joins four legs; a slatted backrest rises between the rear legs.",
+  "source_sha256": "409d5ae70ab8a84203593db656eb0adae4591280b615bc703fb614200a144728",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 118,
+  "normalization": {
+    "original_voxels": 810,
+    "target_voxels": 810,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "25dea030f718cfcd37c86320811f54e897c39d95d6441cd6b99ad0be3fde2343",
+    "target_voxel_sha256": "25dea030f718cfcd37c86320811f54e897c39d95d6441cd6b99ad0be3fde2343"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 118,
+    "voxels": 810,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "25dea030f718cfcd37c86320811f54e897c39d95d6441cd6b99ad0be3fde2343",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 7.797,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 111,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 111,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 111,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 111,
+    "voxels": 810,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "25dea030f718cfcd37c86320811f54e897c39d95d6441cd6b99ad0be3fde2343",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "cff925265ed1ab2859aaa728b96e9cd761d30c359f1436cbfc267ac09fb7bbf6",
+    "refined.txt": "c3a77c62f17fd6f5efbb5dfb5fb643342bf44e2c31ddf0e7bb9e74eac2a4949c",
+    "refined.json": "e89a6516dce15ef3e6ba4ebc2ff8d8c2271dce6353f62fe6ecca529dd6ce8244"
+  },
+  "ldr_path": "refined_ldr/B23_L2.ldr",
+  "elapsed_seconds": 7.859
+}

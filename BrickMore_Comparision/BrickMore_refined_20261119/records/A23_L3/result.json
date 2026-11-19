@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A23_L3",
+  "batch": "A",
+  "category": "bus",
+  "level": 3,
+  "caption": "A school bus with a long cabin, small windows and a raised roof. A long body carries side windows; four wheels attach beneath the chassis. Rounded body panels keep an even thickness along the chassis.",
+  "source_sha256": "d71dbd1848ffe72de7ee9214f9cb2f9807a5735257e365aa4d537b9dbfa599b6",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 161,
+  "normalization": {
+    "original_voxels": 1028,
+    "target_voxels": 1028,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "bf3db4231093e0922040cb527739c04ac71abb1405b5e65e4272df75138570dc",
+    "target_voxel_sha256": "bf3db4231093e0922040cb527739c04ac71abb1405b5e65e4272df75138570dc"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 161,
+    "voxels": 1028,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 22,
+    "target_voxel_sha256": "bf3db4231093e0922040cb527739c04ac71abb1405b5e65e4272df75138570dc",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.875,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 111,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 111,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 111,
+    "voxels": 1028,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "bf3db4231093e0922040cb527739c04ac71abb1405b5e65e4272df75138570dc",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "61cdb9dfa2ea9cb7cf80f426943c0ed833aac56895dd241d751b42354ff25844",
+    "refined.txt": "31728e78d8e7bf562fab7d372425994c11be8dbed54ddb4435fb0c08e62d5be7",
+    "refined.json": "ae5f0ca90b4b2d34e0e64f6bf9f189f5edfb2d6f569e1a52dea76b8a7ed16701"
+  },
+  "ldr_path": "refined_ldr/A23_L3.ldr",
+  "elapsed_seconds": 0.938
+}

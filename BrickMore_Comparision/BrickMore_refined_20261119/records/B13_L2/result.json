@@ -1,0 +1,115 @@
+{
+  "prompt_id": "B13_L2",
+  "batch": "B",
+  "category": "bowl",
+  "level": 2,
+  "caption": "A deep soup bowl with a deep cavity, steep walls and an open rim. Continuous walls rise from a sealed base; the top edge stays open.",
+  "source_sha256": "7b80ba539d0ff216d2de9b41126f61008cfb685bfefea24c9edf263520a0a065",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 569,
+  "normalization": {
+    "original_voxels": 1888,
+    "target_voxels": 1888,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "97077c0f5f69f895edbc752456de8a0d5a198154dc9d09bebe9722d728785bbb",
+    "target_voxel_sha256": "97077c0f5f69f895edbc752456de8a0d5a198154dc9d09bebe9722d728785bbb"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 569,
+    "voxels": 1888,
+    "stud_components": 12,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "97077c0f5f69f895edbc752456de8a0d5a198154dc9d09bebe9722d728785bbb",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.484,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 552,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 554,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 554,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 554,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 554,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 554,
+    "voxels": 1888,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 13,
+    "target_voxel_sha256": "97077c0f5f69f895edbc752456de8a0d5a198154dc9d09bebe9722d728785bbb",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "4260d2be82d744ca57c6798a298ebecd9c6c66686f4f87a6020e8a633e7cdd51",
+    "refined.txt": "9abc5053520ee03c7c9dd74d6064310486686f97187fc7f4eadecc435b6324a1",
+    "refined.json": "12a6dea9dd6d01f6ecc850a45418648dd5b345c9ce919aed293b903e9f3a2fa7"
+  },
+  "ldr_path": "refined_ldr/B13_L2.ldr",
+  "elapsed_seconds": 0.578
+}

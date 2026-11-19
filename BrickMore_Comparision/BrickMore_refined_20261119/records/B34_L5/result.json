@@ -1,0 +1,81 @@
+{
+  "prompt_id": "B34_L5",
+  "batch": "B",
+  "category": "piano",
+  "level": 5,
+  "caption": "A grand piano with a long curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid. Curved case surfaces keep an even thickness around the keyboard. Overall width is 1.05 times depth; height is 0.42 times width. Parts follow functional positions. Continuous near black, white, brown wood color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "5ca4b2a5e97b9d8db4c65e572d9422b88ae723b7dd1b6744aa07400f6267d2f4",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 159,
+  "normalization": {
+    "original_voxels": 1262,
+    "target_voxels": 1262,
+    "duplicate_cell_occupancies": 20,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "ba292de01457c2a0aee2b4dcb25302adfb8d774f592a9a53b40c3978b5878804",
+    "target_voxel_sha256": "ba292de01457c2a0aee2b4dcb25302adfb8d774f592a9a53b40c3978b5878804"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 159,
+    "voxels": 1262,
+    "stud_components": 43,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 20,
+    "unsupported_from_below": 80,
+    "target_voxel_sha256": "ba292de01457c2a0aee2b4dcb25302adfb8d774f592a9a53b40c3978b5878804",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.75,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 110,
+          "stud_components": 46,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 319,
+          "stud_components": 94,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 9549,
+      "run_count": 878,
+      "flow_edges": 8196,
+      "budget_seconds": 12,
+      "reason": "cell_has_no_brick_with_a_real_vertical_contact",
+      "seconds": 0.10900000000401633,
+      "certified_infeasible": true
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "elapsed_seconds": 12.875
+}

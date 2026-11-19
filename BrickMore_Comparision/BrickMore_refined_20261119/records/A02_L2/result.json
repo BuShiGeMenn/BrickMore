@@ -1,0 +1,51 @@
+{
+  "prompt_id": "A02_L2",
+  "batch": "A",
+  "category": "basket",
+  "level": 2,
+  "caption": "A square storage basket with a closed base, four flat walls and two squared handles. Four flat walls enclose a cavity; two straight handles join opposite walls.",
+  "source_sha256": "d471fd3479643e17abe1ab4afec3abd4c6ae77ce37527c3886a3a16c942e1351",
+  "original_geometry_valid": false,
+  "original_generation_complete": false,
+  "raw_bricks": 643,
+  "normalization": {
+    "original_voxels": 2373,
+    "target_voxels": 2373,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "548684a8fec40e7dc83ffc9191fe6b8bb574a6bdabb7b188128ae53348832cf7",
+    "target_voxel_sha256": "548684a8fec40e7dc83ffc9191fe6b8bb574a6bdabb7b188128ae53348832cf7"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 643,
+    "voxels": 2373,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "548684a8fec40e7dc83ffc9191fe6b8bb574a6bdabb7b188128ae53348832cf7",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    2372,
+    1
+  ],
+  "elapsed_seconds": 0.0
+}

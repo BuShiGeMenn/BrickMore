@@ -1,0 +1,108 @@
+{
+  "prompt_id": "A46_L3",
+  "batch": "A",
+  "category": "table",
+  "level": 3,
+  "caption": "A round cafe table with a round top, one column and three splayed feet. A continuous tabletop joins four legs; each leg reaches the ground. Rounded tabletop edges keep an even thickness above the legs.",
+  "source_sha256": "7de26bc42efa1c08aef947bcd415c69de119027f6af312c80b6dc46de6e4c4de",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 152,
+  "normalization": {
+    "original_voxels": 1002,
+    "target_voxels": 1002,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "4d46b3e1a94788e36b6be80504351fda4f648c69e6c880e15c449fe784447e25",
+    "target_voxel_sha256": "4d46b3e1a94788e36b6be80504351fda4f648c69e6c880e15c449fe784447e25"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 152,
+    "voxels": 1002,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 21,
+    "target_voxel_sha256": "4d46b3e1a94788e36b6be80504351fda4f648c69e6c880e15c449fe784447e25",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.109,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 124,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 124,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 1,
+          "brick_count": 242,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 242,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 242,
+    "voxels": 1002,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "4d46b3e1a94788e36b6be80504351fda4f648c69e6c880e15c449fe784447e25",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "9a6ee85749abffbb09f527b920dc948677b4b26301e1236ade235b2f90188020",
+    "refined.txt": "5209df8c5432ccf83047e05f2ff049dbf59da88b736b4747df3dd50c954df6af",
+    "refined.json": "f640db58d94b0a96882c5464ce12e995ab62e64f406bbaa503eb41813be430f1"
+  },
+  "ldr_path": "refined_ldr/A46_L3.ldr",
+  "elapsed_seconds": 12.172
+}

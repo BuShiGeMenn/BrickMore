@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A12_L1",
+  "batch": "A",
+  "category": "birdhouse",
+  "level": 1,
+  "caption": "A hexagon birdhouse with six faceted walls, one entrance and a peaked cap.",
+  "source_sha256": "d3251ef36a45c8a3dd974e5b1d281dec67ab0f30e650b52d8dcc074456ee6ebd",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 299,
+  "normalization": {
+    "original_voxels": 1189,
+    "target_voxels": 1189,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "b4b133ac843c6edc64246aa7c2ef25908bf88ceae8a31e058497b23a06f0c936",
+    "target_voxel_sha256": "b4b133ac843c6edc64246aa7c2ef25908bf88ceae8a31e058497b23a06f0c936"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 299,
+    "voxels": 1189,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "b4b133ac843c6edc64246aa7c2ef25908bf88ceae8a31e058497b23a06f0c936",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.672,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 251,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 239,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 239,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 239,
+    "voxels": 1189,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "b4b133ac843c6edc64246aa7c2ef25908bf88ceae8a31e058497b23a06f0c936",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "536e0ab52326b80a17d29181557ed25231ff13697beb1d02d4e511c46aa348ba",
+    "refined.txt": "d850e7f39e241b087d1ceaa47726f3dc77ba48681b577d8d3ede1b6112635cee",
+    "refined.json": "c61511bc8025021d892ac8774f0b75c3a4aefee397cb3c21245a3a2f9539828f"
+  },
+  "ldr_path": "refined_ldr/A12_L1.ldr",
+  "elapsed_seconds": 0.734
+}

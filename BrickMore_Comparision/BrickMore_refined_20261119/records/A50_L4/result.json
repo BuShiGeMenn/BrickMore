@@ -1,0 +1,106 @@
+{
+  "prompt_id": "A50_L4",
+  "batch": "A",
+  "category": "train",
+  "level": 4,
+  "caption": "A passenger car with a long body, window rows and four wheels. A boxy body carries a cab and side windows; four wheels join the chassis. Flat body panels keep a constant thickness along the chassis. Overall width is 3.20 times depth; height is 0.55 times width. Parts follow functional positions.",
+  "source_sha256": "fd294e6309375240a3aeef3b3eb5855c988bd7ff652e559db5cc7e9633fdadec",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 206,
+  "normalization": {
+    "original_voxels": 1461,
+    "target_voxels": 1461,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a304ada2141bfd4ba58546750681ee9293b6b88fdd11e4768d9682e0772d70e5",
+    "target_voxel_sha256": "a304ada2141bfd4ba58546750681ee9293b6b88fdd11e4768d9682e0772d70e5"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 206,
+    "voxels": 1461,
+    "stud_components": 13,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 25,
+    "target_voxel_sha256": "a304ada2141bfd4ba58546750681ee9293b6b88fdd11e4768d9682e0772d70e5",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.188,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 395,
+          "stud_components": 4,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 20091,
+      "run_count": 248,
+      "flow_edges": 4277,
+      "budget_seconds": 12,
+      "seconds": 12.203000000001339,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "has_incumbent": true,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "exact_cover_single_real_stud_run_flow",
+  "status": "passed",
+  "refined_bricks": 471,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 471,
+    "voxels": 1461,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 73,
+    "target_voxel_sha256": "a304ada2141bfd4ba58546750681ee9293b6b88fdd11e4768d9682e0772d70e5",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "9d92defaa14125b32c4aad19ee7156646dcdc3cdc082b6f6d10f434aa2e92782",
+    "refined.txt": "437aba0f1715bc186fee7eb24282cf8a598ba8872b146b378bfacd47a0dc4339",
+    "refined.json": "e60e9532837597e1e036235a8bfab405b1243d168bb95eb1ffe33fa5e25d7dc4"
+  },
+  "ldr_path": "refined_ldr/A50_L4.ldr",
+  "elapsed_seconds": 24.469
+}

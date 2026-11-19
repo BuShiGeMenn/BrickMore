@@ -1,0 +1,129 @@
+{
+  "prompt_id": "A51_L1",
+  "batch": "A",
+  "category": "vessel",
+  "level": 1,
+  "caption": "A cargo ship with a long hull, a cargo deck and a raised bridge.",
+  "source_sha256": "94437762e28674f27cb07203f60c088b4e1735e793e7e6a9c19a0e7561e64918",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 486,
+  "normalization": {
+    "original_voxels": 1885,
+    "target_voxels": 1885,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "da759c5ca8627f6568ca581a3fc237a1172196a1e4d9bcafc21c3d5be2e7cadd",
+    "target_voxel_sha256": "da759c5ca8627f6568ca581a3fc237a1172196a1e4d9bcafc21c3d5be2e7cadd"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 486,
+    "voxels": 1885,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "da759c5ca8627f6568ca581a3fc237a1172196a1e4d9bcafc21c3d5be2e7cadd",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.812,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 465,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 435,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 457,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 456,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 461,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 450,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 450,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 450,
+    "voxels": 1885,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "da759c5ca8627f6568ca581a3fc237a1172196a1e4d9bcafc21c3d5be2e7cadd",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "e153ab3ab14bcb42edb77573c3779cd149f6fcebd0d7229c52ae1d8bde6b9ad1",
+    "refined.txt": "ea762dddc7294afb52dc08666dbc67dd77bd8a6ae5f207538913dd7c55d5a6b2",
+    "refined.json": "6581f89dbf1d4dbb2b224c938c4be2caa42b09a1fb35e9fa3cd084aaa3f896f5"
+  },
+  "ldr_path": "refined_ldr/A51_L1.ldr",
+  "elapsed_seconds": 1.875
+}

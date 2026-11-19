@@ -1,0 +1,90 @@
+{
+  "prompt_id": "B35_L4",
+  "batch": "B",
+  "category": "piano",
+  "level": 4,
+  "caption": "A baby grand piano with a short curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid. Curved case surfaces keep an even thickness around the keyboard. Overall width is 1.00 times depth; height is 0.48 times width. Parts follow functional positions.",
+  "source_sha256": "7cb4495b5e2eb1877d0649ed88a8ea4610bce1404483ab369691a706908b5d56",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 145,
+  "normalization": {
+    "original_voxels": 1081,
+    "target_voxels": 1081,
+    "duplicate_cell_occupancies": 10,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "66e8c832072b624cd7226967253dca2392cb963b632269cdb443b4680b752897",
+    "target_voxel_sha256": "66e8c832072b624cd7226967253dca2392cb963b632269cdb443b4680b752897"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 145,
+    "voxels": 1081,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 10,
+    "unsupported_from_below": 31,
+    "target_voxel_sha256": "66e8c832072b624cd7226967253dca2392cb963b632269cdb443b4680b752897",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.234,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 98,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 99,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 1,
+          "brick_count": 239,
+          "stud_components": 6,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 14029,
+      "run_count": 252,
+      "flow_edges": 4313,
+      "budget_seconds": 12,
+      "seconds": 0.25,
+      "solver_status": 2,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": true
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "elapsed_seconds": 12.5
+}

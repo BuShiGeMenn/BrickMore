@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B18_L2",
+  "batch": "B",
+  "category": "camera",
+  "level": 2,
+  "caption": "An instant camera with a tall body, a front lens and a slot for prints. A flat body carries a circular lens mount and a top dial.",
+  "source_sha256": "6b05c35f43356f0301e2120c10b03158c0b34208ace8d845f4e2d46147b022e4",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 282,
+  "normalization": {
+    "original_voxels": 1136,
+    "target_voxels": 1136,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "f357c3939a771f6f2c7d896242cee83c90d277bab77a2e45e47b289b964d3999",
+    "target_voxel_sha256": "f357c3939a771f6f2c7d896242cee83c90d277bab77a2e45e47b289b964d3999"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 282,
+    "voxels": 1136,
+    "stud_components": 14,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "f357c3939a771f6f2c7d896242cee83c90d277bab77a2e45e47b289b964d3999",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.282,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 235,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 235,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 235,
+    "voxels": 1136,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "f357c3939a771f6f2c7d896242cee83c90d277bab77a2e45e47b289b964d3999",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "4270138bcb8c611210c9f2b4473a678465ca11d611d1618e075fcf3d83ab5e15",
+    "refined.txt": "137477fc3eead155f7b3143190b5351c88c6b8ec27abbf5c19d01cc8e612862b",
+    "refined.json": "edd02d8ff19df64ab16c974cb479798a81afc0edbf3e1e80f86e695d73914d1a"
+  },
+  "ldr_path": "refined_ldr/B18_L2.ldr",
+  "elapsed_seconds": 0.344
+}

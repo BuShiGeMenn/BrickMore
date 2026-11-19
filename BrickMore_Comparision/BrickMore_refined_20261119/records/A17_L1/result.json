@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A17_L1",
+  "batch": "A",
+  "category": "bottle",
+  "level": 1,
+  "caption": "A tall soda bottle with a tall body, a narrow neck and an open mouth.",
+  "source_sha256": "ceddebaf6b0f46d7b0153bc6e9dd2d32d6edc32f04ac89a5a7af705374ccc611",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 300,
+  "normalization": {
+    "original_voxels": 1228,
+    "target_voxels": 1228,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "d4bdd3ac92f7de39b3b5286f5465f1e3073a37b921a293721b049941d2b882e2",
+    "target_voxel_sha256": "d4bdd3ac92f7de39b3b5286f5465f1e3073a37b921a293721b049941d2b882e2"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 300,
+    "voxels": 1228,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "d4bdd3ac92f7de39b3b5286f5465f1e3073a37b921a293721b049941d2b882e2",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.547,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 263,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 264,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 264,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 264,
+    "voxels": 1228,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "d4bdd3ac92f7de39b3b5286f5465f1e3073a37b921a293721b049941d2b882e2",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "e2d4a1d1d1df5dadbf19131be31defea39af15d987e8ea1f82dd511af825719b",
+    "refined.txt": "4f32a8349c97b445203b00201929795ebe5821f6fd7154e3f798eb696d9c9ddf",
+    "refined.json": "572380766357db3995da9ed389a2c298e56be1b588e96323d2f5f1dfb582f839"
+  },
+  "ldr_path": "refined_ldr/A17_L1.ldr",
+  "elapsed_seconds": 0.61
+}

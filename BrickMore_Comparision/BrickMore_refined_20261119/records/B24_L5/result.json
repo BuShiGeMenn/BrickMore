@@ -1,0 +1,108 @@
+{
+  "prompt_id": "B24_L5",
+  "batch": "B",
+  "category": "guitar",
+  "level": 5,
+  "caption": "An acoustic guitar with a waisted body, a round sound hole and a long neck. A waisted body joins a long neck; the headstock carries tuning studs. Curved body edges keep an even thickness around the sound hole. Overall width is 0.75 times depth; height is 2.30 times width. Parts follow functional positions. Continuous dark brown, tan, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "e8240dbcab1e93a59ab067b769c14f6871afc9add5ec84517ade0654dabedafc",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 271,
+  "normalization": {
+    "original_voxels": 1359,
+    "target_voxels": 1359,
+    "duplicate_cell_occupancies": 6,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "9bf9ae46a59670afb210180d2b94cf51a10788c1192c582ea63373faba19fc59",
+    "target_voxel_sha256": "9bf9ae46a59670afb210180d2b94cf51a10788c1192c582ea63373faba19fc59"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 271,
+    "voxels": 1359,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 6,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "9bf9ae46a59670afb210180d2b94cf51a10788c1192c582ea63373faba19fc59",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.531,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 255,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 249,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 260,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 260,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 260,
+    "voxels": 1359,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "9bf9ae46a59670afb210180d2b94cf51a10788c1192c582ea63373faba19fc59",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "ab410ca83cdb8d1153c69b99a42fd835af7d57defaf9507177f8d9870f591476",
+    "refined.txt": "6d57c7b25b79b682009a185094507cbd038300002dae478c890a9d306ebffea9",
+    "refined.json": "90127dfc86aecdedd5aa6018a5d16e277706859d75a65b0af574ee23905c78ff"
+  },
+  "ldr_path": "refined_ldr/B24_L5.ldr",
+  "elapsed_seconds": 1.609
+}

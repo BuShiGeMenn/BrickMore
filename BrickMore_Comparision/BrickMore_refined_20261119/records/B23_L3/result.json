@@ -1,0 +1,136 @@
+{
+  "prompt_id": "B23_L3",
+  "batch": "B",
+  "category": "chair",
+  "level": 3,
+  "caption": "A bar stool chair with a small seat, a low back and four tall legs. A square seat joins four legs; a slatted backrest rises between the rear legs. Flat seat and back panels keep a constant thickness with squared legs.",
+  "source_sha256": "44b0042678508a47522022693ec9281260815526697eb734da1dd85f4f471c24",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 135,
+  "normalization": {
+    "original_voxels": 1008,
+    "target_voxels": 1008,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5fb4f31f625713ae3c6390b63d84c427d0e25dd4700ad84f04745f24487f276f",
+    "target_voxel_sha256": "5fb4f31f625713ae3c6390b63d84c427d0e25dd4700ad84f04745f24487f276f"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 135,
+    "voxels": 1008,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "5fb4f31f625713ae3c6390b63d84c427d0e25dd4700ad84f04745f24487f276f",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.141,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 121,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 306,
+          "stud_components": 2,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 10817,
+      "run_count": 192,
+      "flow_edges": 3329,
+      "budget_seconds": 12,
+      "seconds": 12.06199999999808,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 16.719,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 121,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 121,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 121,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 121,
+    "voxels": 1008,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "5fb4f31f625713ae3c6390b63d84c427d0e25dd4700ad84f04745f24487f276f",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "e0967964d8ba79dfdfd2f097c127d04ab67c2f971c4e4df14e15cc0f5c4c9ee3",
+    "refined.txt": "2dc34448560c7eca6968d1ba644dac3ce74c2ebabbd7edddef9da10209356809",
+    "refined.json": "2f620326d273feada28a6e24bf08a9f15e06fe148deaa39a3bb7e86923699c9e"
+  },
+  "ldr_path": "refined_ldr/B23_L3.ldr",
+  "elapsed_seconds": 41.0
+}

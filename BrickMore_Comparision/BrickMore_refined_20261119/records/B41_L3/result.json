@@ -1,0 +1,143 @@
+{
+  "prompt_id": "B41_L3",
+  "batch": "B",
+  "category": "sofa",
+  "level": 3,
+  "caption": "A chaise sofa with a long chaise cushion, a back and two arms. Cushions rest on the seat frame; a rear backrest and both arms join it. Rounded cushions keep an even thickness and attach continuously to the frame.",
+  "source_sha256": "03b4cd5324f2066168c0b8ee5bee83cfcf1f833d880579081ec78376580e5024",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 148,
+  "normalization": {
+    "original_voxels": 1116,
+    "target_voxels": 1116,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a0f14fa2525cbd9e00b6744bc275d14e7712683b6748eeeba71243749df1833f",
+    "target_voxel_sha256": "a0f14fa2525cbd9e00b6744bc275d14e7712683b6748eeeba71243749df1833f"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 148,
+    "voxels": 1116,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 27,
+    "target_voxel_sha256": "a0f14fa2525cbd9e00b6744bc275d14e7712683b6748eeeba71243749df1833f",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.125,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 111,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 137,
+          "stud_components": 7,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 14660,
+      "run_count": 303,
+      "flow_edges": 5876,
+      "budget_seconds": 12,
+      "seconds": 12.235000000000582,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 26.219,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 111,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 137,
+          "stud_components": 7,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 112,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 112,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 112,
+    "voxels": 1116,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "a0f14fa2525cbd9e00b6744bc275d14e7712683b6748eeeba71243749df1833f",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "d072d557dc9afc6aa82c225f391a8a9dd047b0866b65d016e5fa3dc482cccb0a",
+    "refined.txt": "f6bbba25ba2dc625209bca7d6701a7904cc6522acdc2816d947c3ff706fe6a0d",
+    "refined.json": "1c8ab885055187be2863673377d9f4dd0d81106e16edf93a868cb63032341333"
+  },
+  "ldr_path": "refined_ldr/B41_L3.ldr",
+  "elapsed_seconds": 50.687
+}

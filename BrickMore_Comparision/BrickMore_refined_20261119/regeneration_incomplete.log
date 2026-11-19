@@ -1,0 +1,54 @@
+MODEL_READY NVIDIA GeForce RTX 4050 Laptop GPU llamacpp
+GENERATE A02_L3 seed 7 llama.cpp BF16
+TOKENS A02_L3 7 924 elapsed_s 20
+TOKENS A02_L3 7 1859 elapsed_s 40
+TOKENS A02_L3 7 2744 elapsed_s 60
+CANDIDATE A02_L3 7 passed None
+REGEN_PROGRESS {'rescued': 40, 'exhausted': [], 'known_baseline_failures': 39, 'known_required_regeneration': 46, 'active': None, 'finished': False}
+GENERATE A02_L5 seed 7 llama.cpp BF16
+TOKENS A02_L5 7 937 elapsed_s 20
+TOKENS A02_L5 7 1877 elapsed_s 40
+TOKENS A02_L5 7 2798 elapsed_s 60
+TOKENS A02_L5 7 3699 elapsed_s 80
+REFINE A02_L5 seed7 12
+REFINE A02_L5 seed7 60
+CANDIDATE A02_L5 7 passed None
+REGEN_PROGRESS {'rescued': 41, 'exhausted': [], 'known_baseline_failures': 39, 'known_required_regeneration': 46, 'active': None, 'finished': False}
+GENERATE A11_L4 seed 7 llama.cpp BF16
+TOKENS A11_L4 7 930 elapsed_s 20
+TOKENS A11_L4 7 1869 elapsed_s 40
+TOKENS A11_L4 7 2779 elapsed_s 60
+TOKENS A11_L4 7 3680 elapsed_s 80
+TOKENS A11_L4 7 4570 elapsed_s 100
+TOKENS A11_L4 7 5444 elapsed_s 120
+TOKENS A11_L4 7 6306 elapsed_s 140
+TOKENS A11_L4 7 7157 elapsed_s 160
+REFINE A11_L4 seed7 12
+CANDIDATE A11_L4 7 passed None
+REGEN_PROGRESS {'rescued': 42, 'exhausted': [], 'known_baseline_failures': 39, 'known_required_regeneration': 46, 'active': None, 'finished': False}
+GENERATE A15_L2 seed 7 llama.cpp BF16
+TOKENS A15_L2 7 934 elapsed_s 20
+TOKENS A15_L2 7 1858 elapsed_s 40
+CANDIDATE A15_L2 7 passed None
+REGEN_PROGRESS {'rescued': 43, 'exhausted': [], 'known_baseline_failures': 39, 'known_required_regeneration': 46, 'active': None, 'finished': False}
+GENERATE A33_L1 seed 7 llama.cpp BF16
+TOKENS A33_L1 7 923 elapsed_s 20
+TOKENS A33_L1 7 1831 elapsed_s 40
+REFINE A33_L1 seed7 12
+CANDIDATE A33_L1 7 passed None
+REGEN_PROGRESS {'rescued': 44, 'exhausted': [], 'known_baseline_failures': 39, 'known_required_regeneration': 46, 'active': None, 'finished': False}
+GENERATE A41_L2 seed 7 llama.cpp BF16
+TOKENS A41_L2 7 932 elapsed_s 20
+TOKENS A41_L2 7 1844 elapsed_s 40
+TOKENS A41_L2 7 2742 elapsed_s 60
+TOKENS A41_L2 7 3628 elapsed_s 80
+REFINE A41_L2 seed7 12
+CANDIDATE A41_L2 7 passed None
+REGEN_PROGRESS {'rescued': 45, 'exhausted': [], 'known_baseline_failures': 39, 'known_required_regeneration': 46, 'active': None, 'finished': False}
+GENERATE A41_L5 seed 7 llama.cpp BF16
+TOKENS A41_L5 7 941 elapsed_s 20
+TOKENS A41_L5 7 1883 elapsed_s 40
+REFINE A41_L5 seed7 12
+CANDIDATE A41_L5 7 passed None
+REGEN_PROGRESS {'rescued': 46, 'exhausted': [], 'known_baseline_failures': 39, 'known_required_regeneration': 46, 'active': None, 'finished': False}
+REGENERATION_FINISHED {'rescued': 46, 'exhausted': [], 'finished': True}

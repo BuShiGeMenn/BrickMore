@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A17_L5",
+  "batch": "A",
+  "category": "bottle",
+  "level": 5,
+  "caption": "A tall soda bottle with a tall body, a narrow neck and an open mouth. A sealed base carries continuous walls; the shoulder narrows into a neck. Circular walls keep an even thickness and the neck stays continuous with the shoulder. Overall width is 1.00 times depth; height is 1.60 times width. Parts follow functional positions. Continuous cyan, white, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "c25cb05459603c0eb3bd503757418a3fdb1c28c5da06bc6a94b0999b55119e7f",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 281,
+  "normalization": {
+    "original_voxels": 1106,
+    "target_voxels": 1106,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "9b96a71ff7f2d812fc5fd80f47eda2d642c6a2d40494d1c0b8eb66c09a59b9e2",
+    "target_voxel_sha256": "9b96a71ff7f2d812fc5fd80f47eda2d642c6a2d40494d1c0b8eb66c09a59b9e2"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 281,
+    "voxels": 1106,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "9b96a71ff7f2d812fc5fd80f47eda2d642c6a2d40494d1c0b8eb66c09a59b9e2",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.219,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 239,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 239,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 239,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 239,
+    "voxels": 1106,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "9b96a71ff7f2d812fc5fd80f47eda2d642c6a2d40494d1c0b8eb66c09a59b9e2",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "138a747cc0baf98734f0bf14c58bf873f0dbfad8fab6ee35962dfe62cff0e4fa",
+    "refined.txt": "f541c9d8332d93948f0d71178d03e4b80dee8df9dfecb613fe19c1c95e747a7f",
+    "refined.json": "425a3380fac41980245a7c6f0a468f8ebef2571c4aed059d73016cc1df306217"
+  },
+  "ldr_path": "refined_ldr/A17_L5.ldr",
+  "elapsed_seconds": 0.281
+}

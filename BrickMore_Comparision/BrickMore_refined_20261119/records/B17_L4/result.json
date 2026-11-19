@@ -1,0 +1,122 @@
+{
+  "prompt_id": "B17_L4",
+  "batch": "B",
+  "category": "camera",
+  "level": 4,
+  "caption": "A rangefinder camera with a flat body, one lens and two top dials. A lens barrel projects from the front; the body carries a viewfinder hump. Rounded body shells keep an even thickness around the lens opening. Overall width is 1.20 times depth; height is 0.70 times width. Parts follow functional positions.",
+  "source_sha256": "5dc2b8daff9c8b29e5c2baf3c8e7a71aab90a75a59c50819dd5bbbf4a9187847",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 240,
+  "normalization": {
+    "original_voxels": 1706,
+    "target_voxels": 1706,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "cb361e5591557183835d49ca6e69c788b238e3e7201e744a79edb81ab269c064",
+    "target_voxel_sha256": "cb361e5591557183835d49ca6e69c788b238e3e7201e744a79edb81ab269c064"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 240,
+    "voxels": 1706,
+    "stud_components": 10,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "cb361e5591557183835d49ca6e69c788b238e3e7201e744a79edb81ab269c064",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 4.875,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 193,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 189,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 189,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 189,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 189,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 189,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 189,
+    "voxels": 1706,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "cb361e5591557183835d49ca6e69c788b238e3e7201e744a79edb81ab269c064",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "9602e35045b83665e1c1995da391c18572cfbb968937afd22eb91542d2fc4bdc",
+    "refined.txt": "77c8fba87af24318263acb0a94f16c80a2e9ba1121818811562e196d97c71d5a",
+    "refined.json": "25978ffb20680a7d96426194b0a45e0bbd5e3772f0f518fc9946c6d5d94d576f"
+  },
+  "ldr_path": "refined_ldr/B17_L4.ldr",
+  "elapsed_seconds": 4.938
+}

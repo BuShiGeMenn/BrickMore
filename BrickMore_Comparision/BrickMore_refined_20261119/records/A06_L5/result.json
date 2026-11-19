@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A06_L5",
+  "batch": "A",
+  "category": "bed",
+  "level": 5,
+  "caption": "A daybed with a long frame, a low back rail and a single mattress. A mattress rests on the frame; curved headboard and footboard join the frame sides. Rounded frame edges carry their continuously attached supports. Overall width is 1.85 times depth; height is 0.42 times width. Parts follow functional positions. Continuous cream, dark brown, tan color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "3b9d0ab683c98f1f6cbda395d088a45aa4f7b9f64662fe1840ef35029790249c",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 118,
+  "normalization": {
+    "original_voxels": 827,
+    "target_voxels": 827,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "615555d6c22c695f74e14c5f8b23e9446b880a3f704697c20ce5e404f6f44e3c",
+    "target_voxel_sha256": "615555d6c22c695f74e14c5f8b23e9446b880a3f704697c20ce5e404f6f44e3c"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 118,
+    "voxels": 827,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 13,
+    "target_voxel_sha256": "615555d6c22c695f74e14c5f8b23e9446b880a3f704697c20ce5e404f6f44e3c",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.563,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 108,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 108,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 108,
+    "voxels": 827,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "615555d6c22c695f74e14c5f8b23e9446b880a3f704697c20ce5e404f6f44e3c",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "eea0f73fcb291b98a2342f1401617d42cbedeb291c4f693f446bb2f8d12901f2",
+    "refined.txt": "4394d69f74385e0966e68cebf9af5fdf76c3fac836c0aa07f23307af678bc6e0",
+    "refined.json": "88a974cdae486f2d978435eabf8ca4484fc97bf309ec3728875a5c7e3f26c549"
+  },
+  "ldr_path": "refined_ldr/A06_L5.ldr",
+  "elapsed_seconds": 2.625
+}

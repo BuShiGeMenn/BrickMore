@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A52_L4",
+  "batch": "A",
+  "category": "vessel",
+  "level": 4,
+  "caption": "A tugboat with a short hull, a tall cabin and a towing post. A hull carries a deck and a cabin; the bow and stern close it. Curved hull surfaces keep an even thickness along the keel. Overall width is 1.20 times depth; height is 0.70 times width. Parts follow functional positions.",
+  "source_sha256": "6e36b5e542bf9e27a36c47df9f98083aa7bb42f180facc7b9fabe07207b46fa1",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 152,
+  "normalization": {
+    "original_voxels": 820,
+    "target_voxels": 820,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "f34383e6e5d75c2172461cbf94c015f43d67f29bb21d6db5778d69bd1dfac13d",
+    "target_voxel_sha256": "f34383e6e5d75c2172461cbf94c015f43d67f29bb21d6db5778d69bd1dfac13d"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 152,
+    "voxels": 820,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "f34383e6e5d75c2172461cbf94c015f43d67f29bb21d6db5778d69bd1dfac13d",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.922,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 115,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 115,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 115,
+    "voxels": 820,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "f34383e6e5d75c2172461cbf94c015f43d67f29bb21d6db5778d69bd1dfac13d",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "684edf224fffbcad37174e49faa2528323f904b93d1dc8366ecdea8e96119263",
+    "refined.txt": "3cabdabbebe21bd9356f4ac9b2c80f92fd7ab0c9a94f7ccade793a16727c5867",
+    "refined.json": "fe69a3b0561aa61b81f8ef033c64217c62d3a544f5ad6690bfbeaeb329199490"
+  },
+  "ldr_path": "refined_ldr/A52_L4.ldr",
+  "elapsed_seconds": 0.984
+}

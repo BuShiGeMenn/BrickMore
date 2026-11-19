@@ -1,0 +1,108 @@
+{
+  "prompt_id": "B44_L1",
+  "batch": "B",
+  "category": "table",
+  "level": 1,
+  "caption": "A console table with a narrow top, a lower shelf and four slim legs.",
+  "source_sha256": "7fc4da9e7e6dd04ad2876250b1a682a72399c908ffb8dbe44f874bb371776138",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 165,
+  "normalization": {
+    "original_voxels": 882,
+    "target_voxels": 882,
+    "duplicate_cell_occupancies": 3,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5b9da0c0e9155c20dd7ce41ec522a4286a9cc33c96c099bb778397b08bcc385f",
+    "target_voxel_sha256": "5b9da0c0e9155c20dd7ce41ec522a4286a9cc33c96c099bb778397b08bcc385f"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 165,
+    "voxels": 882,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 3,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "5b9da0c0e9155c20dd7ce41ec522a4286a9cc33c96c099bb778397b08bcc385f",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 4.219,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 150,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 150,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 150,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 150,
+    "voxels": 882,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "5b9da0c0e9155c20dd7ce41ec522a4286a9cc33c96c099bb778397b08bcc385f",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "cd89ad88574d7ca2eb3b148053ffb3c9e8d7aa89eb7dc3c9378ee563f145476d",
+    "refined.txt": "93c42f39413e8d5f1d11f225a9f822a1c9011d7afc9108d3c04651a436a7f499",
+    "refined.json": "0c03c9b3d083e8fd46abf9777223147d160f6f71323891ff496c14a17253160a"
+  },
+  "ldr_path": "refined_ldr/B44_L1.ldr",
+  "elapsed_seconds": 4.297
+}

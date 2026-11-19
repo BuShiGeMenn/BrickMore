@@ -1,0 +1,77 @@
+{
+  "prompt_id": "B37_L1",
+  "batch": "B",
+  "category": "pot",
+  "level": 1,
+  "caption": "A deep fryer pot with a deep cavity, a basket rim and two side handles.",
+  "source_sha256": "af9e973cbc1da798416add7dcf74e9092be805931089df0426ba5ac55debe1ec",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 327,
+  "normalization": {
+    "original_voxels": 1409,
+    "target_voxels": 1409,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "e39d6f55ae2267f7dfb520200e8486df919faf5e89ad8c32d018796eec01d066",
+    "target_voxel_sha256": "e39d6f55ae2267f7dfb520200e8486df919faf5e89ad8c32d018796eec01d066"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 327,
+    "voxels": 1409,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "e39d6f55ae2267f7dfb520200e8486df919faf5e89ad8c32d018796eec01d066",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 327,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 327,
+    "voxels": 1409,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "e39d6f55ae2267f7dfb520200e8486df919faf5e89ad8c32d018796eec01d066",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "3a0b25d03bc885e39501f0c3031a5bdac8d2761de8f1926402a57a5c3d5199f6",
+    "refined.txt": "bf45e66c6f08012a7ef3389ae5fdecfbe0ff1f09ff5cf708ccaa173d4d49516f",
+    "refined.json": "261bcdad14a8e4ae6604f9789c57bddfde529cd2627bb1da9496689c2df1f096"
+  },
+  "ldr_path": "refined_ldr/B37_L1.ldr",
+  "elapsed_seconds": 0.078
+}

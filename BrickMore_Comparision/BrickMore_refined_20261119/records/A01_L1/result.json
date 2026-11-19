@@ -1,0 +1,76 @@
+{
+  "prompt_id": "A01_L1",
+  "batch": "A",
+  "category": "basket",
+  "level": 1,
+  "caption": "An oval bread basket with a shallow cavity, low walls and two side grips.",
+  "source_sha256": "261150d427774454f17e40cde87cd7b10f8aa903e0bcefc0936f22cd81f6dd5a",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 309,
+  "normalization": {
+    "original_voxels": 1271,
+    "target_voxels": 1271,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "abf1bb1ecea4b47bf388050e2079f325c9f054f25d8a7e10f86e8a22dbe608ed",
+    "target_voxel_sha256": "abf1bb1ecea4b47bf388050e2079f325c9f054f25d8a7e10f86e8a22dbe608ed"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 309,
+    "voxels": 1271,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "abf1bb1ecea4b47bf388050e2079f325c9f054f25d8a7e10f86e8a22dbe608ed",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 309,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 309,
+    "voxels": 1271,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "abf1bb1ecea4b47bf388050e2079f325c9f054f25d8a7e10f86e8a22dbe608ed",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "3195776155d09a7eddc6692247b1ac3ae77fa51ae18ef3620ea4f9142211a3dd",
+    "refined.txt": "499375fe6d115bcf76609f55e18b508c6e5fe54c2ea5fcc88e935f653c858609",
+    "refined.json": "8c8a4b0f1086a6c0e62d397a6bf18fa9feb6a5c5dd804f13b805e841e8ceb3bf"
+  },
+  "ldr_path": "refined_ldr/A01_L1.ldr",
+  "elapsed_seconds": 0.047
+}

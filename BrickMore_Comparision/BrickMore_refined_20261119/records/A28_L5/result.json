@@ -1,0 +1,108 @@
+{
+  "prompt_id": "A28_L5",
+  "batch": "A",
+  "category": "car",
+  "level": 5,
+  "caption": "A sedan with a hood, a cabin with windows and a trunk. A cabin carries windows and a hood; four wheels attach below the body. Streamlined body panels keep an even thickness over the cabin. Overall width is 2.00 times depth; height is 0.45 times width. Parts follow functional positions. Continuous red, white, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "4b1aaa5308bb1c9899308433f9d64a7afc1754786c52b41ed08ea7aba4febd39",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 112,
+  "normalization": {
+    "original_voxels": 828,
+    "target_voxels": 828,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "793c06b1b1b6d19ee38e175c570aec347fc1b26c7c820a29b5efcf1f535244c9",
+    "target_voxel_sha256": "793c06b1b1b6d19ee38e175c570aec347fc1b26c7c820a29b5efcf1f535244c9"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 112,
+    "voxels": 828,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "793c06b1b1b6d19ee38e175c570aec347fc1b26c7c820a29b5efcf1f535244c9",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 3.906,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 95,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 98,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 98,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 98,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 98,
+    "voxels": 828,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "793c06b1b1b6d19ee38e175c570aec347fc1b26c7c820a29b5efcf1f535244c9",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "d6ff17f11ee644a279609a3e4599026bd8765d8264a20393ac0c69bf3c7f490c",
+    "refined.txt": "d9d1187c12975d5bddb6d413a8d9b19d2161d6b0c11d7fe4c49f445f8a6f732f",
+    "refined.json": "0e20c3de48b2e5421a3693349ee36f1b5d2ea8a3f610ae1c50e5aee6e341ff25"
+  },
+  "ldr_path": "refined_ldr/A28_L5.ldr",
+  "elapsed_seconds": 3.938
+}

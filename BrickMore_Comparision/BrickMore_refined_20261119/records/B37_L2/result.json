@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B37_L2",
+  "batch": "B",
+  "category": "pot",
+  "level": 2,
+  "caption": "A deep fryer pot with a deep cavity, a basket rim and two side handles. Four flat walls enclose a cavity; two angular handles bridge opposite facets.",
+  "source_sha256": "ec4b6c152c20d1e666c8586568d50e572e9b2fe7e4e3226f73620fb2130196d0",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 552,
+  "normalization": {
+    "original_voxels": 2015,
+    "target_voxels": 2015,
+    "duplicate_cell_occupancies": 4,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "0b85fb042e60bdbd82460d681bc03a29fad7f4875c10a8944833a2f7c09e118b",
+    "target_voxel_sha256": "0b85fb042e60bdbd82460d681bc03a29fad7f4875c10a8944833a2f7c09e118b"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 552,
+    "voxels": 2015,
+    "stud_components": 11,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 4,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "0b85fb042e60bdbd82460d681bc03a29fad7f4875c10a8944833a2f7c09e118b",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.328,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 502,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 502,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 502,
+    "voxels": 2015,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "0b85fb042e60bdbd82460d681bc03a29fad7f4875c10a8944833a2f7c09e118b",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "175117ba43738ed18f767bf9f26599a8dd478b157f98cb742465e4f238d2f665",
+    "refined.txt": "d51e2bfcf3f71a7afb63037167ffb545224582ad5830f590a50aaf551073c2a9",
+    "refined.json": "5775f2eea91b70b497efec26e5ebe930457ecfeaebf94150ea86ce675bb427a5"
+  },
+  "ldr_path": "refined_ldr/B37_L2.ldr",
+  "elapsed_seconds": 0.406
+}

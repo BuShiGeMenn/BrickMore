@@ -1,0 +1,143 @@
+{
+  "prompt_id": "B35_L3",
+  "batch": "B",
+  "category": "piano",
+  "level": 3,
+  "caption": "A baby grand piano with a short curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid. Curved case surfaces keep an even thickness around the keyboard.",
+  "source_sha256": "3f99f485621f4d0c43e9a162c48a10218d84937e39843c83e506a566bd73b4f2",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 137,
+  "normalization": {
+    "original_voxels": 856,
+    "target_voxels": 856,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "6104b23c0e5f4e831842ff9a3d8c96f81146bdf1f8f2cdac35f21367a4a9c9df",
+    "target_voxel_sha256": "6104b23c0e5f4e831842ff9a3d8c96f81146bdf1f8f2cdac35f21367a4a9c9df"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 137,
+    "voxels": 856,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 28,
+    "target_voxel_sha256": "6104b23c0e5f4e831842ff9a3d8c96f81146bdf1f8f2cdac35f21367a4a9c9df",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.141,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 91,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 117,
+          "stud_components": 2,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 11509,
+      "run_count": 274,
+      "flow_edges": 5094,
+      "budget_seconds": 12,
+      "seconds": 12.093000000000757,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 27.672,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 91,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 91,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 91,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 91,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 91,
+    "voxels": 856,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "6104b23c0e5f4e831842ff9a3d8c96f81146bdf1f8f2cdac35f21367a4a9c9df",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "9cf5cc311bb7f1b75ab72664c9b1a4edfe1b8c33367b72a93f2a8f738957bf70",
+    "refined.txt": "1c843177fb77b03b65a59a8e49fcc7b08ed44b7cf7ee6c96ca14c234294eaafc",
+    "refined.json": "5ab86271f2b79cecc9a1bd980769d7155e3e34132fd07e98fb9b822106360ad3"
+  },
+  "ldr_path": "refined_ldr/B35_L3.ldr",
+  "elapsed_seconds": 51.969
+}

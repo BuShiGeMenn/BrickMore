@@ -1,0 +1,120 @@
+{
+  "input_models": 525,
+  "verified_final_models": 525,
+  "by_origin": {
+    "original_retained": 34,
+    "original_refined": 445,
+    "regenerated": 46
+  },
+  "baseline_status_counts": {
+    "passed": 486,
+    "infeasible_preserving_target": 38,
+    "solver_budget_exhausted": 1
+  },
+  "additional_incomplete_replacements": [
+    "A02_L3",
+    "A02_L5",
+    "A11_L4",
+    "A15_L2",
+    "A33_L1",
+    "A41_L2",
+    "A41_L5"
+  ],
+  "baseline_by_batch": {
+    "A": {
+      "passed": 248,
+      "infeasible_preserving_target": 12
+    },
+    "B": {
+      "passed": 238,
+      "infeasible_preserving_target": 26,
+      "solver_budget_exhausted": 1
+    }
+  },
+  "final_by_batch": {
+    "A": {
+      "original_retained": 17,
+      "original_refined": 224,
+      "regenerated": 19
+    },
+    "B": {
+      "original_refined": 221,
+      "original_retained": 17,
+      "regenerated": 27
+    }
+  },
+  "regenerated_prompt_ids": [
+    "A02_L2",
+    "A02_L3",
+    "A02_L5",
+    "A03_L3",
+    "A11_L4",
+    "A15_L2",
+    "A15_L3",
+    "A17_L2",
+    "A30_L3",
+    "A33_L1",
+    "A37_L1",
+    "A40_L2",
+    "A41_L2",
+    "A41_L3",
+    "A41_L5",
+    "A47_L2",
+    "A47_L4",
+    "A48_L3",
+    "A52_L3",
+    "B12_L2",
+    "B12_L5",
+    "B14_L3",
+    "B14_L5",
+    "B15_L1",
+    "B15_L3",
+    "B16_L2",
+    "B17_L5",
+    "B20_L4",
+    "B25_L1",
+    "B25_L4",
+    "B30_L4",
+    "B30_L5",
+    "B34_L2",
+    "B34_L5",
+    "B35_L4",
+    "B41_L4",
+    "B43_L4",
+    "B45_L5",
+    "B46_L5",
+    "B47_L3",
+    "B51_L1",
+    "B51_L2",
+    "B51_L3",
+    "B51_L4",
+    "B52_L2",
+    "B52_L5"
+  ],
+  "clipped_final_targets": [
+    {
+      "prompt_id": "A14_L5",
+      "origin": "original_refined",
+      "original_voxels": 2171,
+      "target_voxels": 2099,
+      "removed_voxels": 72
+    },
+    {
+      "prompt_id": "A34_L2",
+      "origin": "original_refined",
+      "original_voxels": 5217,
+      "target_voxels": 3731,
+      "removed_voxels": 1486
+    }
+  ],
+  "all_final_checks": {
+    "exact_target_coverage": true,
+    "no_overlaps": true,
+    "allowed_dimensions": true,
+    "in_bounds": true,
+    "one_real_stud_component": true,
+    "ldr_readback": true,
+    "prompt_mapping": true
+  },
+  "physical_stability_tested": false
+}

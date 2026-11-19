@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A26_L3",
+  "batch": "A",
+  "category": "camera",
+  "level": 3,
+  "caption": "A dslr camera with a deep body, a lens barrel and a viewfinder hump. A lens barrel projects from the front; the body carries a viewfinder hump. Rounded body shells keep an even thickness around the lens opening.",
+  "source_sha256": "d2b534d78ee5643221146bd4ac74123e2bf473388c86d9e910bf4a48a8fd61b1",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 209,
+  "normalization": {
+    "original_voxels": 1446,
+    "target_voxels": 1446,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "6149056576ba00f164ce2f497e1031f521639198dedfb1ccb85d20bec6144f85",
+    "target_voxel_sha256": "6149056576ba00f164ce2f497e1031f521639198dedfb1ccb85d20bec6144f85"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 209,
+    "voxels": 1446,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "6149056576ba00f164ce2f497e1031f521639198dedfb1ccb85d20bec6144f85",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.468,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 175,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 175,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 175,
+    "voxels": 1446,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "6149056576ba00f164ce2f497e1031f521639198dedfb1ccb85d20bec6144f85",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "e5c03365b53443f3d5436844f5890573d407cc793b045ee7447541f99b948de0",
+    "refined.txt": "85df9902b33a9d78f9357fd336b9e1e944be074ac4aa3b231fc424bd2676b67f",
+    "refined.json": "bbe7e252d3557469c97a6c9c3dd2c1bc410dce414d7fe662d441e834190afe3a"
+  },
+  "ldr_path": "refined_ldr/A26_L3.ldr",
+  "elapsed_seconds": 2.531
+}

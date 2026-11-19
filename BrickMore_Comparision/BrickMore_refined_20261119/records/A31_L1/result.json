@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A31_L1",
+  "batch": "A",
+  "category": "chair",
+  "level": 1,
+  "caption": "A ladder back chair with three back slats, a seat and four legs.",
+  "source_sha256": "8aa0a24567e8ca6031f320090e2dc4e4655743ec1b8685e9ac296898384057b8",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 97,
+  "normalization": {
+    "original_voxels": 704,
+    "target_voxels": 704,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "e5cecca17fdcd7eed5f4d907297590129e0d5dad8a6657762648431405e27caf",
+    "target_voxel_sha256": "e5cecca17fdcd7eed5f4d907297590129e0d5dad8a6657762648431405e27caf"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 97,
+    "voxels": 704,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "e5cecca17fdcd7eed5f4d907297590129e0d5dad8a6657762648431405e27caf",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.828,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 99,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 101,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 101,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 101,
+    "voxels": 704,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "e5cecca17fdcd7eed5f4d907297590129e0d5dad8a6657762648431405e27caf",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "eda9af3a9a49b7ea26b7aa1439809f80dadeb86e6005fc1a571b9fe06b168f96",
+    "refined.txt": "cb7aa084aba198f79dcbf93ddbece6e33495390ced8ced57df0dac79e42b934f",
+    "refined.json": "5e8957a2740c78c8e14815c3d9602ad0c4444578d287357b1ccfbfe8acacaf94"
+  },
+  "ldr_path": "refined_ldr/A31_L1.ldr",
+  "elapsed_seconds": 0.875
+}

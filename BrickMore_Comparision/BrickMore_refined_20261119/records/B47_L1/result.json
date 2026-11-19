@@ -1,0 +1,108 @@
+{
+  "prompt_id": "B47_L1",
+  "batch": "B",
+  "category": "tower",
+  "level": 1,
+  "caption": "A tapered tower with a wide base, narrowing walls and a pointed crown.",
+  "source_sha256": "b69a117e5701e5125da90ee4fe5271dad5c826435ca9c979286056b6eb1fd5b9",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 111,
+  "normalization": {
+    "original_voxels": 986,
+    "target_voxels": 986,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "ec1cf9421858f5b7c76fdb70ec972318c76a4c9357b6288ab18ae1d01fd04ad7",
+    "target_voxel_sha256": "ec1cf9421858f5b7c76fdb70ec972318c76a4c9357b6288ab18ae1d01fd04ad7"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 111,
+    "voxels": 986,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "ec1cf9421858f5b7c76fdb70ec972318c76a4c9357b6288ab18ae1d01fd04ad7",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.734,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 109,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 109,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 110,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 110,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 110,
+    "voxels": 986,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "ec1cf9421858f5b7c76fdb70ec972318c76a4c9357b6288ab18ae1d01fd04ad7",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "33bb731caeed99df8ba7eab4f08a44be53fa798b04aac42c7b4500355416da3c",
+    "refined.txt": "3bb32444f46e6e8d03c583b625569674a0496cc7e8318406fbfce0057103a199",
+    "refined.json": "a59955dce2a113d849555bd6b0e16f6542f663163a8870bb0a8a88a86edbbf23"
+  },
+  "ldr_path": "refined_ldr/B47_L1.ldr",
+  "elapsed_seconds": 0.828
+}

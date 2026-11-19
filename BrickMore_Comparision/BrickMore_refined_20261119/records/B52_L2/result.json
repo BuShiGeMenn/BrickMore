@@ -1,0 +1,52 @@
+{
+  "prompt_id": "B52_L2",
+  "batch": "B",
+  "category": "vessel",
+  "level": 2,
+  "caption": "A motorboat with a short hull, an open deck and a windshield. A hull carries a deck and a cabin; the bow and stern close it.",
+  "source_sha256": "fe7a3c6df454db57755c887da1d97fb02886dd1ae5619c35854069fa42c330d0",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 153,
+  "normalization": {
+    "original_voxels": 833,
+    "target_voxels": 833,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "3fbfc482e1ea808aed67ee91dbcf20ac37e1b30f95b008c7f0bfa5037adef71c",
+    "target_voxel_sha256": "3fbfc482e1ea808aed67ee91dbcf20ac37e1b30f95b008c7f0bfa5037adef71c"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 153,
+    "voxels": 833,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "3fbfc482e1ea808aed67ee91dbcf20ac37e1b30f95b008c7f0bfa5037adef71c",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    818,
+    15
+  ],
+  "elapsed_seconds": 0.0
+}

@@ -1,0 +1,54 @@
+{
+  "prompt_id": "B17_L5",
+  "batch": "B",
+  "category": "camera",
+  "level": 5,
+  "caption": "A rangefinder camera with a flat body, one lens and two top dials. A lens barrel projects from the front; the body carries a viewfinder hump. Rounded body shells keep an even thickness around the lens opening. Overall width is 1.20 times depth; height is 0.70 times width. Parts follow functional positions. Continuous near black, white, dark gray color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "24ac98801740aed07105ebb553c2dc94559e032b5d1d7a0748c9051a829c54b6",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 232,
+  "normalization": {
+    "original_voxels": 1038,
+    "target_voxels": 1038,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "809e62da19e8040e1437413a62333aac8539dc4d5d468332e9bd35477d45613a",
+    "target_voxel_sha256": "809e62da19e8040e1437413a62333aac8539dc4d5d468332e9bd35477d45613a"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 232,
+    "voxels": 1038,
+    "stud_components": 18,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "809e62da19e8040e1437413a62333aac8539dc4d5d468332e9bd35477d45613a",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    1033,
+    2,
+    2,
+    1
+  ],
+  "elapsed_seconds": 0.0
+}

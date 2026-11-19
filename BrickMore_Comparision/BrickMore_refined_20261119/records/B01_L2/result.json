@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B01_L2",
+  "batch": "B",
+  "category": "basket",
+  "level": 2,
+  "caption": "A round market basket with a closed base, woven walls and an arched handle. Continuous woven walls enclose a cavity; both arched handle ends join the rim.",
+  "source_sha256": "2f1e2034b2876946692efd6e09f73b4f7a8400c780e250b10b87619bb8f2b0ce",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 396,
+  "normalization": {
+    "original_voxels": 1460,
+    "target_voxels": 1460,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "c804e3488eb5be3c33be32d8578a4ef5d25c05289fd92641b323b7b35ba03463",
+    "target_voxel_sha256": "c804e3488eb5be3c33be32d8578a4ef5d25c05289fd92641b323b7b35ba03463"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 396,
+    "voxels": 1460,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "c804e3488eb5be3c33be32d8578a4ef5d25c05289fd92641b323b7b35ba03463",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.156,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 368,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 368,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 368,
+    "voxels": 1460,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "c804e3488eb5be3c33be32d8578a4ef5d25c05289fd92641b323b7b35ba03463",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "96601e70b74a4fa6c7addb0aa7f0c90f28ddecb5e3972e573fa0fa217c1e478e",
+    "refined.txt": "0547f72386ae08244b117cc22674b1f4590a75253da4e1ad50d20ed2d618898b",
+    "refined.json": "897d7689e55e66a1d11775458c610532b5c35d71cfcb4cd305f7c8b339d5cb71"
+  },
+  "ldr_path": "refined_ldr/B01_L2.ldr",
+  "elapsed_seconds": 0.219
+}

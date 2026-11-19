@@ -1,0 +1,122 @@
+{
+  "prompt_id": "A21_L1",
+  "batch": "A",
+  "category": "bowl",
+  "level": 1,
+  "caption": "A footed bowl with a raised base ring, a bowl cavity and an open rim.",
+  "source_sha256": "29622e52c05f1379185ba17c0c2f33db3e80c9506a6326d90f2e76eaf75cbbb1",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 258,
+  "normalization": {
+    "original_voxels": 1114,
+    "target_voxels": 1114,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "70e25e9af5cfa1c5a27fe8fb334e58202dec4e48a92e079f7337dca2423e69a1",
+    "target_voxel_sha256": "70e25e9af5cfa1c5a27fe8fb334e58202dec4e48a92e079f7337dca2423e69a1"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 258,
+    "voxels": 1114,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "70e25e9af5cfa1c5a27fe8fb334e58202dec4e48a92e079f7337dca2423e69a1",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.657,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 223,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 228,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 229,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 237,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 241,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 241,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 241,
+    "voxels": 1114,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "70e25e9af5cfa1c5a27fe8fb334e58202dec4e48a92e079f7337dca2423e69a1",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "8529ea569ddb0b96b37ad7f6bb4cea88639c5b07af766c441c41cb5b2b296aad",
+    "refined.txt": "6587dafbca069a4b348add02a3a04677a0c4f2d2e3a862d1c254168f9c622978",
+    "refined.json": "6e4caae1a2c21cb1e8bc6145e9cad8244b93a39b94ab4185cadc01589b2a5a48"
+  },
+  "ldr_path": "refined_ldr/A21_L1.ldr",
+  "elapsed_seconds": 1.735
+}

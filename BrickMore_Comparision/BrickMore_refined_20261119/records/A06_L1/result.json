@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A06_L1",
+  "batch": "A",
+  "category": "bed",
+  "level": 1,
+  "caption": "A daybed with a long frame, a low back rail and a single mattress.",
+  "source_sha256": "378fb959e1eef279887c2c014c8ccba505161290fd538c5c914c2e549c11eb57",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 134,
+  "normalization": {
+    "original_voxels": 910,
+    "target_voxels": 910,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5d1f142b551855dbf4bccfe1bef9865c91c168937a2000f17513b4f01389d78f",
+    "target_voxel_sha256": "5d1f142b551855dbf4bccfe1bef9865c91c168937a2000f17513b4f01389d78f"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 134,
+    "voxels": 910,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "5d1f142b551855dbf4bccfe1bef9865c91c168937a2000f17513b4f01389d78f",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.109,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 134,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 134,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 134,
+    "voxels": 910,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "5d1f142b551855dbf4bccfe1bef9865c91c168937a2000f17513b4f01389d78f",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "ce71dda30e4f288c622911ab543c4cd1a22ae4de44da7e2a521c579f8fc18cf1",
+    "refined.txt": "d2b3d8dd05ae6473793493765b0a3d53e0c2dfe2fe2d9d89668ee6ebfa7f4d68",
+    "refined.json": "aece19762bfed33553d1f10a5322dbaf66f10cfe94dc33251924edc3ba1c0df2"
+  },
+  "ldr_path": "refined_ldr/A06_L1.ldr",
+  "elapsed_seconds": 1.171
+}

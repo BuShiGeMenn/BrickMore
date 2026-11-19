@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A32_L5",
+  "batch": "A",
+  "category": "chair",
+  "level": 5,
+  "caption": "A lounge chair with a wide seat, a reclined back and two arms. A seat panel joins four legs; a curved backrest rises from the rear legs. Curved backrest edges keep an even thickness above the seat. Overall width is 1.35 times depth; height is 1.10 times width. Parts follow functional positions. Continuous oak brown, dark brown, tan color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "29865ecf2829be9f7a8b92f685046b1e32a07a5fc51311c808e5f21e50414ef6",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 118,
+  "normalization": {
+    "original_voxels": 809,
+    "target_voxels": 809,
+    "duplicate_cell_occupancies": 11,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "567e7fab2172e94f444687c11176214a577dda8d797c904b7d744e4bcdc993ce",
+    "target_voxel_sha256": "567e7fab2172e94f444687c11176214a577dda8d797c904b7d744e4bcdc993ce"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 118,
+    "voxels": 809,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 11,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "567e7fab2172e94f444687c11176214a577dda8d797c904b7d744e4bcdc993ce",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 4.796,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 101,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 101,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 101,
+    "voxels": 809,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "567e7fab2172e94f444687c11176214a577dda8d797c904b7d744e4bcdc993ce",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "2d359dd459053772751396bd12aa235a0c719b9aba3db8b2d2ec984d5c3bbb42",
+    "refined.txt": "737244071c4d821ebebe3667512645d207c4b3b89168a00afd57ffaac2c81516",
+    "refined.json": "8327186681e9af5bf6b5c5409ce7b71d5896ee96e8ddbb16afd7dfcb6573149d"
+  },
+  "ldr_path": "refined_ldr/A32_L5.ldr",
+  "elapsed_seconds": 4.875
+}

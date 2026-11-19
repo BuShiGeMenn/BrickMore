@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A21_L3",
+  "batch": "A",
+  "category": "bowl",
+  "level": 3,
+  "caption": "A footed bowl with a raised base ring, a bowl cavity and an open rim. Continuous walls rise from a sealed base; the top edge stays open. Circular walls keep an even thickness around the cavity.",
+  "source_sha256": "e17104ff0fee9e4485f3d4ada33c6c1195bbc723400c0afcd0e37d1303e7aeba",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 310,
+  "normalization": {
+    "original_voxels": 1142,
+    "target_voxels": 1142,
+    "duplicate_cell_occupancies": 3,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "9ca79f00bec52eba26fc4a3608a6bf7a0c7091f0a6f049ec38aed687644c3de2",
+    "target_voxel_sha256": "9ca79f00bec52eba26fc4a3608a6bf7a0c7091f0a6f049ec38aed687644c3de2"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 310,
+    "voxels": 1142,
+    "stud_components": 10,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 3,
+    "unsupported_from_below": 22,
+    "target_voxel_sha256": "9ca79f00bec52eba26fc4a3608a6bf7a0c7091f0a6f049ec38aed687644c3de2",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.312,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 255,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 251,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 251,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 251,
+    "voxels": 1142,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "9ca79f00bec52eba26fc4a3608a6bf7a0c7091f0a6f049ec38aed687644c3de2",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "ee80487113321e3fae65b0625bc1c7cd4b451063ad83ec7274b1eafb5721eb50",
+    "refined.txt": "87fb5ce2240361e8f328ab722e03588530f79198c8f002b2be80671141505d35",
+    "refined.json": "a7723f84a01b4fec87eec9114d43cba9b468b5785d620df4a029421e1c0d869b"
+  },
+  "ldr_path": "refined_ldr/A21_L3.ldr",
+  "elapsed_seconds": 0.375
+}

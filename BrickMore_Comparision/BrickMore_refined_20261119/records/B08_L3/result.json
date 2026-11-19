@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B08_L3",
+  "batch": "B",
+  "category": "birdhouse",
+  "level": 3,
+  "caption": "A porch birdhouse with a main chamber, a small porch and a sloped roof. Four walls form a chamber; a square entrance sits in the front. Flat wall panels keep an even thickness with a stepped roof line.",
+  "source_sha256": "b162e97a6e2a255f40b5689dbb445798b624fcdb48f7101ef7058b0f29315ef2",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 194,
+  "normalization": {
+    "original_voxels": 1068,
+    "target_voxels": 1068,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "7e042faa57337dc3b75eba97f87c3fd13d76dc38268cb851826c2c5a688c383c",
+    "target_voxel_sha256": "7e042faa57337dc3b75eba97f87c3fd13d76dc38268cb851826c2c5a688c383c"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 194,
+    "voxels": 1068,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "7e042faa57337dc3b75eba97f87c3fd13d76dc38268cb851826c2c5a688c383c",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.781,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 186,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 186,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 186,
+    "voxels": 1068,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "7e042faa57337dc3b75eba97f87c3fd13d76dc38268cb851826c2c5a688c383c",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "4c4e279e05af4900b0685d1651d38839ff73c39fa208b10836547d721329e21f",
+    "refined.txt": "9728ad9803ce81e6eb79ece2affbeaaa2d73706330155c09f89889e76d5c1dba",
+    "refined.json": "5c87328f281a940fbaa80ecf26eae4537e207a9ac4affb86d2d371ca6338a2e3"
+  },
+  "ldr_path": "refined_ldr/B08_L3.ldr",
+  "elapsed_seconds": 2.828
+}

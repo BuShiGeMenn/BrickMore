@@ -1,0 +1,77 @@
+{
+  "prompt_id": "B11_L1",
+  "batch": "B",
+  "category": "bottle",
+  "level": 1,
+  "caption": "A narrow neck bottle with a sealed base, straight walls and one narrow neck.",
+  "source_sha256": "b8ad6824dd240cb1a6152900b5817e057061603b98699a945f99f215e40bba78",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 265,
+  "normalization": {
+    "original_voxels": 925,
+    "target_voxels": 925,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5523e45a74ef00baeb4c0f3e72f7803c497e86b3ce41f3f8bb8993835bca0ec0",
+    "target_voxel_sha256": "5523e45a74ef00baeb4c0f3e72f7803c497e86b3ce41f3f8bb8993835bca0ec0"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 265,
+    "voxels": 925,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "5523e45a74ef00baeb4c0f3e72f7803c497e86b3ce41f3f8bb8993835bca0ec0",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 265,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 265,
+    "voxels": 925,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "5523e45a74ef00baeb4c0f3e72f7803c497e86b3ce41f3f8bb8993835bca0ec0",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "64df9d1bc90b49b484930304273aadeedf98a9ca35a569ceb55eb4e841fb9f3d",
+    "refined.txt": "4f08443095a1bd0a0b34657f65767bfd1332c3c61a016efb1dcdd57507f66847",
+    "refined.json": "7ded229bbfb890254e05d91621acf967c3161201e5c5c6f479fa3218b11c8565"
+  },
+  "ldr_path": "refined_ldr/B11_L1.ldr",
+  "elapsed_seconds": 0.047
+}

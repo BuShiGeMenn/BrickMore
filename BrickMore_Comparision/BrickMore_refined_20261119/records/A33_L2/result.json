@@ -1,0 +1,108 @@
+{
+  "prompt_id": "A33_L2",
+  "batch": "A",
+  "category": "guitar",
+  "level": 2,
+  "caption": "An electric guitar with a solid body, two pickups and a slim neck. A flat body joins a fretted neck; the headstock carries tuners.",
+  "source_sha256": "4647e23aec0dd182e0a2f7c5e78a1680f3c8aa4865d1fbbab81b58c8207b91b5",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 218,
+  "normalization": {
+    "original_voxels": 1825,
+    "target_voxels": 1825,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "8d442a4f0248ccc63db5498198c35121600d477b8e55d165b8a3a51ec5c3fdd6",
+    "target_voxel_sha256": "8d442a4f0248ccc63db5498198c35121600d477b8e55d165b8a3a51ec5c3fdd6"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 218,
+    "voxels": 1825,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "8d442a4f0248ccc63db5498198c35121600d477b8e55d165b8a3a51ec5c3fdd6",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.125,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 195,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 198,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 195,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 195,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 195,
+    "voxels": 1825,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "8d442a4f0248ccc63db5498198c35121600d477b8e55d165b8a3a51ec5c3fdd6",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "a9e23f24b344b1e21a9574f65be24bd9c2b6fbd42f571b0f7edbdb7c9a400f1a",
+    "refined.txt": "f259674d479a04c1d3507ba06ed4b079c2718943f9eb10acf67f6843b3383838",
+    "refined.json": "528918c118e7902b5c9b21cc6b18850717ce01e166714aed1a2c230aac39dfe9"
+  },
+  "ldr_path": "refined_ldr/A33_L2.ldr",
+  "elapsed_seconds": 1.204
+}

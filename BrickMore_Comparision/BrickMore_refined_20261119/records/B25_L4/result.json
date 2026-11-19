@@ -1,0 +1,53 @@
+{
+  "prompt_id": "B25_L4",
+  "batch": "B",
+  "category": "guitar",
+  "level": 4,
+  "caption": "A classical guitar with a waisted body, a wide neck and a sound hole. A waisted body joins a long neck; the headstock carries tuning studs. Curved body edges keep an even thickness around the sound hole. Overall width is 0.80 times depth; height is 2.25 times width. Parts follow functional positions.",
+  "source_sha256": "64e1dd2a34caf999b4ff1031baaa4663e34eb089703c888305cf1b239d5b042e",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 195,
+  "normalization": {
+    "original_voxels": 1512,
+    "target_voxels": 1512,
+    "duplicate_cell_occupancies": 6,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "6b89b1b29768a656a6050a81dcd936dd93e497e68e8d22fb40be1fdb7eb4e266",
+    "target_voxel_sha256": "6b89b1b29768a656a6050a81dcd936dd93e497e68e8d22fb40be1fdb7eb4e266"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 195,
+    "voxels": 1512,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 6,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "6b89b1b29768a656a6050a81dcd936dd93e497e68e8d22fb40be1fdb7eb4e266",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    1510,
+    1,
+    1
+  ],
+  "elapsed_seconds": 0.0
+}

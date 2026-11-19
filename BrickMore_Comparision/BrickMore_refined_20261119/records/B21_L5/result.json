@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B21_L5",
+  "batch": "B",
+  "category": "chair",
+  "level": 5,
+  "caption": "A dining chair with a square seat, a tall back and four legs. A square seat joins four legs; a slatted backrest rises between the rear legs. Flat seat and back panels keep a constant thickness with squared legs. Overall width is 1.00 times depth; height is 1.60 times width. Parts follow functional positions. Continuous charcoal, cream, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "66543fe3ebd8fde2b1b96cdfb4c9593d1c4e20ceae4a4abf0038d0f322832acd",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 114,
+  "normalization": {
+    "original_voxels": 769,
+    "target_voxels": 769,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "356a442f87c2e59d707b09cab4af763a4f99ca91ee494ae980dab15f9e46a322",
+    "target_voxel_sha256": "356a442f87c2e59d707b09cab4af763a4f99ca91ee494ae980dab15f9e46a322"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 114,
+    "voxels": 769,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "356a442f87c2e59d707b09cab4af763a4f99ca91ee494ae980dab15f9e46a322",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 3.125,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 106,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 106,
+    "voxels": 769,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "356a442f87c2e59d707b09cab4af763a4f99ca91ee494ae980dab15f9e46a322",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "f4f3942d5b65a27195cb15d0621bd196cd59d41f90779c143f1e098e1a2524df",
+    "refined.txt": "7069b6a47b9160b6a4b97b5f4520655da952a02cec1c786b59ba851fac0697b4",
+    "refined.json": "e2d6814f5187126d2da3fe4c25b147467cb0ed082351b535b0d60f5b31f5934c"
+  },
+  "ldr_path": "refined_ldr/B21_L5.ldr",
+  "elapsed_seconds": 3.188
+}

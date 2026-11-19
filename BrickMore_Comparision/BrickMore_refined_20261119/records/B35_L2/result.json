@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B35_L2",
+  "batch": "B",
+  "category": "piano",
+  "level": 2,
+  "caption": "A baby grand piano with a short curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid.",
+  "source_sha256": "6b8af4035d13401f8b7c9977e75ef13446b694725e6496b083b60e213e278781",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 173,
+  "normalization": {
+    "original_voxels": 1172,
+    "target_voxels": 1172,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "f337c47d653c9fd797d9dbfdd19e3907ddaf7ebfc4b43e21f2347048bc2791bb",
+    "target_voxel_sha256": "f337c47d653c9fd797d9dbfdd19e3907ddaf7ebfc4b43e21f2347048bc2791bb"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 173,
+    "voxels": 1172,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 23,
+    "target_voxel_sha256": "f337c47d653c9fd797d9dbfdd19e3907ddaf7ebfc4b43e21f2347048bc2791bb",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 10.109,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 123,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 123,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 123,
+    "voxels": 1172,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "f337c47d653c9fd797d9dbfdd19e3907ddaf7ebfc4b43e21f2347048bc2791bb",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "bbd9da19e5dc3e2ec4364f2c5286cf3009fa2131bd92f655f68485a464636bda",
+    "refined.txt": "e017376c4a93c9a4a2d59e053761043c33b7272697211e471764ab2c6b2171c9",
+    "refined.json": "14c7de7d29194fffb5c5351a94123dbfb78a84ec59a8bf6ec8ca987707afd476"
+  },
+  "ldr_path": "refined_ldr/B35_L2.ldr",
+  "elapsed_seconds": 10.187
+}

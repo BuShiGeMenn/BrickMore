@@ -1,0 +1,150 @@
+{
+  "prompt_id": "A09_L4",
+  "batch": "A",
+  "category": "bench",
+  "level": 4,
+  "caption": "A curved park bench with a curved seat, a curved back and three curved supports. A seat slab rests on two curved supports; the backrest joins both ends. Curved seat edges stay continuous with an even slab thickness. Overall width is 2.45 times depth; height is 0.58 times width. Parts follow functional positions.",
+  "source_sha256": "e45c0dcca155605ed7cb6463fe4eb0e02c8f15845b5636283f9901c6b625daf5",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 182,
+  "normalization": {
+    "original_voxels": 1426,
+    "target_voxels": 1426,
+    "duplicate_cell_occupancies": 37,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "b36c043f17c0ff560d60c789f9d43e74245ce6786def3775e8e287afbe172b6f",
+    "target_voxel_sha256": "b36c043f17c0ff560d60c789f9d43e74245ce6786def3775e8e287afbe172b6f"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 182,
+    "voxels": 1426,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 37,
+    "unsupported_from_below": 25,
+    "target_voxel_sha256": "b36c043f17c0ff560d60c789f9d43e74245ce6786def3775e8e287afbe172b6f",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.093,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 136,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 372,
+          "stud_components": 5,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 18720,
+      "run_count": 417,
+      "flow_edges": 7786,
+      "budget_seconds": 12,
+      "seconds": 12.109000000004016,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 37.25,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 136,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 137,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 1,
+          "brick_count": 272,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 137,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 137,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 137,
+    "voxels": 1426,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "b36c043f17c0ff560d60c789f9d43e74245ce6786def3775e8e287afbe172b6f",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "54b8c43aa445d0db0ea2a58cb331461fe7b6d464c19ceb51dfdff0a359c26557",
+    "refined.txt": "5d45bfe7b524d6da915203e324dd075042c22e78a9fb5a00eff581bf3377c809",
+    "refined.json": "293458aff38135e1785cd91bbf332b96d544779756afa81d9d9a81bd1ea33729"
+  },
+  "ldr_path": "refined_ldr/A09_L4.ldr",
+  "elapsed_seconds": 61.547
+}

@@ -1,0 +1,108 @@
+{
+  "prompt_id": "A38_L1",
+  "batch": "A",
+  "category": "mug",
+  "level": 1,
+  "caption": "A barrel mug with a round belly, a narrow foot and one loop handle.",
+  "source_sha256": "f9b8c24b1dd6fd64efc4498d164e16f75800e6ed79e9134617c99fd4e48f0e16",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 626,
+  "normalization": {
+    "original_voxels": 2258,
+    "target_voxels": 2258,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "eb729a1d10113a29bf72e4f2edf77b7a5e7d5e3cf23fab3f27f34f1928037a0b",
+    "target_voxel_sha256": "eb729a1d10113a29bf72e4f2edf77b7a5e7d5e3cf23fab3f27f34f1928037a0b"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 626,
+    "voxels": 2258,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "eb729a1d10113a29bf72e4f2edf77b7a5e7d5e3cf23fab3f27f34f1928037a0b",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.047,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 549,
+          "stud_components": 7,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 550,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 572,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 572,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 572,
+    "voxels": 2258,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "eb729a1d10113a29bf72e4f2edf77b7a5e7d5e3cf23fab3f27f34f1928037a0b",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "c5ed08cea4d6b8f5b97af29938d928ca18e020d93af75e0b7e832406d3f0a309",
+    "refined.txt": "c7623ecd77ba37ad75a63a9f0d2207b6ce57ca3942b9730f180c6f996549075a",
+    "refined.json": "6a9b271a1db48533da6ca6f389ec069021aa336c14171ca6c979e8d81915e31b"
+  },
+  "ldr_path": "refined_ldr/A38_L1.ldr",
+  "elapsed_seconds": 1.141
+}

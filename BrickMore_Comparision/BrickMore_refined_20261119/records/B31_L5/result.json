@@ -1,0 +1,143 @@
+{
+  "prompt_id": "B31_L5",
+  "batch": "B",
+  "category": "mug",
+  "level": 5,
+  "caption": "A faceted mug with four flat faces, a square rim and one angular handle. Four flat walls rise from a sealed base; one squared handle joins two faces. Faceted walls keep a constant thickness and the handle opening passes through. Overall width is 1.00 times depth; height is 0.82 times width. Parts follow functional positions. Continuous cream, dark brown, charcoal color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "384058928f1311a10cac7a6b3ff65440cbd8cd6d4782508334ed53e5bd5f51fc",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 174,
+  "normalization": {
+    "original_voxels": 821,
+    "target_voxels": 821,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "ff302056e8be034dcf6971dcd303ace1077ad331be8b871df48ff91ee4d81434",
+    "target_voxel_sha256": "ff302056e8be034dcf6971dcd303ace1077ad331be8b871df48ff91ee4d81434"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 174,
+    "voxels": 821,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "ff302056e8be034dcf6971dcd303ace1077ad331be8b871df48ff91ee4d81434",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.797,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 135,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 130,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 130,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 140,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 130,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 130,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 7,
+          "status": 0,
+          "brick_count": 130,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 130,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 130,
+    "voxels": 821,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "ff302056e8be034dcf6971dcd303ace1077ad331be8b871df48ff91ee4d81434",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "1f9520375ce4bfc1ba8479b3b43805016debe029471c98e6d9f2f950e8633766",
+    "refined.txt": "c7abefccf97f87abde10aa0bd94a5f78b85b3aef790c6a21adc4d628418cbe08",
+    "refined.json": "03f7cebaa0ac6f94424e068f319dfb5336d9954868f8974c1e39c19e15d17728"
+  },
+  "ldr_path": "refined_ldr/B31_L5.ldr",
+  "elapsed_seconds": 2.875
+}

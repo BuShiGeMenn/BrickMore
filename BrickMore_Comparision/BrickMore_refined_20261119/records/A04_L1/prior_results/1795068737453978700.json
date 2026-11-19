@@ -1,0 +1,83 @@
+{
+  "prompt_id": "A04_L1",
+  "batch": "A",
+  "category": "bed",
+  "level": 1,
+  "caption": "A platform bed with a low frame, a mattress platform and four corner supports.",
+  "source_sha256": "48a5edcf8cef68e3810fbf88c1fd439bb45aa40348478b6bd7b19bbb1ceb0f39",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 163,
+  "normalization": {
+    "original_voxels": 1324,
+    "target_voxels": 1324,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "15a81662797310e442baf2681b9a52a7c3df9ae6b188ab065e0939982817e5a5",
+    "target_voxel_sha256": "15a81662797310e442baf2681b9a52a7c3df9ae6b188ab065e0939982817e5a5"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 163,
+    "voxels": 1324,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "15a81662797310e442baf2681b9a52a7c3df9ae6b188ab065e0939982817e5a5",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 15014,
+      "run_count": 317,
+      "flow_edges": 6150,
+      "budget_seconds": 12,
+      "seconds": 12.093999999997322,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 15014,
+      "run_count": 317,
+      "flow_edges": 6150,
+      "budget_seconds": 60,
+      "seconds": 60.11000000000058,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 15014,
+      "run_count": 317,
+      "flow_edges": 6150,
+      "budget_seconds": 180,
+      "seconds": 180.125,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "status": "solver_budget_exhausted",
+  "elapsed_seconds": 252.344
+}

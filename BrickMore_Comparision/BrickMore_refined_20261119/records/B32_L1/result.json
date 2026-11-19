@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B32_L1",
+  "batch": "B",
+  "category": "mug",
+  "level": 1,
+  "caption": "A handled soup mug with a wide body, a high rim and one large handle.",
+  "source_sha256": "1bc45f557bf4e781f15bd1764f9e3d9c2297e1b162b2f2cd6baf465d7173b424",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 299,
+  "normalization": {
+    "original_voxels": 1095,
+    "target_voxels": 1095,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "f20230692a20b1533f5d1d2a09fe7b9c5601a3d210ef0d66067c2c993961dac6",
+    "target_voxel_sha256": "f20230692a20b1533f5d1d2a09fe7b9c5601a3d210ef0d66067c2c993961dac6"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 299,
+    "voxels": 1095,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "f20230692a20b1533f5d1d2a09fe7b9c5601a3d210ef0d66067c2c993961dac6",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.954,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 284,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 285,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 285,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 285,
+    "voxels": 1095,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "f20230692a20b1533f5d1d2a09fe7b9c5601a3d210ef0d66067c2c993961dac6",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "168bc0ad479ae5a34b29683e975c45a9381bda7ebe6635f5bec31bf33a93a71b",
+    "refined.txt": "c85e0555fe0f04ff5c78d51f48541938641397ccbcb751afaa31349a40e79515",
+    "refined.json": "a87c56449f8f66d2b5eff19a1320884b085024554891177570118d6a9f6001ee"
+  },
+  "ldr_path": "refined_ldr/B32_L1.ldr",
+  "elapsed_seconds": 3.016
+}

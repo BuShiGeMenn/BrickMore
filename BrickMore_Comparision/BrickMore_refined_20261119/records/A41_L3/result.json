@@ -1,0 +1,52 @@
+{
+  "prompt_id": "A41_L3",
+  "batch": "A",
+  "category": "pot",
+  "level": 3,
+  "caption": "A saucepan with a shallow cavity, one long handle and a small helper ear. Continuous walls enclose a cavity; two handles join opposite wall sides. Circular walls keep an even thickness with a sealed base and a thick rim.",
+  "source_sha256": "b72fbea86f6164f8d495f999e9d0a9e1d27a58a1918ac60dddb0eabdf19934e8",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 597,
+  "normalization": {
+    "original_voxels": 1470,
+    "target_voxels": 1470,
+    "duplicate_cell_occupancies": 640,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "b5484c1e0b502de1319b0176a3df3df8c694dc69fb60b7df407a987b1f3ffdda",
+    "target_voxel_sha256": "b5484c1e0b502de1319b0176a3df3df8c694dc69fb60b7df407a987b1f3ffdda"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 597,
+    "voxels": 1470,
+    "stud_components": 168,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 640,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "b5484c1e0b502de1319b0176a3df3df8c694dc69fb60b7df407a987b1f3ffdda",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    1467,
+    3
+  ],
+  "elapsed_seconds": 0.0
+}

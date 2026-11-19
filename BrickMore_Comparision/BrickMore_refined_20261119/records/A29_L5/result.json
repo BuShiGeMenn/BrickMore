@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A29_L5",
+  "batch": "A",
+  "category": "car",
+  "level": 5,
+  "caption": "A suv with a tall cabin, a roof rack and four large wheels. A boxy cabin carries windows and a trunk; four wheels join the chassis. Faceted body panels keep a constant thickness along the chassis. Overall width is 1.80 times depth; height is 0.72 times width. Parts follow functional positions. Continuous blue, charcoal, light gray color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "6542cce3d1d35316f2bfee420b344728e089d16aa9e49b2651a284eb05753bde",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 143,
+  "normalization": {
+    "original_voxels": 684,
+    "target_voxels": 684,
+    "duplicate_cell_occupancies": 4,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "d89da14fc710b6e8b95c5f38f57d6ba4c8fa1f85105a184ea9ecfd3677e7f68e",
+    "target_voxel_sha256": "d89da14fc710b6e8b95c5f38f57d6ba4c8fa1f85105a184ea9ecfd3677e7f68e"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 143,
+    "voxels": 684,
+    "stud_components": 11,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 4,
+    "unsupported_from_below": 22,
+    "target_voxel_sha256": "d89da14fc710b6e8b95c5f38f57d6ba4c8fa1f85105a184ea9ecfd3677e7f68e",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.187,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 124,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 124,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 124,
+    "voxels": 684,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "d89da14fc710b6e8b95c5f38f57d6ba4c8fa1f85105a184ea9ecfd3677e7f68e",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "7a8d974b5165eb11dbf3ec232e2c3167ec236281f788ab44c8671f366ee35f60",
+    "refined.txt": "9be3d3ccd618be4371c8056e22f8ed506d8da3bbaf8607dfabae3b82c8bd15b4",
+    "refined.json": "31563a5b3328123799b5c096f70dcab8f277ce7cc6e858e5d0c32acc7d13ca21"
+  },
+  "ldr_path": "refined_ldr/A29_L5.ldr",
+  "elapsed_seconds": 0.234
+}

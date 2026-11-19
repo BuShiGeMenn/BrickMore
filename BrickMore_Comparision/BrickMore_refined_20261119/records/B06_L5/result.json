@@ -1,0 +1,122 @@
+{
+  "prompt_id": "B06_L5",
+  "batch": "B",
+  "category": "bench",
+  "level": 5,
+  "caption": "A storage bench with a seat lid over a closed box and two side panels. A slatted seat spans two framed supports; the backrest joins the rear posts. Straight slats keep a constant thickness and the frame stays square. Overall width is 2.10 times depth; height is 0.50 times width. Parts follow functional positions. Continuous dark gray, tan, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "369dc323a9c827bb1ecfe47f8d3c58de1c0a4ea8608b67480fc83d25b52eba20",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 225,
+  "normalization": {
+    "original_voxels": 1735,
+    "target_voxels": 1735,
+    "duplicate_cell_occupancies": 8,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "cbaa117b6491a52ef9c9cca1645a8e8088a0e7a4fad2cd5b77511332ff57b7cc",
+    "target_voxel_sha256": "cbaa117b6491a52ef9c9cca1645a8e8088a0e7a4fad2cd5b77511332ff57b7cc"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 225,
+    "voxels": 1735,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 8,
+    "unsupported_from_below": 23,
+    "target_voxel_sha256": "cbaa117b6491a52ef9c9cca1645a8e8088a0e7a4fad2cd5b77511332ff57b7cc",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.203,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 763,
+          "stud_components": 5,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 23658,
+      "run_count": 308,
+      "flow_edges": 5897,
+      "budget_seconds": 12,
+      "seconds": 12.18800000000192,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 15.25,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 183,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 183,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 183,
+    "voxels": 1735,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 18,
+    "target_voxel_sha256": "cbaa117b6491a52ef9c9cca1645a8e8088a0e7a4fad2cd5b77511332ff57b7cc",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "aa64d475018f74ebed7eb3ca7e879d06bf6550c09ddc8abfbe331c5f4d2e0ba1",
+    "refined.txt": "484ce1beeacd3ad786d4ca74a2ffccf2caa075d4f4c8b78a4603a0901bb73736",
+    "refined.json": "c38a2cc9127cc5174f6afff27f96d9399fc94aaa2cbf9ab6a96f72a7ca924c3e"
+  },
+  "ldr_path": "refined_ldr/B06_L5.ldr",
+  "elapsed_seconds": 39.719
+}

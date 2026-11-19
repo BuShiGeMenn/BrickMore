@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A39_L5",
+  "batch": "A",
+  "category": "piano",
+  "level": 5,
+  "caption": "A console piano with a low cabinet, a narrow keyboard and four short feet. A full width keyboard sits on a shelf; the cabinet carries a straight lid. Flat cabinet panels keep a constant thickness with a stepped keyboard shelf. Overall width is 2.20 times depth; height is 0.70 times width. Parts follow functional positions. Continuous dark brown, near black, ivory white color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "b43e962b5c97b017bfc4fd09ea936d1c5d0c8b90afc63ffe26d9001d1bafcbf9",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 227,
+  "normalization": {
+    "original_voxels": 2016,
+    "target_voxels": 2016,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "9a362e8ca093ba459de3dd93f5ee41a7b567b6072d8e164f677883d7b83c36ea",
+    "target_voxel_sha256": "9a362e8ca093ba459de3dd93f5ee41a7b567b6072d8e164f677883d7b83c36ea"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 227,
+    "voxels": 2016,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "9a362e8ca093ba459de3dd93f5ee41a7b567b6072d8e164f677883d7b83c36ea",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.797,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 200,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 200,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 200,
+    "voxels": 2016,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "9a362e8ca093ba459de3dd93f5ee41a7b567b6072d8e164f677883d7b83c36ea",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "0714fc63499ec6b67ae81bdf6f4e51d9f7bb6f3b988cce598ac81f7f9f0d40c7",
+    "refined.txt": "77b7dc60ed70653c658591bc27209cbc3118c32283d67dd16218be34d21602fd",
+    "refined.json": "f54ef26ecea34612a36c8be2bd77cf2e6f573a4d8e3998bae63260ecfc0591fa"
+  },
+  "ldr_path": "refined_ldr/A39_L5.ldr",
+  "elapsed_seconds": 2.875
+}

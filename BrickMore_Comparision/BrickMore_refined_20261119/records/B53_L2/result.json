@@ -1,0 +1,108 @@
+{
+  "prompt_id": "B53_L2",
+  "batch": "B",
+  "category": "vessel",
+  "level": 2,
+  "caption": "A ferry with a wide hull, two decks and a loading opening. A flat hull carries a deck and a cabin; square ends close the shell.",
+  "source_sha256": "1f73d776522939350d3e062648027d38abaf01f93428d0d56b888e713218d6a0",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 130,
+  "normalization": {
+    "original_voxels": 728,
+    "target_voxels": 728,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "8dc0b07320e4dc40b09951a16b18782a5273b304a80c8ef383e90433b895843e",
+    "target_voxel_sha256": "8dc0b07320e4dc40b09951a16b18782a5273b304a80c8ef383e90433b895843e"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 130,
+    "voxels": 728,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "8dc0b07320e4dc40b09951a16b18782a5273b304a80c8ef383e90433b895843e",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 3.75,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 112,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 112,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 112,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 112,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 112,
+    "voxels": 728,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "8dc0b07320e4dc40b09951a16b18782a5273b304a80c8ef383e90433b895843e",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "df1f9c2128bc6d9e4316c693538ed90dced6ee8166ac65ea5b80590df1a7fdc9",
+    "refined.txt": "cbc1db81c8195b39c80119f615e713d9ed320418fba2bc5082f68a4e62e00497",
+    "refined.json": "2ec91bcf9543dac618652fe7e2563469e39e5cce54cef2168ef414592a3b557d"
+  },
+  "ldr_path": "refined_ldr/B53_L2.ldr",
+  "elapsed_seconds": 3.797
+}

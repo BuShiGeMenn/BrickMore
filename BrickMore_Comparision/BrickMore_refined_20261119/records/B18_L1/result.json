@@ -1,0 +1,108 @@
+{
+  "prompt_id": "B18_L1",
+  "batch": "B",
+  "category": "camera",
+  "level": 1,
+  "caption": "An instant camera with a tall body, a front lens and a slot for prints.",
+  "source_sha256": "9a20fb8fd5bd32480e68e2fbb366e4032dd0ad796522fc7a5b8147797db87f16",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 250,
+  "normalization": {
+    "original_voxels": 1004,
+    "target_voxels": 1004,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "9862abd323f0b1510a56c149aba618a1288bdf4573e1646b2660eace97977f41",
+    "target_voxel_sha256": "9862abd323f0b1510a56c149aba618a1288bdf4573e1646b2660eace97977f41"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 250,
+    "voxels": 1004,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "9862abd323f0b1510a56c149aba618a1288bdf4573e1646b2660eace97977f41",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.453,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 200,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 200,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 200,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 200,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 200,
+    "voxels": 1004,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "9862abd323f0b1510a56c149aba618a1288bdf4573e1646b2660eace97977f41",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "530c80458bee04f69bba4ad7d8ca933db17760955bbe510b328a636c86770878",
+    "refined.txt": "9f68eae88f7f411ab089eaef60aa37d68f66c50ebb1418414a0f1834a384ae86",
+    "refined.json": "ad658fe30eddcfb2fb9bec21156faab188e506a928afe5cd007bdaf2e290a94d"
+  },
+  "ldr_path": "refined_ldr/B18_L1.ldr",
+  "elapsed_seconds": 0.515
+}

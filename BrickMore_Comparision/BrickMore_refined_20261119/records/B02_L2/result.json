@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B02_L2",
+  "batch": "B",
+  "category": "basket",
+  "level": 2,
+  "caption": "A shallow fruit basket with a low rim, a wide cavity and an arched carrying handle. Continuous woven walls enclose a cavity; both arched handle ends join the rim.",
+  "source_sha256": "af5b6ffa9d8e6f56d0eca7a3877f4e13098b5a749513e58a539da1cd5753c657",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 341,
+  "normalization": {
+    "original_voxels": 1235,
+    "target_voxels": 1235,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a352b6ae101eca3a32ed6c8c206b45e7340a41230fd4659cba281455a12616ba",
+    "target_voxel_sha256": "a352b6ae101eca3a32ed6c8c206b45e7340a41230fd4659cba281455a12616ba"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 341,
+    "voxels": 1235,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "a352b6ae101eca3a32ed6c8c206b45e7340a41230fd4659cba281455a12616ba",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.14,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 306,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 306,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 306,
+    "voxels": 1235,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "a352b6ae101eca3a32ed6c8c206b45e7340a41230fd4659cba281455a12616ba",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "001a55afbaea59e524f0c5f657fea9fae8c536a02e0eff3cc5494bfa073938f2",
+    "refined.txt": "36f52f7b53802ead470073f63103a059dafa0356156b5335f9e7f93e11bd1b00",
+    "refined.json": "f03e622fdce692210788dca426206bbdae1a4e1e1aeed34f2af16af7404155a4"
+  },
+  "ldr_path": "refined_ldr/B02_L2.ldr",
+  "elapsed_seconds": 0.187
+}

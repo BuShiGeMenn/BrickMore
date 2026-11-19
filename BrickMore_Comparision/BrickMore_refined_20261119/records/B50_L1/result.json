@@ -1,0 +1,143 @@
+{
+  "prompt_id": "B50_L1",
+  "batch": "B",
+  "category": "train",
+  "level": 1,
+  "caption": "A tram with a rounded body, large windows and four wheels.",
+  "source_sha256": "4337da593e4c6db49757bce8ed75cef84e528c160a5d01cfcb1c986ab4a7f803",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 146,
+  "normalization": {
+    "original_voxels": 927,
+    "target_voxels": 927,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "86362f1a840862e8526394db31fd1892c7b064f9ead2cb1058d3a0fefb042b32",
+    "target_voxel_sha256": "86362f1a840862e8526394db31fd1892c7b064f9ead2cb1058d3a0fefb042b32"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 146,
+    "voxels": 927,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "86362f1a840862e8526394db31fd1892c7b064f9ead2cb1058d3a0fefb042b32",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 5.375,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 139,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 139,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 139,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 139,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 139,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 7,
+          "status": 0,
+          "brick_count": 139,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 139,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 139,
+    "voxels": 927,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "86362f1a840862e8526394db31fd1892c7b064f9ead2cb1058d3a0fefb042b32",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "618a57a0f5e085ce3ab4dc03ad987abd4c92142e17a971a9e9cfe2161ac915eb",
+    "refined.txt": "b4d09b7141fe53b3853397254606aabe09e3a62752bc93db076602defd2fa4cf",
+    "refined.json": "fd50f4a37f01b923b7064e8216d7edf031cebcabcf87544876a649c4015252ae"
+  },
+  "ldr_path": "refined_ldr/B50_L1.ldr",
+  "elapsed_seconds": 5.438
+}

@@ -1,0 +1,143 @@
+{
+  "prompt_id": "B39_L1",
+  "batch": "B",
+  "category": "sofa",
+  "level": 1,
+  "caption": "A three seat sofa with three cushions, a straight back and two arms.",
+  "source_sha256": "7b1e7f612885423f6c85748318cf8502babb606e3510a7990519665d5bc04c75",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 170,
+  "normalization": {
+    "original_voxels": 1129,
+    "target_voxels": 1129,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "1f5d84f906e08d6b40d332baccab38e726b0e86f6e58c43179cedcfeb97cfdd3",
+    "target_voxel_sha256": "1f5d84f906e08d6b40d332baccab38e726b0e86f6e58c43179cedcfeb97cfdd3"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 170,
+    "voxels": 1129,
+    "stud_components": 11,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 37,
+    "target_voxel_sha256": "1f5d84f906e08d6b40d332baccab38e726b0e86f6e58c43179cedcfeb97cfdd3",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.344,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 127,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 386,
+          "stud_components": 31,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 13813,
+      "run_count": 374,
+      "flow_edges": 7209,
+      "budget_seconds": 12,
+      "seconds": 12.155999999995402,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 37.046,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 127,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 127,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 1,
+          "brick_count": 321,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 321,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 321,
+    "voxels": 1129,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 30,
+    "target_voxel_sha256": "1f5d84f906e08d6b40d332baccab38e726b0e86f6e58c43179cedcfeb97cfdd3",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "07daad5158773c0ce4171db0ed2a9afc22e9f7dc2d7b7b5f5dd8cd8e549d2dcf",
+    "refined.txt": "5de0b89a4303025a1158fac53dc0ec78d673678e02d34114bfde463c39d42e55",
+    "refined.json": "52df49a6ed2b8b9d6df5fda26a68d637649d7d9c5500ba2859c12a9cd1aa7b75"
+  },
+  "ldr_path": "refined_ldr/B39_L1.ldr",
+  "elapsed_seconds": 61.656
+}

@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A15_L4",
+  "batch": "A",
+  "category": "bookshelf",
+  "level": 4,
+  "caption": "A low console shelf with three wide shelves and two short side panels. Shelves join two curved side panels; each shelf leaves a clear gap. Curved side panels keep an even thickness with shelves attached along the inside. Overall width is 2.40 times depth; height is 0.95 times width. Parts follow functional positions.",
+  "source_sha256": "724202c49e46104e8025a46f6b35d9ce5806fbe991cec337cf74ed8b065217a3",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 211,
+  "normalization": {
+    "original_voxels": 929,
+    "target_voxels": 929,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "ef0d686fa922b5b8de102ff9c295c3698d9b5e15dfcc144b2a8976493a88fe93",
+    "target_voxel_sha256": "ef0d686fa922b5b8de102ff9c295c3698d9b5e15dfcc144b2a8976493a88fe93"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 211,
+    "voxels": 929,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "ef0d686fa922b5b8de102ff9c295c3698d9b5e15dfcc144b2a8976493a88fe93",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.547,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 215,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 205,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 205,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 205,
+    "voxels": 929,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "ef0d686fa922b5b8de102ff9c295c3698d9b5e15dfcc144b2a8976493a88fe93",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "bfae7dac494657e4489549d3ab6a959610c887c586313cd91c1cd7b2399d8fed",
+    "refined.txt": "a0db25271c10aa060954e96b001e6d59ed71e0c73850770318da95977c584e85",
+    "refined.json": "577dcc2fddd2e51c71dfb5cf2ca181553250bba4cdd5c42777a4bf7c57057152"
+  },
+  "ldr_path": "refined_ldr/A15_L4.ldr",
+  "elapsed_seconds": 2.594
+}

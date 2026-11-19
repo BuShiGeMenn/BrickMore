@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B48_L1",
+  "batch": "B",
+  "category": "train",
+  "level": 1,
+  "caption": "A diesel locomotive with a long hood, a cab and eight wheels.",
+  "source_sha256": "0d331a8c07348a49bfedf2297bd2be58739fd578865c65baf2a24aaa7bfc3a8d",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 146,
+  "normalization": {
+    "original_voxels": 798,
+    "target_voxels": 798,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "8da49c3c2452face8e3112fad0b77982f2a65d186f8111ca90dcab721eb35c83",
+    "target_voxel_sha256": "8da49c3c2452face8e3112fad0b77982f2a65d186f8111ca90dcab721eb35c83"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 146,
+    "voxels": 798,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 13,
+    "target_voxel_sha256": "8da49c3c2452face8e3112fad0b77982f2a65d186f8111ca90dcab721eb35c83",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 5.125,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 117,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 117,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 117,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 117,
+    "voxels": 798,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "8da49c3c2452face8e3112fad0b77982f2a65d186f8111ca90dcab721eb35c83",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "01481c4544db15974599f814d187e5c5bf8f24b0a4d371742cccf78efa133ff4",
+    "refined.txt": "406cbc2eb91216e7749b90cb93fd2204798a8f9c1db8ae2f520fd7cc833af5f0",
+    "refined.json": "c02c4d72d3cee4313350ca215045e9bf69b6f08a1de80152c5640942c3996a6c"
+  },
+  "ldr_path": "refined_ldr/B48_L1.ldr",
+  "elapsed_seconds": 5.219
+}

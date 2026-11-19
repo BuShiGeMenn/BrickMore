@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A03_L4",
+  "batch": "A",
+  "category": "basket",
+  "level": 4,
+  "caption": "A tall laundry basket with a tall cavity, an open top and one flat lift handle. Four flat walls enclose a cavity; two straight handles join opposite walls. Faceted walls keep a constant thickness and the rim repeats the square outline. Overall width is 1.00 times depth; height is 0.78 times width. Parts follow functional positions.",
+  "source_sha256": "ee9520e4a81d6cfd16441a022337b9eff8c54f1fd990afd8ed5cb186b91feee1",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 319,
+  "normalization": {
+    "original_voxels": 1566,
+    "target_voxels": 1566,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "09a2636a111757d5e59c89ea666b55a619f653024bd83187c851b5179d41154a",
+    "target_voxel_sha256": "09a2636a111757d5e59c89ea666b55a619f653024bd83187c851b5179d41154a"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 319,
+    "voxels": 1566,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "09a2636a111757d5e59c89ea666b55a619f653024bd83187c851b5179d41154a",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 10546,
+      "run_count": 147,
+      "flow_edges": 2139,
+      "budget_seconds": 12,
+      "seconds": 12.078000000001339,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 10546,
+      "run_count": 147,
+      "flow_edges": 2139,
+      "budget_seconds": 60,
+      "seconds": 12.828999999997905,
+      "solver_status": 0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "has_incumbent": true,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "method": "exact_cover_single_real_stud_run_flow",
+  "status": "passed",
+  "refined_bricks": 303,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 303,
+    "voxels": 1566,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "09a2636a111757d5e59c89ea666b55a619f653024bd83187c851b5179d41154a",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "5a9b1f19d1647f9663cc8d3a9a728df693fe8a2d6e2605b29a4f235e50cda39f",
+    "refined.txt": "80c53ace85d5111b4155554046ff5e4d06bb1d47bfe11fe0f6408eaea71032c6",
+    "refined.json": "4dcf6fdc46d38e7c90803484de548b278724e7464300932a45090b38d6760340"
+  },
+  "ldr_path": "refined_ldr/A03_L4.ldr",
+  "elapsed_seconds": 25.094
+}

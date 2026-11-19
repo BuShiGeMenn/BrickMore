@@ -1,0 +1,77 @@
+{
+  "prompt_id": "A18_L1",
+  "batch": "A",
+  "category": "bottle",
+  "level": 1,
+  "caption": "A small medicine bottle with a short body, a wide mouth and a closed base.",
+  "source_sha256": "e7aa40460bd59eca71150f3374a3fe3800edf225cdb69e9c7598739d762693be",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 301,
+  "normalization": {
+    "original_voxels": 1191,
+    "target_voxels": 1191,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "66f7806a612cc811fc132bf86af1e45643dd8424666ca20bdf2d930568c05ebe",
+    "target_voxel_sha256": "66f7806a612cc811fc132bf86af1e45643dd8424666ca20bdf2d930568c05ebe"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 301,
+    "voxels": 1191,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "66f7806a612cc811fc132bf86af1e45643dd8424666ca20bdf2d930568c05ebe",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 301,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 301,
+    "voxels": 1191,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "66f7806a612cc811fc132bf86af1e45643dd8424666ca20bdf2d930568c05ebe",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "8d1de4a20a5598dcb0ad73ea6b28f6511c74dd9de1e90f892894eadc010d75d9",
+    "refined.txt": "caedfeca735fed0b32555e7f3e5e99f945f826e218bbc1a38dd62aeb20d0e872",
+    "refined.json": "b6f24c6bcd336d76c49094b3baedbb3bf9f9c0d1ab185d03816651de3ff86b5a"
+  },
+  "ldr_path": "refined_ldr/A18_L1.ldr",
+  "elapsed_seconds": 0.078
+}

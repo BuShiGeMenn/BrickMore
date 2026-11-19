@@ -1,0 +1,76 @@
+{
+  "prompt_id": "A48_L3",
+  "batch": "A",
+  "category": "tower",
+  "level": 3,
+  "caption": "A twin tower with two joined towers with two crowns. Four flat walls rise from a base; a stepped crown caps the top. Faceted walls keep a constant thickness with a stepped crown line.",
+  "source_sha256": "2261e6e32cd8f83ba4664c4e0702dfe5b0e9c18d398a6730fefc58ba0f6d9a95",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 192,
+  "normalization": {
+    "original_voxels": 939,
+    "target_voxels": 939,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "1e3ba0d85bca0af03c390c0f00cba1f7f465f821038245bb5a00849d4fcf165b",
+    "target_voxel_sha256": "1e3ba0d85bca0af03c390c0f00cba1f7f465f821038245bb5a00849d4fcf165b"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 192,
+    "voxels": 939,
+    "stud_components": 19,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 13,
+    "target_voxel_sha256": "1e3ba0d85bca0af03c390c0f00cba1f7f465f821038245bb5a00849d4fcf165b",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.391,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 149,
+          "stud_components": 14,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 166,
+          "stud_components": 13,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 2,
+          "solution": false
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": true
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "elapsed_seconds": 0.391
+}

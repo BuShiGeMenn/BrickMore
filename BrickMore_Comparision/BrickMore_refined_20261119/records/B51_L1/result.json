@@ -1,0 +1,52 @@
+{
+  "prompt_id": "B51_L1",
+  "batch": "B",
+  "category": "vessel",
+  "level": 1,
+  "caption": "A sailboat with a hull, a cabin and one mast base.",
+  "source_sha256": "56eb60b414bc11d14cfa0bdf8d568ab85b4e6616469f50322886577d3e3d6c29",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 198,
+  "normalization": {
+    "original_voxels": 655,
+    "target_voxels": 655,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "8a8207d7c7ae6564f04cf3790cfc70043c615e47c633d5315efa9542681bfdc5",
+    "target_voxel_sha256": "8a8207d7c7ae6564f04cf3790cfc70043c615e47c633d5315efa9542681bfdc5"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 198,
+    "voxels": 655,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "8a8207d7c7ae6564f04cf3790cfc70043c615e47c633d5315efa9542681bfdc5",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    654,
+    1
+  ],
+  "elapsed_seconds": 0.0
+}

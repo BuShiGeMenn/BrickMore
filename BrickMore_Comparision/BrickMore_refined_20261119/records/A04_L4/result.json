@@ -1,0 +1,113 @@
+{
+  "prompt_id": "A04_L4",
+  "batch": "A",
+  "category": "bed",
+  "level": 4,
+  "caption": "A platform bed with a low frame, a mattress platform and four corner supports. A mattress rests on the frame; two straight end boards join the corners. Flat frame boards keep an even thickness with four squared legs beneath. Overall width is 1.55 times depth; height is 0.35 times width. Parts follow functional positions.",
+  "source_sha256": "57bf785823cc64c3265a3371b448b81128564c89353016fd338529443cc827ef",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 111,
+  "normalization": {
+    "original_voxels": 961,
+    "target_voxels": 961,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "007acc66baa8334d06e932a96b91266d8e41b88c0ecb85d600593ae557669579",
+    "target_voxel_sha256": "007acc66baa8334d06e932a96b91266d8e41b88c0ecb85d600593ae557669579"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 111,
+    "voxels": 961,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "007acc66baa8334d06e932a96b91266d8e41b88c0ecb85d600593ae557669579",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 12116,
+      "run_count": 248,
+      "flow_edges": 4389,
+      "budget_seconds": 12,
+      "seconds": 12.109000000004016,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 12116,
+      "run_count": 248,
+      "flow_edges": 4389,
+      "budget_seconds": 60,
+      "seconds": 60.062999999994645,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 12116,
+      "run_count": 248,
+      "flow_edges": 4389,
+      "budget_seconds": 180,
+      "seconds": 180.10899999999674,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "has_incumbent": true,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "method": "exact_cover_single_real_stud_run_flow",
+  "status": "passed",
+  "refined_bricks": 231,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 231,
+    "voxels": 961,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 92,
+    "target_voxel_sha256": "007acc66baa8334d06e932a96b91266d8e41b88c0ecb85d600593ae557669579",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "b7eaa65ec3f4125b8514635dab052451230d308da0395783b4cee53aec4237c3",
+    "refined.txt": "f4e9c8303303bc4546f6bcd650a0dcbddc388ecd6c884bf02490505effa9c64f",
+    "refined.json": "cc22e28b93ca62303a3d6dfb3a6b328a7dee54c1db436a99b7ab2f3a295b45f3"
+  },
+  "ldr_path": "refined_ldr/A04_L4.ldr",
+  "elapsed_seconds": 252.359
+}

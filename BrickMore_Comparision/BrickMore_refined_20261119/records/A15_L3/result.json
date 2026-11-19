@@ -1,0 +1,52 @@
+{
+  "prompt_id": "A15_L3",
+  "batch": "A",
+  "category": "bookshelf",
+  "level": 3,
+  "caption": "A low console shelf with three wide shelves and two short side panels. Shelves join two curved side panels; each shelf leaves a clear gap. Curved side panels keep an even thickness with shelves attached along the inside.",
+  "source_sha256": "44b3da0dadfafd00bb8db031cf3184ec1642d58b89dda9341fed1510dae53c9b",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 158,
+  "normalization": {
+    "original_voxels": 699,
+    "target_voxels": 699,
+    "duplicate_cell_occupancies": 9,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5937d9cdf54f2de231abd8c5b019c0ebfab889a3b19b918b428ea713ce980e83",
+    "target_voxel_sha256": "5937d9cdf54f2de231abd8c5b019c0ebfab889a3b19b918b428ea713ce980e83"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 158,
+    "voxels": 699,
+    "stud_components": 17,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 9,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "5937d9cdf54f2de231abd8c5b019c0ebfab889a3b19b918b428ea713ce980e83",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    696,
+    3
+  ],
+  "elapsed_seconds": 0.0
+}

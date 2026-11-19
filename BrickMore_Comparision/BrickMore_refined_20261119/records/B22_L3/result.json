@@ -1,0 +1,77 @@
+{
+  "prompt_id": "B22_L3",
+  "batch": "B",
+  "category": "chair",
+  "level": 3,
+  "caption": "An armchair with a seat, a back and two arms on four legs. A seat panel joins four legs; a curved backrest rises from the rear legs. Curved backrest edges keep an even thickness above the seat.",
+  "source_sha256": "e5c68e1603b1dfab6351e0864938ccf30650f5b7b492ef8936e0ad31e437aa81",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 117,
+  "normalization": {
+    "original_voxels": 810,
+    "target_voxels": 810,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "25dea030f718cfcd37c86320811f54e897c39d95d6441cd6b99ad0be3fde2343",
+    "target_voxel_sha256": "25dea030f718cfcd37c86320811f54e897c39d95d6441cd6b99ad0be3fde2343"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 117,
+    "voxels": 810,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "25dea030f718cfcd37c86320811f54e897c39d95d6441cd6b99ad0be3fde2343",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 117,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 117,
+    "voxels": 810,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "25dea030f718cfcd37c86320811f54e897c39d95d6441cd6b99ad0be3fde2343",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "ea6ec82ffe65fc9e4b65e1561e5f7a6b77ba032976a9173001512cde8fdb18dc",
+    "refined.txt": "70b85bf038af9fa409e9810d706b716b862c0f13eceed9d713b5d1f83005c50d",
+    "refined.json": "5e14abc80e4b8c5e3983e31a9a1b8b55460d795aff8a0a3fe2905993675ab677"
+  },
+  "ldr_path": "refined_ldr/B22_L3.ldr",
+  "elapsed_seconds": 0.031
+}

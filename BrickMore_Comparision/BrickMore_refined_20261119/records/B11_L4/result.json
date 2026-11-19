@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B11_L4",
+  "batch": "B",
+  "category": "bottle",
+  "level": 4,
+  "caption": "A narrow neck bottle with a sealed base, straight walls and one narrow neck. A sealed base carries continuous walls; the shoulder narrows into a neck. Circular walls keep an even thickness and the neck stays continuous with the shoulder. Overall width is 1.00 times depth; height is 1.00 times width. Parts follow functional positions.",
+  "source_sha256": "b9ea4a9a5f7447914344187108364d43e5e49a1ac503da5e8d9573fd7e711ef1",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 286,
+  "normalization": {
+    "original_voxels": 1151,
+    "target_voxels": 1151,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "04777b211f2b6f8b7e27d6fd6a1335e0dced07c1a5cf26efd3197c20a426345b",
+    "target_voxel_sha256": "04777b211f2b6f8b7e27d6fd6a1335e0dced07c1a5cf26efd3197c20a426345b"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 286,
+    "voxels": 1151,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "04777b211f2b6f8b7e27d6fd6a1335e0dced07c1a5cf26efd3197c20a426345b",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.703,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 269,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 269,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 269,
+    "voxels": 1151,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "04777b211f2b6f8b7e27d6fd6a1335e0dced07c1a5cf26efd3197c20a426345b",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "645b65438160f5fd05d3e56e87a3a504548777d598b905ff96e31018ecee0ab6",
+    "refined.txt": "7dea7bfca247ccf31b8d9a2f124b11c7ecdfe4d3feb15fb7b9f992c9432e43b9",
+    "refined.json": "7ddc60fbe0aad1d073b986bb27f869145980465c86fc612fd908a010c8255bca"
+  },
+  "ldr_path": "refined_ldr/B11_L4.ldr",
+  "elapsed_seconds": 1.765
+}

@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A45_L3",
+  "batch": "A",
+  "category": "table",
+  "level": 3,
+  "caption": "A side table with a small round top and one center column. A continuous tabletop joins four legs; each leg reaches the ground. Rounded tabletop edges keep an even thickness above the legs.",
+  "source_sha256": "411f1e34b53277910a20c96c31abe551dfcf9cc5b70845195b364c9b65634cd8",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 223,
+  "normalization": {
+    "original_voxels": 1234,
+    "target_voxels": 1234,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "52ae98cec80b70f40d3dfe99086a671ef41f411d3d535188d7e8b25af1a40c49",
+    "target_voxel_sha256": "52ae98cec80b70f40d3dfe99086a671ef41f411d3d535188d7e8b25af1a40c49"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 223,
+    "voxels": 1234,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 13,
+    "target_voxel_sha256": "52ae98cec80b70f40d3dfe99086a671ef41f411d3d535188d7e8b25af1a40c49",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 11.437,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 190,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 190,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 190,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 190,
+    "voxels": 1234,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "52ae98cec80b70f40d3dfe99086a671ef41f411d3d535188d7e8b25af1a40c49",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "df5b45c47421f8ad5615df5a337c1558dd46f972cf37634455a7aac578655940",
+    "refined.txt": "15d6a7bb01a84d726172904c4294c76a606335d363de34f0f6a80ca2ea4d87f2",
+    "refined.json": "534f412548b55e71345f14904414c7e4f3bbe41e5d51418d349377c7feb02ca0"
+  },
+  "ldr_path": "refined_ldr/A45_L3.ldr",
+  "elapsed_seconds": 11.515
+}

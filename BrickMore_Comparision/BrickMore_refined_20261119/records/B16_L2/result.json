@@ -1,0 +1,109 @@
+{
+  "prompt_id": "B16_L2",
+  "batch": "B",
+  "category": "bus",
+  "level": 2,
+  "caption": "A minibus with a short body, side glass and four wheels. A long body carries side windows; four wheels attach beneath the chassis.",
+  "source_sha256": "01503fba5cdb5453cb02f9cf124bca8b6c479c47d6cd32fb3d514de99f130b2a",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 173,
+  "normalization": {
+    "original_voxels": 1225,
+    "target_voxels": 1225,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "6ff8d859b00d31ddc703215997f26854dd23d45b468b6c27893eff9b6d3c5d2e",
+    "target_voxel_sha256": "6ff8d859b00d31ddc703215997f26854dd23d45b468b6c27893eff9b6d3c5d2e"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 173,
+    "voxels": 1225,
+    "stud_components": 19,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 35,
+    "target_voxel_sha256": "6ff8d859b00d31ddc703215997f26854dd23d45b468b6c27893eff9b6d3c5d2e",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.234,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 126,
+          "stud_components": 25,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 130,
+          "stud_components": 18,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 130,
+          "stud_components": 20,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 130,
+          "stud_components": 17,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 131,
+          "stud_components": 16,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 1,
+          "brick_count": 312,
+          "stud_components": 146,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 7165,
+      "run_count": 663,
+      "flow_edges": 6916,
+      "budget_seconds": 12,
+      "reason": "cell_has_no_brick_with_a_real_vertical_contact",
+      "seconds": 0.062000000005355105,
+      "certified_infeasible": true
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "elapsed_seconds": 12.312
+}

@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A11_L5",
+  "batch": "A",
+  "category": "birdhouse",
+  "level": 5,
+  "caption": "A round hole cabin with a cubic chamber, one round entrance and a flat cap. Four walls form a chamber; a square entrance sits in the front. Flat wall panels keep an even thickness with a stepped roof line. Overall width is 1.00 times depth; height is 0.85 times width. Parts follow functional positions. Continuous blue-gray, cream, charcoal color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "97f2e46195a44d69e20b2d6c802a45fc027b1b0ade18649ad1aa224be88f7b20",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 283,
+  "normalization": {
+    "original_voxels": 1335,
+    "target_voxels": 1335,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "cfb914073196bffdbf6f35631e40947909312c47e74537f4989b67b572e2ac41",
+    "target_voxel_sha256": "cfb914073196bffdbf6f35631e40947909312c47e74537f4989b67b572e2ac41"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 283,
+    "voxels": 1335,
+    "stud_components": 10,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "cfb914073196bffdbf6f35631e40947909312c47e74537f4989b67b572e2ac41",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.188,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 282,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 282,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 282,
+    "voxels": 1335,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "cfb914073196bffdbf6f35631e40947909312c47e74537f4989b67b572e2ac41",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "519564ce1d029f39f0edd71b4faf34d6a2ad4df25ab52319f44022e63d6a9aa1",
+    "refined.txt": "b53a180aabdbf1de80425eb9269efbcaf9ef6ae2f1a71cad21461613bf2ed819",
+    "refined.json": "4742eccaea35c91c247bcbe7ba7ae4873d3cff341eb815511ab6a3990a176fbb"
+  },
+  "ldr_path": "refined_ldr/A11_L5.ldr",
+  "elapsed_seconds": 0.297
+}

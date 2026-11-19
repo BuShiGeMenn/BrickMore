@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B45_L1",
+  "batch": "B",
+  "category": "tower",
+  "level": 1,
+  "caption": "A square tower with a square base, four walls and one side opening.",
+  "source_sha256": "fdec53b03e9329e575850b508af9b49a7db7502735dd0f1f7fe3faeb78a40577",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 256,
+  "normalization": {
+    "original_voxels": 1040,
+    "target_voxels": 1040,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "8e62fd622733ba50f5352bad989df53c615a7db2b3761ba0398cbf71c09bbc75",
+    "target_voxel_sha256": "8e62fd622733ba50f5352bad989df53c615a7db2b3761ba0398cbf71c09bbc75"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 256,
+    "voxels": 1040,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "8e62fd622733ba50f5352bad989df53c615a7db2b3761ba0398cbf71c09bbc75",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.235,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 220,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 220,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 220,
+    "voxels": 1040,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "8e62fd622733ba50f5352bad989df53c615a7db2b3761ba0398cbf71c09bbc75",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "a6372f7cfc856a26b78ad35d640944a6786d900de095fd2c6bf2aeaabf34bb10",
+    "refined.txt": "2e92237c95130407e7349abc6f85aa5322c1bc13deedeab4cbe50560a66206ed",
+    "refined.json": "cbde3b3778e83483a193b908d600035d0d08261cd53b4248832b38b46520c717"
+  },
+  "ldr_path": "refined_ldr/B45_L1.ldr",
+  "elapsed_seconds": 0.313
+}

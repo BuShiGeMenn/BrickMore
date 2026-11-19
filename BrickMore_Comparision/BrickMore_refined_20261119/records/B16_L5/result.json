@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B16_L5",
+  "batch": "B",
+  "category": "bus",
+  "level": 5,
+  "caption": "A minibus with a short body, side glass and four wheels. A long body carries side windows; four wheels attach beneath the chassis. Rounded body panels keep an even thickness along the chassis. Overall width is 2.20 times depth; height is 0.58 times width. Parts follow functional positions. Continuous blue, white, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "ce6df64e2a1bd65bda6a4e619e18e87becb43887a86694d8cf3e88724552bb7a",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 126,
+  "normalization": {
+    "original_voxels": 880,
+    "target_voxels": 880,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "e8897552a50a1380640ef3abe318a7efd928e734a00b92b16db8374480bd0d45",
+    "target_voxel_sha256": "e8897552a50a1380640ef3abe318a7efd928e734a00b92b16db8374480bd0d45"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 126,
+    "voxels": 880,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "e8897552a50a1380640ef3abe318a7efd928e734a00b92b16db8374480bd0d45",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.188,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 105,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 105,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 105,
+    "voxels": 880,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "e8897552a50a1380640ef3abe318a7efd928e734a00b92b16db8374480bd0d45",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "bd125a35811fe938b656c20ca62d0896b2b32cf4529cdd9784823e29c6c20c21",
+    "refined.txt": "6b38103662f86eac61f5cb2b431fdf96021a25dc22e314e0714a1d35977bf5e0",
+    "refined.json": "d4163df44a40624a06782a2687d4b7373fa4f8c024809b2ecf8363dc447de71e"
+  },
+  "ldr_path": "refined_ldr/B16_L5.ldr",
+  "elapsed_seconds": 0.25
+}

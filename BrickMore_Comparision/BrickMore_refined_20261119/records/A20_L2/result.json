@@ -1,0 +1,77 @@
+{
+  "prompt_id": "A20_L2",
+  "batch": "A",
+  "category": "bowl",
+  "level": 2,
+  "caption": "A square serving bowl with four flat walls, an open rim and a sealed base. Four faceted walls rise from a sealed base; the square rim stays open.",
+  "source_sha256": "ae5cb677462d4625ea21f0b1718439efe3db30b1589b46ee3792836e7d25178d",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 292,
+  "normalization": {
+    "original_voxels": 1181,
+    "target_voxels": 1181,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "edfd3622295dd6c6fa48e851c24f873690f6053a370c8cfb928a1a5dffab61a2",
+    "target_voxel_sha256": "edfd3622295dd6c6fa48e851c24f873690f6053a370c8cfb928a1a5dffab61a2"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 292,
+    "voxels": 1181,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "edfd3622295dd6c6fa48e851c24f873690f6053a370c8cfb928a1a5dffab61a2",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 292,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 292,
+    "voxels": 1181,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "edfd3622295dd6c6fa48e851c24f873690f6053a370c8cfb928a1a5dffab61a2",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "f6045fd37739103c5eaca0afde94688cd4e5d21feef0288f29aa6342c56b312b",
+    "refined.txt": "ecc6454581a736b0c4831a3948baace1f67293b7cd43315701318747221fda16",
+    "refined.json": "297a864deea05fb29a5150c57713390be7ddb3ad1514568b97539ce515d790fb"
+  },
+  "ldr_path": "refined_ldr/A20_L2.ldr",
+  "elapsed_seconds": 0.094
+}

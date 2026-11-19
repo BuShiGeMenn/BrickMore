@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A48_L1",
+  "batch": "A",
+  "category": "tower",
+  "level": 1,
+  "caption": "A twin tower with two joined towers with two crowns.",
+  "source_sha256": "e4a477d0128aeadba915f2ccce570cd669a91aff4f7e557f96c901c4dea51a88",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 269,
+  "normalization": {
+    "original_voxels": 1001,
+    "target_voxels": 1001,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "7055175ce0d92676c991366b826f49ee349ee3d7680ab5f942cd68f33301a199",
+    "target_voxel_sha256": "7055175ce0d92676c991366b826f49ee349ee3d7680ab5f942cd68f33301a199"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 269,
+    "voxels": 1001,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "7055175ce0d92676c991366b826f49ee349ee3d7680ab5f942cd68f33301a199",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.125,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 223,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 223,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 223,
+    "voxels": 1001,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "7055175ce0d92676c991366b826f49ee349ee3d7680ab5f942cd68f33301a199",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "7fd2fb62c14fa96bacbedb2f6ef1c25303392f171cd8bbe90356de44c8847490",
+    "refined.txt": "63d5ace9c92fa672b96ff77721b66f84434dafff0027e6ae40f883724321428e",
+    "refined.json": "984c0e7c3699b0ecad185ffe774f27111409dea2c512b2c0b1072c2a4eb37bc2"
+  },
+  "ldr_path": "refined_ldr/A48_L1.ldr",
+  "elapsed_seconds": 0.203
+}

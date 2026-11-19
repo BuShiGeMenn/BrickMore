@@ -1,0 +1,108 @@
+{
+  "prompt_id": "A28_L1",
+  "batch": "A",
+  "category": "car",
+  "level": 1,
+  "caption": "A sedan with a hood, a cabin with windows and a trunk.",
+  "source_sha256": "83526de6e68bc5fc23f89b677a3a27f6a0f796033c98fbf330e21c561491b53b",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 217,
+  "normalization": {
+    "original_voxels": 1534,
+    "target_voxels": 1534,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "d82f1904482889b8014ab8bfce98abf12bb935a7eeaef420448e0c32a016f1be",
+    "target_voxel_sha256": "d82f1904482889b8014ab8bfce98abf12bb935a7eeaef420448e0c32a016f1be"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 217,
+    "voxels": 1534,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "d82f1904482889b8014ab8bfce98abf12bb935a7eeaef420448e0c32a016f1be",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 6.313,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 195,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 197,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 209,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 209,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 209,
+    "voxels": 1534,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "d82f1904482889b8014ab8bfce98abf12bb935a7eeaef420448e0c32a016f1be",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "fd3e01d24e1e66668c0b46d888308a6c1f53cd3662e73a19fa810e40b5d20eb2",
+    "refined.txt": "926121b73363977638b78bfd7dc129fd2e66c4ee4a07eb7bbc72ae6868125770",
+    "refined.json": "f99b61fdaed8ec40a4e5dbe81183dd8e41e8447cab102c370b527d368dbe23d5"
+  },
+  "ldr_path": "refined_ldr/A28_L1.ldr",
+  "elapsed_seconds": 6.375
+}

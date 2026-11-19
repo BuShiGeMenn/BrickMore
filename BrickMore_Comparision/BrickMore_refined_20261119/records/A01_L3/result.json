@@ -1,0 +1,89 @@
+{
+  "prompt_id": "A01_L3",
+  "batch": "A",
+  "category": "basket",
+  "level": 3,
+  "caption": "An oval bread basket with a shallow cavity, low walls and two side grips. Continuous woven walls enclose a cavity; both arched handle ends join the rim. Oval walls keep an even thickness and the handle arch stays continuous.",
+  "source_sha256": "457632c91945e69275f37b75d0f30ca8cad3527e0c16d913a8af1420e8d5f99c",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 408,
+  "normalization": {
+    "original_voxels": 1477,
+    "target_voxels": 1477,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "c10ae427ef876bc275e2a460d82e2b520b3a6dec4ecf245aa7ae15ae3b6ea2ad",
+    "target_voxel_sha256": "c10ae427ef876bc275e2a460d82e2b520b3a6dec4ecf245aa7ae15ae3b6ea2ad"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 408,
+    "voxels": 1477,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "c10ae427ef876bc275e2a460d82e2b520b3a6dec4ecf245aa7ae15ae3b6ea2ad",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 8357,
+      "run_count": 97,
+      "flow_edges": 1036,
+      "budget_seconds": 12,
+      "seconds": 0.375,
+      "solver_status": 0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "has_incumbent": true,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "method": "exact_cover_single_real_stud_run_flow",
+  "status": "passed",
+  "refined_bricks": 347,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 347,
+    "voxels": 1477,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "c10ae427ef876bc275e2a460d82e2b520b3a6dec4ecf245aa7ae15ae3b6ea2ad",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "74c2e7964ca9fb59dad2dd59ed3cf40b0d15a6956c0a361ad85cc4f4d5037aeb",
+    "refined.txt": "cec5068b1a2097984e2350fe4c606a87118f431f6d7ecd5b7e5eb7c5e2f19a16",
+    "refined.json": "836e1270866e1e20f2dd3f935b9902cd217062608baf31dd68eac911a3383d35"
+  },
+  "ldr_path": "refined_ldr/A01_L3.ldr",
+  "elapsed_seconds": 0.812
+}

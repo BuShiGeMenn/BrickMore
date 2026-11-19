@@ -1,0 +1,77 @@
+{
+  "prompt_id": "A19_L3",
+  "batch": "A",
+  "category": "bowl",
+  "level": 3,
+  "caption": "A round mixing bowl with a wide cavity, continuous walls and a sealed base. Continuous walls rise from a sealed base; the top edge stays open. Circular walls keep an even thickness around the cavity.",
+  "source_sha256": "351fbff98c72ac747ae5dae9d9eab142ca5539333763cd9b4dbe83eacecbce39",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 315,
+  "normalization": {
+    "original_voxels": 1148,
+    "target_voxels": 1148,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "2729d798e2383022a78c0a9bec4aaa88b985791bf8b75b68548ce2ce732b61d0",
+    "target_voxel_sha256": "2729d798e2383022a78c0a9bec4aaa88b985791bf8b75b68548ce2ce732b61d0"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 315,
+    "voxels": 1148,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "2729d798e2383022a78c0a9bec4aaa88b985791bf8b75b68548ce2ce732b61d0",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 315,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 315,
+    "voxels": 1148,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "2729d798e2383022a78c0a9bec4aaa88b985791bf8b75b68548ce2ce732b61d0",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "c8e4480423db7281a228d11de35954ddd62a0be562392b6cc424e889877701a0",
+    "refined.txt": "c1f34ef0e694f58403340a29771a8e383ec139fdf51e18f540649542576830ef",
+    "refined.json": "52c878ef8a341a8ca77af613b6df26533ae8f1298e9539c58d35d2915316d99e"
+  },
+  "ldr_path": "refined_ldr/A19_L3.ldr",
+  "elapsed_seconds": 0.062
+}

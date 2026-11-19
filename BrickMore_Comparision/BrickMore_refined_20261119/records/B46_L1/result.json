@@ -1,0 +1,115 @@
+{
+  "prompt_id": "B46_L1",
+  "batch": "B",
+  "category": "tower",
+  "level": 1,
+  "caption": "A stepped tower with three stacked sections and a stepped crown.",
+  "source_sha256": "9ad3b3c9ae96b0eb47281ba3c588f39f79105ab58cca0697b7dd384d28ff698f",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 201,
+  "normalization": {
+    "original_voxels": 769,
+    "target_voxels": 769,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "b434a95f9386fcc553b777ba4315d2ec958395f37890be4b11fb6f034d320e48",
+    "target_voxel_sha256": "b434a95f9386fcc553b777ba4315d2ec958395f37890be4b11fb6f034d320e48"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 201,
+    "voxels": 769,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "b434a95f9386fcc553b777ba4315d2ec958395f37890be4b11fb6f034d320e48",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.625,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 173,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 173,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 186,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 173,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 173,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 173,
+    "voxels": 769,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "b434a95f9386fcc553b777ba4315d2ec958395f37890be4b11fb6f034d320e48",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "e18aef53c0e3376170979b38c2d2902ab7e9fd3ed9d695970d4329007227d6a1",
+    "refined.txt": "f8dbd19140ac7cc9a428b2c7025e8b849550a7c5752854277c19cb53799c19d4",
+    "refined.json": "2cab4a750fa33c978c4ac756cf9b0f61cd4438ed51592093742f21d41e3cd538"
+  },
+  "ldr_path": "refined_ldr/B46_L1.ldr",
+  "elapsed_seconds": 1.703
+}

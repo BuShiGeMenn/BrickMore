@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A13_L1",
+  "batch": "A",
+  "category": "bookshelf",
+  "level": 1,
+  "caption": "An open shelf unit with five shelves, two side panels and an open back.",
+  "source_sha256": "c86223b7f9bac6389bf3b7df00d8733ac845156d776473a9704fe82893ecc3c0",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 335,
+  "normalization": {
+    "original_voxels": 2528,
+    "target_voxels": 2528,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "9b8ce5a7f6f359ed20cbce894dc2c23d6ea18a7a04ce1bada890a3013950d4b8",
+    "target_voxel_sha256": "9b8ce5a7f6f359ed20cbce894dc2c23d6ea18a7a04ce1bada890a3013950d4b8"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 335,
+    "voxels": 2528,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "9b8ce5a7f6f359ed20cbce894dc2c23d6ea18a7a04ce1bada890a3013950d4b8",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 3.657,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 307,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 307,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 307,
+    "voxels": 2528,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "9b8ce5a7f6f359ed20cbce894dc2c23d6ea18a7a04ce1bada890a3013950d4b8",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "34a5560b114c57652b0fb396309f1c8b1de9037788162d7745fc8d0fd09e90f6",
+    "refined.txt": "0d5f7eae09924973f4c17b67a09cc94e975b2d1dff4fc8d5697868ce5daf8798",
+    "refined.json": "5298007c044a7202d626bfa1dfc425144c8427b9ae25568fd1b1b6bdd1e59bd6"
+  },
+  "ldr_path": "refined_ldr/A13_L1.ldr",
+  "elapsed_seconds": 3.766
+}

@@ -1,0 +1,53 @@
+{
+  "prompt_id": "B20_L4",
+  "batch": "B",
+  "category": "car",
+  "level": 4,
+  "caption": "A station wagon with a long roof, a flat cargo cabin and four wheels. A boxy cabin carries windows and a trunk; four wheels join the chassis. Faceted body panels keep a constant thickness along the chassis. Overall width is 2.30 times depth; height is 0.48 times width. Parts follow functional positions.",
+  "source_sha256": "d7e7b484adbeaf53d1b2149649e3f858a9020bf12dc1e93e215f873f7f064be7",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 152,
+  "normalization": {
+    "original_voxels": 1018,
+    "target_voxels": 1018,
+    "duplicate_cell_occupancies": 5,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "d890fb0d1c35fdd941b5132da6dac0cec61d50a56e933a7011ca818237391812",
+    "target_voxel_sha256": "d890fb0d1c35fdd941b5132da6dac0cec61d50a56e933a7011ca818237391812"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 152,
+    "voxels": 1018,
+    "stud_components": 17,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 5,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "d890fb0d1c35fdd941b5132da6dac0cec61d50a56e933a7011ca818237391812",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    958,
+    30,
+    30
+  ],
+  "elapsed_seconds": 0.0
+}

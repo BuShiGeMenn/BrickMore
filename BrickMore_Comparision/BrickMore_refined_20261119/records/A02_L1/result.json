@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A02_L1",
+  "batch": "A",
+  "category": "basket",
+  "level": 1,
+  "caption": "A square storage basket with a closed base, four flat walls and two squared handles.",
+  "source_sha256": "cea8e7d0070da381a60010f9f37b294de97ca6f5c8e6804546a7ac74ef8a3f3f",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 613,
+  "normalization": {
+    "original_voxels": 2219,
+    "target_voxels": 2219,
+    "duplicate_cell_occupancies": 3,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "993d988b4315f1432856038f7644f853e613d5553b49ce6fdb1e7ac889365fc1",
+    "target_voxel_sha256": "993d988b4315f1432856038f7644f853e613d5553b49ce6fdb1e7ac889365fc1"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 613,
+    "voxels": 2219,
+    "stud_components": 13,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 3,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "993d988b4315f1432856038f7644f853e613d5553b49ce6fdb1e7ac889365fc1",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 15088,
+      "run_count": 175,
+      "flow_edges": 2410,
+      "budget_seconds": 12,
+      "seconds": 12.078000000001339,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 15088,
+      "run_count": 175,
+      "flow_edges": 2410,
+      "budget_seconds": 60,
+      "seconds": 51.98500000000058,
+      "solver_status": 0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "has_incumbent": true,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "method": "exact_cover_single_real_stud_run_flow",
+  "status": "passed",
+  "refined_bricks": 471,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 471,
+    "voxels": 2219,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "993d988b4315f1432856038f7644f853e613d5553b49ce6fdb1e7ac889365fc1",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "cc23b9dd4888ab56a91d238aaa391c41293ab7bf8d1af1f59b34c49a76cd6151",
+    "refined.txt": "c6f38f3b9fe40fc2c57071b4c570ac2d47842ec0573fb9d03eeb20666814aa2b",
+    "refined.json": "96fc88b7111e7890b5a870fadb16d129d31ccdfa99ef1b20c7e23de0d7af0f1a"
+  },
+  "ldr_path": "refined_ldr/A02_L1.ldr",
+  "elapsed_seconds": 64.125
+}

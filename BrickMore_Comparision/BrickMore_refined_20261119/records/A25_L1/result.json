@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A25_L1",
+  "batch": "A",
+  "category": "camera",
+  "level": 1,
+  "caption": "A compact camera with a small body, one front lens and a shutter button.",
+  "source_sha256": "0930a7e717b2a568f4dbdd4e8a6e14395347bc29f52cc53212a280f3335ff597",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 139,
+  "normalization": {
+    "original_voxels": 970,
+    "target_voxels": 970,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5b2cdfe0eabd767095f17a80e1464bf735f4488d5218767863cd9416f84ba21a",
+    "target_voxel_sha256": "5b2cdfe0eabd767095f17a80e1464bf735f4488d5218767863cd9416f84ba21a"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 139,
+    "voxels": 970,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "5b2cdfe0eabd767095f17a80e1464bf735f4488d5218767863cd9416f84ba21a",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.641,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 119,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 119,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 119,
+    "voxels": 970,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "5b2cdfe0eabd767095f17a80e1464bf735f4488d5218767863cd9416f84ba21a",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "f15c396eaa0bfdef5cf1dac1213e5c5f10e2f80e5ed25b001da8067d2fc226c9",
+    "refined.txt": "cbc7708984c28335b237c01c75eb1f3dd50cc85e44111c51f17ed53cc3d12d1f",
+    "refined.json": "f1c86f26e9aa94025ed7a8eb405cc02fc5cf398dbd8ba27521cffb1c7f4599f2"
+  },
+  "ldr_path": "refined_ldr/A25_L1.ldr",
+  "elapsed_seconds": 0.703
+}

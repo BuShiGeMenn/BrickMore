@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A19_L2",
+  "batch": "A",
+  "category": "bowl",
+  "level": 2,
+  "caption": "A round mixing bowl with a wide cavity, continuous walls and a sealed base. Continuous walls rise from a sealed base; the top edge stays open.",
+  "source_sha256": "684adc76e1f400d1a1e6aba6989045711080ed74dd6bcaa16bf7164c97a3bb21",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 276,
+  "normalization": {
+    "original_voxels": 1149,
+    "target_voxels": 1149,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "67748e694e571cd895aba78792d8ec2de90c095849fd4ea46d9e8aa4b2678dc4",
+    "target_voxel_sha256": "67748e694e571cd895aba78792d8ec2de90c095849fd4ea46d9e8aa4b2678dc4"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 276,
+    "voxels": 1149,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "67748e694e571cd895aba78792d8ec2de90c095849fd4ea46d9e8aa4b2678dc4",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.656,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 251,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 251,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 251,
+    "voxels": 1149,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "67748e694e571cd895aba78792d8ec2de90c095849fd4ea46d9e8aa4b2678dc4",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "a89222f32d694b94fe767ac4071edf54f3a4d3acca4c982a5bc9488d1217e0e4",
+    "refined.txt": "c8183ee2bc20f3013582cf285274bb1494fcff1c278277131fd90526d9824fd8",
+    "refined.json": "e1f06e71068e357777285ec625bc3eb0947b4ba6cfd0d4b2ad2d05f0edf06545"
+  },
+  "ldr_path": "refined_ldr/A19_L2.ldr",
+  "elapsed_seconds": 0.703
+}

@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B14_L1",
+  "batch": "B",
+  "category": "bowl",
+  "level": 1,
+  "caption": "A shallow fruit bowl with a wide shallow cavity and a low rim.",
+  "source_sha256": "12dcaa53beec40a4aa4efaeef0b5b8de479f2ef46898cec54540b2d0eaf2fc97",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 400,
+  "normalization": {
+    "original_voxels": 1818,
+    "target_voxels": 1818,
+    "duplicate_cell_occupancies": 3,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "af6b392d563557c47ad117115a4e78266f54cd53d2067c4c7cc8dca0e39a5375",
+    "target_voxel_sha256": "af6b392d563557c47ad117115a4e78266f54cd53d2067c4c7cc8dca0e39a5375"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 400,
+    "voxels": 1818,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 3,
+    "unsupported_from_below": 13,
+    "target_voxel_sha256": "af6b392d563557c47ad117115a4e78266f54cd53d2067c4c7cc8dca0e39a5375",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.797,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 346,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 346,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 346,
+    "voxels": 1818,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "af6b392d563557c47ad117115a4e78266f54cd53d2067c4c7cc8dca0e39a5375",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "c13eba60fdadc16db56db10d85724885b96dc52222a542c82717e4a934ac5804",
+    "refined.txt": "6865e7c3e154769ebfe7183102087f1178913b0f142731d1722709cd3a60aec8",
+    "refined.json": "56684af98faa5a6793d6df48ee56e40a5e66743d288c3443e73c7c7d260e72aa"
+  },
+  "ldr_path": "refined_ldr/B14_L1.ldr",
+  "elapsed_seconds": 0.875
+}

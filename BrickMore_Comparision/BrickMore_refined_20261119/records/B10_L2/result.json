@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B10_L2",
+  "batch": "B",
+  "category": "bookshelf",
+  "level": 2,
+  "caption": "A corner bookshelf with four corner shelves and two perpendicular sides. Four shelves join two straight side panels; each shelf keeps a clear gap.",
+  "source_sha256": "6d0459b1e0ce6305dcdf0668d5ae0570eef50a37a593617598cc2e6dbe8888cf",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 144,
+  "normalization": {
+    "original_voxels": 815,
+    "target_voxels": 815,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "69343a9101b80030301cdc0b7e14187eccc86bf39b244582f8dcc6afb90b4638",
+    "target_voxel_sha256": "69343a9101b80030301cdc0b7e14187eccc86bf39b244582f8dcc6afb90b4638"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 144,
+    "voxels": 815,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "69343a9101b80030301cdc0b7e14187eccc86bf39b244582f8dcc6afb90b4638",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.344,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 121,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 121,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 121,
+    "voxels": 815,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "69343a9101b80030301cdc0b7e14187eccc86bf39b244582f8dcc6afb90b4638",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "154e14ecf4b34c349bf1e2c1ebc8823583b5e722a5307f9b04a4f48e7a2064ae",
+    "refined.txt": "922016f86c922bb6fd0abdb157dfcdcbea99da73f0c78fb53c934c0d9df6fb07",
+    "refined.json": "2b539a9628d68d829309095e921209fea52520023f462060ca2bba995419edf8"
+  },
+  "ldr_path": "refined_ldr/B10_L2.ldr",
+  "elapsed_seconds": 0.407
+}

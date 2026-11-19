@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A28_L3",
+  "batch": "A",
+  "category": "car",
+  "level": 3,
+  "caption": "A sedan with a hood, a cabin with windows and a trunk. A cabin carries windows and a hood; four wheels attach below the body. Streamlined body panels keep an even thickness over the cabin.",
+  "source_sha256": "0c6351b0572e2688652661edd524030d5bd8c7bc498c6431be0a31f42d12c91f",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 176,
+  "normalization": {
+    "original_voxels": 1269,
+    "target_voxels": 1269,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "c8933f64b835ad23f70c4744021e87a8eab0661b260dc58df9c69fa97265edf3",
+    "target_voxel_sha256": "c8933f64b835ad23f70c4744021e87a8eab0661b260dc58df9c69fa97265edf3"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 176,
+    "voxels": 1269,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "c8933f64b835ad23f70c4744021e87a8eab0661b260dc58df9c69fa97265edf3",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.234,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 161,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 161,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 161,
+    "voxels": 1269,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "c8933f64b835ad23f70c4744021e87a8eab0661b260dc58df9c69fa97265edf3",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "049ee7c2c774b62c9d056557ce7c5298b2dccca4ab7b37b1e1efc71b4ba7ea8c",
+    "refined.txt": "36c5cb2c6f77c2c5c2f0cb1e94db1cb0f4b91abf8fc65d0e0df9c0330576e585",
+    "refined.json": "85fa710b2ea5eabef69f26d0fa35079b42527b48111dc156ad5a0f51eb6d22ef"
+  },
+  "ldr_path": "refined_ldr/A28_L3.ldr",
+  "elapsed_seconds": 2.312
+}

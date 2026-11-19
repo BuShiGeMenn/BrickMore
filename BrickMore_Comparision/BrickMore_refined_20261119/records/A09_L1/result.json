@@ -1,0 +1,139 @@
+{
+  "prompt_id": "A09_L1",
+  "batch": "A",
+  "category": "bench",
+  "level": 1,
+  "caption": "A curved park bench with a curved seat, a curved back and three curved supports.",
+  "source_sha256": "f0e9f9c8864bb07232bd41e64c542f98e9a6fda2d844ba27561d7f569012a76b",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 165,
+  "normalization": {
+    "original_voxels": 1109,
+    "target_voxels": 1109,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "c273ce5fed53cc9e6bcb01ae62bacda5c21860cb021f9eb70addadb966462438",
+    "target_voxel_sha256": "c273ce5fed53cc9e6bcb01ae62bacda5c21860cb021f9eb70addadb966462438"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 165,
+    "voxels": 1109,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "c273ce5fed53cc9e6bcb01ae62bacda5c21860cb021f9eb70addadb966462438",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.015,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 7,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 1,
+          "solution": false
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 8090,
+      "run_count": 202,
+      "flow_edges": 2778,
+      "budget_seconds": 12,
+      "seconds": 12.14100000000326,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "has_incumbent": true,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "exact_cover_single_real_stud_run_flow",
+  "status": "passed",
+  "refined_bricks": 201,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 201,
+    "voxels": 1109,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 33,
+    "target_voxel_sha256": "c273ce5fed53cc9e6bcb01ae62bacda5c21860cb021f9eb70addadb966462438",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "338f738bef7fca171d65e23dcabc240b569355dc7e63b56c2fbe85dc7b547d5b",
+    "refined.txt": "a8c24e16918eb6fa4c5ba30a92efb57780bb7b8d72e793345a36f07ed7d2ec5e",
+    "refined.json": "8357fe0bca2defde25fc602f3851c03ad59c7118627b23f22a1837f3d183fbd1"
+  },
+  "ldr_path": "refined_ldr/A09_L1.ldr",
+  "elapsed_seconds": 24.234
+}

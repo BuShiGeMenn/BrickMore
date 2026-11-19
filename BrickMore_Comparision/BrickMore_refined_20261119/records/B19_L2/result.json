@@ -1,0 +1,115 @@
+{
+  "prompt_id": "B19_L2",
+  "batch": "B",
+  "category": "car",
+  "level": 2,
+  "caption": "A hatchback with a short hood, a tall cabin and a rear door. A cabin carries windows and a hood; four wheels attach below the body.",
+  "source_sha256": "e31bf17a98c847fef00bbef527f1f567c18da5a6739f9f3806f1a7a9994c54d4",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 162,
+  "normalization": {
+    "original_voxels": 1082,
+    "target_voxels": 1082,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "0ca8256247cb228d82cc6eb330bf074aec9bed8faf10b3cef9b609511a9fe1ea",
+    "target_voxel_sha256": "0ca8256247cb228d82cc6eb330bf074aec9bed8faf10b3cef9b609511a9fe1ea"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 162,
+    "voxels": 1082,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 18,
+    "target_voxel_sha256": "0ca8256247cb228d82cc6eb330bf074aec9bed8faf10b3cef9b609511a9fe1ea",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 3.343,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 150,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 142,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 142,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 142,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 142,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 142,
+    "voxels": 1082,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "0ca8256247cb228d82cc6eb330bf074aec9bed8faf10b3cef9b609511a9fe1ea",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "96a4777b42561372c0f07eaccea79fa2f4d4cc975c415d8832bfdacd499995b8",
+    "refined.txt": "3ac5a618f07c18e6c230a732e3a0e8483b22147cc98f45167346a755f5dc442b",
+    "refined.json": "69b4d302395589a04be49a9e9efd34f484e425927f3211e5dbf9cec91fe29128"
+  },
+  "ldr_path": "refined_ldr/B19_L2.ldr",
+  "elapsed_seconds": 3.406
+}

@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A42_L4",
+  "batch": "A",
+  "category": "pot",
+  "level": 4,
+  "caption": "A casserole pot with a wide cavity, two side ears and a thick rim. Continuous walls enclose a cavity; two handles join opposite wall sides. Circular walls keep an even thickness with a sealed base and a thick rim. Overall width is 1.60 times depth; height is 0.40 times width. Parts follow functional positions.",
+  "source_sha256": "b4abbe98eb2b3d6c9e6db19696a421c6a0055378bc84b3ec538af1ab409be7aa",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 496,
+  "normalization": {
+    "original_voxels": 1869,
+    "target_voxels": 1869,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "637055ac96029ea874af6ee7ccff34d47a79d7aad6aede1d575f43eacbabb28e",
+    "target_voxel_sha256": "637055ac96029ea874af6ee7ccff34d47a79d7aad6aede1d575f43eacbabb28e"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 496,
+    "voxels": 1869,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 21,
+    "target_voxel_sha256": "637055ac96029ea874af6ee7ccff34d47a79d7aad6aede1d575f43eacbabb28e",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.704,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 446,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 446,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 446,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 446,
+    "voxels": 1869,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "637055ac96029ea874af6ee7ccff34d47a79d7aad6aede1d575f43eacbabb28e",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "287a6f955d14d8ca7f0ca4cc6cf04075da038a9abb4e597bcb1f9589ac4c0082",
+    "refined.txt": "0dcb1d9a225fe6121253eecc81894b6ca9f800144524beb51729f5abafad9728",
+    "refined.json": "863c381742b4a4786e5ba103a8eddc6d16408a05aa329bae30cb09c50354fdc7"
+  },
+  "ldr_path": "refined_ldr/A42_L4.ldr",
+  "elapsed_seconds": 2.782
+}

@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B53_L5",
+  "batch": "B",
+  "category": "vessel",
+  "level": 5,
+  "caption": "A ferry with a wide hull, two decks and a loading opening. A flat hull carries a deck and a cabin; square ends close the shell. Faceted hull panels keep a constant thickness along the keel. Overall width is 2.60 times depth; height is 0.75 times width. Parts follow functional positions. Continuous red, cream, charcoal color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "8f8d535443155a236d3d677594b58e71659f6ec7f7eb24238a314d8b373f96b6",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 170,
+  "normalization": {
+    "original_voxels": 833,
+    "target_voxels": 833,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "d92cc7ff9783c5c4f9b34e10ebcaa98d36ab84437b22bb8ce48fc5a85d2f3f85",
+    "target_voxel_sha256": "d92cc7ff9783c5c4f9b34e10ebcaa98d36ab84437b22bb8ce48fc5a85d2f3f85"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 170,
+    "voxels": 833,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "d92cc7ff9783c5c4f9b34e10ebcaa98d36ab84437b22bb8ce48fc5a85d2f3f85",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.031,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 142,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 143,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 143,
+    "voxels": 833,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "d92cc7ff9783c5c4f9b34e10ebcaa98d36ab84437b22bb8ce48fc5a85d2f3f85",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "8664fe02374144ee907340e1553ffe90e7810c2cd1e2782ced18dd6413be208e",
+    "refined.txt": "e63b4cc63a9e9f7173dbe4b7e7ee579064f7f9ff8a45825c8b271c3c7c711f86",
+    "refined.json": "9f2dedfcb509c429104a072a200b02563a7ab4f398cc3752d48feecd1d5d319d"
+  },
+  "ldr_path": "refined_ldr/B53_L5.ldr",
+  "elapsed_seconds": 1.094
+}

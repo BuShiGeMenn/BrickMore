@@ -1,0 +1,83 @@
+{
+  "prompt_id": "B41_L4",
+  "batch": "B",
+  "category": "sofa",
+  "level": 4,
+  "caption": "A chaise sofa with a long chaise cushion, a back and two arms. Cushions rest on the seat frame; a rear backrest and both arms join it. Rounded cushions keep an even thickness and attach continuously to the frame. Overall width is 2.10 times depth; height is 0.47 times width. Parts follow functional positions.",
+  "source_sha256": "94fcd8f14d755075373cf3f3a189f7cc5f93c4531d040b180042309c4bd92e7a",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 112,
+  "normalization": {
+    "original_voxels": 764,
+    "target_voxels": 764,
+    "duplicate_cell_occupancies": 8,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "707edf579da74455f059e4684acb4475ed07a08e865ec938f3d2bc999dd3e1c9",
+    "target_voxel_sha256": "707edf579da74455f059e4684acb4475ed07a08e865ec938f3d2bc999dd3e1c9"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 112,
+    "voxels": 764,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 8,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "707edf579da74455f059e4684acb4475ed07a08e865ec938f3d2bc999dd3e1c9",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 4.047,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 93,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 98,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 94,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 2,
+          "solution": false
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": true
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "elapsed_seconds": 4.047
+}

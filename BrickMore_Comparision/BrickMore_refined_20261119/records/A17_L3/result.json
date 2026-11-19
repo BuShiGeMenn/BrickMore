@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A17_L3",
+  "batch": "A",
+  "category": "bottle",
+  "level": 3,
+  "caption": "A tall soda bottle with a tall body, a narrow neck and an open mouth. A sealed base carries continuous walls; the shoulder narrows into a neck. Circular walls keep an even thickness and the neck stays continuous with the shoulder.",
+  "source_sha256": "633813b7d0540d414d63570b7e1d71505c67e02a65de6dbe0c37a421e0014d1e",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 308,
+  "normalization": {
+    "original_voxels": 1270,
+    "target_voxels": 1270,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "4aaa6209d658430e05c8a7bd0cb69a3589173f9c9520b143c384c564c8ca1812",
+    "target_voxel_sha256": "4aaa6209d658430e05c8a7bd0cb69a3589173f9c9520b143c384c564c8ca1812"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 308,
+    "voxels": 1270,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "4aaa6209d658430e05c8a7bd0cb69a3589173f9c9520b143c384c564c8ca1812",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.265,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 265,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 265,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 265,
+    "voxels": 1270,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "4aaa6209d658430e05c8a7bd0cb69a3589173f9c9520b143c384c564c8ca1812",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "c31f5492b4a95cf70fb6ae605acc59cb7a4f66a80bd70f7749a9d48107ed11cd",
+    "refined.txt": "818d00eb06561277903b15a4fe1ccd47cc48bee340940f58d6789dfdcc3c5225",
+    "refined.json": "bcaf1605c61c740c3c01a48d39a36f166d7fdfeca47c63b63571143841512c0b"
+  },
+  "ldr_path": "refined_ldr/A17_L3.ldr",
+  "elapsed_seconds": 0.312
+}

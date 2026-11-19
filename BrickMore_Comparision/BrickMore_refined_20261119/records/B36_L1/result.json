@@ -1,0 +1,108 @@
+{
+  "prompt_id": "B36_L1",
+  "batch": "B",
+  "category": "pot",
+  "level": 1,
+  "caption": "A stock pot with a deep cavity, two loop handles and a sealed base.",
+  "source_sha256": "7e534156a0f310a1a3f97431483cbdb41f15d75e080f559c3787c5a737e2856c",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 560,
+  "normalization": {
+    "original_voxels": 2074,
+    "target_voxels": 2074,
+    "duplicate_cell_occupancies": 9,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5091e96dd8f4036cc224426145d9f1a89fdd1b36f93cf9ea67109d8473fc8cf7",
+    "target_voxel_sha256": "5091e96dd8f4036cc224426145d9f1a89fdd1b36f93cf9ea67109d8473fc8cf7"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 560,
+    "voxels": 2074,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 9,
+    "unsupported_from_below": 21,
+    "target_voxel_sha256": "5091e96dd8f4036cc224426145d9f1a89fdd1b36f93cf9ea67109d8473fc8cf7",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.625,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 469,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 442,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 442,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 442,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 442,
+    "voxels": 2074,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "5091e96dd8f4036cc224426145d9f1a89fdd1b36f93cf9ea67109d8473fc8cf7",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "0d9219358c88483f0e63471158cd485dc751bf4ef7372b39a9ecb34850b774a3",
+    "refined.txt": "83404fc38b25af9c78aa2e406591c84d5989b1b04c397a1989b5d1f204dc886b",
+    "refined.json": "f404e3e70004bcd002beee3ba5ebb59b3e0bd3724212b9e2052f8c3414a97bab"
+  },
+  "ldr_path": "refined_ldr/B36_L1.ldr",
+  "elapsed_seconds": 1.719
+}

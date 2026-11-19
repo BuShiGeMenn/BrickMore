@@ -1,0 +1,129 @@
+{
+  "prompt_id": "A42_L1",
+  "batch": "A",
+  "category": "pot",
+  "level": 1,
+  "caption": "A casserole pot with a wide cavity, two side ears and a thick rim.",
+  "source_sha256": "3cbc2c07d933de8be32e70925e511e20cf85c2aa7fe3f123171baee1dd77d403",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 530,
+  "normalization": {
+    "original_voxels": 1844,
+    "target_voxels": 1844,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "d03e4438cc6e6a86d5ad9df88588e619d31c6ee002909d89d6dcacddf98b8326",
+    "target_voxel_sha256": "d03e4438cc6e6a86d5ad9df88588e619d31c6ee002909d89d6dcacddf98b8326"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 530,
+    "voxels": 1844,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "d03e4438cc6e6a86d5ad9df88588e619d31c6ee002909d89d6dcacddf98b8326",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.172,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 468,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 486,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 481,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 486,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 495,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 477,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 477,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 477,
+    "voxels": 1844,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "d03e4438cc6e6a86d5ad9df88588e619d31c6ee002909d89d6dcacddf98b8326",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "2337e2328649544bb7457b1c60aa21276a50208e0ea4fb461fd0619434417e50",
+    "refined.txt": "cb2c6b44ef4faa4df3baabf99f00719e80949962b7bab408364019aba18e628f",
+    "refined.json": "c240905c4e2f92c04934e017564a1e387a1e10bfcc6588451b0e368b1edebfcd"
+  },
+  "ldr_path": "refined_ldr/A42_L1.ldr",
+  "elapsed_seconds": 1.234
+}

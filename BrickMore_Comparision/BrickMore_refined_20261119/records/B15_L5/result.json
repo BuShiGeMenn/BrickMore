@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B15_L5",
+  "batch": "B",
+  "category": "bus",
+  "level": 5,
+  "caption": "A double decker bus with two window rows, a stair opening and four wheels. A boxy body carries side windows and a cab; four wheels join the chassis. Flat body panels keep a constant thickness along the chassis. Overall width is 3.20 times depth; height is 0.80 times width. Parts follow functional positions. Continuous red, cream, charcoal color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "97601daa7c3249834d619004090bca9eff11c250a70875838540e82d40513220",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 168,
+  "normalization": {
+    "original_voxels": 1313,
+    "target_voxels": 1313,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a931e8eb1f39ec4780310b72a945d64c65e29820b03e3ecf1dabe1c7312906a1",
+    "target_voxel_sha256": "a931e8eb1f39ec4780310b72a945d64c65e29820b03e3ecf1dabe1c7312906a1"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 168,
+    "voxels": 1313,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 18,
+    "target_voxel_sha256": "a931e8eb1f39ec4780310b72a945d64c65e29820b03e3ecf1dabe1c7312906a1",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.422,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 128,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 128,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 128,
+    "voxels": 1313,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "a931e8eb1f39ec4780310b72a945d64c65e29820b03e3ecf1dabe1c7312906a1",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "1f0f76681e374f8d42c6e3d3e47133ed919822dc4ed7924c01754442e12c3af3",
+    "refined.txt": "40221d70b3cb1268e46f14dd56b625a9108094180ad40b7a620abef2c016c154",
+    "refined.json": "efbb93118e0f0f2643449fc7f6267e526aab9ea1a44923674d0100e1fa707073"
+  },
+  "ldr_path": "refined_ldr/B15_L5.ldr",
+  "elapsed_seconds": 0.5
+}

@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A37_L5",
+  "batch": "A",
+  "category": "mug",
+  "level": 5,
+  "caption": "A tapered mug with a narrow base, a wider rim and one loop handle. A continuous wall rises from a sealed base; one loop handle joins it. Circular walls keep an even thickness and the handle leaves a real through hole. Overall width is 1.05 times depth; height is 0.80 times width. Parts follow functional positions. Continuous white, blue, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "a7148d014ba84408408c12faeaff379139499b36487f3e7258887d77feac30b2",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 186,
+  "normalization": {
+    "original_voxels": 879,
+    "target_voxels": 879,
+    "duplicate_cell_occupancies": 3,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "b80e5dc89818c3c6be3c459f92ed4e2169f338bdfe57f3fd5fcdfc8f5cb214da",
+    "target_voxel_sha256": "b80e5dc89818c3c6be3c459f92ed4e2169f338bdfe57f3fd5fcdfc8f5cb214da"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 186,
+    "voxels": 879,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 3,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "b80e5dc89818c3c6be3c459f92ed4e2169f338bdfe57f3fd5fcdfc8f5cb214da",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.235,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 172,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 172,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 172,
+    "voxels": 879,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "b80e5dc89818c3c6be3c459f92ed4e2169f338bdfe57f3fd5fcdfc8f5cb214da",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "332a4d4bb0cb615fb080541dc67bacf34312c1e18093d3d92563b6b8fe9ce85c",
+    "refined.txt": "1523f5a1b7ab86d54f70ad4cabd231c1510aa443dd60c6f779f106eb5cd14455",
+    "refined.json": "894686f717328f39e9c54c3326f88fc3126a5afd82f1a7de4815b4294b9c0b61"
+  },
+  "ldr_path": "refined_ldr/A37_L5.ldr",
+  "elapsed_seconds": 0.281
+}

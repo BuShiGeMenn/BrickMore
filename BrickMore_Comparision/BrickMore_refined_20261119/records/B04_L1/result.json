@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B04_L1",
+  "batch": "B",
+  "category": "bed",
+  "level": 1,
+  "caption": "A post bed with four tall corner posts, a raised frame and a mattress deck.",
+  "source_sha256": "31b3aaa77f94cae7c8e341845174444297582e19fcb7d1fed99ddb1c1234937d",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 144,
+  "normalization": {
+    "original_voxels": 969,
+    "target_voxels": 969,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "32a93fb024daa42b1edb89e4c79ba474f199328507afa1aab8e13d9d2271fcdb",
+    "target_voxel_sha256": "32a93fb024daa42b1edb89e4c79ba474f199328507afa1aab8e13d9d2271fcdb"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 144,
+    "voxels": 969,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 24,
+    "target_voxel_sha256": "32a93fb024daa42b1edb89e4c79ba474f199328507afa1aab8e13d9d2271fcdb",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.5,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 127,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 128,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 128,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 128,
+    "voxels": 969,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "32a93fb024daa42b1edb89e4c79ba474f199328507afa1aab8e13d9d2271fcdb",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "b31ccc4d8be8370da6b37518805b7f26b1a66f24cea76ec6dc9a3e5dc07201d9",
+    "refined.txt": "eb9e25345cf3ea09f69a31d043f8458093971dd85b69f9e999947065c206d52c",
+    "refined.json": "a389a786af93fc4e9e3bdd007d1f094069af83c2398c0ad5f9f2445de1999ff1"
+  },
+  "ldr_path": "refined_ldr/B04_L1.ldr",
+  "elapsed_seconds": 0.562
+}

@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B03_L3",
+  "batch": "B",
+  "category": "bed",
+  "level": 3,
+  "caption": "A panel bed with a slatted headboard, a matching footboard and four legs. A mattress rests on the frame; curved headboard and footboard join the frame sides. Rounded frame edges carry their continuously attached supports.",
+  "source_sha256": "ddfcc40b05a36ab06374108798724cbd45f919411fb1120c502afa7ea5d4837b",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 136,
+  "normalization": {
+    "original_voxels": 1017,
+    "target_voxels": 1017,
+    "duplicate_cell_occupancies": 9,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "3c14b48bc4231a7821a430516b4c7b1523b1975f3380cc134eee21d6f4e76ce2",
+    "target_voxel_sha256": "3c14b48bc4231a7821a430516b4c7b1523b1975f3380cc134eee21d6f4e76ce2"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 136,
+    "voxels": 1017,
+    "stud_components": 10,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 9,
+    "unsupported_from_below": 18,
+    "target_voxel_sha256": "3c14b48bc4231a7821a430516b4c7b1523b1975f3380cc134eee21d6f4e76ce2",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.485,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 120,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 123,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 123,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 123,
+    "voxels": 1017,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "3c14b48bc4231a7821a430516b4c7b1523b1975f3380cc134eee21d6f4e76ce2",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "a81e11da7447fc5a88e8ec61c3f300586296807e9bd3242203a8bf287ecb7830",
+    "refined.txt": "977510ee54c962256db0d56161545d77ba1b4693a9d8e8a93d9e08d19bfbdfea",
+    "refined.json": "16d142533c31960f4cb4510d7a14241acecbc2f9108aba4751fc32fb85ce163b"
+  },
+  "ldr_path": "refined_ldr/B03_L3.ldr",
+  "elapsed_seconds": 2.531
+}

@@ -1,0 +1,122 @@
+{
+  "prompt_id": "B27_L5",
+  "batch": "B",
+  "category": "jar",
+  "level": 5,
+  "caption": "A wide mouth jar with a wide mouth, a short neck and a sealed base. A sealed base carries rounded walls; a short wide neck ends in a mouth. Circular walls keep an even thickness up to the neck. Overall width is 1.00 times depth; height is 0.85 times width. Parts follow functional positions. Continuous cyan, white, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "32973b4615d5673ece45e9dc7b3c1c52990ac91d095c2b638fbf936d82aa84d7",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 249,
+  "normalization": {
+    "original_voxels": 1064,
+    "target_voxels": 1064,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "e2eaa0f9e2e7409e4add76fcec0b58a93abb771ad32d26f72093da3d21983910",
+    "target_voxel_sha256": "e2eaa0f9e2e7409e4add76fcec0b58a93abb771ad32d26f72093da3d21983910"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 249,
+    "voxels": 1064,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "e2eaa0f9e2e7409e4add76fcec0b58a93abb771ad32d26f72093da3d21983910",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 8.437,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 212,
+          "stud_components": 7,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 214,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 214,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 214,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 214,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 214,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 214,
+    "voxels": 1064,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "e2eaa0f9e2e7409e4add76fcec0b58a93abb771ad32d26f72093da3d21983910",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "b6909e38b4ca9fcf31ee475506a075aeb561e19bcae99f4c5a8879fa1fd0b119",
+    "refined.txt": "bd3d9e820e3e661959d1a320ee8f5ebd23be65fdced0214416a52aa79b4dbb42",
+    "refined.json": "6b2f3df775f5068b44c9d5bceaaddc1ca7d51c19d93084721a2fe15ceed7b67a"
+  },
+  "ldr_path": "refined_ldr/B27_L5.ldr",
+  "elapsed_seconds": 8.5
+}

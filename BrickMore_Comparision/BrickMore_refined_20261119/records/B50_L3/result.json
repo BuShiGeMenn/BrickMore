@@ -1,0 +1,143 @@
+{
+  "prompt_id": "B50_L3",
+  "batch": "B",
+  "category": "train",
+  "level": 3,
+  "caption": "A tram with a rounded body, large windows and four wheels. A body carries a cab and windows; wheels join the chassis beneath. Rounded body panels keep an even thickness along the chassis.",
+  "source_sha256": "407e81223ab5ae70899745e67998ea9ed5fda50290de7fb0a5641512cdebdf02",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 184,
+  "normalization": {
+    "original_voxels": 1111,
+    "target_voxels": 1111,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "396730a4094171950c46d0fe83024159f98352110e7a77482ac63c4c85688267",
+    "target_voxel_sha256": "396730a4094171950c46d0fe83024159f98352110e7a77482ac63c4c85688267"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 184,
+    "voxels": 1111,
+    "stud_components": 12,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 23,
+    "target_voxel_sha256": "396730a4094171950c46d0fe83024159f98352110e7a77482ac63c4c85688267",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.157,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 161,
+          "stud_components": 7,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 12381,
+      "run_count": 227,
+      "flow_edges": 3325,
+      "budget_seconds": 12,
+      "seconds": 12.093000000000757,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 60.063,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 161,
+          "stud_components": 7,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 441,
+          "stud_components": 14,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 1,
+          "brick_count": 161,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 1,
+          "brick_count": 161,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 161,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 161,
+    "voxels": 1111,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "396730a4094171950c46d0fe83024159f98352110e7a77482ac63c4c85688267",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "10ec0e3f55526e6a5c270909869dc04345927955c5456e03720f183fdabc4a46",
+    "refined.txt": "984b22069efa6a03c6ae9b849badb6a6a7a4086bfbd8690c1cb6f7dd3d029234",
+    "refined.json": "4fafabe4fc15bb5409f6a374a2ce840af5ec231149569fa4115c1dab981c301d"
+  },
+  "ldr_path": "refined_ldr/B50_L3.ldr",
+  "elapsed_seconds": 84.375
+}

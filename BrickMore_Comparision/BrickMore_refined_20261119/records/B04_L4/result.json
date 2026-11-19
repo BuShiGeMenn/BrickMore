@@ -1,0 +1,108 @@
+{
+  "prompt_id": "B04_L4",
+  "batch": "B",
+  "category": "bed",
+  "level": 4,
+  "caption": "A post bed with four tall corner posts, a raised frame and a mattress deck. A mattress rests on the frame; curved headboard and footboard join the frame sides. Rounded frame edges carry their continuously attached supports. Overall width is 1.40 times depth; height is 0.62 times width. Parts follow functional positions.",
+  "source_sha256": "2ed7d771c0b4fd832d31f514f68616bb305862b87e36c943f9341108bc01b289",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 114,
+  "normalization": {
+    "original_voxels": 895,
+    "target_voxels": 895,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "577e63f733890ac20bf9cb6c1889183112197dfd30c1f275f98d7bc31bceb977",
+    "target_voxel_sha256": "577e63f733890ac20bf9cb6c1889183112197dfd30c1f275f98d7bc31bceb977"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 114,
+    "voxels": 895,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "577e63f733890ac20bf9cb6c1889183112197dfd30c1f275f98d7bc31bceb977",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.765,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 101,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 101,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 101,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 101,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 101,
+    "voxels": 895,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 13,
+    "target_voxel_sha256": "577e63f733890ac20bf9cb6c1889183112197dfd30c1f275f98d7bc31bceb977",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "1f38d5a66ae0064808391359e175f973e99b234ffa379f0524595f0598e1f1d2",
+    "refined.txt": "624cc72fb1035daa92e6e8ac18e3ccc21daa98056399affb342022ebb3cc1a5c",
+    "refined.json": "06f3e0178a8d46913665dd63ab1be506d3190a4eee8da27f857e045ba1974f67"
+  },
+  "ldr_path": "refined_ldr/B04_L4.ldr",
+  "elapsed_seconds": 1.812
+}

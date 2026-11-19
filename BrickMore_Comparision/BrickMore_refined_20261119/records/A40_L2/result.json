@@ -1,0 +1,52 @@
+{
+  "prompt_id": "A40_L2",
+  "batch": "A",
+  "category": "piano",
+  "level": 2,
+  "caption": "A digital slab piano with a slim body, a full keyboard and a single support column. A full width keyboard sits on a shelf; the cabinet carries a straight lid.",
+  "source_sha256": "64dc6af765ec51d0673e4bc2772dcc9f87b787be512c26e3a6b56966bb535502",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 285,
+  "normalization": {
+    "original_voxels": 1317,
+    "target_voxels": 1317,
+    "duplicate_cell_occupancies": 25,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "1da0b119a653f20808e962ed2538b555a507ce6d70e15150809dbc11fd2418f6",
+    "target_voxel_sha256": "1da0b119a653f20808e962ed2538b555a507ce6d70e15150809dbc11fd2418f6"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 285,
+    "voxels": 1317,
+    "stud_components": 16,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 25,
+    "unsupported_from_below": 37,
+    "target_voxel_sha256": "1da0b119a653f20808e962ed2538b555a507ce6d70e15150809dbc11fd2418f6",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    1313,
+    4
+  ],
+  "elapsed_seconds": 0.0
+}

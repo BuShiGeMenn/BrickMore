@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B16_L1",
+  "batch": "B",
+  "category": "bus",
+  "level": 1,
+  "caption": "A minibus with a short body, side glass and four wheels.",
+  "source_sha256": "6743047ded67be5ef3908e627c87b583694cdc5e494304b3c4ec424eab911e9c",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 185,
+  "normalization": {
+    "original_voxels": 1346,
+    "target_voxels": 1346,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "07c042bc4d9d0a7d874c2fec08c9d52594d2be1dc3ffd0e8aec40cd8910db0e4",
+    "target_voxel_sha256": "07c042bc4d9d0a7d874c2fec08c9d52594d2be1dc3ffd0e8aec40cd8910db0e4"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 185,
+    "voxels": 1346,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "07c042bc4d9d0a7d874c2fec08c9d52594d2be1dc3ffd0e8aec40cd8910db0e4",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.063,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 166,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 204,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 204,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 204,
+    "voxels": 1346,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "07c042bc4d9d0a7d874c2fec08c9d52594d2be1dc3ffd0e8aec40cd8910db0e4",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "17658137620e55f97ddfbed393ef20569f3ffaa411ac9dfab2adfb0c285eaf5e",
+    "refined.txt": "04c780b3e877c4b38f3c8e12128ccc7b10fcd5a65c2228c32192da7ecd01e67d",
+    "refined.json": "02d4622b4e025c86d7e7aefc492243352b03a0455c9305b798ff7474df19c125"
+  },
+  "ldr_path": "refined_ldr/B16_L1.ldr",
+  "elapsed_seconds": 12.125
+}

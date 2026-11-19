@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A27_L1",
+  "batch": "A",
+  "category": "camera",
+  "level": 1,
+  "caption": "An action camera with a small sealed body, one wide lens and a mount stud.",
+  "source_sha256": "95a852b88033141f1d6f4d43cd573f72f21e3bd73f3ea8eafe498f704fc70477",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 191,
+  "normalization": {
+    "original_voxels": 965,
+    "target_voxels": 965,
+    "duplicate_cell_occupancies": 7,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a1d1d34752dcb85ca4b1423f33aee9d4c91d05e9e0ae6a1452203c8b47eebe09",
+    "target_voxel_sha256": "a1d1d34752dcb85ca4b1423f33aee9d4c91d05e9e0ae6a1452203c8b47eebe09"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 191,
+    "voxels": 965,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 7,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "a1d1d34752dcb85ca4b1423f33aee9d4c91d05e9e0ae6a1452203c8b47eebe09",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.625,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 134,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 134,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 134,
+    "voxels": 965,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "a1d1d34752dcb85ca4b1423f33aee9d4c91d05e9e0ae6a1452203c8b47eebe09",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "2761ed2e5bad1b76396b3d2b7bbd3b986ae790e4598c6b9eb3a7c71277f69491",
+    "refined.txt": "d67d081af6a80a240c7a0b751ac8b1623780df9e92ce98e10a42eee597b6f526",
+    "refined.json": "94d84b6f6c344a8900df7f03d3ac9339b1ad5f509eaa1aad2fa82e594a82e96d"
+  },
+  "ldr_path": "refined_ldr/A27_L1.ldr",
+  "elapsed_seconds": 0.672
+}

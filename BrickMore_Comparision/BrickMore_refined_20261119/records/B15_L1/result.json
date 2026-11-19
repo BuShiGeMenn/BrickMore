@@ -1,0 +1,53 @@
+{
+  "prompt_id": "B15_L1",
+  "batch": "B",
+  "category": "bus",
+  "level": 1,
+  "caption": "A double decker bus with two window rows, a stair opening and four wheels.",
+  "source_sha256": "7a16434fd760005a55ea99f56323edfe76939733b20c4848500f459972f99117",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 135,
+  "normalization": {
+    "original_voxels": 1046,
+    "target_voxels": 1046,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "d1eddb0bad91d4c88344450d7584c4868ae408b4191636234ef16e148f786cb9",
+    "target_voxel_sha256": "d1eddb0bad91d4c88344450d7584c4868ae408b4191636234ef16e148f786cb9"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 135,
+    "voxels": 1046,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 29,
+    "target_voxel_sha256": "d1eddb0bad91d4c88344450d7584c4868ae408b4191636234ef16e148f786cb9",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    1042,
+    2,
+    2
+  ],
+  "elapsed_seconds": 0.0
+}

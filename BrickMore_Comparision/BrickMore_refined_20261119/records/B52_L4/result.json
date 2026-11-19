@@ -1,0 +1,77 @@
+{
+  "prompt_id": "B52_L4",
+  "batch": "B",
+  "category": "vessel",
+  "level": 4,
+  "caption": "A motorboat with a short hull, an open deck and a windshield. A hull carries a deck and a cabin; the bow and stern close it. Curved hull surfaces keep an even thickness along the keel. Overall width is 1.25 times depth; height is 0.58 times width. Parts follow functional positions.",
+  "source_sha256": "9aa6a02421c7673fd729ab174ebdee51894ad98b6e852c47e1684af3d3a5b8ad",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 100,
+  "normalization": {
+    "original_voxels": 548,
+    "target_voxels": 548,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "891954d05ea0070f0ceaa76d5f81a2ac74fbc749e5663ee3995ddc12cafbd9b0",
+    "target_voxel_sha256": "891954d05ea0070f0ceaa76d5f81a2ac74fbc749e5663ee3995ddc12cafbd9b0"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 100,
+    "voxels": 548,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "891954d05ea0070f0ceaa76d5f81a2ac74fbc749e5663ee3995ddc12cafbd9b0",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 100,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 100,
+    "voxels": 548,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "891954d05ea0070f0ceaa76d5f81a2ac74fbc749e5663ee3995ddc12cafbd9b0",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "bb358cdec52dec9bff343b5d31261686e7e72ce5f7658941195b32ee61e8e285",
+    "refined.txt": "952750b945320a07d03f420b4096cfa9362e595fbf4709e08af74c08e4f6cf59",
+    "refined.json": "1dd60a9a4f6885906b5df1a466931a6e51b7648188044bca173f0fabfa824a1e"
+  },
+  "ldr_path": "refined_ldr/B52_L4.ldr",
+  "elapsed_seconds": 0.031
+}

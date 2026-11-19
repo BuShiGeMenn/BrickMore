@@ -1,0 +1,115 @@
+{
+  "prompt_id": "B27_L4",
+  "batch": "B",
+  "category": "jar",
+  "level": 4,
+  "caption": "A wide mouth jar with a wide mouth, a short neck and a sealed base. A sealed base carries rounded walls; a short wide neck ends in a mouth. Circular walls keep an even thickness up to the neck. Overall width is 1.00 times depth; height is 0.85 times width. Parts follow functional positions.",
+  "source_sha256": "2f3268613bf6b077fb5c1b1a1e6ff80eadd22fb45a375ec8b4cbba53cfd37e93",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 251,
+  "normalization": {
+    "original_voxels": 1076,
+    "target_voxels": 1076,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "b742e3dea46cd2c1dba13416250a4b8f0293f6cc85ca10fb1e77c2bbd2ff62f3",
+    "target_voxel_sha256": "b742e3dea46cd2c1dba13416250a4b8f0293f6cc85ca10fb1e77c2bbd2ff62f3"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 251,
+    "voxels": 1076,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "b742e3dea46cd2c1dba13416250a4b8f0293f6cc85ca10fb1e77c2bbd2ff62f3",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 6.906,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 208,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 210,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 210,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 210,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 210,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 210,
+    "voxels": 1076,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "b742e3dea46cd2c1dba13416250a4b8f0293f6cc85ca10fb1e77c2bbd2ff62f3",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "cc99c7891d58e2c046140a489370747633904aea17bea88f96152e9b9439b838",
+    "refined.txt": "b99e727e48c1d240e668ffbb39215552f1ee139b056ee356dbbd6e66a28612b1",
+    "refined.json": "528805d13a82473d74081ff9b69f7861a87cb3e3bfa31d60082db48878467175"
+  },
+  "ldr_path": "refined_ldr/B27_L4.ldr",
+  "elapsed_seconds": 6.953
+}

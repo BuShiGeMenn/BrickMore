@@ -1,0 +1,136 @@
+{
+  "prompt_id": "B24_L1",
+  "batch": "B",
+  "category": "guitar",
+  "level": 1,
+  "caption": "An acoustic guitar with a waisted body, a round sound hole and a long neck.",
+  "source_sha256": "d136372537c4a0fb9be093f62551fd4fcc6330984e2fa61e198b9d9018aa2cde",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 147,
+  "normalization": {
+    "original_voxels": 1515,
+    "target_voxels": 1515,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "0cc430f7b0fe7a6d4e13ff7045c25345a1a26e5b5a212f959ec51752edb09096",
+    "target_voxel_sha256": "0cc430f7b0fe7a6d4e13ff7045c25345a1a26e5b5a212f959ec51752edb09096"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 147,
+    "voxels": 1515,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "0cc430f7b0fe7a6d4e13ff7045c25345a1a26e5b5a212f959ec51752edb09096",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 5.875,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 129,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 129,
+    "voxels": 1515,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "0cc430f7b0fe7a6d4e13ff7045c25345a1a26e5b5a212f959ec51752edb09096",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "c1808314697d8f144b66d6f005d90b1f1d86841e1b6b20d23044dd20e91589bc",
+    "refined.txt": "73b1705bc0028c192e6e8b7aa34c9d0ca63f2c7c20254d3af9e42d5162ea354c",
+    "refined.json": "7fb159cc7d756d851c1951a5bdcaa63ece689f80655d6e8cda575fb80fa7b9a0"
+  },
+  "ldr_path": "refined_ldr/B24_L1.ldr",
+  "elapsed_seconds": 5.938
+}

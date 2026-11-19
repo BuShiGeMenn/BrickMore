@@ -1,0 +1,136 @@
+{
+  "prompt_id": "B09_L3",
+  "batch": "B",
+  "category": "bookshelf",
+  "level": 3,
+  "caption": "A tall bookcase with six shelves, a closed back and two tall sides. Four shelves join two straight side panels; each shelf keeps a clear gap. Flat side panels keep a constant thickness with straight shelf edges.",
+  "source_sha256": "f87961314f4c9beab8b71fc3e081d0150c8c8a0fbe4831d08c579a0767e23187",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 106,
+  "normalization": {
+    "original_voxels": 889,
+    "target_voxels": 889,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "e2c958ce76d6c3708d3a29586e203cc0fe9b00f8b2b8868b28fb64b51dd95958",
+    "target_voxel_sha256": "e2c958ce76d6c3708d3a29586e203cc0fe9b00f8b2b8868b28fb64b51dd95958"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 106,
+    "voxels": 889,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "e2c958ce76d6c3708d3a29586e203cc0fe9b00f8b2b8868b28fb64b51dd95958",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.594,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 85,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 80,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 80,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 80,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 80,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 80,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 80,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 80,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 80,
+    "voxels": 889,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "e2c958ce76d6c3708d3a29586e203cc0fe9b00f8b2b8868b28fb64b51dd95958",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "704052a4156285a99634e325b9fcd4a280615de97b046bcf947431389ccb6f4d",
+    "refined.txt": "1e2a9ea99570a3ecce6390e52f03a99a0616f9c7c4757532f7ced5fc149b29d6",
+    "refined.json": "98e8c0ba2bd4698f1000a4b0c7c8fd39dc44611c20765dad87b15037cd4b3cdc"
+  },
+  "ldr_path": "refined_ldr/B09_L3.ldr",
+  "elapsed_seconds": 1.641
+}

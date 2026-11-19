@@ -1,0 +1,108 @@
+{
+  "prompt_id": "A11_L2",
+  "batch": "A",
+  "category": "birdhouse",
+  "level": 2,
+  "caption": "A round hole cabin with a cubic chamber, one round entrance and a flat cap. Four walls form a chamber; a square entrance sits in the front.",
+  "source_sha256": "1c90ee8890977c9f0a994e3ae8a758179b9df46c1f2c93d22589414918469428",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 252,
+  "normalization": {
+    "original_voxels": 1076,
+    "target_voxels": 1076,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "88d828c03d1ec03a0607e5e509a83e43d6675c903c44fb95f79ec0f1f6e674b0",
+    "target_voxel_sha256": "88d828c03d1ec03a0607e5e509a83e43d6675c903c44fb95f79ec0f1f6e674b0"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 252,
+    "voxels": 1076,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "88d828c03d1ec03a0607e5e509a83e43d6675c903c44fb95f79ec0f1f6e674b0",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 5.782,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 230,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 232,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 232,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 232,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 232,
+    "voxels": 1076,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "88d828c03d1ec03a0607e5e509a83e43d6675c903c44fb95f79ec0f1f6e674b0",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "cf984666817c63397f3a42d1a49155d3b61e01640934d88f3fc94c6ed0ac47d7",
+    "refined.txt": "77b4d04d375852da4a69a47a0320136b779bc7bc0860eefe86548ce200a3ecb3",
+    "refined.json": "f81ad41c782617ca1c340f1d32cf396ed2091607f70d6bffd80dcddc7dcd4c6c"
+  },
+  "ldr_path": "refined_ldr/A11_L2.ldr",
+  "elapsed_seconds": 5.829
+}

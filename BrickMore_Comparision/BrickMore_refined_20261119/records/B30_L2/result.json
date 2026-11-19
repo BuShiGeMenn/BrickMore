@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B30_L2",
+  "batch": "B",
+  "category": "mug",
+  "level": 2,
+  "caption": "A straight mug with a straight wall, a sealed base and one loop handle. A continuous wall rises from a sealed base; one loop handle joins it.",
+  "source_sha256": "262f5457447b00acf23e2cf83d704653524218ba6bdd02c2081ddd3e5c5381ff",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 283,
+  "normalization": {
+    "original_voxels": 1255,
+    "target_voxels": 1255,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "e2f98e7668f5503edb5be348fe381176ca40c2a837d5e4ab312af3e4700f678f",
+    "target_voxel_sha256": "e2f98e7668f5503edb5be348fe381176ca40c2a837d5e4ab312af3e4700f678f"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 283,
+    "voxels": 1255,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "e2f98e7668f5503edb5be348fe381176ca40c2a837d5e4ab312af3e4700f678f",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 10.062,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 255,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 257,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 257,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 257,
+    "voxels": 1255,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "e2f98e7668f5503edb5be348fe381176ca40c2a837d5e4ab312af3e4700f678f",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "010b63e5b66ce98962deeb6876c0713b9dc847bf8c5236526ac7cec7fb9a04f4",
+    "refined.txt": "ce0786a4693d14351f69c5b655ca2426b8ad651d2690268502aabe12adb4a04b",
+    "refined.json": "5e39c3bee1d4a55fef65f3876e82ee1d93b8172b68703869adcf01094d5540aa"
+  },
+  "ldr_path": "refined_ldr/B30_L2.ldr",
+  "elapsed_seconds": 10.125
+}

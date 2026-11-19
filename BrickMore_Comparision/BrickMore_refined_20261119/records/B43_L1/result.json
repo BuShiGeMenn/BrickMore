@@ -1,0 +1,143 @@
+{
+  "prompt_id": "B43_L1",
+  "batch": "B",
+  "category": "table",
+  "level": 1,
+  "caption": "A coffee table with a low top, four short legs and a shelf beneath.",
+  "source_sha256": "5d24fa9f5cf4c247892f3e3fb2a492d844945e13775775f6f147815af88fa56a",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 208,
+  "normalization": {
+    "original_voxels": 1158,
+    "target_voxels": 1158,
+    "duplicate_cell_occupancies": 10,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "19a18773c27a01c7f1dfc2ed077472aad4fe66ca771a8d9f2c1aafbfb632e2f9",
+    "target_voxel_sha256": "19a18773c27a01c7f1dfc2ed077472aad4fe66ca771a8d9f2c1aafbfb632e2f9"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 208,
+    "voxels": 1158,
+    "stud_components": 12,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 10,
+    "unsupported_from_below": 23,
+    "target_voxel_sha256": "19a18773c27a01c7f1dfc2ed077472aad4fe66ca771a8d9f2c1aafbfb632e2f9",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.141,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 376,
+          "stud_components": 10,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 12130,
+      "run_count": 271,
+      "flow_edges": 4738,
+      "budget_seconds": 12,
+      "seconds": 12.156000000002678,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 54.172,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 168,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 408,
+          "stud_components": 28,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 168,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 168,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 168,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 168,
+    "voxels": 1158,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 18,
+    "target_voxel_sha256": "19a18773c27a01c7f1dfc2ed077472aad4fe66ca771a8d9f2c1aafbfb632e2f9",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "f80b63c4f1f0cc19cb195928ee0d61176c655d42c0184c7f3812764eb60214a5",
+    "refined.txt": "bcf3ca88c089cf2deef7f0455096b6cdf91457f43fba10c38126552a54bfdef5",
+    "refined.json": "0700e3dfa1098b25c763bd4b0052b33987cee53ae46280cc6fa6c2f653b9acd3"
+  },
+  "ldr_path": "refined_ldr/B43_L1.ldr",
+  "elapsed_seconds": 78.547
+}

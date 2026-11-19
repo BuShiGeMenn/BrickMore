@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A11_L1",
+  "batch": "A",
+  "category": "birdhouse",
+  "level": 1,
+  "caption": "A round hole cabin with a cubic chamber, one round entrance and a flat cap.",
+  "source_sha256": "e8e82f510665b9e542bd3ac4fa22e3ae928071e72a8d66804cdd8ca0d9245ab2",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 245,
+  "normalization": {
+    "original_voxels": 1078,
+    "target_voxels": 1078,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "21a6400b9cc2854d4de761564cdf85235c23e4f2d1dd0e08397378bb735ca63d",
+    "target_voxel_sha256": "21a6400b9cc2854d4de761564cdf85235c23e4f2d1dd0e08397378bb735ca63d"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 245,
+    "voxels": 1078,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "21a6400b9cc2854d4de761564cdf85235c23e4f2d1dd0e08397378bb735ca63d",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.328,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 196,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 196,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 196,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 196,
+    "voxels": 1078,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "21a6400b9cc2854d4de761564cdf85235c23e4f2d1dd0e08397378bb735ca63d",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "9661bdfc64513bcc6ac37a01912ebb67a85fdec0489b89eed0d5ad1bc986bdba",
+    "refined.txt": "d32e7aff80a55e741eb6cdb7ae6b84faf3fd1dd9cd7eaf2062b753067d6b3adb",
+    "refined.json": "957c6efe510f7d98f501ea43a87f337bd4f243a63be606a90ca8ec20597ade63"
+  },
+  "ldr_path": "refined_ldr/A11_L1.ldr",
+  "elapsed_seconds": 0.39
+}

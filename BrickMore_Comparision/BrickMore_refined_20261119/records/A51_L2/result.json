@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A51_L2",
+  "batch": "A",
+  "category": "vessel",
+  "level": 2,
+  "caption": "A cargo ship with a long hull, a cargo deck and a raised bridge. A flat hull carries a deck and a cabin; square ends close the shell.",
+  "source_sha256": "e061c01940205fd17988b497039d332cbc962e8784b22abc618d37c37f789616",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 235,
+  "normalization": {
+    "original_voxels": 1048,
+    "target_voxels": 1048,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "e97eb2b44e9a5f6b492e1d693a91d268c321ec6a10ae5b4bb2282dec84c10e1c",
+    "target_voxel_sha256": "e97eb2b44e9a5f6b492e1d693a91d268c321ec6a10ae5b4bb2282dec84c10e1c"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 235,
+    "voxels": 1048,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "e97eb2b44e9a5f6b492e1d693a91d268c321ec6a10ae5b4bb2282dec84c10e1c",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.313,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 222,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 222,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 222,
+    "voxels": 1048,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "e97eb2b44e9a5f6b492e1d693a91d268c321ec6a10ae5b4bb2282dec84c10e1c",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "6cba2509d7e57ad40b344998af52b7ad6608e67e92aee16c530cd2447ca62f90",
+    "refined.txt": "90488659b11fac524c4d254c4a1817b321fb60d6a6e30f7c460ef269498fad13",
+    "refined.json": "3b4b5570154e602739c3e04d8dcc2e783d25bc2193532801c7a2f097229ac23c"
+  },
+  "ldr_path": "refined_ldr/A51_L2.ldr",
+  "elapsed_seconds": 0.36
+}

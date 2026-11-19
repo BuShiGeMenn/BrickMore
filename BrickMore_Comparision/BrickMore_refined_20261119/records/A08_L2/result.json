@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A08_L2",
+  "batch": "A",
+  "category": "bench",
+  "level": 2,
+  "caption": "A backrest bench with a seat slab, a full backrest and four straight legs. A slatted seat spans two framed supports; the backrest joins the rear posts.",
+  "source_sha256": "9eb7480cd7d17c377a1074767e6f32b2af2d861c60395add96e4a8d4543c8850",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 133,
+  "normalization": {
+    "original_voxels": 1146,
+    "target_voxels": 1146,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "12de71d222194cd1cea11784c128397144393803926c4c4fa0c26c9527d12e1c",
+    "target_voxel_sha256": "12de71d222194cd1cea11784c128397144393803926c4c4fa0c26c9527d12e1c"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 133,
+    "voxels": 1146,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "12de71d222194cd1cea11784c128397144393803926c4c4fa0c26c9527d12e1c",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.781,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 129,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 129,
+    "voxels": 1146,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "12de71d222194cd1cea11784c128397144393803926c4c4fa0c26c9527d12e1c",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "60b0f4cfa3e90c52e6724d435cab80a514d662df453902d44f618a835dde0b3d",
+    "refined.txt": "6796e39b22716a57d1164e701688bfd418a9fb07b1dc8ce3249f92232807e165",
+    "refined.json": "6b18050975c0789f734e09f5ae0e7a4f64c3cd1a1827f4d05e4c28c286420d05"
+  },
+  "ldr_path": "refined_ldr/A08_L2.ldr",
+  "elapsed_seconds": 0.844
+}

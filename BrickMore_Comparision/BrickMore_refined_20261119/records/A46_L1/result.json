@@ -1,0 +1,115 @@
+{
+  "prompt_id": "A46_L1",
+  "batch": "A",
+  "category": "table",
+  "level": 1,
+  "caption": "A round cafe table with a round top, one column and three splayed feet.",
+  "source_sha256": "b4e0eafdd9b11f9204cb87a5c891aba01cd6db019d3615a101700e5639283d60",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 201,
+  "normalization": {
+    "original_voxels": 1017,
+    "target_voxels": 1017,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "3d432b11752237f4af2dc4d94e8c320022e1c35632be1cb6eeb29f33ed27df42",
+    "target_voxel_sha256": "3d432b11752237f4af2dc4d94e8c320022e1c35632be1cb6eeb29f33ed27df42"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 201,
+    "voxels": 1017,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 10,
+    "target_voxel_sha256": "3d432b11752237f4af2dc4d94e8c320022e1c35632be1cb6eeb29f33ed27df42",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 4.125,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 177,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 177,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 177,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 178,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 178,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 178,
+    "voxels": 1017,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "3d432b11752237f4af2dc4d94e8c320022e1c35632be1cb6eeb29f33ed27df42",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "b78d2f30b1cbcdb5f377ad559e295ace1c0e3a529c5eca790d2fff90f426a69c",
+    "refined.txt": "fdb016058a1e10bae74f91d6eac6c124dfe35d319c888209d6aac65217fb7648",
+    "refined.json": "182f066b338908c8bcb8cf8961fce91f63d2f724c4593897e1782a95a49ea6f0"
+  },
+  "ldr_path": "refined_ldr/A46_L1.ldr",
+  "elapsed_seconds": 4.172
+}

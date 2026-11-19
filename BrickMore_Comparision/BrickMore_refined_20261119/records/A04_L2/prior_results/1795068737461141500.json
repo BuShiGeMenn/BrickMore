@@ -1,0 +1,83 @@
+{
+  "prompt_id": "A04_L2",
+  "batch": "A",
+  "category": "bed",
+  "level": 2,
+  "caption": "A platform bed with a low frame, a mattress platform and four corner supports. A mattress rests on the frame; two straight end boards join the corners.",
+  "source_sha256": "0df1548f394f9824ebed80b3ee9bb362606fef5640e244650087324e8b52d423",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 142,
+  "normalization": {
+    "original_voxels": 949,
+    "target_voxels": 949,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "95eb44b4f094f05faa8b2cb58d928105c7a59c5869346c40d6a979acb3b69ee4",
+    "target_voxel_sha256": "95eb44b4f094f05faa8b2cb58d928105c7a59c5869346c40d6a979acb3b69ee4"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 142,
+    "voxels": 949,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "95eb44b4f094f05faa8b2cb58d928105c7a59c5869346c40d6a979acb3b69ee4",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 10475,
+      "run_count": 216,
+      "flow_edges": 3840,
+      "budget_seconds": 12,
+      "seconds": 12.06199999999808,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 10475,
+      "run_count": 216,
+      "flow_edges": 3840,
+      "budget_seconds": 60,
+      "seconds": 60.09399999999732,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 10475,
+      "run_count": 216,
+      "flow_edges": 3840,
+      "budget_seconds": 180,
+      "seconds": 180.07800000000134,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "status": "solver_budget_exhausted",
+  "elapsed_seconds": 252.234
+}

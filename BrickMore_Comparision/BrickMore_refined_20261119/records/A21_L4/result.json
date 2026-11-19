@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A21_L4",
+  "batch": "A",
+  "category": "bowl",
+  "level": 4,
+  "caption": "A footed bowl with a raised base ring, a bowl cavity and an open rim. Continuous walls rise from a sealed base; the top edge stays open. Circular walls keep an even thickness around the cavity. Overall width is 1.05 times depth; height is 0.48 times width. Parts follow functional positions.",
+  "source_sha256": "1fd71889c1d7599dd90decfe3c2c7b91e020a4ae96a991e3b1813daf90f297d0",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 527,
+  "normalization": {
+    "original_voxels": 1868,
+    "target_voxels": 1868,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "4f1d8d1bc3dbc09b227b6e10bd35c6879362ac00f133334e29b48ad1eabbe832",
+    "target_voxel_sha256": "4f1d8d1bc3dbc09b227b6e10bd35c6879362ac00f133334e29b48ad1eabbe832"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 527,
+    "voxels": 1868,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "4f1d8d1bc3dbc09b227b6e10bd35c6879362ac00f133334e29b48ad1eabbe832",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.156,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 490,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 490,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 490,
+    "voxels": 1868,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "4f1d8d1bc3dbc09b227b6e10bd35c6879362ac00f133334e29b48ad1eabbe832",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "eb5a857a05c843d67bfbfdbbd12c702cb4055410041f88767e72cf482bd26b1d",
+    "refined.txt": "981680ff70749788a3c873698c343dfb4badff1ce3c6fad577b9ebb81b409060",
+    "refined.json": "83cf25eb11a806cfaf7b80b2d900ee7b6ecf867d4a684c18083e208e096ef495"
+  },
+  "ldr_path": "refined_ldr/A21_L4.ldr",
+  "elapsed_seconds": 0.25
+}

@@ -1,0 +1,108 @@
+{
+  "prompt_id": "A36_L4",
+  "batch": "A",
+  "category": "jar",
+  "level": 4,
+  "caption": "A small spice jar with a short body, a small mouth and a flat lid. A sealed base carries faceted walls; a short neck carries a flat lid. Faceted walls keep a constant thickness with a stepped shoulder. Overall width is 1.00 times depth; height is 0.70 times width. Parts follow functional positions.",
+  "source_sha256": "441e650543bbe24b0f643ca3f983f257121cf77ad61d255587847fccbda64569",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 264,
+  "normalization": {
+    "original_voxels": 1126,
+    "target_voxels": 1126,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "b2d0cc8635535d1b8c88036390c6caf667f7bfdf23396174d9312cc2e6066717",
+    "target_voxel_sha256": "b2d0cc8635535d1b8c88036390c6caf667f7bfdf23396174d9312cc2e6066717"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 264,
+    "voxels": 1126,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "b2d0cc8635535d1b8c88036390c6caf667f7bfdf23396174d9312cc2e6066717",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 10.406,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 248,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 248,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 268,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 268,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 268,
+    "voxels": 1126,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 4,
+    "target_voxel_sha256": "b2d0cc8635535d1b8c88036390c6caf667f7bfdf23396174d9312cc2e6066717",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "38209699d4a629baae4ad36b939d49133fca0e8e752e8f486be5e7a0cdb0d5ca",
+    "refined.txt": "abb0471cd4af7ad9d584a7d268bfb9f83a87cca7d86f138fbdc4da929e8b3754",
+    "refined.json": "353c3a10d4316b9d0e32aa50f46c1ccb571903a24181e0c611455a9138c7c447"
+  },
+  "ldr_path": "refined_ldr/A36_L4.ldr",
+  "elapsed_seconds": 10.484
+}

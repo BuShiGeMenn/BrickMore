@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A43_L4",
+  "batch": "A",
+  "category": "sofa",
+  "level": 4,
+  "caption": "A two seat sofa with two seat cushions, a rear back and two side arms. Cushions rest on the seat frame; a rear backrest and both arms join it. Rounded cushions keep an even thickness and attach continuously to the frame. Overall width is 2.30 times depth; height is 0.45 times width. Parts follow functional positions.",
+  "source_sha256": "8925f6ccebb301e993506319347365ab18b383f289be6234c37ad474a6f3d087",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 108,
+  "normalization": {
+    "original_voxels": 1031,
+    "target_voxels": 1031,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "0e9160e128042c506ceee4966b8e38fb4e0140ef9d134b96f92ed806710fc507",
+    "target_voxel_sha256": "0e9160e128042c506ceee4966b8e38fb4e0140ef9d134b96f92ed806710fc507"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 108,
+    "voxels": 1031,
+    "stud_components": 2,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "0e9160e128042c506ceee4966b8e38fb4e0140ef9d134b96f92ed806710fc507",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 6.281,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 104,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 104,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 104,
+    "voxels": 1031,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 13,
+    "target_voxel_sha256": "0e9160e128042c506ceee4966b8e38fb4e0140ef9d134b96f92ed806710fc507",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "427141d4d217a1dbb8ef741020aa341889cdbb239db00f156d287ebd3a406ed6",
+    "refined.txt": "9b028c292536fe5bcb157e0b8d5258b5a5285cf6a9fbb6761928046c688ba5df",
+    "refined.json": "1a78fd39618702be37e2dc562270ccdc28ba4d2fb050ff0491ea776d8fbb0d23"
+  },
+  "ldr_path": "refined_ldr/A43_L4.ldr",
+  "elapsed_seconds": 6.328
+}

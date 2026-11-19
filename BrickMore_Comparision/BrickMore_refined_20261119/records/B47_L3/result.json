@@ -1,0 +1,83 @@
+{
+  "prompt_id": "B47_L3",
+  "batch": "B",
+  "category": "tower",
+  "level": 3,
+  "caption": "A tapered tower with a wide base, narrowing walls and a pointed crown. A continuous wall rises from a wide base; a narrowing crown caps the top. Circular walls keep an even thickness up to the crown.",
+  "source_sha256": "c88d65058d59d1dba0d1b3979533442d21a781fa37f7bbcf42327abd56bb4a6b",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 190,
+  "normalization": {
+    "original_voxels": 1107,
+    "target_voxels": 1107,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "828d9542b5ed48e84475645ac0ee8f9f7c8d98fda3b30b38add4713522bb20d2",
+    "target_voxel_sha256": "828d9542b5ed48e84475645ac0ee8f9f7c8d98fda3b30b38add4713522bb20d2"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 190,
+    "voxels": 1107,
+    "stud_components": 13,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "828d9542b5ed48e84475645ac0ee8f9f7c8d98fda3b30b38add4713522bb20d2",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.453,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 155,
+          "stud_components": 7,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 331,
+          "stud_components": 43,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 10311,
+      "run_count": 309,
+      "flow_edges": 4850,
+      "budget_seconds": 12,
+      "seconds": 0.4219999999986612,
+      "solver_status": 2,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": true
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "elapsed_seconds": 12.875
+}

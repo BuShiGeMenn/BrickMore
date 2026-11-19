@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B31_L4",
+  "batch": "B",
+  "category": "mug",
+  "level": 4,
+  "caption": "A faceted mug with four flat faces, a square rim and one angular handle. Four flat walls rise from a sealed base; one squared handle joins two faces. Faceted walls keep a constant thickness and the handle opening passes through. Overall width is 1.00 times depth; height is 0.82 times width. Parts follow functional positions.",
+  "source_sha256": "5df8289dfdf66f59f7311151706fe79ecb5d306e61fe80e2b43edd1e36b7fbe0",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 191,
+  "normalization": {
+    "original_voxels": 909,
+    "target_voxels": 909,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "20bf4f9a7eb2f7cf297a8e6808c60ade79080d4b852055852a0aa0402b62e185",
+    "target_voxel_sha256": "20bf4f9a7eb2f7cf297a8e6808c60ade79080d4b852055852a0aa0402b62e185"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 191,
+    "voxels": 909,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "20bf4f9a7eb2f7cf297a8e6808c60ade79080d4b852055852a0aa0402b62e185",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.875,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 163,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 163,
+    "voxels": 909,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "20bf4f9a7eb2f7cf297a8e6808c60ade79080d4b852055852a0aa0402b62e185",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "927c8fbe82adce0dae13dbb486fcc4a528118deeb3a5d023a0241bc3a795b992",
+    "refined.txt": "670fb61e3df1fe0333a0176074d932e4e6553d6b865e90399d2653a4852eede1",
+    "refined.json": "f2a7c25685614dc1e185ebac952b61712d4cd11af39168200af2e95dfdcf327c"
+  },
+  "ldr_path": "refined_ldr/B31_L4.ldr",
+  "elapsed_seconds": 2.937
+}

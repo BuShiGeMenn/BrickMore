@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B10_L1",
+  "batch": "B",
+  "category": "bookshelf",
+  "level": 1,
+  "caption": "A corner bookshelf with four corner shelves and two perpendicular sides.",
+  "source_sha256": "e8fb6da0fb68dca7dfcc1ed7dee9475bb148c7da82051a6ff47377dd791a784d",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 131,
+  "normalization": {
+    "original_voxels": 819,
+    "target_voxels": 819,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "3c2f907a6ed4ee7f95951ea5565c907bc45f8355969d687ae1a191afe931c4bb",
+    "target_voxel_sha256": "3c2f907a6ed4ee7f95951ea5565c907bc45f8355969d687ae1a191afe931c4bb"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 131,
+    "voxels": 819,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "3c2f907a6ed4ee7f95951ea5565c907bc45f8355969d687ae1a191afe931c4bb",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.156,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 119,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 119,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 119,
+    "voxels": 819,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "3c2f907a6ed4ee7f95951ea5565c907bc45f8355969d687ae1a191afe931c4bb",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "c4b52c010d91ea058780fb2c25c5d3cd021596c1808d533d865fb1e8d3388887",
+    "refined.txt": "979328ed086037d187f5485b03323b61cc8d0f0b884f4e8c5b812ab77044355b",
+    "refined.json": "58c44ff803f00aace51dd8e8c470ba343890090aa42da63a09c700de1a61241d"
+  },
+  "ldr_path": "refined_ldr/B10_L1.ldr",
+  "elapsed_seconds": 0.234
+}

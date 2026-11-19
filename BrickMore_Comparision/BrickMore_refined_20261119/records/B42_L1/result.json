@@ -1,0 +1,143 @@
+{
+  "prompt_id": "B42_L1",
+  "batch": "B",
+  "category": "table",
+  "level": 1,
+  "caption": "A dining table with a wide top, four legs and a straight apron.",
+  "source_sha256": "41740f0efc4125173bc8dba1bcfd294e78fac08568bac2f4642f000ce608638a",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 172,
+  "normalization": {
+    "original_voxels": 1075,
+    "target_voxels": 1075,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "774884fedc21375ccfda7704141034f0eb7a92ca0cd2f8dfd7ea95ee518b6424",
+    "target_voxel_sha256": "774884fedc21375ccfda7704141034f0eb7a92ca0cd2f8dfd7ea95ee518b6424"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 172,
+    "voxels": 1075,
+    "stud_components": 16,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 19,
+    "target_voxel_sha256": "774884fedc21375ccfda7704141034f0eb7a92ca0cd2f8dfd7ea95ee518b6424",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.25,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 401,
+          "stud_components": 17,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 11613,
+      "run_count": 257,
+      "flow_edges": 4298,
+      "budget_seconds": 12,
+      "seconds": 12.156000000002678,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 60.172,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 152,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 490,
+          "stud_components": 33,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 1,
+          "brick_count": 487,
+          "stud_components": 39,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 1,
+          "brick_count": 153,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 153,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 153,
+    "voxels": 1075,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 20,
+    "target_voxel_sha256": "774884fedc21375ccfda7704141034f0eb7a92ca0cd2f8dfd7ea95ee518b6424",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "485b842488cf9002def1fef60449dd533361aaea4b6a6d144e28c7b859bd2363",
+    "refined.txt": "68050de1907613e33cc98a2258b8c6060370db8539a5a0c1292cc645a75952b6",
+    "refined.json": "a78fa09786d1335af449925b49bdc911d21eef885b4325ab8cf56198b4c8d568"
+  },
+  "ldr_path": "refined_ldr/B42_L1.ldr",
+  "elapsed_seconds": 84.688
+}

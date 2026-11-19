@@ -1,0 +1,115 @@
+{
+  "prompt_id": "B49_L2",
+  "batch": "B",
+  "category": "train",
+  "level": 2,
+  "caption": "A freight wagon with an open bed, side walls and four wheels. A boxy body carries a cab and side windows; four wheels join the chassis.",
+  "source_sha256": "dac59613d8b98c7f56e0175fa4c26c1aa86d6a9cc753040a84921425c2121abb",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 167,
+  "normalization": {
+    "original_voxels": 943,
+    "target_voxels": 943,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "572c3ec6b81970edd7aa1c8c0c02555fc531093580a37dd52401838e3071d04e",
+    "target_voxel_sha256": "572c3ec6b81970edd7aa1c8c0c02555fc531093580a37dd52401838e3071d04e"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 167,
+    "voxels": 943,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "572c3ec6b81970edd7aa1c8c0c02555fc531093580a37dd52401838e3071d04e",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.187,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 122,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 128,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 127,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 123,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 123,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 123,
+    "voxels": 943,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "572c3ec6b81970edd7aa1c8c0c02555fc531093580a37dd52401838e3071d04e",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "528fcf52769354b7053882343abcebb327d4ef487aa7574658d0f5cb96d94d97",
+    "refined.txt": "fbab9a74335b83c8416dd2e94e6433c2742ba0e06a5f5a6a5ee2a633487ad1b0",
+    "refined.json": "7bfa8798acb9b1d62e8a8a2b6fa26dbafde70a3ab29836b9e5d53e0db3fe3e46"
+  },
+  "ldr_path": "refined_ldr/B49_L2.ldr",
+  "elapsed_seconds": 1.25
+}

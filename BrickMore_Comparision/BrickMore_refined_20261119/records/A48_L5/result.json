@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A48_L5",
+  "batch": "A",
+  "category": "tower",
+  "level": 5,
+  "caption": "A twin tower with two joined towers with two crowns. Four flat walls rise from a base; a stepped crown caps the top. Faceted walls keep a constant thickness with a stepped crown line. Overall width is 1.30 times depth; height is 2.10 times width. Parts follow functional positions. Continuous cream, dark brown, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "8dc2f6c79ca6fcfb734d21696b844b1b6cfd359af66a9fed47bd0163a0260a17",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 111,
+  "normalization": {
+    "original_voxels": 703,
+    "target_voxels": 703,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "793ed8b68a27c41d2f89867bf855f42c2b9543f5d452c496ccd466b139675fc7",
+    "target_voxel_sha256": "793ed8b68a27c41d2f89867bf855f42c2b9543f5d452c496ccd466b139675fc7"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 111,
+    "voxels": 703,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "793ed8b68a27c41d2f89867bf855f42c2b9543f5d452c496ccd466b139675fc7",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 3.984,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 97,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 97,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 97,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 97,
+    "voxels": 703,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 0,
+    "target_voxel_sha256": "793ed8b68a27c41d2f89867bf855f42c2b9543f5d452c496ccd466b139675fc7",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "672ad027b8017a2b9a360d304dd4659acd82359b5023d75a16220875e45ed60f",
+    "refined.txt": "f561b15cf62b4661b5421be0fe36d4c8a6303f3be67d569c1713d042ef3793b1",
+    "refined.json": "12b2ab4fe8a4370a7a6aad829f6d3618a9bf78bd5d4d5e5d88761fb8cb528f76"
+  },
+  "ldr_path": "refined_ldr/A48_L5.ldr",
+  "elapsed_seconds": 4.062
+}

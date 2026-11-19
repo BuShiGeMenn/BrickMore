@@ -1,0 +1,108 @@
+{
+  "prompt_id": "B42_L5",
+  "batch": "B",
+  "category": "table",
+  "level": 5,
+  "caption": "A dining table with a wide top, four legs and a straight apron. A framed top joins four legs; a straight apron links the legs. Flat tabletop panels keep a constant thickness with squared legs. Overall width is 1.55 times depth; height is 0.72 times width. Parts follow functional positions. Continuous oak brown, white, charcoal color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "6c0284ffe80b8d0e4719c6e93dba12dd94294bbc36ffe7c8b815357dd738ff3e",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 174,
+  "normalization": {
+    "original_voxels": 929,
+    "target_voxels": 929,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "0b7c932b9538b1ae3c50db717be5e4a2aa218d9bb5e04ea35c942db49e7b0e05",
+    "target_voxel_sha256": "0b7c932b9538b1ae3c50db717be5e4a2aa218d9bb5e04ea35c942db49e7b0e05"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 174,
+    "voxels": 929,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 23,
+    "target_voxel_sha256": "0b7c932b9538b1ae3c50db717be5e4a2aa218d9bb5e04ea35c942db49e7b0e05",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 9.954,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 147,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 147,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 147,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 147,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 147,
+    "voxels": 929,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "0b7c932b9538b1ae3c50db717be5e4a2aa218d9bb5e04ea35c942db49e7b0e05",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "a6cd002f6021d76bfa57018bbc4f05d259bc1c50663f424dd26dbaba2a2f37b8",
+    "refined.txt": "9cda3bda6c38e8340a145ff80471f56e729ae5604049cc706aaa49939b606716",
+    "refined.json": "e742d5b769d6bbab76b250633785ce838ac00743d893baf3fb0b87a72f19f94e"
+  },
+  "ldr_path": "refined_ldr/B42_L5.ldr",
+  "elapsed_seconds": 10.032
+}

@@ -1,0 +1,52 @@
+{
+  "prompt_id": "A52_L3",
+  "batch": "A",
+  "category": "vessel",
+  "level": 3,
+  "caption": "A tugboat with a short hull, a tall cabin and a towing post. A hull carries a deck and a cabin; the bow and stern close it. Curved hull surfaces keep an even thickness along the keel.",
+  "source_sha256": "f3103ce072b27bf97f57c03b00b1bcf3861b20eed91461085518c3fb7a06a17f",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 142,
+  "normalization": {
+    "original_voxels": 746,
+    "target_voxels": 746,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a164462a57224b311c7a8b906fba21623ae497efa64a84dffe26f6f12fb9b7b7",
+    "target_voxel_sha256": "a164462a57224b311c7a8b906fba21623ae497efa64a84dffe26f6f12fb9b7b7"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 142,
+    "voxels": 746,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "a164462a57224b311c7a8b906fba21623ae497efa64a84dffe26f6f12fb9b7b7",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+  "component_sizes": [
+    744,
+    2
+  ],
+  "elapsed_seconds": 0.0
+}

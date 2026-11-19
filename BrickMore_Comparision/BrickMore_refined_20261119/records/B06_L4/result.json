@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B06_L4",
+  "batch": "B",
+  "category": "bench",
+  "level": 4,
+  "caption": "A storage bench with a seat lid over a closed box and two side panels. A slatted seat spans two framed supports; the backrest joins the rear posts. Straight slats keep a constant thickness and the frame stays square. Overall width is 2.10 times depth; height is 0.50 times width. Parts follow functional positions.",
+  "source_sha256": "0141085c9cd089b3b6171ea9df08d2c19a49292dc076c785b39f71c729a681db",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 154,
+  "normalization": {
+    "original_voxels": 1446,
+    "target_voxels": 1446,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "085f961f1187a5be2f192ae9b939f8db71427e27953f25d2c4c68c5c2f4123b4",
+    "target_voxel_sha256": "085f961f1187a5be2f192ae9b939f8db71427e27953f25d2c4c68c5c2f4123b4"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 154,
+    "voxels": 1446,
+    "stud_components": 5,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "085f961f1187a5be2f192ae9b939f8db71427e27953f25d2c4c68c5c2f4123b4",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.515,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 141,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 141,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 141,
+    "voxels": 1446,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "085f961f1187a5be2f192ae9b939f8db71427e27953f25d2c4c68c5c2f4123b4",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "6c387e609b892d98a7ceb89680087aa72b4702034bd0983ed90e8ddf17c5132d",
+    "refined.txt": "e88c9abb27414bcdf4573c2b16304098851f7a3bcc6bef3c2e6a0600b9b51c4c",
+    "refined.json": "fa12e285cec65d11266d9f4906b242858d1aa3c61e914314e5a4cd8150bc4912"
+  },
+  "ldr_path": "refined_ldr/B06_L4.ldr",
+  "elapsed_seconds": 0.593
+}

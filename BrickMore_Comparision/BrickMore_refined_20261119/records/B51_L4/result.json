@@ -1,0 +1,90 @@
+{
+  "prompt_id": "B51_L4",
+  "batch": "B",
+  "category": "vessel",
+  "level": 4,
+  "caption": "A sailboat with a hull, a cabin and one mast base. A hull carries a deck and a cabin; the bow and stern close it. Curved hull surfaces keep an even thickness along the keel. Overall width is 1.10 times depth; height is 0.55 times width. Parts follow functional positions.",
+  "source_sha256": "b6770d7db01103fb300099c629fb3286f77390ef0f0adee38d03fd53e1a33e07",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 147,
+  "normalization": {
+    "original_voxels": 841,
+    "target_voxels": 841,
+    "duplicate_cell_occupancies": 3,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "98895c65d393eaad620db05820e8afc82dff4bf50f0c171b957077f339973408",
+    "target_voxel_sha256": "98895c65d393eaad620db05820e8afc82dff4bf50f0c171b957077f339973408"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 147,
+    "voxels": 841,
+    "stud_components": 8,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 3,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "98895c65d393eaad620db05820e8afc82dff4bf50f0c171b957077f339973408",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 3.969,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 119,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 121,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 131,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 121,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 2,
+          "solution": false
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": true
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "elapsed_seconds": 3.985
+}

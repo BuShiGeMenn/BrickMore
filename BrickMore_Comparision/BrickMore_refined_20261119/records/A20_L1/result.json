@@ -1,0 +1,115 @@
+{
+  "prompt_id": "A20_L1",
+  "batch": "A",
+  "category": "bowl",
+  "level": 1,
+  "caption": "A square serving bowl with four flat walls, an open rim and a sealed base.",
+  "source_sha256": "f0d4beb7a1daae13df4362f08b482f0c37d963c9f4930df27e7444cc1a1cd549",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 177,
+  "normalization": {
+    "original_voxels": 776,
+    "target_voxels": 776,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a33f5157e280e547f897afdd4557c6b3ed7ac636251b39fb80155ba0b90463d7",
+    "target_voxel_sha256": "a33f5157e280e547f897afdd4557c6b3ed7ac636251b39fb80155ba0b90463d7"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 177,
+    "voxels": 776,
+    "stud_components": 7,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 1,
+    "unsupported_from_below": 18,
+    "target_voxel_sha256": "a33f5157e280e547f897afdd4557c6b3ed7ac636251b39fb80155ba0b90463d7",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 4.125,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 139,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 139,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 139,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 139,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 139,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 139,
+    "voxels": 776,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "a33f5157e280e547f897afdd4557c6b3ed7ac636251b39fb80155ba0b90463d7",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "55c12fb84e20c777fa2b61542b41d01f41516f7b7126674b8669033210328348",
+    "refined.txt": "6af7c0f4b11e276ef73fc92c3fa5c7fc7e0ebcec747ab3a8d43f76153e6a8853",
+    "refined.json": "3ed5299313eb7b9ccf36ef44859260759f1c041f1798aa001f62ae776b5ee5b2"
+  },
+  "ldr_path": "refined_ldr/A20_L1.ldr",
+  "elapsed_seconds": 4.203
+}

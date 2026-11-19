@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A51_L3",
+  "batch": "A",
+  "category": "vessel",
+  "level": 3,
+  "caption": "A cargo ship with a long hull, a cargo deck and a raised bridge. A flat hull carries a deck and a cabin; square ends close the shell. Faceted hull panels keep a constant thickness along the keel.",
+  "source_sha256": "008d6f13b7ed9fab97350b1e116f05eaba0871339348393cb206ead8d3109222",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 164,
+  "normalization": {
+    "original_voxels": 979,
+    "target_voxels": 979,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "71609ddf390f554cafdff04176fdaa62df8bc6b9808ef08fa16042c04cef254f",
+    "target_voxel_sha256": "71609ddf390f554cafdff04176fdaa62df8bc6b9808ef08fa16042c04cef254f"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 164,
+    "voxels": 979,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "71609ddf390f554cafdff04176fdaa62df8bc6b9808ef08fa16042c04cef254f",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 1.969,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 140,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 140,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 140,
+    "voxels": 979,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "71609ddf390f554cafdff04176fdaa62df8bc6b9808ef08fa16042c04cef254f",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "dfcb80b0e2cf24c67f4b31f38d9cb4b8cc10ba9d225079e3b819ae95d9b785ef",
+    "refined.txt": "9d23489665f3cc261086d0a577db54017951334503257491a8996440cdf12832",
+    "refined.json": "d383892bbeb3ac7d66a3b985d6432b56a2f746146eeb6a31369ec16c2d4e680a"
+  },
+  "ldr_path": "refined_ldr/A51_L3.ldr",
+  "elapsed_seconds": 2.031
+}

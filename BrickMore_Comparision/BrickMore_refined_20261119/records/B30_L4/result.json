@@ -1,0 +1,81 @@
+{
+  "prompt_id": "B30_L4",
+  "batch": "B",
+  "category": "mug",
+  "level": 4,
+  "caption": "A straight mug with a straight wall, a sealed base and one loop handle. A continuous wall rises from a sealed base; one loop handle joins it. Circular walls keep an even thickness and the handle leaves a real through hole. Overall width is 1.00 times depth; height is 0.85 times width. Parts follow functional positions.",
+  "source_sha256": "4ed76db21083837d2e90e69a9d8912fe45c456390bd17ccdfa964360979e88b1",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 190,
+  "normalization": {
+    "original_voxels": 1051,
+    "target_voxels": 1051,
+    "duplicate_cell_occupancies": 4,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "2612ebb084088535938e3f225bf6b8cffe107e8db40e8b2213a14d0b00ff0a4e",
+    "target_voxel_sha256": "2612ebb084088535938e3f225bf6b8cffe107e8db40e8b2213a14d0b00ff0a4e"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 190,
+    "voxels": 1051,
+    "stud_components": 31,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 4,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "2612ebb084088535938e3f225bf6b8cffe107e8db40e8b2213a14d0b00ff0a4e",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.219,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 160,
+          "stud_components": 29,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 177,
+          "stud_components": 36,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 5135,
+      "run_count": 511,
+      "flow_edges": 4001,
+      "budget_seconds": 12,
+      "reason": "cell_has_no_brick_with_a_real_vertical_contact",
+      "seconds": 0.07800000000133878,
+      "certified_infeasible": true
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "elapsed_seconds": 12.328
+}

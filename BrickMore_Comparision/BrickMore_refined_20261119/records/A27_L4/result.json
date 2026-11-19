@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A27_L4",
+  "batch": "A",
+  "category": "camera",
+  "level": 4,
+  "caption": "An action camera with a small sealed body, one wide lens and a mount stud. A flat body carries a circular lens mount and a top dial. Boxy body panels keep a constant thickness at the lens mount. Overall width is 1.00 times depth; height is 0.75 times width. Parts follow functional positions.",
+  "source_sha256": "436f084e57bab52ea323c96995641b520ebc15dd74d35794ebe39471479528f3",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 629,
+  "normalization": {
+    "original_voxels": 2403,
+    "target_voxels": 2403,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "6a6de9ec448f87f6565e36081a43b735bdfde79d6313a5712e6652a513783d67",
+    "target_voxel_sha256": "6a6de9ec448f87f6565e36081a43b735bdfde79d6313a5712e6652a513783d67"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 629,
+    "voxels": 2403,
+    "stud_components": 11,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "6a6de9ec448f87f6565e36081a43b735bdfde79d6313a5712e6652a513783d67",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.578,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 561,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 563,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 563,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 563,
+    "voxels": 2403,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "6a6de9ec448f87f6565e36081a43b735bdfde79d6313a5712e6652a513783d67",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "22ae05231327133e4fec0841f541e5b7f625574d670abf9b76eed0b676220f47",
+    "refined.txt": "51b53cf486fd1c2a7f05015c3678a655f5c05ce71a2e8f65d5969c6fafd896bc",
+    "refined.json": "a3886045c49bdd6571e436056ca93a546e78319151df4dacf66e2d8f5906966b"
+  },
+  "ldr_path": "refined_ldr/A27_L4.ldr",
+  "elapsed_seconds": 0.687
+}

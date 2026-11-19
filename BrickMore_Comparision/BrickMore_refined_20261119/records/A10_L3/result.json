@@ -1,0 +1,94 @@
+{
+  "prompt_id": "A10_L3",
+  "batch": "A",
+  "category": "birdhouse",
+  "level": 3,
+  "caption": "A gable roof birdhouse with a closed chamber, a round entrance and a gable roof. Enclosed walls form a chamber; a round entrance pierces the front. Curved roof planes keep a constant thickness above the chamber walls.",
+  "source_sha256": "3c29b03ecd4790a0992f83bc44ce5a7f020fc69b522d6b8be72e278c07584575",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 183,
+  "normalization": {
+    "original_voxels": 863,
+    "target_voxels": 863,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "10ae5c99a1ee847bd2b150c2c1f381fcc1637a684f32d3b3c4dd3deae93c8f39",
+    "target_voxel_sha256": "10ae5c99a1ee847bd2b150c2c1f381fcc1637a684f32d3b3c4dd3deae93c8f39"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 183,
+    "voxels": 863,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "10ae5c99a1ee847bd2b150c2c1f381fcc1637a684f32d3b3c4dd3deae93c8f39",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.11,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 158,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 158,
+    "voxels": 863,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "10ae5c99a1ee847bd2b150c2c1f381fcc1637a684f32d3b3c4dd3deae93c8f39",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "aa97a24ad249d914818668dcde18f3a50a474bea6e7eb165c8d17e0656cd6da6",
+    "refined.txt": "5b21232ef78bfd5695b223a69e6951d0bff07bd06ea9742f51d763ca02be766d",
+    "refined.json": "00f3cbc7260fc54bc1faf318008a64c1dcf3fb188e1e3828142fe23bff6af448"
+  },
+  "ldr_path": "refined_ldr/A10_L3.ldr",
+  "elapsed_seconds": 0.188
+}

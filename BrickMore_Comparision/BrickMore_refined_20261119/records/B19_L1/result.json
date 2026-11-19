@@ -1,0 +1,122 @@
+{
+  "prompt_id": "B19_L1",
+  "batch": "B",
+  "category": "car",
+  "level": 1,
+  "caption": "A hatchback with a short hood, a tall cabin and a rear door.",
+  "source_sha256": "948d490ee6ff13f7da610ab3042abd18cf8b1b5286d4d2a7041d0e45529c2459",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 184,
+  "normalization": {
+    "original_voxels": 1234,
+    "target_voxels": 1234,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "df699376991b7ab926d4538aebc610d754ae57a6cd3ffe27c8f2549f934ac904",
+    "target_voxel_sha256": "df699376991b7ab926d4538aebc610d754ae57a6cd3ffe27c8f2549f934ac904"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 184,
+    "voxels": 1234,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 17,
+    "target_voxel_sha256": "df699376991b7ab926d4538aebc610d754ae57a6cd3ffe27c8f2549f934ac904",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 2.032,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 174,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 163,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 163,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 163,
+    "voxels": 1234,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "df699376991b7ab926d4538aebc610d754ae57a6cd3ffe27c8f2549f934ac904",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "0f452f087d5ae29cc14b541c83343a67f02191fda633bb7109fb064728073a6f",
+    "refined.txt": "52d2dbe1a80ac9e6429fb1f98617018a213b3348eae2bbc66abc3650618d7e96",
+    "refined.json": "fae75785abd10ee5bbb81ee87c3c20baa2ecfa4bb919189e026c0d0921fc3245"
+  },
+  "ldr_path": "refined_ldr/B19_L1.ldr",
+  "elapsed_seconds": 2.11
+}

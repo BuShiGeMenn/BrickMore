@@ -1,0 +1,143 @@
+{
+  "prompt_id": "A46_L4",
+  "batch": "A",
+  "category": "table",
+  "level": 4,
+  "caption": "A round cafe table with a round top, one column and three splayed feet. A continuous tabletop joins four legs; each leg reaches the ground. Rounded tabletop edges keep an even thickness above the legs. Overall width is 1.00 times depth; height is 0.72 times width. Parts follow functional positions.",
+  "source_sha256": "b5138375f0933c85a442f5856fbe3e1aae3b7ca1fd59cdc0dab472157a16ce4b",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 164,
+  "normalization": {
+    "original_voxels": 1001,
+    "target_voxels": 1001,
+    "duplicate_cell_occupancies": 6,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "fdbe2f5e6550f76e73165d5b621b9ef660c5fdcc53ca5286b7c6117053c817ae",
+    "target_voxel_sha256": "fdbe2f5e6550f76e73165d5b621b9ef660c5fdcc53ca5286b7c6117053c817ae"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 164,
+    "voxels": 1001,
+    "stud_components": 6,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 6,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "fdbe2f5e6550f76e73165d5b621b9ef660c5fdcc53ca5286b7c6117053c817ae",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.968,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 129,
+          "stud_components": 3,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 11811,
+      "run_count": 270,
+      "flow_edges": 4744,
+      "budget_seconds": 12,
+      "seconds": 12.078999999997905,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 53.609,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 129,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 129,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 129,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 129,
+    "voxels": 1001,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 16,
+    "target_voxel_sha256": "fdbe2f5e6550f76e73165d5b621b9ef660c5fdcc53ca5286b7c6117053c817ae",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "6501dd2d9b989e6cc49eb8e100c2d4aebd5a7f15524b5fe9543e41e251f17b29",
+    "refined.txt": "45612b387744f988695f242afd86f24ee6553d6e47a8684700abd7f422b968a6",
+    "refined.json": "3c386001fccd7f5f287544b5dd4279a13a115103442acd47a2f5c88c3d28aa5d"
+  },
+  "ldr_path": "refined_ldr/A46_L4.ldr",
+  "elapsed_seconds": 78.734
+}

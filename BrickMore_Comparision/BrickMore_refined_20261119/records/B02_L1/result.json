@@ -1,0 +1,101 @@
+{
+  "prompt_id": "B02_L1",
+  "batch": "B",
+  "category": "basket",
+  "level": 1,
+  "caption": "A shallow fruit basket with a low rim, a wide cavity and an arched carrying handle.",
+  "source_sha256": "b564487f3f3af5ddd76ebd557476fb5e9c0a703f62c0861b1049a3a65fc1a32c",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 606,
+  "normalization": {
+    "original_voxels": 2122,
+    "target_voxels": 2122,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "242ec05b8da81983f991af2dcc5880c2f00c0924941bd6231dafd4e49fb92d29",
+    "target_voxel_sha256": "242ec05b8da81983f991af2dcc5880c2f00c0924941bd6231dafd4e49fb92d29"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 606,
+    "voxels": 2122,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "242ec05b8da81983f991af2dcc5880c2f00c0924941bd6231dafd4e49fb92d29",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.516,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 572,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 537,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 537,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 537,
+    "voxels": 2122,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "242ec05b8da81983f991af2dcc5880c2f00c0924941bd6231dafd4e49fb92d29",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "7b2e1c20bb186fe19e592387f9f43a34438357baaa259720c9cde3e6d23fc8cd",
+    "refined.txt": "9c318efa79c8466d8673f29abe5b4210796b1997b11514d4a08e06baadab126e",
+    "refined.json": "0d8d86040fefb12386a803e406d9dbda6e9910a263e94c55820b8aae7a6cdaa7"
+  },
+  "ldr_path": "refined_ldr/B02_L1.ldr",
+  "elapsed_seconds": 0.594
+}

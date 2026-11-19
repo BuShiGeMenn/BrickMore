@@ -1,0 +1,132 @@
+{
+  "prompt_id": "B12_L5",
+  "batch": "B",
+  "category": "bottle",
+  "level": 5,
+  "caption": "A square flask bottle with a flat body, a short neck and a sealed base. A sealed base carries four flat walls; a stepped shoulder narrows to a neck. Faceted walls keep a constant thickness along the straight body. Overall width is 1.25 times depth; height is 0.75 times width. Parts follow functional positions. Continuous dark brown, tan, cream color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+  "source_sha256": "fdfb85fb752ab9b6a989d4a1849182dc398eb11c7ac5f7a2840d5976812f5d74",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 123,
+  "normalization": {
+    "original_voxels": 1046,
+    "target_voxels": 1046,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "eb8874a80cfa62f68e47b2d02e3ccb915b39a4537f2d022907f33a9489937061",
+    "target_voxel_sha256": "eb8874a80cfa62f68e47b2d02e3ccb915b39a4537f2d022907f33a9489937061"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 123,
+    "voxels": 1046,
+    "stud_components": 9,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 7,
+    "target_voxel_sha256": "eb8874a80cfa62f68e47b2d02e3ccb915b39a4537f2d022907f33a9489937061",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 4.485,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 100,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 100,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 100,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 107,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 101,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 101,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 109,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 7,
+          "status": 0,
+          "brick_count": 102,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 8,
+          "status": 0,
+          "brick_count": 102,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 9,
+          "status": 0,
+          "brick_count": 103,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 10,
+          "status": 2,
+          "solution": false
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": true
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "status": "infeasible_preserving_target",
+  "elapsed_seconds": 4.485
+}

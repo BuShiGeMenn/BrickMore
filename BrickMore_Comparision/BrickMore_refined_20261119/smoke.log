@@ -1,0 +1,20 @@
+START 8 jobs workers 2 tiers [12, 60, 180]
+DONE A01_L1 passed 309 0.047
+PROGRESS 1 / 525 {'passed': 1} active ['A01_L2', 'A01_L3'] elapsed_s 0
+DONE A01_L3 passed 347 0.812
+PROGRESS 2 / 525 {'passed': 2} active ['A01_L2', 'A01_L4'] elapsed_s 1
+DONE A01_L2 passed 430 12.563
+PROGRESS 3 / 525 {'passed': 3} active ['A01_L4', 'A01_L5'] elapsed_s 13
+DONE A01_L5 passed 170 8.657
+PROGRESS 4 / 525 {'passed': 4} active ['A01_L4', 'A02_L1'] elapsed_s 21
+PROGRESS 4 / 525 {'passed': 4} active ['A01_L4', 'A02_L1'] elapsed_s 41
+PROGRESS 4 / 525 {'passed': 4} active ['A01_L4', 'A02_L1'] elapsed_s 61
+DONE A01_L4 passed 319 74.078
+PROGRESS 6 / 525 {'passed': 5, 'infeasible_preserving_target': 1} active ['A02_L1', 'A02_L2'] elapsed_s 75
+DONE A02_L2 infeasible_preserving_target None 0.0
+PROGRESS 6 / 525 {'passed': 5, 'infeasible_preserving_target': 1} active ['A02_L1', 'A02_L3'] elapsed_s 75
+DONE A02_L3 passed 643 0.078
+PROGRESS 7 / 525 {'passed': 6, 'infeasible_preserving_target': 1} active ['A02_L1'] elapsed_s 75
+DONE A02_L1 passed 471 64.125
+PROGRESS 8 / 525 {'passed': 7, 'infeasible_preserving_target': 1} active [] elapsed_s 86
+FINISHED {"total": 525, "completed": 8, "finished": false, "status_counts": {"passed": 7, "infeasible_preserving_target": 1}, "active": [], "by_batch": {"A": {"passed": 7, "infeasible_preserving_target": 1}, "B": {}}, "source_already_passed": 2, "passed_with_clipped_target": 0, "physical_stability_tested": false}

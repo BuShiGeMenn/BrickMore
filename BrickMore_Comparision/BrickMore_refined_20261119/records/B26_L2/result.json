@@ -1,0 +1,94 @@
+{
+  "prompt_id": "B26_L2",
+  "batch": "B",
+  "category": "guitar",
+  "level": 2,
+  "caption": "A travel guitar with a short body, a compact neck and a small head. A waisted body joins a long neck; the headstock carries tuning studs.",
+  "source_sha256": "f2f1fd7bbec6c49dc07a754506ee921a00fa8d8fcbdb7ff8e5d54b3b09018321",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 177,
+  "normalization": {
+    "original_voxels": 1404,
+    "target_voxels": 1404,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "b6bdedee9737f90e63c56ffa9e7010cd45c880be00a7dcd46d3332fd2b0c85ce",
+    "target_voxel_sha256": "b6bdedee9737f90e63c56ffa9e7010cd45c880be00a7dcd46d3332fd2b0c85ce"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 177,
+    "voxels": 1404,
+    "stud_components": 3,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "b6bdedee9737f90e63c56ffa9e7010cd45c880be00a7dcd46d3332fd2b0c85ce",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 0.328,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 158,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 158,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 158,
+    "voxels": 1404,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "b6bdedee9737f90e63c56ffa9e7010cd45c880be00a7dcd46d3332fd2b0c85ce",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "7263b188a930b03e6d68ac26fbefd6870d2d348035de60e1b501d4b8e793a87c",
+    "refined.txt": "d3cc1ce58ef4d0f4a0f3bcb7e9e73ccf461b5746518245cfab33e74a3656e9b2",
+    "refined.json": "63e443da35319b8a823d5da3b86fd62a659d4fb96261ac7c44b647f11a8c729e"
+  },
+  "ldr_path": "refined_ldr/B26_L2.ldr",
+  "elapsed_seconds": 0.406
+}

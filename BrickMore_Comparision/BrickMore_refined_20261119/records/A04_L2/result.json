@@ -1,0 +1,101 @@
+{
+  "prompt_id": "A04_L2",
+  "batch": "A",
+  "category": "bed",
+  "level": 2,
+  "caption": "A platform bed with a low frame, a mattress platform and four corner supports. A mattress rests on the frame; two straight end boards join the corners.",
+  "source_sha256": "0df1548f394f9824ebed80b3ee9bb362606fef5640e244650087324e8b52d423",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 142,
+  "normalization": {
+    "original_voxels": 949,
+    "target_voxels": 949,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "95eb44b4f094f05faa8b2cb58d928105c7a59c5869346c40d6a979acb3b69ee4",
+    "target_voxel_sha256": "95eb44b4f094f05faa8b2cb58d928105c7a59c5869346c40d6a979acb3b69ee4"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 142,
+    "voxels": 949,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 14,
+    "target_voxel_sha256": "95eb44b4f094f05faa8b2cb58d928105c7a59c5869346c40d6a979acb3b69ee4",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 4.719,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 124,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 124,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 124,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 124,
+    "voxels": 949,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "95eb44b4f094f05faa8b2cb58d928105c7a59c5869346c40d6a979acb3b69ee4",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "791dcb98c51f534e971be6d40cfabf4fc4556cda775f6a2050070dbeb598441f",
+    "refined.txt": "a6cd7dfc26c42f2215ffc773d5de38053051c7effb9b55e4d89a0090d6a85da8",
+    "refined.json": "620abf0698ef5ba02888c503f6574c440ff6df4bc4ed011754a9ffec909b8908"
+  },
+  "ldr_path": "refined_ldr/A04_L2.ldr",
+  "elapsed_seconds": 5.125
+}

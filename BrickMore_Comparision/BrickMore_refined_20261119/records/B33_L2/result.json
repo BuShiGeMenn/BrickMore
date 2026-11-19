@@ -1,0 +1,77 @@
+{
+  "prompt_id": "B33_L2",
+  "batch": "B",
+  "category": "piano",
+  "level": 2,
+  "caption": "An upright piano with a tall cabinet, a full keyboard and two end panels. A full width keyboard sits on a shelf; the cabinet carries a straight lid.",
+  "source_sha256": "8c06eb7d569c02c7acadea9fa8911194af7dc767e9d4a346eb0a4b0588b4c6f6",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 117,
+  "normalization": {
+    "original_voxels": 1228,
+    "target_voxels": 1228,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "c7e7e4d3549a61ec5cb950de191c5b8afdd99b66a4078049e99e2f2cb835998b",
+    "target_voxel_sha256": "c7e7e4d3549a61ec5cb950de191c5b8afdd99b66a4078049e99e2f2cb835998b"
+  },
+  "raw_audit": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 117,
+    "voxels": 1228,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "c7e7e4d3549a61ec5cb950de191c5b8afdd99b66a4078049e99e2f2cb835998b",
+    "physical_stability_tested": false
+  },
+  "attempts": [],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "retained_original_already_single_stud_component",
+  "status": "passed",
+  "refined_bricks": 117,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 117,
+    "voxels": 1228,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "c7e7e4d3549a61ec5cb950de191c5b8afdd99b66a4078049e99e2f2cb835998b",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "86973dccc456adc30494dd5a71f7c28ba976a856baf7023ca056a118ee864d6b",
+    "refined.txt": "c04e90be6de2a8e780cf4944bd5e42d4cde81e906bb4bd2d82b37f098057873e",
+    "refined.json": "df17da44cf39d71ff1931338fadc1a8513fc5feb46a58da04cbcee17eb9c1759"
+  },
+  "ldr_path": "refined_ldr/B33_L2.ldr",
+  "elapsed_seconds": 0.031
+}
