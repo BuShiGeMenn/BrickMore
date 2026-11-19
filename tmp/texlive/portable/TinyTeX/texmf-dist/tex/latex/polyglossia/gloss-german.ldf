@@ -1,0 +1,390 @@
+\ProvidesFile{gloss-german.ldf}[2026/09/11 v2.13 polyglossia: module for German]
+
+\PolyglossiaSetup{german}{
+  bcp47=de-DE,
+  bcp47-language=de,
+  bcp47-region=DE,
+  bcp47-variant=1996,
+  bcp47-script=Latn,
+  hyphenmins={2,2},
+  frenchspacing=true,
+   langtag=DEU,
+  babelname=ngerman
+}
+
+% BCP-47 compliant aliases
+\setlanguagealias*{german}{de}
+\setlanguagealias*[variant=swiss,spelling=new]{german}{de-CH}
+\setlanguagealias*[variant=austrian,spelling=new]{german}{de-AT}
+\setlanguagealias*[variant=german,spelling=new]{german}{de-DE}
+\setlanguagealias*[variant=swiss,spelling=new,script=blackletter]{german}{de-Latf-CH}
+\setlanguagealias*[variant=german,spelling=new,script=blackletter]{german}{de-Latf-DE}
+\setlanguagealias*[variant=austrian,spelling=new,script=blackletter]{german}{de-Latf-AT}
+\setlanguagealias*[variant=austrian,spelling=old]{german}{de-AT-1901}
+\setlanguagealias*[variant=swiss,spelling=new]{german}{de-CH-1996}
+\setlanguagealias*[variant=austrian,spelling=new]{german}{de-AT-1996}
+\setlanguagealias*[variant=german,spelling=old]{german}{de-DE-1901}
+\setlanguagealias*[variant=swiss,spelling=old,script=blackletter]{german}{de-Latf-CH-1901}
+\setlanguagealias*[variant=swiss,spelling=old]{german}{de-CH-1901}
+\setlanguagealias*[variant=austrian,spelling=old,script=blackletter]{german}{de-Latf-AT-1901}
+\setlanguagealias*[variant=swiss,spelling=new,script=blackletter]{german}{de-Latf-CH-1996}
+\setlanguagealias*[script=blackletter]{german}{de-Latf}
+\setlanguagealias*[variant=german,spelling=new]{german}{de-DE-1996}
+\setlanguagealias*[variant=german,spelling=old,script=blackletter]{german}{de-Latf-DE-1901}
+\setlanguagealias*[variant=german,spelling=new,script=blackletter]{german}{de-Latf-DE-1996}
+\setlanguagealias*[variant=austrian,spelling=new,script=blackletter]{german}{de-Latf-AT-1996}
+
+% Babel aliases
+\setlanguagealias[variant=austrian,spelling=old]{german}{austrian}
+\setlanguagealias[variant=austrian,spelling=old]{german}{german-at-1901}
+\setlanguagealias[variant=austrian,spelling=old]{german}{german-austria-1901}
+\setlanguagealias[variant=austrian,spelling=new]{german}{naustrian}
+\setlanguagealias[variant=austrian,spelling=new]{german}{german-at}
+\setlanguagealias[variant=austrian,spelling=new]{german}{german-austria}
+\setlanguagealias[variant=german,spelling=old]{german}{germanb}
+\setlanguagealias[variant=german,spelling=old]{german}{german-de-1901}
+\setlanguagealias[variant=german,spelling=old]{german}{german-germany-1901}
+\setlanguagealias[variant=german,spelling=new]{german}{ngerman}
+\setlanguagealias[variant=german,spelling=new]{german}{german-de}
+\setlanguagealias[variant=german,spelling=new]{german}{german-germany}
+\setlanguagealias[variant=swiss,spelling=old]{german}{swissgerman}
+\setlanguagealias[variant=swiss,spelling=old]{german}{german-ch-1901}
+\setlanguagealias[variant=swiss,spelling=old]{german}{german-switzerland-1901}
+\setlanguagealias[variant=swiss,spelling=new]{german}{nswissgerman}
+\setlanguagealias[variant=swiss,spelling=new]{german}{german-ch}
+\setlanguagealias[variant=swiss,spelling=new]{german}{german-switzerland}
+
+\newif\if@german@oldspelling
+\@german@oldspellingfalse
+
+\newif\if@austrian@locale
+\@austrian@localefalse
+\newif\if@swiss@locale
+\@swiss@localefalse
+
+\def\german@set@babelname{%
+  \if@german@oldspelling
+     \if@swiss@locale
+         \if@german@blackletter
+           \SetLanguageKeys{german}{babelname=swissgerman,bcp47=de-Latf-CH-1901,bcp47-language=de,bcp47-region=CH,bcp47-variant=1901,bcp47-script=Latf}%
+         \else
+           \SetLanguageKeys{german}{babelname=swissgerman,bcp47=de-CH-1901,bcp47-language=de,bcp47-region=CH,bcp47-variant=1901,bcp47-script=Latn}%
+         \fi
+     \else
+     \if@austrian@locale
+         \if@german@blackletter
+            \SetLanguageKeys{german}{babelname=austrian,bcp47=de-Latf-AT-1901,bcp47-language=de,bcp47-region=AT,bcp47-variant=1901,bcp47-script=Latf}%
+         \else
+            \SetLanguageKeys{german}{babelname=austrian,bcp47=de-AT-1901,bcp47-language=de,bcp47-region=AT,bcp47-variant=1901,bcp47-script=Latn}%
+         \fi
+     \else
+         \if@german@blackletter
+            \SetLanguageKeys{german}{babelname=german,bcp47=de-Latf-DE-1901,bcp47-script=Latf,bcp47-language=de,bcp47-region=DE,bcp47-variant=1901,bcp47-script=Latf}%
+         \else
+            \SetLanguageKeys{german}{babelname=german,bcp47=de-DE-1901,bcp47-language=de,bcp47-region=DE,bcp47-variant=1901,bcp47-script=Latn}%
+         \fi
+     \fi\fi
+  \else
+     \if@swiss@locale
+         \if@german@blackletter
+           \SetLanguageKeys{german}{babelname=nswissgerman,bcp47=de-Latf-CH,bcp47-language=de,bcp47-region=CH,bcp47-variant=1996,bcp47-script=Latf}%
+         \else
+           \SetLanguageKeys{german}{babelname=nswissgerman,bcp47=de-CH,bcp47-language=de,bcp47-region=CH,bcp47-variant=1996,bcp47-script=Latn}%
+         \fi
+     \else
+     \if@austrian@locale
+         \if@german@blackletter
+           \SetLanguageKeys{german}{babelname=naustrian,bcp47=de-Latf-AT,bcp47-language=de,bcp47-region=AT,bcp47-variant=1996,bcp47-script=Latf}%
+         \else
+           \SetLanguageKeys{german}{babelname=naustrian,bcp47=de-AT,bcp47-language=de,bcp47-region=AT,bcp47-variant=1996,bcp47-script=Latn}%
+         \fi
+     \else
+         \if@german@blackletter
+           \SetLanguageKeys{german}{babelname=ngerman,bcp47=de-Latf-DE,bcp47-language=de,bcp47-region=DE,bcp47-variant=1996,bcp47-script=Latf}%
+         \else
+           \SetLanguageKeys{german}{babelname=ngerman,bcp47=de-DE,bcp47-language=de,bcp47-region=DE,bcp47-variant=1996,bcp47-script=Latn}%
+         \fi
+     \fi\fi
+  \fi
+}
+
+\newif\if@german@blackletter
+
+\DeclareKeys[polyglossia/gloss/german]
+  {
+    babelshorthands.if = german@babelshorthands,
+    babelshorthands.default:n = true,
+    latesthyphen.if = german@latesthyphen,
+    latesthyphen.default:n = true,
+    capitaleszett.choice:,
+    capitaleszett / true.code = 
+      {% MakeUppercase capitalizes the eszett (U+00DF) with U+1E9E
+        \SetLanguageKeys{german}{bcp47-casing=de-x-eszett,bcp47-extension-x=eszett}%
+      },
+    capitaleszett / false.code =
+      {% Capitalize eszett as <SS>
+        \SetLanguageKeys{german}{bcp47-casing=de,bcp47-extension-x={}}%
+      },
+    capitaleszett.default:n = true,
+    script.choice:,
+    script / latin.code =
+      {%
+        \@german@blackletterfalse
+        \german@set@babelname
+      },
+    script / blackletter.code =
+      {%
+        \@german@blacklettertrue
+        \german@set@babelname
+      },
+    script / fraktur.code =
+      {%
+        \@german@blacklettertrue
+        \german@set@babelname
+      },
+    script.default:n = latin,
+    script/unknown.code = \xpg@warning{Unknown German script `#1'},
+    spelling.choice:,
+    spelling / new.code =
+      {%
+        \@german@oldspellingfalse
+        \german@set@babelname
+      },
+    spelling / old.code =
+      {%
+        \@german@oldspellingtrue
+        \german@set@babelname
+      },
+    spelling / 1901.code =
+      {%
+        \@german@oldspellingtrue
+        \german@set@babelname
+      },
+    spelling / 1996.code =
+      {%
+        \@german@oldspellingfalse
+        \german@set@babelname
+      },
+    spelling.default:n = new,
+    spelling/unknown.code = \xpg@warning{Unknown German spelling `#1'},
+    variant.choice:,
+    variant / german.code =
+      {%
+        \@swiss@localefalse
+        \@austrian@localefalse
+        \german@set@babelname
+      },
+    variant / austrian.code =
+      {%
+        \@austrian@localetrue
+        \@swiss@localefalse
+        \german@set@babelname
+      },
+    variant / swiss.code =
+      {%
+        \@swiss@localetrue
+        \@austrian@localefalse
+        \IfLanguageDefinedF{swissgerman}
+           {%
+             \xpg@warning{No hyphenation patterns were loaded for "Swiss German (Old Spelling)"\MessageBreak
+	                  I will use the standard patterns for German (old spelling) instead}%
+	                 \adddialect\l@swissgerman\l@german\relax
+           }%
+        \german@set@babelname
+      },
+    variant.default:n = german,
+    variant/unknown.code = \xpg@warning{Unknown German variant `#1'}
+  }
+  
+
+\SetGlossOptions{german}{spelling,script,variant}
+
+\ifsystem@babelshorthands
+  \SetGlossOptions{german}{babelshorthands=true}
+  % Register default options
+  \InitializeGlossOptions{german}{variant=german,spelling=new,script=latin,babelshorthands=true}
+\else
+  \SetGlossOptions{german}{babelshorthands=false}
+  % Register default options
+  \InitializeGlossOptions{german}{variant=german,spelling=new,script=latin,babelshorthands=false}
+\fi
+
+% Register alias options
+\SetLanguageAliasValues{german}{spelling}{new,1996}
+\SetLanguageAliasValues{german}{spelling}{old,1901}
+\SetLanguageAliasValues{german}{script}{blackletter,fraktur}
+
+\InitializeBabelShorthands
+
+\def\xpg@disc@german#1#2#3{%
+  \if@german@oldspelling
+    \textormath{%
+      \xpg@allowhyphenationbefore\discretionary{#2-}{}{#1}%
+      \xpg@allowhyphenationafter
+    }{#1}% math
+  \else
+    #3%
+  \fi
+}
+
+\def\german@shorthands{%
+  \xpg@activate@shorthands%
+  \def\language@group{german}%
+  \declare@shorthand{german}{"`}{„}%
+  \declare@shorthand{german}{"'}{“}%
+  \declare@shorthand{german}{"<}{«}%
+  \declare@shorthand{german}{">}{»}%
+  \declare@shorthand{german}{"c}{\xpg@disc@german{c}{k}{c}}%
+  \declare@shorthand{german}{"C}{\xpg@disc@german{C}{K}{C}}%
+  \declare@shorthand{german}{"f}{\xpg@disc@german{f}{ff}{ff}}%
+  \declare@shorthand{german}{"F}{\xpg@disc@german{F}{FF}{FF}}%
+  \declare@shorthand{german}{"l}{\xpg@disc@german{l}{ll}{ll}}%
+  \declare@shorthand{german}{"L}{\xpg@disc@german{L}{LL}{LL}}%
+  \declare@shorthand{german}{"m}{\xpg@disc@german{m}{mm}{mm}}%
+  \declare@shorthand{german}{"M}{\xpg@disc@german{M}{MM}{MM}}%
+  \declare@shorthand{german}{"n}{\xpg@disc@german{n}{nn}{nn}}%
+  \declare@shorthand{german}{"N}{\xpg@disc@german{N}{NN}{NN}}%
+  \declare@shorthand{german}{"p}{\xpg@disc@german{p}{pp}{pp}}%
+  \declare@shorthand{german}{"P}{\xpg@disc@german{P}{PP}{PP}}%
+  \declare@shorthand{german}{"r}{\xpg@disc@german{r}{rr}{rr}}%
+  \declare@shorthand{german}{"R}{\xpg@disc@german{R}{RR}{RR}}%
+  \declare@shorthand{german}{"t}{\xpg@disc@german{t}{tt}{tt}}%
+  \declare@shorthand{german}{"T}{\xpg@disc@german{T}{TT}{TT}}%
+  \declare@shorthand{german}{"-}{\xpg@add@hyphenation@point}%
+  \declare@shorthand{german}{"|}{\xpg@ligature@break}%
+  \declare@shorthand{german}{""}{\xpg@invisible@break}%
+  \declare@shorthand{german}{"~}{\xpg@nobreak@hyphen}%
+  \declare@shorthand{german}{"=}{\xpg@breakable@hyphen}%
+  \declare@shorthand{german}{"/}{\xpg@breakable@slash}%
+  \if@german@oldspelling
+     \def\ck{\xpg@allowhyphenationbefore\discretionary{k-}{k}{ck}%
+             \xpg@allowhyphenationafter}%
+  \else
+     \def\ck{ck}%
+  \fi%
+  \def\germanabbrspace{\,}%
+  \declare@shorthand{german}{".}{%
+    \leavevmode\ifdim\lastskip>\z@\unskip\fi
+    .\germanabbrspace\ignorespaces%
+  }%
+  \def\mkgender{*}%
+  \declare@shorthand{german}{":}{%
+    \xpg@allowhyphenationbefore:\xpg@allowhyphenationafter
+  }%
+  \declare@shorthand{german}{"*}{%
+    \xpg@allowhyphenationbefore*\xpg@allowhyphenationafter
+  }%
+  \declare@shorthand{german}{"_}{%
+    \xpg@allowhyphenationbefore\_\xpg@allowhyphenationafter
+  }%
+  \declare@shorthand{german}{"x}{%
+    \xpg@allowhyphenationbefore\mkgender\xpg@allowhyphenationafter
+  }%
+}
+
+\def\nogerman@shorthands{%
+  \xpg@deactivate@shorthands%
+}
+
+\def\captions@german{%
+  \def\prefacename{Vorwort}%
+  \def\refname{Literatur}%
+  \def\abstractname{Zusammenfassung}%
+  \def\bibname{Literaturverzeichnis}%
+  \def\chaptername{Kapitel}%
+  \def\appendixname{Anhang}%
+  \def\contentsname{Inhaltsverzeichnis}%
+  \def\listfigurename{Abbildungsverzeichnis}%
+  \def\listtablename{Tabellenverzeichnis}%
+  \def\indexname{Index}%
+  \def\figurename{Abbildung}%
+  \def\tablename{Tabelle}%
+  \def\partname{Teil}%
+  \def\enclname{Anlage(n)}%
+  \def\ccname{Verteiler}%
+  \def\headtoname{An}%
+  \def\pagename{Seite}%
+  \def\seename{siehe}%
+  \def\alsoname{siehe auch}%
+  \def\proofname{Beweis}%
+  \def\glossaryname{Glossar}%
+}
+\def\date@german{%   
+  \def\today{\number\day.%
+    \space \ifcase\month%
+    \or\if@austrian@locale Jänner\else Januar\fi\or Februar\or März\or%
+    April\or Mai\or Juni\or Juli\or August\or September\or Oktober\or%
+    November\or Dezember\fi
+    \space \number\year}%
+}
+
+\def\captions@german@austrian{%
+  \def\enclname{Beilage(n)}%
+}
+
+\def\captions@german@swiss{%
+  \def\enclname{Beilage(n)}%
+}
+
+%%Strings for Fraktur contributed by Gerrit <z0idberg . gmx . de>
+\def\captions@german@blackletter{%
+  \captions@german%
+  \def\abstractname{Zuſammenfaſſung}%
+  \def\seename{ſiehe}%
+  \def\alsoname{ſiehe auch}%
+  \def\glossaryname{Gloſſar}%
+}
+
+\def\date@german@blackletter{%
+  \def\today{\number\day.%
+    \space \ifcase\month%
+    \or\if@austrian@locale Jänner\else Januar\fi\or Februar\or März\or%
+    April\or Mai\or Juni\or Juli\or Auguſt\or September\or Oktober\or%
+    November\or Dezember\fi
+    \space \number\year}%
+}
+
+\def\captionsgerman{%
+  \if@german@blackletter\captions@german@blackletter\else\captions@german\fi
+  \if@austrian@locale\captions@german@austrian\fi
+  \if@swiss@locale\captions@german@swiss\fi
+}
+
+\def\dategerman{%
+  \if@german@blackletter\date@german@blackletter\else\date@german\fi
+}
+
+\def\german@language{%
+  \if@german@oldspelling
+      \if@swiss@locale
+          \SetupPolyglossiaLangPatterns{swissgerman}%
+      \else
+          \SetupPolyglossiaLangPatterns{german}%
+      \fi
+      \if@austrian@locale
+         \AddDialectIfNeeded{austrian}{german}%
+      \fi
+  \else
+      \SetupPolyglossiaLangPatterns{ngerman}%
+      \if@austrian@locale
+          \AddDialectIfNeeded{naustrian}{ngerman}%
+      \fi
+      \if@swiss@locale
+         \AddDialectIfNeeded{nswissgerman}{ngerman}%
+      \fi
+  \fi
+}
+
+\def\noextras@german{%
+  \ifgerman@babelshorthands\nogerman@shorthands\fi%
+}
+
+\def\blockextras@german{%
+  \ifgerman@babelshorthands\german@shorthands\else\nogerman@shorthands\fi%
+}
+
+\def\inlineextras@german{%
+  \ifgerman@babelshorthands\german@shorthands\else\nogerman@shorthands\fi%
+}
+
+\endinput
