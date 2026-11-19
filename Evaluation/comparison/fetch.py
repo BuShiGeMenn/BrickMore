@@ -3,6 +3,7 @@ import argparse,json,re,subprocess,sys,urllib.parse
 from pathlib import Path
 from common import ROOT,dump
 from download import api,fetch
+from doctor import model_revisions
 
 CPU={'bricknet':'0.1.0','numpy':'2.2.6','scipy':'1.15.3','meshlib':'3.1.4.297','meshlib-core':'3.1.4.297',
      'platformdirs':'4.4.0','numba':'0.61.2','llvmlite':'0.44.0','pillow':'11.3.0'}
@@ -40,8 +41,9 @@ def wheels(dest):
     dump(dest/'wheel_manifest.json',dict(target='Linux x86_64 CPython3.12 glibc>=2.31',packages=manifest))
 
 def models(dest,which,endpoint):
+    revisions=model_revisions()
     for metric in which:
-        repo=REPOS[metric];metadata=api(endpoint+'/api/models/'+repo);revision=metadata['sha']
+        repo=REPOS[metric];revision=revisions.get(metric,{}).get('revision') or api(endpoint+'/api/models/'+repo)['sha']
         tree=api(endpoint+'/api/models/'+repo+'/tree/'+revision+'?recursive=true&expand=false')
         files=[f for f in tree if f['type']=='file' and '/' not in f['path'] and f['path'].endswith(('.json','.safetensors','.txt','.model','.jinja','.tiktoken','.bpe'))]
         if not any(f['path'].endswith('.safetensors') for f in files):files += [f for f in tree if f['type']=='file' and '/' not in f['path'] and f['path'].endswith('.bin')]

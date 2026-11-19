@@ -37,6 +37,8 @@ elif [[ "${BRICKMORE_LOAD_OLD_RUNTIME:-1}" == 1 && -f /mnt/brickmore-data/brickm
   set -u
 fi
 cd "$BRICKMORE_BUNDLE_ROOT"
+mkdir -p .runtime/tmp
+export TMPDIR="$BRICKMORE_BUNDLE_ROOT/.runtime/tmp"
 if [[ -n "${GPU_PYTHON:-}" ]]; then BRICKMORE_LAUNCHER="$GPU_PYTHON"
 elif [[ -n "${BRICKMORE_ENV:-}" && -x "$BRICKMORE_ENV/bin/python" ]]; then BRICKMORE_LAUNCHER="$BRICKMORE_ENV/bin/python"
 else BRICKMORE_LAUNCHER="$(command -v python3 || command -v python)"; fi
@@ -212,17 +214,23 @@ def stage(out):
     # shell options and variable values never acquire a trailing carriage return.
     for name,content in files.items():(out/name).write_bytes(content.replace('\r\n','\n').encode('utf-8'))
 
-def pack(out):
+def pack(out, archive=None, readme_copy=None):
     excluded={'Results','Downloads','.runtime','__pycache__'}
     files=[p for p in out.rglob('*') if p.is_file() and not any(part in excluded for part in p.relative_to(out).parts) and p.name!='CHECKSUMS.sha256']
     (out/'CHECKSUMS.sha256').write_bytes(''.join(sha(p)+'  '+p.relative_to(out).as_posix()+'\n' for p in sorted(files)).encode('utf-8'))
-    archive=WORKSPACE/'Deploy/brickmore-three-models-four-scores-20261110.tar.gz'
-    with tarfile.open(archive,'w:gz',compresslevel=6) as tar:
+    original=archive is None
+    archive=archive or WORKSPACE/'Deploy/brickmore-three-models-four-scores-20261110.tar.gz'
+    temporary=archive.with_name(archive.name+'.tmp')
+    with tarfile.open(temporary,'w:gz',compresslevel=6) as tar:
         for p in sorted(files+[out/'CHECKSUMS.sha256']):
-            info=tar.gettarinfo(str(p),arcname='BrickMoreComparison/'+p.relative_to(out).as_posix());info.mode=0o755 if p.suffix=='.sh' else 0o644
+            if p.suffix=='.sh' and b'\r' in p.read_bytes():raise ValueError('Shell script must use LF: '+str(p))
+            archive_root='BrickMoreComparison' if original else out.name
+            info=tar.gettarinfo(str(p),arcname=archive_root+'/'+p.relative_to(out).as_posix());info.mode=0o755 if p.suffix=='.sh' else 0o644
             with p.open('rb') as stream:tar.addfile(info,stream)
+    temporary.replace(archive)
     archive.with_name(archive.name+'.sha256').write_bytes((sha(archive)+'  '+archive.name+'\n').encode('ascii'))
-    shutil.copy2(out/'README_服务器运行.md',WORKSPACE/'Deploy/README_三模型四项测评_20261110.md')
+    if readme_copy or original:
+        shutil.copy2(out/'README_服务器运行.md',readme_copy or WORKSPACE/'Deploy/README_三模型四项测评_20261110.md')
     print('PACKAGED',archive,archive.stat().st_size,flush=True)
 
 if __name__=='__main__':

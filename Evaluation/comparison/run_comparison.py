@@ -61,7 +61,7 @@ def status(out,watch):
         if not path.exists():print('No run state: '+str(path));return
         value=json.loads(path.read_text(encoding='utf-8'))
         if watch and sys.stdout.isatty():print('\033[2J\033[H',end='')
-        print('Three-system evaluation | current='+str(value.get('current_stage')))
+        print('Model evaluation | current='+str(value.get('current_stage')))
         for name,item in value.get('stages',{}).items():
             n,t=item.get('done',0),item.get('total',0);print(f'{name:12} {item["status"]:12} {n:6}/{t:<6} {100*n/t if t else 0:6.1f}% '+item.get('sample_id',''))
         if not watch:return
@@ -71,16 +71,21 @@ def selected(a):
     items=rows(ROOT/'Data/manifest.jsonl')
     if a.scope=='primary':items=[r for r in items if r['primary']]
     if a.mode=='smoke':
-        chosen=[]
-        predicates=[lambda r:r['system']=='BrickMore' and r.get('reconstruction'),
-                    lambda r:r['system']=='BrickMore' and r.get('source_kind')=='regenerated',
-                    lambda r:r['system']=='BrickMore' and not r.get('reconstruction') and r.get('source_kind')!='regenerated',
-                    lambda r:r['system']=='BrickGPT',lambda r:r['system']=='BrickNet',
-                    lambda r:r['system']=='BrickNet' and r['category']=='car']
-        for pi,pred in enumerate(predicates):
-            row=next((r for r in items if (r['primary'] or pi==0) and pred(r) and r not in chosen),None)
-            if row:chosen.append(row)
-        items=chosen
+        audit_file=ROOT/'Data/input_audit.json'
+        prompt_ids=json.loads(audit_file.read_text(encoding='utf-8')).get('smoke_prompt_ids') if audit_file.is_file() else None
+        if prompt_ids:
+            items=[r for r in items if r['prompt_id'] in prompt_ids]
+        else:
+            chosen=[]
+            predicates=[lambda r:r['system']=='BrickMore' and r.get('reconstruction'),
+                        lambda r:r['system']=='BrickMore' and r.get('source_kind')=='regenerated',
+                        lambda r:r['system']=='BrickMore' and not r.get('reconstruction') and r.get('source_kind')!='regenerated',
+                        lambda r:r['system']=='BrickGPT',lambda r:r['system']=='BrickNet',
+                        lambda r:r['system']=='BrickNet' and r['category']=='car']
+            for pi,pred in enumerate(predicates):
+                row=next((r for r in items if (r['primary'] or pi==0) and pred(r) and r not in chosen),None)
+                if row:chosen.append(row)
+            items=chosen
     if a.limit:items=items[:a.limit]
     return items
 
@@ -104,7 +109,7 @@ def main():
     config=dict(bundle_manifest_sha256=sha(ROOT/'Data/manifest.jsonl'),scope=a.scope,mode=a.mode,limit=a.limit,
         sample_ids=[r['sample_id'] for r in items],cpu_only=a.cpu_only,structure_only=a.structure_only,device=a.device,workers=a.workers)
     print(json.dumps(dict(records=len(items),views=len(items)*8,primary=sum(r['primary'] for r in items),
-       counts={s:sum(r['system']==s for r in items) for s in ['BrickMore','BrickGPT','BrickNet']},
+       counts={s:sum(r['system']==s for r in items) for s in sorted({r['system'] for r in items})},
        models={'vqa':'Qwen/Qwen2.5-VL-7B-Instruct','pe':'timm/PE-Core-bigG-14-448','siglip2':'google/siglip2-giant-opt-patch16-384'}),indent=2),flush=True)
     if a.mode=='dry-run':print('DRY RUN OK: no model allocation or network access');return
     cp=out/'run_config.json'

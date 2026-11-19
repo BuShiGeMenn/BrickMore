@@ -5,6 +5,10 @@ from common import ROOT,dump,Progress
 
 REPOS={'vqa':'Qwen/Qwen2.5-VL-7B-Instruct','pe':'timm/PE-Core-bigG-14-448','siglip2':'google/siglip2-giant-opt-patch16-384'}
 
+def model_revisions():
+    path=ROOT/'Data/scoring_models.json'
+    return json.loads(path.read_text(encoding='utf-8')) if path.is_file() else {}
+
 def probe():
     modules=['numpy','scipy','numba','PIL','bricknet','meshlib','torch','torchvision','transformers','open_clip','qwen_vl_utils','huggingface_hub','accelerate']
     result=dict(python=sys.executable,version=sys.version,modules={m:importlib.util.find_spec(m) is not None for m in modules},models={})
@@ -35,10 +39,12 @@ def probe():
         except Exception as e:result['torch_error']=repr(e);result['cuda']=False
     if result['modules']['huggingface_hub']:
         from huggingface_hub import snapshot_download
+        revisions=model_revisions()
         for metric,repo in REPOS.items():
             try:
                 local=ROOT/'Downloads/models'/metric
-                path=local if local.is_dir() else Path(snapshot_download(repo,local_files_only=True))
+                revision=revisions.get(metric,{}).get('revision')
+                path=local if local.is_dir() else Path(snapshot_download(repo,revision=revision,local_files_only=True))
                 for file in ('config.json',) if metric!='pe' else ('open_clip_config.json',):
                     if not (path/file).is_file():raise ValueError(f'Missing {file}')
                 indices=list(path.glob('*.safetensors.index.json'))
@@ -46,7 +52,7 @@ def probe():
                     for index in indices:
                         missing=[name for name in set(json.loads(index.read_text())['weight_map'].values()) if not (path/name).is_file()]
                         if missing:raise ValueError(f'Missing weight shards: {missing}')
-                elif not list(path.glob('*.safetensors')):raise ValueError('No safetensors weights')
+                elif not any(file.is_file() for file in path.glob('*.safetensors')):raise ValueError('No readable safetensors weights')
                 if list(path.rglob('*.part')):raise ValueError('Incomplete .part model downloads')
                 if metric=='pe':
                     import open_clip
