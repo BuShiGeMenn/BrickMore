@@ -1,0 +1,2986 @@
+[
+  {
+    "prompt_id": "A02_L2",
+    "batch": "A",
+    "category": "basket",
+    "level": 2,
+    "caption": "A square storage basket with a closed base, four flat walls and two squared handles. Four flat walls enclose a cavity; two straight handles join opposite walls.",
+    "source_sha256": "d471fd3479643e17abe1ab4afec3abd4c6ae77ce37527c3886a3a16c942e1351",
+    "original_geometry_valid": false,
+    "original_generation_complete": false,
+    "raw_bricks": 643,
+    "normalization": {
+      "original_voxels": 2373,
+      "target_voxels": 2373,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "548684a8fec40e7dc83ffc9191fe6b8bb574a6bdabb7b188128ae53348832cf7",
+      "target_voxel_sha256": "548684a8fec40e7dc83ffc9191fe6b8bb574a6bdabb7b188128ae53348832cf7"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 643,
+      "voxels": 2373,
+      "stud_components": 6,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 11,
+      "target_voxel_sha256": "548684a8fec40e7dc83ffc9191fe6b8bb574a6bdabb7b188128ae53348832cf7",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      2372,
+      1
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "A03_L3",
+    "batch": "A",
+    "category": "basket",
+    "level": 3,
+    "caption": "A tall laundry basket with a tall cavity, an open top and one flat lift handle. Four flat walls enclose a cavity; two straight handles join opposite walls. Faceted walls keep a constant thickness and the rim repeats the square outline.",
+    "source_sha256": "1eff66b2d9a9da793dbedc62e220bf9ca34eceb721cc35ddd5a0c0df0d98e811",
+    "original_geometry_valid": false,
+    "original_generation_complete": true,
+    "raw_bricks": 572,
+    "normalization": {
+      "original_voxels": 2320,
+      "target_voxels": 2320,
+      "duplicate_cell_occupancies": 4,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "98dd665ad411aebdc703d39977bb1bf21b322c48cc9ead0e2fa8f2b6a0f31bc4",
+      "target_voxel_sha256": "98dd665ad411aebdc703d39977bb1bf21b322c48cc9ead0e2fa8f2b6a0f31bc4"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 572,
+      "voxels": 2320,
+      "stud_components": 12,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 4,
+      "unsupported_from_below": 3,
+      "target_voxel_sha256": "98dd665ad411aebdc703d39977bb1bf21b322c48cc9ead0e2fa8f2b6a0f31bc4",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "method": "exact_cover_single_real_stud_run_flow",
+        "candidate_count": 12908,
+        "run_count": 142,
+        "flow_edges": 1778,
+        "budget_seconds": 12,
+        "reason": "cell_has_no_brick_with_a_real_vertical_contact",
+        "seconds": 0.0930000000007567,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 0.093
+  },
+  {
+    "prompt_id": "A15_L3",
+    "batch": "A",
+    "category": "bookshelf",
+    "level": 3,
+    "caption": "A low console shelf with three wide shelves and two short side panels. Shelves join two curved side panels; each shelf leaves a clear gap. Curved side panels keep an even thickness with shelves attached along the inside.",
+    "source_sha256": "44b3da0dadfafd00bb8db031cf3184ec1642d58b89dda9341fed1510dae53c9b",
+    "original_geometry_valid": false,
+    "original_generation_complete": true,
+    "raw_bricks": 158,
+    "normalization": {
+      "original_voxels": 699,
+      "target_voxels": 699,
+      "duplicate_cell_occupancies": 9,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "5937d9cdf54f2de231abd8c5b019c0ebfab889a3b19b918b428ea713ce980e83",
+      "target_voxel_sha256": "5937d9cdf54f2de231abd8c5b019c0ebfab889a3b19b918b428ea713ce980e83"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 158,
+      "voxels": 699,
+      "stud_components": 17,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 9,
+      "unsupported_from_below": 9,
+      "target_voxel_sha256": "5937d9cdf54f2de231abd8c5b019c0ebfab889a3b19b918b428ea713ce980e83",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      696,
+      3
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "A17_L2",
+    "batch": "A",
+    "category": "bottle",
+    "level": 2,
+    "caption": "A tall soda bottle with a tall body, a narrow neck and an open mouth. A sealed base carries continuous walls; the shoulder narrows into a neck.",
+    "source_sha256": "cedf6922e66d87b90e2164307a3d27bf0e732a118d5125757a413bed28e8d691",
+    "original_geometry_valid": true,
+    "original_generation_complete": true,
+    "raw_bricks": 458,
+    "normalization": {
+      "original_voxels": 1441,
+      "target_voxels": 1441,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "dfbc37a0f3fcf329050f3eb66634a9f85412058a50c33ec172610df7d5574555",
+      "target_voxel_sha256": "dfbc37a0f3fcf329050f3eb66634a9f85412058a50c33ec172610df7d5574555"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 458,
+      "voxels": 1441,
+      "stud_components": 6,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 6,
+      "target_voxel_sha256": "dfbc37a0f3fcf329050f3eb66634a9f85412058a50c33ec172610df7d5574555",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 0.609,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 409,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 438,
+            "stud_components": 5,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 414,
+            "stud_components": 8,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 0,
+            "brick_count": 438,
+            "stud_components": 5,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 0,
+            "brick_count": 412,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 5,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 0.609
+  },
+  {
+    "prompt_id": "A30_L3",
+    "batch": "A",
+    "category": "car",
+    "level": 3,
+    "caption": "A sports coupe with a low cabin, a long hood and a short deck. A cabin carries windows and a hood; four wheels attach below the body. Streamlined body panels keep an even thickness over the cabin.",
+    "source_sha256": "6661a2887df0b1c2238d5564598bbe062a179c51484ffeff0c43f7f9ad7a0410",
+    "original_geometry_valid": false,
+    "original_generation_complete": true,
+    "raw_bricks": 90,
+    "normalization": {
+      "original_voxels": 609,
+      "target_voxels": 609,
+      "duplicate_cell_occupancies": 1,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "6e769127800f2c5a7eec29f0f7a7598614aeefffffa64f22db15433a793d2a06",
+      "target_voxel_sha256": "6e769127800f2c5a7eec29f0f7a7598614aeefffffa64f22db15433a793d2a06"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 90,
+      "voxels": 609,
+      "stud_components": 11,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 1,
+      "unsupported_from_below": 13,
+      "target_voxel_sha256": "6e769127800f2c5a7eec29f0f7a7598614aeefffffa64f22db15433a793d2a06",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      595,
+      14
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "A37_L1",
+    "batch": "A",
+    "category": "mug",
+    "level": 1,
+    "caption": "A tapered mug with a narrow base, a wider rim and one loop handle.",
+    "source_sha256": "b298234244af65bcbd28f395b6b64b90bd772e7fde26990581d5955ef3257002",
+    "original_geometry_valid": true,
+    "original_generation_complete": true,
+    "raw_bricks": 204,
+    "normalization": {
+      "original_voxels": 871,
+      "target_voxels": 871,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "236672c5b6e1276ad4c5bcecdb95c23c84eedc3447ed92411dbd67c05fb6e987",
+      "target_voxel_sha256": "236672c5b6e1276ad4c5bcecdb95c23c84eedc3447ed92411dbd67c05fb6e987"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 204,
+      "voxels": 871,
+      "stud_components": 7,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 20,
+      "target_voxel_sha256": "236672c5b6e1276ad4c5bcecdb95c23c84eedc3447ed92411dbd67c05fb6e987",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 2.5,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 178,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 178,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 179,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 2.5
+  },
+  {
+    "prompt_id": "A40_L2",
+    "batch": "A",
+    "category": "piano",
+    "level": 2,
+    "caption": "A digital slab piano with a slim body, a full keyboard and a single support column. A full width keyboard sits on a shelf; the cabinet carries a straight lid.",
+    "source_sha256": "64dc6af765ec51d0673e4bc2772dcc9f87b787be512c26e3a6b56966bb535502",
+    "original_geometry_valid": false,
+    "original_generation_complete": true,
+    "raw_bricks": 285,
+    "normalization": {
+      "original_voxels": 1317,
+      "target_voxels": 1317,
+      "duplicate_cell_occupancies": 25,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "1da0b119a653f20808e962ed2538b555a507ce6d70e15150809dbc11fd2418f6",
+      "target_voxel_sha256": "1da0b119a653f20808e962ed2538b555a507ce6d70e15150809dbc11fd2418f6"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 285,
+      "voxels": 1317,
+      "stud_components": 16,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 25,
+      "unsupported_from_below": 37,
+      "target_voxel_sha256": "1da0b119a653f20808e962ed2538b555a507ce6d70e15150809dbc11fd2418f6",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      1313,
+      4
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "A41_L3",
+    "batch": "A",
+    "category": "pot",
+    "level": 3,
+    "caption": "A saucepan with a shallow cavity, one long handle and a small helper ear. Continuous walls enclose a cavity; two handles join opposite wall sides. Circular walls keep an even thickness with a sealed base and a thick rim.",
+    "source_sha256": "b72fbea86f6164f8d495f999e9d0a9e1d27a58a1918ac60dddb0eabdf19934e8",
+    "original_geometry_valid": false,
+    "original_generation_complete": true,
+    "raw_bricks": 597,
+    "normalization": {
+      "original_voxels": 1470,
+      "target_voxels": 1470,
+      "duplicate_cell_occupancies": 640,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "b5484c1e0b502de1319b0176a3df3df8c694dc69fb60b7df407a987b1f3ffdda",
+      "target_voxel_sha256": "b5484c1e0b502de1319b0176a3df3df8c694dc69fb60b7df407a987b1f3ffdda"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 597,
+      "voxels": 1470,
+      "stud_components": 168,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 640,
+      "unsupported_from_below": 9,
+      "target_voxel_sha256": "b5484c1e0b502de1319b0176a3df3df8c694dc69fb60b7df407a987b1f3ffdda",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      1467,
+      3
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "A47_L2",
+    "batch": "A",
+    "category": "tower",
+    "level": 2,
+    "caption": "A round tower with a round base, circular walls and a domed crown. A continuous wall rises from a wide base; a narrowing crown caps the top.",
+    "source_sha256": "9f527b09d30ecef696939a9ab2486b86a63ff1dd23d4175f510436ead7e74b88",
+    "original_geometry_valid": false,
+    "original_generation_complete": true,
+    "raw_bricks": 305,
+    "normalization": {
+      "original_voxels": 825,
+      "target_voxels": 825,
+      "duplicate_cell_occupancies": 3,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "c39cdc16a59f9acd33952cb97e887b0b24b89e11ecb29cea824317b041032a04",
+      "target_voxel_sha256": "c39cdc16a59f9acd33952cb97e887b0b24b89e11ecb29cea824317b041032a04"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 305,
+      "voxels": 825,
+      "stud_components": 17,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 3,
+      "unsupported_from_below": 15,
+      "target_voxel_sha256": "c39cdc16a59f9acd33952cb97e887b0b24b89e11ecb29cea824317b041032a04",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      822,
+      3
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "A47_L4",
+    "batch": "A",
+    "category": "tower",
+    "level": 4,
+    "caption": "A round tower with a round base, circular walls and a domed crown. A continuous wall rises from a wide base; a narrowing crown caps the top. Circular walls keep an even thickness up to the crown. Overall width is 0.80 times depth; height is 2.40 times width. Parts follow functional positions.",
+    "source_sha256": "9046bfa771feda42da5be1f7414dbd53828983cf96187c61a1babbd76a988708",
+    "original_geometry_valid": true,
+    "original_generation_complete": true,
+    "raw_bricks": 298,
+    "normalization": {
+      "original_voxels": 1016,
+      "target_voxels": 1016,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "bccd11fb71b28f49076fa364a00598bf72ad74f5b81d8bca792117fd378e8d75",
+      "target_voxel_sha256": "bccd11fb71b28f49076fa364a00598bf72ad74f5b81d8bca792117fd378e8d75"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 298,
+      "voxels": 1016,
+      "stud_components": 5,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 2,
+      "target_voxel_sha256": "bccd11fb71b28f49076fa364a00598bf72ad74f5b81d8bca792117fd378e8d75",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      1013,
+      3
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "A48_L3",
+    "batch": "A",
+    "category": "tower",
+    "level": 3,
+    "caption": "A twin tower with two joined towers with two crowns. Four flat walls rise from a base; a stepped crown caps the top. Faceted walls keep a constant thickness with a stepped crown line.",
+    "source_sha256": "2261e6e32cd8f83ba4664c4e0702dfe5b0e9c18d398a6730fefc58ba0f6d9a95",
+    "original_geometry_valid": true,
+    "original_generation_complete": true,
+    "raw_bricks": 192,
+    "normalization": {
+      "original_voxels": 939,
+      "target_voxels": 939,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "1e3ba0d85bca0af03c390c0f00cba1f7f465f821038245bb5a00849d4fcf165b",
+      "target_voxel_sha256": "1e3ba0d85bca0af03c390c0f00cba1f7f465f821038245bb5a00849d4fcf165b"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 192,
+      "voxels": 939,
+      "stud_components": 19,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 13,
+      "target_voxel_sha256": "1e3ba0d85bca0af03c390c0f00cba1f7f465f821038245bb5a00849d4fcf165b",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 0.391,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 149,
+            "stud_components": 14,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 166,
+            "stud_components": 13,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 0.391
+  },
+  {
+    "prompt_id": "A52_L3",
+    "batch": "A",
+    "category": "vessel",
+    "level": 3,
+    "caption": "A tugboat with a short hull, a tall cabin and a towing post. A hull carries a deck and a cabin; the bow and stern close it. Curved hull surfaces keep an even thickness along the keel.",
+    "source_sha256": "f3103ce072b27bf97f57c03b00b1bcf3861b20eed91461085518c3fb7a06a17f",
+    "original_geometry_valid": false,
+    "original_generation_complete": true,
+    "raw_bricks": 142,
+    "normalization": {
+      "original_voxels": 746,
+      "target_voxels": 746,
+      "duplicate_cell_occupancies": 1,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "a164462a57224b311c7a8b906fba21623ae497efa64a84dffe26f6f12fb9b7b7",
+      "target_voxel_sha256": "a164462a57224b311c7a8b906fba21623ae497efa64a84dffe26f6f12fb9b7b7"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 142,
+      "voxels": 746,
+      "stud_components": 6,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 1,
+      "unsupported_from_below": 14,
+      "target_voxel_sha256": "a164462a57224b311c7a8b906fba21623ae497efa64a84dffe26f6f12fb9b7b7",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      744,
+      2
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B12_L2",
+    "batch": "B",
+    "category": "bottle",
+    "level": 2,
+    "caption": "A square flask bottle with a flat body, a short neck and a sealed base. A sealed base carries four flat walls; a stepped shoulder narrows to a neck.",
+    "source_sha256": "0753a71dd418f95d94041a202b78d32d2e0fc8c7d9b78666a5b697451d7b6a00",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 134,
+    "normalization": {
+      "original_voxels": 1063,
+      "target_voxels": 1063,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "cfbb6095a8cfb8c2a7240af884e5f9986a38e71ea9f038ab86f0aa0f8fe59ace",
+      "target_voxel_sha256": "cfbb6095a8cfb8c2a7240af884e5f9986a38e71ea9f038ab86f0aa0f8fe59ace"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 134,
+      "voxels": 1063,
+      "stud_components": 19,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 8,
+      "target_voxel_sha256": "cfbb6095a8cfb8c2a7240af884e5f9986a38e71ea9f038ab86f0aa0f8fe59ace",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      1062,
+      1
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B12_L5",
+    "batch": "B",
+    "category": "bottle",
+    "level": 5,
+    "caption": "A square flask bottle with a flat body, a short neck and a sealed base. A sealed base carries four flat walls; a stepped shoulder narrows to a neck. Faceted walls keep a constant thickness along the straight body. Overall width is 1.25 times depth; height is 0.75 times width. Parts follow functional positions. Continuous dark brown, tan, cream color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "source_sha256": "fdfb85fb752ab9b6a989d4a1849182dc398eb11c7ac5f7a2840d5976812f5d74",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 123,
+    "normalization": {
+      "original_voxels": 1046,
+      "target_voxels": 1046,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "eb8874a80cfa62f68e47b2d02e3ccb915b39a4537f2d022907f33a9489937061",
+      "target_voxel_sha256": "eb8874a80cfa62f68e47b2d02e3ccb915b39a4537f2d022907f33a9489937061"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 123,
+      "voxels": 1046,
+      "stud_components": 9,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 7,
+      "target_voxel_sha256": "eb8874a80cfa62f68e47b2d02e3ccb915b39a4537f2d022907f33a9489937061",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 4.485,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 100,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 100,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 100,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 0,
+            "brick_count": 107,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 0,
+            "brick_count": 101,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 5,
+            "status": 0,
+            "brick_count": 101,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 6,
+            "status": 0,
+            "brick_count": 109,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 7,
+            "status": 0,
+            "brick_count": 102,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 8,
+            "status": 0,
+            "brick_count": 102,
+            "stud_components": 5,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 9,
+            "status": 0,
+            "brick_count": 103,
+            "stud_components": 5,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 10,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 4.485
+  },
+  {
+    "prompt_id": "B14_L3",
+    "batch": "B",
+    "category": "bowl",
+    "level": 3,
+    "caption": "A shallow fruit bowl with a wide shallow cavity and a low rim. Continuous walls rise from a sealed base; the top edge stays open. Circular walls keep an even thickness around the cavity.",
+    "source_sha256": "1adf0f76e9f4930f91abbdc1d7ddc9c65fdc7014ded87682a14fca95e9320c0d",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 306,
+    "normalization": {
+      "original_voxels": 1182,
+      "target_voxels": 1182,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "00a08facb1b4e0071ffa24a04762f6bb99c1885b0694ae6ecd085f50ef37fc49",
+      "target_voxel_sha256": "00a08facb1b4e0071ffa24a04762f6bb99c1885b0694ae6ecd085f50ef37fc49"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 306,
+      "voxels": 1182,
+      "stud_components": 13,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 4,
+      "target_voxel_sha256": "00a08facb1b4e0071ffa24a04762f6bb99c1885b0694ae6ecd085f50ef37fc49",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 1.578,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 276,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 271,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 268,
+            "stud_components": 2,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 0,
+            "brick_count": 268,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 0,
+            "brick_count": 269,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 5,
+            "status": 0,
+            "brick_count": 269,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 6,
+            "status": 0,
+            "brick_count": 291,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 7,
+            "status": 0,
+            "brick_count": 283,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 8,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 1.578
+  },
+  {
+    "prompt_id": "B14_L5",
+    "batch": "B",
+    "category": "bowl",
+    "level": 5,
+    "caption": "A shallow fruit bowl with a wide shallow cavity and a low rim. Continuous walls rise from a sealed base; the top edge stays open. Circular walls keep an even thickness around the cavity. Overall width is 1.30 times depth; height is 0.30 times width. Parts follow functional positions. Continuous white, light gray, dark brown color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "source_sha256": "a8be037b2aff6af609f220d6e9f09574cb11a1b1d2b30c7af084451e04e41589",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 323,
+    "normalization": {
+      "original_voxels": 1035,
+      "target_voxels": 1035,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "1b82fc0f8656924efb21f5c65602e5c71f1295054d537e49fd554ceecec956ae",
+      "target_voxel_sha256": "1b82fc0f8656924efb21f5c65602e5c71f1295054d537e49fd554ceecec956ae"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 323,
+      "voxels": 1035,
+      "stud_components": 27,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 14,
+      "target_voxel_sha256": "1b82fc0f8656924efb21f5c65602e5c71f1295054d537e49fd554ceecec956ae",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 12.157,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 304,
+            "stud_components": 20,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 306,
+            "stud_components": 16,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 317,
+            "stud_components": 21,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 0,
+            "brick_count": 306,
+            "stud_components": 19,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 0,
+            "brick_count": 307,
+            "stud_components": 15,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 5,
+            "status": 0,
+            "brick_count": 307,
+            "stud_components": 14,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 6,
+            "status": 0,
+            "brick_count": 308,
+            "stud_components": 14,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 7,
+            "status": 0,
+            "brick_count": 308,
+            "stud_components": 18,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 8,
+            "status": 1,
+            "brick_count": 408,
+            "stud_components": 117,
+            "exact_coverage": true
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": false
+      },
+      {
+        "method": "exact_cover_single_real_stud_run_flow",
+        "candidate_count": 3098,
+        "run_count": 399,
+        "flow_edges": 2307,
+        "budget_seconds": 12,
+        "reason": "cell_has_no_brick_with_a_real_vertical_contact",
+        "seconds": 0.06199999999807915,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 12.219
+  },
+  {
+    "prompt_id": "B15_L1",
+    "batch": "B",
+    "category": "bus",
+    "level": 1,
+    "caption": "A double decker bus with two window rows, a stair opening and four wheels.",
+    "source_sha256": "7a16434fd760005a55ea99f56323edfe76939733b20c4848500f459972f99117",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 135,
+    "normalization": {
+      "original_voxels": 1046,
+      "target_voxels": 1046,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "d1eddb0bad91d4c88344450d7584c4868ae408b4191636234ef16e148f786cb9",
+      "target_voxel_sha256": "d1eddb0bad91d4c88344450d7584c4868ae408b4191636234ef16e148f786cb9"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 135,
+      "voxels": 1046,
+      "stud_components": 5,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 29,
+      "target_voxel_sha256": "d1eddb0bad91d4c88344450d7584c4868ae408b4191636234ef16e148f786cb9",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      1042,
+      2,
+      2
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B15_L3",
+    "batch": "B",
+    "category": "bus",
+    "level": 3,
+    "caption": "A double decker bus with two window rows, a stair opening and four wheels. A boxy body carries side windows and a cab; four wheels join the chassis. Flat body panels keep a constant thickness along the chassis.",
+    "source_sha256": "db01dbbd3b9c6e240bbbc57df37c10ba3667afe8640ae8dd402aef47a8a6cf63",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 139,
+    "normalization": {
+      "original_voxels": 693,
+      "target_voxels": 693,
+      "duplicate_cell_occupancies": 2,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "8d34b16028a211f25c40e02d60971c23ba0431e6cab5fe0130e418af434b0bd8",
+      "target_voxel_sha256": "8d34b16028a211f25c40e02d60971c23ba0431e6cab5fe0130e418af434b0bd8"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 139,
+      "voxels": 693,
+      "stud_components": 5,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 2,
+      "unsupported_from_below": 18,
+      "target_voxel_sha256": "8d34b16028a211f25c40e02d60971c23ba0431e6cab5fe0130e418af434b0bd8",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 2.547,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 100,
+            "stud_components": 5,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 98,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 98,
+            "stud_components": 2,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 0,
+            "brick_count": 105,
+            "stud_components": 5,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 0,
+            "brick_count": 99,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 5,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 2.563
+  },
+  {
+    "prompt_id": "B16_L2",
+    "batch": "B",
+    "category": "bus",
+    "level": 2,
+    "caption": "A minibus with a short body, side glass and four wheels. A long body carries side windows; four wheels attach beneath the chassis.",
+    "source_sha256": "01503fba5cdb5453cb02f9cf124bca8b6c479c47d6cd32fb3d514de99f130b2a",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 173,
+    "normalization": {
+      "original_voxels": 1225,
+      "target_voxels": 1225,
+      "duplicate_cell_occupancies": 2,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "6ff8d859b00d31ddc703215997f26854dd23d45b468b6c27893eff9b6d3c5d2e",
+      "target_voxel_sha256": "6ff8d859b00d31ddc703215997f26854dd23d45b468b6c27893eff9b6d3c5d2e"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 173,
+      "voxels": 1225,
+      "stud_components": 19,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 2,
+      "unsupported_from_below": 35,
+      "target_voxel_sha256": "6ff8d859b00d31ddc703215997f26854dd23d45b468b6c27893eff9b6d3c5d2e",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 12.234,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 126,
+            "stud_components": 25,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 130,
+            "stud_components": 18,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 130,
+            "stud_components": 20,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 0,
+            "brick_count": 130,
+            "stud_components": 17,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 0,
+            "brick_count": 131,
+            "stud_components": 16,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 5,
+            "status": 1,
+            "brick_count": 312,
+            "stud_components": 146,
+            "exact_coverage": true
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": false
+      },
+      {
+        "method": "exact_cover_single_real_stud_run_flow",
+        "candidate_count": 7165,
+        "run_count": 663,
+        "flow_edges": 6916,
+        "budget_seconds": 12,
+        "reason": "cell_has_no_brick_with_a_real_vertical_contact",
+        "seconds": 0.062000000005355105,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 12.312
+  },
+  {
+    "prompt_id": "B17_L5",
+    "batch": "B",
+    "category": "camera",
+    "level": 5,
+    "caption": "A rangefinder camera with a flat body, one lens and two top dials. A lens barrel projects from the front; the body carries a viewfinder hump. Rounded body shells keep an even thickness around the lens opening. Overall width is 1.20 times depth; height is 0.70 times width. Parts follow functional positions. Continuous near black, white, dark gray color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "source_sha256": "24ac98801740aed07105ebb553c2dc94559e032b5d1d7a0748c9051a829c54b6",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 232,
+    "normalization": {
+      "original_voxels": 1038,
+      "target_voxels": 1038,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "809e62da19e8040e1437413a62333aac8539dc4d5d468332e9bd35477d45613a",
+      "target_voxel_sha256": "809e62da19e8040e1437413a62333aac8539dc4d5d468332e9bd35477d45613a"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 232,
+      "voxels": 1038,
+      "stud_components": 18,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 7,
+      "target_voxel_sha256": "809e62da19e8040e1437413a62333aac8539dc4d5d468332e9bd35477d45613a",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      1033,
+      2,
+      2,
+      1
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B20_L4",
+    "batch": "B",
+    "category": "car",
+    "level": 4,
+    "caption": "A station wagon with a long roof, a flat cargo cabin and four wheels. A boxy cabin carries windows and a trunk; four wheels join the chassis. Faceted body panels keep a constant thickness along the chassis. Overall width is 2.30 times depth; height is 0.48 times width. Parts follow functional positions.",
+    "source_sha256": "d7e7b484adbeaf53d1b2149649e3f858a9020bf12dc1e93e215f873f7f064be7",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 152,
+    "normalization": {
+      "original_voxels": 1018,
+      "target_voxels": 1018,
+      "duplicate_cell_occupancies": 5,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "d890fb0d1c35fdd941b5132da6dac0cec61d50a56e933a7011ca818237391812",
+      "target_voxel_sha256": "d890fb0d1c35fdd941b5132da6dac0cec61d50a56e933a7011ca818237391812"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 152,
+      "voxels": 1018,
+      "stud_components": 17,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 5,
+      "unsupported_from_below": 17,
+      "target_voxel_sha256": "d890fb0d1c35fdd941b5132da6dac0cec61d50a56e933a7011ca818237391812",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      958,
+      30,
+      30
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B25_L1",
+    "batch": "B",
+    "category": "guitar",
+    "level": 1,
+    "caption": "A classical guitar with a waisted body, a wide neck and a sound hole.",
+    "source_sha256": "dc4714c647bd9d3b10957dc499d4a75189b075367df56d2006064d2f928445fa",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 160,
+    "normalization": {
+      "original_voxels": 1399,
+      "target_voxels": 1399,
+      "duplicate_cell_occupancies": 12,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "f5af708f462bfdfa1264b15c0d2daeb459de89c5ba575fbf1cce204f0017dd17",
+      "target_voxel_sha256": "f5af708f462bfdfa1264b15c0d2daeb459de89c5ba575fbf1cce204f0017dd17"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 160,
+      "voxels": 1399,
+      "stud_components": 14,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 12,
+      "unsupported_from_below": 14,
+      "target_voxel_sha256": "f5af708f462bfdfa1264b15c0d2daeb459de89c5ba575fbf1cce204f0017dd17",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      1271,
+      32,
+      32,
+      32,
+      32
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B25_L4",
+    "batch": "B",
+    "category": "guitar",
+    "level": 4,
+    "caption": "A classical guitar with a waisted body, a wide neck and a sound hole. A waisted body joins a long neck; the headstock carries tuning studs. Curved body edges keep an even thickness around the sound hole. Overall width is 0.80 times depth; height is 2.25 times width. Parts follow functional positions.",
+    "source_sha256": "64e1dd2a34caf999b4ff1031baaa4663e34eb089703c888305cf1b239d5b042e",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 195,
+    "normalization": {
+      "original_voxels": 1512,
+      "target_voxels": 1512,
+      "duplicate_cell_occupancies": 6,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "6b89b1b29768a656a6050a81dcd936dd93e497e68e8d22fb40be1fdb7eb4e266",
+      "target_voxel_sha256": "6b89b1b29768a656a6050a81dcd936dd93e497e68e8d22fb40be1fdb7eb4e266"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 195,
+      "voxels": 1512,
+      "stud_components": 5,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 6,
+      "unsupported_from_below": 15,
+      "target_voxel_sha256": "6b89b1b29768a656a6050a81dcd936dd93e497e68e8d22fb40be1fdb7eb4e266",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      1510,
+      1,
+      1
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B30_L4",
+    "batch": "B",
+    "category": "mug",
+    "level": 4,
+    "caption": "A straight mug with a straight wall, a sealed base and one loop handle. A continuous wall rises from a sealed base; one loop handle joins it. Circular walls keep an even thickness and the handle leaves a real through hole. Overall width is 1.00 times depth; height is 0.85 times width. Parts follow functional positions.",
+    "source_sha256": "4ed76db21083837d2e90e69a9d8912fe45c456390bd17ccdfa964360979e88b1",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 190,
+    "normalization": {
+      "original_voxels": 1051,
+      "target_voxels": 1051,
+      "duplicate_cell_occupancies": 4,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "2612ebb084088535938e3f225bf6b8cffe107e8db40e8b2213a14d0b00ff0a4e",
+      "target_voxel_sha256": "2612ebb084088535938e3f225bf6b8cffe107e8db40e8b2213a14d0b00ff0a4e"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 190,
+      "voxels": 1051,
+      "stud_components": 31,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 4,
+      "unsupported_from_below": 14,
+      "target_voxel_sha256": "2612ebb084088535938e3f225bf6b8cffe107e8db40e8b2213a14d0b00ff0a4e",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 12.219,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 160,
+            "stud_components": 29,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 1,
+            "brick_count": 177,
+            "stud_components": 36,
+            "exact_coverage": true
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": false
+      },
+      {
+        "method": "exact_cover_single_real_stud_run_flow",
+        "candidate_count": 5135,
+        "run_count": 511,
+        "flow_edges": 4001,
+        "budget_seconds": 12,
+        "reason": "cell_has_no_brick_with_a_real_vertical_contact",
+        "seconds": 0.07800000000133878,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 12.328
+  },
+  {
+    "prompt_id": "B30_L5",
+    "batch": "B",
+    "category": "mug",
+    "level": 5,
+    "caption": "A straight mug with a straight wall, a sealed base and one loop handle. A continuous wall rises from a sealed base; one loop handle joins it. Circular walls keep an even thickness and the handle leaves a real through hole. Overall width is 1.00 times depth; height is 0.85 times width. Parts follow functional positions. Continuous white, blue, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "source_sha256": "d7c6840501d07e19f7905d86116a395423b2e56e6028d003b103753bca5922f0",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 167,
+    "normalization": {
+      "original_voxels": 1188,
+      "target_voxels": 1188,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "b63bbc0bdcf11937f9f65abe9939e86fe6010fa7abc788917c1c15194a5872f2",
+      "target_voxel_sha256": "b63bbc0bdcf11937f9f65abe9939e86fe6010fa7abc788917c1c15194a5872f2"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 167,
+      "voxels": 1188,
+      "stud_components": 35,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 10,
+      "target_voxel_sha256": "b63bbc0bdcf11937f9f65abe9939e86fe6010fa7abc788917c1c15194a5872f2",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      1183,
+      5
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B34_L2",
+    "batch": "B",
+    "category": "piano",
+    "level": 2,
+    "caption": "A grand piano with a long curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid.",
+    "source_sha256": "5d1402a7964857ca4be5632004b0a2242c224b8ba4b7664841b2f508b5853f37",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 164,
+    "normalization": {
+      "original_voxels": 975,
+      "target_voxels": 975,
+      "duplicate_cell_occupancies": 28,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "70b523e00a8f8d2ad54de1b081043dff9833c480c13ebc6490698d9a2fceaf35",
+      "target_voxel_sha256": "70b523e00a8f8d2ad54de1b081043dff9833c480c13ebc6490698d9a2fceaf35"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 164,
+      "voxels": 975,
+      "stud_components": 16,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 28,
+      "unsupported_from_below": 33,
+      "target_voxel_sha256": "70b523e00a8f8d2ad54de1b081043dff9833c480c13ebc6490698d9a2fceaf35",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 6.5,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 116,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 118,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 118,
+            "stud_components": 2,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 0,
+            "brick_count": 118,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 0,
+            "brick_count": 118,
+            "stud_components": 2,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 5,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 6.515
+  },
+  {
+    "prompt_id": "B34_L5",
+    "batch": "B",
+    "category": "piano",
+    "level": 5,
+    "caption": "A grand piano with a long curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid. Curved case surfaces keep an even thickness around the keyboard. Overall width is 1.05 times depth; height is 0.42 times width. Parts follow functional positions. Continuous near black, white, brown wood color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "source_sha256": "5ca4b2a5e97b9d8db4c65e572d9422b88ae723b7dd1b6744aa07400f6267d2f4",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 159,
+    "normalization": {
+      "original_voxels": 1262,
+      "target_voxels": 1262,
+      "duplicate_cell_occupancies": 20,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "ba292de01457c2a0aee2b4dcb25302adfb8d774f592a9a53b40c3978b5878804",
+      "target_voxel_sha256": "ba292de01457c2a0aee2b4dcb25302adfb8d774f592a9a53b40c3978b5878804"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 159,
+      "voxels": 1262,
+      "stud_components": 43,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 20,
+      "unsupported_from_below": 80,
+      "target_voxel_sha256": "ba292de01457c2a0aee2b4dcb25302adfb8d774f592a9a53b40c3978b5878804",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 12.75,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 110,
+            "stud_components": 46,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 1,
+            "brick_count": 319,
+            "stud_components": 94,
+            "exact_coverage": true
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": false
+      },
+      {
+        "method": "exact_cover_single_real_stud_run_flow",
+        "candidate_count": 9549,
+        "run_count": 878,
+        "flow_edges": 8196,
+        "budget_seconds": 12,
+        "reason": "cell_has_no_brick_with_a_real_vertical_contact",
+        "seconds": 0.10900000000401633,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 12.875
+  },
+  {
+    "prompt_id": "B35_L4",
+    "batch": "B",
+    "category": "piano",
+    "level": 4,
+    "caption": "A baby grand piano with a short curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid. Curved case surfaces keep an even thickness around the keyboard. Overall width is 1.00 times depth; height is 0.48 times width. Parts follow functional positions.",
+    "source_sha256": "7cb4495b5e2eb1877d0649ed88a8ea4610bce1404483ab369691a706908b5d56",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 145,
+    "normalization": {
+      "original_voxels": 1081,
+      "target_voxels": 1081,
+      "duplicate_cell_occupancies": 10,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "66e8c832072b624cd7226967253dca2392cb963b632269cdb443b4680b752897",
+      "target_voxel_sha256": "66e8c832072b624cd7226967253dca2392cb963b632269cdb443b4680b752897"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 145,
+      "voxels": 1081,
+      "stud_components": 9,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 10,
+      "unsupported_from_below": 31,
+      "target_voxel_sha256": "66e8c832072b624cd7226967253dca2392cb963b632269cdb443b4680b752897",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 12.234,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 98,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 99,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 1,
+            "brick_count": 239,
+            "stud_components": 6,
+            "exact_coverage": true
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": false
+      },
+      {
+        "method": "exact_cover_single_real_stud_run_flow",
+        "candidate_count": 14029,
+        "run_count": 252,
+        "flow_edges": 4313,
+        "budget_seconds": 12,
+        "seconds": 0.25,
+        "solver_status": 2,
+        "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "has_incumbent": false,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 12.5
+  },
+  {
+    "prompt_id": "B41_L4",
+    "batch": "B",
+    "category": "sofa",
+    "level": 4,
+    "caption": "A chaise sofa with a long chaise cushion, a back and two arms. Cushions rest on the seat frame; a rear backrest and both arms join it. Rounded cushions keep an even thickness and attach continuously to the frame. Overall width is 2.10 times depth; height is 0.47 times width. Parts follow functional positions.",
+    "source_sha256": "94fcd8f14d755075373cf3f3a189f7cc5f93c4531d040b180042309c4bd92e7a",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 112,
+    "normalization": {
+      "original_voxels": 764,
+      "target_voxels": 764,
+      "duplicate_cell_occupancies": 8,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "707edf579da74455f059e4684acb4475ed07a08e865ec938f3d2bc999dd3e1c9",
+      "target_voxel_sha256": "707edf579da74455f059e4684acb4475ed07a08e865ec938f3d2bc999dd3e1c9"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 112,
+      "voxels": 764,
+      "stud_components": 9,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 8,
+      "unsupported_from_below": 19,
+      "target_voxel_sha256": "707edf579da74455f059e4684acb4475ed07a08e865ec938f3d2bc999dd3e1c9",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 4.047,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 93,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 98,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 94,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 4.047
+  },
+  {
+    "prompt_id": "B43_L4",
+    "batch": "B",
+    "category": "table",
+    "level": 4,
+    "caption": "A coffee table with a low top, four short legs and a shelf beneath. A framed top joins four legs; a straight apron links the legs. Flat tabletop panels keep a constant thickness with squared legs. Overall width is 1.80 times depth; height is 0.40 times width. Parts follow functional positions.",
+    "source_sha256": "3294b4af1e9055b2df54b74ccdb7ac5312f4fb9ba222a5d7d80bb1af2c5ca4f9",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 236,
+    "normalization": {
+      "original_voxels": 1397,
+      "target_voxels": 1397,
+      "duplicate_cell_occupancies": 11,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "1486d244f250a1c992fd4b5c5bad6c6b47eadcd142e210b0892747eb6c21495b",
+      "target_voxel_sha256": "1486d244f250a1c992fd4b5c5bad6c6b47eadcd142e210b0892747eb6c21495b"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 236,
+      "voxels": 1397,
+      "stud_components": 10,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 11,
+      "unsupported_from_below": 31,
+      "target_voxel_sha256": "1486d244f250a1c992fd4b5c5bad6c6b47eadcd142e210b0892747eb6c21495b",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 12.344,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 1,
+            "brick_count": 486,
+            "stud_components": 16,
+            "exact_coverage": true
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": false
+      },
+      {
+        "method": "exact_cover_single_real_stud_run_flow",
+        "candidate_count": 16732,
+        "run_count": 380,
+        "flow_edges": 7199,
+        "budget_seconds": 12,
+        "seconds": 12.18800000000192,
+        "solver_status": 1,
+        "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "has_incumbent": false,
+        "certified_infeasible": false
+      },
+      {
+        "seconds": 60.187,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 1,
+            "brick_count": 486,
+            "stud_components": 16,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 1,
+            "brick_count": 516,
+            "stud_components": 15,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 1,
+            "brick_count": 487,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 1,
+            "brick_count": 434,
+            "stud_components": 2,
+            "exact_coverage": true
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 60,
+        "certified_infeasible": false
+      },
+      {
+        "method": "exact_cover_single_real_stud_run_flow",
+        "candidate_count": 16732,
+        "run_count": 380,
+        "flow_edges": 7199,
+        "budget_seconds": 60,
+        "seconds": 60.28100000000268,
+        "solver_status": 1,
+        "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "has_incumbent": false,
+        "certified_infeasible": false
+      },
+      {
+        "seconds": 91.5,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 1,
+            "brick_count": 486,
+            "stud_components": 16,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 1,
+            "brick_count": 516,
+            "stud_components": 15,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 1,
+            "brick_count": 487,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 1,
+            "brick_count": 434,
+            "stud_components": 2,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 1,
+            "brick_count": 467,
+            "stud_components": 16,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 5,
+            "status": 1,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 180,
+        "certified_infeasible": false
+      },
+      {
+        "method": "exact_cover_single_real_stud_run_flow",
+        "candidate_count": 16732,
+        "run_count": 380,
+        "flow_edges": 7199,
+        "budget_seconds": 180,
+        "seconds": 180.31199999999808,
+        "solver_status": 1,
+        "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "has_incumbent": false,
+        "certified_infeasible": false
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "solver_budget_exhausted",
+    "elapsed_seconds": 416.875
+  },
+  {
+    "prompt_id": "B45_L5",
+    "batch": "B",
+    "category": "tower",
+    "level": 5,
+    "caption": "A square tower with a square base, four walls and one side opening. Four flat walls rise from a base; a stepped crown caps the top. Faceted walls keep a constant thickness with a stepped crown line. Overall width is 0.75 times depth; height is 2.60 times width. Parts follow functional positions. Continuous cream, dark brown, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "source_sha256": "01688952dbb3c669072de4be395be8a7e078c712200c0b62e8938950644d2286",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 165,
+    "normalization": {
+      "original_voxels": 1199,
+      "target_voxels": 1199,
+      "duplicate_cell_occupancies": 2,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "4f98fdb3fe3e4da249e976ab3a2d25cec8cf8945e11bd0125a8f1cd5345dd98b",
+      "target_voxel_sha256": "4f98fdb3fe3e4da249e976ab3a2d25cec8cf8945e11bd0125a8f1cd5345dd98b"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 165,
+      "voxels": 1199,
+      "stud_components": 17,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 2,
+      "unsupported_from_below": 21,
+      "target_voxel_sha256": "4f98fdb3fe3e4da249e976ab3a2d25cec8cf8945e11bd0125a8f1cd5345dd98b",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      1191,
+      8
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B46_L5",
+    "batch": "B",
+    "category": "tower",
+    "level": 5,
+    "caption": "A stepped tower with three stacked sections and a stepped crown. Four flat walls rise from a base; a stepped crown caps the top. Faceted walls keep a constant thickness with a stepped crown line. Overall width is 0.85 times depth; height is 2.20 times width. Parts follow functional positions. Continuous cream, dark brown, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "source_sha256": "c92cf579a98ef231c244e97beae41bafec1c730add30cb19a2f9bbafa7343428",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 101,
+    "normalization": {
+      "original_voxels": 780,
+      "target_voxels": 780,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "f0d9ec7e5a23d9dd70660940eab4defc383900a9d47d9af41e1e821818356190",
+      "target_voxel_sha256": "f0d9ec7e5a23d9dd70660940eab4defc383900a9d47d9af41e1e821818356190"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 101,
+      "voxels": 780,
+      "stud_components": 10,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 5,
+      "target_voxel_sha256": "f0d9ec7e5a23d9dd70660940eab4defc383900a9d47d9af41e1e821818356190",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 6.375,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 92,
+            "stud_components": 12,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 92,
+            "stud_components": 11,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 92,
+            "stud_components": 10,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 0,
+            "brick_count": 92,
+            "stud_components": 9,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 0,
+            "brick_count": 93,
+            "stud_components": 8,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 5,
+            "status": 0,
+            "brick_count": 93,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 6,
+            "status": 0,
+            "brick_count": 93,
+            "stud_components": 8,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 7,
+            "status": 0,
+            "brick_count": 93,
+            "stud_components": 3,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 8,
+            "status": 0,
+            "brick_count": 97,
+            "stud_components": 9,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 9,
+            "status": 0,
+            "brick_count": 94,
+            "stud_components": 6,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 10,
+            "status": 0,
+            "brick_count": 94,
+            "stud_components": 9,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 11,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 6.375
+  },
+  {
+    "prompt_id": "B47_L3",
+    "batch": "B",
+    "category": "tower",
+    "level": 3,
+    "caption": "A tapered tower with a wide base, narrowing walls and a pointed crown. A continuous wall rises from a wide base; a narrowing crown caps the top. Circular walls keep an even thickness up to the crown.",
+    "source_sha256": "c88d65058d59d1dba0d1b3979533442d21a781fa37f7bbcf42327abd56bb4a6b",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 190,
+    "normalization": {
+      "original_voxels": 1107,
+      "target_voxels": 1107,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "828d9542b5ed48e84475645ac0ee8f9f7c8d98fda3b30b38add4713522bb20d2",
+      "target_voxel_sha256": "828d9542b5ed48e84475645ac0ee8f9f7c8d98fda3b30b38add4713522bb20d2"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 190,
+      "voxels": 1107,
+      "stud_components": 13,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 11,
+      "target_voxel_sha256": "828d9542b5ed48e84475645ac0ee8f9f7c8d98fda3b30b38add4713522bb20d2",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 12.453,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 155,
+            "stud_components": 7,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 1,
+            "brick_count": 331,
+            "stud_components": 43,
+            "exact_coverage": true
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": false
+      },
+      {
+        "method": "exact_cover_single_real_stud_run_flow",
+        "candidate_count": 10311,
+        "run_count": 309,
+        "flow_edges": 4850,
+        "budget_seconds": 12,
+        "seconds": 0.4219999999986612,
+        "solver_status": 2,
+        "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "has_incumbent": false,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 12.875
+  },
+  {
+    "prompt_id": "B51_L1",
+    "batch": "B",
+    "category": "vessel",
+    "level": 1,
+    "caption": "A sailboat with a hull, a cabin and one mast base.",
+    "source_sha256": "56eb60b414bc11d14cfa0bdf8d568ab85b4e6616469f50322886577d3e3d6c29",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 198,
+    "normalization": {
+      "original_voxels": 655,
+      "target_voxels": 655,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "8a8207d7c7ae6564f04cf3790cfc70043c615e47c633d5315efa9542681bfdc5",
+      "target_voxel_sha256": "8a8207d7c7ae6564f04cf3790cfc70043c615e47c633d5315efa9542681bfdc5"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 198,
+      "voxels": 655,
+      "stud_components": 8,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 19,
+      "target_voxel_sha256": "8a8207d7c7ae6564f04cf3790cfc70043c615e47c633d5315efa9542681bfdc5",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      654,
+      1
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B51_L2",
+    "batch": "B",
+    "category": "vessel",
+    "level": 2,
+    "caption": "A sailboat with a hull, a cabin and one mast base. A hull carries a deck and a cabin; the bow and stern close it.",
+    "source_sha256": "3a75553e12369fd74c9c42089d1bd5821650f78cddab9fa460bc7aa9ac48c9a1",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 151,
+    "normalization": {
+      "original_voxels": 1010,
+      "target_voxels": 1010,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "42d800363461b7e1350d43285b06de1524240cc3926703fab8104661936c6535",
+      "target_voxel_sha256": "42d800363461b7e1350d43285b06de1524240cc3926703fab8104661936c6535"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 151,
+      "voxels": 1010,
+      "stud_components": 9,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 8,
+      "target_voxel_sha256": "42d800363461b7e1350d43285b06de1524240cc3926703fab8104661936c6535",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      994,
+      15,
+      1
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B51_L3",
+    "batch": "B",
+    "category": "vessel",
+    "level": 3,
+    "caption": "A sailboat with a hull, a cabin and one mast base. A hull carries a deck and a cabin; the bow and stern close it. Curved hull surfaces keep an even thickness along the keel.",
+    "source_sha256": "19c82584170c85bf8e119c395e38d894e2c8e9dabbb5eaf9196504d303951b08",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 184,
+    "normalization": {
+      "original_voxels": 1066,
+      "target_voxels": 1066,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "bde6c9b02c01e22980cbab1ace36e952b546f5119b175725bb69a7a205824c65",
+      "target_voxel_sha256": "bde6c9b02c01e22980cbab1ace36e952b546f5119b175725bb69a7a205824c65"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 184,
+      "voxels": 1066,
+      "stud_components": 16,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 1,
+      "target_voxel_sha256": "bde6c9b02c01e22980cbab1ace36e952b546f5119b175725bb69a7a205824c65",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 3.36,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 119,
+            "stud_components": 11,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 120,
+            "stud_components": 8,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 120,
+            "stud_components": 12,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 0,
+            "brick_count": 120,
+            "stud_components": 10,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 0,
+            "brick_count": 121,
+            "stud_components": 9,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 5,
+            "status": 0,
+            "brick_count": 121,
+            "stud_components": 11,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 6,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 3.375
+  },
+  {
+    "prompt_id": "B51_L4",
+    "batch": "B",
+    "category": "vessel",
+    "level": 4,
+    "caption": "A sailboat with a hull, a cabin and one mast base. A hull carries a deck and a cabin; the bow and stern close it. Curved hull surfaces keep an even thickness along the keel. Overall width is 1.10 times depth; height is 0.55 times width. Parts follow functional positions.",
+    "source_sha256": "b6770d7db01103fb300099c629fb3286f77390ef0f0adee38d03fd53e1a33e07",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 147,
+    "normalization": {
+      "original_voxels": 841,
+      "target_voxels": 841,
+      "duplicate_cell_occupancies": 3,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "98895c65d393eaad620db05820e8afc82dff4bf50f0c171b957077f339973408",
+      "target_voxel_sha256": "98895c65d393eaad620db05820e8afc82dff4bf50f0c171b957077f339973408"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": false,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": false
+      },
+      "brick_count": 147,
+      "voxels": 841,
+      "stud_components": 8,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 3,
+      "unsupported_from_below": 15,
+      "target_voxel_sha256": "98895c65d393eaad620db05820e8afc82dff4bf50f0c171b957077f339973408",
+      "physical_stability_tested": false
+    },
+    "attempts": [
+      {
+        "seconds": 3.969,
+        "log": [
+          {
+            "iteration": 0,
+            "status": 0,
+            "brick_count": 119,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 1,
+            "status": 0,
+            "brick_count": 121,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 2,
+            "status": 0,
+            "brick_count": 131,
+            "stud_components": 2,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 3,
+            "status": 0,
+            "brick_count": 121,
+            "stud_components": 4,
+            "exact_coverage": true
+          },
+          {
+            "iteration": 4,
+            "status": 2,
+            "solution": false
+          }
+        ],
+        "reason": "solver_budget_or_infeasible",
+        "method": "existing_exact_cover_with_stud_connectivity_cuts",
+        "budget_seconds": 12,
+        "certified_infeasible": true
+      }
+    ],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "elapsed_seconds": 3.985
+  },
+  {
+    "prompt_id": "B52_L2",
+    "batch": "B",
+    "category": "vessel",
+    "level": 2,
+    "caption": "A motorboat with a short hull, an open deck and a windshield. A hull carries a deck and a cabin; the bow and stern close it.",
+    "source_sha256": "fe7a3c6df454db57755c887da1d97fb02886dd1ae5619c35854069fa42c330d0",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 153,
+    "normalization": {
+      "original_voxels": 833,
+      "target_voxels": 833,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "3fbfc482e1ea808aed67ee91dbcf20ac37e1b30f95b008c7f0bfa5037adef71c",
+      "target_voxel_sha256": "3fbfc482e1ea808aed67ee91dbcf20ac37e1b30f95b008c7f0bfa5037adef71c"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 153,
+      "voxels": 833,
+      "stud_components": 6,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 10,
+      "target_voxel_sha256": "3fbfc482e1ea808aed67ee91dbcf20ac37e1b30f95b008c7f0bfa5037adef71c",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      818,
+      15
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "prompt_id": "B52_L5",
+    "batch": "B",
+    "category": "vessel",
+    "level": 5,
+    "caption": "A motorboat with a short hull, an open deck and a windshield. A hull carries a deck and a cabin; the bow and stern close it. Curved hull surfaces keep an even thickness along the keel. Overall width is 1.25 times depth; height is 0.58 times width. Parts follow functional positions. Continuous blue, white, near black color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "source_sha256": "f126f1c933286b13994a9b8bc3104ca7be42ef14bd4462417c26eaeb4907486d",
+    "original_geometry_valid": null,
+    "original_generation_complete": null,
+    "raw_bricks": 155,
+    "normalization": {
+      "original_voxels": 438,
+      "target_voxels": 438,
+      "duplicate_cell_occupancies": 0,
+      "dropped_brick_indices": [],
+      "clipped_brick_indices": [],
+      "removed_voxels": 0,
+      "added_voxels": 0,
+      "original_voxel_sha256": "a4700454a295bd928dcdc3805958f076ce7e53fac0db2ce4b6f6b6413826dd63",
+      "target_voxel_sha256": "a4700454a295bd928dcdc3805958f076ce7e53fac0db2ce4b6f6b6413826dd63"
+    },
+    "raw_audit": {
+      "passed": false,
+      "checks": {
+        "exact_coverage": true,
+        "no_overlaps": true,
+        "allowed_dimensions": true,
+        "in_bounds": true,
+        "one_stud_component": false,
+        "graph_auditors_agree": true
+      },
+      "brick_count": 155,
+      "voxels": 438,
+      "stud_components": 10,
+      "missing_voxels": 0,
+      "added_voxels": 0,
+      "duplicate_cell_occupancies": 0,
+      "unsupported_from_below": 5,
+      "target_voxel_sha256": "a4700454a295bd928dcdc3805958f076ce7e53fac0db2ce4b6f6b6413826dd63",
+      "physical_stability_tested": false
+    },
+    "attempts": [],
+    "physical_stability_tested": false,
+    "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+    "status": "infeasible_preserving_target",
+    "reason": "Target has disconnected six-neighbor components; no exact-cover brick layout can join them.",
+    "component_sizes": [
+      429,
+      3,
+      2,
+      2,
+      2
+    ],
+    "elapsed_seconds": 0.0
+  }
+]
