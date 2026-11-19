@@ -1,0 +1,13 @@
+\par
+
+\begingroup
+\centering
+% The standalone PDF already supplies a transparency group for its PNG tiles.
+\pdfximage width 0.9\textwidth {figure1.pdf}%
+\noindent\makebox[\textwidth][c]{\pdfrefximage\pdflastximage}\par
+\begin{minipage}{.95\textwidth}
+\captionof{figure}{BrickForma overview. (a) Voxel-to-LEGO conversion. (b) Connectivity refinement. (c) Each triplet shows, from left to right, a voxel model from an LLM-authored generator, its converted LEGO assembly, and a BrickForma output (fine-tuned Qwen3-1.7B) for the same category. Brick-type colors are for display only and are not part of the training targets.}
+\label{fig:teaser}
+\end{minipage}
+\par
+\endgroup

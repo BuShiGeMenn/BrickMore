@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lr}
+\toprule
+\multicolumn{2}{l}{\emph{Dataset (release reports)}} \\
+\midrule
+Source models / categories / grid & 80,000 / 21 / $48^3$ \\
+Bilingual caption records & 400,000 \\
+Failing in full refined release & 702 (0.88\%) \\
+Passing in full refined release & 79,298 \\
+Piano models restored by revised release & 3 \\
+Integrated passing models & 79,301 \\
+\midrule
+\multicolumn{2}{l}{\emph{Fine-tuning corpus}} \\
+\midrule
+(model, English caption) samples & 396,610 \\ % Training manifest confirmation pending
+Training / validation samples & 356,955 / 39,655 \\
+Tokens over 3 epochs & 2,228,044,818 \\ % Training manifest confirmation pending
+\bottomrule
+\end{tabular}
+\caption{Dataset and fine-tuning corpus. The two blocks are counted separately: the upper block from the dataset release reports, the lower block as recorded for the fine-tuning run.}
+\label{tab:training-data}
+\end{table}

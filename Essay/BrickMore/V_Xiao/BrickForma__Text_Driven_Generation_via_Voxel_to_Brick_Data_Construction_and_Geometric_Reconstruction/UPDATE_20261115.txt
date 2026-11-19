@@ -1,0 +1,17 @@
+BrickForma V1.5 geometry/short-prompt update — 2026-11-15
+
+- Added Table 6: independent geometry audit of 110 matched raw/retiled pairs.
+- Added Figure 3: four exact L1/L2 prompts, three systems, two fixed archived views.
+- Original single-system gallery retained in appendix. Confirmed title, Abstract,
+  Introduction and AAAI-27 template unchanged in this update.
+- All quantitative claims come from archived outputs; no new inference or scoring.
+- Geometry audit inputs, generated CSV/JSON/tables and a detailed missing-data note
+  are in data/reconstruction/. Figure source/provenance is in data/qualitative/.
+- Existing five-level table and reproduction data retained.
+- Native editor compiler and local pdfLaTeX/latexmk both compile successfully.
+- Current PDF: 18 pages; main content including Figure 3 ends on page 7;
+  references begin on page 7; appendices begin on page 8. Fonts: Type 1.
+- Overleaf: upload this complete ZIP; select main.tex and pdfLaTeX. No Python or
+  network access is needed for compilation. No live Overleaf project was changed.
+- Missing logs/targets and the remaining training-count discrepancy are described
+  in EXPERIMENT_ALIGNMENT_REVIEW_20261115.txt and data/reconstruction/AUDIT_README.txt.

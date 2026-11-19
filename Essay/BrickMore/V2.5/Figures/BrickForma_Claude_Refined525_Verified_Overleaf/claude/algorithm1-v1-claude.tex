@@ -1,0 +1,36 @@
+% Algorithm 1, version 1 (as in the polished draft before revision). Kept for reference; main.tex uses algorithm1-v2-claude.tex.
+\begin{algorithm}[tb]
+\caption{BrickForma inference and refinement}
+\label{alg:inference-refinement}
+\small
+\begin{algorithmic}[1]
+\REQUIRE prompt $c$; fine-tuned model $\theta$; library $\mathcal{L}$ (20 footprints); seeds $S=(42,104,2026)$; MILP tiers $T=(12,60,180)$\,s
+\ENSURE $(B_{\mathrm{out}}, \textit{status})$, $\textit{status}\in\{\textsc{Success},\textsc{Draft},\textsc{Failed}\}$
+\STATE $B \gets \emptyset$; $A \gets \emptyset$
+\FOR{$s \in S$}
+  \STATE $(B_s,\textit{rep}) \gets \mathrm{Parse}(\theta.\mathrm{Generate}(c,\ \mathrm{seed}{=}s))$
+  \STATE $A \gets A \cup \{(B_s,\textit{rep})\}$
+  \IF{$\textit{rep}.\mathrm{complete} \land \textit{rep}.\mathrm{valid}$}
+    \STATE $B \gets B_s$; \textbf{break}
+  \ENDIF
+\ENDFOR
+\IF{$B=\emptyset$}
+  \IF{$A$ contains no completed draft}
+    \RETURN $(\emptyset,\ \textsc{Failed})$
+  \ENDIF
+  \STATE $B \gets \arg\min_{\text{completed } a\in A} \mathrm{Err}(a)$
+\ENDIF
+\IF{$\mathrm{Err}(B)=0 \land \mathrm{StudComponents}(B)=1$}
+  \RETURN $(B,\ \textsc{Success})$ \COMMENT{keep a valid connected raw layout}
+\ENDIF
+\STATE $C \gets \mathrm{UnionVoxels}(B;\ \mathcal{L},\ 48^3)$ \COMMENT{clip; overlaps count once}
+\FOR{$\tau \in T$}
+  \STATE $B^{*} \gets \mathrm{MILP\text{-}SingleStudCover}(C,\ \tau)$
+  \IF{$B^{*}\neq\emptyset \land \mathrm{Audit}(B^{*},C)$}
+    \RETURN $(B^{*},\ \textsc{Success})$
+  \ENDIF
+\ENDFOR
+\STATE $\mathrm{QueueReseed}(c)$
+\RETURN $(B,\ \textsc{Draft})$ \COMMENT{unsolved: keep raw draft}
+\end{algorithmic}
+\end{algorithm}

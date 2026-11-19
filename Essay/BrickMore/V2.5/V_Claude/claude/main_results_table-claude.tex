@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+System & $P_{\mathrm{inv}}\downarrow$ & VQAScore $\uparrow$ & PE $\uparrow$ & SigLIP2 $\uparrow$ \\
+\midrule
+BrickForma & 0.79\% & \textbf{0.0866} & \textbf{0.1568} & \textbf{0.0448} \\
+BrickGPT & \textbf{0.00\%} & 0.0666 & 0.1440 & 0.0194 \\
+BrickNet & 18.42\% & 0.0201 & 0.1187 & 0.0011 \\
+\bottomrule
+\end{tabular}
+\caption{Mean scores on the 525 shared prompts. BrickForma is scored on its delivered raw outputs. Bold marks the best mean.}
+\label{tab:main}
+\end{table}

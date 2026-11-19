@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "dataset": "brickmore_A260_supplement_20261117",
+  "total_records": 260,
+  "primary_records": 260,
+  "all_counts": {
+    "BrickMore": 260
+  },
+  "source_root": "D:\\BrickMore\\BrickMore_Comparision\\BrickMore\\BrickMore_A",
+  "reference_manifest_sha256": "ab4fc3982ec762c48e91cfb2b6801caff2cc9da635a4c34fb15faf0d886b4b96",
+  "cohorts": {
+    "A": {
+      "prompts": 260,
+      "systems": [
+        "BrickMore"
+      ]
+    }
+  },
+  "smoke_prompt_ids": [
+    "A01_L1",
+    "A01_L4",
+    "A02_L2"
+  ],
+  "primary_policy": "BrickMore A supplement: 260 prompts also present in the previous BrickGPT and BrickNet A results.",
+  "formal_groups": 105,
+  "source_flags": {
+    "geometry_valid": {
+      "true": 164,
+      "false": 96
+    },
+    "generation_complete": {
+      "true": 252,
+      "false": 8
+    }
+  },
+  "caption_matches": 260,
+  "glbs_verified": 260,
+  "glb_coverage": {
+    "full": 257,
+    "matching_prefix": 3
+  },
+  "total_sequence_bricks": 62978,
+  "brick_instances_verified_in_glb": 62542,
+  "maximum_glb_position_error_ldu": 9.5367431640625e-06,
+  "part_types": 11,
+  "new_meshes_extracted": 0
+}

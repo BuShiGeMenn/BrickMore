@@ -1,0 +1,11 @@
+pymupdf_git_branch = 'aptest-jules'
+pymupdf_git_comment = 'tests/test_metadata.py add tests for set_metadata() update to trailer.'
+pymupdf_git_diff = ''
+pymupdf_git_diff_n = None
+pymupdf_git_sha = '16c664fd456baca66ba1e72d53922a54fcfc997a'
+mupdf_location = 'https://mupdf.com/downloads/archive/mupdf-1.28.6-source.tar.gz'
+pymupdf_version = '2.1'
+pymupdf_version_tuple = (2, 1)
+swig_version = '4.5.1'
+swig_version_tuple = (4, 5, 1)
+fake_no_gil = False

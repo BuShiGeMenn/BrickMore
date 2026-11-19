@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrr}
+\toprule
+Baseline & Metric & W/L/T & Sign $p_H$ & Wilc.\ $p_H$ \\
+\midrule
+BrickGPT & VQAScore & 384/141/0 & $1.5\times 10^{-26}$ & $4.8\times 10^{-20}$ \\
+ & PE & 337/188/0 & $1.6\times 10^{-10}$ & $3.1\times 10^{-12}$ \\
+ & SigLIP2 & 327/198/0 & $2.0\times 10^{-8}$ & $7.3\times 10^{-12}$ \\
+BrickNet & VQAScore & 460/65/0 & $1.6\times 10^{-73}$ & $4.6\times 10^{-60}$ \\
+ & PE & 406/119/0 & $4.6\times 10^{-37}$ & $1.3\times 10^{-47}$ \\
+ & SigLIP2 & 408/115/2 & $9.4\times 10^{-39}$ & $2.4\times 10^{-42}$ \\
+\bottomrule
+\end{tabular}
+\caption{Two-sided paired tests on the 525 prompts. W/L/T counts BrickForma's wins, losses, and ties. Each test applies Holm correction across its six comparisons.}
+\label{tab:sig}
+\end{table}

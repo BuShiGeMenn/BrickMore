@@ -1,0 +1,10 @@
+
+COMMAND ["/mnt/brickmore-data/brickmore-jrd-20261025/runtime/envs/paper/bin/python", "-X", "utf8", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparision_20261116/QwenComparison_20261117/Scripts/evaluate_paper_images.py", "--metric", "siglip2", "--preset", "paper-text", "--model", "/mnt/brickmore-data/brickmore-jrd-20261025/runtime/cache/huggingface/hub/models--google--siglip2-giant-opt-patch16-384/snapshots/a713301b217d38485fb2204c808367d10bc3cc40", "--offline", "--device", "cuda:0", "--batch-size", "1", "--renders", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparision_20261116/QwenComparison_20261117/Results/comparison_smoke/rendered/renders.jsonl", "--out", "/mnt/brickmore-data/brickmore-jrd-20261025/uploads/comparision_20261116/QwenComparison_20261117/Results/comparison_smoke/siglip2.jsonl"]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.11it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  4.54it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  4.25it/s]
+1/3 qwen_base__A02_L3__parsed_partial 0.000058
+2/3 qwen_base__A08_L4__parsed_partial 0.000002
+3/3 qwen_ldr__B01_L1__delivered 0.000000

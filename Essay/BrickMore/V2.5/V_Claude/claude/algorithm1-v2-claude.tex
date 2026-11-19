@@ -1,0 +1,49 @@
+% Algorithm 1, version 2 (revised by Claude). Version 1 is kept in algorithm1-v1-claude.tex.
+% Changes from v1:
+%  - Only completed drafts enter the candidate set; the empty-set sentinel B = \emptyset is gone,
+%    so an empty layout can no longer be confused with "no draft selected".
+%  - Err(.) and kappa(.) take a layout (v1 applied Err to a (layout, report) pair);
+%    "valid" is defined as Err = 0, so rep.valid is no longer a separate notion.
+%  - The selection rule (first valid draft, else fewest errors) is one arg-min, equivalent to v1.
+%  - Statuses distinguish RAW (returned unchanged) from REFINED (solver output),
+%    matching the raw/refined terms used in the evaluation.
+%  - The voxel union C is written out (in-bounds voxels of placements with a supported footprint).
+%  - Err, kappa, and Audit are defined in the Section 4.2 text (model-claude.tex).
+%  - Recovery runs (extra seeds, 600 s budget) appear as a comment, as in Section 4.2.
+% TO CONFIRM AGAINST CODE: tie-breaking among equal-error drafts; behaviour when C is empty;
+% whether a FAILED prompt also queues a reseed.
+\begin{algorithm}[tb]
+\caption{BrickForma inference and refinement}
+\label{alg:inference-refinement}
+\small\raggedright
+\begin{algorithmic}[1]
+\REQUIRE prompt $c$; fine-tuned model $\theta$; footprint library $\mathcal{L}$ ($|\mathcal{L}|{=}20$); grid $G{=}\{0,\dots,47\}^3$; seeds $S{=}(42,104,2026)$; MILP time limits $T{=}(12,60,180)$\,s
+\ENSURE $(B_{\mathrm{out}},\textit{status})$, $\textit{status}\in\{\textsc{Raw},\textsc{Refined},\textsc{Draft},\textsc{Failed}\}$
+\STATE $\mathcal{A} \gets \emptyset$ \COMMENT{completed drafts}
+\FOR{$s \in S$ (in order)}
+  \STATE $(B_s,\textit{done}) \gets \mathrm{Parse}(\mathrm{Decode}_{\theta}(c;\, s))$
+  \IF{$\textit{done}$}
+    \STATE $\mathcal{A} \gets \mathcal{A} \cup \{B_s\}$
+    \IF{$\mathrm{Err}(B_s)=0$}
+      \STATE \textbf{break} \COMMENT{first valid draft}
+    \ENDIF
+  \ENDIF
+\ENDFOR
+\IF{$\mathcal{A}=\emptyset$}
+  \RETURN $(\emptyset,\ \textsc{Failed})$ \COMMENT{no draft completed}
+\ENDIF
+\STATE $B \gets \arg\min_{B' \in \mathcal{A}} \mathrm{Err}(B')$
+\IF{$\mathrm{Err}(B)=0 \land \kappa(B)=1$}
+  \RETURN $(B,\ \textsc{Raw})$ \COMMENT{valid and connected}
+\ENDIF
+\STATE $C \gets \bigcup_{b \in B,\ \mathrm{fp}(b)\in\mathcal{L}} \bigl(\mathrm{vox}(b) \cap G\bigr)$ \COMMENT{overlaps count once}
+\FOR{$\tau \in T$}
+  \STATE $B^{*} \gets \mathrm{SolveMILP}(C,\mathcal{L};\ \tau)$ \COMMENT{exact cover, $\kappa{=}1$ (App.~\ref{app:eval})}
+  \IF{$B^{*}$ found $\land\ \mathrm{Audit}(B^{*},C)$}
+    \RETURN $(B^{*},\ \textsc{Refined})$
+  \ENDIF
+\ENDFOR
+\STATE $\mathrm{QueueReseed}(c)$ \COMMENT{recovery: new seeds or 600\,s}
+\RETURN $(B,\ \textsc{Draft})$ \COMMENT{keep the raw draft}
+\end{algorithmic}
+\end{algorithm}

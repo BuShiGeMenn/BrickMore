@@ -1,0 +1,70 @@
+\begin{table*}[!htbp]\centering\small
+\begin{tabular}{lr}\toprule
+Item & Historical value \\ \midrule
+Voxel models & 80,000 (40,000 per batch) \\
+Categories / structural families & 21 / 40 per category \\
+Grid / voxel count & $48^3$ / 750--1,250 \\
+Prompt records & 400,000 (five bilingual records per model) \\
+Uniqueness & 80,000 unique across both shards \\
+Exact overlap with historical hashes & 0 / 55,255 \\
+Refined geometry passes & 79,298 (99.12\%) \\
+Bricks in integrated preview & 12,718,389 \\
+Final gravity equilibrium passes & 220 \\
+Final and layer-prefix passes & 128 \\
+\bottomrule\end{tabular}
+\caption{Historical dataset statistics. The historical index comparison uses exact occupancy hashes. The geometry and self-weight counts refer to the October 13 refined release. The brick total comes from the integrated preview manifest, which includes the revised piano layouts.}
+\end{table*}
+
+\begin{table*}[!htbp]\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{3.9cm}>{\raggedright\arraybackslash}p{2.5cm}rrrr@{}}\toprule
+Version & Connectivity & Voxel changes & Passes & Rate & Final & Both \\ \midrule
+Strict v3 & Single; support $\geq$10\%, overhang $\leq$2 & None & 7,902 & 9.88\% & -- & -- \\
+Relaxed & Each component grounded & +428,278 / -38,230 & 65,503 & 81.88\% & 2,650 & 478 \\
+Refined & Each component grounded & +228,582 / -125 & 79,298 & 99.12\% & 220 & 128 \\
+\midrule
+\multicolumn{7}{l}{Uniform 160-model sample (seed 38177); not full-dataset results} \\
+Baseline & Single stud-connected component & None & 22 & 13.75\% & -- & -- \\
+Q3 & Single stud-connected component & Added $\leq$2\% & 55 & 34.38\% & 8 & 2 \\
+Q4 (sparse) & Single stud-connected component & Added + removed $\leq$2\% & 57 & 35.62\% & 8 & 2 \\
+\bottomrule\end{tabular}
+\caption{Historical conversion-strategy table from the reference. Full-dataset and 160-model sample rows use different scopes; connectivity rules also differ. Final and Both columns report final-equilibrium and final-plus-prefix screening passes under the stated historical assumptions.}
+\end{table*}
+
+\begin{table*}[!htbp]\centering\small
+\begin{tabular}{lrrr}\toprule
+Item & BrickGPT & BrickNet 1.7B & BrickForma-48 \\ \midrule
+Representation & $20^3$ bricks & Assembly graph & $48^3$ bricks \\
+Criterion & stable & Parseable & -- \\
+Passes & 66/114 & 114/114 & -- \\
+Median parts & 126.5 & 22 & -- \\
+Range & 19--497 & 6--48 & -- \\
+Mean time (s) & 189.6 & -- & -- \\
+\bottomrule\end{tabular}
+\caption{Historical baseline table for 114 prompts. The stability and parsing columns use different criteria. The historical record does not report corresponding BrickForma-48 values.}
+\end{table*}
+
+\begin{table*}[!htbp]\centering\small
+\begin{tabular}{lrrrrl}\toprule
+Level & $n$ & BrickGPT stable & GPT median bricks & Net median parts & BrickForma-48 \\ \midrule
+L1 & 21 & 13 & 112 & 15 & -- \\
+L2 & 21 & 15 & 118 & 22 & -- \\
+L3 & 23 & 12 & 102 & 22 & -- \\
+L4 & 25 & 12 & 140 & 21 & -- \\
+L5 & 24 & 14 & 150.5 & 29.5 & -- \\
+\bottomrule\end{tabular}
+\caption{Historical level-wise baseline table transcribed from the reference. The original BrickForma-48 column was incomplete, and the other columns use different criteria.}
+\end{table*}
+
+\begin{table*}[!htbp]\centering\small
+\begin{tabular}{lrrrr}\toprule
+Method and source & $P_{\mathrm{inv}}$ & VQA & PE & SigLIP2 \\ \midrule
+BrickGPT (literature, as transcribed) & 0.063 & 0.050 & 0.157 & 0.052 \\
+BrickNet 1.7B (literature, as transcribed) & 0.260 & 0.593 & 0.282 & 0.631 \\
+BrickGPT (114 historical prompts) & -- & -- & -- & -- \\
+BrickNet (114 historical prompts) & -- & -- & -- & -- \\
+BrickForma-48 (114 historical prompts) & -- & -- & -- & -- \\
+\bottomrule\end{tabular}
+\caption{Transcribed literature values and unavailable historical scores. The literature entries use separate evaluation sets, and the source does not specify a common definition for $P_{\mathrm{inv}}$.}
+\end{table*}
+

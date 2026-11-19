@@ -1,0 +1,15 @@
+% Polished BrickForma Text-to-Brick Model section (proofread by Claude). Original text is in main-original.tex.
+\section{BrickForma Text-to-Brick Model}
+\label{sec:model}
+\subsection{Fine-Tuning}
+\label{sec:training}
+We fine-tune Qwen3-1.7B with LoRA on English L1--L5 captions paired with their checked brick layouts. We split the data 9:1 at the model level, so all five descriptions of a shape fall in the same partition. The $48^3$ workspace uses 20 oriented footprints (the 11 brick sizes in their distinct planar rotations). Each instruction lists the allowed brick dimensions, and the target gives one placement per line, such as $2{\times}4\ (x,y,z)$, ordered first by Y and then by X. Targets encode pure geometry, with no color tokens.
+
+Training follows the BrickGPT Qwen3 recipe~\cite{brickgpt} (Table~\ref{tab:finetune-config}), with unpacked sequences to preserve caption boundaries. The run completed 133,860 steps in 25.3 hours on eight GPUs. Validation loss reached its minimum of 0.0308 at step 79,000, which we release as the checkpoint, and rose slightly to 0.0339 by the end of epoch 3 (Appendix~\ref{app:training}).
+\input{tables/finetune_config}
+
+\subsection{Inference and Refinement}
+As outlined in Algorithm~\ref{alg:inference-refinement}, decoding runs with thinking disabled, temperature $0.7$, top-$p$ $0.9$, and an 8,192-token budget, trying seeds 42, 104, and 2026 in order. A draft is complete once it emits an end-of-sequence token. The pipeline stops at the first completed draft that passes the geometry validator; if none passes, it takes the completed draft with the fewest validator errors, and if no draft completes, it reports a failure. Here $\mathrm{Err}(B)$ counts the validator errors in a layout $B$ (unsupported footprints, out-of-bounds placements, and overlaps), so a draft is valid when $\mathrm{Err}(B)=0$, and $\kappa(B)$ is the number of stud-connected components. A valid draft with $\kappa(B)=1$ is returned unchanged.
+
+For all other drafts, we isolate the semantic shape proposal by forming the in-bounds voxel union $C$ of all placements with a supported footprint (counting overlaps once) and hand structural assembly to an MILP solver. The solver seeks an exact cover of $C$ that forms a single stud-connected component, under time limits of 12, 60, and 180 seconds, and an independent audit then checks placement validity, coverage, and connectivity. Because the cover is exact, a refined layout occupies exactly the voxel set $C$ derived from its draft. If all time limits are exhausted, the pipeline keeps the raw draft and queues a reseed; optional recovery runs extend the budget to 600 seconds or sample additional seeds. Throughout the evaluation, we call pre-solver model outputs \emph{raw} and solver-reconstructed outputs \emph{refined} (Appendix~\ref{app:eval} gives the exact-cover constraints).
+\input{claude/algorithm1-v2-claude}

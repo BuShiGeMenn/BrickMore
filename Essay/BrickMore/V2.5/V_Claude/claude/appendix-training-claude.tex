@@ -1,0 +1,48 @@
+% Polished Appendix B: Training Details (proofread by Claude). Original text is in main-original.tex.
+\section{Technical Appendix: Training Details}
+\label{app:training}
+Aggregate throughput is 24,448 tokens/s over eight GPUs, and the mean training loss is 0.0273. Evaluation and checkpointing run every 500 steps. With TRL~0.15, the unpacked multi-GPU path hangs after the first backward pass, so we pin the TRL~0.17 stack. Because validation loss is lowest during epoch 2, two epochs would be a more economical setting for future runs, saving about one third of the compute. The full software stack is transformers 4.51.3, trl 0.17.0, peft 0.15.2, datasets 3.6.0, and accelerate 1.6.0, with bf16 precision, gradient checkpointing, and unpacked sequences.
+
+\begin{table}[!htbp]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+Progress & Step & Validation loss \\
+\midrule
+Start & 500 & 0.1410 \\
+--- & 1,500 & 0.0950 \\
+--- & 10,500 & 0.0509 \\
+--- & 22,500 & 0.0404 \\
+$\approx$ End of epoch 1 & 44,500 & 0.0337 \\
+--- & 65,500 & 0.0316 \\
+Best (epoch 1.77) & 79,000 & 0.0308 \\
+End of epoch 3 & 133,860 & 0.0339 \\
+\bottomrule
+\end{tabular}
+\caption{Validation loss on the 2,000-sample validation subset. One epoch is $\approx$44,620 steps; step 44,500 is the evaluation closest to the end of epoch 1.}
+\label{tab:eval-loss}
+\end{table}
+
+% BrickGPT-paper column verified against arXiv:2505.05469 (Sec. 5.1 and Appendix A training details).
+\begin{table*}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcc}
+\toprule
+Dimension & BrickGPT paper & Official Qwen3 script (ours) \\
+\midrule
+Base model & LLaMA-3.2-1B-Instruct & Qwen3-1.7B \\
+LoRA & $r=32$, $\alpha=16$, dropout $0.05$, $q$/$v$ only (3.4M params) & $r=16$, $\alpha=32$, all linear layers \\
+Learning rate & $2{\times}10^{-3}$ (AdamW) & $10^{-4}$ \\
+Effective batch & 64 & 8 \\
+Max length & 4,096 & 8,192 \\
+Epochs & 3 & 3 \\
+Hardware & 8$\times$RTX A6000, 12\,h & 8$\times$4090D, 25.3\,h \\
+Data & StableText2Brick, 47k structures / 240k prompts & BrickForma-48, 79.3k models / 396,610 samples \\
+\bottomrule
+\end{tabular}
+\caption{Our configuration compared with the original BrickGPT paper~\cite{brickgpt}. BrickGPT values are taken from Sec.~5.1 and Appendix~A of arXiv:2505.05469: base model; LoRA with $r{=}32$, $\alpha{=}16$, dropout $0.05$, applied to $q$/$v$ only (3.4M parameters); AdamW with learning rate $0.002$; global batch 64; a 4,096-token length filter; 3 epochs; 8$\times$RTX A6000 for 12\,h; and 47k+ structures with 240k prompts. The data organization, instruction template, absence of thinking mode, and LoRA paradigm follow BrickGPT; the concrete hyperparameters follow the official Qwen3 adaptation, with the budget adjusted for the larger world, library, and corpus.}
+\label{tab:brickgpt-recipe}
+\end{table*}

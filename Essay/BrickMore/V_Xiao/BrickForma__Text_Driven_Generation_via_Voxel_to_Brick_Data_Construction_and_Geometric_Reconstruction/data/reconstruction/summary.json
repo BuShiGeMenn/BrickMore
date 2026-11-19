@@ -1,0 +1,110 @@
+{
+  "repository": "BuShiGeMenn/BrickMore",
+  "commit": "dfe1c94fc86b722247ed5c8208011313f535c5ec",
+  "source_archive": "Deploy/brickmore-three-models-four-scores-20261110.tar.gz",
+  "source_archive_sha256": "1ff8858172a9a855ba4cf98be06b88dcebe0d2301979ca33a6b5020aa1dcb575",
+  "assemblies_verified": 234,
+  "paired_outputs": 110,
+  "primary_raw_only": 4,
+  "raw_single_stud_component": 18,
+  "retiled_single_stud_component": 110,
+  "raw_mean_stud_components": 4.290909090909091,
+  "retiled_mean_stud_components": 1,
+  "raw_overlap_free": 100,
+  "retiled_overlap_free": 110,
+  "translation_normalized_union_equal": 110,
+  "max_lattice_residual": 3.8097302130779553e-06,
+  "primary_raw_only_results": [
+    {
+      "sample_id": "brickmore__bottle-L2V4__raw",
+      "model_id": "bottle-L2V4",
+      "prompt_id": "bottle_L2_P01",
+      "level": 2,
+      "variant": "raw",
+      "primary": true,
+      "parts": 377,
+      "occupied_cells": 1454,
+      "overlapping_cells": 0,
+      "stud_components": 1,
+      "component_sizes": [
+        377
+      ],
+      "origin_ldu": [
+        -109.99999612569809,
+        -129.9999824166298,
+        -0.07068624347448349
+      ],
+      "max_lattice_residual": 2.7840336151996325e-06
+    },
+    {
+      "sample_id": "brickmore__chair-L2V5__raw",
+      "model_id": "chair-L2V5",
+      "prompt_id": "chair_L2_P01",
+      "level": 2,
+      "variant": "raw",
+      "primary": true,
+      "parts": 132,
+      "occupied_cells": 1003,
+      "overlapping_cells": 0,
+      "stud_components": 1,
+      "component_sizes": [
+        132
+      ],
+      "origin_ldu": [
+        -150.00000268220901,
+        -110.00001311302185,
+        -0.07068624347448349
+      ],
+      "max_lattice_residual": 2.7840336151996325e-06
+    },
+    {
+      "sample_id": "brickmore__guitar-L3V1__raw",
+      "model_id": "guitar-L3V1",
+      "prompt_id": "guitar_L3_P01",
+      "level": 3,
+      "variant": "raw",
+      "primary": true,
+      "parts": 142,
+      "occupied_cells": 817,
+      "overlapping_cells": 0,
+      "stud_components": 1,
+      "component_sizes": [
+        142
+      ],
+      "origin_ldu": [
+        -160.00002294778824,
+        -50.000006556510925,
+        -0.07068857178092003
+      ],
+      "max_lattice_residual": 3.8097302130779553e-06
+    },
+    {
+      "sample_id": "brickmore__sofa-L2V3__raw",
+      "model_id": "sofa-L2V3",
+      "prompt_id": "sofa_L2_P01",
+      "level": 2,
+      "variant": "raw",
+      "primary": true,
+      "parts": 106,
+      "occupied_cells": 947,
+      "overlapping_cells": 0,
+      "stud_components": 1,
+      "component_sizes": [
+        106
+      ],
+      "origin_ldu": [
+        -210.00000268220901,
+        -100.00003010034561,
+        -0.07068624347448349
+      ],
+      "max_lattice_residual": 1.773238182067871e-06
+    }
+  ],
+  "contact_rule": "Different bricks, adjacent 24-LDU layers, >=1 shared 20x20-LDU horizontal cell; side contact alone is not an edge.",
+  "normalization": "Each export independently translated to minimum occupied x/z and lowest base; no rotations, scaling, clipping or added cells.",
+  "limitations": [
+    "Selected final-output cohort, not an all-attempt solver success rate.",
+    "Exported voxel unions are audited; original per-run solver targets are not all available.",
+    "Stud contact graph does not establish load-bearing stability or a feasible assembly sequence."
+  ]
+}

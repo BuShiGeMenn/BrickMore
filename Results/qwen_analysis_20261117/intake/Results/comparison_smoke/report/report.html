@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>LEGO model comparison</title><style>body{font:16px system-ui;max-width:1200px;margin:30px auto;padding:0 20px;background:#f6f7fa;color:#152535}table{border-collapse:collapse;width:100%;background:white}td,th{padding:14px;border:1px solid #dce2e8;text-align:left}pre{white-space:pre-wrap;background:white;padding:20px;border-radius:12px}</style><h1>LEGO model comparison</h1><p>NA denotes unavailable scores. P_inv is lower-better. Image metrics are higher-better.</p><h2>Group B · 1 systems</h2><p>1 prompts selected of 265.</p><table><tr><th>system</th><th>records</th><th>pinv</th><th>vqa</th><th>pe</th><th>siglip2</th></tr><tr><td>Qwen1.7b B LDR</td><td>1</td><td>0.000000 (n=1)</td><td>0.000001 (n=1)</td><td>0.037904 (n=1)</td><td>0.000000 (n=1)</td></tr></table><h2>Group A · 1 systems</h2><p>2 prompts selected of 260.</p><table><tr><th>system</th><th>records</th><th>pinv</th><th>vqa</th><th>pe</th><th>siglip2</th></tr><tr><td>Qwen3-1.7B-base</td><td>2</td><td>0.479373 (n=2)</td><td>0.000895 (n=2)</td><td>0.126552 (n=2)</td><td>0.000030 (n=2)</td></tr></table><h2>Source input coverage</h2><pre>{
+  &quot;A&quot;: {
+    &quot;no_placement&quot;: 178,
+    &quot;scoreable_partial&quot;: 80,
+    &quot;unsupported_part&quot;: 2
+  },
+  &quot;B&quot;: {
+    &quot;scoreable_ldr&quot;: 265
+  }
+}</pre><p>See coverage_and_scores.csv for per-prompt scores and input status.</p><h2>Protocol and limitations</h2><pre>{
+  &quot;structure&quot;: &quot;pinv_file_order, original BrickNet 0.1.0 inset collision kernel; original generation order not verified; no fixed-edge exemptions&quot;,
+  &quot;image_scores&quot;: &quot;Eight fixed views, max per model then arithmetic mean; no best-of-N sample selection&quot;,
+  &quot;rendering&quot;: &quot;Shared actual inset part surfaces, orthographic CPU rasterizer, 512px, 25-degree elevation, 45-degree azimuth steps, uniform yellow&quot;,
+  &quot;color&quot;: &quot;Uniform display color; no claim of generated-color accuracy&quot;,
+  &quot;original_paper_reproduction&quot;: false,
+  &quot;old_run_scores_mixed&quot;: false,
+  &quot;primary&quot;: &quot;A scores are limited to strictly parsed placements from 80 incomplete representations. B scores cover all 265 supplied LDRs.&quot;
+}</pre><p>Full rows: scores.csv. Category/level breakdown: by_category_level.csv.</p>

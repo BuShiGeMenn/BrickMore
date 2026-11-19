@@ -1,0 +1,7 @@
+% Polished Related Work section (proofread by Claude). Original text is in main-original.tex.
+\section{Related Work}
+\paragraph{Brick assembly and generation.}
+Prior work formulates brick assembly as graph generation, sequential construction, or structural understanding~\cite{thompson2020lego,brickbybrick,breakandmake}. BrickGPT~\cite{brickgpt} predicts autoregressive placement sequences and validates candidate bricks during decoding, while BrickNet~\cite{bricknet} adopts an assembly-graph representation over a broader catalog of parts and connectors. Rather than relying solely on autoregressive decoding or graph prediction to maintain structural validity, BrickForma predicts absolute grid placements for rectangular footprints and delegates global stud connectivity to exact-cover voxel reconstruction.
+
+\paragraph{Stability analysis.}
+StableLEGO introduces a force-balance model for evaluating block-stacking assemblies~\cite{stablelego}. In BrickForma, inference-time refinement enforces stud connectivity and exact voxel coverage, while dataset-level contact screening applies complementary force and ground-contact assumptions to flag physically plausible structures (Appendix~\ref{app:dataset}).

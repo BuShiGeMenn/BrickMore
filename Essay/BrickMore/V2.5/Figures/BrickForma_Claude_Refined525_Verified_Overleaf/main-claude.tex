@@ -1,0 +1,83 @@
+\documentclass[letterpaper]{article} % DO NOT CHANGE THIS
+% AAAI-27 Author Kit (official, https://aaai.org/authorkit27/, AuthorKit27.zip, aaai2027.sty dated 2026-10-21).
+% AAAI anonymous workshop manuscript.
+\usepackage[submission]{aaai2027}  % DO NOT CHANGE THIS
+\usepackage[hyphens]{url}  % DO NOT CHANGE THIS
+\usepackage{graphicx} % DO NOT CHANGE THIS
+\urlstyle{rm} % DO NOT CHANGE THIS
+\def\UrlFont{\rm}  % DO NOT CHANGE THIS
+\usepackage{natbib}  % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\usepackage{caption} % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\frenchspacing  % DO NOT CHANGE THIS
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{placeins} % \FloatBarrier keeps appendix floats in their sections
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+\setcounter{secnumdepth}{2} % Section numbers enabled (permitted by the template: 0, 1 or 2).
+
+\title{BrickForma: Crystallizing LLM Geometric Knowledge\\into Small Models for Text-to-Brick Assembly}
+\author{Anonymous submission}
+\affiliations{}
+
+% AAAI sets \@maketitle in the full-width first-page title block.
+% Append the teaser inside that block so it precedes the two-column abstract.
+\AddToHook{cmd/@maketitle/after}{\input{claude/teaser-claude}}
+
+\begin{document}
+\maketitle
+% Polished sections (proofread by Claude) live in claude/. The original text is preserved in
+% main-original.tex, abs-xiao-2.tex, intro-xiao.tex, and the un-suffixed table/figure files.
+\input{claude/abstract-claude}
+
+\input{claude/intro-claude}
+
+\begin{figure*}[t]
+\centering
+\begingroup
+% Use the existing PDF transparency group for the model renders.
+\pdfximage width \textwidth {figure2.pdf}%
+\pdfrefximage\pdflastximage\endgroup
+\caption{Data-construction workflow. GPT-6.1 Sol assists in writing parametric programs that produce voxel shapes and their captions. After deduplication, the shapes are converted to bricks, refined, and checked before export. Dashed arrows trace contact screening and its recorded status. Brick colors follow the legend in Figure~\ref{fig:teaser}.}
+\label{fig:data-workflow}
+\end{figure*}
+
+\input{claude/related-claude}
+
+\input{claude/dataset-claude}
+
+\input{claude/model-claude}
+
+\input{claude/eval-claude}
+
+\input{claude/limitations-claude}
+
+\input{claude/conclusion-claude}
+
+% Camera-ready only: uncomment for non-anonymous version.
+% \section*{Author Contributions}
+% H.L. and R.L. conceived the initial study design and formulated the research questions.
+% Z.X. designed and implemented the LLM-assisted parametric voxel generation pipeline (80,000 models and 400,000 L1--L5 descriptions) and developed the dataset-level voxel-to-brick conversion and local refinement algorithms.
+% H.L. conducted the parameter-efficient LoRA fine-tuning of the Qwen3-1.7B backbone.
+% Z.X. and H.L. co-developed the inference-time voxel-union and MILP exact-cover refinement pipeline, and E.W. formalized its algorithmic specification and pseudocode (Algorithm~\ref{alg:inference-refinement}).
+% R.L. established the standardized multi-view evaluation protocol, implemented the alignment and validity metrics, and designed the figures and tables.
+% R.L. and Z.X. executed the BrickForma inference runs and wrote the manuscript.
+% H.L., R.L., Z.X., E.W., and S.W. conducted the large-scale benchmark evaluations across the BrickGPT, BrickNet, and untuned Qwen3-1.7B baselines.
+% % X.Q. supervised the project and revised the manuscript.
+% All authors discussed the results and approved the final manuscript.
+\bibliography{references}
+\FloatBarrier
+\appendix
+\input{claude/appendix-dataset-claude}
+
+\input{claude/appendix-training-claude}
+
+\input{claude/appendix-eval-claude}
+
+\FloatBarrier % keep Appendix C floats ahead of Appendix D
+\input{claude/appendix-historical-claude}
+\end{document}
