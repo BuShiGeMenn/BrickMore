@@ -1,0 +1,611 @@
+% !TeX program = lualatex
+% V2.3 sentence-aligned reading copy. Build in the V2.3 project with LuaLaTeX twice.
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.83in,top=0.68in,bottom=0.72in,footskip=23pt]{geometry}
+\usepackage{fix-cm,fontspec}
+\IfFileExists{C:/Windows/Fonts/times.ttf}{
+  \setmainfont{times.ttf}[Path=C:/Windows/Fonts/,BoldFont=timesbd.ttf,ItalicFont=timesi.ttf,BoldItalicFont=timesbi.ttf]
+}{}
+\IfFileExists{C:/Windows/Fonts/simsun.ttc}{
+  \newfontfamily\chinesefont{simsun.ttc}[Path=C:/Windows/Fonts/,FontIndex=0,AutoFakeBold=1.5]
+}{\newfontfamily\chinesefont{FandolSong-Regular.otf}[BoldFont=FandolSong-Bold.otf]}
+\usepackage{graphicx,booktabs,array,amsmath,algorithm,algorithmic,caption,float,xcolor}
+\usepackage[authoryear]{natbib}
+\bibpunct{(}{)}{;}{a}{}{,}
+\let\cite\citep
+\usepackage[hyphens]{url}
+\urlstyle{rm}
+\definecolor{translation}{HTML}{20454B}
+\definecolor{muted}{HTML}{435660}
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\DeclareMathSizes{10.5}{10}{7}{5}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.08}
+\captionsetup{font=small,labelfont=bf,justification=raggedright,singlelinecheck=false}
+\raggedbottom
+% Insert legal breakpoints between Chinese characters and avoid leaving closing
+% punctuation at the beginning of a line. Latin text and mathematics are untouched.
+\directlua{
+  local glyph=node.id("glyph")
+  local function han(c) return (c>=0x2E80 and c<=0x9FFF) or (c>=0xFF00 and c<=0xFFEF) or (c>=0x2010 and c<=0x203F) end
+  local closing={[0xFF0C]=true,[0x3002]=true,[0xFF1F]=true,[0xFF01]=true,[0xFF1B]=true,[0xFF1A]=true,[0x3001]=true,[0xFF09]=true,[0x201D]=true,[0x300B]=true}
+  local opening={[0xFF08]=true,[0x201C]=true,[0x300A]=true}
+  luatexbase.add_to_callback("pre_linebreak_filter", function(head)
+    for n in node.traverse_id(glyph,head) do
+      local p=n.prev
+      if p and p.id==glyph and han(p.char) and han(n.char) and not opening[p.char] and not closing[n.char] then
+        head=node.insert_before(head,n,node.new("glue"))
+      end
+    end
+    return head
+  end,"brickforma.chinese.linebreaks")
+}
+\newcommand{\zh}[1]{{\chinesefont #1}}
+\newcommand{\pair}[2]{\par\addvspace{4pt}\noindent
+  \begin{minipage}{\linewidth}\raggedright
+  #1\par\nobreak\vspace{1pt}
+  {\color{translation}\chinesefont\fontsize{10.5}{15.3}\selectfont #2\par}
+  \end{minipage}\par}
+\newcommand{\readinghead}[2]{\par\addvspace{9pt}\noindent\textbf{#1}\enspace
+  {\color{translation}\zh{#2}}\par\nobreak}
+
+
+\makeatletter
+
+\expandafter\def\csname r@app:dataset\endcsname{{A}{}{ }{}{}}
+
+\expandafter\def\csname r@app:training\endcsname{{B}{}{ }{}{}}
+
+\expandafter\def\csname r@app:eval\endcsname{{C}{}{ }{}{}}
+
+\expandafter\def\csname r@fig:comparison-zero-invalid\endcsname{{15}{}{ }{}{}}
+
+\expandafter\def\csname r@fig:comparison-means\endcsname{{16}{}{ }{}{}}
+
+\expandafter\def\csname r@fig:comparison-distributions\endcsname{{17}{}{ }{}{}}
+
+\expandafter\def\csname r@fig:comparison-levels\endcsname{{18}{}{ }{}{}}
+
+\bibcite{qwen25vl}{{1}{2025}{{Bai et~al.}}{{Bai, Chen, Liu, Wang, Ge, Song, Dang, Wang et~al.}}}
+
+\bibcite{pe}{{2}{2025}{{Bolya et~al.}}{{Bolya, Huang, Sun, Cho, Madotto, Wei, Ma, Zhi et~al.}}}
+
+\bibcite{brickbybrick}{{3}{2021}{{Chung et~al.}}{{Chung, Kim, Knyazev, Lee, Taylor, Park, and Cho}}}
+
+\bibcite{lora}{{4}{2022}{{Hu et~al.}}{{Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and Chen}}}
+
+\bibcite{bricknet}{{5}{2026}{{Kulits and Schmid}}{{}}}
+
+\bibcite{vqascore}{{6}{2024}{{Lin et~al.}}{{Lin, Pathak, Li, Li, Xia, Neubig, Zhang, and Ramanan}}}
+
+\bibcite{stablelego}{{7}{2024}{{Liu et~al.}}{{Liu, Deng, Wang, and Liu}}}
+
+\bibcite{luo2026geogrambench}{{8}{2026}{{Luo et~al.}}{{Luo, Zhu, Yuan, Yang, Shan, and Wu}}}
+
+\bibcite{brickgpt}{{9}{2025}{{Pun et~al.}}{{Pun, Deng, Liu, Ramanan, Liu, and Zhu}}}
+
+\bibcite{infinigen}{{10}{2023}{{Raistrick et~al.}}{{Raistrick, Lipson, Ma, Mei, Wang, Zuo, Kayan, Wen et~al.}}}
+
+\bibcite{thompson2020lego}{{11}{2020}{{Thompson et~al.}}{{Thompson, Ghalebi, DeVries, and Taylor}}}
+
+\bibcite{siglip2}{{12}{2025}{{Tschannen et~al.}}{{Tschannen, Gritsenko, Wang, Naeem, Alabdulmohsin, Parthasarathy, Evans, Beyer et~al.}}}
+
+\bibcite{breakandmake}{{13}{2022}{{Walsman et~al.}}{{Walsman, Zhang, Kotar, Desingh, Farhadi, and Fox}}}
+
+\bibcite{qwen3}{{14}{2025}{{Yang et~al.}}{{Yang, Li, Yang, Zhang, Hui, Zheng, Yu, Gao et~al.}}}
+
+\bibcite{zhou2026paperfoldingpuzzle}{{15}{2026}{{Zhou et~al.}}{{Zhou, Xu, Huang, Yan, Liu, Miao, Ren, and Liu}}}
+
+\makeatother
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries BrickForma: Crystallizing LLM Geometric Knowledge\\into Small Models for Text-to-Brick Assembly\par}
+\vspace{5pt}{\large\chinesefont BrickForma：将大语言模型的几何知识凝练到用于文本生成积木拼装体的小模型中\par}
+\vspace{5pt}{\small Anonymous submission \enspace/\enspace \zh{匿名投稿}\par}
+{\small\color{muted} V2.3\enspace\zh{正文逐句中英对照}\par}
+\end{center}
+
+\begin{center}\includegraphics[width=0.77\linewidth]{figure1.pdf}\captionof{figure}{BrickForma overview. (a) Voxel-to-LEGO conversion. (b) Connectivity refinement. (c) Each triplet shows, from left to right, a voxel model from an LLM-authored generator, the resulting LEGO assembly, and a same-category BrickForma output (fine-tuned Qwen3-1.7B). Brick-type colors are for display only and are excluded from training targets.}\label{fig:teaser}\end{center}
+
+\section*{Abstract\enspace\zh{摘要}}
+
+\pair{Geometric spatial reasoning underlies applications from robotics to automated design, yet the ability of large language models (LLMs) to turn a verbal description into a physically connected three-dimensional assembly remains largely underexplored.}{从机器人技术到自动化设计，许多应用都依赖几何空间推理；而大语言模型（LLM）能否把语言描述转化为各部件实际相连的三维拼装体，仍缺乏充分研究。}
+
+\pair{Brick assembly is a demanding constructive probe of this ability: a short, underspecified prompt leaves dimensions, proportions, and part layout implicit, and a valid answer must match the semantic intent of the prompt while completing this geometry with discrete pieces that interlock through studs.}{积木拼装可以严格检验这种构造能力：简短的提示词往往省略尺寸、比例和部件布局，合格的输出既要符合提示词的语义，又要用凸点相互咬合的离散积木补全形状。}
+
+\pair{We study this setting as the \texttt{Text-to-Brick} task and present BrickForma, a framework that builds training data for a compact model using LLM-assisted parametric programs.}{我们把这一问题称为“文本生成积木”（Text-to-Brick），并提出 BrickForma，利用大语言模型辅助编写的参数化程序为小模型构建训练数据。}
+
+\pair{Parametric programs written with large language model assistance generate 80,000 source voxel models across 21 categories on a $48^3$ grid, each described at five levels of detail, yielding approximately 400,000 caption records that tie varying amounts of language to shared geometry.}{这些参数化程序在 $48^3$ 网格上生成了涵盖 21 个类别的 80,000 个源体素模型；每个模型配有五种详略程度的描述，共约 400,000 条，使信息量不同的描述对应同一几何形状。}
+
+\pair{A voxel-to-brick conversion pipeline with connection analysis and local refinement turns these shapes into geometrically checked brick targets, on which we fine-tune Qwen3-1.7B with low-rank adaptation to predict brick dimensions and positions from text.}{体素转积木流程结合连接分析和局部修复，将形状转换为经过几何校验的目标积木布局；我们在这些数据上对 Qwen3-1.7B 进行低秩适配微调，使其能根据文本预测积木的尺寸和位置。}
+
+\pair{A mixed-integer linear programming stage then seeks an exact cover of the voxel target reconstructed from these predictions with a single stud-connected component.}{随后，混合整数线性规划以这些预测重建出的体素为目标，寻找既能精确覆盖目标、又能通过凸点连接成一个整体的积木布局。}
+
+\pair{On 525 shared prompts spanning five description levels, BrickForma's raw outputs achieve the highest mean VQAScore, PE, and SigLIP2 at every level among the three systems.}{在涵盖五个描述级别的 525 条共用提示词上，BrickForma 原始输出的 VQAScore、PE 和 SigLIP2 均值在每个级别都居三个系统之首。}
+
+\pair{BrickForma has a mean invalid-placement ratio of 0.79\%, compared with 0.00\% for BrickGPT and 18.42\% for BrickNet.}{BrickForma 的平均非法放置率为 0.79\%，BrickGPT 为 0.00\%，BrickNet 为 18.42\%。}
+
+\pair{These results support using executable generators and geometric checks to train compact text-to-brick models.}{这些结果支持使用可执行生成程序和几何校验来训练小型文本生成积木模型。}
+
+\section{Introduction\enspace\zh{引言}}
+
+\pair{Spatial reasoning and geometric understanding are fundamental to human cognition and to artificial intelligence, supporting applications from robotics and navigation to computer-aided design.}{空间推理和几何理解是人类认知与人工智能的基础，支撑机器人、导航和计算机辅助设计等应用。}
+
+\pair{As large language models (LLMs) have matured, a growing body of work asks whether they can reason about shape, position, and transformation.}{随着大语言模型（LLM）日渐成熟，越来越多的研究开始考察它们能否推理形状、位置和变换。}
+
+\pair{Recent benchmarks probe LLMs' ability through paper folding and unfolding~\cite{zhou2026paperfoldingpuzzle} and geometry expressed as procedural drawing code~\cite{luo2026geogrambench}.}{近期的基准通过折纸与展纸任务，以及用绘图程序表达的几何问题，检验大语言模型的能力。}
+
+\pair{Each reports pronounced deficiencies in current models.}{两项研究都发现现有模型存在明显不足。}
+
+\pair{These studies largely assess spatial reasoning by asking a model to select or compute an answer.}{这些研究主要通过要求模型选择或计算答案来评估空间推理能力。}
+
+\pair{A complementary and less examined question is whether a language model can \emph{construct}: given only words, can it produce a three-dimensional object whose parts are correctly sized, correctly placed, and physically joined?}{一个相关但研究较少的问题是，语言模型能否进行构造：仅凭语言，它能否生成一个三维物体，使各部件尺寸正确、位置恰当且彼此实际连接？}
+
+\pair{Lego brick assembly makes this question concrete.}{乐高积木拼装为这个问题提供了具体任务。}
+
+\pair{A concise narrative request such as \emph{a simple chair} identifies an object category while leaving its dimensions, proportions, and part layout largely unspecified.}{例如，“一把简单的椅子”点明了物体类别，却几乎没有指定尺寸、比例或部件布局。}
+
+\pair{Answering it requires three coupled forms of geometric spatial reasoning.}{完成这一请求需要相互关联的三种几何空间推理能力。}
+
+\pair{The model must complete the missing geometry from prior knowledge of what the object looks like.}{模型必须根据对物体外形的已有知识补全缺失的几何信息。}
+
+\pair{It must discretize that geometry into pieces of fixed dimensions at integer positions on a grid.}{模型还必须将该形状离散化，用位于网格整数坐标上的固定尺寸积木来表示。}
+
+\pair{And it must respect the difference between spatial adjacency and stud connectivity, since pieces that touch side by side do not hold together unless they interlock vertically through studs.}{模型还须区分空间相邻和凸点连接，因为并排接触的积木只有通过上下层凸点咬合，才能连成整体。}
+
+\pair{We refer to this setting as the \texttt{Text-to-Brick} task: the translation from a natural-language description, at any level of detail, to a set of (Lego) brick placements that reproduces the described shape as a single connected assembly.}{我们称之为“文本生成积木”任务：将任意详略程度的自然语言描述转换为一组乐高积木的放置方案，以单个连通拼装体再现所描述的形状。}
+
+\pair{Because every output can be checked for coverage, bounds, and connectivity, the task provides a verifiable test of whether linguistic knowledge has become spatial structure.}{每个输出都可以检查覆盖范围、有无越界及连通性，因此可以实际检验语言知识能否转化为空间结构。}
+
+\pair{Prior work has established that language models can be trained for this task.}{先前研究已表明，语言模型可以通过训练完成这项任务。}
+
+\pair{BrickGPT~\cite{brickgpt} learns autoregressive brick-placement sequences and incorporates validity checks with physics-aware rollback during inference.}{BrickGPT 学习自回归的积木放置序列，并在推理时结合合法性检查与考虑物理条件的回滚机制。}
+
+\pair{BrickNet~\cite{bricknet} adopts a graph-based representation supporting a broader range of parts and connection types.}{BrickNet 采用图表示，能处理更多种类的零件和连接方式。}
+
+\pair{Two questions remain open alongside these advances.}{在这些进展的基础上，仍有两个问题值得研究。}
+
+\pair{\textbf{(Q1)} How well do generators translate \emph{limited} linguistic information into object geometry?}{（Q1）当语言信息有限时，生成模型能在多大程度上还原物体的几何形状？}
+
+\pair{In our five-level benchmark (Table~\ref{tab:level-results}), BrickNet obtains lower mean VQAScore, PE, and SigLIP2 than BrickForma at the two shortest description levels, L1 and L2, a gap that only level-wise evaluation makes visible.}{在五级基准（表~\ref{tab:level-results}）中，对于最短的 L1 和 L2 描述，BrickNet 的 VQAScore、PE 和 SigLIP2 均值都低于 BrickForma；分级评测才揭示了这一差距。}
+
+\pair{\textbf{(Q2)} Can LLM-assisted programs encode the geometric details omitted from concise prompts in a form suitable for training a compact model?}{（Q2）大语言模型辅助编写的程序，能否把简短提示词中省略的几何细节编码为适合训练小模型的形式？}
+
+\pair{We present BrickForma, which uses executable programs to generate training examples for a compact text-to-brick model.}{为此，我们提出 BrickForma，用可执行程序为小型文本生成积木模型构造训练样本。}
+
+\pair{With GPT-6.1 Sol assistance, we develop parametric programs that vary object proportions, part dimensions, openings, and support arrangements to synthesize voxel shapes in batches.}{我们借助 GPT-6.1 Sol 编写参数化程序，通过改变物体比例、部件尺寸、开口和支撑布局，批量生成体素形状。}
+
+\pair{Each program specifies the structure of an object family and exposes its geometric degrees of freedom as parameters.}{每个程序定义一个物体家族的结构，并把可变化的几何属性表示为参数。}
+
+\pair{The source collection contains 80,000 models across 21 categories on a $48^3$ grid.}{源数据集在 $48^3$ 网格上包含 21 个类别、共 80,000 个模型。}
+
+\pair{Each model is paired with five levels of description that progressively introduce structural, geometric, proportional, and appearance information.}{每个模型配有五级描述，逐步加入结构、几何、比例和外观信息。}
+
+\pair{The resulting approximately 400,000 caption records link concise requests and detailed specifications to shared geometry, providing supervision for prompts with different amounts of geometric detail.}{由此得到的约 400,000 条描述将简短请求和详细规格关联到同一形状，为几何细节多寡不同的提示词提供监督。}
+
+\pair{Turning voxel shapes into brick targets is where spatial adjacency and stud connectivity must be separated.}{将体素形状转换为目标积木布局时，必须区分空间相邻与凸点连通。}
+
+\pair{Pieces can cover a connected voxel volume and touch side by side without forming stud connections.}{多块积木可以完整覆盖一个连通的体素体积，却仅在侧面相互接触，未形成凸点连接。}
+
+\pair{Our conversion pipeline combines same-color brick placement, connection analysis, and local refinement to construct geometrically checked target layouts, with changes to source voxels recorded in derived models.}{我们将同色积木放置、连接分析和局部修复结合起来，构造经过几何校验的目标布局，并在派生模型中记录相对源体素的修改。}
+
+\pair{The integrated dataset release includes 79,301 models passing its dataset-level geometric checks.}{整合发布版中共有 79,301 个模型通过了数据集级几何检查。}
+
+\pair{We fine-tune Qwen3-1.7B~\cite{qwen3} with low-rank adaptation~\cite{lora} on caption--placement pairs to predict brick dimensions and spatial positions.}{我们使用低秩适配（LoRA），在描述与积木放置序列的配对数据上微调 Qwen3-1.7B，使其预测积木尺寸和空间位置。}
+
+\pair{Geometric refinement complements the small model's predictions with explicit structural enforcement.}{几何修复通过显式实施结构约束来补充小模型的预测。}
+
+\pair{From the supported, in-bounds portions of predicted placements, the pipeline forms a voxel union and uses mixed-integer linear programming to seek an exact-cover layout forming a single stud-connected component.}{流程从预测布局中取出尺寸受支持且位于边界内的部分，构成体素并集，再用混合整数线性规划寻找精确覆盖且仅含一个凸点连通分量的布局。}
+
+\pair{Independent coverage and connectivity checks verify the refined layout.}{随后通过独立的覆盖和连通性检查验证修复后的布局。}
+
+\pair{This design assigns the two halves of the task to the components suited to them: the language model decides what shape a description denotes, and the solver decides how that shape holds together.}{两个环节分别承担不同任务：语言模型确定描述对应的形状，求解器确定怎样将其拼成整体。}
+
+\pair{We evaluate BrickForma against BrickGPT and BrickNet on 525 shared prompts spanning five description levels.}{我们在涵盖五个描述级别的 525 条共用提示词上比较了 BrickForma、BrickGPT 和 BrickNet。}
+
+\pair{BrickForma's raw outputs achieve the highest mean VQAScore, PE, and SigLIP2 at every level, including the shortest descriptions.}{在包括最短描述在内的每个级别，BrickForma 的原始输出均取得最高的平均 VQAScore、PE 和 SigLIP2。}
+
+\pair{BrickGPT has the lowest mean invalid-placement ratio (0.00\%), followed by BrickForma (0.79\%) and BrickNet (18.42\%).}{BrickGPT 的平均非法放置率最低（0.00\%），其次为 BrickForma（0.79\%）和 BrickNet（18.42\%）。}
+
+\pair{Reporting all five levels connects the multilevel data design to an explicit assessment of how generation changes with the amount of descriptive detail.}{报告全部五个级别的结果，可以直接考察描述细节的多少如何影响生成表现，也使评测与多级数据设计相对应。}
+
+\pair{In summary, the main contributions of this work are as follows:}{本文的主要贡献如下。}
+
+\readinghead{LLM-assisted construction of training data for a compact model.}{在大语言模型辅助下为小模型构建训练数据。}
+
+\pair{We use executable parametric programs to generate voxel shapes and descriptions, convert the shapes into geometrically checked brick layouts, and fine-tune a 1.7B-parameter model on the resulting caption--placement pairs.}{我们用可执行的参数化程序生成体素形状和描述，将其转换为经几何校验的积木布局，再用描述与放置序列的配对数据微调一个 17 亿参数模型。}
+
+\pair{On the 525 shared prompts, BrickForma attains a 30.0\% higher mean VQAScore than BrickGPT.}{在 525 条共用提示词上，BrickForma 的平均 VQAScore 比 BrickGPT 高 30.0\%。}
+
+\readinghead{A multi-level dataset that enables experimental validation of small language model alignment across various levels of descriptive detail.}{构建多级数据集，实验检验小型语言模型在不同描述详略程度下的图文对齐表现。}
+
+\pair{With our LLM-assisted parametric data construction pipeline, we generated 80,000 source voxel models with five description levels each.}{借助大语言模型辅助的参数化数据构建流程，我们生成了 80,000 个源体素模型，每个模型均配有五级描述。}
+
+\pair{In the integrated release, 79,301 of the 80,000 source models yielded brick layouts that passed the geometric checks.}{在整合发布版中，80,000 个源模型有 79,301 个得到了通过几何检查的积木布局。}
+
+\pair{We fine-tuned Qwen3-1.7B on caption--placement pairs and carried out level-wise evaluation against BrickGPT and BrickNet to assess text--image alignment and invalid placements across descriptions ranging from concise prompts to detailed specifications.}{我们在描述与放置序列的配对数据上微调 Qwen3-1.7B，并与 BrickGPT 和 BrickNet 分级比较，评估从简短提示词到详细规格下的图文对齐和非法放置情况。}
+
+\pair{BrickForma consistently achieves the highest mean alignment scores across all five levels.}{BrickForma 在全部五个级别的平均对齐得分均居首。}
+
+\begin{figure}[!htbp]\centering\includegraphics[width=\linewidth]{figure2.pdf}\caption{Data-construction workflow. GPT-6.1 Sol assists in writing parametric programs that produce voxel shapes and captions. After deduplication, the shapes are converted to bricks, refined, and checked before export. Dashed arrows trace contact screening and its recorded status. Brick colors follow the legend in Figure~\ref{fig:teaser}.}\label{fig:data-workflow}\end{figure}
+
+\section{Related Work\enspace\zh{相关工作}}
+
+\readinghead{Brick assembly and generation.}{积木拼装与生成}
+
+\pair{Prior work formulates brick assembly as graph generation, sequential construction, or structural understanding~\cite{thompson2020lego,brickbybrick,breakandmake}.}{以往研究将积木拼装表述为图生成、顺序构造或结构理解问题。}
+
+\pair{BrickGPT~\cite{brickgpt} predicts autoregressive placement sequences and validates candidate bricks during decoding, while BrickNet~\cite{bricknet} adopts an assembly-graph representation over a broader catalog of parts and connectors.}{BrickGPT 自回归地预测积木放置序列，并在解码时验证候选积木；BrickNet 则采用拼装图来表示更广泛的零件与连接件。}
+
+\pair{Rather than relying solely on autoregressive decoding or graph prediction to maintain structural validity, BrickForma predicts absolute grid placements for rectangular footprints and delegates global stud connectivity to exact-cover voxel reconstruction.}{BrickForma 直接预测矩形积木在网格中的绝对位置，并通过体素精确覆盖重建来保证整体凸点连通，而不只依赖自回归解码或图预测来维持结构合法性。}
+
+\readinghead{Stability analysis.}{稳定性分析}
+
+\pair{StableLego introduces a force-balance model to evaluate block-stacking assemblies~\cite{stablelego}.}{StableLego 采用受力平衡模型评估积木堆叠体。}
+
+\pair{In BrickForma, inference-time refinement enforces stud connectivity and exact voxel coverage, while our dataset-level contact screening applies complementary force and ground-contact assumptions to flag physically plausible structures (Appendix~\ref{app:dataset}).}{BrickForma 在推理修复阶段要求凸点连通和体素精确覆盖；数据集层面的接触筛查另行引入力与地面接触假设，以标记物理上可行的候选结构（附录~\ref{app:dataset}）。}
+
+\readinghead{Procedural data and parameter-efficient fine-tuning.}{程序化数据与参数高效微调}
+
+\pair{Procedural generation enables systematic control over shape diversity and dataset scale~\cite{infinigen}.}{程序化生成可以系统地控制形状多样性和数据集规模。}
+
+\pair{BrickForma leverages an LLM to author executable parametric generators, verifies their geometric outputs algorithmically, and fine-tunes a compact text-only model on the resulting caption--placement pairs via LoRA~\cite{lora}, adopting BrickGPT's serialized placement representation~\cite{brickgpt}.}{BrickForma 借助大语言模型编写可执行的参数化生成程序，以算法验证几何输出，并借用 BrickGPT 的积木放置序列表示，在描述与序列的配对数据上通过 LoRA 微调小型纯文本模型。}
+
+\section{Dataset Construction\enspace\zh{数据集构建}}
+
+\label{sec:dataset}
+
+\subsection{Parametric Voxel Generation\enspace\zh{参数化体素生成}}
+
+\pair{To crystallize broad geometric priors into explicit supervision, GPT-6.1 Sol assists in authoring analytic parametric generator programs across 21 object categories, each partitioned into 40 structural families (47--48 instances per family in each 40,000-model shard).}{为把一般性的几何先验转化为显式监督，我们借助 GPT-6.1 Sol 编写解析式参数化生成程序，覆盖 21 类物体，每类划分为 40 个结构家族；在每个含 40,000 个模型的数据分片中，每个家族有 47–48 个实例。}
+
+\pair{For every instance, a planning module samples independent design parameters---governing category-specific components, proportions, openings, and support structures---and deterministically rasterizes the geometry onto a $48^3$ grid ($Y{=}0$ ground contact) while deriving L1--L5 captions from the same underlying plan.}{对于每个实例，规划模块独立采样控制类别特有部件、比例、开口和支撑结构的设计参数，再确定性地将几何形状栅格化到 $48^3$ 网格（$Y=0$ 为接地面），并依据同一规划生成 L1–L5 描述。}
+
+\pair{Rather than applying random cell deletion, cavity filling, or post-hoc bridges, density adjustments regenerate the entire shape from its continuous parameters until automated checks confirm 750--1,250 occupied voxels and a single six-neighbor connected component.}{为调整密度，程序依据连续参数重新生成整个形状，直至自动检查确认占用体素数为 750–1,250 且只有一个六邻域连通分量；流程不采用随机删格、填腔或事后架桥。}
+
+\pair{Exact and canonical occupancy hashes across 48 axis and sign transforms verify zero cross-shard duplicates, with geometry plans and version identifiers preserved alongside each record (Figure~\ref{fig:data-workflow}, where \texttt{shape(params)} denotes the analytic shape and \texttt{emit(x,y,z)} records occupied voxel coordinates).}{系统对 48 种坐标轴和符号变换计算精确及规范化占用哈希，确认跨分片重复数为零，并随记录保存几何规划和版本标识（图~\ref{fig:data-workflow} 中，\texttt{shape(params)} 表示解析形状，\texttt{emit(x,y,z)} 记录占用体素的坐标）。}
+
+\pair{BrickForma-48 (archived under \texttt{BrickMore-48} in the accompanying dataset and checkpoint releases) pairs each shape with five bilingual descriptions.}{BrickForma-48 为每个形状配备五级双语描述，其配套数据集和检查点以历史名称 \texttt{BrickMore-48} 归档。}
+
+\pair{L1 names the object and its primary parts, whereas L2--L5 progressively layer structural, proportional, appearance, and viewpoint details onto the exact same source geometry (see Appendix~\ref{app:dataset} for a birdhouse example).}{L1 指明物体及其主要部件，L2–L5 针对完全相同的源几何形状逐步增加结构、比例、外观和视角细节（鸟屋示例见附录~\ref{app:dataset}）。}
+
+\subsection{Voxel-to-Brick Conversion and Checks\enspace\zh{体素转积木与几何校验}}
+
+\pair{Converting a connected voxel volume into a buildable brick target requires separating mere spatial adjacency from vertical stud connectivity.}{将连通体素转换为可拼装的积木目标，需要区分单纯的空间相邻和上下层凸点连接。}
+
+\pair{Our pipeline tiles each layer with same-color rectangular bricks and analyzes the resulting stud-connected components.}{流程用同色矩形积木逐层覆盖体素，并分析所得布局的凸点连通分量。}
+
+\pair{When ungrounded fragments arise, local refinement modifies the layout while logging all voxel edits against the source shape, raising the geometry-pass count from 65,503 to 79,298 (recovering 13,795 failures).}{如果出现未接地的分离部件，局部修复会调整布局，并记录相对源形状的所有体素改动；几何检查通过数由 65,503 增至 79,298，挽回了 13,795 个原先失败的模型。}
+
+\pair{Across the corpus, refinement adds 228,582 voxels and removes 125, while 31,532 passing models require no edits at all.}{在整个数据集中，修复共增加 228,582 个体素、移除 125 个体素，另有 31,532 个通过检查的模型无需改动。}
+
+\pair{For challenging layouts, conversion falls back to layer-wise exact-cover search or a mixed-integer linear program (MILP) that explicitly enforces a stud path to the ground.}{对于难以转换的布局，流程转用逐层精确覆盖搜索，或用混合整数线性规划（MILP）显式要求积木沿凸点连接形成通往地面的路径。}
+
+\pair{A minimum-remaining-values (MRV) heuristic branches on the uncovered voxel with the fewest valid candidate bricks; the initial release also employed bounded beam search when greedy placement failed the geometric audit, ranking partial layouts by uncovered voxels and remaining stud components.}{最少剩余值（MRV）启发式优先对合法候选积木最少的未覆盖体素进行分支；初始发布版还在贪心放置未通过几何审计时使用有界束搜索，并按未覆盖体素和剩余凸点连通分量对部分布局排序。}
+
+\pair{Release-level verification confirms that target voxels form a single six-neighbor component, every brick component is grounded, and the brick assembly exactly covers the derived target.}{发布级校验要求目标体素构成单个六邻域连通分量、每个积木连通分量均接地，且积木布局精确覆盖派生目标。}
+
+\pair{While multiple independently grounded components may pass release-level checks, inference-time refinement enforces a stricter single-component constraint.}{发布级检查允许多个分别接地的连通分量，而推理时的修复要求仅有一个连通分量。}
+
+\pair{Separately, a self-weight screen evaluates the final assembly and, if feasible, each bottom-up completed-layer prefix, recording the tipping margin and estimating per-stud tensile demand when compression alone cannot balance gravity (Appendix~\ref{app:dataset}).}{另行执行的自重筛查先评估最终拼装体，若有可行解，再自下而上检查每个完整层前缀，记录倾覆裕度，并在仅靠压力无法平衡重力时估计每个凸点所需承受的拉力（附录~\ref{app:dataset}）。}
+
+\subsection{Integrated Release and Training Corpus\enspace\zh{整合发布版与训练语料}}
+
+\pair{The full refined release leaves 702 geometry failures.}{完整修复版中仍有 702 个模型未通过几何检查。}
+
+\pair{A revised batch-B piano release passes all 1,905 slots compared with 1,902 in the full refined release, yielding an integrated count of $79{,}298-1{,}902+1{,}905=79{,}301$ passing models.}{修订版中B 批次的 1,905 个钢琴模型全部通过，完整修复版中相应通过数为 1,902，因此整合后的通过数为 $79{,}298-1{,}902+1{,}905=79{,}301$。}
+
+\pair{Table~\ref{tab:training-data} summarizes both the dataset release counts and the recorded fine-tuning corpus.}{表~\ref{tab:training-data} 列出了数据集发布版的统计与微调运行记录的语料规模。}
+
+\begin{table}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lr}
+\toprule
+\multicolumn{2}{l}{\emph{Dataset (release reports)}} \\
+\midrule
+Source models / categories / grid & 80,000 / 21 / $48^3$ \\
+Bilingual caption records & 400,000 \\
+Failing in full refined release & 702 (0.88\%) \\
+Passing in full refined release & 79,298 \\
+Piano models restored by revised release & 3 \\
+Integrated passing models & 79,301 \\
+\midrule
+\multicolumn{2}{l}{\emph{Fine-tuning corpus}} \\
+\midrule
+(model, English caption) samples & 396,610 \\
+Training / validation samples & 356,955 / 39,655 \\
+Tokens over 3 epochs & 2,228,044,818 \\
+\bottomrule
+\end{tabular}
+\caption{Dataset and fine-tuning corpus. The two blocks are counted separately: the upper block from the dataset release reports, the lower block as recorded for the fine-tuning run.}
+\label{tab:training-data}
+\end{table}
+
+\section{BrickForma Text-to-Brick Model\enspace\zh{BrickForma 文本生成积木模型}}
+
+\label{sec:model}
+
+\subsection{Fine-Tuning\enspace\zh{微调}}
+
+\label{sec:training}
+
+\pair{We fine-tune Qwen3-1.7B with LoRA on English L1--L5 captions paired with their checked brick layouts, using a model-level 9:1 split so all five descriptions of a given shape remain in the same partition.}{我们将 L1–L5 英文描述与通过检查的积木布局配对，用 LoRA 微调 Qwen3-1.7B；训练集和验证集按模型以 9:1 划分，确保同一形状的五条描述始终位于同一子集。}
+
+\pair{The $48^3$ workspace uses 20 oriented footprints (11 brick sizes up to planar rotation).}{$48^3$ 工作空间使用 20 种带方向的平面占地规格，忽略平面旋转后对应 11 种积木尺寸。}
+
+\pair{Each instruction specifies the allowed brick dimensions, and the target lists one placement per line---such as $2{\times}4\ (x,y,z)$---serialized Y-first and then X, capturing pure geometry without color tokens.}{每条指令指定允许的积木尺寸，目标序列每行给出一次放置，例如 $2{\times}4\ (x,y,z)$；尺寸按先 Y 后 X 的顺序编码，序列只含几何信息，不含颜色词元。}
+
+\pair{Training follows the BrickGPT Qwen3 recipe~\cite{brickgpt} (Table~\ref{tab:finetune-config}) with unpacked sequences to preserve caption boundaries.}{训练沿用 BrickGPT 的 Qwen3 方案（表~\ref{tab:finetune-config}），不拼接不同样本的序列，以保留每条描述的边界。}
+
+\pair{The run completed 133,860 steps in 25.3 hours across eight GPUs.}{训练使用八块 GPU，在 25.3 小时内完成 133,860 步。}
+
+\pair{Validation loss reached its minimum of 0.0308 at step 79,000---which we retain as the released checkpoint---before rising slightly to 0.0339 at the end of epoch 3 (Appendix~\ref{app:training}).}{验证损失在第 79,000 步达到最低值 0.0308，我们选用该步的检查点发布；到第 3 个训练轮次结束时，验证损失略升至 0.0339（附录~\ref{app:training}）。}
+
+\begin{table}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{0.58\linewidth}@{}}
+\toprule
+Item & Value \\
+\midrule
+Base model & Qwen3-1.7B (bf16) \\
+Adaptation & LoRA, $r=16$, $\alpha=32$, dropout $0.05$, all linear layers \\
+Optimization & LR $10^{-4}$, cosine, 100 warm-up steps, 3 epochs \\
+Batch / max length & effective 8 (8 GPUs $\times$ 1) / 8,192 \\
+Hardware & DDP, 8$\times$RTX 4090D (24\,GB) \\
+Released checkpoint & step 79,000 (best validation loss) \\
+Software & transformers 4.51.3, trl 0.17.0, peft 0.15.2 \\
+\bottomrule
+\end{tabular}
+\caption{Fine-tuning configuration (details in Appendix~\ref{app:training}).}
+\label{tab:finetune-config}
+\end{table}
+
+\subsection{Inference and Refinement\enspace\zh{推理与几何修复}}
+
+\pair{As outlined in Algorithm~\ref{alg:inference-refinement}, decoding runs with thinking disabled, temperature $0.7$, top-$p$ $0.9$, and a 8,192-token budget across seeds 42, 104, and 2026.}{如算法~\ref{alg:inference-refinement} 所示，解码关闭思考模式，温度为 0.7，top-$p$ 为 0.9，最多生成 8,192 个词元，采用的随机种子为 42、104 和 2026。}
+
+\pair{A draft is considered complete upon emitting an end-of-sequence token; the pipeline selects the first completed draft that passes the geometry validator, or otherwise the completed draft with the fewest reported errors.}{当模型输出序列结束词元时，草稿被视为完整；流程选用第一个通过几何校验的完整草稿，若均未通过，则选用报告错误数最少的完整草稿。}
+
+\pair{Any valid raw draft already forming a single stud-connected component is returned directly.}{如果合法的原始草稿已经形成单个凸点连通分量，就直接返回。}
+
+\pair{For disconnected or overlapping drafts, we isolate the semantic shape proposal by forming the in-bounds voxel union $C$ of all supported placements (counting overlaps once) and delegate structural assembly to an MILP solver.}{对于断开或重叠的草稿，我们将支持的放置在边界内占据的体素取并集 $C$，重叠体素只计一次，以此提取模型提出的物体形状，再由 MILP 求解器完成结构拼装。}
+
+\pair{The solver seeks an exact cover of $C$ forming a single stud-connected component under time tiers of 12, 60, and 180 seconds, followed by an independent audit of placement validity, coverage, and connectivity.}{求解器按 12、60 和 180 秒三个时限寻找精确覆盖 $C$ 且形成单个凸点连通分量的布局，再独立检查放置合法性、覆盖和连通性。}
+
+\pair{If the budget is exhausted, the pipeline retains the raw draft and queues a reseed, with optional recovery runs extending the budget to 600 seconds or sampling additional seeds.}{耗尽预算后，流程保留原始草稿，并将提示词加入更换种子重试的队列；可选的恢复运行可将时限延长到 600 秒，或使用更多随机种子采样。}
+
+\pair{Throughout our evaluation, we refer to pre-solver model outputs as \emph{raw} and solver-reconstructed outputs as \emph{refined} (see Appendix~\ref{app:eval} for the exact-cover constraints).}{全文将进入求解器前的模型输出称为“原始输出”，将求解器重建的输出称为“修复后输出”；精确覆盖约束见附录~\ref{app:eval}。}
+
+\begin{algorithm}[!htbp]
+\caption{BrickForma inference and refinement}
+\label{alg:inference-refinement}
+\small
+\begin{algorithmic}[1]
+\REQUIRE prompt $c$; fine-tuned model $\theta$; library $\mathcal{L}$ (20 footprints); seeds $S=(42,104,2026)$; MILP tiers $T=(12,60,180)$\,s
+\ENSURE $(B_{\mathrm{out}}, \textit{status})$, $\textit{status}\in\{\textsc{Success},\textsc{Draft},\textsc{Failed}\}$
+\STATE $B \gets \emptyset$; $A \gets \emptyset$
+\FOR{$s \in S$}
+\STATE $(B_s,\textit{rep}) \gets \mathrm{Parse}(\theta.\mathrm{Generate}(c,\ \mathrm{seed}{=}s))$
+\STATE $A \gets A \cup \{(B_s,\textit{rep})\}$
+\IF{$\textit{rep}.\mathrm{complete} \land \textit{rep}.\mathrm{valid}$}
+\STATE $B \gets B_s$; \textbf{break}
+\ENDIF
+\ENDFOR
+\IF{$B=\emptyset$}
+\IF{no completed draft in $A$}
+\RETURN $(\emptyset,\ \textsc{Failed})$
+\ENDIF
+\STATE $B \gets \arg\min_{\text{completed } a\in A} \mathrm{Err}(a)$
+\ENDIF
+\IF{$\mathrm{Err}(B)=0 \land \mathrm{StudComponents}(B)=1$}
+\RETURN $(B,\ \textsc{Success})$ \COMMENT{keep a valid connected raw layout}
+\ENDIF
+\STATE $C \gets \mathrm{UnionVoxels}(B;\ \mathcal{L},\ 48^3)$ \COMMENT{clip; overlaps count once}
+\FOR{$\tau \in T$}
+\STATE $B^{*} \gets \mathrm{MILP\text{-}SingleStudCover}(C,\ \tau)$
+\IF{$B^{*}\neq\emptyset \land \mathrm{Audit}(B^{*},C)$}
+\RETURN $(B^{*},\ \textsc{Success})$
+\ENDIF
+\ENDFOR
+\STATE $\mathrm{QueueReseed}(c)$
+\RETURN $(B,\ \textsc{Draft})$ \COMMENT{unsolved: keep raw draft}
+\end{algorithmic}
+\end{algorithm}
+
+\section{Comparative Evaluation\enspace\zh{对比评测}}
+
+\label{sec:eval}
+
+\subsection{Setup and Metrics\enspace\zh{实验设置与指标}}
+
+\label{sec:setup}
+
+\pair{We evaluate BrickForma against BrickGPT and BrickNet on 525 shared prompts spanning 21 categories and five description levels (105 prompts per level).}{我们在 525 条共用提示词上比较 BrickForma、BrickGPT 与 BrickNet，覆盖 21 类物体和五个描述级别，每级 105 条提示词。}
+
+\pair{Scoring one delivered output per system and prompt yields 1,575 LDraw exports.}{每个系统对每条提示词计入一个交付输出，共评测 1,575 份 LDraw 导出文件。}
+
+\pair{To isolate the learned model's geometric quality prior to solver intervention, the main benchmark evaluates all delivered raw BrickForma exports---including incomplete drafts---while Appendix~\ref{app:eval} separately details the refinement diagnostic.}{为考察求解器介入前模型所生成布局的几何质量，主评测纳入交付的全部 BrickForma 原始输出，包括未完成草稿；修复诊断另见附录~\ref{app:eval}。}
+
+\readinghead{Text--image alignment.}{图文对齐}
+
+\pair{Each export is rendered with uniform yellow material across eight $512{\times}512$ orthographic views spaced $45^\circ$ apart in azimuth at $25^\circ$ elevation.}{每份导出文件统一使用黄色材质，渲染为八幅 $512{\times}512$ 的正交视图，方位角间隔 $45^\circ$，仰角为 $25^\circ$。}
+
+\pair{Alignment scores take the maximum over views and average across prompts.}{对每条提示词先取各视图中的最高对齐分，再对提示词求平均。}
+
+\pair{VQAScore~\cite{vqascore} computes the first-token probability of \textquotedblleft Yes\textquotedblright\ from Qwen2.5-VL-7B-Instruct~\cite{qwen25vl}, PE~\cite{pe} measures cosine similarity between normalized image and text embeddings, and SigLIP2~\cite{siglip2} evaluates the sigmoid of the image--text logit.}{VQAScore 取 Qwen2.5-VL-7B-Instruct 将“Yes”作为首个词元的概率；PE 计算归一化图像嵌入和文本嵌入间的余弦相似度；SigLIP2 则对图文匹配的 logit 应用 sigmoid 函数。}
+
+\readinghead{Invalid placements.}{非法放置}
+
+\pair{For an export containing $n$ placements in file order, let $I_i$ indicate whether placement $i$ violates BrickNet's inset collision kernel~\cite{bricknet} given preceding placements.}{一份导出文件按文件顺序包含 $n$ 次放置；给定此前的放置，$I_i$ 表示第 $i$ 次放置是否违反 BrickNet 的内缩碰撞检测规则。}
+
+\pair{We report the mean per-export invalid-placement ratio $P_{\mathrm{inv}}=n^{-1}\sum_{i=1}^{n}I_i$.}{我们先对每份导出计算非法放置率 $P_{\mathrm{inv}}=n^{-1}\sum_{i=1}^{n}I_i$，再报告各导出文件的平均值。}
+
+\subsection{Main Results\enspace\zh{主要结果}}
+
+\begin{table}[!htbp]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+System & $P_{\mathrm{inv}}\downarrow$ & VQAScore $\uparrow$ & PE $\uparrow$ & SigLIP2 $\uparrow$ \\
+\midrule
+BrickForma & 0.79\% & \textbf{0.0866} & \textbf{0.1568} & \textbf{0.0448} \\
+BrickGPT & \textbf{0.00\%} & 0.0666 & 0.1440 & 0.0194 \\
+BrickNet & 18.42\% & 0.0201 & 0.1187 & 0.0011 \\
+\bottomrule
+\end{tabular}
+\caption{Mean scores on 525 shared prompts. BrickForma uses delivered raw outputs. Bold marks the best mean.}
+\label{tab:main}
+\end{table}
+
+\pair{Across all 525 prompts, BrickForma's raw outputs achieve the highest mean VQAScore (0.0866), PE (0.1568), and SigLIP2 (0.0448) (Table~\ref{tab:main}), outperforming BrickGPT on 384, 337, and 327 prompts, respectively.}{在全部 525 条提示词上，BrickForma 原始输出的平均 VQAScore（0.0866）、PE（0.1568）和 SigLIP2（0.0448）均为最高（表~\ref{tab:main}），三项指标分别在 384、337 和 327 条提示词上优于 BrickGPT。}
+
+\pair{All six paired alignment comparisons remain statistically significant under Holm correction (Appendix~\ref{app:eval}).}{六项配对对齐比较在 Holm 校正后仍具有统计显著性（附录~\ref{app:eval}）。}
+
+\pair{On placement validity, BrickGPT achieves the lowest mean $P_{\mathrm{inv}}$ (0.00\%) via physics-aware rollback, followed by BrickForma (0.79\%) and BrickNet (18.42\%), with zero-invalid-placement counts of 525, 331, and 139, respectively (Figure~\ref{fig:comparison-zero-invalid}).}{在放置合法性上，BrickGPT 借助考虑物理条件的回滚取得最低的平均 $P_{\mathrm{inv}}$（0.00\%），其次是 BrickForma（0.79\%）和 BrickNet（18.42\%）；三者完全没有非法放置的输出数分别为 525、331 和 139（图~\ref{fig:comparison-zero-invalid}）。}
+
+\pair{Figures~\ref{fig:comparison-means} and~\ref{fig:comparison-distributions} visualize pooled means and score distributions.}{图~\ref{fig:comparison-means} 与图~\ref{fig:comparison-distributions} 分别展示总体均值与得分分布。}
+
+\readinghead{Comparison with the untuned backbone.}{与未微调基座模型的比较}
+
+\pair{To verify the effect of parametric supervision on 260 matched prompts, we assign zero alignment scores when untuned Qwen3-1.7B fails to produce a scorable layout.}{为在 260 条匹配提示词上考察参数化监督的作用，当未微调的 Qwen3-1.7B 未能生成可评分布局时，我们将其对齐分数记为零。}
+
+\pair{Mean VQAScore, PE, and SigLIP2 rise from 0.0008, 0.0354, and 0.0014 for the untuned backbone to 0.0649, 0.1564, and 0.0328 for raw BrickForma prior to geometric refinement (Appendix~\ref{app:eval}).}{平均 VQAScore、PE 和 SigLIP2 从未微调基座模型的 0.0008、0.0354 和 0.0014，分别升至 BrickForma 在几何修复前原始输出的 0.0649、0.1564 和 0.0328（附录~\ref{app:eval}）。}
+
+\subsection{Performance across Description Levels\enspace\zh{各描述级别的表现}}
+
+\begin{table}[!htbp]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrlrrrr}
+\toprule
+Level & $n$ & Words & System & $P_{\mathrm{inv}}\downarrow$ & VQAScore $\uparrow$ & PE $\uparrow$ & SigLIP2 $\uparrow$ \\
+\midrule
+L1 & 105 & 13.6 & BrickForma & 0.48\% & \textbf{0.1539} & \textbf{0.1388} & \textbf{0.0158} \\
+&  &  & BrickGPT & \textbf{0.00\%} & 0.1296 & 0.1302 & 0.0087 \\
+&  &  & BrickNet & 18.59\% & 0.0346 & 0.1051 & 0.0005 \\
+\midrule
+L2 & 105 & 26.4 & BrickForma & 0.69\% & \textbf{0.1264} & \textbf{0.1465} & \textbf{0.0291} \\
+&  &  & BrickGPT & \textbf{0.00\%} & 0.0938 & 0.1338 & 0.0206 \\
+&  &  & BrickNet & 18.35\% & 0.0394 & 0.1030 & 0.0008 \\
+\midrule
+L3 & 105 & 37.5 & BrickForma & 0.98\% & \textbf{0.1179} & \textbf{0.1477} & \textbf{0.0508} \\
+&  &  & BrickGPT & \textbf{0.00\%} & 0.0863 & 0.1415 & 0.0178 \\
+&  &  & BrickNet & 22.98\% & 0.0209 & 0.1113 & 0.0012 \\
+\midrule
+L4 & 105 & 52.5 & BrickForma & 1.08\% & \textbf{0.0192} & \textbf{0.1780} & \textbf{0.0738} \\
+&  &  & BrickGPT & \textbf{0.00\%} & 0.0148 & 0.1605 & 0.0338 \\
+&  &  & BrickNet & 17.24\% & 0.0025 & 0.1376 & 0.0011 \\
+\midrule
+L5 & 105 & 78.8 & BrickForma & 0.75\% & \textbf{0.0157} & \textbf{0.1730} & \textbf{0.0543} \\
+&  &  & BrickGPT & \textbf{0.00\%} & 0.0086 & 0.1542 & 0.0162 \\
+&  &  & BrickNet & 14.95\% & 0.0030 & 0.1363 & 0.0020 \\
+\bottomrule
+\end{tabular}
+\caption{Mean scores by description level. Each level contains 105 prompts per system. Words is the mean English word count. Bold marks the best mean.}
+\label{tab:level-results}
+\end{table}
+
+\pair{Addressing \textbf{(Q1)}, BrickForma leads all three alignment metrics at every description level from concise L1 requests to detailed L5 specifications (Table~\ref{tab:level-results} and Figure~\ref{fig:comparison-levels}).}{针对问题 Q1，从简短的 L1 请求到详细的 L5 规格，BrickForma 在每个描述级别的三项对齐指标均领先（表~\ref{tab:level-results}、图~\ref{fig:comparison-levels}）。}
+
+\pair{At L1, its mean VQAScore reaches 0.1539 versus 0.1296 for BrickGPT and 0.0346 for BrickNet, while BrickGPT maintains 0.00\% $P_{\mathrm{inv}}$ at every level.}{在 L1，BrickForma 的平均 VQAScore 为 0.1539，BrickGPT 为 0.1296，BrickNet 为 0.0346；BrickGPT 在每个级别的 $P_{\mathrm{inv}}$ 均为 0.00\%。}
+
+\pair{Figure~\ref{fig:gallery} presents qualitative L1 and L2 examples under matched rendering conditions.}{图~\ref{fig:gallery} 展示了在相同渲染条件下得到的 L1 和 L2 定性示例。}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.92\linewidth,height=.53\textheight,keepaspectratio]{figures/matched_short_prompts_20261116.png}
+\caption{Four examples from the matched evaluation with the same prompts, render settings, and azimuths ($45^\circ$ and $225^\circ$) across systems. The highest VQAScore belongs to BrickForma for the chair and bench, BrickGPT for the hatchback, and BrickNet for the camera.}
+\label{fig:gallery}
+\end{figure}
+
+\subsection{Raw versus Refined Outputs\enspace\zh{原始输出与修复后输出}}
+
+\begin{table}[!htbp]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+Metric & Raw & Refined \\
+\midrule
+$P_{\mathrm{inv}}$ $\downarrow$ & 0.1897\% & 0.0000\% \\
+VQAScore $\uparrow$ & 0.2065 & 0.2071 \\
+PE $\uparrow$ & 0.1858 & 0.1859 \\
+SigLIP2 $\uparrow$ & 0.1379 & 0.1261 \\
+Mean parts & 178.7 & 421.2 \\
+\bottomrule
+\end{tabular}
+\caption{Earlier repair comparison on 110 pairs sharing the same prompt, model identifier, and caption.}
+\label{tab:raw-refined}
+\end{table}
+
+\pair{To quantify the impact of exact-cover reconstruction, we examine 110 raw/refined pairs from an earlier 114-prompt comparison sharing identical prompts and model identifiers (Table~\ref{tab:raw-refined}).}{为量化精确覆盖重建的影响，我们从早期 114 条提示词的比较中取出 110 对原始与修复后输出，每对具有相同提示词和模型标识（表~\ref{tab:raw-refined}）。}
+
+\pair{Refinement eliminates invalid placements ($P_{\mathrm{inv}}$ drops from 0.1897\% to 0.0000\%) and increases mean part count from 178.7 to 421.2.}{修复消除了非法放置，$P_{\mathrm{inv}}$ 从 0.1897\% 降至 0.0000\%，平均零件数则从 178.7 增至 421.2。}
+
+\pair{VQAScore and PE remain essentially unchanged, whereas SigLIP2 shifts from 0.1379 to 0.1261.}{VQAScore 和 PE 基本不变，SigLIP2 从 0.1379 变为 0.1261。}
+
+\subsection{Geometric Refinement Audit\enspace\zh{几何修复审计}}
+
+\label{sec:diagnostics}
+
+\pair{Defining stud contacts by footprint overlap across adjacent layers, we map the same 110 pairs onto a grid with 20 LDU horizontal pitch and 24 LDU layer height and align each export to a common occupied-cell origin.}{我们将相邻层积木占地投影重叠定义为凸点接触，把同一批 110 对样本映射到水平间距 20 LDU、层高 24 LDU 的网格，并将各导出布局平移到共同的占用格原点。}
+
+\pair{All 110 pairs preserve identical occupied voxel unions after translation, while single-component assemblies rise from 18 to 110 and overlap-free layouts rise from 100 to 110 (Table~\ref{tab:export-audit}).}{平移对齐后，全部 110 对样本的占用体素并集均一致；单连通分量拼装体从 18 个增至 110 个，无重叠布局从 100 个增至 110 个（表~\ref{tab:export-audit}）。}
+
+\begin{table}[!htbp]
+\centering\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Export measure & Raw & Refined \\
+\midrule
+Single stud component & 18/110 & 110/110 \\
+Mean stud components & 4.29 & 1.00 \\
+No body-cell overlap & 100/110 & 110/110 \\
+\midrule
+\multicolumn{3}{@{}l@{}}{Equal voxel unions after translation: 110/110} \\
+\bottomrule
+\end{tabular}
+\caption{Earlier export audit of 110 matched raw/refined pairs. Union equality uses translation normalization.}
+\label{tab:export-audit}
+\end{table}
+
+\pair{In the separate 525-prompt diagnostic run, only 46 raw drafts form a single stud component, whereas all 525 final layouts achieve single-component connectivity while preserving their target voxel unions after the recovery procedure (Appendix~\ref{app:eval}).}{在另一批 525 条提示词的诊断中，仅 46 个原始草稿形成单个凸点连通分量；经过恢复流程，全部 525 个最终布局都形成单个连通分量，并保留各自的目标体素并集（附录~\ref{app:eval}）。}
+
+\subsection{Evaluation Boundaries\enspace\zh{评测边界}}
+
+\pair{Our benchmark compares delivered exports from systems that differ in inference settings and part libraries, while description levels vary in both semantic detail and token length---truncating 121 prompts in PE and 209 in SigLIP2 (Appendix~\ref{app:eval}).}{基准使用各系统交付的输出，各系统的推理设置和零件库存在差异；不同描述级别在语义细节和词元长度上也有差异，PE 截断了 121 条提示词，SigLIP2 截断了 209 条（附录~\ref{app:eval}）。}
+
+\pair{Uniform yellow rendering isolates geometric form and layout without assessing color fidelity, and the paired refinement audit covers delivered pairs, excluding unsuccessful solver attempts from its denominator.}{统一的黄色渲染用于单独评估几何外形与布局，不衡量颜色保真度；配对修复审计的分母仅包括已交付的配对样本，未计入未成功的求解尝试。}
+
+\clearpage
+
+\section{Limitations and Discussion\enspace\zh{局限与讨论}}
+
+\pair{Our experiments evaluate the combined data-construction and fine-tuning pipeline; isolating the specific contribution of LLM-authored generators relative to hand-crafted procedural baselines under a matched training budget remains future work.}{实验评估了数据构建和微调组成的完整流程；要确定大语言模型编写的生成程序相对人工编写的程序化基线有何独立贡献，还需在匹配训练预算下进行对照。}
+
+\pair{Moreover, while dataset release checks verify grounding and coverage and inference refinement enforces a single stud-connected component, physical stability and feasible assembly ordering require dedicated structural measurements.}{数据集发布检查验证接地和覆盖，推理时的修复要求单个凸点连通分量；物理稳定性和拼装顺序的可行性仍需专门的结构测量。}
+
+\pair{Finally, the integrated dataset release and the fine-tuning run record their sample counts separately (Table~\ref{tab:training-data}).}{此外，整合数据集发布版与微调运行分别记录了各自的样本数（表~\ref{tab:training-data}）。}
+
+\section{Conclusion\enspace\zh{结论}}
+
+\pair{BrickForma crystallizes LLM-authored parametric programs into checked voxel-to-brick targets to fine-tune Qwen3-1.7B for \texttt{Text-to-Brick} assembly.}{BrickForma 将大语言模型编写的参数化程序转化为经过校验的体素转积木训练目标，以此微调 Qwen3-1.7B 来完成文本生成积木任务。}
+
+\pair{On 525 matched prompts spanning five description levels, its raw outputs lead all three text--image alignment metrics while keeping mean invalid placements at 0.79\%.}{在覆盖五个描述级别的 525 条匹配提示词上，其原始输出在三项图文对齐指标上均领先，平均非法放置率为 0.79\%。}
+
+\pair{Paired with exact-cover MILP refinement that enforces stud connectivity while preserving the voxel union, this division of labor offers a practical path toward constructive 3D spatial reasoning in compact models.}{模型预测形状，精确覆盖 MILP 修复在保留体素并集的同时保证凸点连通；这样的分工为小模型完成构造式三维空间推理提供了一条可行途径。}
+
+\clearpage
+
+\end{document}
