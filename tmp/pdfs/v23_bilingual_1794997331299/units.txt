@@ -1,0 +1,345 @@
+001 BrickForma overview.
+002 (a) Voxel-to-LEGO conversion.
+003 (b) Connectivity refinement.
+004 (c) Each triplet shows, from left to right, a voxel model from an LLM-authored generator, the resulting LEGO assembly, and a same-category BrickForma output (fine-tuned Qwen3-1.7B).
+005 Brick-type colors are for display only and are excluded from training targets.
+006 Abstract
+007 Geometric spatial reasoning underlies applications from robotics to automated design, yet the ability of large language models (LLMs) to turn a verbal description into a physically connected three-dimensional assembly remains largely underexplored.
+008 Brick assembly is a demanding constructive probe of this ability: a short, underspecified prompt leaves dimensions, proportions, and part layout implicit, and a valid answer must match the semantic intent of the prompt while completing this geometry with discrete pieces that interlock through studs.
+009 We study this setting as the \texttt{Text-to-Brick} task and present BrickForma, a framework that builds training data for a compact model using LLM-assisted parametric programs.
+010 Parametric programs written with large language model assistance generate 80,000 source voxel models across 21 categories on a $48^3$ grid, each described at five levels of detail, yielding approximately 400,000 caption records that tie varying amounts of language to shared geometry.
+011 A voxel-to-brick conversion pipeline with connection analysis and local refinement turns these shapes into geometrically checked brick targets, on which we fine-tune Qwen3-1.7B with low-rank adaptation to predict brick dimensions and positions from text.
+012 A mixed-integer linear programming stage then seeks an exact cover of the voxel target reconstructed from these predictions with a single stud-connected component.
+013 On 525 shared prompts spanning five description levels, BrickForma's raw outputs achieve the highest mean VQAScore, PE, and SigLIP2 at every level among the three systems.
+014 BrickForma has a mean invalid-placement ratio of 0.79\%, compared with 0.00\% for BrickGPT and 18.42\% for BrickNet.
+015 These results support using executable generators and geometric checks to train compact text-to-brick models.
+016 Introduction
+017 Spatial reasoning and geometric understanding are fundamental to human cognition and to artificial intelligence, supporting applications from robotics and navigation to computer-aided design.
+018 As large language models (LLMs) have matured, a growing body of work asks whether they can reason about shape, position, and transformation.
+019 Recent benchmarks probe LLMs' ability through
+020 paper folding and unfolding~\cite{zhou2026paperfoldingpuzzle} and geometry expressed as procedural drawing code~\cite{luo2026geogrambench}.
+021 Each reports pronounced deficiencies in current models.
+022 These studies largely assess spatial reasoning by asking a model to select or compute an answer.
+023 A complementary and less examined question is whether a language model can \emph{construct}: given only words, can it produce a three-dimensional object whose parts are correctly sized, correctly placed, and physically joined?
+024 Lego brick assembly makes this question concrete.
+025 A concise narrative request such as \emph{a simple chair} identifies an object category while leaving its dimensions, proportions, and part layout largely unspecified.
+026 Answering it requires three coupled forms of geometric spatial reasoning.
+027 The model must complete the missing geometry from prior knowledge of what the object looks like.
+028 It must discretize that geometry into pieces of fixed dimensions at integer positions on a grid.
+029 And it must respect the difference between spatial adjacency and stud connectivity, since pieces that touch side by side do not hold together unless they interlock vertically through studs.
+030 We refer to this setting as the \texttt{Text-to-Brick} task: the translation from a natural-language description, at any level of detail, to a set of (Lego) brick placements that reproduces the described shape as a single connected assembly.
+031 Because every output can be checked for coverage, bounds, and connectivity, the task provides a verifiable test of whether linguistic knowledge has become spatial structure.
+032 Prior work has established that language models can be trained for this task.
+033 BrickGPT~\cite{brickgpt} learns autoregressive brick-placement sequences and incorporates validity checks with physics-aware rollback during inference.
+034 BrickNet~\cite{bricknet} adopts a graph-based representation supporting a broader range of parts and connection types.
+035 Two questions remain open alongside these advances.
+036 \textbf{(Q1)} How well do generators translate \emph{limited} linguistic information into object geometry?
+037 In our five-level benchmark (Table~\ref{tab:level-results}), BrickNet obtains lower mean VQAScore, PE, and SigLIP2 than BrickForma at the two shortest description levels, L1 and L2, a gap that only level-wise evaluation makes visible.
+038 \textbf{(Q2)} Can LLM-assisted programs encode the geometric details omitted from concise prompts in a form suitable for training a compact model?
+039 We present BrickForma, which uses executable programs to generate training examples for a compact text-to-brick model.
+040 With GPT-6.1 Sol assistance, we develop parametric programs that vary object proportions, part dimensions, openings, and support arrangements to synthesize voxel shapes in batches.
+041 Each program specifies the structure of an object family and exposes its geometric degrees of freedom as parameters.
+042 The source collection contains 80,000 models across 21 categories on a $48^3$ grid.
+043 Each model is paired with five levels of description that progressively introduce structural, geometric, proportional, and appearance information.
+044 The resulting approximately 400,000 caption records link concise requests and detailed specifications to shared geometry, providing supervision for prompts with different amounts of geometric detail.
+045 Turning voxel shapes into brick targets is where spatial adjacency and stud connectivity must be separated.
+046 Pieces can cover a connected voxel volume and touch side by side without forming stud connections.
+047 Our conversion pipeline combines same-color brick placement, connection analysis, and local refinement to construct geometrically checked target layouts, with changes to source voxels recorded in derived models.
+048 The integrated dataset release includes 79,301 models passing its dataset-level geometric checks.
+049 We fine-tune Qwen3-1.7B~\cite{qwen3} with low-rank adaptation~\cite{lora} on caption--placement pairs to predict brick dimensions and spatial positions.
+050 Geometric refinement complements the small model's predictions with explicit structural enforcement.
+051 From the supported, in-bounds portions of predicted placements, the pipeline forms a voxel union and uses mixed-integer linear programming to seek an exact-cover layout forming a single stud-connected component.
+052 Independent coverage and connectivity checks verify the refined layout.
+053 This design assigns the two halves of the task to the components suited to them: the language model decides what shape a description denotes, and the solver decides how that shape holds together.
+054 We evaluate BrickForma against BrickGPT and BrickNet on 525 shared prompts spanning five description levels.
+055 BrickForma's raw outputs achieve the highest mean VQAScore, PE, and SigLIP2 at every level, including the shortest descriptions.
+056 BrickGPT has the lowest mean invalid-placement ratio (0.00\%), followed by BrickForma (0.79\%) and BrickNet (18.42\%).
+057 Reporting all five levels connects the multilevel data design to an explicit assessment of how generation changes with the amount of descriptive detail.
+058 In summary, the main contributions of this work are as follows:
+059 LLM-assisted construction of training data for a compact model.
+060 We use executable parametric programs to generate voxel shapes and descriptions, convert the shapes into geometrically checked brick layouts, and fine-tune a 1.7B-parameter model on the resulting caption--placement pairs.
+061 On the 525 shared prompts, BrickForma attains a 30.0\% higher mean VQAScore than BrickGPT.
+062 A multi-level dataset that enables experimental validation of small language model alignment across various levels of descriptive detail.
+063 With our LLM-assisted parametric data construction pipeline, we generated 80,000 source voxel models with five description levels each.
+064 In the integrated release, 79,301 of the 80,000 source models yielded brick layouts that passed the geometric checks.
+065 We fine-tuned Qwen3-1.7B on caption--placement pairs and carried out level-wise evaluation against BrickGPT and BrickNet to assess text--image alignment and invalid placements across descriptions ranging from concise prompts to detailed specifications.
+066 BrickForma consistently achieves the highest mean alignment scores across all five levels.
+067 Data-construction workflow.
+068 GPT-6.1 Sol assists in writing parametric programs that produce voxel shapes and captions.
+069 After deduplication, the shapes are converted to bricks, refined, and checked before export.
+070 Dashed arrows trace contact screening and its recorded status.
+071 Brick colors follow the legend in Figure~\ref{fig:teaser}.
+072 Related Work
+073 Brick assembly and generation.
+074 Prior work formulates brick assembly as graph generation, sequential construction, or structural understanding~\cite{thompson2020lego,brickbybrick,breakandmake}.
+075 BrickGPT~\cite{brickgpt} predicts autoregressive placement sequences and validates candidate bricks during decoding, while BrickNet~\cite{bricknet} adopts an assembly-graph representation over a broader catalog of parts and connectors.
+076 Rather than relying solely on autoregressive decoding or graph prediction to maintain structural validity, BrickForma predicts absolute grid placements for rectangular footprints and delegates global stud connectivity to exact-cover voxel reconstruction.
+077 Stability analysis.
+078 StableLego introduces a force-balance model to evaluate block-stacking assemblies~\cite{stablelego}.
+079 In BrickForma, inference-time refinement enforces stud connectivity and exact voxel coverage, while our dataset-level contact screening applies complementary force and ground-contact assumptions to flag physically plausible structures (Appendix~\ref{app:dataset}).
+080 Procedural data and parameter-efficient fine-tuning.
+081 Procedural generation enables systematic control over shape diversity and dataset scale~\cite{infinigen}.
+082 BrickForma leverages an LLM to author executable parametric generators, verifies their geometric outputs algorithmically, and fine-tunes a compact text-only model on the resulting caption--placement pairs via LoRA~\cite{lora}, adopting BrickGPT's serialized placement representation~\cite{brickgpt}.
+083 Dataset Construction
+084 Parametric Voxel Generation
+085 To crystallize broad geometric priors into explicit supervision, GPT-6.1 Sol assists in authoring analytic parametric generator programs across 21 object categories, each partitioned into 40 structural families (47--48 instances per family in each 40,000-model shard).
+086 For every instance, a planning module samples independent design parameters---governing category-specific components, proportions, openings, and support structures---and deterministically rasterizes the geometry onto a $48^3$ grid ($Y{=}0$ ground contact) while deriving L1--L5 captions from the same underlying plan.
+087 Rather than applying random cell deletion, cavity filling, or post-hoc bridges, density adjustments regenerate the entire shape from its continuous parameters until automated checks confirm 750--1,250 occupied voxels and a single six-neighbor connected component.
+088 Exact and canonical occupancy hashes across 48 axis and sign transforms verify zero cross-shard duplicates, with geometry plans and version identifiers preserved alongside each record (Figure~\ref{fig:data-workflow}, where \texttt{shape(params)} denotes the analytic shape and \texttt{emit(x,y,z)} records occupied voxel coordinates).
+089 BrickForma-48 (archived under \texttt{BrickMore-48} in the accompanying dataset and checkpoint releases) pairs each shape with five bilingual descriptions.
+090 L1 names the object and its primary parts, whereas L2--L5 progressively layer structural, proportional, appearance, and viewpoint details onto the exact same source geometry (see Appendix~\ref{app:dataset} for a birdhouse example).
+091 Voxel-to-Brick Conversion and Checks
+092 Converting a connected voxel volume into a buildable brick target requires separating mere spatial adjacency from vertical stud connectivity.
+093 Our pipeline tiles each layer with same-color rectangular bricks and analyzes the resulting stud-connected components.
+094 When ungrounded fragments arise, local refinement modifies the layout while logging all voxel edits against the source shape, raising the geometry-pass count from 65,503 to 79,298 (recovering 13,795 failures).
+095 Across the corpus, refinement adds 228,582 voxels and removes 125, while 31,532 passing models require no edits at all.
+096 For challenging layouts, conversion falls back to layer-wise exact-cover search or a mixed-integer linear program (MILP) that explicitly enforces a stud path to the ground.
+097 A minimum-remaining-values (MRV) heuristic branches on the uncovered voxel with the fewest valid candidate bricks; the initial release also employed bounded beam search when greedy placement failed the geometric audit, ranking partial layouts by uncovered voxels and remaining stud components.
+098 Release-level verification confirms that target voxels form a single six-neighbor component, every brick component is grounded, and the brick assembly exactly covers the derived target.
+099 While multiple independently grounded components may pass release-level checks, inference-time refinement enforces a stricter single-component constraint.
+100 Separately, a self-weight screen evaluates the final assembly and, if feasible, each bottom-up completed-layer prefix, recording the tipping margin and estimating per-stud tensile demand when compression alone cannot balance gravity (Appendix~\ref{app:dataset}).
+101 Integrated Release and Training Corpus
+102 The full refined release leaves 702 geometry failures.
+103 A revised batch-B piano release passes all 1,905 slots compared with 1,902 in the full refined release, yielding an integrated count of $79{,}298-1{,}902+1{,}905=79{,}301$ passing models.
+104 Table~\ref{tab:training-data} summarizes both the dataset release counts and the recorded fine-tuning corpus.
+105 Dataset and fine-tuning corpus.
+106 The two blocks are counted separately: the upper block from the dataset release reports, the lower block as recorded for the fine-tuning run.
+107 BrickForma Text-to-Brick Model
+108 Fine-Tuning
+109 We fine-tune Qwen3-1.7B with LoRA on English L1--L5 captions paired with their checked brick layouts, using a model-level 9:1 split so all five descriptions of a given shape remain in the same partition.
+110 The $48^3$ workspace uses 20 oriented footprints (11 brick sizes up to planar rotation).
+111 Each instruction specifies the allowed brick dimensions, and the target lists one placement per line---such as $2{\times}4\ (x,y,z)$---serialized Y-first and then X, capturing pure geometry without color tokens.
+112 Training follows the BrickGPT Qwen3 recipe~\cite{brickgpt} (Table~\ref{tab:finetune-config}) with unpacked sequences to preserve caption boundaries.
+113 The run completed 133,860 steps in 25.3 hours across eight GPUs.
+114 Validation loss reached its minimum of 0.0308 at step 79,000---which we retain as the released checkpoint---before rising slightly to 0.0339 at the end of epoch 3 (Appendix~\ref{app:training}).
+115 Fine-tuning configuration (details in Appendix~\ref{app:training}).
+116 Inference and Refinement
+117 As outlined in Algorithm~\ref{alg:inference-refinement}, decoding runs with thinking disabled, temperature $0.7$, top-$p$ $0.9$, and a 8,192-token budget across seeds 42, 104, and 2026.
+118 A draft is considered complete upon emitting an end-of-sequence token; the pipeline selects the first completed draft that passes the geometry validator, or otherwise the completed draft with the fewest reported errors.
+119 Any valid raw draft already forming a single stud-connected component is returned directly.
+120 For disconnected or overlapping drafts, we isolate the semantic shape proposal by forming the in-bounds voxel union $C$ of all supported placements (counting overlaps once) and delegate structural assembly to an MILP solver.
+121 The solver seeks an exact cover of $C$ forming a single stud-connected component under time tiers of 12, 60, and 180 seconds, followed by an independent audit of placement validity, coverage, and connectivity.
+122 If the budget is exhausted, the pipeline retains the raw draft and queues a reseed, with optional recovery runs extending the budget to 600 seconds or sampling additional seeds.
+123 Throughout our evaluation, we refer to pre-solver model outputs as \emph{raw} and solver-reconstructed outputs as \emph{refined} (see Appendix~\ref{app:eval} for the exact-cover constraints).
+124 BrickForma inference and refinement
+125 Comparative Evaluation
+126 Setup and Metrics
+127 We evaluate BrickForma against BrickGPT and BrickNet on 525 shared prompts spanning 21 categories and five description levels (105 prompts per level).
+128 Scoring one delivered output per system and prompt yields 1,575 LDraw exports.
+129 To isolate the learned model's geometric quality prior to solver intervention, the main benchmark evaluates all delivered raw BrickForma exports---including incomplete drafts---while Appendix~\ref{app:eval} separately details the refinement diagnostic.
+130 Text--image alignment.
+131 Each export is rendered with uniform yellow material across eight $512{\times}512$ orthographic views spaced $45^\circ$ apart in azimuth at $25^\circ$ elevation.
+132 Alignment scores take the maximum over views and average across prompts.
+133 VQAScore~\cite{vqascore} computes the first-token probability of \textquotedblleft Yes\textquotedblright\ from Qwen2.5-VL-7B-Instruct~\cite{qwen25vl}, PE~\cite{pe} measures cosine similarity between normalized image and text embeddings, and SigLIP2~\cite{siglip2} evaluates the sigmoid of the image--text logit.
+134 Invalid placements.
+135 For an export containing $n$ placements in file order, let $I_i$ indicate whether placement $i$ violates BrickNet's inset collision kernel~\cite{bricknet} given preceding placements.
+136 We report the mean per-export invalid-placement ratio $P_{\mathrm{inv}}=n^{-1}\sum_{i=1}^{n}I_i$.
+137 Main Results
+138 Mean scores on 525 shared prompts.
+139 BrickForma uses delivered raw outputs.
+140 Bold marks the best mean.
+141 Across all 525 prompts, BrickForma's raw outputs achieve the highest mean VQAScore (0.0866), PE (0.1568), and SigLIP2 (0.0448) (Table~\ref{tab:main}), outperforming BrickGPT on 384, 337, and 327 prompts, respectively.
+142 All six paired alignment comparisons remain statistically significant under Holm correction (Appendix~\ref{app:eval}).
+143 On placement validity, BrickGPT achieves the lowest mean $P_{\mathrm{inv}}$ (0.00\%) via physics-aware rollback, followed by BrickForma (0.79\%) and BrickNet (18.42\%), with zero-invalid-placement counts of 525, 331, and 139, respectively (Figure~\ref{fig:comparison-zero-invalid}).
+144 Figures~\ref{fig:comparison-means} and~\ref{fig:comparison-distributions} visualize pooled means and score distributions.
+145 Comparison with the untuned backbone.
+146 To verify the effect of parametric supervision on 260 matched prompts, we assign zero alignment scores when untuned Qwen3-1.7B fails to produce a scorable layout.
+147 Mean VQAScore, PE, and SigLIP2 rise from 0.0008, 0.0354, and 0.0014 for the untuned backbone to 0.0649, 0.1564, and 0.0328 for raw BrickForma prior to geometric refinement (Appendix~\ref{app:eval}).
+148 Performance across Description Levels
+149 Mean scores by description level.
+150 Each level contains 105 prompts per system.
+151 Words is the mean English word count.
+152 Bold marks the best mean.
+153 Addressing \textbf{(Q1)}, BrickForma leads all three alignment metrics at every description level from concise L1 requests to detailed L5 specifications (Table~\ref{tab:level-results} and Figure~\ref{fig:comparison-levels}).
+154 At L1, its mean VQAScore reaches 0.1539 versus 0.1296 for BrickGPT and 0.0346 for BrickNet, while BrickGPT maintains 0.00\% $P_{\mathrm{inv}}$ at every level.
+155 Figure~\ref{fig:gallery} presents qualitative L1 and L2 examples under matched rendering conditions.
+156 Four examples from the matched evaluation with the same prompts, render settings, and azimuths ($45^\circ$ and $225^\circ$) across systems.
+157 The highest VQAScore belongs to BrickForma for the chair and bench, BrickGPT for the hatchback, and BrickNet for the camera.
+158 Raw versus Refined Outputs
+159 Earlier repair comparison on 110 pairs sharing the same prompt, model identifier, and caption.
+160 To quantify the impact of exact-cover reconstruction, we examine 110 raw/refined pairs from an earlier 114-prompt comparison sharing identical prompts and model identifiers (Table~\ref{tab:raw-refined}).
+161 Refinement eliminates invalid placements ($P_{\mathrm{inv}}$ drops from 0.1897\% to 0.0000\%) and increases mean part count from 178.7 to 421.2.
+162 VQAScore and PE remain essentially unchanged, whereas SigLIP2 shifts from 0.1379 to 0.1261.
+163 Geometric Refinement Audit
+164 Defining stud contacts by footprint overlap across adjacent layers, we map the same 110 pairs onto a grid with 20 LDU horizontal pitch and 24 LDU layer height and align each export to a common occupied-cell origin.
+165 All 110 pairs preserve identical occupied voxel unions after translation, while single-component assemblies rise from 18 to 110 and overlap-free layouts rise from 100 to 110 (Table~\ref{tab:export-audit}).
+166 Earlier export audit of 110 matched raw/refined pairs.
+167 Union equality uses translation normalization.
+168 In the separate 525-prompt diagnostic run, only 46 raw drafts form a single stud component, whereas all 525 final layouts achieve single-component connectivity while preserving their target voxel unions after the recovery procedure (Appendix~\ref{app:eval}).
+169 Evaluation Boundaries
+170 Our benchmark compares delivered exports from systems that differ in inference settings and part libraries, while description levels vary in both semantic detail and token length---truncating 121 prompts in PE and 209 in SigLIP2 (Appendix~\ref{app:eval}).
+171 Uniform yellow rendering isolates geometric form and layout without assessing color fidelity, and the paired refinement audit covers delivered pairs, excluding unsuccessful solver attempts from its denominator.
+172 Limitations and Discussion
+173 Our experiments evaluate the combined data-construction and fine-tuning pipeline; isolating the specific contribution of LLM-authored generators relative to hand-crafted procedural baselines under a matched training budget remains future work.
+174 Moreover, while dataset release checks verify grounding and coverage and inference refinement enforces a single stud-connected component, physical stability and feasible assembly ordering require dedicated structural measurements.
+175 Finally, the integrated dataset release and the fine-tuning run record their sample counts separately (Table~\ref{tab:training-data}).
+176 Conclusion
+177 BrickForma crystallizes LLM-authored parametric programs into checked voxel-to-brick targets to fine-tune Qwen3-1.7B for \texttt{Text-to-Brick} assembly.
+178 On 525 matched prompts spanning five description levels, its raw outputs lead all three text--image alignment metrics while keeping mean invalid placements at 0.79\%.
+179 Paired with exact-cover MILP refinement that enforces stud connectivity while preserving the voxel union, this division of labor offers a practical path toward constructive 3D spatial reasoning in compact models.
+180 Technical Appendix: Dataset Details
+181 The historical figures and tables in this appendix retain the supplied measurements and model renders, with labels translated into English.
+182 They use release-specific versions and criteria and are not substitutes for the integrated statistics or the current main comparison.
+183 Contact-based gravity screening.
+184 We model 8\,mm stud spacing, 9.6\,mm brick height, and 1\,g per occupied stud-brick cell.
+185 Each overlapping stud contributes four vertical contact points at the corners of a square with half-width 0.25 stud.
+186 The horizontal ground can only provide compression at the corners of ground-level brick footprints inset by 0.05 stud.
+187 A linear program (LP) seeks vertical force balance and balance of the two gravity-induced moments for every brick.
+188 We verify the resulting contact forces against these equations.
+189 After the final assembly passes, the same check is applied to the bricks through each completed layer, bottom to top.
+190 Each stud-connected component of a prefix is checked independently on the unanchored ground.
+191 Tipping margin and clutch demand.
+192 The tipping margin is the minimum signed inward distance from the horizontal center-of-mass projection to the edges of the convex hull of the ground contacts.
+193 We convert the margin from studs to meters and reject zero or negative margins within numerical tolerance.
+194 If the compression-only LP is infeasible after this check, a second LP permits tension at internal stud contacts.
+195 It minimizes the largest total tensile force across the four contact points of any single stud.
+196 We report this minimum required clutch force in newtons per stud.
+197 Actual clutch capacity is uncalibrated.
+198 A verified compression-only solution qualifies for a gravity-screening pass, while solutions requiring tensile support are recorded separately.
+199 Caption example.
+200 The five captions of one model share a prefix and add detail level by level.
+201 The L1 prompt is \textquotedblleft An oval birdhouse with curved roof, enclosed room and front entrance.\textquotedblright{}
+202 Its L5 description is: ``An oval birdhouse with curved roof, enclosed room and front entrance.
+203 The protective roof joins the walls; the circular front entrance reaches a real interior cavity.
+204 Curved substantial surfaces carry their continuously attached functional parts.
+205 Overall width is 1.15 times depth; height is 0.80 times width.
+206 Parts follow functional positions.
+207 Continuous red, tan, brown color regions distinguish the body and attachments.
+208 The front reveals functional parts; side and top views reveal depth, connections and layout.''
+209 Geometric pass counts of the 80,000 source models under successive conversion releases (relaxed: several grounded components allowed), with total voxels added and removed, as in the corresponding release reports.
+210 Voxel model samples spanning the 21 object categories.
+211 Additional historical voxel model examples.
+212 Historical examples of voxel targets and brick layouts after local repair.
+213 Historical contact-based gravity screening model, with English labels.
+214 The stated contact and ground assumptions are retained.
+215 Historical comparison of geometric conversion and screening outcomes across releases; values as in the corresponding release reports (Table~\ref{tab:conversion}).
+216 Geometric pass rates by category for the three conversion releases in Table~\ref{tab:conversion}.
+217 Geometric pass counts for the original rules, Q3, and two Q4 variants on the same 160-model sample (seed 38177).
+218 The Q4 rounds reuse this sample for tuning.
+219 Historical distributions of physical screening statuses; values as in the corresponding release reports.
+220 Counts refer to the specific releases shown and are kept separate from geometric pass rates.
+221 Technical Appendix: Training Details
+222 Aggregate throughput is 24,448 tokens/s over eight GPUs, and the mean training loss is 0.0273.
+223 Evaluation and checkpointing run every 500 steps.
+224 With TRL~0.15, the unpacked multi-GPU path hangs after the first backward pass, which is why the TRL~0.17 stack is pinned.
+225 Because validation loss is lowest during epoch 2, two epochs would be a more economical setting for future runs (about one third less compute).
+226 The full software stack is transformers 4.51.3, trl 0.17.0, peft 0.15.2, datasets 3.6.0, and accelerate 1.6.0, with bf16 precision, gradient checkpointing, and unpacked sequences.
+227 Validation loss on the 2,000-sample validation subset.
+228 One epoch is $\approx$44,620 steps; the nearest evaluation to the end of epoch 1 is step 44,500.
+229 Our configuration versus the original BrickGPT paper \cite{brickgpt}.
+230 BrickGPT-paper values are taken from Sec.~5.1 and Appendix~A of arXiv:2505.05469 (base model, LoRA $r{=}32$, $\alpha{=}16$, dropout $0.05$, $q$/$v$ only with 3.4M parameters, AdamW learning rate $0.002$, global batch 64, 4096-token length filter, 3 epochs, 8$\times$RTX A6000 and 12\,h, and 47k+ structures / 240k prompts).
+231 The data organization, instruction template, absence of thinking mode, and LoRA paradigm follow BrickGPT; concrete hyperparameters follow the official Qwen3 adaptation, with the budget adjusted for the larger world, library, and corpus.
+232 Technical Appendix: Additional Evaluation Material
+233 Matched evaluation.
+234 The 525 matched prompts combine 265 previously delivered BrickForma Q8\_0 exports with 260 supplemental exports.
+235 We score the single raw export supplied for each prompt.
+236 This protocol measures the delivered drafts without filtering on completion or geometry, rerunning Algorithm~\ref{alg:inference-refinement}, or choosing a candidate by its scores.
+237 The supplemental records flag 8 incomplete generations and 96 failures of the source geometry check out of 260, with potential overlap.
+238 The 265 earlier exports lack corresponding completion and geometry flags.
+239 We score all 1,575 LDraw exports on all four metrics, using 12,600 rendered views for alignment.
+240 Three supplied GLB previews contain only a prefix, so we render from the delivered LDraw sequences in all cases.
+241 BrickGPT uses a $20^3$ world and seed 42, with recorded regeneration budgets of 8 or 100.
+242 For the 260 supplemental BrickForma exports, inference ran locally without MILP refinement using checkpoint \texttt{BrickGPT-Qwen3-1.7B-BrickMore-48} (revision \texttt{92d1c595}) in \texttt{bfloat16} precision with \texttt{sdpa} attention, \texttt{max\_new\_tokens}=8192, \texttt{temperature}=0.7, \texttt{top\_p}=0.9, and seed schedule $(42,104,2026)$, with zero overlap against the training set.
+243 The 265 earlier Q8\_0 exports come from an earlier inference batch whose per-sample decoding flags were not logged, and the 105-sample offset between $79{,}301{\times}5=396{,}505$ and the logged 396,610 training pairs stems from a minor snapshot offset between the final dataset release and the training run.
+244 Baseline versions.
+245 The archived 260-prompt BrickGPT runner is based on GitHub commit \texttt{9c53c7c} of \url{https://github.com/AvaLovelace1/BrickGPT}.
+246 The generation report records a local checkpoint combining \texttt{meta-llama/Llama-3.2-1B-Instruct} and the public \texttt{AvaLovelace/BrickGPT} LoRA adapter.
+247 The runner can load a premerged checkpoint or merge those weights through PEFT's \texttt{merge\_and\_unload}.
+248 The report identifies the merged checkpoint used, with no separate merge log.
+249 The BrickNet GitHub reference snapshot is commit \texttt{283faf7} of \url{https://github.com/kulits/BrickNet}.
+250 The public 1.7B PT and SFT adapter revisions are \texttt{0f75d5e5} and \texttt{3fe7f4c1}, respectively, on \texttt{Qwen/Qwen3-1.7B}.
+251 The 265 other BrickGPT exports and the BrickNet exports lack a recorded generation-code commit.
+252 Invalid-placement scoring uses the inset collision kernel from the pinned \texttt{bricknet==0.1.0} PyPI wheel.
+253 Reference dataset snapshots.
+254 BrickGPT uses StableText2Brick (public data upload \texttt{1dcf904} at \texttt{AvaLovelace/StableText2Brick}).
+255 BrickNet uses the gated PT, SFT, and validation splits described in \texttt{DATA.md} at GitHub commit \texttt{283faf7}.
+256 The release documentation identifies those splits by file name and gives no separate dataset revision.
+257 Untuned Qwen3-1.7B.
+258 None of the 260 untuned outputs passed the generation-time geometry check.
+259 The strict parser found no placements in 178 outputs, and two used an unsupported part type.
+260 We assign these 180 outputs zero for VQAScore, PE, and SigLIP2 and retain the measured scores for the 80 scorable partial layouts.
+261 All alignment means use the same 260 prompts.
+262 For the 80 pairs with scorable base layouts, the mean file-order invalid-placement ratios were 39.67\% for the untuned model and 1.01\% for raw BrickForma.
+263 The comparison uses common scoring across delivered generation runs that can differ in decoding.
+264 Paired tests and truncation.
+265 Table~\ref{tab:sig} compares alignment scores on the 525 prompts.
+266 We use a two-sided exact sign test and a two-sided Wilcoxon signed-rank test with the normal approximation, excluding ties.
+267 Holm correction is applied separately to the six comparisons within each test.
+268 All adjusted $p$ values are below $2.0{\times}10^{-8}$.
+269 PE truncates 121 prompts and SigLIP2 truncates 209.
+270 On the untruncated subsets, BrickForma / BrickGPT / BrickNet score 0.1510 / 0.1408 / 0.1135 on PE (404 prompts) and 0.0340 / 0.0157 / 0.0009 on SigLIP2 (316 prompts).
+271 Two-sided paired tests on 525 prompts.
+272 W/L/T counts BrickForma wins, losses and ties.
+273 Each test uses Holm correction across six comparisons.
+274 Earlier 114-prompt comparison.
+275 BrickGPT outputs were generated in its native $20^3$ world (seed 42), whereas BrickForma places bricks in a $48^3$ workspace, which partly explains the difference in part counts.
+276 The systems differ in candidate selection, filtering, and post-processing.
+277 On the BrickForma side, 45 of the 114 comparison outputs, together with their prompts, were chosen by human review as the best of six candidate phrasings in a category--level group; a winner was available in 79 of 105 groups, and 45 of those winners entered this comparison.
+278 The remaining 69 outputs come from later fill-in, regeneration, colleague, and review rounds: 35 replaced a judged winner in 34 groups, and 34 filled 26 groups in which no candidate had been judged acceptable; together the 114 outputs cover all 105 groups.
+279 The six candidates are the five new-batch phrasings and one first-batch phrasing documented in the evaluation-set README.
+280 Among the 69: \texttt{review\_59} 21, a colleague success set 16, second-round redo 12, third-round fill-in 7, colleague \texttt{nine\_ldr} 7, regeneration 5, and \texttt{car\_trials} 1, as recorded in the 11-07 delivery manifest.
+281 BrickGPT was then run once on each selected prompt (seed 42); BrickNet contributed one accepted sample per prompt (up to 30 attempts).
+282 The 114 outcomes comprised 110 refined layouts and four raw layouts.
+283 The earlier BrickGPT records report an eight-regeneration budget and Gurobi disabled.
+284 Sensitivity of the earlier comparison.
+285 With equal weighting over the 105 category--level groups, BrickForma scores 0.2347 / 0.1840 / 0.1257 and BrickGPT scores 0.1511 / 0.1459 / 0.0318 on VQAScore / PE / SigLIP2.
+286 After excluding prompts truncated by each encoder, PE is 0.1821 versus 0.1445 on 89 prompts and SigLIP2 is 0.1088 versus 0.0301 on 85 prompts.
+287 The PE and SigLIP2 text encoders read at most 72 and 64 tokens, respectively.
+288 Inference refinement.
+289 For the clipped voxel union $C$, let $\mathcal{B}(v)$ index candidate placements from the oriented footprint library that cover $v$ and stay entirely within $C$.
+290 With binary placement variables $x_b$, exact coverage requires $\sum_{b\in\mathcal{B}(v)}x_b=1$ for each $v\in C$.
+291 This preserves the union and excludes overlaps.
+292 To enforce a single stud-connected component, a standard single-commodity flow formulation routes flow from a virtual root $r$ through directed stud-contact edges $(b,b')\in\mathcal{E}$ across adjacent layers: grounded candidate placements $b\in\mathcal{B}_{\mathrm{gnd}}$ receive root inflow $f_{r,b}\ge 0$, internal edge flows satisfy $0\le f_{b,b'}\le M x_b$ and $0\le f_{b,b'}\le M x_{b'}$ (for capacity bound $M=|C|$), and flow conservation $\sum_{(u,b)\in\mathcal{E}\cup\{(r,b)\}} f_{u,b} - \sum_{(b,v)\in\mathcal{E}} f_{b,v} = x_b$ ensures every selected placement is connected to the root.
+293 SciPy's HiGHS MILP interface uses the time tiers in Algorithm~\ref{alg:inference-refinement}.
+294 A feasible cover must also pass the independent placement, coverage, and connectivity audit.
+295 The logged run summaries record the solver time tiers and independent audit outcomes, while per-run objective weights and gap tolerances were not retained.
+296 Contact-based self-weight screening uses a separate LP (Appendix~\ref{app:dataset}).
+297 Diagnostic cohort.
+298 To probe what the fine-tuned model learns, we inspected 525 BrickForma generations from a diagnostic set (21 categories $\times$ five levels $\times$ five phrasings).
+299 The 525-prompt diagnostic batch, together with 105 first-batch prompts, formed the six-phrasing candidate pool from which 45 of the 114 comparison outputs were selected (35 of them from the 525), as described above.
+300 Algorithm~\ref{alg:inference-refinement} describes the default candidate-selection and refinement rules.
+301 The diagnostic manifests record either a refinement tier or a raw layout kept unchanged.
+302 For 28 prompts a recovery path sampled seeds outside $S$; for two further prompts the solver budget was extended to 600\,s.
+303 Only 46 raw layouts (8.8\%) form a single stud-connected component without refinement; this rate shows no clear trend across levels (13, 9, 9, 7, and 8 for L1--L5) but varies strongly by category (e.g., 8/25 for sofa, 0/25 for basket and camera).
+304 All 479 failing raw layouts split into at least two stud components (median 5, maximum 33).
+305 Overlaps are a minor cause: 50 failing layouts contain duplicated voxels, 41 of them with at most five (median 2), and 429 contain none.
+306 The 2,240 detached fragments are mostly not grounded (1,320 airborne versus 920 grounded).
+307 The learned representation thus places bricks whose in-bounds voxel union is retained by refinement but that often fail to interlock across layers; all 525 final assemblies form a single stud-connected component with that union unchanged (Table~\ref{tab:diag} in Appendix~\ref{app:eval}).
+308 These checks evaluate stud connectivity and in-bounds voxel-union consistency, not prompt-level shape fidelity or spatial reasoning.
+309 BrickForma outputs from the earlier 114-prompt comparison.
+310 The chair is raw and the remaining examples are refined.
+311 Structural diagnostics of raw outputs (Section~\ref{sec:diagnostics}).
+312 ``Union unchanged'' means the final assembly covers exactly the in-bounds voxel union of the raw draft; it does not assess whether the shape matches the prompt.
+313 Historical failure categories in the supplied reference; values as in the corresponding run records.
+314 Qualitative historical examples from the supplied reference.
+315 Columns show raw and refined outputs of our system and BrickGPT outputs.
+316 Outputs with zero invalid placements on the 525 matched prompts.
+317 Colored arcs show $P_{\mathrm{inv}}=0$ and gray arcs show $P_{\mathrm{inv}}>0$.
+318 Each panel contains 525 outputs.
+319 Mean scores on the 525 matched prompts.
+320 Each mean assigns equal weight to each prompt.
+321 The plotted values correspond to Table~\ref{tab:main}.
+322 Empirical cumulative distributions of the four scores.
+323 Each curve gives the fraction of a system's 525 outputs at or below the threshold on the horizontal axis.
+324 Mean scores from L1 to L5.
+325 Each point averages 105 prompts shared by all three systems (Table~\ref{tab:level-results}).
+326 From L3 to L4, VQAScore falls for all three systems while PE rises.
+327 Technical Appendix: Historical Tables
+328 The following transcribed tables preserve the historical reference material.
+329 They use different versions or evaluation criteria and are not substitutes for the current main comparison.
+330 Where a value is superseded by a verified number in the main text (e.g., Table~\ref{tab:training-data} and Appendix~\ref{app:dataset}), the main text takes precedence.
+331 Dashes indicate values unavailable in the supplied historical records.
+332 Historical dataset statistics.
+333 The historical index comparison uses exact occupancy hashes.
+334 The geometry and self-weight counts refer to the October 13 refined release.
+335 The brick total comes from the integrated preview manifest, which includes the revised piano layouts.
+336 Historical conversion-strategy table from the reference.
+337 Full-dataset and 160-model sample rows use different scopes; connectivity rules also differ.
+338 Final and Both columns report final-equilibrium and final-plus-prefix screening passes under the stated historical assumptions.
+339 Historical baseline table for 114 prompts.
+340 The stability and parsing columns use different criteria.
+341 The historical record does not report corresponding BrickForma-48 values.
+342 Historical level-wise baseline table transcribed from the reference.
+343 The original BrickForma-48 column was incomplete, and the other columns use different criteria.
+344 Transcribed literature values and unavailable historical scores.
+345 The literature entries use separate evaluation sets, and the source does not specify a common definition for $P_{\mathrm{inv}}$.
