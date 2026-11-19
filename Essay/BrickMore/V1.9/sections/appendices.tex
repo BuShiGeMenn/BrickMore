@@ -1,0 +1,176 @@
+\appendix
+\section{Technical Appendix: Dataset Details}
+\label{app:dataset}
+The historical figures and tables in this appendix retain the supplied measurements and model renders, with labels translated into English. They use release-specific versions and criteria and are not substitutes for the integrated statistics or the current main comparison.
+
+\emph{Caption example.} The five captions of one model share a prefix and add detail level by level. The L1 prompt is \textquotedblleft An oval birdhouse with curved roof, enclosed room and front entrance.\textquotedblright\ Its L5 description is: ``An oval birdhouse with curved roof, enclosed room and front entrance. The protective roof joins the walls; the circular front entrance reaches a real interior cavity. Curved substantial surfaces carry their continuously attached functional parts. Overall width is 1.15 times depth; height is 0.80 times width. Parts follow functional positions. Continuous red, tan, brown color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.''
+
+\begin{table}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrr}
+\toprule
+Release & Passing & Added & Removed \\
+\midrule
+Strict v3 & 7,902 & -- & -- \\
+Relaxed & 65,503 & 428,278 & 38,230 \\
+Local bridging and retiling & 79,298 & 228,582 & 125 \\
+\bottomrule
+\end{tabular}
+\caption{Geometric pass counts of the 80,000 source models under successive conversion releases (relaxed: several grounded components allowed), with total voxels added and removed, as in the corresponding release reports.}
+\label{tab:conversion}
+\end{table}
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/image7_en.png}
+\caption{Voxel model samples spanning the 21 object categories.}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/image8_en.png}
+\caption{Additional historical voxel model examples.}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=0.118\textwidth]{figures/image4.png}\hfill
+\includegraphics[width=0.118\textwidth]{figures/image5.png}\hfill
+\includegraphics[width=0.118\textwidth]{figures/image2.png}\hfill
+\includegraphics[width=0.118\textwidth]{figures/image3.png}\hfill
+\includegraphics[width=0.118\textwidth]{figures/image9.png}\hfill
+\includegraphics[width=0.118\textwidth]{figures/image10.png}\hfill
+\includegraphics[width=0.118\textwidth]{figures/image11.png}\hfill
+\includegraphics[width=0.118\textwidth]{figures/image12.png}
+\caption{Historical examples of voxel targets and brick layouts after local repair.}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.75\textwidth]{figures/image13_en.png}
+\caption{Historical contact-based gravity screening model, with English labels. The stated contact and ground assumptions are retained.}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/image14_en.pdf}
+\caption{Historical comparison of geometric conversion and screening outcomes across releases; values as in the corresponding release reports (Table~\ref{tab:conversion}).}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/image15_en.png}
+\caption{Historical category-level geometric pass rates. Version and numerical labels require verification.}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.72\textwidth]{figures/image16_en.png}
+\caption{Historical results on a uniform 160-model sample. Version and numerical labels require verification.}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/image17_en.pdf}
+\caption{Historical distributions of physical screening statuses; values as in the corresponding release reports. Counts refer to the specific releases shown and are kept separate from geometric pass rates.}
+\end{figure*}
+
+
+\section{Technical Appendix: Training Details}
+\label{app:training}
+Aggregate throughput is 24,448 tokens/s over eight GPUs, and the mean training loss is 0.0273. Evaluation and checkpointing run every 500 steps. With TRL~0.15, the unpacked multi-GPU path hangs after the first backward pass, which is why the TRL~0.17 stack is pinned. Because validation loss is lowest during epoch 2, two epochs would be a more economical setting for future runs (about one third less compute). The full software stack is transformers 4.51.3, trl 0.17.0, peft 0.15.2, datasets 3.6.0, and accelerate 1.6.0, with bf16 precision, gradient checkpointing, and unpacked sequences.
+
+\begin{table}[!htbp]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+Progress & Step & Validation loss \\
+\midrule
+Start & 500 & 0.1410 \\
+--- & 1,500 & 0.0950 \\
+--- & 10,500 & 0.0509 \\
+--- & 22,500 & 0.0404 \\
+$\approx$ End of epoch 1 & 44,500 & 0.0337 \\
+--- & 65,500 & 0.0316 \\
+Best (epoch 1.77) & 79,000 & 0.0308 \\
+End of epoch 3 & 133,860 & 0.0339 \\
+\bottomrule
+\end{tabular}
+\caption{Validation loss on the 2,000-sample validation subset. One epoch is $\approx$44,620 steps; the nearest evaluation to the end of epoch 1 is step 44,500.}
+\label{tab:eval-loss}
+\end{table}
+
+% BrickGPT-paper column verified against arXiv:2505.05469 (Sec. 5.1 and Appendix A training details).
+\begin{table*}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcc}
+\toprule
+Dimension & BrickGPT paper & Official Qwen3 script (ours) \\
+\midrule
+Base model & LLaMA-3.2-1B-Instruct & Qwen3-1.7B \\
+LoRA & $r=32$, $\alpha=16$, dropout $0.05$, $q$/$v$ only (3.4M params) & $r=16$, $\alpha=32$, all linear layers \\
+Learning rate & $2{\times}10^{-3}$ (AdamW) & $10^{-4}$ \\
+Effective batch & 64 & 8 \\
+Max length & 4,096 & 8,192 \\
+Epochs & 3 & 3 \\
+Hardware & 8$\times$RTX A6000, 12\,h & 8$\times$4090D, 25.3\,h \\
+Data & StableText2Brick, 47k structures / 240k prompts & BrickMore-48, 79.3k models / 396,610 samples \\
+\bottomrule
+\end{tabular}
+\caption{Our configuration versus the original BrickGPT paper \cite{brickgpt}. BrickGPT-paper values are taken from Sec.~5.1 and Appendix~A of arXiv:2505.05469 (base model, LoRA $r{=}32$, $\alpha{=}16$, dropout $0.05$, $q$/$v$ only with 3.4M parameters, AdamW learning rate $0.002$, global batch 64, 4096-token length filter, 3 epochs, 8$\times$RTX A6000 and 12\,h, and 47k+ structures / 240k prompts). The data organization, instruction template, absence of thinking mode, and LoRA paradigm follow BrickGPT; concrete hyperparameters follow the official Qwen3 adaptation, with the budget adjusted for the larger world, library, and corpus.}
+\label{tab:brickgpt-recipe}
+\end{table*}
+
+
+\section{Technical Appendix: Additional Evaluation Material}
+\label{app:eval}
+
+\input{sections/evaluation_details}
+
+\begin{table*}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lr}
+\toprule
+Quantity (525 prompts) & Value \\
+\midrule
+Raw layout is a single stud component & 46 (8.8\%) \\
+Stud components per failing raw (med./max) & 5 / 33 \\
+Failing raw layouts with duplicated voxels & 50 / 479 \\
+Detached fragments (airborne / grounded) & 1,320 / 920 \\
+MILP tier reached (12 / 60 / 180 / 600\,s) & 326 / 133 / 18 / 2 \\
+Prompts resampled outside $S$ & 28 \\
+Final: single stud comp., union unchanged & 525 / 525 \\
+Raw bricks, median (range) & 183 (77--623) \\
+Final assembly bricks, median & 452 \\
+\bottomrule
+\end{tabular}
+\caption{Structural diagnostics of raw outputs (Section~\ref{sec:diagnostics}). ``Union unchanged'' means the final assembly covers exactly the in-bounds voxel union of the raw draft; it does not assess whether the shape matches the prompt.}
+\label{tab:diag}
+\end{table*}
+
+
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/image19_en.pdf}
+\caption{Historical failure categories in the supplied reference; values as in the corresponding run records.}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/original_comparison_en.png}
+\caption{Qualitative historical examples from the supplied reference. Columns show raw and retiled outputs of our system and BrickGPT outputs.}
+\end{figure*}
+
+
+\section{Technical Appendix: Historical Tables}
+\label{app:historical}
+The following transcribed tables preserve the historical reference material. They use different versions or evaluation criteria and are not substitutes for the current main comparison. Where a value is superseded by a verified number in the main text (e.g., Table~\ref{tab:training-data} and Appendix~\ref{app:dataset}), the main text takes precedence. Dashes indicate missing entries in the supplied source.
+\input{archive/historical_tables}

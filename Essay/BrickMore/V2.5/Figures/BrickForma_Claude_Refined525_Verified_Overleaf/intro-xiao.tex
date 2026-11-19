@@ -1,0 +1,45 @@
+% Reframed abstract and introduction for BrickForma.
+% Result statements reflect the November 17 matched evaluation.
+% New citation keys to add to the .bib: legopuzzles (Tang et al., 2025, arXiv:2503.19990),
+% pfp (Zhou et al., AAAI 2026, Paper Folding Puzzles), geogrambench (Luo et al., ICLR 2026).
+
+
+
+
+\section{Introduction}
+Spatial reasoning and geometric understanding are fundamental to human cognition and to artificial intelligence, supporting applications from robotics and navigation to computer-aided design.
+As large language models (LLMs) have matured, a growing body of work asks whether they can reason about shape, position, and transformation. Recent benchmarks probe LLMs' ability through 
+%multi-step LEGO assembly~\cite{brickgpt, bricknet},
+paper folding and unfolding~\cite{zhou2026paperfoldingpuzzle} and geometry expressed as procedural drawing code~\cite{luo2026geogrambench}. Each reports pronounced deficiencies in current models. These studies largely assess spatial reasoning by asking a model to select or compute an answer. A complementary and less examined question is whether a language model can \emph{construct}: given only words, can it produce a three-dimensional object whose parts are correctly sized, correctly placed, and physically joined?
+
+%xiao: use lego instead of Brick
+LEGO brick assembly makes this question concrete. A concise narrative request such as \emph{a simple chair} identifies an object category while leaving its dimensions, proportions, and part layout largely unspecified. Answering it requires three coupled forms of geometric spatial reasoning. The model must complete the missing geometry from prior knowledge of what the object looks like. It must discretize that geometry into pieces of fixed dimensions at integer positions on a grid. And it must respect the difference between spatial adjacency and stud connectivity, since pieces that touch side by side do not hold together unless they interlock vertically through studs. We refer to this setting as the \texttt{Text-to-Brick} task: the translation from a natural-language description, at any level of detail, to a set of (Lego) brick placements that reproduces the described shape as a single connected assembly. Because every output can be checked for coverage, bounds, and connectivity, the task provides a verifiable test of whether linguistic knowledge has become spatial structure.
+
+Prior work has established that language models can be trained for this task. BrickGPT~\cite{brickgpt} learns autoregressive brick-placement sequences and incorporates validity checks with physics-aware rollback during inference. BrickNet~\cite{bricknet} adopts a graph-based representation supporting a broader range of parts and connection types. Two questions remain open alongside these advances. \textbf{(Q1)} How well do generators translate \emph{limited} linguistic information into object geometry? In our five-level benchmark (Table~\ref{tab:level-results}), BrickNet obtains lower mean VQAScore, PE, and SigLIP2 than BrickForma at the two shortest description levels, L1 and L2, a gap that only level-wise evaluation makes visible. \textbf{(Q2)} Can LLM-assisted programs encode the geometric details omitted from concise prompts in a form suitable for training a compact model?
+
+We present BrickForma, which uses executable programs to generate training examples for a compact text-to-brick model. With GPT-6.1 Sol assistance, we develop parametric programs that vary object proportions, part dimensions, openings, and support arrangements to synthesize voxel shapes in batches.
+Each program specifies the structure of an object family and exposes its geometric degrees of freedom as parameters. The source collection contains 80,000 models across 21 categories on a $48^3$ grid. Each model is paired with five levels of description that progressively introduce structural, geometric, proportional, and appearance information. The resulting approximately 400,000 caption records link concise requests and detailed specifications to shared geometry, providing supervision for prompts with different amounts of geometric detail.
+
+Turning voxel shapes into brick targets is where spatial adjacency and stud connectivity must be separated. Pieces can cover a connected voxel volume and touch side by side without forming stud connections. Our conversion pipeline combines same-color brick placement, connection analysis, and local refinement to construct geometrically checked target layouts, with changes to source voxels recorded in derived models. The integrated dataset release includes 79,301 models passing its dataset-level geometric checks. We fine-tune Qwen3-1.7B~\cite{qwen3} with low-rank adaptation~\cite{lora} on caption--placement pairs to predict brick dimensions and spatial positions.
+
+Geometric refinement complements the small model's predictions with explicit structural enforcement. From the supported, in-bounds portions of predicted placements, the pipeline forms a voxel union and uses mixed-integer linear programming to seek an exact-cover layout forming a single stud-connected component. Independent coverage and connectivity checks verify the refined layout. This design assigns the two halves of the task to the components suited to them: the language model decides what shape a description denotes, and the solver decides how that shape holds together.
+
+We evaluate BrickForma against BrickGPT and BrickNet on 525 shared prompts spanning five description levels. BrickForma's raw outputs achieve the highest mean VQAScore, PE, and SigLIP2 at every level, including the shortest descriptions. BrickGPT has the lowest mean invalid-placement ratio (0.00\%), followed by BrickForma (0.79\%) and BrickNet (18.42\%). Reporting all five levels connects the multilevel data design to an explicit assessment of how generation changes with the amount of descriptive detail.
+
+In summary, the main contributions of this work are as follows:
+
+\textbf{LLM-assisted construction of training data for a compact model.}
+We use executable parametric programs to generate voxel shapes and descriptions, convert the shapes into geometrically checked brick layouts, and fine-tune a 1.7B-parameter model on the resulting caption--placement pairs.
+On the 525 shared prompts, BrickForma attains a 30.0\% higher mean VQAScore
+than BrickGPT.
+
+
+
+\textbf{A multi-level dataset that enables experimental validation of small language model alignment across 
+various levels of descriptive detail.}
+With our LLM-assisted parametric data construction pipeline, we generated 80,000 
+source voxel models with five description levels each. In the integrated release, 79,301 of the 80,000 source models yielded brick layouts that passed the geometric checks. We fine-tuned Qwen3-1.7B on caption--placement pairs and carried out level-wise evaluation 
+against BrickGPT and BrickNet to assess text--image alignment and invalid 
+placements across descriptions ranging from concise prompts to detailed 
+specifications. BrickForma consistently achieves the highest mean 
+alignment scores across all five levels.

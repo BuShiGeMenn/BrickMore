@@ -1,0 +1,278 @@
+{
+  "samples": 3,
+  "primary": {
+    "Qwen3-1.7B-base": {
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.4793729372937294
+      },
+      "vqa": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0008949652401497588
+      },
+      "pe": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.12655247747898102
+      },
+      "siglip2": {
+        "n": 2,
+        "missing": 0,
+        "mean": 2.992238154320148e-05
+      },
+      "pinv_micro": 0.8883792048929664
+    },
+    "Qwen1.7b B LDR": {
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 7.802421464475628e-07
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.03790382295846939
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 4.139937814784389e-08
+      },
+      "pinv_micro": 0.0
+    }
+  },
+  "paired": {
+    "pinv": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "vqa": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "pe": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "siglip2": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    }
+  },
+  "by_category_level": [
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "basket",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0014700785977765918
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.11700354516506195
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 5.829126530443318e-05
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bench",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9587458745874587
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.00031985188252292573
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.13610140979290009
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 1.5534977819697815e-06
+      },
+      "pinv_micro": 0.9587458745874587
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "batch": "B",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 1,
+        "missing": 0,
+        "mean": 7.802421464475628e-07
+      },
+      "pe": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.03790382295846939
+      },
+      "siglip2": {
+        "n": 1,
+        "missing": 0,
+        "mean": 4.139937814784389e-08
+      },
+      "pinv_micro": 0.0
+    }
+  ],
+  "protocol": {
+    "structure": "pinv_file_order, original BrickNet 0.1.0 inset collision kernel; original generation order not verified; no fixed-edge exemptions",
+    "image_scores": "Eight fixed views, max per model then arithmetic mean; no best-of-N sample selection",
+    "rendering": "Shared actual inset part surfaces, orthographic CPU rasterizer, 512px, 25-degree elevation, 45-degree azimuth steps, uniform yellow",
+    "color": "Uniform display color; no claim of generated-color accuracy",
+    "original_paper_reproduction": false,
+    "old_run_scores_mixed": false,
+    "primary": "A scores are limited to strictly parsed placements from 80 incomplete representations. B scores cover all 265 supplied LDRs."
+  },
+  "by_batch": {
+    "A": {
+      "expected_prompts": 260,
+      "selected_prompts": 2,
+      "systems": {
+        "Qwen3-1.7B-base": {
+          "records": 2,
+          "pinv": {
+            "n": 2,
+            "missing": 0,
+            "mean": 0.4793729372937294
+          },
+          "vqa": {
+            "n": 2,
+            "missing": 0,
+            "mean": 0.0008949652401497588
+          },
+          "pe": {
+            "n": 2,
+            "missing": 0,
+            "mean": 0.12655247747898102
+          },
+          "siglip2": {
+            "n": 2,
+            "missing": 0,
+            "mean": 2.992238154320148e-05
+          },
+          "pinv_micro": 0.8883792048929664
+        }
+      },
+      "paired": {}
+    },
+    "B": {
+      "expected_prompts": 265,
+      "selected_prompts": 1,
+      "systems": {
+        "Qwen1.7b B LDR": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.0
+          },
+          "vqa": {
+            "n": 1,
+            "missing": 0,
+            "mean": 7.802421464475628e-07
+          },
+          "pe": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.03790382295846939
+          },
+          "siglip2": {
+            "n": 1,
+            "missing": 0,
+            "mean": 4.139937814784389e-08
+          },
+          "pinv_micro": 0.0
+        }
+      },
+      "paired": {}
+    }
+  },
+  "source_input_coverage": {
+    "A": {
+      "no_placement": 178,
+      "scoreable_partial": 80,
+      "unsupported_part": 2
+    },
+    "B": {
+      "scoreable_ldr": 265
+    }
+  }
+}

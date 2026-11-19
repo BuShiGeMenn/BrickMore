@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>积木模型全量对比 · 525 条共同提示词</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f8f9;color:#172b34;font:16px/1.65 "Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+header{background:#e6f0f1;border-bottom:1px solid #cddfe2;padding:42px 20px 30px}header>div,main{max-width:1120px;margin:auto}
+h1,h2,h3{line-height:1.3;margin:0 0 10px}h1{font-size:clamp(26px,4.4vw,39px)}h2{font-size:23px}h3{font-size:17px}
+p{margin:6px 0 12px}header p{color:#35515c}nav{display:flex;gap:18px;flex-wrap:wrap;padding-top:7px}
+a{color:#075d69;text-underline-offset:3px}main{padding:12px 20px 44px}
+section{scroll-margin-top:12px;padding:24px 0;border-bottom:1px solid #d8e2e6}
+figure{margin:12px 0 0}img{width:100%;height:auto;display:block;border:1px solid #dce7ea;border-radius:10px;background:white}
+figcaption,.note{color:#415961;font-size:14px}
+.scroll{overflow-x:auto;background:#fff;border:1px solid #dce7ea;border-radius:8px;margin-top:10px}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 11px;white-space:nowrap;border-bottom:1px solid #e3ebee;text-align:right}
+th{background:#edf4f5;font-weight:650}th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+tr:last-child td{border-bottom:0}details{margin:14px 0}summary{cursor:pointer;font-weight:650;color:#164c55}
+.sub{margin-top:20px}.source{font-size:14px}
+@media print{body,header{background:#fff}nav{display:none}figure,.scroll{break-inside:avoid}}
+</style></head><body>
+<header><div><h1>积木模型全量对比</h1><p>2026 年 11 月 17 日更新 · 525 条共同提示词 · 21 类 · 1,575 条模型记录 · 四项指标均无缺失</p>
+<nav aria-label="图表目录"><a href="#means">总体均值</a><a href="#zero">零无效放置占比</a><a href="#dist">分布</a><a href="#levels">难度变化</a><a href="#stats">统计量</a><a href="scores_525_matched.csv">逐条分数 CSV</a></nav></div></header>
+<main>
+<section id="means"><h2>四项指标总体均值</h2><p>BrickMore 的 VQAScore、PE、SigLIP2 均值最高。BrickGPT 的无效放置比例均值最低。 三种模型各用相同的 525 条提示词，每条等权。</p>
+<figure><img src="02-means.png" alt="三个模型在 525 条共同提示词上的四项指标平均值。"></figure></section>
+<section id="zero"><h2>无效放置比例为零的样本占比</h2><p>圆环中央显示各模型无效放置次数为零的样本数及占比。</p>
+<figure><img src="01-zero-invalid.png" alt="三个环形图分别显示三种模型的 P_inv 为零的样本数和比例。"></figure></section>
+<section id="dist"><h2>逐样本累计分布</h2><p>横轴是分数或比例阈值，纵轴是低于或等于该值的样本占比。P_inv 曲线越靠左，低无效放置比例的样本越多。图文指标曲线越靠右，高分样本越多。</p>
+<figure><img src="03-distributions.png" alt="四项指标的经验累积分布曲线，可比较三种模型的集中区间和尾部。"></figure></section>
+<section id="levels"><h2>L1 至 L5 的均值变化</h2><p>每级有 105 条共同提示词，每个点是对应等级内的模型均值。</p>
+<figure><img src="04-by-level.png" alt="按提示词等级 L1 到 L5 展示三种模型各指标的均值曲线。"></figure>
+<p class="note">三个模型的 VQAScore 均值从 L3 到 L4 均有下降，同期 PE 均值均有上升。不同指标反映的变化方向不一定相同。</p></section>
+<section id="stats"><h2>描述统计与逐题配对</h2>
+<h3 class="sub">四项指标描述统计</h3><div class="scroll"><table><thead><tr><th scope="col">指标</th><th scope="col">模型</th><th scope="col">样本数</th><th scope="col">均值</th><th scope="col">中位数</th><th scope="col">样本标准差</th><th scope="col">最小值</th><th scope="col">第 25 百分位</th><th scope="col">第 75 百分位</th><th scope="col">第 90 百分位</th><th scope="col">最大值</th></tr></thead><tbody><tr><td>P_inv</td><td>BrickMore</td><td>525</td><td>0.79%</td><td>0.00%</td><td>2.41%</td><td>0.00%</td><td>0.00%</td><td>0.69%</td><td>1.90%</td><td>38.02%</td></tr><tr><td>P_inv</td><td>BrickGPT</td><td>525</td><td>0.00%</td><td>0.00%</td><td>0.00%</td><td>0.00%</td><td>0.00%</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr><tr><td>P_inv</td><td>BrickNet</td><td>525</td><td>18.42%</td><td>15.91%</td><td>17.24%</td><td>0.00%</td><td>0.00%</td><td>29.17%</td><td>42.30%</td><td>83.78%</td></tr><tr><td>VQAScore</td><td>BrickMore</td><td>525</td><td>0.0866</td><td>0.0239</td><td>0.1567</td><td>0.0000</td><td>0.0069</td><td>0.0928</td><td>0.2610</td><td>0.9800</td></tr><tr><td>VQAScore</td><td>BrickGPT</td><td>525</td><td>0.0666</td><td>0.0117</td><td>0.1493</td><td>0.0000</td><td>0.0020</td><td>0.0462</td><td>0.2113</td><td>0.9791</td></tr><tr><td>VQAScore</td><td>BrickNet</td><td>525</td><td>0.0201</td><td>0.0019</td><td>0.0582</td><td>0.0000</td><td>0.0001</td><td>0.0127</td><td>0.0582</td><td>0.6459</td></tr><tr><td>PE</td><td>BrickMore</td><td>525</td><td>0.1568</td><td>0.1593</td><td>0.0427</td><td>0.0477</td><td>0.1238</td><td>0.1891</td><td>0.2107</td><td>0.2466</td></tr><tr><td>PE</td><td>BrickGPT</td><td>525</td><td>0.1440</td><td>0.1448</td><td>0.0356</td><td>0.0495</td><td>0.1195</td><td>0.1680</td><td>0.1878</td><td>0.2407</td></tr><tr><td>PE</td><td>BrickNet</td><td>525</td><td>0.1187</td><td>0.1183</td><td>0.0336</td><td>0.0298</td><td>0.0941</td><td>0.1423</td><td>0.1607</td><td>0.2210</td></tr><tr><td>SigLIP2</td><td>BrickMore</td><td>525</td><td>0.0448</td><td>0.0004</td><td>0.1437</td><td>0.0000</td><td>0.0000</td><td>0.0141</td><td>0.0804</td><td>0.9627</td></tr><tr><td>SigLIP2</td><td>BrickGPT</td><td>525</td><td>0.0194</td><td>0.0002</td><td>0.0949</td><td>0.0000</td><td>0.0000</td><td>0.0019</td><td>0.0152</td><td>0.9579</td></tr><tr><td>SigLIP2</td><td>BrickNet</td><td>525</td><td>0.0011</td><td>0.0000</td><td>0.0071</td><td>0.0000</td><td>0.0000</td><td>0.0001</td><td>0.0013</td><td>0.1403</td></tr></tbody></table></div>
+<p class="note">标准差描述不同提示词之间的分数波动。每项百分位按样本排序后线性插值。</p>
+<h3 class="sub">无效放置的零值与加权统计</h3><div class="scroll"><table><thead><tr><th scope="col">模型</th><th scope="col">P_inv 为零</th><th scope="col">模型均值</th><th scope="col">按放置次数加权</th></tr></thead><tbody><tr><td>BrickMore</td><td>331/525（63.0%）</td><td>0.79%</td><td>0.76%</td></tr><tr><td>BrickGPT</td><td>525/525（100.0%）</td><td>0.00%</td><td>0.00%</td></tr><tr><td>BrickNet</td><td>139/525（26.5%）</td><td>18.42%</td><td>21.60%</td></tr></tbody></table></div>
+<p class="note">模型均值给每条模型记录相同权重。按放置次数加权时，计算全部无效放置次数除以全部放置次数。</p>
+<h3 class="sub">BrickMore 逐题胜平负</h3><div class="scroll"><table><thead><tr><th scope="col">指标</th><th scope="col">对手</th><th scope="col">胜</th><th scope="col">平</th><th scope="col">负</th><th scope="col">均值差</th></tr></thead><tbody><tr><td>P_inv</td><td>BrickGPT</td><td>0</td><td>331</td><td>194</td><td>+0.79 个百分点</td></tr><tr><td>P_inv</td><td>BrickNet</td><td>385</td><td>86</td><td>54</td><td>-17.63 个百分点</td></tr><tr><td>VQAScore</td><td>BrickGPT</td><td>384</td><td>0</td><td>141</td><td>+0.0200</td></tr><tr><td>VQAScore</td><td>BrickNet</td><td>460</td><td>0</td><td>65</td><td>+0.0665</td></tr><tr><td>PE</td><td>BrickGPT</td><td>337</td><td>0</td><td>188</td><td>+0.0127</td></tr><tr><td>PE</td><td>BrickNet</td><td>406</td><td>0</td><td>119</td><td>+0.0381</td></tr><tr><td>SigLIP2</td><td>BrickGPT</td><td>327</td><td>0</td><td>198</td><td>+0.0253</td></tr><tr><td>SigLIP2</td><td>BrickNet</td><td>408</td><td>2</td><td>115</td><td>+0.0436</td></tr></tbody></table></div>
+<p class="note">每行比较相同的 525 条提示词。胜负按指标方向判定，差值列为 BrickMore 减对手。两边相差不超过 10⁻¹² 记为平局。</p></section>
+<section><h2>评分口径</h2><p>P_inv 按 LDraw 文件行顺序统计碰撞判为无效的放置。连通性和承重需独立验证。VQAScore、PE、SigLIP2 均从每个模型的八张固定视角渲染图中取最高分，再对提示词汇总。渲染统一使用黄色，图文评分以形状和语义匹配为主。</p>
+<p>补测的 260 条 BrickMore 结果全部纳入，包括源清单标记几何未通过的 96 条与生成未结束的 8 条，两种标记可能重叠。汇总反映现有交付结果，生成设置随原始运行而异。</p>
+<p class="source">数据来自 11 月 16 日已有的 1,315 条评分和 11 月 17 日新增的 260 条评分（BrickMore_A260_20261117.rar）。<a href="../../../BrickMore_Comparision/BrickMoreComparison_20261116/BrickMoreComparison_20261116/Results/comparison_full/report/report.html">查看 11 月 16 日原始报告</a></p></section>
+</main></body></html>
