@@ -1,0 +1,1122 @@
+[
+  {
+    "kind": "teaser",
+    "ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "label": "fig:teaser"
+  },
+  {
+    "kind": "abstract",
+    "ids": [
+      6
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  {
+    "kind": "section",
+    "ids": [
+      16
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      17,
+      18,
+      19
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      20,
+      21,
+      22,
+      23
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      45,
+      46,
+      47,
+      48,
+      49
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      50,
+      51,
+      52,
+      53
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      54,
+      55,
+      56,
+      57
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      58
+    ]
+  },
+  {
+    "kind": "subhead",
+    "ids": [
+      59
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      60,
+      61
+    ]
+  },
+  {
+    "kind": "subhead",
+    "ids": [
+      62
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      63,
+      64,
+      65,
+      66
+    ]
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      67,
+      68,
+      69,
+      70,
+      71
+    ],
+    "raw": "\\begin{figure*}[t]\n\\centering\n\\begingroup\n\n\\pdfximage width \\textwidth {figure2.pdf}\n\\pdfrefximage\\pdflastximage\\endgroup\n\\caption{Data-construction workflow. GPT-6.1 Sol assists in writing parametric programs that produce voxel shapes and captions. After deduplication, the shapes are converted to bricks, refined, and checked before export. Dashed arrows trace contact screening and its recorded status. Brick colors follow the legend in Figure~\\ref{fig:teaser}.}\n\\label{fig:data-workflow}\n\\end{figure*}",
+    "label": "fig:data-workflow"
+  },
+  {
+    "kind": "section",
+    "ids": [
+      72
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      73
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      74,
+      75,
+      76
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      77
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      78,
+      79
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      80
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      81,
+      82
+    ]
+  },
+  {
+    "kind": "section",
+    "ids": [
+      83
+    ]
+  },
+  {
+    "kind": "label",
+    "raw": "\\label{sec:dataset}"
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      84
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      85,
+      86,
+      87,
+      88
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      89,
+      90
+    ]
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      91
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      92,
+      93,
+      94,
+      95
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      96,
+      97
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      98,
+      99,
+      100
+    ]
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      101
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      102,
+      103,
+      104
+    ]
+  },
+  {
+    "kind": "table",
+    "ids": [
+      105,
+      106
+    ],
+    "raw": "\\begin{table}[t]\n\\centering\n\\small\n\\setlength{\\tabcolsep}{4pt}\n\\begin{tabular}{lr}\n\\toprule\n\\multicolumn{2}{l}{\\emph{Dataset (release reports)}} \\\\\n\\midrule\nSource models / categories / grid & 80,000 / 21 / $48^3$ \\\\\nBilingual caption records & 400,000 \\\\\nFailing in full refined release & 702 (0.88\\%) \\\\\nPassing in full refined release & 79,298 \\\\\nPiano models restored by revised release & 3 \\\\\nIntegrated passing models & 79,301 \\\\\n\\midrule\n\\multicolumn{2}{l}{\\emph{Fine-tuning corpus}} \\\\\n\\midrule\n(model, English caption) samples & 396,610 \\\\\nTraining / validation samples & 356,955 / 39,655 \\\\\nTokens over 3 epochs & 2,228,044,818 \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Dataset and fine-tuning corpus. The two blocks are counted separately: the upper block from the dataset release reports, the lower block as recorded for the fine-tuning run.}\n\\label{tab:training-data}\n\\end{table}",
+    "label": "tab:training-data"
+  },
+  {
+    "kind": "section",
+    "ids": [
+      107
+    ]
+  },
+  {
+    "kind": "label",
+    "raw": "\\label{sec:model}"
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      108
+    ]
+  },
+  {
+    "kind": "label",
+    "raw": "\\label{sec:training}"
+  },
+  {
+    "kind": "p",
+    "ids": [
+      109,
+      110,
+      111
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      112,
+      113,
+      114
+    ]
+  },
+  {
+    "kind": "table",
+    "ids": [
+      115
+    ],
+    "raw": "\\begin{table}[t]\n\\centering\n\\small\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{@{}l>{\\raggedright\\arraybackslash}p{0.58\\linewidth}@{}}\n\\toprule\nItem & Value \\\\\n\\midrule\nBase model & Qwen3-1.7B (bf16) \\\\\nAdaptation & LoRA, $r=16$, $\\alpha=32$, dropout $0.05$, all linear layers \\\\\nOptimization & LR $10^{-4}$, cosine, 100 warm-up steps, 3 epochs \\\\\nBatch / max length & effective 8 (8 GPUs $\\times$ 1) / 8,192 \\\\\nHardware & DDP, 8$\\times$RTX 4090D (24\\,GB) \\\\\nReleased checkpoint & step 79,000 (best validation loss) \\\\\nSoftware & transformers 4.51.3, trl 0.17.0, peft 0.15.2 \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Fine-tuning configuration (details in Appendix~\\ref{app:training}).}\n\\label{tab:finetune-config}\n\\end{table}",
+    "label": "tab:finetune-config"
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      116
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      117,
+      118,
+      119
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      120,
+      121,
+      122,
+      123
+    ]
+  },
+  {
+    "kind": "algorithm",
+    "ids": [
+      124
+    ],
+    "raw": "\\begin{algorithm}[tb]\n\\caption{BrickForma inference and refinement}\n\\label{alg:inference-refinement}\n\\small\n\\begin{algorithmic}[1]\n\\REQUIRE prompt $c$; fine-tuned model $\\theta$; library $\\mathcal{L}$ (20 footprints); seeds $S=(42,104,2026)$; MILP tiers $T=(12,60,180)$\\,s\n\\ENSURE $(B_{\\mathrm{out}}, \\textit{status})$, $\\textit{status}\\in\\{\\textsc{Success},\\textsc{Draft},\\textsc{Failed}\\}$\n\\STATE $B \\gets \\emptyset$; $A \\gets \\emptyset$\n\\FOR{$s \\in S$}\n\\STATE $(B_s,\\textit{rep}) \\gets \\mathrm{Parse}(\\theta.\\mathrm{Generate}(c,\\ \\mathrm{seed}{=}s))$\n\\STATE $A \\gets A \\cup \\{(B_s,\\textit{rep})\\}$\n\\IF{$\\textit{rep}.\\mathrm{complete} \\land \\textit{rep}.\\mathrm{valid}$}\n\\STATE $B \\gets B_s$; \\textbf{break}\n\\ENDIF\n\\ENDFOR\n\\IF{$B=\\emptyset$}\n\\IF{no completed draft in $A$}\n\\RETURN $(\\emptyset,\\ \\textsc{Failed})$\n\\ENDIF\n\\STATE $B \\gets \\arg\\min_{\\text{completed } a\\in A} \\mathrm{Err}(a)$\n\\ENDIF\n\\IF{$\\mathrm{Err}(B)=0 \\land \\mathrm{StudComponents}(B)=1$}\n\\RETURN $(B,\\ \\textsc{Success})$ \\COMMENT{keep a valid connected raw layout}\n\\ENDIF\n\\STATE $C \\gets \\mathrm{UnionVoxels}(B;\\ \\mathcal{L},\\ 48^3)$ \\COMMENT{clip; overlaps count once}\n\\FOR{$\\tau \\in T$}\n\\STATE $B^{*} \\gets \\mathrm{MILP\\text{-}SingleStudCover}(C,\\ \\tau)$\n\\IF{$B^{*}\\neq\\emptyset \\land \\mathrm{Audit}(B^{*},C)$}\n\\RETURN $(B^{*},\\ \\textsc{Success})$\n\\ENDIF\n\\ENDFOR\n\\STATE $\\mathrm{QueueReseed}(c)$\n\\RETURN $(B,\\ \\textsc{Draft})$ \\COMMENT{unsolved: keep raw draft}\n\\end{algorithmic}\n\\end{algorithm}",
+    "label": "alg:inference-refinement"
+  },
+  {
+    "kind": "section",
+    "ids": [
+      125
+    ]
+  },
+  {
+    "kind": "label",
+    "raw": "\\label{sec:eval}"
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      126
+    ]
+  },
+  {
+    "kind": "label",
+    "raw": "\\label{sec:setup}"
+  },
+  {
+    "kind": "p",
+    "ids": [
+      127,
+      128,
+      129
+    ]
+  },
+  {
+    "kind": "subhead",
+    "ids": [
+      130
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      131,
+      132,
+      133
+    ]
+  },
+  {
+    "kind": "subhead",
+    "ids": [
+      134
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      135,
+      136
+    ]
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      137
+    ]
+  },
+  {
+    "kind": "table",
+    "ids": [
+      138,
+      139,
+      140
+    ],
+    "raw": "\\begin{table}[t]\n\\centering\\small\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrr}\n\\toprule\nSystem & $P_{\\mathrm{inv}}\\downarrow$ & VQAScore $\\uparrow$ & PE $\\uparrow$ & SigLIP2 $\\uparrow$ \\\\\n\\midrule\nBrickForma & 0.79\\% & \\textbf{0.0866} & \\textbf{0.1568} & \\textbf{0.0448} \\\\\nBrickGPT & \\textbf{0.00\\%} & 0.0666 & 0.1440 & 0.0194 \\\\\nBrickNet & 18.42\\% & 0.0201 & 0.1187 & 0.0011 \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Mean scores on 525 shared prompts. BrickForma uses delivered raw outputs. Bold marks the best mean.}\n\\label{tab:main}\n\\end{table}",
+    "label": "tab:main"
+  },
+  {
+    "kind": "p",
+    "ids": [
+      141,
+      142,
+      143,
+      144
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      145
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      146,
+      147
+    ]
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      148
+    ]
+  },
+  {
+    "kind": "table",
+    "ids": [
+      149,
+      150,
+      151,
+      152
+    ],
+    "raw": "\\begin{table*}[t]\n\\centering\\small\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrlrrrr}\n\\toprule\nLevel & $n$ & Words & System & $P_{\\mathrm{inv}}\\downarrow$ & VQAScore $\\uparrow$ & PE $\\uparrow$ & SigLIP2 $\\uparrow$ \\\\\n\\midrule\nL1 & 105 & 13.6 & BrickForma & 0.48\\% & \\textbf{0.1539} & \\textbf{0.1388} & \\textbf{0.0158} \\\\\n&  &  & BrickGPT & \\textbf{0.00\\%} & 0.1296 & 0.1302 & 0.0087 \\\\\n&  &  & BrickNet & 18.59\\% & 0.0346 & 0.1051 & 0.0005 \\\\\n\\midrule\nL2 & 105 & 26.4 & BrickForma & 0.69\\% & \\textbf{0.1264} & \\textbf{0.1465} & \\textbf{0.0291} \\\\\n&  &  & BrickGPT & \\textbf{0.00\\%} & 0.0938 & 0.1338 & 0.0206 \\\\\n&  &  & BrickNet & 18.35\\% & 0.0394 & 0.1030 & 0.0008 \\\\\n\\midrule\nL3 & 105 & 37.5 & BrickForma & 0.98\\% & \\textbf{0.1179} & \\textbf{0.1477} & \\textbf{0.0508} \\\\\n&  &  & BrickGPT & \\textbf{0.00\\%} & 0.0863 & 0.1415 & 0.0178 \\\\\n&  &  & BrickNet & 22.98\\% & 0.0209 & 0.1113 & 0.0012 \\\\\n\\midrule\nL4 & 105 & 52.5 & BrickForma & 1.08\\% & \\textbf{0.0192} & \\textbf{0.1780} & \\textbf{0.0738} \\\\\n&  &  & BrickGPT & \\textbf{0.00\\%} & 0.0148 & 0.1605 & 0.0338 \\\\\n&  &  & BrickNet & 17.24\\% & 0.0025 & 0.1376 & 0.0011 \\\\\n\\midrule\nL5 & 105 & 78.8 & BrickForma & 0.75\\% & \\textbf{0.0157} & \\textbf{0.1730} & \\textbf{0.0543} \\\\\n&  &  & BrickGPT & \\textbf{0.00\\%} & 0.0086 & 0.1542 & 0.0162 \\\\\n&  &  & BrickNet & 14.95\\% & 0.0030 & 0.1363 & 0.0020 \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Mean scores by description level. Each level contains 105 prompts per system. Words is the mean English word count. Bold marks the best mean.}\n\\label{tab:level-results}\n\\end{table*}",
+    "label": "tab:level-results"
+  },
+  {
+    "kind": "p",
+    "ids": [
+      153,
+      154,
+      155
+    ]
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      156,
+      157
+    ],
+    "raw": "\\begin{figure*}[t]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/matched_short_prompts_20261116.png}\n\\caption{Four examples from the matched evaluation with the same prompts, render settings, and azimuths ($45^\\circ$ and $225^\\circ$) across systems. The highest VQAScore belongs to BrickForma for the chair and bench, BrickGPT for the hatchback, and BrickNet for the camera.}\n\\label{fig:gallery}\n\\end{figure*}",
+    "label": "fig:gallery"
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      158
+    ]
+  },
+  {
+    "kind": "table",
+    "ids": [
+      159
+    ],
+    "raw": "\\begin{table}[t]\n\\centering\n\\small\n\\begin{tabular}{lrr}\n\\toprule\nMetric & Raw & Refined \\\\\n\\midrule\n$P_{\\mathrm{inv}}$ $\\downarrow$ & 0.1897\\% & 0.0000\\% \\\\\nVQAScore $\\uparrow$ & 0.2065 & 0.2071 \\\\\nPE $\\uparrow$ & 0.1858 & 0.1859 \\\\\nSigLIP2 $\\uparrow$ & 0.1379 & 0.1261 \\\\\nMean parts & 178.7 & 421.2 \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Earlier repair comparison on 110 pairs sharing the same prompt, model identifier, and caption.}\n\\label{tab:raw-refined}\n\\end{table}",
+    "label": "tab:raw-refined"
+  },
+  {
+    "kind": "p",
+    "ids": [
+      160,
+      161,
+      162
+    ]
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      163
+    ]
+  },
+  {
+    "kind": "label",
+    "raw": "\\label{sec:diagnostics}"
+  },
+  {
+    "kind": "p",
+    "ids": [
+      164,
+      165
+    ]
+  },
+  {
+    "kind": "table",
+    "ids": [
+      166,
+      167
+    ],
+    "raw": "\\begin{table}[t]\n\\centering\\small\n\\begin{tabular}{@{}lrr@{}}\n\\toprule\nExport measure & Raw & Refined \\\\\n\\midrule\nSingle stud component & 18/110 & 110/110 \\\\\nMean stud components & 4.29 & 1.00 \\\\\nNo body-cell overlap & 100/110 & 110/110 \\\\\n\\midrule\n\\multicolumn{3}{@{}l@{}}{Equal voxel unions after translation: 110/110} \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Earlier export audit of 110 matched raw/refined pairs. Union equality uses translation normalization.}\n\\label{tab:export-audit}\n\\end{table}",
+    "label": "tab:export-audit"
+  },
+  {
+    "kind": "p",
+    "ids": [
+      168
+    ]
+  },
+  {
+    "kind": "subsection",
+    "ids": [
+      169
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      170,
+      171
+    ]
+  },
+  {
+    "kind": "section",
+    "ids": [
+      172
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      173,
+      174,
+      175
+    ]
+  },
+  {
+    "kind": "section",
+    "ids": [
+      176
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      177,
+      178,
+      179
+    ]
+  },
+  {
+    "kind": "bibliography"
+  },
+  {
+    "kind": "appendix"
+  },
+  {
+    "kind": "section",
+    "ids": [
+      180
+    ]
+  },
+  {
+    "kind": "label",
+    "raw": "\\label{app:dataset}"
+  },
+  {
+    "kind": "p",
+    "ids": [
+      181,
+      182
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      183
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      191
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198
+    ]
+  },
+  {
+    "kind": "subhead",
+    "ids": [
+      199
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208
+    ]
+  },
+  {
+    "kind": "table",
+    "ids": [
+      209
+    ],
+    "raw": "\\begin{table}[!htbp]\n\\centering\n\\small\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrr}\n\\toprule\nRelease & Passing & Added & Removed \\\\\n\\midrule\nStrict v3 & 7,902 & -- & -- \\\\\nRelaxed & 65,503 & 428,278 & 38,230 \\\\\nLocal refinement & 79,298 & 228,582 & 125 \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Geometric pass counts of the 80,000 source models under successive conversion releases (relaxed: several grounded components allowed), with total voxels added and removed, as in the corresponding release reports.}\n\\label{tab:conversion}\n\\end{table}",
+    "label": "tab:conversion"
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      210
+    ],
+    "raw": "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/image7_en.png}\n\\caption{Voxel model samples spanning the 21 object categories.}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      211
+    ],
+    "raw": "\\begin{figure*}[t]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/image8_en.png}\n\\caption{Additional historical voxel model examples.}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      212
+    ],
+    "raw": "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=0.118\\textwidth]{figures/image4.png}\\hfill\n\\includegraphics[width=0.118\\textwidth]{figures/image5.png}\\hfill\n\\includegraphics[width=0.118\\textwidth]{figures/image2.png}\\hfill\n\\includegraphics[width=0.118\\textwidth]{figures/image3.png}\\hfill\n\\includegraphics[width=0.118\\textwidth]{figures/image9.png}\\hfill\n\\includegraphics[width=0.118\\textwidth]{figures/image10.png}\\hfill\n\\includegraphics[width=0.118\\textwidth]{figures/image11.png}\\hfill\n\\includegraphics[width=0.118\\textwidth]{figures/image12.png}\n\\caption{Historical examples of voxel targets and brick layouts after local repair.}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      213,
+      214
+    ],
+    "raw": "\\begin{figure*}[t]\n\\centering\n\\includegraphics[width=0.75\\textwidth]{figures/image13_en.png}\n\\caption{Historical contact-based gravity screening model, with English labels. The stated contact and ground assumptions are retained.}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      215
+    ],
+    "raw": "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/image14_en.pdf}\n\\caption{Historical comparison of geometric conversion and screening outcomes across releases; values as in the corresponding release reports (Table~\\ref{tab:conversion}).}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      216
+    ],
+    "raw": "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/image15_en.png}\n\\caption{Geometric pass rates by category for the three conversion releases in Table~\\ref{tab:conversion}.}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      217,
+      218
+    ],
+    "raw": "\\begin{figure*}[t]\n\\centering\n\\includegraphics[width=0.72\\textwidth]{figures/image16_en.png}\n\\caption{Geometric pass counts for the original rules, Q3, and two Q4 variants on the same 160-model sample (seed 38177). The Q4 rounds reuse this sample for tuning.}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      219,
+      220
+    ],
+    "raw": "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/image17_en.pdf}\n\\caption{Historical distributions of physical screening statuses; values as in the corresponding release reports. Counts refer to the specific releases shown and are kept separate from geometric pass rates.}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "section",
+    "ids": [
+      221
+    ]
+  },
+  {
+    "kind": "label",
+    "raw": "\\label{app:training}"
+  },
+  {
+    "kind": "p",
+    "ids": [
+      222,
+      223,
+      224,
+      225,
+      226
+    ]
+  },
+  {
+    "kind": "table",
+    "ids": [
+      227,
+      228
+    ],
+    "raw": "\\begin{table}[!htbp]\n\\centering\n\\small\n\\begin{tabular}{lrr}\n\\toprule\nProgress & Step & Validation loss \\\\\n\\midrule\nStart & 500 & 0.1410 \\\\\n--- & 1,500 & 0.0950 \\\\\n--- & 10,500 & 0.0509 \\\\\n--- & 22,500 & 0.0404 \\\\\n$\\approx$ End of epoch 1 & 44,500 & 0.0337 \\\\\n--- & 65,500 & 0.0316 \\\\\nBest (epoch 1.77) & 79,000 & 0.0308 \\\\\nEnd of epoch 3 & 133,860 & 0.0339 \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Validation loss on the 2,000-sample validation subset. One epoch is $\\approx$44,620 steps; the nearest evaluation to the end of epoch 1 is step 44,500.}\n\\label{tab:eval-loss}\n\\end{table}",
+    "label": "tab:eval-loss"
+  },
+  {
+    "kind": "table",
+    "ids": [
+      229,
+      230,
+      231
+    ],
+    "raw": "\\begin{table*}[!htbp]\n\\centering\n\\small\n\\setlength{\\tabcolsep}{5pt}\n\\begin{tabular}{lcc}\n\\toprule\nDimension & BrickGPT paper & Official Qwen3 script (ours) \\\\\n\\midrule\nBase model & LLaMA-3.2-1B-Instruct & Qwen3-1.7B \\\\\nLoRA & $r=32$, $\\alpha=16$, dropout $0.05$, $q$/$v$ only (3.4M params) & $r=16$, $\\alpha=32$, all linear layers \\\\\nLearning rate & $2{\\times}10^{-3}$ (AdamW) & $10^{-4}$ \\\\\nEffective batch & 64 & 8 \\\\\nMax length & 4,096 & 8,192 \\\\\nEpochs & 3 & 3 \\\\\nHardware & 8$\\times$RTX A6000, 12\\,h & 8$\\times$4090D, 25.3\\,h \\\\\nData & StableText2Brick, 47k structures / 240k prompts & BrickForma-48, 79.3k models / 396,610 samples \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Our configuration versus the original BrickGPT paper \\cite{brickgpt}. BrickGPT-paper values are taken from Sec.~5.1 and Appendix~A of arXiv:2505.05469 (base model, LoRA $r{=}32$, $\\alpha{=}16$, dropout $0.05$, $q$/$v$ only with 3.4M parameters, AdamW learning rate $0.002$, global batch 64, 4096-token length filter, 3 epochs, 8$\\times$RTX A6000 and 12\\,h, and 47k+ structures / 240k prompts). The data organization, instruction template, absence of thinking mode, and LoRA paradigm follow BrickGPT; concrete hyperparameters follow the official Qwen3 adaptation, with the budget adjusted for the larger world, library, and corpus.}\n\\label{tab:brickgpt-recipe}\n\\end{table*}",
+    "label": "tab:brickgpt-recipe"
+  },
+  {
+    "kind": "section",
+    "ids": [
+      232
+    ]
+  },
+  {
+    "kind": "label",
+    "raw": "\\label{app:eval}"
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      233
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      244
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      253
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      254,
+      255,
+      256
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      257
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      258,
+      259,
+      260,
+      261,
+      262,
+      263
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      264
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      265,
+      266,
+      267,
+      268,
+      269,
+      270
+    ]
+  },
+  {
+    "kind": "table",
+    "ids": [
+      271,
+      272,
+      273
+    ],
+    "raw": "\\begin{table}[t]\n\\centering\\small\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{llrrr}\n\\toprule\nBaseline & Metric & W/L/T & Sign $p_H$ & Wilc.\\ $p_H$ \\\\\n\\midrule\nBrickGPT & VQAScore & 384/141/0 & $1.5\\times 10^{-26}$ & $4.8\\times 10^{-20}$ \\\\\n& PE & 337/188/0 & $1.6\\times 10^{-10}$ & $3.1\\times 10^{-12}$ \\\\\n& SigLIP2 & 327/198/0 & $2.0\\times 10^{-8}$ & $7.3\\times 10^{-12}$ \\\\\nBrickNet & VQAScore & 460/65/0 & $1.6\\times 10^{-73}$ & $4.6\\times 10^{-60}$ \\\\\n& PE & 406/119/0 & $4.6\\times 10^{-37}$ & $1.3\\times 10^{-47}$ \\\\\n& SigLIP2 & 408/115/2 & $9.4\\times 10^{-39}$ & $2.4\\times 10^{-42}$ \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Two-sided paired tests on 525 prompts. W/L/T counts BrickForma wins, losses and ties. Each test uses Holm correction across six comparisons.}\n\\label{tab:sig}\n\\end{table}",
+    "label": "tab:sig"
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      274
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      275,
+      276,
+      277,
+      278
+    ]
+  },
+  {
+    "kind": "note",
+    "ids": [
+      279,
+      280,
+      281
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      282,
+      283
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      284
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      285,
+      286,
+      287
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      288
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "ids": [
+      297
+    ]
+  },
+  {
+    "kind": "p",
+    "ids": [
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308
+    ]
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      309,
+      310
+    ],
+    "raw": "\\begin{figure*}[t]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/generated_gallery_en.png}\n\\caption{BrickForma outputs from the earlier 114-prompt comparison. The chair is raw and the remaining examples are refined.}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "table",
+    "ids": [
+      311,
+      312
+    ],
+    "raw": "\\begin{table*}[!htbp]\n\\centering\n\\small\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lr}\n\\toprule\nQuantity (525 prompts) & Value \\\\\n\\midrule\nRaw layout is a single stud component & 46 (8.8\\%) \\\\\nStud components per failing raw (med./max) & 5 / 33 \\\\\nFailing raw layouts with duplicated voxels & 50 / 479 \\\\\nDetached fragments (airborne / grounded) & 1,320 / 920 \\\\\nMILP tier reached (12 / 60 / 180 / 600\\,s) & 326 / 133 / 18 / 2 \\\\\nPrompts resampled outside $S$ & 28 \\\\\nFinal: single stud comp., union unchanged & 525 / 525 \\\\\nRaw bricks, median (range) & 183 (77--623) \\\\\nFinal assembly bricks, median & 452 \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Structural diagnostics of raw outputs (Section~\\ref{sec:diagnostics}). ``Union unchanged'' means the final assembly covers exactly the in-bounds voxel union of the raw draft; it does not assess whether the shape matches the prompt.}\n\\label{tab:diag}\n\\end{table*}",
+    "label": "tab:diag"
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      313
+    ],
+    "raw": "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/image19_en.pdf}\n\\caption{Historical failure categories in the supplied reference; values as in the corresponding run records.}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      314,
+      315
+    ],
+    "raw": "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/original_comparison_en.png}\n\\caption{Qualitative historical examples from the supplied reference. Columns show raw and refined outputs of our system and BrickGPT outputs.}\n\\end{figure*}",
+    "label": ""
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      316,
+      317,
+      318
+    ],
+    "raw": "\\begin{figure*}[t]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/comparison_20261117/01-zero-invalid.pdf}\n\\caption{Outputs with zero invalid placements on the 525 matched prompts. Colored arcs show $P_{\\mathrm{inv}}=0$ and gray arcs show $P_{\\mathrm{inv}}>0$. Each panel contains 525 outputs.}\n\\label{fig:comparison-zero-invalid}\n\\end{figure*}",
+    "label": "fig:comparison-zero-invalid"
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      319,
+      320,
+      321
+    ],
+    "raw": "\\begin{figure*}[t]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/comparison_20261117/02-means.pdf}\n\\caption{Mean scores on the 525 matched prompts. Each mean assigns equal weight to each prompt. The plotted values correspond to Table~\\ref{tab:main}.}\n\\label{fig:comparison-means}\n\\end{figure*}",
+    "label": "fig:comparison-means"
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      322,
+      323
+    ],
+    "raw": "\\begin{figure*}[t]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/comparison_20261117/03-distributions.pdf}\n\\caption{Empirical cumulative distributions of the four scores. Each curve gives the fraction of a system's 525 outputs at or below the threshold on the horizontal axis.}\n\\label{fig:comparison-distributions}\n\\end{figure*}",
+    "label": "fig:comparison-distributions"
+  },
+  {
+    "kind": "figure",
+    "ids": [
+      324,
+      325,
+      326
+    ],
+    "raw": "\\begin{figure*}[t]\n\\centering\n\\includegraphics[width=\\textwidth]{figures/comparison_20261117/04-by-level.pdf}\n\\caption{Mean scores from L1 to L5. Each point averages 105 prompts shared by all three systems (Table~\\ref{tab:level-results}). From L3 to L4, VQAScore falls for all three systems while PE rises.}\n\\label{fig:comparison-levels}\n\\end{figure*}",
+    "label": "fig:comparison-levels"
+  },
+  {
+    "kind": "section",
+    "ids": [
+      327
+    ]
+  },
+  {
+    "kind": "label",
+    "raw": "\\label{app:historical}"
+  },
+  {
+    "kind": "p",
+    "ids": [
+      328,
+      329,
+      330,
+      331
+    ]
+  },
+  {
+    "kind": "table",
+    "ids": [
+      332,
+      333,
+      334,
+      335
+    ],
+    "raw": "\\begin{table*}[!htbp]\\centering\\small\n\\begin{tabular}{lr}\\toprule\nItem & Historical value \\\\ \\midrule\nVoxel models & 80,000 (40,000 per batch) \\\\\nCategories / structural families & 21 / 40 per category \\\\\nGrid / voxel count & $48^3$ / 750--1,250 \\\\\nPrompt records & 400,000 (five bilingual records per model) \\\\\nUniqueness & 80,000 unique across both shards \\\\\nExact overlap with historical hashes & 0 / 55,255 \\\\\nRefined geometry passes & 79,298 (99.12\\%) \\\\\nBricks in integrated preview & 12,718,389 \\\\\nFinal gravity equilibrium passes & 220 \\\\\nFinal and layer-prefix passes & 128 \\\\\n\\bottomrule\\end{tabular}\n\\caption{Historical dataset statistics. The historical index comparison uses exact occupancy hashes. The geometry and self-weight counts refer to the October 13 refined release. The brick total comes from the integrated preview manifest, which includes the revised piano layouts.}\n\\end{table*}",
+    "label": ""
+  },
+  {
+    "kind": "table",
+    "ids": [
+      336,
+      337,
+      338
+    ],
+    "raw": "\\begin{table*}[!htbp]\\centering\\small\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{@{}l>{\\raggedright\\arraybackslash}p{3.9cm}>{\\raggedright\\arraybackslash}p{2.5cm}rrrr@{}}\\toprule\nVersion & Connectivity & Voxel changes & Passes & Rate & Final & Both \\\\ \\midrule\nStrict v3 & Single; support $\\geq$10\\%, overhang $\\leq$2 & None & 7,902 & 9.88\\% & -- & -- \\\\\nRelaxed & Each component grounded & +428,278 / -38,230 & 65,503 & 81.88\\% & 2,650 & 478 \\\\\nRefined & Each component grounded & +228,582 / -125 & 79,298 & 99.12\\% & 220 & 128 \\\\\n\\midrule\n\\multicolumn{7}{l}{Uniform 160-model sample (seed 38177); not full-dataset results} \\\\\nBaseline & Single stud-connected component & None & 22 & 13.75\\% & -- & -- \\\\\nQ3 & Single stud-connected component & Added $\\leq$2\\% & 55 & 34.38\\% & 8 & 2 \\\\\nQ4 (sparse) & Single stud-connected component & Added + removed $\\leq$2\\% & 57 & 35.62\\% & 8 & 2 \\\\\n\\bottomrule\\end{tabular}\n\\caption{Historical conversion-strategy table from the reference. Full-dataset and 160-model sample rows use different scopes; connectivity rules also differ. Final and Both columns report final-equilibrium and final-plus-prefix screening passes under the stated historical assumptions.}\n\\end{table*}",
+    "label": ""
+  },
+  {
+    "kind": "table",
+    "ids": [
+      339,
+      340,
+      341
+    ],
+    "raw": "\\begin{table*}[!htbp]\\centering\\small\n\\begin{tabular}{lrrr}\\toprule\nItem & BrickGPT & BrickNet 1.7B & BrickForma-48 \\\\ \\midrule\nRepresentation & $20^3$ bricks & Assembly graph & $48^3$ bricks \\\\\nCriterion & stable & Parseable & -- \\\\\nPasses & 66/114 & 114/114 & -- \\\\\nMedian parts & 126.5 & 22 & -- \\\\\nRange & 19--497 & 6--48 & -- \\\\\nMean time (s) & 189.6 & -- & -- \\\\\n\\bottomrule\\end{tabular}\n\\caption{Historical baseline table for 114 prompts. The stability and parsing columns use different criteria. The historical record does not report corresponding BrickForma-48 values.}\n\\end{table*}",
+    "label": ""
+  },
+  {
+    "kind": "table",
+    "ids": [
+      342,
+      343
+    ],
+    "raw": "\\begin{table*}[!htbp]\\centering\\small\n\\begin{tabular}{lrrrrl}\\toprule\nLevel & $n$ & BrickGPT stable & GPT median bricks & Net median parts & BrickForma-48 \\\\ \\midrule\nL1 & 21 & 13 & 112 & 15 & -- \\\\\nL2 & 21 & 15 & 118 & 22 & -- \\\\\nL3 & 23 & 12 & 102 & 22 & -- \\\\\nL4 & 25 & 12 & 140 & 21 & -- \\\\\nL5 & 24 & 14 & 150.5 & 29.5 & -- \\\\\n\\bottomrule\\end{tabular}\n\\caption{Historical level-wise baseline table transcribed from the reference. The original BrickForma-48 column was incomplete, and the other columns use different criteria.}\n\\end{table*}",
+    "label": ""
+  },
+  {
+    "kind": "table",
+    "ids": [
+      344,
+      345
+    ],
+    "raw": "\\begin{table*}[!htbp]\\centering\\small\n\\begin{tabular}{lrrrr}\\toprule\nMethod and source & $P_{\\mathrm{inv}}$ & VQA & PE & SigLIP2 \\\\ \\midrule\nBrickGPT (literature, as transcribed) & 0.063 & 0.050 & 0.157 & 0.052 \\\\\nBrickNet 1.7B (literature, as transcribed) & 0.260 & 0.593 & 0.282 & 0.631 \\\\\nBrickGPT (114 historical prompts) & -- & -- & -- & -- \\\\\nBrickNet (114 historical prompts) & -- & -- & -- & -- \\\\\nBrickForma-48 (114 historical prompts) & -- & -- & -- & -- \\\\\n\\bottomrule\\end{tabular}\n\\caption{Transcribed literature values and unavailable historical scores. The literature entries use separate evaluation sets, and the source does not specify a common definition for $P_{\\mathrm{inv}}$.}\n\\end{table*}",
+    "label": ""
+  }
+]
