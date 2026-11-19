@@ -1,0 +1,185 @@
+{
+  "prompt_id": "B15_L4",
+  "batch": "B",
+  "category": "bus",
+  "level": 4,
+  "caption": "A double decker bus with two window rows, a stair opening and four wheels. A boxy body carries side windows and a cab; four wheels join the chassis. Flat body panels keep a constant thickness along the chassis. Overall width is 3.20 times depth; height is 0.80 times width. Parts follow functional positions.",
+  "source_sha256": "2b3e1304c7e10d910b8c44edf0d168003884cca818dfec7e58a9200f61d6b596",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 110,
+  "normalization": {
+    "original_voxels": 828,
+    "target_voxels": 828,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "ee6ef1808039947d90470802cde9a5e9cc758228a5f9b4409d4a81a495e8b618",
+    "target_voxel_sha256": "ee6ef1808039947d90470802cde9a5e9cc758228a5f9b4409d4a81a495e8b618"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 110,
+    "voxels": 828,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 2,
+    "unsupported_from_below": 8,
+    "target_voxel_sha256": "ee6ef1808039947d90470802cde9a5e9cc758228a5f9b4409d4a81a495e8b618",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.047,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 1,
+          "brick_count": 299,
+          "stud_components": 17,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 7402,
+      "run_count": 161,
+      "flow_edges": 2168,
+      "budget_seconds": 12,
+      "seconds": 12.06199999999808,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 17.36,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 106,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 106,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 106,
+    "voxels": 828,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 6,
+    "target_voxel_sha256": "ee6ef1808039947d90470802cde9a5e9cc758228a5f9b4409d4a81a495e8b618",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "a50ac4f15512bfdd10137df916fddb787b7564b372e78a510a42a069ba233527",
+    "refined.txt": "6893808587096d1cfdc83f4e32d7f9b196311bc77b70afe0c076269d10a7885c",
+    "refined.json": "921113fb10088b282e6e9072f713e99d59aee4aae10db09411aab47a5444dacf"
+  },
+  "ldr_path": "refined_ldr/B15_L4.ldr",
+  "elapsed_seconds": 41.547
+}

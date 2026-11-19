@@ -1,0 +1,207 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "A41_L2",
+    "prompt": "A saucepan with a shallow cavity, one long handle and a small helper ear. Continuous walls enclose a cavity; two handles join opposite wall sides.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA saucepan with a shallow cavity, one long handle and a small helper ear. Continuous walls enclose a cavity; two handles join opposite wall sides.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 7,
+    "completed": true,
+    "generated_tokens": 3939,
+    "input_tokens": 233,
+    "seconds": 87.219,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 7,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "9b298213a91e392bd885d98ba7fcaea4edda75e4b24dc2df50213c567c7961e4",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 233,
+      "prompt_ms": 63.085,
+      "prompt_per_token_ms": 0.2707510729613734,
+      "prompt_per_second": 3693.429499881113,
+      "predicted_n": 3939,
+      "predicted_ms": 87093.032,
+      "predicted_per_token_ms": 22.116056881665823,
+      "predicted_per_second": 45.21601682210351
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 7,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 318,
+    "occupied_voxels": 1273,
+    "overlap_voxels": 2,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 7,
+    "unsupported_from_below": 13,
+    "geometry_valid": false,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 1273,
+    "target_voxels": 1273,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "be3e0a62c53c648b11becc506f1d767cfd39af1b5ea7330b721b35ebd8b35125",
+    "target_voxel_sha256": "be3e0a62c53c648b11becc506f1d767cfd39af1b5ea7330b721b35ebd8b35125"
+  },
+  "attempts": [
+    {
+      "seconds": 6.406,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 270,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 271,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 283,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 289,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 271,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 271,
+    "voxels": 1273,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 5,
+    "target_voxel_sha256": "be3e0a62c53c648b11becc506f1d767cfd39af1b5ea7330b721b35ebd8b35125",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 271,
+  "output_sha256": {
+    "raw.txt": "184d3b4a139923afb358e1edfb1826ad7cb68cdfd656a1c5ac07f5fe2e131474",
+    "generation.json": "475742de6f5b82e5a577725bb1db4e450e3131e5022f88422d516ce4c8953c70",
+    "refined.ldr": "6196f5cb89f0473daa2b5db674370d9a1893378e286f05fd174b9bd512e4b063",
+    "refined.txt": "511066af675c372e72438448cb6a54b5fda78f95bd0fd353ed89a27fa94a0a47",
+    "refined.json": "0df25f10f5aa66d8dc63911e003a5d3c3a9d247743362ec9f0ebf65b719a5202"
+  }
+}

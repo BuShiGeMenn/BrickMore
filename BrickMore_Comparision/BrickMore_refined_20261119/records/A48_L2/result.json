@@ -1,0 +1,204 @@
+{
+  "prompt_id": "A48_L2",
+  "batch": "A",
+  "category": "tower",
+  "level": 2,
+  "caption": "A twin tower with two joined towers with two crowns. Four flat walls rise from a base; a stepped crown caps the top.",
+  "source_sha256": "0062e4dc41bf3e954970624cd2e9ad518137478682efb4428f5a5cf6c40dcfd0",
+  "original_geometry_valid": true,
+  "original_generation_complete": true,
+  "raw_bricks": 138,
+  "normalization": {
+    "original_voxels": 1141,
+    "target_voxels": 1141,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "da02bee092b19a6f734e40dd6996aebccfe6bd9ae1dd4bfe8d9e5b0dec4e0712",
+    "target_voxel_sha256": "da02bee092b19a6f734e40dd6996aebccfe6bd9ae1dd4bfe8d9e5b0dec4e0712"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 138,
+    "voxels": 1141,
+    "stud_components": 22,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 9,
+    "target_voxel_sha256": "da02bee092b19a6f734e40dd6996aebccfe6bd9ae1dd4bfe8d9e5b0dec4e0712",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.156,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 10,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 118,
+          "stud_components": 11,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 7,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 8,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 9,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 7,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 10,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 11,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 12,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 13,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 10,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 14,
+          "status": 1,
+          "brick_count": 206,
+          "stud_components": 77,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 8388,
+      "run_count": 466,
+      "flow_edges": 5787,
+      "budget_seconds": 12,
+      "seconds": 12.218000000000757,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "has_incumbent": true,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "exact_cover_single_real_stud_run_flow",
+  "status": "passed",
+  "refined_bricks": 137,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 137,
+    "voxels": 1141,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 11,
+    "target_voxel_sha256": "da02bee092b19a6f734e40dd6996aebccfe6bd9ae1dd4bfe8d9e5b0dec4e0712",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "1c55c6c6e78411ec1074ed85127a954f5b5d7c67147536f67dfffc37e01a9075",
+    "refined.txt": "2a76df5d419393e08fcdb49d3d4536f41dba6d6293e3000d5fa82b00b5373b21",
+    "refined.json": "019c902fab94a392c9aedf4305ca5bcf556579382c1953a7694c033be4e64ebe"
+  },
+  "ldr_path": "refined_ldr/A48_L2.ldr",
+  "elapsed_seconds": 24.453
+}

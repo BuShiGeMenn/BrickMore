@@ -1,0 +1,193 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "B17_L5",
+    "prompt": "A rangefinder camera with a flat body, one lens and two top dials. A lens barrel projects from the front; the body carries a viewfinder hump. Rounded body shells keep an even thickness around the lens opening. Overall width is 1.20 times depth; height is 0.70 times width. Parts follow functional positions. Continuous near black, white, dark gray color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA rangefinder camera with a flat body, one lens and two top dials. A lens barrel projects from the front; the body carries a viewfinder hump. Rounded body shells keep an even thickness around the lens opening. Overall width is 1.20 times depth; height is 0.70 times width. Parts follow functional positions. Continuous near black, white, dark gray color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 7,
+    "completed": true,
+    "generated_tokens": 2149,
+    "input_tokens": 308,
+    "seconds": 48.875,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 7,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "cee5d643946ff1b58e19e0b7f8b1a6496f2ae3910e07c1c0d1b9f2718453dbfa",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 308,
+      "prompt_ms": 90.836,
+      "prompt_per_token_ms": 0.2949220779220779,
+      "prompt_per_second": 3390.726143819631,
+      "predicted_n": 2149,
+      "predicted_ms": 48705.785,
+      "predicted_per_token_ms": 22.674946461824955,
+      "predicted_per_second": 44.101537425174435
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 7,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 179,
+    "occupied_voxels": 881,
+    "overlap_voxels": 2,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 20,
+    "unsupported_from_below": 7,
+    "geometry_valid": false,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 881,
+    "target_voxels": 881,
+    "duplicate_cell_occupancies": 2,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "dbff534ccaa46b04d1eb26d7ee30dc92d2e7ad24b0e7530a4a735d0acc1d20c1",
+    "target_voxel_sha256": "dbff534ccaa46b04d1eb26d7ee30dc92d2e7ad24b0e7530a4a735d0acc1d20c1"
+  },
+  "attempts": [
+    {
+      "seconds": 3.062,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 150,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 153,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 151,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 151,
+    "voxels": 881,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 2,
+    "target_voxel_sha256": "dbff534ccaa46b04d1eb26d7ee30dc92d2e7ad24b0e7530a4a735d0acc1d20c1",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 151,
+  "output_sha256": {
+    "raw.txt": "f86b22d13ed3d5238fbf8bf714f0e3ae091112f5d78fb0aeb99a5bedbb3d8dcb",
+    "generation.json": "d393330bc5c5a43897ad01db400e5c4490f750a873afd1c27be5dadfb9d32600",
+    "refined.ldr": "90c4ce25033b017661a0304eb85e972a75a76de974bef7fe1a017df0faacf9ef",
+    "refined.txt": "5f7c22601880cb012593e160a1e3fff6de2b3a355ccff4073c3b81cb4519f827",
+    "refined.json": "14cd5ffc5dda452da99b84bfec1bbea8c1c1d9afce400709966fa35d7bb33966"
+  }
+}

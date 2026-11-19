@@ -1,0 +1,199 @@
+{
+  "prompt_id": "A28_L2",
+  "batch": "A",
+  "category": "car",
+  "level": 2,
+  "caption": "A sedan with a hood, a cabin with windows and a trunk. A cabin carries windows and a hood; four wheels attach below the body.",
+  "source_sha256": "bd08a080c090fcdbcb02ddd785c3e84273c64a0ae29273bd6d53ef5552d584fa",
+  "original_geometry_valid": false,
+  "original_generation_complete": true,
+  "raw_bricks": 176,
+  "normalization": {
+    "original_voxels": 1235,
+    "target_voxels": 1235,
+    "duplicate_cell_occupancies": 29,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "cdd5945ddd495669934c6b96d021e14f385edd12e96fc942f341a851f13c2c30",
+    "target_voxel_sha256": "cdd5945ddd495669934c6b96d021e14f385edd12e96fc942f341a851f13c2c30"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": false,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": false
+    },
+    "brick_count": 176,
+    "voxels": 1235,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 29,
+    "unsupported_from_below": 35,
+    "target_voxel_sha256": "cdd5945ddd495669934c6b96d021e14f385edd12e96fc942f341a851f13c2c30",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.109,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 446,
+          "stud_components": 5,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 17108,
+      "run_count": 312,
+      "flow_edges": 6000,
+      "budget_seconds": 12,
+      "seconds": 12.14100000000326,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 60.25,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 446,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 431,
+          "stud_components": 12,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 1,
+          "brick_count": 416,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 1,
+          "brick_count": 443,
+          "stud_components": 2,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 17108,
+      "run_count": 312,
+      "flow_edges": 6000,
+      "budget_seconds": 60,
+      "seconds": 60.11000000000058,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 76.547,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 446,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 431,
+          "stud_components": 12,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 1,
+          "brick_count": 416,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 1,
+          "brick_count": 443,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 1,
+          "brick_count": 431,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 180,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 431,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 431,
+    "voxels": 1235,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 28,
+    "target_voxel_sha256": "cdd5945ddd495669934c6b96d021e14f385edd12e96fc942f341a851f13c2c30",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "44b3d8ba61fa29325ee9638d1ca983b8015d80c492c579c1cee6dc710b513a6b",
+    "refined.txt": "86b03a53fe2b8ef296c408b65a1d7b65ed7d417efe0a75ad9576f766e1ab4197",
+    "refined.json": "c65fa1a965652651e70f4e7f22cefac410e6391cad09241adec6c3af2a91b7cd"
+  },
+  "ldr_path": "refined_ldr/A28_L2.ldr",
+  "elapsed_seconds": 221.25
+}

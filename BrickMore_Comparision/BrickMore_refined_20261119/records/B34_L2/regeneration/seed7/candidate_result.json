@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "B34_L2",
+    "prompt": "A grand piano with a long curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA grand piano with a long curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 7,
+    "completed": true,
+    "generated_tokens": 2079,
+    "input_tokens": 231,
+    "seconds": 45.172,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 7,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "c53f46876bc12c201fcdf8891bf04ba4a06364cef7b06f48cac47018a29335e7",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 231,
+      "prompt_ms": 271.318,
+      "prompt_per_token_ms": 1.1745367965367965,
+      "prompt_per_second": 851.3994648346221,
+      "predicted_n": 2079,
+      "predicted_ms": 44759.499,
+      "predicted_per_token_ms": 21.539701154956692,
+      "predicted_per_second": 46.42589944985755
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 7,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 164,
+    "occupied_voxels": 1213,
+    "overlap_voxels": 10,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 10,
+    "unsupported_from_below": 34,
+    "geometry_valid": false,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 1213,
+    "target_voxels": 1213,
+    "duplicate_cell_occupancies": 10,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "2deb0e049af28c945f1c4c05137d3ad1b6d6b76342a5da4edac0b8383f85dafa",
+    "target_voxel_sha256": "2deb0e049af28c945f1c4c05137d3ad1b6d6b76342a5da4edac0b8383f85dafa"
+  },
+  "attempts": [
+    {
+      "seconds": 12.156,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 229,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 229,
+    "voxels": 1213,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 53,
+    "target_voxel_sha256": "2deb0e049af28c945f1c4c05137d3ad1b6d6b76342a5da4edac0b8383f85dafa",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 229,
+  "output_sha256": {
+    "raw.txt": "ff3cfbdfe536a8432467895c5d8b72da35d4894c3dc6173b2da53825e363a26e",
+    "generation.json": "dc4e2347c9051ab9130d3b7d71378fce91edcc4d14dbfecf2391aae915274ab6",
+    "refined.ldr": "ab709da751cc8dfb39c964c1999f672704a4ed97516e677de2f2078028771993",
+    "refined.txt": "25fe06a40113a64d3fbad63dbc4e95506245517f22fc236d93f4864820017e2c",
+    "refined.json": "1d3f7829baa3574872c6f9c4bee109bf7d5c9d9c7148e1fbf117ad68f02700d6"
+  }
+}

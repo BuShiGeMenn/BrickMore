@@ -1,0 +1,186 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "B34_L5",
+    "prompt": "A grand piano with a long curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid. Curved case surfaces keep an even thickness around the keyboard. Overall width is 1.05 times depth; height is 0.42 times width. Parts follow functional positions. Continuous near black, white, brown wood color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA grand piano with a long curved case, a keyboard and three legs. A continuous keyboard sits along the front; the case carries a lid. Curved case surfaces keep an even thickness around the keyboard. Overall width is 1.05 times depth; height is 0.42 times width. Parts follow functional positions. Continuous near black, white, brown wood color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 7,
+    "completed": true,
+    "generated_tokens": 1346,
+    "input_tokens": 302,
+    "seconds": 28.953,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 7,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "a86ee42373f76a74dff862f06d57808e3dce86b5ee9d9cb4a726b3050da7ba1f",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 302,
+      "prompt_ms": 234.72,
+      "prompt_per_token_ms": 0.7772185430463576,
+      "prompt_per_second": 1286.6394001363328,
+      "predicted_n": 1346,
+      "predicted_ms": 28574.966,
+      "predicted_per_token_ms": 21.245327881040893,
+      "predicted_per_second": 47.06917236576939
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 7,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 109,
+    "occupied_voxels": 730,
+    "overlap_voxels": 0,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 3,
+    "unsupported_from_below": 16,
+    "geometry_valid": true,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 730,
+    "target_voxels": 730,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "a74cdf10ddafc6cd6b039e5fdc6ad60c3c4b6050515f23e3bf94b57a737e4518",
+    "target_voxel_sha256": "a74cdf10ddafc6cd6b039e5fdc6ad60c3c4b6050515f23e3bf94b57a737e4518"
+  },
+  "attempts": [
+    {
+      "seconds": 0.547,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 90,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 90,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 90,
+    "voxels": 730,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "a74cdf10ddafc6cd6b039e5fdc6ad60c3c4b6050515f23e3bf94b57a737e4518",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 90,
+  "output_sha256": {
+    "raw.txt": "6a640ddd61df6ba9644c27b14f4b717ca966b70a1f72dbb0d29b74444e431147",
+    "generation.json": "111c80e5729278ed0fd3f5ee2084c9446f220618460da447b37f0cc4ef107c51",
+    "refined.ldr": "32bc84b75b940a4970616cd8191f34a36f4e7518c4518f918803933a9f39d452",
+    "refined.txt": "ea4a400a252db932f35c7821e9a0f4ffff6de60429046043d29658ee6ec87201",
+    "refined.json": "7b546ff49c8264fb3ddbb9477eceb340530006c4d34f981d15802c605d1fe364"
+  }
+}

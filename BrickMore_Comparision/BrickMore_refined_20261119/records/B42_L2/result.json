@@ -1,0 +1,192 @@
+{
+  "prompt_id": "B42_L2",
+  "batch": "B",
+  "category": "table",
+  "level": 2,
+  "caption": "A dining table with a wide top, four legs and a straight apron. A framed top joins four legs; a straight apron links the legs.",
+  "source_sha256": "481e3634e728406f7c6374b7fe5cf71be59c628350aa912a1b751a2b64208613",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 197,
+  "normalization": {
+    "original_voxels": 1133,
+    "target_voxels": 1133,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5e972e285fb95e3cfe399300094c0514c581a93891aaa1e5b07afa478495cebe",
+    "target_voxel_sha256": "5e972e285fb95e3cfe399300094c0514c581a93891aaa1e5b07afa478495cebe"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 197,
+    "voxels": 1133,
+    "stud_components": 4,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 22,
+    "target_voxel_sha256": "5e972e285fb95e3cfe399300094c0514c581a93891aaa1e5b07afa478495cebe",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.297,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 543,
+          "stud_components": 49,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 12793,
+      "run_count": 276,
+      "flow_edges": 4859,
+      "budget_seconds": 12,
+      "seconds": 12.203000000001339,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 60.282,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 543,
+          "stud_components": 49,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 154,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 1,
+          "brick_count": 439,
+          "stud_components": 23,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 1,
+          "brick_count": 567,
+          "stud_components": 35,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 12793,
+      "run_count": 276,
+      "flow_edges": 4859,
+      "budget_seconds": 60,
+      "seconds": 60.17199999999866,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 61.141,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 543,
+          "stud_components": 49,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 154,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 1,
+          "brick_count": 439,
+          "stud_components": 23,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 1,
+          "brick_count": 154,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 180,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 154,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 154,
+    "voxels": 1133,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 15,
+    "target_voxel_sha256": "5e972e285fb95e3cfe399300094c0514c581a93891aaa1e5b07afa478495cebe",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "80dcd3edec29e9d995dc13bfaadf48f53ea494df40da5375ac2c807a235e9c06",
+    "refined.txt": "70412f31a7406c147498575cc10c076cc0c54a8719f75cc5407fb38d2669a2c8",
+    "refined.json": "c93ba16a9029f27c0d19c5f19ae17f0448187c392a8258a64043affdc3d99477"
+  },
+  "ldr_path": "refined_ldr/B42_L2.ldr",
+  "elapsed_seconds": 206.172
+}

@@ -1,0 +1,200 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "B14_L5",
+    "prompt": "A shallow fruit bowl with a wide shallow cavity and a low rim. Continuous walls rise from a sealed base; the top edge stays open. Circular walls keep an even thickness around the cavity. Overall width is 1.30 times depth; height is 0.30 times width. Parts follow functional positions. Continuous white, light gray, dark brown color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA shallow fruit bowl with a wide shallow cavity and a low rim. Continuous walls rise from a sealed base; the top edge stays open. Circular walls keep an even thickness around the cavity. Overall width is 1.30 times depth; height is 0.30 times width. Parts follow functional positions. Continuous white, light gray, dark brown color regions distinguish the body and attachments. The front reveals functional parts; side and top views reveal depth, connections and layout.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 7,
+    "completed": true,
+    "generated_tokens": 2581,
+    "input_tokens": 299,
+    "seconds": 56.328,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 7,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "8b99942708951b939f7b5f783d9308569a4a5d99723a1e169e0bba2ba93cdc45",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 299,
+      "prompt_ms": 205.211,
+      "prompt_per_token_ms": 0.6863244147157191,
+      "prompt_per_second": 1457.036903479833,
+      "predicted_n": 2581,
+      "predicted_ms": 55936.49,
+      "predicted_per_token_ms": 21.68081007751938,
+      "predicted_per_second": 46.12373783195907
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 7,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 215,
+    "occupied_voxels": 813,
+    "overlap_voxels": 1,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 10,
+    "unsupported_from_below": 14,
+    "geometry_valid": false,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 813,
+    "target_voxels": 813,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "082d066b194e2a3b9b3f21c6a4ab9719ab9051a939fbe2c02c8ad0564a35bc12",
+    "target_voxel_sha256": "082d066b194e2a3b9b3f21c6a4ab9719ab9051a939fbe2c02c8ad0564a35bc12"
+  },
+  "attempts": [
+    {
+      "seconds": 2.078,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 193,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 204,
+          "stud_components": 8,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 193,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 199,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 199,
+    "voxels": 813,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 12,
+    "target_voxel_sha256": "082d066b194e2a3b9b3f21c6a4ab9719ab9051a939fbe2c02c8ad0564a35bc12",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 199,
+  "output_sha256": {
+    "raw.txt": "66a0757bbb7b2afaf3091b1c92d7810b1f592a221475151144701f25be62554e",
+    "generation.json": "8618b4989aa5cc4ae93c240af53fd2958ff417b36b9f4217a837bbe8c5daf313",
+    "refined.ldr": "d97331ca22df513bc26dee740c14a81886859b69bf4a1f22037b5ce5a3a43981",
+    "refined.txt": "9965e4fc82a4a0d73ec8725a9bd06cc628fab150c4b00cad51f258d404532d43",
+    "refined.json": "e5c5575df5eb75ddf1396db1a2bddc0a6d47eb08801dc0b07607eb93d7126521"
+  }
+}

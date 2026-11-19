@@ -1,0 +1,186 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "A48_L3",
+    "prompt": "A twin tower with two joined towers with two crowns. Four flat walls rise from a base; a stepped crown caps the top. Faceted walls keep a constant thickness with a stepped crown line.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA twin tower with two joined towers with two crowns. Four flat walls rise from a base; a stepped crown caps the top. Faceted walls keep a constant thickness with a stepped crown line.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 7,
+    "completed": true,
+    "generated_tokens": 3928,
+    "input_tokens": 242,
+    "seconds": 87.329,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 7,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "ff27153b2f8ca201f15cc3f3a23d47a06356420bc23c5098ef978976f99c38b2",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 242,
+      "prompt_ms": 65.67,
+      "prompt_per_token_ms": 0.27136363636363636,
+      "prompt_per_second": 3685.092127303182,
+      "predicted_n": 3928,
+      "predicted_ms": 87183.968,
+      "predicted_per_token_ms": 22.201163228927932,
+      "predicted_per_second": 45.04268491197832
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 7,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 315,
+    "occupied_voxels": 1161,
+    "overlap_voxels": 0,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 3,
+    "unsupported_from_below": 0,
+    "geometry_valid": true,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 1161,
+    "target_voxels": 1161,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "4d73d4bbb66c9cb1756ff86095370c47289dfd90b76244bfe6df5a53f5f560b7",
+    "target_voxel_sha256": "4d73d4bbb66c9cb1756ff86095370c47289dfd90b76244bfe6df5a53f5f560b7"
+  },
+  "attempts": [
+    {
+      "seconds": 0.578,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 275,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 276,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 276,
+    "voxels": 1161,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "4d73d4bbb66c9cb1756ff86095370c47289dfd90b76244bfe6df5a53f5f560b7",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 276,
+  "output_sha256": {
+    "raw.txt": "8dab6621dd84544cb55d7acb57667f112a0852df03b8e3eddc13b17f9fe24a40",
+    "generation.json": "cfccfbeb42aee75f92a7c3ee06135d656660ff0b303343f706ffb6e21cee3019",
+    "refined.ldr": "c65fe6c30038b1b45fd2d35e8e51a3ecf0e4a004bf208f8076fce1cff5584522",
+    "refined.txt": "5349fb025abe116c4aa93a91327d92840ae22de02fdbaf08b3d852f68f96d82b",
+    "refined.json": "cd837b4563d5341c2c341f8ac5ae7ab9fab976d3be8ab109505db2caa7ead847"
+  }
+}

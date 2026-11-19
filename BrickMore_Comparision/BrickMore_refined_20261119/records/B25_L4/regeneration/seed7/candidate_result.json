@@ -1,0 +1,196 @@
+{
+  "status": "rejected",
+  "generation": {
+    "prompt_id": "B25_L4",
+    "prompt": "A classical guitar with a waisted body, a wide neck and a sound hole. A waisted body joins a long neck; the headstock carries tuning studs. Curved body edges keep an even thickness around the sound hole. Overall width is 0.80 times depth; height is 2.25 times width. Parts follow functional positions.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA classical guitar with a waisted body, a wide neck and a sound hole. A waisted body joins a long neck; the headstock carries tuning studs. Curved body edges keep an even thickness around the sound hole. Overall width is 0.80 times depth; height is 2.25 times width. Parts follow functional positions.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 7,
+    "completed": true,
+    "generated_tokens": 2722,
+    "input_tokens": 274,
+    "seconds": 62.328,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 7,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "c54579751fe387e93966b15030acc97e0c193f9d80f8cdd98b25999710533472",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 274,
+      "prompt_ms": 131.725,
+      "prompt_per_token_ms": 0.48074817518248175,
+      "prompt_per_second": 2080.091098880243,
+      "predicted_n": 2722,
+      "predicted_ms": 62051.884,
+      "predicted_per_token_ms": 22.804808526277103,
+      "predicted_per_second": 43.850401061150706
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 7,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 242,
+    "occupied_voxels": 2214,
+    "overlap_voxels": 6,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 33,
+    "unsupported_from_below": 30,
+    "geometry_valid": false,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 2214,
+    "target_voxels": 2214,
+    "duplicate_cell_occupancies": 6,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "5b19aca1e1355d90988244213607040f317f7ac47658df177bb9838f8d31a504",
+    "target_voxel_sha256": "5b19aca1e1355d90988244213607040f317f7ac47658df177bb9838f8d31a504"
+  },
+  "attempts": [
+    {
+      "seconds": 12.797,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 181,
+          "stud_components": 22,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 190,
+          "stud_components": 25,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 193,
+          "stud_components": 26,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 193,
+          "stud_components": 29,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 197,
+          "stud_components": 21,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 1,
+          "brick_count": 403,
+          "stud_components": 71,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 16753,
+      "run_count": 681,
+      "flow_edges": 8993,
+      "budget_seconds": 12,
+      "reason": "cell_has_no_brick_with_a_real_vertical_contact",
+      "seconds": 0.1879999999946449,
+      "certified_infeasible": true
+    }
+  ],
+  "reason": "certified_unconnectable_preserving_target"
+}

@@ -1,0 +1,252 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "B51_L3",
+    "prompt": "A sailboat with a hull, a cabin and one mast base. A hull carries a deck and a cabin; the bow and stern close it. Curved hull surfaces keep an even thickness along the keel.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA sailboat with a hull, a cabin and one mast base. A hull carries a deck and a cabin; the bow and stern close it. Curved hull surfaces keep an even thickness along the keel.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 2027,
+    "completed": true,
+    "generated_tokens": 1611,
+    "input_tokens": 245,
+    "seconds": 34.172,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 2027,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "433178ad9d8a3f24642f707a5290a7a2f44686fe3931d0499c2b6d57cc750c9c",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 245,
+      "prompt_ms": 62.261,
+      "prompt_per_token_ms": 0.2541265306122449,
+      "prompt_per_second": 3935.0476221069366,
+      "predicted_n": 1611,
+      "predicted_ms": 34033.228,
+      "predicted_per_token_ms": 21.13865093167702,
+      "predicted_per_second": 47.306708608422326
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 2027,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 136,
+    "occupied_voxels": 844,
+    "overlap_voxels": 14,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 6,
+    "unsupported_from_below": 33,
+    "geometry_valid": false,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 844,
+    "target_voxels": 844,
+    "duplicate_cell_occupancies": 14,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "deef3f41a0d808f93a2006c956d80aae0060a1b3c8556681ade6d6226ca167a3",
+    "target_voxel_sha256": "deef3f41a0d808f93a2006c956d80aae0060a1b3c8556681ade6d6226ca167a3"
+  },
+  "attempts": [
+    {
+      "seconds": 12.032,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 117,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 117,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 117,
+          "stud_components": 5,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 118,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 118,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 118,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 118,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 7,
+          "status": 0,
+          "brick_count": 118,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 8,
+          "status": 0,
+          "brick_count": 118,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 9,
+          "status": 1,
+          "solution": false
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 7279,
+      "run_count": 397,
+      "flow_edges": 5759,
+      "budget_seconds": 12,
+      "seconds": 12.078000000001339,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+      "has_incumbent": true,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "exact_cover_single_real_stud_run_flow",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 169,
+    "voxels": 844,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 64,
+    "target_voxel_sha256": "deef3f41a0d808f93a2006c956d80aae0060a1b3c8556681ade6d6226ca167a3",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 169,
+  "output_sha256": {
+    "raw.txt": "16289731ce9e7ae989ce685781dea798ff42f2d388034c5ac5356678c1fe807d",
+    "generation.json": "4ee19db781c2a3a4553d1ab46d5bbe2e6f40874088b880b843367742655605b2",
+    "refined.ldr": "69f403e276557a1d761504ceba2f535f07dcd86f61a48f0273dc65fc74188b55",
+    "refined.txt": "34dd28b1f2c51069503ae9b55bd4f53f1cfe6edf67bbb7b1a3d6393f4f6e94eb",
+    "refined.json": "ab7344afdf28595b86e65bfa569e7db57f223d403dbbfbc75404fbd6c135de6d"
+  }
+}

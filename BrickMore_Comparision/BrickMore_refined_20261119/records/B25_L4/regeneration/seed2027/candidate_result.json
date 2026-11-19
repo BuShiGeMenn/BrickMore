@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "B25_L4",
+    "prompt": "A classical guitar with a waisted body, a wide neck and a sound hole. A waisted body joins a long neck; the headstock carries tuning studs. Curved body edges keep an even thickness around the sound hole. Overall width is 0.80 times depth; height is 2.25 times width. Parts follow functional positions.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA classical guitar with a waisted body, a wide neck and a sound hole. A waisted body joins a long neck; the headstock carries tuning studs. Curved body edges keep an even thickness around the sound hole. Overall width is 0.80 times depth; height is 2.25 times width. Parts follow functional positions.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 2027,
+    "completed": true,
+    "generated_tokens": 1154,
+    "input_tokens": 274,
+    "seconds": 25.515,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 2027,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "c54579751fe387e93966b15030acc97e0c193f9d80f8cdd98b25999710533472",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 274,
+      "prompt_ms": 253.072,
+      "prompt_per_token_ms": 0.9236204379562044,
+      "prompt_per_second": 1082.695833596763,
+      "predicted_n": 1154,
+      "predicted_ms": 25078.514,
+      "predicted_per_token_ms": 21.75066261925412,
+      "predicted_per_second": 45.97561083563404
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 2027,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 110,
+    "occupied_voxels": 857,
+    "overlap_voxels": 1,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 5,
+    "unsupported_from_below": 4,
+    "geometry_valid": false,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 857,
+    "target_voxels": 857,
+    "duplicate_cell_occupancies": 1,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "b29ccd059c6a6035798f32809bba2e506cd961dde0154c80f34b5c43d9e0329d",
+    "target_voxel_sha256": "b29ccd059c6a6035798f32809bba2e506cd961dde0154c80f34b5c43d9e0329d"
+  },
+  "attempts": [
+    {
+      "seconds": 0.39,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 95,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 95,
+    "voxels": 857,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 1,
+    "target_voxel_sha256": "b29ccd059c6a6035798f32809bba2e506cd961dde0154c80f34b5c43d9e0329d",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 95,
+  "output_sha256": {
+    "raw.txt": "342361cb6f53d5357dc4ad9bd5f798fcdc24c8d16339ce65ac6d7be76b885efc",
+    "generation.json": "b29bfa5c7d2bee66a9e79053c2fb674ba1cbd6c0b19984cefd6c7d62dd507b8b",
+    "refined.ldr": "202b6994032a23511670ae501fe8d62961a5ff10b9064eb76f69d6388578d43e",
+    "refined.txt": "592717d3e57ecdbc7d19d2d67579ac4acfcc3898a5be2ac7e5ced8ff633d33b2",
+    "refined.json": "9e715fcbd64270bac30e87195ca999a613c20f527b62d354450555b668fcc388"
+  }
+}

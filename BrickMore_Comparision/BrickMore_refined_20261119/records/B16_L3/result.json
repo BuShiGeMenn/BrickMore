@@ -1,0 +1,276 @@
+{
+  "prompt_id": "B16_L3",
+  "batch": "B",
+  "category": "bus",
+  "level": 3,
+  "caption": "A minibus with a short body, side glass and four wheels. A long body carries side windows; four wheels attach beneath the chassis. Rounded body panels keep an even thickness along the chassis.",
+  "source_sha256": "47c3ba9937c17ff2a3fc6f67fdf65859d5abeda7b14a08631324efb48c8c7cc3",
+  "original_geometry_valid": null,
+  "original_generation_complete": null,
+  "raw_bricks": 154,
+  "normalization": {
+    "original_voxels": 1503,
+    "target_voxels": 1503,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "97820e17f166f74ed7461c18d02686e7e601cc2870e6ba8eb99d08d1eb40157b",
+    "target_voxel_sha256": "97820e17f166f74ed7461c18d02686e7e601cc2870e6ba8eb99d08d1eb40157b"
+  },
+  "raw_audit": {
+    "passed": false,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": false,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 154,
+    "voxels": 1503,
+    "stud_components": 12,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 40,
+    "target_voxel_sha256": "97820e17f166f74ed7461c18d02686e7e601cc2870e6ba8eb99d08d1eb40157b",
+    "physical_stability_tested": false
+  },
+  "attempts": [
+    {
+      "seconds": 12.266,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 178,
+          "stud_components": 2,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 21804,
+      "run_count": 645,
+      "flow_edges": 13636,
+      "budget_seconds": 12,
+      "seconds": 12.218999999997322,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 60.359,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 178,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 329,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 7,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 8,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 9,
+          "status": 1,
+          "brick_count": 536,
+          "stud_components": 64,
+          "exact_coverage": true
+        }
+      ],
+      "reason": "solver_budget_or_infeasible",
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "budget_seconds": 60,
+      "certified_infeasible": false
+    },
+    {
+      "method": "exact_cover_single_real_stud_run_flow",
+      "candidate_count": 21804,
+      "run_count": 645,
+      "flow_edges": 13636,
+      "budget_seconds": 60,
+      "seconds": 60.21899999999732,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "has_incumbent": false,
+      "certified_infeasible": false
+    },
+    {
+      "seconds": 63.015,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 1,
+          "brick_count": 178,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 1,
+          "brick_count": 329,
+          "stud_components": 9,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 3,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 4,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 4,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 5,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 6,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 7,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 2,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 8,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 9,
+          "status": 0,
+          "brick_count": 143,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 180,
+      "certified_infeasible": false
+    }
+  ],
+  "physical_stability_tested": false,
+  "source_code_sha256": "503fee01bb3a8f2cac52dcceb3123fcbfb13e6e1231ec7cf9549fcfd4ee671d4",
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "status": "passed",
+  "refined_bricks": 143,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 143,
+    "voxels": 1503,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 33,
+    "target_voxel_sha256": "97820e17f166f74ed7461c18d02686e7e601cc2870e6ba8eb99d08d1eb40157b",
+    "physical_stability_tested": false
+  },
+  "exact_target_preserved": true,
+  "original_voxel_union_preserved": true,
+  "output_sha256": {
+    "refined.ldr": "d5dfd48c6bdf2248bb79ddbebbc6db9b67e145e797c0848221b00722211d9b32",
+    "refined.txt": "181a30724c43c871b9c47afbaf3e83438c711fb063909e129bd8cf33ba7365fc",
+    "refined.json": "a797248e8f0fdf7a17c1cea2b2125754a5f1f6850fbbee75eeabf9cfb8ac6ddc"
+  },
+  "ldr_path": "refined_ldr/B16_L3.ldr",
+  "elapsed_seconds": 208.188
+}

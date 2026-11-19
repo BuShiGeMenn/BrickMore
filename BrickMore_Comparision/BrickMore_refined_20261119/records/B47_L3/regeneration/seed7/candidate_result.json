@@ -1,0 +1,193 @@
+{
+  "status": "passed",
+  "generation": {
+    "prompt_id": "B47_L3",
+    "prompt": "A tapered tower with a wide base, narrowing walls and a pointed crown. A continuous wall rises from a wide base; a narrowing crown caps the top. Circular walls keep an even thickness up to the crown.",
+    "instruction": "Create a LEGO model of the input. Format your response as a list of bricks: <brick dimensions> <brick position>, where the brick position is (x,y,z).\nAllowed brick dimensions are 2x4, 4x2, 2x6, 6x2, 1x2, 2x1, 1x4, 4x1, 1x6, 6x1, 1x8, 8x1, 1x1, 2x2, 1x3, 3x1, 2x3, 3x2, 2x8, 8x2.\nAll bricks are 1 unit tall.\nThe world is a 48x48x48 grid. All brick cells must have coordinates from 0 to 47.\n\n### Input:\nA tapered tower with a wide base, narrowing walls and a pointed crown. A continuous wall rises from a wide base; a narrowing crown caps the top. Circular walls keep an even thickness up to the crown.",
+    "repository": "Kyle308666/BrickGPT-Qwen3-1.7B-BrickMore-48",
+    "revision": "92d1c595f5fe076971cc2633d6844f097a84eef3",
+    "seed": 7,
+    "completed": true,
+    "generated_tokens": 1684,
+    "input_tokens": 244,
+    "seconds": 36.5,
+    "dtype": "bfloat16 GGUF weights",
+    "kv_cache": "q8_0 K and V",
+    "backend": "llama.cpp b12359 CUDA",
+    "options": {
+      "n_predict": 8192,
+      "seed": 7,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 20,
+      "min_p": 0.0,
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "cache_prompt": false,
+      "stream": true
+    },
+    "rendered_prompt_sha256": "631fa1ffc30d8419666555881ea2cff4bd221b487cdf46795c9a444b4d8b5e73",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 244,
+      "prompt_ms": 359.871,
+      "prompt_per_token_ms": 1.4748811475409835,
+      "prompt_per_second": 678.020735207894,
+      "predicted_n": 1684,
+      "predicted_ms": 36051.994,
+      "predicted_per_token_ms": 21.42126797385621,
+      "predicted_per_second": 46.682577390864985
+    },
+    "stop_type": "eos",
+    "generation_settings": {
+      "seed": 7,
+      "temperature": 0.699999988079071,
+      "dynatemp_range": 0.0,
+      "dynatemp_exponent": 1.0,
+      "top_k": 20,
+      "top_p": 0.8999999761581421,
+      "min_p": 0.0,
+      "top_n_sigma": -1.0,
+      "xtc_probability": 0.0,
+      "xtc_threshold": 0.10000000149011612,
+      "typical_p": 1.0,
+      "repeat_last_n": 64,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "dry_multiplier": 0.0,
+      "dry_base": 1.75,
+      "dry_allowed_length": 2,
+      "dry_penalty_last_n": 64,
+      "dry_sequence_breakers": [
+        "\n",
+        ":",
+        "\"",
+        "*"
+      ],
+      "mirostat": 0,
+      "mirostat_tau": 5.0,
+      "mirostat_eta": 0.10000000149011612,
+      "adaptive_target": -1.0,
+      "adaptive_decay": 0.8999999761581421,
+      "stop": [],
+      "max_tokens": 8192,
+      "n_predict": 8192,
+      "n_keep": 0,
+      "n_discard": 0,
+      "ignore_eos": false,
+      "stream": true,
+      "logit_bias": [],
+      "n_probs": 0,
+      "min_keep": 0,
+      "grammar": "",
+      "grammar_lazy": false,
+      "grammar_triggers": [],
+      "preserved_tokens": [],
+      "chat_format": "Content-only",
+      "reasoning_format": "deepseek",
+      "reasoning_in_content": false,
+      "generation_prompt": "",
+      "samplers": [
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "speculative.types": "none",
+      "timings_per_token": false,
+      "post_sampling_probs": false,
+      "backend_sampling": false,
+      "lora": []
+    }
+  },
+  "parsed": {
+    "brick_count": 160,
+    "occupied_voxels": 1037,
+    "overlap_voxels": 0,
+    "out_of_bounds_bricks": 0,
+    "voxel_components": 1,
+    "stud_components": 18,
+    "unsupported_from_below": 9,
+    "geometry_valid": true,
+    "single_stud_component": false,
+    "physical_stability_tested": false,
+    "format_errors": [],
+    "raw_dimension_order": "yx",
+    "dimension_convention_source": "existing 630-model pipeline; training converter not verified"
+  },
+  "normalization": {
+    "original_voxels": 1037,
+    "target_voxels": 1037,
+    "duplicate_cell_occupancies": 0,
+    "dropped_brick_indices": [],
+    "clipped_brick_indices": [],
+    "removed_voxels": 0,
+    "added_voxels": 0,
+    "original_voxel_sha256": "8700767deb9ef91e61f8e4bc5725aa9fde6d132f6a3b4015cf83e310c1f4fd5a",
+    "target_voxel_sha256": "8700767deb9ef91e61f8e4bc5725aa9fde6d132f6a3b4015cf83e310c1f4fd5a"
+  },
+  "attempts": [
+    {
+      "seconds": 1.5,
+      "log": [
+        {
+          "iteration": 0,
+          "status": 0,
+          "brick_count": 114,
+          "stud_components": 3,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 1,
+          "status": 0,
+          "brick_count": 115,
+          "stud_components": 6,
+          "exact_coverage": true
+        },
+        {
+          "iteration": 2,
+          "status": 0,
+          "brick_count": 115,
+          "stud_components": 1,
+          "exact_coverage": true
+        }
+      ],
+      "method": "existing_exact_cover_with_stud_connectivity_cuts",
+      "shape_preserved": true,
+      "budget_seconds": 12,
+      "certified_infeasible": false
+    }
+  ],
+  "method": "existing_exact_cover_with_stud_connectivity_cuts",
+  "validation": {
+    "passed": true,
+    "checks": {
+      "exact_coverage": true,
+      "no_overlaps": true,
+      "allowed_dimensions": true,
+      "in_bounds": true,
+      "one_stud_component": true,
+      "graph_auditors_agree": true
+    },
+    "brick_count": 115,
+    "voxels": 1037,
+    "stud_components": 1,
+    "missing_voxels": 0,
+    "added_voxels": 0,
+    "duplicate_cell_occupancies": 0,
+    "unsupported_from_below": 3,
+    "target_voxel_sha256": "8700767deb9ef91e61f8e4bc5725aa9fde6d132f6a3b4015cf83e310c1f4fd5a",
+    "physical_stability_tested": false
+  },
+  "refined_bricks": 115,
+  "output_sha256": {
+    "raw.txt": "211858085b11c979083c3e079e591db8ed365b7b3bd83b3edfebe72ea7573566",
+    "generation.json": "e26449a50545efa72df160641f695d3c65733e15561f66401401ce50cec1967d",
+    "refined.ldr": "d80617277091d7af28b1d4189e7b5b7173c1be02895d4549c1968add9c547e14",
+    "refined.txt": "60bcedb895d068c942f1a75341c5eafad7d34f7f948ea2031aea200c7d5cde8d",
+    "refined.json": "ecae4a87ae7b16fca7243ca564c56cb7f7dfd29380763e7c47d7826c0178caf6"
+  }
+}
