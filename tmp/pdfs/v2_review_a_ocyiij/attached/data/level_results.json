@@ -1,0 +1,216 @@
+{
+  "provenance": {
+    "repository": "BuShiGeMenn/BrickMore",
+    "commit": "dfe1c94fc86b722247ed5c8208011313f535c5ec",
+    "retrieved_date": "2026-11-15",
+    "files": {
+      "scores.csv": "https://github.com/BuShiGeMenn/BrickMore/blob/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/intake/Results/comparison_full/report/scores.csv",
+      "audit_summary.json": "https://github.com/BuShiGeMenn/BrickMore/blob/dfe1c94fc86b722247ed5c8208011313f535c5ec/Results/three_model_comparison_20261111/analysis/核查与汇总.json",
+      "prompts_A.json": "https://github.com/BuShiGeMenn/BrickMore/blob/dfe1c94fc86b722247ed5c8208011313f535c5ec/BrickNet_BrickGPT_Compirasion/BrickMore_交接包_20261030/prompt对照实验_均分2份_20261109/A_57条_prompts.json",
+      "prompts_B.json": "https://github.com/BuShiGeMenn/BrickMore/blob/dfe1c94fc86b722247ed5c8208011313f535c5ec/BrickNet_BrickGPT_Compirasion/BrickMore_交接包_20261030/prompt对照实验_均分2份_20261109/B_57条_prompts.json"
+    },
+    "display_names": {
+      "BrickMore": "BrickForma",
+      "BrickGPT": "BrickGPT",
+      "BrickNet": "BrickNet"
+    },
+    "note": "Archived source labels are preserved; BrickMore is displayed as BrickForma in the updated manuscript. Input text is normalized to LF for portability. Scores are existing evaluation outputs, not a new evaluation run."
+  },
+  "input_sha256": {
+    "audit_summary.json": "04d8918adc055469da58e807b8fbff2c6cb0a13ea33312e3df84175e3eaa61db",
+    "prompts_A.json": "07ba2976177dfd5e8e65ed05e7609b5cb5e34cf8b9476066794fe25cdd4c89ca",
+    "prompts_B.json": "ea4127987d1c991f1e1ae7155577c75cbde390e1bdb9609dfe0df26f75483606",
+    "provenance.json": "51d2eaa79118373e0fc725cc89b7cec2b6085d671840ec883255d255342e055c",
+    "scores.csv": "43375656d05613c7195aa710411944264bcd28f545af231172ae93fc35cf5ee7"
+  },
+  "scope": {
+    "total_records": 462,
+    "primary_records": 342,
+    "matched_prompts": 114
+  },
+  "aggregation": "Mean of per-model scores. Text-image scores already use the maximum of eight views.",
+  "pinv_units": "fraction in JSON; percent in the LaTeX table and output CSV",
+  "word_count": "Whitespace-delimited English words; hyphenated forms count as one.",
+  "levels": [
+    {
+      "level": 1,
+      "n_per_system": 21,
+      "mean_words": 7.809523809523809,
+      "min_words": 3,
+      "max_words": 16,
+      "systems": [
+        {
+          "system": "BrickForma",
+          "source_system": "BrickMore",
+          "n": 21,
+          "pinv": 0.0,
+          "vqa": 0.2200504253352327,
+          "pe": 0.1692984579574494,
+          "siglip2": 0.04782787183788579
+        },
+        {
+          "system": "BrickGPT",
+          "source_system": "BrickGPT",
+          "n": 21,
+          "pinv": 0.0,
+          "vqa": 0.10847111819644592,
+          "pe": 0.13636479012313343,
+          "siglip2": 0.017345317989482297
+        },
+        {
+          "system": "BrickNet",
+          "source_system": "BrickNet",
+          "n": 21,
+          "pinv": 0.14832602793265318,
+          "vqa": 0.08327211205258729,
+          "pe": 0.11510518264202844,
+          "siglip2": 0.0034631853394333605
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "n_per_system": 21,
+      "mean_words": 17.333333333333332,
+      "min_words": 7,
+      "max_words": 48,
+      "systems": [
+        {
+          "system": "BrickForma",
+          "source_system": "BrickMore",
+          "n": 21,
+          "pinv": 0.0,
+          "vqa": 0.3615378222173257,
+          "pe": 0.17627824488140287,
+          "siglip2": 0.10265457653198003
+        },
+        {
+          "system": "BrickGPT",
+          "source_system": "BrickGPT",
+          "n": 21,
+          "pinv": 0.0,
+          "vqa": 0.25067821425008807,
+          "pe": 0.14147615468218214,
+          "siglip2": 0.03314185228562462
+        },
+        {
+          "system": "BrickNet",
+          "source_system": "BrickNet",
+          "n": 21,
+          "pinv": 0.21794814787619896,
+          "vqa": 0.02825385384009375,
+          "pe": 0.11775190702506474,
+          "siglip2": 0.013478612898468714
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "n_per_system": 23,
+      "mean_words": 25.82608695652174,
+      "min_words": 12,
+      "max_words": 58,
+      "systems": [
+        {
+          "system": "BrickForma",
+          "source_system": "BrickMore",
+          "n": 23,
+          "pinv": 0.0,
+          "vqa": 0.2363960836082697,
+          "pe": 0.18394221559814786,
+          "siglip2": 0.13864700597554
+        },
+        {
+          "system": "BrickGPT",
+          "source_system": "BrickGPT",
+          "n": 23,
+          "pinv": 0.0,
+          "vqa": 0.17109104024110938,
+          "pe": 0.14329796867526096,
+          "siglip2": 0.03763911609965329
+        },
+        {
+          "system": "BrickNet",
+          "source_system": "BrickNet",
+          "n": 23,
+          "pinv": 0.22698763747676792,
+          "vqa": 0.07135798650067401,
+          "pe": 0.13005368443934814,
+          "siglip2": 0.012553035954281115
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "n_per_system": 25,
+      "mean_words": 41.12,
+      "min_words": 10,
+      "max_words": 65,
+      "systems": [
+        {
+          "system": "BrickForma",
+          "source_system": "BrickMore",
+          "n": 25,
+          "pinv": 0.0,
+          "vqa": 0.1934876535832882,
+          "pe": 0.19997492969036101,
+          "siglip2": 0.16824292311212047
+        },
+        {
+          "system": "BrickGPT",
+          "source_system": "BrickGPT",
+          "n": 25,
+          "pinv": 0.0,
+          "vqa": 0.10775375908793648,
+          "pe": 0.15347035348415375,
+          "siglip2": 0.030177810355329484
+        },
+        {
+          "system": "BrickNet",
+          "source_system": "BrickNet",
+          "n": 25,
+          "pinv": 0.2583717601230595,
+          "vqa": 0.09017789903316953,
+          "pe": 0.14747301027178764,
+          "siglip2": 0.01760650830902364
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "n_per_system": 24,
+      "mean_words": 59.625,
+      "min_words": 9,
+      "max_words": 95,
+      "systems": [
+        {
+          "system": "BrickForma",
+          "source_system": "BrickMore",
+          "n": 24,
+          "pinv": 0.0,
+          "vqa": 0.09676312956131976,
+          "pe": 0.1946966281781594,
+          "siglip2": 0.14473422946988043
+        },
+        {
+          "system": "BrickGPT",
+          "source_system": "BrickGPT",
+          "n": 24,
+          "pinv": 0.0,
+          "vqa": 0.07484472737451142,
+          "pe": 0.1518931525448958,
+          "siglip2": 0.029270116385830807
+        },
+        {
+          "system": "BrickNet",
+          "source_system": "BrickNet",
+          "n": 24,
+          "pinv": 0.23716666022887836,
+          "vqa": 0.03633467751327165,
+          "pe": 0.13627705443650484,
+          "siglip2": 0.002303631714099789
+        }
+      ]
+    }
+  ]
+}

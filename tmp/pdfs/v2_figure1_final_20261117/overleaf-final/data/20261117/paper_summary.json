@@ -1,0 +1,263 @@
+{
+  "source_score_sha256": [
+    "2c00f41478e4dd6f3870c85a2a02901d202e037f05942570920afae0e52dde38",
+    "e8d000bca62b2c981f12e66eec40184481a011b281abde74e410d1a33d5b7666"
+  ],
+  "source_scores_sha256": "e1e1ccc15a5c04e98e05b387082b15fbdc97d95189cad43db3eeabfdbef2b76e",
+  "matched_prompts": 525,
+  "scored_exports": 1575,
+  "rendered_views": 12600,
+  "aggregate_means": {
+    "BrickMore": {
+      "pinv": 0.007943122532378487,
+      "vqa": 0.08661025846835921,
+      "pe": 0.1567841088842778,
+      "siglip2": 0.04476659080477942
+    },
+    "BrickGPT": {
+      "pinv": 0.0,
+      "vqa": 0.06662704039993211,
+      "pe": 0.14404698444264274,
+      "siglip2": 0.019418288351722067
+    },
+    "BrickNet": {
+      "pinv": 0.18423707865780342,
+      "vqa": 0.02008465026019877,
+      "pe": 0.11867737761210828,
+      "siglip2": 0.0011315819357084493
+    }
+  },
+  "levels": {
+    "1": {
+      "count": 105,
+      "mean_words": 13.6,
+      "means": {
+        "BrickMore": {
+          "pinv": 0.004839894933811783,
+          "vqa": 0.15391804103054754,
+          "pe": 0.1387704648787067,
+          "siglip2": 0.015798066615854436
+        },
+        "BrickGPT": {
+          "pinv": 0.0,
+          "vqa": 0.1296165190755086,
+          "pe": 0.1301838091441563,
+          "siglip2": 0.008710934533940267
+        },
+        "BrickNet": {
+          "pinv": 0.18593442868586732,
+          "vqa": 0.03463430600989976,
+          "pe": 0.10511226588416667,
+          "siglip2": 0.000521076531118614
+        }
+      }
+    },
+    "2": {
+      "count": 105,
+      "mean_words": 26.447619047619046,
+      "means": {
+        "BrickMore": {
+          "pinv": 0.006857180540890152,
+          "vqa": 0.1264297259105314,
+          "pe": 0.14645573759362812,
+          "siglip2": 0.02914903313884306
+        },
+        "BrickGPT": {
+          "pinv": 0.0,
+          "vqa": 0.09384766473347207,
+          "pe": 0.13383584554706301,
+          "siglip2": 0.020580396790419033
+        },
+        "BrickNet": {
+          "pinv": 0.18353087320517808,
+          "vqa": 0.03935833428640248,
+          "pe": 0.10301956087350846,
+          "siglip2": 0.0008472978726757801
+        }
+      }
+    },
+    "3": {
+      "count": 105,
+      "mean_words": 37.48571428571429,
+      "means": {
+        "BrickMore": {
+          "pinv": 0.009787627524538163,
+          "vqa": 0.11788305252756844,
+          "pe": 0.1476872952211471,
+          "siglip2": 0.05075929723197175
+        },
+        "BrickGPT": {
+          "pinv": 0.0,
+          "vqa": 0.08626904100120945,
+          "pe": 0.14147629127615974,
+          "siglip2": 0.01781111886759737
+        },
+        "BrickNet": {
+          "pinv": 0.22977326494082287,
+          "vqa": 0.0209117899298078,
+          "pe": 0.11132605927331107,
+          "siglip2": 0.0012294915831368178
+        }
+      }
+    },
+    "4": {
+      "count": 105,
+      "mean_words": 52.48571428571429,
+      "means": {
+        "BrickMore": {
+          "pinv": 0.010762288346770042,
+          "vqa": 0.019152393032120362,
+          "pe": 0.17797457668043318,
+          "siglip2": 0.07380093881239201
+        },
+        "BrickGPT": {
+          "pinv": 0.0,
+          "vqa": 0.01475405986154025,
+          "pe": 0.16053781800326847,
+          "siglip2": 0.03382946904070668
+        },
+        "BrickNet": {
+          "pinv": 0.17241393953456546,
+          "vqa": 0.002505594988067406,
+          "pe": 0.13758385092729614,
+          "siglip2": 0.0010746224908774289
+        }
+      }
+    },
+    "5": {
+      "count": 105,
+      "mean_words": 78.79047619047618,
+      "means": {
+        "BrickMore": {
+          "pinv": 0.007468621315882299,
+          "vqa": 0.01566807984102828,
+          "pe": 0.1730324700474739,
+          "siglip2": 0.05432561822483584
+        },
+        "BrickGPT": {
+          "pinv": 0.0,
+          "vqa": 0.008647917327930155,
+          "pe": 0.15420115824256625,
+          "siglip2": 0.016159522525946983
+        },
+        "BrickNet": {
+          "pinv": 0.14953288692258337,
+          "vqa": 0.003013226086816411,
+          "pe": 0.13634515110225903,
+          "siglip2": 0.001985421200733606
+        }
+      }
+    }
+  },
+  "zero_invalid_outputs": {
+    "BrickMore": 331,
+    "BrickGPT": 525,
+    "BrickNet": 139
+  },
+  "paired_tests": [
+    {
+      "baseline": "BrickGPT",
+      "metric": "VQAScore",
+      "wins": 384,
+      "losses": 141,
+      "ties": 0,
+      "sign_p": 5.1459234551949206e-27,
+      "wilcoxon_w": 36745.0,
+      "wilcoxon_p": 1.6004370095572794e-20,
+      "sign_p_holm": 1.5437770365584763e-26,
+      "wilcoxon_p_holm": 4.801311028671838e-20
+    },
+    {
+      "baseline": "BrickGPT",
+      "metric": "PE",
+      "wins": 337,
+      "losses": 188,
+      "ties": 0,
+      "sign_p": 7.91282242221722e-11,
+      "wilcoxon_w": 44444.0,
+      "wilcoxon_p": 1.525403750330018e-12,
+      "sign_p_holm": 1.582564484443444e-10,
+      "wilcoxon_p_holm": 3.050807500660036e-12
+    },
+    {
+      "baseline": "BrickGPT",
+      "metric": "SigLIP2",
+      "wins": 327,
+      "losses": 198,
+      "ties": 0,
+      "sign_p": 1.979803997727776e-08,
+      "wilcoxon_w": 45211.0,
+      "wilcoxon_p": 7.30285138741884e-12,
+      "sign_p_holm": 1.979803997727776e-08,
+      "wilcoxon_p_holm": 7.30285138741884e-12
+    },
+    {
+      "baseline": "BrickNet",
+      "metric": "VQAScore",
+      "wins": 460,
+      "losses": 65,
+      "ties": 0,
+      "sign_p": 2.6566585217148196e-74,
+      "wilcoxon_w": 11814.0,
+      "wilcoxon_p": 7.682329469175686e-61,
+      "sign_p_holm": 1.593995113028892e-73,
+      "wilcoxon_p_holm": 4.609397681505412e-60
+    },
+    {
+      "baseline": "BrickNet",
+      "metric": "PE",
+      "wins": 406,
+      "losses": 119,
+      "ties": 0,
+      "sign_p": 1.1489423050080163e-37,
+      "wilcoxon_w": 18255.0,
+      "wilcoxon_p": 2.682597221423557e-48,
+      "sign_p_holm": 4.595769220032065e-37,
+      "wilcoxon_p_holm": 1.3412986107117784e-47
+    },
+    {
+      "baseline": "BrickNet",
+      "metric": "SigLIP2",
+      "wins": 408,
+      "losses": 115,
+      "ties": 2,
+      "sign_p": 1.8876576592415168e-39,
+      "wilcoxon_w": 21015.5,
+      "wilcoxon_p": 6.109136003749715e-43,
+      "sign_p_holm": 9.438288296207584e-39,
+      "wilcoxon_p_holm": 2.443654401499886e-42
+    }
+  ],
+  "truncation": {
+    "pe": {
+      "truncated_prompt_count": 121,
+      "untruncated_means": {
+        "BrickMore": 0.1510075942917478,
+        "BrickGPT": 0.14078407954092664,
+        "BrickNet": 0.11345241112302583
+      }
+    },
+    "siglip2": {
+      "truncated_prompt_count": 209,
+      "untruncated_means": {
+        "BrickMore": 0.034034673163567425,
+        "BrickGPT": 0.0156529926548835,
+        "BrickNet": 0.0008632253714461701
+      }
+    }
+  },
+  "supplement_source_flags": {
+    "geometry_valid": {
+      "true": 164,
+      "false": 96
+    },
+    "generation_complete": {
+      "true": 252,
+      "false": 8
+    }
+  },
+  "supplement_glb_coverage": {
+    "full": 257,
+    "matching_prefix": 3
+  }
+}

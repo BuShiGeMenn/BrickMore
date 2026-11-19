@@ -1,0 +1,66 @@
+\relax 
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces BrickForma overview. (a) Voxel-to-LEGO conversion. (b) Connectivity refinement. (c) Each triplet shows, from left to right, a voxel model from an LLM-authored generator, the resulting LEGO assembly, and a same-category BrickForma output (fine-tuned Qwen3-1.7B). Brick-type colors are for display only and are excluded from training targets.}}{1}{}\protected@file@percent }
+\newlabel{fig:teaser}{{1}{1}{}{figure.1}{}}
+\citation{zhou2026paperfoldingpuzzle}
+\citation{luo2026geogrambench}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction\enspace  {\chinesefont 引言}}{2}{}\protected@file@percent }
+\citation{brickgpt}
+\citation{bricknet}
+\citation{qwen3}
+\citation{lora}
+\citation{thompson2020lego,brickbybrick,breakandmake}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Data-construction workflow. GPT-6.1 Sol assists in writing parametric programs that produce voxel shapes and captions. After deduplication, the shapes are converted to bricks, refined, and checked before export. Dashed arrows trace contact screening and its recorded status. Brick colors follow the legend in Figure~\ref {fig:teaser}.}}{5}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:data-workflow}{{2}{5}{}{figure.2}{}}
+\citation{brickgpt}
+\citation{bricknet}
+\citation{stablelego}
+\citation{infinigen}
+\citation{lora}
+\citation{brickgpt}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work\enspace  {\chinesefont 相关工作}}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Dataset Construction\enspace  {\chinesefont 数据集构建}}{6}{}\protected@file@percent }
+\newlabel{sec:dataset}{{3}{6}{}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Parametric Voxel Generation\enspace  {\chinesefont 参数化体素生成}}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Voxel-to-Brick Conversion and Checks\enspace  {\chinesefont 体素转积木与几何校验}}{7}{}\protected@file@percent }
+\citation{brickgpt}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Integrated Release and Training Corpus\enspace  {\chinesefont 整合发布版与训练语料}}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Dataset and fine-tuning corpus. The two blocks are counted separately: the upper block from the dataset release reports, the lower block as recorded for the fine-tuning run.}}{8}{}\protected@file@percent }
+\newlabel{tab:training-data}{{1}{8}{}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}BrickForma Text-to-Brick Model\enspace  {\chinesefont BrickForma 文本生成积木模型}}{8}{}\protected@file@percent }
+\newlabel{sec:model}{{4}{8}{}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Fine-Tuning\enspace  {\chinesefont 微调}}{8}{}\protected@file@percent }
+\newlabel{sec:training}{{4.1}{8}{}{subsection.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Fine-tuning configuration (details in Appendix~\ref {app:training}).}}{9}{}\protected@file@percent }
+\newlabel{tab:finetune-config}{{2}{9}{}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Inference and Refinement\enspace  {\chinesefont 推理与几何修复}}{9}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces BrickForma inference and refinement}}{10}{}\protected@file@percent }
+\newlabel{alg:inference-refinement}{{1}{10}{}{algorithm.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Comparative Evaluation\enspace  {\chinesefont 对比评测}}{10}{}\protected@file@percent }
+\newlabel{sec:eval}{{5}{10}{}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Setup and Metrics\enspace  {\chinesefont 实验设置与指标}}{10}{}\protected@file@percent }
+\newlabel{sec:setup}{{5.1}{10}{}{subsection.5.1}{}}
+\citation{vqascore}
+\citation{qwen25vl}
+\citation{pe}
+\citation{siglip2}
+\citation{bricknet}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Main Results\enspace  {\chinesefont 主要结果}}{11}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Mean scores on 525 shared prompts. BrickForma uses delivered raw outputs. Bold marks the best mean.}}{11}{}\protected@file@percent }
+\newlabel{tab:main}{{3}{11}{}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Performance across Description Levels\enspace  {\chinesefont 各描述级别的表现}}{12}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Mean scores by description level. Each level contains 105 prompts per system. Words is the mean English word count. Bold marks the best mean.}}{12}{}\protected@file@percent }
+\newlabel{tab:level-results}{{4}{12}{}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Raw versus Refined Outputs\enspace  {\chinesefont 原始输出与修复后输出}}{12}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Earlier repair comparison on 110 pairs sharing the same prompt, model identifier, and caption.}}{12}{}\protected@file@percent }
+\newlabel{tab:raw-refined}{{5}{12}{}{table.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Four examples from the matched evaluation with the same prompts, render settings, and azimuths ($45^\circ $ and $225^\circ $) across systems. The highest VQAScore belongs to BrickForma for the chair and bench, BrickGPT for the hatchback, and BrickNet for the camera.}}{13}{}\protected@file@percent }
+\newlabel{fig:gallery}{{3}{13}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Geometric Refinement Audit\enspace  {\chinesefont 几何修复审计}}{13}{}\protected@file@percent }
+\newlabel{sec:diagnostics}{{5.5}{13}{}{subsection.5.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Earlier export audit of 110 matched raw/refined pairs. Union equality uses translation normalization.}}{14}{}\protected@file@percent }
+\newlabel{tab:export-audit}{{6}{14}{}{table.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Evaluation Boundaries\enspace  {\chinesefont 评测边界}}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Limitations and Discussion\enspace  {\chinesefont 局限与讨论}}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion\enspace  {\chinesefont 结论}}{15}{}\protected@file@percent }
+\gdef \@abspage@last{15}

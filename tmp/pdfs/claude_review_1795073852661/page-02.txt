@@ -1,0 +1,116 @@
+BrickForma instead generates both the voxel geometries and
+their brick targets programmatically. On 525 shared prompts
+spanning five description levels, BrickForma’s raw outputs
+achievethehighestVQAScore,PE,andSigLIP2scoresofthe
+three systems at every level. Their invalid-placement ratio is
+0.79%, close to BrickGPT’s 0.00% and far below BrickNet’s
+18.42%.
+1 Introduction
+Spatial reasoning and geometric understanding are funda-
+mental to human cognition and to artificial intelligence,
+supporting applications from robotics and navigation to
+computer-aided design. As large language models (LLMs)
+have matured, a growing body of work asks whether they
+canreasonaboutshape,position,andtransformation.Recent
+benchmarksprobethisabilitythroughpaperfoldingandun-
+folding(Zhouetal.2026)andthroughgeometryexpressedas
+procedural drawing code (Luo et al. 2026), and both report
+pronounced deficiencies in current models. These studies
+largely assess spatial reasoning by asking a model to select
+or compute an answer. A complementary and less examined
+question is whether a language model canconstruct: given
+onlywords,canitproduceathree-dimensionalobjectwhose
+parts are correctly sized, correctly placed, and physically
+joined?
+LEGO brick assembly makes this question concrete. A
+concise request such asa simple chairidentifies an object
+categorybutleavesitsdimensions,proportions,andpartlay-
+out largely unspecified. Answering it requires three coupled
+forms of geometric spatial reasoning. The model must com-
+plete the missing geometry from prior knowledge of what
+the object looks like. It must discretize that geometry into
+pieces of fixed dimensions at integer positions on a grid.
+Anditmustrespectthedifferencebetweenspatialadjacency
+and stud connectivity: pieces that touch side by side do not
+hold together unless they interlock vertically through studs.
+We call this setting theText-to-Bricktask: translating
+a natural-language description, at any level of detail, into a
+setofLEGObrickplacementsthatreproducesthedescribed
+shape as a single connected assembly. Because every output
+can be checked for coverage, bounds, and connectivity, the
+task offers a verifiable test of whether linguistic knowledge
+has become spatial structure.
+Prior work has shown that language models can be
+trained for this task. BrickGPT (Pun et al. 2025) learns au-
+toregressive brick-placement sequences and applies validity
+checks with physics-aware rollback during inference. Brick-
+Net (Kulits and Schmid 2026) adopts a graph-based repre-
+sentation that supports a broader range of parts and connec-
+tion types. Two questions remain open.(Q1)How well do
+generators translatelimitedlinguistic information into ob-
+ject geometry? Pooled scores hide this: only a level-wise
+evaluation(Table4)shows,forexample,thatBrickNettrails
+BrickForma on mean VQAScore, PE, and SigLIP2 even at
+the two shortest description levels, L1 and L2.(Q2)Can
+LLM-assisted programs encode the geometric details omit-
+ted from concise prompts in a form suitable for training a
+compact model?
+We present BrickForma, which uses executable programs
+to generate training examples for a compact text-to-brick
+model. With the assistance of GPT-6.1 Sol, we develop
+parametric programs that vary object proportions, part di-
+mensions,openings,andsupportarrangementstosynthesize
+voxelshapesinbatches.Eachprogramspecifiesthestructure
+ofanobjectfamilyandexposesitsgeometricdegreesoffree-
+dom as parameters. The source collection contains 80,000
+models across 21 categories on a483 grid. Each model is
+paired with five levels of description that progressively add
+structural,geometric,proportional,andappearanceinforma-
+tion. The resulting approximately 400,000 caption records
+link concise requests and detailed specifications to shared
+geometry, providing supervision for prompts with different
+amounts of geometric detail.
+Turningvoxelshapesintobricktargetsiswherespatialad-
+jacency and stud connectivity must be separated: pieces can
+coveraconnectedvoxelvolumeandtouchsidebysidewith-
+out forming any stud connection. Our conversion pipeline
+combines same-color brick placement, connection analysis,
+and local refinement to construct geometrically checked tar-
+get layouts, and it records every change to the source voxels
+inthederivedmodels.Theintegrateddatasetreleasecontains
+79,301 models that pass its dataset-level geometric checks.
+We fine-tune Qwen3-1.7B (Yang et al. 2025) with low-rank
+adaptation (Hu et al. 2022) on caption–placement pairs to
+predict brick dimensions and positions.
+Geometricrefinementcomplementsthesmallmodel’spre-
+dictions with explicit structural enforcement. From the sup-
+ported, in-bounds portions of the predicted placements, the
+pipeline forms a voxel union and uses mixed-integer linear
+programmingtofindanexact-coverlayoutthatformsasingle
+stud-connected component. Independent coverage and con-
+nectivity checks then verify the refined layout. This design
+gives each half of the task to the component suited to it: the
+language model decides what shape a description denotes,
+and the solver decides how that shape holds together.
+We evaluate BrickForma against BrickGPT and Brick-
+Net on 525 shared prompts spanning five description levels.
+BrickForma’s raw outputs achieve the highest mean VQAS-
+core, PE, and SigLIP2 at every level, including the short-
+est descriptions. BrickGPT has the lowest mean invalid-
+placement ratio (0.00%), followed by BrickForma (0.79%)
+and BrickNet (18.42%). Reporting all five levels links the
+multi-leveldatadesigntoanexplicitassessmentofhowgen-
+eration changes with the amount of descriptive detail.
+In summary, our main contributions are as follows:
+LLM-assisted training data for a compact model.We
+useexecutableparametricprogramstogeneratevoxelshapes
+and their descriptions, convert the shapes into geometrically
+checkedbricklayouts,andfine-tunea1.7B-parametermodel
+on the resulting caption–placement pairs. On the 525 shared
+prompts, BrickForma attains a 30.0% higher mean VQAS-
+core than BrickGPT.
+A multi-level dataset for evaluating alignment across
+levels of descriptive detail.Our pipeline generates 80,000
+source voxel models with five description levels each; in
+the integrated release, 79,301 of them yield brick layouts
+thatpassthegeometricchecks.Level-wiseevaluationagainst
