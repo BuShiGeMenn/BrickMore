@@ -1,0 +1,37 @@
+name subfig
+category Package
+revision 79618
+shortdesc Figures broken into subfigures
+longdesc The package provides support for the manipulation and reference
+longdesc of small or 'sub' figures and tables within a single figure or
+longdesc table environment. It is convenient to use this package when
+longdesc your subfigures are to be separately captioned, referenced, or
+longdesc are to be included in the List-of-Figures. A new \subfigure
+longdesc command is introduced which can be used inside a figure
+longdesc environment for each subfigure. An optional first argument is
+longdesc used as the caption for that subfigure. This package supersedes
+longdesc the subfigure package (which is no longer maintained). The name
+longdesc was changed since the package is not completely backward
+longdesc compatible with the older package The major advantage of the
+longdesc new package is that the user interface is keyword/value driven
+longdesc and easier to use. To ease the transition from the subfigure
+longdesc package, the distribution includes a configuration file
+longdesc (subfig.cfg) which nearly emulates the subfigure package. The
+longdesc functionality of the package is provided by the (more recent
+longdesc still) subcaption package.
+containersize 6892
+containerchecksum aef60640dfeaf54aed73a5e772b29fd038078fe406e57245ad98939ac03f28850f779f4d7ea34280b2ceb95fa4b358ddd4dc88bdf7634d75d17ac3ac159a8948
+doccontainersize 453620
+doccontainerchecksum df87d52ad918bce7c88d56ffb8da44ca238d8b928fee577d473c018fb008f407d8362ee2740ab03a36785fa546c59ce8178f65c818b314b7ce558e0b7b6dbe3e
+srccontainersize 43120
+srccontainerchecksum bd96e934798fe9f6ad825c6e66bb3e77b2e84d574a284963a5aabc2f394669a1883a58833eed90b0e6e6aa53f5e2aad7a96e7225fd093cd1b46aeddd7f966725
+runfiles size=8
+ texmf-dist/tex/latex/subfig/altsf.cfg
+ texmf-dist/tex/latex/subfig/subfig.sty
+catalogue-also subfloat
+catalogue-contact-bugs https://github.com/bidi-tex/subfig/issues
+catalogue-contact-repository https://github.com/bidi-tex/subfig
+catalogue-ctan /macros/latex/contrib/subfig
+catalogue-license lppl1.3
+catalogue-topics caption subfloat tagged-pdf-incompatible
+catalogue-version 1.3

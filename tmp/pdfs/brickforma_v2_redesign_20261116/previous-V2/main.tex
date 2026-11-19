@@ -1,0 +1,50 @@
+\documentclass[letterpaper]{article} % DO NOT CHANGE THIS
+% AAAI-27 Author Kit (official, https://aaai.org/authorkit27/, AuthorKit27.zip, aaai2027.sty dated 2026-10-21).
+% AAAI anonymous workshop manuscript.
+\usepackage[submission]{aaai2027}  % DO NOT CHANGE THIS
+\usepackage[hyphens]{url}  % DO NOT CHANGE THIS
+\usepackage{graphicx} % DO NOT CHANGE THIS
+\urlstyle{rm} % DO NOT CHANGE THIS
+\def\UrlFont{\rm}  % DO NOT CHANGE THIS
+\usepackage{natbib}  % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\usepackage{caption} % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\frenchspacing  % DO NOT CHANGE THIS
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{placeins} % \FloatBarrier keeps appendix floats in their sections
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+\setcounter{secnumdepth}{2} % Section numbers enabled (permitted by the template: 0, 1 or 2).
+
+\input{sections/xiao_frontmatter}
+
+\begin{document}
+\maketitle
+\input{sections/xiao_abstract}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure1.pdf}
+\caption{BrickForma overview. (a) Source voxels are converted into rectangular bricks. (b) Raw predictions are retiled to repair connectivity. (c) Brick layouts constructed from programmatically generated voxels. (d) Outputs of the fine-tuned Qwen3-1.7B pipeline. Colors encode brick type independent of orientation; they are visualization labels, not predicted appearance. Voxels are shown in gray.}
+\label{fig:teaser}
+\end{figure*}
+
+\input{sections/xiao_introduction}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure2.pdf}
+\caption{Data-construction workflow. Parametric programs written by GPT-6.1 Sol through agentic batch generation produce voxel shapes and captions, followed by deduplication, same-color tiling, local repair, and audited export for fine-tuning. Contact screening is recorded separately. The dashed arrow denotes repair or retiling when needed. Screening is distinct from a guarantee of physical stability. Brick colors follow the legend in Figure~\ref{fig:teaser}.}
+\label{fig:data-workflow}
+\end{figure*}
+
+\input{sections/method}
+\input{sections/evaluation}
+\bibliography{references}
+\FloatBarrier
+\input{sections/appendices}
+\end{document}

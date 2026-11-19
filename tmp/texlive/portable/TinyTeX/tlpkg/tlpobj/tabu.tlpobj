@@ -1,0 +1,38 @@
+name tabu
+category Package
+revision 77682
+shortdesc Flexible LaTeX tabulars
+longdesc The package provides an environment, tabu, which will make any
+longdesc sort of tabular (that doesn't need to split across pages), and
+longdesc an environment longtabu which provides the facilities of tabu
+longdesc in a modified longtable environment. (Note that this latter
+longdesc offers an enhancement of ltxtable.) The package requires the
+longdesc array package, and needs e-TeX to run (since array.sty is
+longdesc present in every conforming distribution of LaTeX, and since
+longdesc every publicly available LaTeX format is built using e-TeX, the
+longdesc requirements are provided by default on any reasonable system).
+longdesc The package also requires xcolor for coloured rules in tables,
+longdesc and colortbl for coloured cells. The longtabu environment
+longdesc further requires that longtable be loaded. The package itself
+longdesc does not load any of these packages for the user. The tabu
+longdesc environment may be used in place of tabular, tabular* and
+longdesc tabularx environments, as well as the array environment in
+longdesc maths mode. It overloads tabularx's X-column specification,
+longdesc allowing a width specification, alignment (l, r, c and j) and
+longdesc column type indication (p, m and b). \begin{tabu} to <dimen>
+longdesc specifies a target width, and \begin{tabu} spread <dimen>
+longdesc enlarges the environment's "natural" width.
+depend varwidth
+containersize 23916
+containerchecksum 4e26cb94da26d682b5495eb697beb26ca3ba09dc52951f0ee2eb957dedbfa031640b20b29c2965a61661ad3296894ae8f963470f89c37368915b0bc9363d01be
+doccontainersize 1458868
+doccontainerchecksum 70b2629d62c112547e993aa88b53e2d2faa43880127226b7dbc4dc5d7b62c8d392d9b7752bcda3aeb698a6b0c190f661e303e8408501d11c9f767c4eed71f1aa
+srccontainersize 76076
+srccontainerchecksum 8f5527a905b05bdcc7ef5731f4b8b3855724f5646a02836f58e76a34a06e65dbf77f9a3cf68ed8800cafdd44224e2c1a4b18a8acd68ecb6b255512247ee93e94
+runfiles size=29
+ texmf-dist/tex/latex/tabu/tabu.sty
+catalogue-contact-repository https://github.com/tabu-issues-for-future-maintainer/tabu
+catalogue-ctan /macros/latex/contrib/tabu
+catalogue-license lppl1.3
+catalogue-topics table table-long tagged-pdf-unsupported
+catalogue-version 2.9

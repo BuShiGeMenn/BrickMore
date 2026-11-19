@@ -1,0 +1,51 @@
+name zapfchan
+category Package
+revision 77161
+catalogue urw-base35
+shortdesc URW 'Base 35' font pack for LaTeX
+longdesc A set of fonts for use as "drop-in" replacements for Adobe's
+longdesc basic set, comprising: Century Schoolbook (substituting for
+longdesc Adobe's New Century Schoolbook); Dingbats (substituting for
+longdesc Adobe's Zapf Dingbats); Nimbus Mono L (substituting for Adobe's
+longdesc Courier); Nimbus Roman No9 L (substituting for Adobe's Times);
+longdesc Nimbus Sans L (substituting for Adobe's Helvetica); Standard
+longdesc Symbols L (substituting for Adobe's Symbol); URW Bookman; URW
+longdesc Chancery L Medium Italic (substituting for Adobe's Zapf
+longdesc Chancery); URW Gothic L Book (substituting for Adobe's Avant
+longdesc Garde); and URW Palladio L (substituting for Adobe's Palatino).
+execute addMap uzc.map
+containersize 79900
+containerchecksum dd5c97379d53809e3550627b2de861804ebc0b162f7a4a8a6afb45add942f7af900f89a901509a848a9859935fae12dce4d14e2bec6a090391d519f4123ba55f
+runfiles size=59
+ texmf-dist/dvips/zapfchan/config.uzc
+ texmf-dist/fonts/afm/adobe/zapfchan/pzcmi8a.afm
+ texmf-dist/fonts/afm/urw/zapfchan/uzcmi8a.afm
+ texmf-dist/fonts/map/dvips/zapfchan/uzc.map
+ texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi.tfm
+ texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi7t.tfm
+ texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8c.tfm
+ texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm
+ texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8t.tfm
+ texmf-dist/fonts/tfm/urw35vf/zapfchan/uzcmi7t.tfm
+ texmf-dist/fonts/tfm/urw35vf/zapfchan/uzcmi8c.tfm
+ texmf-dist/fonts/tfm/urw35vf/zapfchan/uzcmi8r.tfm
+ texmf-dist/fonts/tfm/urw35vf/zapfchan/uzcmi8t.tfm
+ texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb
+ texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfm
+ texmf-dist/fonts/vf/adobe/zapfchan/pzcmi.vf
+ texmf-dist/fonts/vf/adobe/zapfchan/pzcmi7t.vf
+ texmf-dist/fonts/vf/adobe/zapfchan/pzcmi8c.vf
+ texmf-dist/fonts/vf/adobe/zapfchan/pzcmi8t.vf
+ texmf-dist/fonts/vf/urw35vf/zapfchan/uzcmi7t.vf
+ texmf-dist/fonts/vf/urw35vf/zapfchan/uzcmi8c.vf
+ texmf-dist/fonts/vf/urw35vf/zapfchan/uzcmi8t.vf
+ texmf-dist/tex/latex/zapfchan/8ruzc.fd
+ texmf-dist/tex/latex/zapfchan/omluzc.fd
+ texmf-dist/tex/latex/zapfchan/omsuzc.fd
+ texmf-dist/tex/latex/zapfchan/ot1uzc.fd
+ texmf-dist/tex/latex/zapfchan/t1uzc.fd
+ texmf-dist/tex/latex/zapfchan/ts1uzc.fd
+catalogue-also tex-gyre
+catalogue-ctan /fonts/urw/base35
+catalogue-license gpl
+catalogue-topics font font-type1 font-collection

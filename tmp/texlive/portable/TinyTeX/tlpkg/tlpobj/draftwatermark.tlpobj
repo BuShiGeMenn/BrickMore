@@ -1,0 +1,32 @@
+name draftwatermark
+category Package
+revision 77682
+shortdesc Put a grey textual watermark on document pages
+longdesc The package provides a means to add a watermark (typically a
+longdesc light gray piece of text) on every page or on the first page of
+longdesc a document. Typical usage may consist in writing words such as
+longdesc DRAFT or CONFIDENTIAL across document pages. The package
+longdesc performs a similar function to that of draftcopy, but its
+longdesc implementation is output device independent. As of December
+longdesc 2020, the package relies on the new shipout hooks directly
+longdesc provided by LaTeX. For users of older versions of LaTeX, the
+longdesc package also provides a legacy version of itself (that is
+longdesc automatically loaded, currently being at release 2.3) which
+longdesc relies on the everypage package. Note that this legacy version
+longdesc will progressively lag behind in terms of features.
+containersize 2852
+containerchecksum 45663567f7f5040187c7332458952da96e3347ed9def93cde247557938de3bdad6609a090d6a847aaa870410891e50872de19ed35b377bfc97fcd96574bec9e6
+doccontainersize 153032
+doccontainerchecksum 3ad7fae02df7e5ebf4c39c749a1171e5f5346b0fa0c21ddba2eb6d0bb4d881f68d1865185842fa7cac4252ab3138215a3874a9ff7021e080638eb95ae7d83cb0
+srccontainersize 12744
+srccontainerchecksum ddf6e3371342bb8e5c83a5a06f86332bf7a97623257762a5ae538398c1179c6459e441c09ca086272f03fcab083aec182e70d94ad2cb53a3aaac43889a96a052
+runfiles size=4
+ texmf-dist/tex/latex/draftwatermark/draftwatermark-2x.sty
+ texmf-dist/tex/latex/draftwatermark/draftwatermark.sty
+catalogue-also eso-pic
+catalogue-contact-bugs https://github.com/callegar/LaTeX-draftwatermark/issues
+catalogue-contact-repository https://github.com/callegar/LaTeX-draftwatermark
+catalogue-ctan /macros/latex/contrib/draftwatermark
+catalogue-license lppl1.3c
+catalogue-topics editorial watermark tagged-pdf
+catalogue-version 3.3

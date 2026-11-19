@@ -1,0 +1,31 @@
+name carlisle
+category Package
+revision 79618
+shortdesc David Carlisle's small packages
+longdesc Many of David Carlisle's more substantial packages stand on
+longdesc their own, or as part of the LaTeX latex-tools set; this set
+longdesc contains: Making dotless 'j' characters for fonts that don't
+longdesc have them; A method for combining the capabilities of longtable
+longdesc and tabularx; An environment for including Plain TeX in LaTeX
+longdesc documents; A jiffy to remove counters from other counters'
+longdesc reset lists (now obsolete as it has been incorporated into the
+longdesc LaTeX format); A jiffy to create 'slashed' characters for
+longdesc physicists.
+containersize 8692
+containerchecksum d3ae69795c55ddfc5c5e61da322fcb9f33ab54315a32bc8c774a84301a7f78fabb2192d2774039e648843169b3403e322aba6b34a14e0e77a5117e9880ed332a
+doccontainersize 74708
+doccontainerchecksum 44156003f05214fe0d1a27c1b7d8da7707a596da2053e86c2961f97cb6cf6e4f3125079aa7452f1d4a2541576b89cf691131c7d7b28750ad3c8cf6a971d125e0
+srccontainersize 2972
+srccontainerchecksum d7d83883f9c31ec719e334b35f44b0999f2a0a413cf9c4f0ec0cd36879cafeca9bdc8f1be3b3c06da4530b80f274593fdc21236bd395adcd121402cbf65f4d29
+runfiles size=8
+ texmf-dist/tex/latex/carlisle/dotlessj.sty
+ texmf-dist/tex/latex/carlisle/ltxtable.sty
+ texmf-dist/tex/latex/carlisle/plain.sty
+ texmf-dist/tex/latex/carlisle/remreset.sty
+ texmf-dist/tex/latex/carlisle/scalefnt.sty
+ texmf-dist/tex/latex/carlisle/slashed.sty
+catalogue-contact-bugs https://github.com/davidcarlisle/dpctex/issues
+catalogue-contact-repository https://github.com/davidcarlisle/dpctex
+catalogue-ctan /macros/latex/contrib/carlisle
+catalogue-license lppl1
+catalogue-topics collection

@@ -1,0 +1,54 @@
+name xetex
+category TLCore
+revision 80015
+shortdesc An extended variant of TeX for use with Unicode sources
+longdesc XeTeX is a TeX typesetting engine using Unicode and supporting
+longdesc modern font technologies such as OpenType, TrueType or Apple
+longdesc Advanced Typography (AAT), including OpenType mathematics
+longdesc fonts. XeTeX supports many extensions that reflect its origins
+longdesc in linguistic research; it also supports micro-typography (as
+longdesc available in pdfTeX). XeTeX was developed by the SIL (the first
+longdesc version was specifically developed for those studying
+longdesc linguistics, and using Macintosh computers). XeTeX's immediate
+longdesc output is an extended variant of DVI format, which is
+longdesc ordinarily processed by a tightly bound processor (called
+longdesc xdvipdfmx), that produces PDF. XeTeX is released as part of TeX
+longdesc Live; documentation has arisen separately. Source code is
+longdesc available from ctan:/systems/texlive/Source/.
+depend babel
+depend cm
+depend dvipdfmx
+depend etex
+depend firstaid
+depend hyphen-base
+depend knuth-lib
+depend l3kernel
+depend latex
+depend latex-fonts
+depend lm
+depend plain
+depend tex-ini-files
+depend unicode-data
+depend xetex.ARCH
+depend xetexconfig
+execute AddFormat name=xelatex engine=xetex patterns=language.dat   options="-etex xelatex.ini"   fmttriggers=l3kernel,latex,firstaid,babel,cm,hyphen-base,knuth-lib,latex-fonts,tex-ini-files,unicode-data,lm
+execute AddFormat name=xetex engine=xetex patterns=language.def   options="-etex xetex.ini"   fmttriggers=cm,hyphen-base,tex-ini-files,unicode-data,etex,plain
+postaction script file=tlpkg/tlpostcode/xetex.pl
+containersize 7988
+containerchecksum 72d91a2f4b89926d30a2c9e6b230eb71bc4cf300614dfe6287123de2807b06c4e02aeb6a74b3132d5eec6d2a8c96abd289c316a5ec151c2ac718e3d2ecca2589
+doccontainersize 641400
+doccontainerchecksum a2a6db0c0a907103f4c48b362115da750f5faed969a2f4af9ab050a6ca772be9fc147fb5f845d9e4ccd0b1a210e29c3b8746a6d4a6c45e5d594d2d106c352fb2
+runfiles size=9
+ texmf-dist/fonts/misc/xetex/fontmapping/base/qx-unicode.map
+ texmf-dist/fonts/misc/xetex/fontmapping/base/qx-unicode.tec
+ texmf-dist/fonts/misc/xetex/fontmapping/base/tex-text.map
+ texmf-dist/fonts/misc/xetex/fontmapping/base/tex-text.tec
+ texmf-dist/scripts/texlive-extra/xelatex-unsafe.sh
+ texmf-dist/scripts/texlive-extra/xetex-unsafe.sh
+ tlpkg/tlpostcode/xetex.pl
+catalogue-also luatex
+catalogue-contact-home https://tug.org/xetex
+catalogue-contact-repository https://tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir
+catalogue-contact-support https://lists.tug.org/xetex
+catalogue-license x11
+catalogue-topics engine

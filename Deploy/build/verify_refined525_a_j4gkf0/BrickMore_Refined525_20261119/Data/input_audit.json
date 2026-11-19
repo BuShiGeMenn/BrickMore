@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "dataset": "brickmore_refined525_20261119",
+  "total_records": 525,
+  "primary_records": 525,
+  "all_counts": {
+    "BrickMore": 525
+  },
+  "cohorts": {
+    "A": {
+      "prompts": 260,
+      "systems": [
+        "BrickMore"
+      ]
+    },
+    "B": {
+      "prompts": 265,
+      "systems": [
+        "BrickMore"
+      ]
+    }
+  },
+  "primary_policy": "All 525 final BrickMore LDRs. Compare to previous raw results by prompt_id and caption. P_inv follows delivered file order.",
+  "final_refinement_origins": {
+    "original_retained": 34,
+    "original_refined": 445,
+    "regenerated": 46
+  },
+  "source_root": "D:\\BrickMore\\BrickMore_Comparision\\BrickMore_refined_20261119",
+  "caption_matches_to_scored_raw": 525,
+  "verified_final_ldr_hashes": 525,
+  "part_types": 11,
+  "render_protocol": {
+    "source_sha256": "f2057666c2d093fead58f41dc63d70769936286cf7323f0b4dd0183f3521bd9b",
+    "size": 512,
+    "views": 8,
+    "elevation_deg": 25,
+    "azimuth_deg": [
+      0,
+      45,
+      90,
+      135,
+      180,
+      225,
+      270,
+      315
+    ],
+    "projection": "orthographic bounding-sphere fit",
+    "material": "uniform yellow for all systems",
+    "geometry": "official original inset part surfaces, adapted renderer; no color-accuracy claim",
+    "background": [
+      246,
+      246,
+      246
+    ]
+  },
+  "smoke_prompt_ids": [
+    "A01_L1",
+    "A01_L2",
+    "A02_L2",
+    "B01_L3",
+    "B01_L1",
+    "B12_L2"
+  ],
+  "previous_run_manifest_sha256": {
+    "A": "1e895ede4f0bf4845ceb35ee87836cc46aea0c21f664be374bb707498c6be70b",
+    "B": "ef95f95010ee5461dc45f4591fdded0a25534fb607da2aeae1757cf0361c6f40"
+  }
+}

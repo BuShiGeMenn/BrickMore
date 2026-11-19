@@ -1,0 +1,30 @@
+name currfile
+category Package
+revision 77682
+shortdesc Provide file name and path of input files
+longdesc The package provides macros holding file name information
+longdesc (directory, base name, extension, full name and full path) for
+longdesc files read by LaTeX \input and \include macros; it uses the
+longdesc file hooks provided by the author's filehook. In particular, it
+longdesc restores the parent file name after the trailing \clearpage of
+longdesc an \included file; as a result, the macros may be usefully
+longdesc employed in the page header and footer of the last printed page
+longdesc of such a file. The depth of inclusion is made available,
+longdesc together with the "parent" (including file) and "parents" (all
+longdesc including files to the root of the tree). The package
+longdesc supersedes FiNK.
+containersize 3876
+containerchecksum 1f6452c0ee5861938ca693ee37f4fc46a61ccbdeb4273a75d416f5d28b421b0eeda3250c385cb2eb806d7d87661876f96582947a4fd1e62cc9497706908368de
+doccontainersize 180680
+doccontainerchecksum d2a0e08fab0994e97e71efb81ee6bed52446f28871bfb61a32fe77d69f0780172a43aea190eea8f48255ba1a08c2e6ea6a82cf0dc2344da6c640ea9a01c0a9e1
+srccontainersize 11912
+srccontainerchecksum 52218c6e7f3356de2fe63d375d544310a980eafca7f19b7ac005f191633b36233cb90b7dce2bfa36530d25a91b3c761b55e0a6045c1e2170cfeb2b2ef447c5d8
+runfiles size=5
+ texmf-dist/tex/latex/currfile/currfile-abspath.sty
+ texmf-dist/tex/latex/currfile/currfile.sty
+catalogue-contact-bugs https://github.com/MartinScharrer/currfile/issues
+catalogue-contact-repository https://github.com/MartinScharrer/currfile
+catalogue-ctan /macros/latex/contrib/currfile
+catalogue-license lppl1.3c
+catalogue-topics doc-tool tagged-pdf
+catalogue-version 1.0

@@ -1,0 +1,28 @@
+\begin{tikzpicture}[x=1cm,y=-1cm]
+\unitheader{6}{Contact screening}
+\begin{scope}[shift={(.55,.50)},scale=3.30,transform shape]
+\tikzset{every node/.append style={font=\fontsize{4.3}{5.2}\selectfont},
+         tinylabel/.style={font=\fontsize{3.7}{4.5}\selectfont,text=muted}}
+\begin{scope}[shift={(-9.22,-4.3)}]
+% 6. Visual contact model: an interlocked pair, contacts and gravity.
+\begin{scope}[shift={(9.70,5.32)}]
+  \fill[wash] (-.04,1.11) rectangle (2.87,1.19);
+  \draw[muted] (-.04,1.10)--(2.87,1.10);
+  \path[fill=brick3004,draw=white,line width=.6pt] (.18,.61)--(1.37,.61)--(1.37,1.08)--(.18,1.08)--cycle;
+  \path[fill=brick3004!75,draw=white,line width=.6pt] (.18,.61)--(.43,.41)--(1.62,.41)--(1.37,.61)--cycle;
+  \path[fill=brick3004!65!black,draw=white,line width=.6pt] (1.37,.61)--(1.62,.41)--(1.62,.88)--(1.37,1.08)--cycle;
+  \path[fill=brick3001,draw=white,line width=.6pt] (.64,.12)--(2.30,.12)--(2.30,.59)--(.64,.59)--cycle;
+  \path[fill=brick3001!75,draw=white,line width=.6pt] (.64,.12)--(.89,-.08)--(2.55,-.08)--(2.30,.12)--cycle;
+  \path[fill=brick3001!65!black,draw=white,line width=.6pt] (2.30,.12)--(2.55,-.08)--(2.55,.39)--(2.30,.59)--cycle;
+  \foreach \x in {.99,1.39,1.79,2.19} {\path[fill=brick3001,draw=white,line width=.4pt] (\x,-.055) ellipse (.075 and .035);}
+  \foreach \x in {.86,1.26,1.66,2.06} {\path[fill=brick3001,draw=white,line width=.4pt] (\x,.045) ellipse (.075 and .035);}
+  \foreach \x in {.83,1.12} {\fill[repair] (\x,.60) circle (.045);}
+  \draw[flow,draw=repair] (1.55,-.40)--(1.55,.25);
+  \node[anchor=west,text=repair,font=\fontsize{7}{8}\selectfont] at (1.69,-.34) {$mg$};
+\end{scope}
+\node at (11.175,6.79) {Self-weight LP + layer prefixes};
+\node[tinylabel] at (11.175,7.08) {Tipping margin + clutch force};
+
+\end{scope}
+\end{scope}
+\end{tikzpicture}

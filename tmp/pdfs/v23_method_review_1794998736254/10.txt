@@ -1,0 +1,39 @@
+Figure 5: Additional historical voxel model examples.
+Figure 6: Historical examples of voxel targets and brick layouts after local repair.
+rendered views for alignment. Three supplied GLB pre-
+views contain only a prefix, so we render from the deliv-
+ered LDraw sequences in all cases. BrickGPT uses a203
+world and seed 42, with recorded regeneration budgets of
+8 or 100. For the 260 supplemental BrickForma exports,
+inference ran locally without MILP refinement using check-
+pointBrickGPT-Qwen3-1.7B-BrickMore-48(revi-
+sion92d1c595) inbfloat16precision withsdpaat-
+tention,max_new_tokens=8192,temperature=0.7,
+top_p=0.9, and seed schedule(42,104,2026), with zero
+overlap against the training set. The 265 earlier Q8_0 ex-
+portscomefromanearlierinferencebatchwhoseper-sample
+decoding flags were not logged, and the 105-sample offset
+between79,301×5 = 396,505andthelogged396,610train-
+ingpairsstemsfromaminorsnapshotoffsetbetweenthefinal
+dataset release and the training run.
+Baseline versions.The archived 260-prompt Brick-
+GPT runner is based on GitHub commit9c53c7c
+of https://github.com/AvaLovelace1/BrickGPT. The gen-
+eration report records a local checkpoint combin-
+ingmeta-llama/Llama-3.2-1B-Instructand the
+publicAvaLovelace/BrickGPTLoRA adapter. The
+runner can load a premerged checkpoint or merge those
+weights through PEFT’smerge_and_unload. The re-
+port identifies the merged checkpoint used, with no separate
+mergelog.TheBrickNetGitHubreferencesnapshotiscom-
+mit283faf7of https://github.com/kulits/BrickNet. The
+public 1.7B PT and SFT adapter revisions are0f75d5e5
+and3fe7f4c1, respectively, onQwen/Qwen3-1.7B.
+The 265 other BrickGPT exports and the BrickNet exports
+lack a recorded generation-code commit. Invalid-placement
+scoring uses the inset collision kernel from the pinned
+bricknet==0.1.0PyPI wheel.
+Reference dataset snapshots.BrickGPT uses Sta-
+bleText2Brick (public data upload1dcf904at
+AvaLovelace/StableText2Brick). BrickNet
+uses the gated PT, SFT, and validation splits described

@@ -1,0 +1,35 @@
+Figure 10: Geometric pass counts for the original rules, Q3, and two Q4 variants on the same 160-model sample (seed 38177).
+The Q4 rounds reuse this sample for tuning.
+0 20,000 40,000 60,000 80,000
+Number of models (80,000 total)
+Relaxed
+Refined
+45,490 17,024 14,497
+63,808 14,574
+Compression-only balance
+Uncalibrated clutch force
+Clutch demand unknown
+Tipping / zero margin
+Solver undetermined
+Witness rejected
+Geometry failed / not screened
+Figure 11: Historicaldistributions of physical screeningstatuses; values as inthe corresponding release reports. Countsrefer to
+the specific releases shown and are kept separate from geometric pass rates.
+path sampled seeds outsideS; for two further prompts the
+solver budget was extended to 600s. Only 46 raw layouts
+(8.8%) form a single stud-connected component without re-
+finement; this rate shows no clear trend across levels (13,
+9, 9, 7, and 8 for L1–L5) but varies strongly by category
+(e.g., 8/25 for sofa, 0/25 for basket and camera). All 479
+failing raw layouts split into at least two stud components
+(median 5, maximum 33). Overlaps are a minor cause: 50
+failing layouts contain duplicated voxels, 41 of them with
+at most five (median 2), and 429 contain none. The 2,240
+detachedfragmentsaremostlynotgrounded(1,320airborne
+versus920grounded).Thelearnedrepresentationthusplaces
+brickswhosein-boundsvoxelunionisretainedbyrefinement
+but that often fail to interlock across layers; all 525 final as-
+semblies form a single stud-connected component with that
+union unchanged (Table 11 in Appendix C). These checks
+evaluate stud connectivity and in-bounds voxel-union con-
+sistency,notprompt-levelshapefidelityorspatialreasoning.

@@ -1,0 +1,33 @@
+Figure 5: Additional voxel model examples from an earlier release.
+Figure 6: Examples of voxel targets and brick layouts after local repair, from an earlier release.
+checkpointBrickGPT-Qwen3-1.7B-BrickMore-48
+(revision92d1c595) inbfloat16precision withsdpa
+attention,max_new_tokens=8192,temperature=0.7,
+top_p=0.9, and the seed schedule(42,104,2026), with
+zero overlap with the training set. The 265 earlier Q8_0
+exports come from an earlier inference batch whose per-
+sample decoding flags were not logged. Finally, the 105-
+sample difference between79,301×5 = 396,505and the
+396,610 logged training pairs stems from a minor snapshot
+offset between the final dataset release and the training run.
+Baseline versions.The archived 260-prompt Brick-
+GPT runner is based on GitHub commit9c53c7c
+of https://github.com/AvaLovelace1/BrickGPT. Its gen-
+eration report records a local checkpoint that com-
+binesmeta-llama/Llama-3.2-1B-Instructwith
+thepublicAvaLovelace/BrickGPTLoRAadapter.The
+runner can load a premerged checkpoint or merge these
+weights through PEFT’smerge_and_unload; the re-
+port identifies the merged checkpoint used, but no separate
+merge log exists. The BrickNet GitHub reference snapshot
+is commit283faf7of https://github.com/kulits/BrickNet,
+and the public 1.7B PT and SFT adapter revisions on
+Qwen/Qwen3-1.7Bare0f75d5e5and3fe7f4c1, re-
+spectively.Theother265BrickGPTexportsandtheBrickNet
+exports have no recorded generation-code commit. Invalid-
+placement scoring uses the inset collision kernel from the
+pinnedbricknet==0.1.0PyPI wheel.
+Reference dataset snapshots.BrickGPT uses Sta-
+bleText2Brick (public data upload1dcf904at
+AvaLovelace/StableText2Brick). BrickNet
+uses the gated PT, SFT, and validation splits described

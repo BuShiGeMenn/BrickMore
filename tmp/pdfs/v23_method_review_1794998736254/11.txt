@@ -1,0 +1,64 @@
+Figure7:Historicalcontact-basedgravityscreeningmodel,withEnglishlabels.Thestatedcontactandgroundassumptionsare
+retained.
+Strict v3
+Oct 11
+Relaxed
+Oct 12
+Refined
+Oct 13
+Piano B
+Oct 14
+0
+50
+100Geometric pass rate (%)
+7,902
+(9.88%)
+65,503
+(81.88%)
+79,298
+(99.12%)
+79,301
+(99.13%)
+(a) Conversion: 80,000 models
+Relaxed
+Oct 12
+Refined
+Oct 13
+102
+103
+104
+2,650
+220
+478
+128
+(b) Gravity screening
+Final equilibrium
+Final + prefixes
+Figure8:Historicalcomparisonofgeometricconversionandscreeningoutcomesacrossreleases;valuesasinthecorresponding
+release reports (Table 7).
+inDATA.mdat GitHub commit283faf7. The release
+documentation identifies those splits by file name and gives
+no separate dataset revision.
+Untuned Qwen3-1.7B.None of the 260 untuned outputs
+passedthegeneration-timegeometrycheck.Thestrictparser
+foundnoplacementsin178outputs,andtwousedanunsup-
+portedparttype.Weassignthese180outputszeroforVQAS-
+core,PE,andSigLIP2andretainthemeasuredscoresforthe
+80scorablepartiallayouts.Allalignmentmeansusethesame
+260prompts.Forthe80pairswithscorablebaselayouts,the
+meanfile-orderinvalid-placementratioswere39.67%forthe
+untunedmodeland1.01%forrawBrickForma.Thecompar-
+ison uses common scoring across delivered generation runs
+that can differ in decoding.
+Paired tests and truncation.Table 10 compares align-
+ment scores on the 525 prompts. We use a two-sided exact
+sign test and a two-sided Wilcoxon signed-rank test with the
+normal approximation, excluding ties. Holm correction is
+applied separately to the six comparisons within each test.
+All adjustedpvalues are below2.0×10 −8. PE truncates
+121promptsandSigLIP2truncates209.Ontheuntruncated
+subsets, BrickForma / BrickGPT / BrickNet score 0.1510 /
+0.1408 / 0.1135 on PE (404 prompts) and 0.0340 / 0.0157 /
+0.0009 on SigLIP2 (316 prompts).
+Earlier114-promptcomparison.BrickGPToutputswere
+generated in its native203 world (seed 42), whereas Brick-

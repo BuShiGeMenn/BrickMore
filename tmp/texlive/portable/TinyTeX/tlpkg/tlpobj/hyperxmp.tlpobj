@@ -1,0 +1,39 @@
+name hyperxmp
+category Package
+revision 78281
+shortdesc Embed XMP metadata within a LaTeX document
+longdesc XMP (eXtensible Metadata Platform) is a mechanism proposed by
+longdesc Adobe for embedding document metadata within the document
+longdesc itself. The metadata is designed to be easy to extract, even by
+longdesc programs that are oblivious to the document's file format. Most
+longdesc of Adobe's applications store XMP metadata when saving files.
+longdesc Now, with the hyperxmp package, it is trivial for LaTeX
+longdesc document authors to store XMP metadata in their documents as
+longdesc well. The package integrates seamlessly with hyperref and
+longdesc requires virtually no modifications to documents that already
+longdesc exploit hyperref's mechanisms for specifying PDF metadata. The
+longdesc current version of hyperxmp can embed the following metadata as
+longdesc XMP: title, authors, primary author's title or position,
+longdesc metadata writer, subject/summary, keywords, copyright, license
+longdesc URL, document base URL, document identifier and instance
+longdesc identifier, language, source file name, PDF generating tool,
+longdesc PDF version, and contact telephone number/postal address/email
+longdesc address/URL. Hyperxmp currently embeds XMP only within PDF
+longdesc documents; it is compatible with pdfLaTeX, XeLaTeX,
+longdesc LaTeX+dvipdfm, and LaTeX+dvips+ps2pdf.
+depend hyperxmp.ARCH
+depend ifmtarg
+depend oberdiek
+containersize 15232
+containerchecksum b38b9eae169c7e64b7d0a24f2bc932e7cea89d716a0130460dd095bf34116a1068056673993fc0cf901159ff4d6f8b5b68d3390f6ebf7e273bd4f4cf0f20fe3b
+doccontainersize 1203740
+doccontainerchecksum a3e02810f9f8c9b5bf2391d61b030c670dac1355634e8eb369802ec6420052e1b0392cda55767f33d8170e32db654889145809938ff02ce4809190f3229faaf1
+srccontainersize 61476
+srccontainerchecksum 89c25725d9d3628e27a8fbbf4d0877c9cf1c45be7f0ddedbea807b3a681fe64e844328f146b5874ea29834a7945024d2923bb209bccf89edf25ebcc7b0c9899b
+runfiles size=18
+ texmf-dist/scripts/hyperxmp/hyperxmp-add-bytecount.pl
+ texmf-dist/tex/latex/hyperxmp/hyperxmp.sty
+catalogue-ctan /macros/latex/contrib/hyperxmp
+catalogue-license lppl1.3c
+catalogue-topics pdf-feat tagged-pdf-unsupported
+catalogue-version 5.13

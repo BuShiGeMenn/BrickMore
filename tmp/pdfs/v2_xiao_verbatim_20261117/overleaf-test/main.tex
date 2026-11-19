@@ -1,0 +1,47 @@
+\documentclass[letterpaper]{article} % DO NOT CHANGE THIS
+% AAAI-27 Author Kit (official, https://aaai.org/authorkit27/, AuthorKit27.zip, aaai2027.sty dated 2026-10-21).
+% AAAI anonymous workshop manuscript.
+\usepackage[submission]{aaai2027}  % DO NOT CHANGE THIS
+\usepackage[hyphens]{url}  % DO NOT CHANGE THIS
+\usepackage{graphicx} % DO NOT CHANGE THIS
+\urlstyle{rm} % DO NOT CHANGE THIS
+\def\UrlFont{\rm}  % DO NOT CHANGE THIS
+\usepackage{natbib}  % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\usepackage{caption} % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\frenchspacing  % DO NOT CHANGE THIS
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{placeins} % \FloatBarrier keeps appendix floats in their sections
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+\setcounter{secnumdepth}{2} % Section numbers enabled (permitted by the template: 0, 1 or 2).
+
+\input{sections/xiao_frontmatter}
+
+% AAAI sets \@maketitle in the full-width first-page title block.
+% Append the teaser inside that block so it precedes the two-column abstract.
+\AddToHook{cmd/@maketitle/after}{\input{sections/teaser}}
+
+\begin{document}
+\maketitle
+\input{sections/xiao_abstract}
+
+\input{sections/xiao_introduction}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure2.pdf}
+\caption{Data-construction workflow. GPT-6.1 Sol assists in writing parametric programs that produce voxel shapes and captions. The shapes are deduplicated, tiled, repaired, and checked before export for fine-tuning. Dashed arrows trace contact screening and its recorded status. Brick colors follow the legend in Figure~\ref{fig:teaser}.}
+\label{fig:data-workflow}
+\end{figure*}
+
+\input{sections/method}
+\input{sections/evaluation}
+\bibliography{references}
+\FloatBarrier
+\input{sections/appendices}
+\end{document}

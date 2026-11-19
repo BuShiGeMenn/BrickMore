@@ -1,0 +1,64 @@
+Figure7:Contact-basedgravityscreeningmodelfromanearlierrelease,withEnglishlabels.Thecontactandgroundassumptions
+are as stated above.
+Strict v3
+Oct 11
+Relaxed
+Oct 12
+Refined
+Oct 13
+Piano B
+Oct 14
+0
+50
+100Geometric pass rate (%)
+7,902
+(9.88%)
+65,503
+(81.88%)
+79,298
+(99.12%)
+79,301
+(99.13%)
+(a) Conversion: 80,000 models
+Relaxed
+Oct 12
+Refined
+Oct 13
+102
+103
+104
+2,650
+220
+478
+128
+(b) Gravity screening
+Final equilibrium
+Final + prefixes
+Figure 8: Geometric conversion and screening outcomes across earlier releases; values as given in the corresponding release
+reports (Table 7).
+inDATA.mdat GitHub commit283faf7; the release
+documentation identifies these splits by file name and gives
+no separate dataset revision.
+Untuned Qwen3-1.7B.None of the 260 untuned outputs
+passedthegeneration-timegeometrycheck.Thestrictparser
+found no placements in 178 outputs, and two more used an
+unsupported part type. We assign these 180 outputs zero
+VQAScore, PE, and SigLIP2, and keep the measured scores
+for the 80 scorable partial layouts, so all alignment means
+areoverthesame260prompts.Onthe80pairswithscorable
+base layouts, the mean file-order invalid-placement ratio is
+39.67% for the untuned model and 1.01% for raw Brick-
+Forma. The comparison applies common scoring to deliv-
+ered generation runs whose decoding settings may differ.
+Paired tests and truncation.Table 10 compares align-
+ment scores on the 525 prompts. We use a two-sided exact
+sign test and a two-sided Wilcoxon signed-rank test with the
+normal approximation, excluding ties, and apply Holm cor-
+rection separately to the six comparisons within each test.
+All adjustedpvalues are below2.0×10 −8. PE truncates
+121promptsandSigLIP2truncates209.Ontheuntruncated
+subsets,BrickForma,BrickGPT,andBrickNetscore0.1510,
+0.1408,and0.1135onPE(404prompts)and0.0340,0.0157,
+and 0.0009 on SigLIP2 (316 prompts).
+Earlier114-promptcomparison.BrickGPToutputswere
+generated in its native203 world (seed 42), whereas Brick-

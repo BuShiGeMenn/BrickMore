@@ -1,0 +1,61 @@
+{
+  "conversion": {
+    "passes": [
+      7902,
+      65503,
+      79298,
+      79301
+    ]
+  },
+  "physics": {
+    "statuses": [
+      "gravity_equilibrium_passed",
+      "requires_uncalibrated_clutch",
+      "clutch_requirement_inconclusive",
+      "global_tipping_or_zero_margin",
+      "physics_solver_inconclusive",
+      "solver_witness_rejected",
+      "not_evaluated_geometry_failed"
+    ],
+    "labels": [
+      "Compression-only balance",
+      "Uncalibrated clutch force",
+      "Clutch demand unknown",
+      "Tipping / zero margin",
+      "Solver undetermined",
+      "Witness rejected",
+      "Geometry failed / not screened"
+    ],
+    "colors": [
+      "#3b914b",
+      "#e5a534",
+      "#f0d27b",
+      "#b54730",
+      "#888888",
+      "#444444",
+      "#c8c8c8"
+    ],
+    "Relaxed": {
+      "gravity_equilibrium_passed": 2650,
+      "requires_uncalibrated_clutch": 45490,
+      "clutch_requirement_inconclusive": 17024,
+      "not_evaluated_geometry_failed": 14497,
+      "global_tipping_or_zero_margin": 308,
+      "physics_solver_inconclusive": 30,
+      "solver_witness_rejected": 1
+    },
+    "Retiled": {
+      "requires_uncalibrated_clutch": 63808,
+      "clutch_requirement_inconclusive": 14574,
+      "not_evaluated_geometry_failed": 702,
+      "gravity_equilibrium_passed": 220,
+      "global_tipping_or_zero_margin": 696
+    }
+  },
+  "provenance": {
+    "conversion": "Historical image14 and release reports; integrated 79,301 is derived, not a new run.",
+    "physics_relaxed": "Train/datasets/relaxed_assembly_80000/assembly_summary.json: physicalStatusCounts",
+    "physics_retiled": "Train/datasets/retile_assembly_80000/summary.json: physicsStatusCounts",
+    "failures": "Counts transcribed from image19; historical run records, not new measurements."
+  }
+}
