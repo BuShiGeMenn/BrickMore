@@ -18,6 +18,7 @@ from matplotlib import ticker
 
 
 PROJECT = Path(__file__).resolve().parents[1]
+SNAPSHOTS = {"20261119": "refined", "20261117": "generated"}
 SYSTEMS = ("BrickForma", "BrickGPT", "BrickNet")
 LABELS = SYSTEMS
 COLORS = ("#096b74", "#a85b08", "#6352aa")
@@ -66,6 +67,9 @@ def load_scores(snapshot):
                     raise ValueError(f"Non-finite {key} score for {prompt}")
             group[prompt] = record
     reference = groups[SYSTEMS[0]]
+    expected_variant = SNAPSHOTS[snapshot.name]
+    if any(record["variant"] != expected_variant for record in reference.values()):
+        raise ValueError(f"Expected only BrickForma {expected_variant} outputs in {snapshot.name}.")
     for system, group in groups.items():
         levels = Counter(int(record["level"]) for record in group.values())
         if levels != dict.fromkeys(LEVELS, 105) or group.keys() != reference.keys():
@@ -195,9 +199,13 @@ def draw_levels(groups, output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--snapshot", choices=("20261117", "20261119"), default="20261117")
+    parser.add_argument("--snapshot", choices=SNAPSHOTS, default="20261119",
+                        help="20261119 is the refined comparison. Select 20261117 for the raw archive.")
     args = parser.parse_args()
-    by_system = load_scores(PROJECT / "data" / args.snapshot)
+    snapshot = PROJECT / "data" / args.snapshot
+    if not all((snapshot / filename).is_file() for filename in ("scores.csv", "paper_summary.json")):
+        parser.error(f"Missing score files in {snapshot}. Run inside the matching Overleaf project.")
+    by_system = load_scores(snapshot)
     groups = [by_system[system] for system in SYSTEMS]
     output = PROJECT / "figures" / f"comparison_{args.snapshot}"
     output.mkdir(parents=True, exist_ok=True)
@@ -205,6 +213,8 @@ def main():
     draw_means(groups, output)
     draw_distributions(groups, output)
     draw_levels(groups, output)
+    print(f"Rendered 4 charts from data/{args.snapshot}: "
+          f"{len(groups[0])} BrickForma {SNAPSHOTS[args.snapshot]} exports.")
 
 
 if __name__ == "__main__":

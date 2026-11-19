@@ -22,9 +22,9 @@
 ~~~sh
 python -m pip install scipy pillow numpy matplotlib cairosvg pypdf
 python scripts/update_refined_comparison.py
-python scripts/render_comparison_figures.py --snapshot 20261119
+python scripts/render_comparison_figures.py
 python scripts/outline_chart_fonts.py
 latexmk -pdf main-claude.tex
 ~~~
 
-四张主评测图输出到 `figures/comparison_20261119/`。Overleaf 直接读取工程包中的成图即可编译。修改图表时，先改相应的数据或 Python 脚本，再重新导出。
+脚本默认读取 `data/20261119/` 的 525 条 refined 结果，并把四张图输出到 `figures/comparison_20261119/`。指定 `--snapshot 20261117` 才会生成历史 raw 图。这个 GitHub 目录提供脚本与说明，复现使用配套 Overleaf 工程包内的评分数据。Overleaf 直接读取工程包中的成图即可编译。修改图表时，先改相应的数据或 Python 脚本，再重新导出。
