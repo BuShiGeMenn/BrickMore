@@ -1,0 +1,371 @@
+% Draft changes by SpecialCharacter.
+%
+\ProvidesFile{gloss-kyrgyz.ldf}[2026/09/11 v2.13 polyglossia: module for Kyrgyz]
+
+\RequirePackage{xpg-cyrillicnumbers}
+
+\PolyglossiaSetup{kyrgyz}{
+  bcp47=kg,
+  bcp47-language=kg,
+  bcp47-script=Cyrl,
+  script=Cyrillic,
+  scripttag=cyrl,
+  langtag=KY,
+  hyphennames={nohyphenation},
+  % (Exchange with hyphennames={kyrgyz} when available.)
+  hyphenmins={2,2},
+  % babel has {1,1}
+  frenchspacing=true,
+  indentfirst=true,
+  localnumeral=kyrgyznumerals,
+  Localnumeral=kyrgyznumerals
+}
+
+% BCP-47 compliant aliases
+\setlanguagealias*{kyrgyz}{kg}
+
+\newif\ifcyrillic@numerals
+\newif\ifcyrillic@asbuk@numerals
+\newif\ifkyrgyz@shortdate
+\newif\ifkyrgyz@kymonths
+
+\DeclareKeys[polyglossia/gloss/kyrgyz]
+{
+    babelshorthands.if = kyrgyz@babelshorthands,
+    babelshorthands.default:n = true,
+    forceheadingpunctuation.if = kyrgyz@forceheadingpunctuation,
+    forceheadingpunctuation.default:n = true,
+    numerals.choice:,
+    numerals / arabic.code =
+      {%
+        \cyrillic@numeralsfalse
+        \cyrillic@asbuk@numeralsfalse
+        \SetLanguageKeys{kyrgyz}{bcp47-extension-u=nu-latn}%
+      },
+    numerals / cyrillic.code =
+      {%
+        \cyrillic@numeralstrue
+        \cyrillic@asbuk@numeralsfalse
+        \SetLanguageKeys{kyrgyz}{bcp47-extension-u=nu-cyrl}%
+      },
+    numerals / cyrillic-trad.code =
+      {%
+        \cyrillic@numeralstrue
+        \cyrillic@asbuk@numeralsfalse
+        \SetLanguageKeys{kyrgyz}{bcp47-extension-u=nu-cyrl}%
+      },
+    numerals / cyrillic-alph.code =
+      {%
+        \cyrillic@numeralstrue
+        \cyrillic@asbuk@numeralstrue
+        \SetLanguageKeys{kyrgyz}{bcp47-extension-u=nu-cyrl}%
+      },
+    numerals.default:n = arabic,
+    numerals/unknown.code = \xpg@warning{Unknown kyrgyz numerals value `#1'},
+    indentfirst.choice:,
+    indentfirst / true.code =
+      {%
+        \SetLanguageKeys{kyrgyz}{indentfirst=true}%
+      },
+    indentfirst / false.code =
+      {%
+        \SetLanguageKeys{kyrgyz}{indentfirst=false}%
+      },
+    indentfirst.default:n = true,
+    date.choice:,
+    date / short.code =
+      {%
+        \kyrgyz@shortdatetrue
+        \kyrgyz@kymonthsfalse
+      },
+    date / long-kymonths.code =
+      {%
+        \kyrgyz@shortdatefalse
+        \kyrgyz@kymonthstrue
+      },
+    date / long.code =
+      {%
+        \kyrgyz@shortdatefalse
+        \kyrgyz@kymonthsfalse
+      },
+    date / unknown.code = \xpg@warning{Unknown kyrgyz date value `#1'},
+    date.default:n = long,
+}
+
+\def\datekyrgyz{%
+   \ifkyrgyz@shortdate
+      \datekyrgyz@short%
+   \else
+     \ifkyrgyz@kymonths
+        \datekyrgyz@long@kyrgyzmonths%
+     \else
+        \datekyrgyz@long@standard%
+     \fi
+   \fi
+}
+
+\ifsystem@babelshorthands
+  \SetGlossOptions{kyrgyz}{babelshorthands=true}
+  % Register default options
+  \InitializeGlossOptions{kyrgyz}{babelshorthands=true,
+                                  date=long,
+                                  numerals=arabic,
+                                  indentfirst=true,
+                                  forceheadingpunctuation=true}
+\else
+  \SetGlossOptions{kyrgyz}{babelshorthands=false}
+  % Register default options
+  \InitializeGlossOptions{kyrgyz}{babelshorthands=false,
+                                  date=long,
+                                  numerals=arabic,
+                                  indentfirst=true,
+                                  forceheadingpunctuation=true}
+\fi
+
+\InitializeBabelShorthands
+
+\def\kyrgyz@shorthands{%
+  \xpg@activate@shorthands%
+  \def\language@group{kyrgyz}%
+%  \declare@shorthand{kyrgyz}{"`}{„}%
+%  \declare@shorthand{kyrgyz}{"'}{“}%
+%  \declare@shorthand{kyrgyz}{"<}{«}%
+%  \declare@shorthand{kyrgyz}{">}{»}%
+  \declare@shorthand{kyrgyz}{""}{\xpg@invisible@break}%
+  \declare@shorthand{kyrgyz}{"~}{\xpg@nobreak@hyphen}%
+  \declare@shorthand{kyrgyz}{"=}{\xpg@breakable@hyphen}%
+  \declare@shorthand{kyrgyz}{"|}{\xpg@ligature@break}%
+  \declare@shorthand{kyrgyz}{"-}{\xpg@cyrillic@dash}%
+  \declare@shorthand{kyrgyz}{",}{\xpg@thinspace@allow@hyphenation@after}%
+}
+
+\ifx\cyrdash\undefined
+  \def\cyrdash{\leavevmode\hbox to.8em{\textendash\hss\textendash}}%
+\fi
+
+\def\nokyrgyz@shorthands{%
+  \xpg@deactivate@shorthands%
+}
+
+\def\captionskyrgyz{%
+   \def\prefacename{Кириш~сөз}%
+   \def\refname{Шилтеме}%
+   \def\abstractname{Аннотация}%
+   \def\bibname{Библиография}%
+   \def\chaptername{Бөлүм}%
+   \def\appendixname{Тиркеме}%
+   \@ifundefined{thechapter}%
+     {\def\contentsname{Мазмуну}}%
+     {\def\contentsname{Мазмуну}}%
+    % confirmation needed (Kyrgyz appears to have no distinction.)
+   \def\listfigurename{Сүрөттөрдүн~тизмеси}%
+   \def\listtablename{Таблицалардын~тизмеси}%
+   \def\indexname{Индекс}%
+   \def\authorname{[Именной~указатель]}%
+   \def\figurename{Сүрөт}%
+   % Abbreviation?
+   \def\tablename{Таблица}%
+   \def\partname{Бөлүк}%
+   \def\enclname{Тиркеме}%
+   % Abbreviation?
+   \def\ccname{Көчүрмө~көчүрмөсү}%
+   % Abbreviation?
+   \def\headtoname{Кимге}%
+   % Abbreviation?
+   \def\pagename{Баракча}%
+   % Abbreviation?
+   \def\seename{караңыз}%
+   % Abbreviation?
+   \def\alsoname{ошондой~эле~караңыз}%
+   % Abbreviation?
+   \def\proofname{Далил}%
+   % glossary = Глоссарий
+}
+
+\def\datekyrgyz@long@standard{%
+      \def\today{\number\year-жылдын%
+      \space\number\day-%
+      \ifcase\month\or%
+      январь\or
+      февраль\or
+      март\or
+      апрель\or
+      май\or
+      июнь\or
+      июль\or
+      август\or
+      сентябрь\or
+      октябрь\or
+      ноябрь\or
+      декабрь\fi}%
+}
+
+
+\def\datekyrgyz@long@kyrgyzmonths{%
+     \def\kyrgyz@day{%
+         \ifcase\day\or
+          1и\or 2си\or 3ү\or 4ү\or 5и\or
+          6сы\or 7си\or 8и\or 9у\or 10у\or
+          11и\or 12си\or 13ү\or 14ү\or 15и\or
+          16сы\or 17си\or 18и\or 19у\or 20сы\or
+          21и\or 22си\or 23ү\or 24ү\or 25и\or
+          26сы\or 27си\or 28и\or 29у\or 30у\or
+          31и\fi}%
+      \def\today{\number\year-жылдын%
+      \space\ifcase\month\or%
+      үчтүн айынын\or
+      бирдин айынын\or
+      жалган курандын\or
+      чын курандын\or
+      бугунун\or
+      кулжанын\or
+      текенин\or
+      баш оонанын\or
+      аяк оонанын\or
+      тогуздун айынын\or
+      жетинин айынын\or
+      бештин айынын\fi%
+      \space\kyrgyz@day}%
+}
+
+
+\def\datekyrgyz@short{%
+   \def\today{%
+     \number\day.%
+     \ifnum\month<10 0\fi\number\month.%
+	\number\year}%
+}
+
+
+% Kyrgyz needs trailing dots in all headings
+\def\xpg@save@autodot{}
+\ifdef{\KOMAClassName}{%
+    \providecommand*\autodot{}%
+    \let\xpg@save@autodot\autodot%
+}{}
+
+\def\kyrgyz@capsformat{%
+  \ifkyrgyz@forceheadingpunctuation%
+   \ifdef{\KOMAClassName}{%
+      \renewcommand*\autodot{.}%
+   }{%
+      % The following is based on some ideas from ruscor.sty
+      \def\@seccntformat##1{\csname pre##1\endcsname%
+         \csname the##1\endcsname%
+         \csname post##1\endcsname}%
+       \def\@aftersepkern{\hspace{0.5em}}%
+       \def\postchapter{.\@aftersepkern}%
+       \def\postsection{.\@aftersepkern}%
+       \def\postsubsection{.\@aftersepkern}%
+       \def\postsubsubsection{.\@aftersepkern}%
+       \def\postparagraph{.\@aftersepkern}%
+       \def\postsubparagraph{.\@aftersepkern}%
+       \def\prechapter{}%
+       \def\presection{}%
+       \def\presubsection{}%
+       \def\presubsubsection{}%
+       \def\preparagraph{}%
+       \def\presubparagraph{}%
+    }%
+  \fi%
+}
+
+\def\nokyrgyz@capsformat{%
+  \ifkyrgyz@forceheadingpunctuation%
+    \ifdef{\KOMAClassName}{%
+       \let\autodot\xpg@save@autodot%
+    }{%
+       \def\@seccntformat##1{\csname the##1\endcsname\quad}% = LaTeX kernel
+    }%
+  \fi%
+}
+
+\newcommand{\kyrgyznumerals}[2]{\kyrgyznumber{#2}}
+\newcommand{\Kyrgyznumerals}[2]{\Kyrgyznumber{#2}}
+
+\def\kyrgyznumber#1{%
+  \ifcyrillic@numerals
+    \ifcyrillic@asbuk@numerals
+      \kyrgyz@asbuk@alph{#1}%
+    \else
+      \cyr@alph{#1}%
+    \fi
+  \else
+    \number#1%
+  \fi%
+}
+
+\def\Kyrgyznumber#1{%
+  \ifcyrillic@numerals
+    \ifcyrillic@asbuk@numerals
+      \kyrgyz@asbuk@Alph{#1}%
+    \else
+      \cyr@Alph{#1}%
+    \fi
+  \else
+    \number#1%
+  \fi%
+}
+
+\let\kyrgyznumeral=\kyrgyznumber
+\let\Kyrgyznumeral=\Kyrgyznumber
+
+\def\Asbuk#1{\expandafter\kyrgyz@asbuk@Alph\csname c@#1\endcsname}
+\def\asbuk#1{\expandafter\kyrgyz@asbuk@alph\csname c@#1\endcsname}
+
+\def\AsbukTrad#1{\expandafter\cyr@Alph\csname c@#1\endcsname}
+\def\asbukTrad#1{\expandafter\cyr@alph\csname c@#1\endcsname}
+
+
+% This is a poor man's cyrillic alphanumeric. It just uses the alphabet and
+% thus ends at xxx.
+\def\kyrgyz@asbuk@Alph#1{\ifcase#1\or
+   А\or Б\or В\or Г\or Д\or Е\or Ё\or Ж\or
+   З\or И\or Й\or К\or Л\or М\or Н\or Ң\or О\or Ө\or
+   П\or Р\or С\or Т\or У\or Ү\or Ф\or Х\or
+   Ц\or Ч\or Ш\or Щ\or Ъ\or Ы\or Ь\or Э\or Ю\or Я%
+   \else\xpg@ill@value{#1}{kyrgyz@asbuk@Alph}\fi%
+}
+
+\def\kyrgyz@asbuk@alph#1{\ifcase#1\or
+   а\or б\or в\or г\or д\or е\or ё\or ж\or
+   з\or и\or й\or к\or л\or м\or н\or ң\or о\or ө\or
+   п\or р\or с\or т\or у\or ү\or ф\or х\or
+   ц\or ч\or ш\or щ\or ъ\or ы\or ь\or э\or ю\or я%
+   \else\xpg@ill@value{#1}{kyrgyz@asbuk@alph}\fi%
+}
+
+\def\kyrgyz@numbers{%
+   \let\latin@alph\@alph
+   \let\latin@Alph\@Alph
+   \ifcyrillic@numerals%
+     \def\kyrgyz@alph##1{\expandafter\kyrgyznumeral\expandafter{\the##1}}%
+     \def\kyrgyz@Alph##1{\expandafter\kyrgyznumeral\expandafter{\the##1}}%
+     \let\@alph\kyrgyz@alph%
+     \let\@Alph\kyrgyz@Alph%
+   \fi
+}
+
+\def\nokyrgyz@numbers{%
+   \let\@alph\latin@alph%
+   \let\@Alph\latin@Alph%
+}
+
+\def\noextras@kyrgyz{%
+   \nokyrgyz@capsformat%
+   \ifcyrillic@numerals\nokyrgyz@numbers\fi%
+   \ifkyrgyz@babelshorthands\nokyrgyz@shorthands\fi%
+}
+
+\def\blockextras@kyrgyz{%
+   \kyrgyz@capsformat%
+   \ifcyrillic@numerals\kyrgyz@numbers\else\nokyrgyz@numbers\fi%
+   \ifkyrgyz@babelshorthands\kyrgyz@shorthands\else\nokyrgyz@shorthands\fi%
+}
+
+\def\inlineextras@kyrgyz{%
+   \ifkyrgyz@babelshorthands\kyrgyz@shorthands\else\nokyrgyz@shorthands\fi%
+}
+
+\endinput
+

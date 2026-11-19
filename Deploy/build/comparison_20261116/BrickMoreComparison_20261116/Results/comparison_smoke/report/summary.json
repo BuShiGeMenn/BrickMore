@@ -1,0 +1,514 @@
+{
+  "samples": 5,
+  "primary": {
+    "BrickMore": {
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    "BrickGPT": {
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    "BrickNet": {
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    }
+  },
+  "paired": {
+    "pinv": {
+      "common_prompts": 1,
+      "means": {
+        "BrickMore": 0.0,
+        "BrickGPT": 0.0,
+        "BrickNet": 0.0
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": 0.0,
+        "BrickNet_minus_BrickMore": 0.0
+      }
+    },
+    "vqa": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "pe": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "siglip2": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    }
+  },
+  "by_category_level": [
+    {
+      "system": "BrickMore",
+      "variant": "generated",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "batch": "B",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickGPT",
+      "variant": "generated",
+      "primary": false,
+      "category": "basket",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickGPT",
+      "variant": "generated",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "batch": "B",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "BrickNet",
+      "variant": "generated",
+      "primary": false,
+      "category": "basket",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.5806451612903226
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.5806451612903226
+    },
+    {
+      "system": "BrickNet",
+      "variant": "generated",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "batch": "B",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    }
+  ],
+  "protocol": {
+    "structure": "pinv_file_order, original BrickNet 0.1.0 inset collision kernel; original generation order not verified; no fixed-edge exemptions",
+    "image_scores": "Eight fixed views, max per model then arithmetic mean; no best-of-N sample selection",
+    "rendering": "Shared actual inset part surfaces, orthographic CPU rasterizer, 512px, 25-degree elevation, 45-degree azimuth steps, uniform yellow",
+    "color": "Uniform display color; no claim of generated-color accuracy",
+    "original_paper_reproduction": false,
+    "old_run_scores_mixed": false,
+    "primary": "B: 265 identical prompts x BrickMore, BrickGPT and BrickNet. A: 260 identical prompts x BrickGPT and BrickNet."
+  },
+  "by_batch": {
+    "A": {
+      "expected_prompts": 260,
+      "selected_prompts": 1,
+      "systems": {
+        "BrickGPT": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.0
+          },
+          "vqa": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "pe": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "siglip2": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "pinv_micro": 0.0
+        },
+        "BrickNet": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.5806451612903226
+          },
+          "vqa": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "pe": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "siglip2": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "pinv_micro": 0.5806451612903226
+        }
+      },
+      "paired": {
+        "pinv": {
+          "common_prompts": 1,
+          "means": {
+            "BrickGPT": 0.0,
+            "BrickNet": 0.5806451612903226
+          },
+          "differences": {
+            "BrickNet_minus_BrickGPT": 0.5806451612903226
+          }
+        },
+        "vqa": {
+          "common_prompts": 0,
+          "means": {
+            "BrickGPT": null,
+            "BrickNet": null
+          },
+          "differences": {
+            "BrickNet_minus_BrickGPT": null
+          }
+        },
+        "pe": {
+          "common_prompts": 0,
+          "means": {
+            "BrickGPT": null,
+            "BrickNet": null
+          },
+          "differences": {
+            "BrickNet_minus_BrickGPT": null
+          }
+        },
+        "siglip2": {
+          "common_prompts": 0,
+          "means": {
+            "BrickGPT": null,
+            "BrickNet": null
+          },
+          "differences": {
+            "BrickNet_minus_BrickGPT": null
+          }
+        }
+      }
+    },
+    "B": {
+      "expected_prompts": 265,
+      "selected_prompts": 1,
+      "systems": {
+        "BrickMore": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.0
+          },
+          "vqa": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "pe": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "siglip2": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "pinv_micro": 0.0
+        },
+        "BrickGPT": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.0
+          },
+          "vqa": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "pe": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "siglip2": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "pinv_micro": 0.0
+        },
+        "BrickNet": {
+          "records": 1,
+          "pinv": {
+            "n": 1,
+            "missing": 0,
+            "mean": 0.0
+          },
+          "vqa": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "pe": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "siglip2": {
+            "n": 0,
+            "missing": 1,
+            "mean": null
+          },
+          "pinv_micro": 0.0
+        }
+      },
+      "paired": {
+        "pinv": {
+          "common_prompts": 1,
+          "means": {
+            "BrickMore": 0.0,
+            "BrickGPT": 0.0,
+            "BrickNet": 0.0
+          },
+          "differences": {
+            "BrickGPT_minus_BrickMore": 0.0,
+            "BrickNet_minus_BrickMore": 0.0
+          }
+        },
+        "vqa": {
+          "common_prompts": 0,
+          "means": {
+            "BrickMore": null,
+            "BrickGPT": null,
+            "BrickNet": null
+          },
+          "differences": {
+            "BrickGPT_minus_BrickMore": null,
+            "BrickNet_minus_BrickMore": null
+          }
+        },
+        "pe": {
+          "common_prompts": 0,
+          "means": {
+            "BrickMore": null,
+            "BrickGPT": null,
+            "BrickNet": null
+          },
+          "differences": {
+            "BrickGPT_minus_BrickMore": null,
+            "BrickNet_minus_BrickMore": null
+          }
+        },
+        "siglip2": {
+          "common_prompts": 0,
+          "means": {
+            "BrickMore": null,
+            "BrickGPT": null,
+            "BrickNet": null
+          },
+          "differences": {
+            "BrickGPT_minus_BrickMore": null,
+            "BrickNet_minus_BrickMore": null
+          }
+        }
+      }
+    }
+  }
+}
