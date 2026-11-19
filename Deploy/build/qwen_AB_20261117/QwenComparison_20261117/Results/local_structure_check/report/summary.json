@@ -1,0 +1,5288 @@
+{
+  "samples": 345,
+  "primary": {
+    "Qwen3-1.7B-base": {
+      "records": 80,
+      "pinv": {
+        "n": 80,
+        "missing": 0,
+        "mean": 0.3967068785576208
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 80,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 80,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 80,
+        "mean": null
+      },
+      "pinv_micro": 0.5582232893157263
+    },
+    "Qwen1.7b B LDR": {
+      "records": 265,
+      "pinv": {
+        "n": 265,
+        "missing": 0,
+        "mean": 0.004900759617740749
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 265,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 265,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 265,
+        "mean": null
+      },
+      "pinv_micro": 0.013909587680079483
+    }
+  },
+  "paired": {
+    "pinv": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "vqa": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "pe": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    },
+    "siglip2": {
+      "common_prompts": 0,
+      "means": {
+        "BrickMore": null,
+        "BrickGPT": null,
+        "BrickNet": null
+      },
+      "differences": {
+        "BrickGPT_minus_BrickMore": null,
+        "BrickNet_minus_BrickMore": null
+      }
+    }
+  },
+  "by_category_level": [
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "basket",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "basket",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bed",
+      "level": 3,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.2803030303030303
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.25
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bed",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.6666666666666666
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.6666666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bed",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bed",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bench",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bench",
+      "level": 4,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.4793729372937294
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.9431818181818182
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bench",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9791666666666666
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.9791666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bench",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9791666666666666
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.9791666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 4,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.5798611111111112
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.7804878048780488
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 3,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.9791666666666666
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.9791666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bottle",
+      "level": 2,
+      "batch": "A",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.5826210826210826
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.42911877394636017
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bottle",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bottle",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bowl",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9895833333333334
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.9895833333333334
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bowl",
+      "level": 4,
+      "batch": "A",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.4375
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.4803921568627451
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bowl",
+      "level": 2,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.28125
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.140625
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bowl",
+      "level": 3,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.4895833333333333
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.6351351351351351
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bowl",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.5
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.5
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bus",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.42857142857142855
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.42857142857142855
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bus",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bus",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.2
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.2
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "bus",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.7894736842105263
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.7894736842105263
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "camera",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.2857142857142857
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.2857142857142857
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "car",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "car",
+      "level": 4,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.6006944444444444
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.6547619047619048
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "car",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.46153846153846156
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.46153846153846156
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "car",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "chair",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.6190476190476191
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.6190476190476191
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "chair",
+      "level": 2,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.14285714285714285
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.03636363636363636
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "chair",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "chair",
+      "level": 5,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.06944444444444445
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.078125
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "chair",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "guitar",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.16666666666666666
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.16666666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "guitar",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "guitar",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.4
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.4
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "guitar",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "jar",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.2
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.2
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "jar",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9795918367346939
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.9795918367346939
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "jar",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.7222222222222222
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.7222222222222222
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "jar",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.6666666666666666
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.6666666666666666
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "mug",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.3333333333333333
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.3333333333333333
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "mug",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.7333333333333333
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.7333333333333333
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "mug",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.5714285714285714
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.5714285714285714
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "mug",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.041666666666666664
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.041666666666666664
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "piano",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.09090909090909091
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.09090909090909091
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "piano",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9948630136986302
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.9948630136986302
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "sofa",
+      "level": 2,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.25
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.25
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "sofa",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.8181818181818182
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.8181818181818182
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "sofa",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.6428571428571429
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.6428571428571429
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "table",
+      "level": 1,
+      "batch": "A",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.4513888888888889
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.6418918918918919
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "table",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.25
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.25
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "table",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.7640449438202247
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.7640449438202247
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "table",
+      "level": 5,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "tower",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.9464285714285714
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.9464285714285714
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "tower",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "tower",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.75
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.75
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "train",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.7804878048780488
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.7804878048780488
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "train",
+      "level": 4,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.5652173913043478
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.5652173913043478
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "vessel",
+      "level": 1,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "vessel",
+      "level": 2,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.8181818181818182
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.8181818181818182
+    },
+    {
+      "system": "Qwen3-1.7B-base",
+      "variant": "parsed_partial",
+      "primary": true,
+      "category": "vessel",
+      "level": 3,
+      "batch": "A",
+      "records": 1,
+      "pinv": {
+        "n": 1,
+        "missing": 0,
+        "mean": 0.3333333333333333
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 1,
+        "mean": null
+      },
+      "pinv_micro": 0.3333333333333333
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "basket",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bed",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bed",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bed",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bed",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bed",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bench",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bench",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bench",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bench",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bench",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "birdhouse",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bookshelf",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bottle",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bottle",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bottle",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bottle",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bottle",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bowl",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bowl",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bowl",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bowl",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bowl",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bus",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bus",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bus",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bus",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "bus",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "camera",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "camera",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "camera",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "camera",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "camera",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "car",
+      "level": 1,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "car",
+      "level": 2,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "car",
+      "level": 3,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "car",
+      "level": 4,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "car",
+      "level": 5,
+      "batch": "B",
+      "records": 2,
+      "pinv": {
+        "n": 2,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 2,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "chair",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "chair",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "chair",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "chair",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "chair",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "guitar",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "guitar",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "guitar",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "guitar",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "guitar",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "jar",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "jar",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "jar",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "jar",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "jar",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "mug",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "mug",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "mug",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "mug",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "mug",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.19047619047619047
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.375
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "piano",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "piano",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "piano",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "piano",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "piano",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "pot",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "pot",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "pot",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "pot",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "pot",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "sofa",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "sofa",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "sofa",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "sofa",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "sofa",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "table",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "table",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "table",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "table",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "table",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "tower",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "tower",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12121212121212122
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.21052631578947367
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "tower",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.12121212121212122
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.21052631578947367
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "tower",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "tower",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "train",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "train",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "train",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "train",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "train",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "vessel",
+      "level": 1,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "vessel",
+      "level": 2,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "vessel",
+      "level": 3,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "vessel",
+      "level": 4,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    },
+    {
+      "system": "Qwen1.7b B LDR",
+      "variant": "delivered_ldr",
+      "primary": true,
+      "category": "vessel",
+      "level": 5,
+      "batch": "B",
+      "records": 3,
+      "pinv": {
+        "n": 3,
+        "missing": 0,
+        "mean": 0.0
+      },
+      "vqa": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pe": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "siglip2": {
+        "n": 0,
+        "missing": 3,
+        "mean": null
+      },
+      "pinv_micro": 0.0
+    }
+  ],
+  "protocol": {
+    "structure": "pinv_file_order, original BrickNet 0.1.0 inset collision kernel; original generation order not verified; no fixed-edge exemptions",
+    "image_scores": "Eight fixed views, max per model then arithmetic mean; no best-of-N sample selection",
+    "rendering": "Shared actual inset part surfaces, orthographic CPU rasterizer, 512px, 25-degree elevation, 45-degree azimuth steps, uniform yellow",
+    "color": "Uniform display color; no claim of generated-color accuracy",
+    "original_paper_reproduction": false,
+    "old_run_scores_mixed": false,
+    "primary": "A scores are limited to strictly parsed placements from 80 incomplete representations. B scores cover all 265 supplied LDRs."
+  },
+  "by_batch": {
+    "A": {
+      "expected_prompts": 260,
+      "selected_prompts": 80,
+      "systems": {
+        "Qwen3-1.7B-base": {
+          "records": 80,
+          "pinv": {
+            "n": 80,
+            "missing": 0,
+            "mean": 0.3967068785576208
+          },
+          "vqa": {
+            "n": 0,
+            "missing": 80,
+            "mean": null
+          },
+          "pe": {
+            "n": 0,
+            "missing": 80,
+            "mean": null
+          },
+          "siglip2": {
+            "n": 0,
+            "missing": 80,
+            "mean": null
+          },
+          "pinv_micro": 0.5582232893157263
+        }
+      },
+      "paired": {}
+    },
+    "B": {
+      "expected_prompts": 265,
+      "selected_prompts": 265,
+      "systems": {
+        "Qwen1.7b B LDR": {
+          "records": 265,
+          "pinv": {
+            "n": 265,
+            "missing": 0,
+            "mean": 0.004900759617740749
+          },
+          "vqa": {
+            "n": 0,
+            "missing": 265,
+            "mean": null
+          },
+          "pe": {
+            "n": 0,
+            "missing": 265,
+            "mean": null
+          },
+          "siglip2": {
+            "n": 0,
+            "missing": 265,
+            "mean": null
+          },
+          "pinv_micro": 0.013909587680079483
+        }
+      },
+      "paired": {}
+    }
+  },
+  "source_input_coverage": {
+    "A": {
+      "no_placement": 178,
+      "scoreable_partial": 80,
+      "unsupported_part": 2
+    },
+    "B": {
+      "scoreable_ldr": 265
+    }
+  }
+}
